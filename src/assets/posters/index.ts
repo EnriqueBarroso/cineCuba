@@ -65,3 +65,8 @@ export { default as posterElpidioValdes } from '@/assets/posters/elpidio-valdes.
 export { default as posterLaVidaEsSilbar } from '@/assets/posters/la-vida-es-silbar.jpg';
 export { default as posterVideoDeFamilia } from '@/assets/posters/video-de-familia.jpg';
 export { default as posterJuanDeLosMuertos } from '@/assets/posters/juan-de-los-muertos.jpg';
+export { default as posterHabanaBlues } from "@/assets/posters/habana-blues.jpg";
+export { default as posterDiosesRotos } from "@/assets/posters/los-dioses-rotos.jpg";
+export { default as posterHabanastation } from "@/assets/posters/habanastation.jpg";
+export { default as posterSergioSerguei } from "@/assets/posters/sergio-y-serguei.jpg";
+export { default as posterInocencia } from "@/assets/posters/inocencia.jpg";

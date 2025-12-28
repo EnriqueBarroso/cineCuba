@@ -42,6 +42,11 @@ import {
   posterLaVidaEsSilbar,
   posterJuanDeLosMuertos,
   posterVideoDeFamilia,
+  posterHabanaBlues,
+  posterDiosesRotos,
+  posterHabanastation,
+  posterSergioSerguei,
+  posterInocencia
 } from '@/assets/posters';
 
 // ============================================================================
@@ -657,6 +662,47 @@ const movies2000s: Movie[] = [
     cast: [{ name: "Enrique Molina", role: "Padre" }, { name: "Verónica Lynn", role: "Madre" }],
     notes: "Película de culto realizada con muy bajo presupuesto pero gran impacto emocional."
   },
+
+  {
+    id: "habana-blues",
+    title: "Habana Blues",
+    year: 2005,
+    director: "Benito Zambrano",
+    poster: posterHabanaBlues,
+    duration: "115 min",
+    genre: ["Drama", "Musical"],
+    synopsis: "Ruy y Tito son dos jóvenes músicos cubanos que sueñan con triunfar con su grupo. Cuando unos productores españoles llegan a La Habana buscando talento, se enfrentan a un dilema: aceptar un contrato que les obliga a dejar atrás sus raíces o mantenerse fieles a su música y a su vida en Cuba.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real", 
+    awards: [
+      { name: "Premios Goya", year: 2006, category: "Mejor Música Original" },
+      { name: "Festival de La Habana", year: 2005, category: "Premio Coral" }
+    ],
+    cast: [
+      { name: "Alberto Yoel", role: "Ruy" }, 
+      { name: "Roberto Sanmartín", role: "Tito" },
+      { name: "Yailene Sierra", role: "Caridad" }
+    ]
+  },
+  {
+    id: "los-dioses-rotos",
+    title: "Los dioses rotos",
+    year: 2008,
+    director: "Ernesto Daranas",
+    poster: posterDiosesRotos,
+    duration: "93 min",
+    genre: ["Drama"],
+    synopsis: "Laura es una profesora universitaria que investiga la vida del famoso proxeneta cubano Alberto Yarini para su tesis de maestría. Su investigación la lleva a adentrarse en las zonas más oscuras y complejas de la Habana actual, donde el pasado y el presente se entrelazan peligrosamente.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    awards: [
+      { name: "Festival de La Habana", year: 2008, category: "Premio del Público" },
+      { name: "Premios de la Crítica", year: 2008, category: "Mejor Película" }
+    ],
+    cast: [
+      { name: "Silvia Águila", role: "Laura" }, 
+      { name: "Carlos Ever Fonseca", role: "Alberto" },
+      { name: "Héctor Noas", role: "Rosendo" }
+    ]
+  },
 ];
 
 // ============================================================================
@@ -741,6 +787,64 @@ const movies2010s: Movie[] = [
     awards: [{ name: "Premio Goya", year: 2012, category: "Mejor Película Iberoamericana" }],
     cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }],
     notes: "La primera película de zombis del cine cubano."
+  },
+
+  {
+    id: "habanastation",
+    title: "Habanastation",
+    year: 2011,
+    director: "Ian Padrón",
+    poster: posterHabanastation,
+    duration: "95 min",
+    genre: ["Drama", "Aventuras"],
+    synopsis: "Dos niños cubanos de entornos sociales muy diferentes —uno hijo de un músico rico y otro de un barrio humilde— se ven obligados a pasar un 1 de mayo juntos tras perderse en una manifestación. A través de su aventura por La Habana profunda, descubren la realidad del otro y forjan una amistad inesperada.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    awards: [
+      { name: "Festival de Traverse City", year: 2011, category: "Premio del Público (Michael Moore)" }
+    ],
+    cast: [
+      { name: "Andy Fornaris", role: "Mayito" }, 
+      { name: "Ernesto Escalona", role: "Carlos" }
+    ]
+  },
+  {
+    id: "sergio-y-serguei",
+    title: "Sergio y Serguéi",
+    year: 2017,
+    director: "Ernesto Daranas",
+    poster: posterSergioSerguei,
+    duration: "93 min",
+    genre: ["Drama", "Comedia"],
+    synopsis: "Año 1991. La URSS se desintegra y Cuba entra en el Período Especial. Sergio, un radioaficionado y profesor de marxismo en La Habana, contacta por casualidad con Serguéi, el último cosmonauta soviético, que ha quedado olvidado en la estación espacial Mir. Una amistad cósmica nace entre ambos mientras sus mundos se derrumban.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    awards: [
+      { name: "Festival de La Habana", year: 2017, category: "Premio del Público" },
+      { name: "Festival de Málaga", year: 2018, category: "Mejor Película Iberoamericana" }
+    ],
+    cast: [
+      { name: "Tomás Cao", role: "Sergio" }, 
+      { name: "Héctor Noas", role: "Serguéi" },
+      { name: "Ron Perlman", role: "Peter" }
+    ]
+  },
+  {
+    id: "inocencia",
+    title: "Inocencia",
+    year: 2018,
+    director: "Alejandro Gil",
+    poster: posterInocencia,
+    duration: "81 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Basada en hechos reales ocurridos en 1871. Ocho estudiantes de medicina son injustamente acusados de profanar la tumba de un periodista español y condenados a muerte. 16 años después, Fermín Valdés Domínguez lucha por demostrar su inocencia y encontrar sus cuerpos, revelando una de las heridas más profundas de la historia colonial cubana.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    awards: [
+      { name: "Festival de La Habana", year: 2018, category: "Premio Especial del Jurado" },
+      { name: "Premio del Público", year: 2018, category: "Festival de La Habana" }
+    ],
+    cast: [
+      { name: "Yasmany Guerrero", role: "Fermín Valdés Domínguez" }, 
+      { name: "Luis Manuel Álvarez", role: "Estudiante" }
+    ]
   },
 ];
 
