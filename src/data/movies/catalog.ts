@@ -38,6 +38,10 @@ import {
   posterPapelesSecundarios,
   posterMemoriasSub,
   posterSoyCuba,
+  posterElpidioValdes,
+  posterLaVidaEsSilbar,
+  posterJuanDeLosMuertos,
+  posterVideoDeFamilia,
 } from '@/assets/posters';
 
 // ============================================================================
@@ -278,6 +282,21 @@ const movies1970s: Movie[] = [
       { name: 'Festival de Moscú', year: 1978, category: 'Premio Especial' },
     ],
     cast: [{ name: 'Salvador Wood', role: 'Mario' }],
+  },
+
+  {
+    id: "elpidio-valdes-film",
+    title: "Elpidio Valdés",
+    year: 1979,
+    director: "Juan Padrón",
+    poster: posterElpidioValdes,
+    duration: "70 min",
+    genre: ["Animación", "Aventuras"],
+    synopsis: "El largometraje que consolidó al personaje más icónico de la animación cubana. Elpidio, un coronel mambí, lucha por la independencia de Cuba contra el ejército español y el General Resoplez, con mucho humor, ingenio y cubanía.",
+    videoUrl: "https://www.youtube.com/embed/v=example",
+    awards: [{ name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" }],
+    cast: [{ name: "Frank González", role: "Elpidio Valdés (voz)" }],
+    notes: "Frases de esta película son parte del habla popular cubana."
   },
 ];
 
@@ -553,6 +572,23 @@ const movies1990s: Movie[] = [
     ],
     cast: [{ name: 'Vladimir Cruz', role: 'Emilio' }],
   },
+
+  {
+    id: "la-vida-es-silbar",
+    title: "La vida es silbar",
+    year: 1998,
+    director: "Fernando Pérez",
+    poster: posterLaVidaEsSilbar,
+    duration: "106 min",
+    genre: ["Drama", "Surrealista"],
+    synopsis: "En una Habana surrealista, tres personajes (una bailarina, un joven salvaje y una mujer obsesionada con la limpieza) buscan la felicidad mientras se cruzan con la misteriosa figura de Santa Bárbara. Una metáfora poética sobre la libertad y el miedo.",
+    videoUrl: "https://www.youtube.com/embed/v=example",
+    awards: [
+      { name: "Festival de Sundance", year: 1999, category: "Premio del Jurado" },
+      { name: "Premio Goya", year: 1999, category: "Mejor Película Extranjera" }
+    ],
+    cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }]
+  },
 ];
 
 // ============================================================================
@@ -605,6 +641,21 @@ const movies2000s: Movie[] = [
       'La noticia de que una herencia millonaria del siglo XVIII va a ser repartida entre los descendientes de apellido Castiñeiras revoluciona un pequeño pueblo cubano. Todos los que llevan el apellido inician trámites frenéticos para probar su linaje, desatando la codicia, las envidias y el caos familiar.',
     awards: [],
     cast: [{ name: 'Jorge Perugorría', role: 'Bernardito' }],
+  },
+
+  {
+    id: "video-de-familia",
+    title: "Video de familia",
+    year: 2001,
+    director: "Humberto Padrón",
+    poster: posterVideoDeFamilia,
+    duration: "45 min",
+    genre: ["Drama"],
+    synopsis: "Una familia cubana se graba en video para enviarle un mensaje a su hijo que ha emigrado a Estados Unidos. Lo que empieza como un saludo alegre va revelando poco a poco las grietas, secretos y dolores de la familia y de la sociedad cubana actual.",
+    videoUrl: "https://www.youtube.com/embed/v=example",
+    awards: [{ name: "Festival de La Habana", year: 2001, category: "Premio Coral" }],
+    cast: [{ name: "Enrique Molina", role: "Padre" }, { name: "Verónica Lynn", role: "Madre" }],
+    notes: "Película de culto realizada con muy bajo presupuesto pero gran impacto emocional."
   },
 ];
 
@@ -675,6 +726,21 @@ const movies2010s: Movie[] = [
       { name: 'Armando Valdés Freire', role: 'Chala' },
       { name: 'Alina Rodríguez', role: 'Carmela' },
     ],
+  },
+
+  {
+    id: "juan-de-los-muertos",
+    title: "Juan de los Muertos",
+    year: 2011,
+    director: "Alejandro Brugués",
+    poster: posterJuanDeLosMuertos,
+    duration: "92 min",
+    genre: ["Comedia", "Terror"],
+    synopsis: "Una horda de zombis invade La Habana. El gobierno dice que son disidentes pagados por los Estados Unidos. Juan, un pícaro superviviente, decide hacer negocio: 'Juan de los Muertos, matamos a sus seres queridos'. Una sátira política hilarante y sangrienta.",
+    videoUrl: "https://www.youtube.com/embed/v=example",
+    awards: [{ name: "Premio Goya", year: 2012, category: "Mejor Película Iberoamericana" }],
+    cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }],
+    notes: "La primera película de zombis del cine cubano."
   },
 ];
 
