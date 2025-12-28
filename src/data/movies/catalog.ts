@@ -46,7 +46,11 @@ import {
   posterDiosesRotos,
   posterHabanastation,
   posterSergioSerguei,
-  posterInocencia
+  posterInocencia,
+  posterHelloHeminguey,
+  posterParaisoEstrellas,
+  posterHacerseSueco,
+  posterMielOshun
 } from '@/assets/posters';
 
 // ============================================================================
@@ -594,6 +598,41 @@ const movies1990s: Movie[] = [
     ],
     cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }]
   },
+
+  {
+    id: "hello-heminguey",
+    title: "Hello Hemingüey",
+    year: 1990,
+    director: "Fernando Pérez",
+    poster: posterHelloHeminguey,
+    duration: "90 min",
+    genre: ["Drama"],
+    synopsis: "La Habana, 1956. Larita es una joven estudiante que sueña con conseguir una beca para estudiar en Estados Unidos. Es vecina del famoso escritor Ernest Hemingway, a quien observa desde la distancia, estableciendo un paralelismo entre su vida y la del viejo pescador de 'El viejo y el mar'.",
+    awards: [
+      { name: "Festival de La Habana", year: 1990, category: "Gran Premio Coral" }
+    ],
+    cast: [
+      { name: "Laura de la Uz", role: "Larita" },
+      { name: "Raúl Paz", role: "Víctor" }
+    ],
+    notes: "Debut cinematográfico de Laura de la Uz."
+  },
+  {
+    id: "un-paraiso-bajo-estrellas",
+    title: "Un paraíso bajo las estrellas",
+    year: 1999,
+    director: "Gerardo Chijona",
+    poster: posterParaisoEstrellas,
+    duration: "90 min",
+    genre: ["Comedia"],
+    synopsis: "Siso sueña con ser bailarín del Tropicana, pero el destino y los enredos amorosos se lo ponen difícil. Una comedia de enredos clásica que rinde homenaje al cabaret más famoso de Cuba y a la picaresca nacional.",
+    awards: [],
+    cast: [
+      { name: "Thais Valdés", role: "Stacy" },
+      { name: "Vladimir Cruz", role: "Sergito" },
+      { name: "Enrique Molina", role: "Cándido" }
+    ]
+  },
 ];
 
 // ============================================================================
@@ -701,6 +740,41 @@ const movies2000s: Movie[] = [
       { name: "Silvia Águila", role: "Laura" }, 
       { name: "Carlos Ever Fonseca", role: "Alberto" },
       { name: "Héctor Noas", role: "Rosendo" }
+    ]
+  },
+
+  {
+    id: "hacerse-el-sueco",
+    title: "Hacerse el sueco",
+    year: 2001,
+    director: "Daniel Díaz Torres",
+    poster: posterHacerseSueco,
+    duration: "105 min",
+    genre: ["Comedia", "Crimen"],
+    synopsis: "Un supuesto profesor de literatura sueco llega a La Habana. En realidad, es un ladrón de joyas retirado que busca robarse a sí mismo. Se aloja en casa de una familia cubana peculiar, desencadenando un choque cultural hilarante y situaciones inesperadas.",
+    awards: [],
+    cast: [
+      { name: "Enrique Molina", role: "Amancio" },
+      { name: "Peter Lohmeyer", role: "Bjorn (El Sueco)" },
+      { name: "Coralia Veloz", role: "Marta" }
+    ]
+  },
+  {
+    id: "miel-para-oshun",
+    title: "Miel para Oshún",
+    year: 2001,
+    director: "Humberto Solás",
+    poster: posterMielOshun,
+    duration: "110 min",
+    genre: ["Drama", "Road Movie"],
+    synopsis: "Un joven cubano-americano regresa a Cuba después de muchos años para buscar a la madre que nunca conoció. Junto a un taxista y su prima, emprende un viaje por toda la isla que se convierte en un redescubrimiento de su identidad y de su país.",
+    awards: [
+      { name: "Festival de Sevilla", year: 2001, category: "Premio del Público" }
+    ],
+    cast: [
+      { name: "Jorge Perugorría", role: "Roberto" },
+      { name: "Isabel Santos", role: "Pilar" },
+      { name: "Mario Limonta", role: "Antonio" }
     ]
   },
 ];
