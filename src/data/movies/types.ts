@@ -52,16 +52,21 @@ export interface Movie {
 }
 
 /** Géneros disponibles para las películas */
-export type Genre = 
+export type Genre =
   | "Drama"
   | "Comedia"
-  | "Documental"
   | "Histórico"
+  | "Documental"
   | "Romance"
   | "Thriller"
-  | "Musical"
   | "Animación"
-  | "Experimental";
+  | "Experimental"
+  | "Aventuras"    // <--- Nuevo
+  | "Musical"      // <--- Nuevo (para Habana Blues)
+  | "Terror"       // <--- Nuevo (para Juan de los Muertos)
+  | "Crimen"       // <--- Nuevo (para Hacerse el Sueco)
+  | "Road Movie"   // <--- Nuevo (para Miel para Oshún)
+  | "Surrealista"; // <--- Nuevo (para La vida es silbar)
 
 /** Estructura para premios */
 export interface Award {
