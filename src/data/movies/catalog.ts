@@ -152,7 +152,7 @@ const movies1960s: Movie[] = [
     genre: ['Drama'],
     synopsis:
       'Sergio, un intelectual burgués, decide quedarse en Cuba tras el triunfo de la Revolución mientras su familia y amigos huyen a Miami. Solo y alienado, deambula por La Habana observando críticamente los vertiginosos cambios sociales, incapaz de integrarse pero tampoco de rechazar totalmente el nuevo proceso. Un estudio psicológico profundo sobre la identidad y la historia.',
-    videoUrl: 'https://www.youtube.com/embed/yUUzGFLx7jY',
+    videoUrl: "https://www.youtube.com/embed/2-z3zYBl1Cg",
     awards: [
       {
         name: 'Festival de Karlovy Vary',
