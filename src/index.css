@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* CineCuba Dark Luxury Theme */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 96%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 0 0% 96%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 96%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 40 30% 50%;
+    --accent-foreground: 0 0% 96%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 96%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 40 30% 50%;
+
+    --radius: 0.25rem;
+
+    /* Custom tokens */
+    --gold: 40 60% 55%;
+    --gold-muted: 40 30% 35%;
+    --hairline: 0 0% 20%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(to top, hsl(0 0% 4%) 0%, transparent 60%);
+    --gradient-card: linear-gradient(to top, hsl(0 0% 4% / 0.9) 0%, transparent 100%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 60px hsl(40 60% 55% / 0.15);
+    --shadow-card: 0 20px 40px hsl(0 0% 0% / 0.5);
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .hairline-border {
+    @apply border-hairline;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold to-gold-muted bg-clip-text text-transparent;
+  }
+
+  .glow-gold {
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+}
