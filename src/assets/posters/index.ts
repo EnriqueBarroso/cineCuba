@@ -70,7 +70,7 @@ export { default as posterDiosesRotos } from "@/assets/posters/los-dioses-rotos.
 export { default as posterHabanastation } from "@/assets/posters/habanastation.jpg";
 export { default as posterSergioSerguei } from "@/assets/posters/sergio-y-serguei.jpg";
 export { default as posterInocencia } from "@/assets/posters/inocencia.jpg";
-export { default as posterHelloHeminguey } from "@/assets/posters/hello-heminguey.jpg";
+export { default as posterHelloHeminguey } from "@/assets/posters/hello-hemingway.jpg";
 export { default as posterParaisoEstrellas } from "@/assets/posters/un-paraiso-bajo-estrellas.jpg";
 export { default as posterHacerseSueco } from "@/assets/posters/hacerse-el-sueco.jpg";
 export { default as posterMielOshun } from "@/assets/posters/miel-para-oshun.jpg";
