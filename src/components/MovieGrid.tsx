@@ -1,9 +1,9 @@
 import { useState, useCallback, useMemo, useEffect } from "react";
 import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom"; // <--- IMPORTANTE: Añadido useSearchParams
 import { useFavorites } from "@/hooks/useFavorites";
-import { useMovies } from "@/hooks/useMovies"; // Importamos el nuevo hook
-import { Movie } from "@/data/movies"; // Importamos solo el tipo Movie
+import { useMovies } from "@/hooks/useMovies";
+import { Movie } from "@/data/movies";
 import { MovieSearch } from "./MovieSearch";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -80,26 +80,56 @@ const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
 
 export const MovieGrid = () => {
   const { isFavorite, toggleFavorite } = useFavorites();
-  // Usamos el hook para obtener los datos reales
   const { movies, loading: loadingMovies } = useMovies();
+  
+  // Hook para leer la URL (ej: ?search=fresa)
+  const [searchParams] = useSearchParams();
+  const urlSearchQuery = searchParams.get("search");
 
   const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [isFiltering, setIsFiltering] = useState(false);
 
-  // Cuando cargan las películas de Supabase, actualizamos la lista
+  // === LÓGICA DE FILTRADO PRINCIPAL ===
   useEffect(() => {
-    if (movies.length > 0) {
+    if (movies.length === 0) return;
+
+    // Si hay una búsqueda en la URL (desde el Navbar)
+    if (urlSearchQuery) {
+      setIsFiltering(true);
+      const query = urlSearchQuery.toLowerCase().trim();
+      
+      const results = movies.filter(movie => 
+        movie.title.toLowerCase().includes(query) ||
+        movie.director.toLowerCase().includes(query) ||
+        movie.year.toString().includes(query) ||
+        movie.genre.some(g => g.toLowerCase().includes(query))
+      );
+      
+      setFilteredMovies(results);
+      setCurrentPage(1);
+      
+      // Hacemos scroll suave hacia la cartelera
+      document.getElementById("cartelera")?.scrollIntoView({ behavior: "smooth" });
+      
+      setTimeout(() => setIsFiltering(false), 300);
+    } 
+    // Si NO hay búsqueda en URL, mostramos todas (o dejamos que MovieSearch maneje el filtro local)
+    else {
       setFilteredMovies(movies);
     }
-  }, [movies]);
+  }, [movies, urlSearchQuery]); // Se ejecuta cuando cargan las pelis o cambia la URL
 
+  // Manejador para el buscador interno (MovieSearch)
   const handleFilteredMovies = useCallback((filtered: Movie[]) => {
-    setIsFiltering(true);
-    setFilteredMovies(filtered);
-    setCurrentPage(1);
-    setTimeout(() => setIsFiltering(false), 300);
-  }, []);
+    // Solo actualizamos si NO estamos usando la búsqueda del navbar actualmente
+    if (!urlSearchQuery) {
+      setIsFiltering(true);
+      setFilteredMovies(filtered);
+      setCurrentPage(1);
+      setTimeout(() => setIsFiltering(false), 300);
+    }
+  }, [urlSearchQuery]);
 
   const handlePageChange = (page: number) => {
     setIsFiltering(true);
@@ -117,27 +147,37 @@ export const MovieGrid = () => {
   }, [filteredMovies, currentPage]);
 
   return (
-    <section id="cartelera" className="py-20 lg:py-28 border-t border-hairline">
+    // Agregamos pt-24 para compensar el Navbar fijo
+    <section id="cartelera" className="py-20 lg:py-28 pt-24 border-t border-hairline scroll-mt-24">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-end justify-between mb-8">
           <div className="space-y-2">
             <span className="text-xs font-sans uppercase tracking-[0.2em] text-gold">
               Colección
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-medium">
-              Cartelera
-            </h2>
+            <div className="flex flex-col gap-1">
+              <h2 className="font-serif text-3xl md:text-4xl font-medium">
+                Cartelera
+              </h2>
+              {/* Mostrar qué estamos buscando si viene del Navbar */}
+              {urlSearchQuery && (
+                <p className="text-muted-foreground">
+                  Resultados para: <span className="text-gold font-medium">"{urlSearchQuery}"</span>
+                </p>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* IMPORTANTE: MovieSearch probablemente necesite actualizarse también */}
-        {/* Search and Filters */}
-        <div className="mb-12">
-          <MovieSearch
-            movies={movies}  
-            onFilteredMovies={handleFilteredMovies}
-          />
-        </div>
+        {/* Ocultamos el buscador interno si ya estamos filtrando por URL para no confundir */}
+        {!urlSearchQuery && (
+          <div className="mb-12">
+            <MovieSearch
+              movies={movies}  
+              onFilteredMovies={handleFilteredMovies}
+            />
+          </div>
+        )}
 
         {isLoading ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8">
@@ -167,8 +207,15 @@ export const MovieGrid = () => {
         ) : (
           <div className="text-center py-16">
             <p className="text-muted-foreground text-lg">
-              No se encontraron películas con los filtros seleccionados.
+              No se encontraron películas que coincidan con "{urlSearchQuery || 'tu búsqueda'}".
             </p>
+            {urlSearchQuery && (
+               <Link to="/peliculas">
+                 <Button variant="link" className="text-gold mt-2">
+                   Ver todas las películas
+                 </Button>
+               </Link>
+            )}
           </div>
         )}
 
