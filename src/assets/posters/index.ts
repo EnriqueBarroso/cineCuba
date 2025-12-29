@@ -13,7 +13,7 @@ export { default as poster12Sillas } from '@/assets/posters/12_sillas.jpg';
 
 // Para Memorias del Subdesarrollo (1968) - FALTABA ESTA EXPORTACIÓN
 // Si no tienes un póster específico, podemos reutilizar la imagen del Hero o el de Memoria
-export { default as posterMemoriasSub } from '@/assets/hero-memorias.jpg';
+export { default as posterMemoriasSub } from '@/assets/posters/poster-Memoria.jpg';
 
 export { default as posterJuanQuinQuin } from '@/assets/posters/aventuras-de-juan-quin-quin.jpg';
 
@@ -36,6 +36,7 @@ export { default as posterClandestinos } from '@/assets/posters/clandestinos.jpg
 export { default as posterPlaff } from '@/assets/posters/plaff.jpg';
 export { default as posterSePermuta } from '@/assets/posters/se-permuta.jpg';
 export { default as posterPapelesSecundarios } from '@/assets/posters/papeles-secundarios.jpg';
+export { default as posterNoviaDavid } from "@/assets/posters/una-novia-para-david.jpg";
 
 // === DÉCADA DE 1990s ===
 export { default as posterAdorablesMentiras } from '@/assets/posters/adorables-mentiras.jpg';
@@ -44,6 +45,9 @@ export { default as posterMadagascar } from '@/assets/posters/madagascar.jpg';
 export { default as posterElefanteBicicleta } from '@/assets/posters/el-elefante-y-la-bicicleta.jpg';
 export { default as posterGuantanamera } from '@/assets/posters/guantanamera.jpg';
 export { default as posterListaEspera } from '@/assets/posters/lista-de-espera.jpg';
+export { default as posterAmorVertical } from "@/assets/posters/amor-vertical.jpg";
+export { default as posterZafiros } from "@/assets/posters/zafiros-locura-azul.jpg";
+export { default as posterKleinesTropicana } from "@/assets/posters/kleines-tropicana.jpg";
 
 // === DÉCADA DE 2000s ===
 export { default as posterSuite } from '@/assets/posters/poster-SuiteHabana.jpg'; // Raíz

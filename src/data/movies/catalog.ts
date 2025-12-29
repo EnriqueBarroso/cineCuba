@@ -50,8 +50,22 @@ import {
   posterHelloHeminguey,
   posterParaisoEstrellas,
   posterHacerseSueco,
-  posterMielOshun
+  posterMielOshun,
+  posterNoviaDavid,
+  posterAmorVertical,
+  posterZafiros,
+  posterKleinesTropicana
 } from '@/assets/posters';
+
+// === NUEVOS IMPORTS HERO (Backdrops) ===
+import {
+  heroMemorias,
+  heroElpidio,
+  heroVampiros,
+  heroFresa,
+  heroHabana,
+  heroJuan
+} from '@/assets/hero';
 
 // ============================================================================
 // DÉCADA DE 1960
@@ -164,6 +178,7 @@ const movies1960s: Movie[] = [
       { name: 'Sergio Corrieri', role: 'Sergio' },
       { name: 'Daisy Granados', role: 'Elena' },
     ],
+    backdrop: heroMemorias,
   },
 
   {
@@ -305,7 +320,8 @@ const movies1970s: Movie[] = [
     videoUrl: "https://www.youtube.com/embed/v=example",
     awards: [{ name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" }],
     cast: [{ name: "Frank González", role: "Elpidio Valdés (voz)" }],
-    notes: "Frases de esta película son parte del habla popular cubana."
+    notes: "Frases de esta película son parte del habla popular cubana.",
+    backdrop: heroElpidio,
   },
 ];
 
@@ -398,6 +414,7 @@ const movies1980s: Movie[] = [
     videoUrl: 'https://www.youtube.com/embed/1v0eKz9Z1z8',
     awards: [],
     cast: [{ name: 'Frank González', role: 'Drácula (voz)' }],
+    backdrop: heroVampiros,
   },
   {
     id: 'en-tres-y-dos',
@@ -411,6 +428,24 @@ const movies1980s: Movie[] = [
       'Mario, un pelotero estrella que se acerca al final de su carrera, debe enfrentar el momento del retiro. La película explora el mundo del béisbol cubano desde dentro, mostrando las presiones, la fama, y la difícil transición hacia una vida fuera del deporte de alto rendimiento, todo ello con un toque humano y nostálgico.',
     awards: [],
     cast: [{ name: 'Samuel Claxton', role: 'El entrenador' }],
+  },
+  {
+    id: "una-novia-para-david",
+    title: "Una novia para David",
+    year: 1985,
+    director: "Orlando Rojas",
+    poster: posterNoviaDavid,
+    duration: "103 min",
+    genre: ["Comedia", "Romance"],
+    synopsis: "David es un estudiante universitario que busca novia. Se encuentra en una encrucijada entre conquistar a Olga, una chica espectacular pero superficial, o quedarse con Ofelia, su compañera de estudios, gordita e intelectual, con quien tiene una conexión profunda. Un retrato honesto y divertido de la juventud cubana de los 80.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real", // Busca el link en YouTube
+    awards: [
+      { name: "Festival de La Habana", year: 1985, category: "Premio de la Popularidad" }
+    ],
+    cast: [
+      { name: "Jorge Luis Álvarez", role: "David" },
+      { name: "María Isabel Díaz", role: "Ofelia" } // (La Sole de Vis a Vis)
+    ]
   },
   {
     id: 'clandestinos',
@@ -519,6 +554,7 @@ const movies1990s: Movie[] = [
       { name: 'Jorge Perugorría', role: 'Diego' },
       { name: 'Vladimir Cruz', role: 'David' },
     ],
+    backdrop: heroFresa,
   },
   {
     id: 'madagascar',
@@ -561,6 +597,59 @@ const movies1990s: Movie[] = [
       { name: 'Carlos Cruz', role: 'Adolfo' },
       { name: 'Mirtha Ibarra', role: 'Gina' },
     ],
+  },
+  {
+    id: "amor-vertical",
+    title: "Amor vertical",
+    year: 1997,
+    director: "Arturo Sotto",
+    poster: posterAmorVertical,
+    duration: "100 min",
+    genre: ["Comedia", "Romance"],
+    synopsis: "Estela y Ernesto se conocen y sienten una atracción inmediata. Intentan consumar su amor, pero se enfrentan a un problema eterno en La Habana: no tienen dónde hacerlo. Una comedia erótica y urbana que explora las dificultades de la intimidad en medio de la crisis y la falta de vivienda.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    awards: [
+      { name: "Premios Goya", year: 1998, category: "Nominada a Mejor Película Extranjera" }
+    ],
+    cast: [
+      { name: "Jorge Perugorría", role: "Ernesto" },
+      { name: "Silvia Águila", role: "Estela" }
+    ]
+  },
+  {
+    id: "zafiros-locura-azul",
+    title: "Zafiros, locura azul",
+    year: 1997,
+    director: "Manuel Herrera",
+    poster: posterZafiros,
+    duration: "115 min",
+    genre: ["Drama", "Musical", "Biográfico"],
+    synopsis: "Inspirada en la historia real del cuarteto vocal 'Los Zafiros', que causó sensación en la Cuba de los años 60 con su mezcla de doo-wop y ritmos cubanos. La película narra su ascenso meteórico a la fama y su trágica caída debido a los excesos y conflictos personales, todo envuelto en su inolvidable música.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    awards: [
+      { name: "Festival de La Habana", year: 1997, category: "Premio del Público" }
+    ],
+    cast: [
+      { name: "Luis Alberto García", role: "Ignacio" },
+      { name: "Sirio Soto", role: "Miguelito" }
+    ]
+  },
+  {
+    id: "kleines-tropicana",
+    title: "Kleines Tropicana",
+    year: 1999,
+    director: "Daniel Díaz Torres",
+    poster: posterKleinesTropicana,
+    duration: "115 min",
+    genre: ["Comedia", "Crimen"],
+    synopsis: "Una sátira policiaca llena de humor negro. Un turista alemán aparece muerto en La Habana vestido con plumas de cabaret. La investigación policial destapa una red de equívocos, espionaje aficionado y choques culturales. Una mirada irónica a los estereotipos sobre Cuba y los extranjeros.",
+    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    awards: [],
+    cast: [
+      { name: "Peter Lohmeyer", role: "Klaus" },
+      { name: "Vladimir Cruz", role: "Herman" },
+      { name: "Coralia Veloz", role: "Mireya" }
+    ]
   },
   {
     id: 'lista-espera',
@@ -720,7 +809,8 @@ const movies2000s: Movie[] = [
       { name: "Alberto Yoel", role: "Ruy" }, 
       { name: "Roberto Sanmartín", role: "Tito" },
       { name: "Yailene Sierra", role: "Caridad" }
-    ]
+    ],
+    backdrop: heroHabana,
   },
   {
     id: "los-dioses-rotos",
@@ -860,7 +950,8 @@ const movies2010s: Movie[] = [
     videoUrl: "https://www.youtube.com/embed/v=example",
     awards: [{ name: "Premio Goya", year: 2012, category: "Mejor Película Iberoamericana" }],
     cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }],
-    notes: "La primera película de zombis del cine cubano."
+    notes: "La primera película de zombis del cine cubano.",
+    backdrop: heroJuan,
   },
 
   {

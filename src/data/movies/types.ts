@@ -18,6 +18,8 @@ export interface Movie {
   /** Imagen del poster (import desde assets/posters) */
   poster: string;
   
+  /** para el header carrucel */
+  backdrop?: string;
   /** Sinopsis de la película */
   synopsis: string;
   
