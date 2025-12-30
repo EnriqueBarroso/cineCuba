@@ -114,26 +114,33 @@ const MovieDetail = () => {
       <Navbar />
       
       {/* Hero with Video */}
-      <section className="relative pt-20">
-        <div className="w-full aspect-video bg-secondary relative">
-          {movie.videoUrl ? (
-            <iframe
-              src={movie.videoUrl}
-              title={movie.title}
-              className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="w-20 h-20 rounded-full bg-foreground/10 flex items-center justify-center mx-auto">
-                  <Play className="w-8 h-8 text-foreground" />
+     {/* Sección de Video Ajustada */}
+      <section className="relative pt-24 pb-10"> {/* Añadido padding abajo (pb-10) y ajustado arriba */}
+        <div className="container mx-auto px-6">
+          
+          {/* AQUÍ ESTÁ EL TRUCO: max-w-5xl limita el ancho y mx-auto lo centra */}
+          <div className="max-w-5xl mx-auto aspect-video bg-secondary relative rounded-xl overflow-hidden shadow-2xl border border-white/10">
+            
+            {movie.videoUrl ? (
+              <iframe
+                src={movie.videoUrl}
+                title={movie.title}
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <div className="text-center space-y-4">
+                  <div className="w-20 h-20 rounded-full bg-foreground/10 flex items-center justify-center mx-auto">
+                    <Play className="w-8 h-8 text-foreground" />
+                  </div>
+                  <p className="text-muted-foreground">Video no disponible</p>
                 </div>
-                <p className="text-muted-foreground">Video no disponible</p>
               </div>
-            </div>
-          )}
+            )}
+            
+          </div>
         </div>
       </section>
 

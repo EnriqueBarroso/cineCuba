@@ -166,7 +166,7 @@ const movies1960s: Movie[] = [
     genre: ['Drama'],
     synopsis:
       'Sergio, un intelectual burgués, decide quedarse en Cuba tras el triunfo de la Revolución mientras su familia y amigos huyen a Miami. Solo y alienado, deambula por La Habana observando críticamente los vertiginosos cambios sociales, incapaz de integrarse pero tampoco de rechazar totalmente el nuevo proceso. Un estudio psicológico profundo sobre la identidad y la historia.',
-    videoUrl: "https://www.youtube.com/embed/2-z3zYBl1Cg",
+    videoUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
       {
         name: 'Festival de Karlovy Vary',
@@ -411,7 +411,7 @@ const movies1980s: Movie[] = [
     genre: ['Animación', 'Comedia'],
     synopsis:
       "Un científico vampiro crea el 'Vampisol', una fórmula que permite a los vampiros resistir la luz del sol. Su sobrino Pepito, un trompetista en La Habana de los años 30, desconoce su condición de vampiro y la importancia de la fórmula. Pronto se ve perseguido por la mafia de vampiros de Chicago y el grupo de vampiros europeos, desatando una hilarante guerra.",
-    videoUrl: 'https://www.youtube.com/embed/1v0eKz9Z1z8',
+    videoUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
     awards: [],
     cast: [{ name: 'Frank González', role: 'Drácula (voz)' }],
     backdrop: heroVampiros,
@@ -438,7 +438,7 @@ const movies1980s: Movie[] = [
     duration: "103 min",
     genre: ["Comedia", "Romance"],
     synopsis: "David es un estudiante universitario que busca novia. Se encuentra en una encrucijada entre conquistar a Olga, una chica espectacular pero superficial, o quedarse con Ofelia, su compañera de estudios, gordita e intelectual, con quien tiene una conexión profunda. Un retrato honesto y divertido de la juventud cubana de los 80.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real", // Busca el link en YouTube
+    videoUrl: "https://www.youtube.com/embed/-G-2kTjx25M", // Busca el link en YouTube
     awards: [
       { name: "Festival de La Habana", year: 1985, category: "Premio de la Popularidad" }
     ],
@@ -541,7 +541,7 @@ const movies1990s: Movie[] = [
     genre: ['Drama', 'Comedia'],
     synopsis:
       'Diego, un artista culto, homosexual y escéptico, entabla una amistad improbable con David, un joven estudiante universitario comunista y lleno de prejuicios. A través de conversaciones sobre arte, política y la vida en La Habana, ambos superan sus diferencias y construyen un vínculo profundo que desafía la intolerancia de su entorno.',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/ygR1OTyVr7I',
     awards: [
       { name: 'Oso de Plata', year: 1994, category: 'Gran Premio del Jurado' },
       {
@@ -800,7 +800,7 @@ const movies2000s: Movie[] = [
     duration: "115 min",
     genre: ["Drama", "Musical"],
     synopsis: "Ruy y Tito son dos jóvenes músicos cubanos que sueñan con triunfar con su grupo. Cuando unos productores españoles llegan a La Habana buscando talento, se enfrentan a un dilema: aceptar un contrato que les obliga a dejar atrás sus raíces o mantenerse fieles a su música y a su vida en Cuba.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real", 
+    videoUrl: "https://www.youtube.com/embed/5lEAnDR46zo", 
     awards: [
       { name: "Premios Goya", year: 2006, category: "Mejor Música Original" },
       { name: "Festival de La Habana", year: 2005, category: "Premio Coral" }
@@ -947,7 +947,7 @@ const movies2010s: Movie[] = [
     duration: "92 min",
     genre: ["Comedia", "Terror"],
     synopsis: "Una horda de zombis invade La Habana. El gobierno dice que son disidentes pagados por los Estados Unidos. Juan, un pícaro superviviente, decide hacer negocio: 'Juan de los Muertos, matamos a sus seres queridos'. Una sátira política hilarante y sangrienta.",
-    videoUrl: "https://www.youtube.com/embed/v=example",
+    videoUrl: "https://www.youtube.com/embed/mhcIBEqczpg",
     awards: [{ name: "Premio Goya", year: 2012, category: "Mejor Película Iberoamericana" }],
     cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }],
     notes: "La primera película de zombis del cine cubano.",
