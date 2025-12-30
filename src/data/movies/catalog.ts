@@ -317,7 +317,7 @@ const movies1970s: Movie[] = [
     duration: "70 min",
     genre: ["Animación", "Aventuras"],
     synopsis: "El largometraje que consolidó al personaje más icónico de la animación cubana. Elpidio, un coronel mambí, lucha por la independencia de Cuba contra el ejército español y el General Resoplez, con mucho humor, ingenio y cubanía.",
-    videoUrl: "https://www.youtube.com/embed/v=example",
+    videoUrl: "https://www.youtube.com/embed/6vcGn6a-0ss",
     awards: [{ name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" }],
     cast: [{ name: "Frank González", role: "Elpidio Valdés (voz)" }],
     notes: "Frases de esta película son parte del habla popular cubana.",
