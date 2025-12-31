@@ -48,11 +48,18 @@ export { default as posterListaEspera } from '@/assets/posters/lista-de-espera.j
 export { default as posterAmorVertical } from "@/assets/posters/amor-vertical.jpg";
 export { default as posterZafiros } from "@/assets/posters/zafiros-locura-azul.jpg";
 export { default as posterKleinesTropicana } from "@/assets/posters/kleines-tropicana.jpg";
+export { default as posterMariaAntonia } from "@/assets/posters/maria-antonia-poster.jpg";
+export { default as posterCaravana } from "@/assets/posters/caravana.jpg";
+export { default as posterAlicia } from "@/assets/posters/alicia-en-el-pueblo-de-maravillas.jpg";
+export { default as posterAmanda } from "@/assets/posters/las-profecias-de-amanda.jpg";
 
 // === DÉCADA DE 2000s ===
 export { default as posterSuite } from '@/assets/posters/poster-SuiteHabana.jpg'; // Raíz
 export { default as posterCuernoAbundancia } from '@/assets/posters/el-cuerno-de-la-abundancia.jpg';
 export { default as posterReyHabana } from '@/assets/posters/un-rey-en-la-habana.jpg';
+export { default as posterNada } from "@/assets/posters/nada.jpg";
+export { default as posterEntreCiclones } from "@/assets/posters/entre-ciclones.jpg";
+export { default as posterFrutas } from "@/assets/posters/frutas-en-el-cafe.jpg";
 
 // === DÉCADA DE 2010s ===
 export { default as posterChala } from '@/assets/posters/poster-Conducta.jpg'; // Raíz

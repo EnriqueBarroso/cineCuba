@@ -54,7 +54,14 @@ import {
   posterNoviaDavid,
   posterAmorVertical,
   posterZafiros,
-  posterKleinesTropicana
+  posterKleinesTropicana,
+  posterMariaAntonia,
+  posterCaravana,
+  posterAlicia,
+  posterAmanda,
+  posterNada,
+  posterEntreCiclones,
+  posterFrutas,
 } from '@/assets/posters';
 
 // === NUEVOS IMPORTS HERO (Backdrops) ===
@@ -516,6 +523,57 @@ const movies1980s: Movie[] = [
 
 const movies1990s: Movie[] = [
   {
+    id: 'maria-antonia',
+    title: 'María Antonia',
+    year: 1990,
+    director: 'Sergio Giral',
+    poster: posterMariaAntonia,
+    duration: '111 min',
+    genre: ['Drama'],
+    synopsis:
+      'Ambientada en los años 50 en un barrio marginal de La Habana. María Antonia es una mujer de carácter fuerte e indomable, cuya vida está marcada por la religión afrocubana, la miseria y una pasión destructiva por un boxeador. Una tragedia griega trasladada al solar habanero.',
+    videoUrl: '', // Pendiente de subir
+    awards: [],
+    cast: [
+      { name: 'Alina Rodríguez', role: 'María Antonia' },
+      { name: 'Alexis Valdés', role: 'Julián' },
+    ],
+  },
+  {
+    id: 'caravana',
+    title: 'Caravana',
+    year: 1990,
+    director: 'Rogelio París',
+    poster: posterCaravana,
+    duration: '100 min',
+    genre: ['Bélico', 'Aventuras'],
+    synopsis:
+      'Durante la guerra de Angola, una caravana de vehículos cubanos debe llevar suministros vitales a una posición aislada. En el trayecto, enfrentan emboscadas, minas y tensiones internas, mostrando el lado humano y heroico de los combatientes internacionalistas.',
+    videoUrl: '', // Pendiente de subir
+    awards: [],
+    cast: [
+      { name: 'Manuel Porto', role: 'El Jefe' },
+      { name: 'Patricio Wood', role: 'Soldado' },
+    ],
+  },
+  {
+    id: 'alicia-en-el-pueblo-de-maravillas',
+    title: 'Alicia en el pueblo de Maravillas',
+    year: 1991,
+    director: 'Daniel Díaz Torres',
+    poster: posterAlicia,
+    duration: '93 min',
+    genre: ['Sátira', 'Comedia'],
+    synopsis:
+      'Una instructora de teatro llega a un extraño pueblo llamado Maravillas, donde ocurren sucesos absurdos: los animales hablan, la burocracia es surrealista y los habitantes actúan de forma sospechosa. Una de las sátiras más polémicas y agudas sobre la sociedad cubana.',
+    videoUrl: '', // Pendiente de subir
+    awards: [{ name: 'Festival de Berlín', year: 1991, category: 'Premio Caligari' }],
+    cast: [
+      { name: 'Thais Valdés', role: 'Alicia' },
+      { name: 'Reynaldo Miravalles', role: 'El Director' },
+    ],
+  },
+  {
     id: 'adorables-mentiras',
     title: 'Adorables mentiras',
     year: 1991,
@@ -635,6 +693,23 @@ const movies1990s: Movie[] = [
     ]
   },
   {
+    id: 'las-profecias-de-amanda',
+    title: 'Las profecías de Amanda',
+    year: 1999,
+    director: 'Pastor Vega',
+    poster: posterAmanda,
+    duration: '90 min',
+    genre: ['Drama'],
+    synopsis:
+      'Amanda es una mujer humilde que posee un don extraordinario: puede ver el futuro. Sin embargo, su capacidad para profetizar no le sirve para resolver los conflictos de su propia vida, sus amores y la relación con sus hijos en la Cuba de fin de siglo.',
+    videoUrl: '', // Pendiente de subir
+    awards: [],
+    cast: [
+      { name: 'Daisy Granados', role: 'Amanda' },
+      { name: 'Laura Moras', role: 'Hija' },
+    ],
+  },
+  {
     id: "kleines-tropicana",
     title: "Kleines Tropicana",
     year: 1999,
@@ -730,6 +805,43 @@ const movies1990s: Movie[] = [
 
 const movies2000s: Movie[] = [
   {
+    id: 'nada',
+    title: 'Nada',
+    year: 2001,
+    director: 'Juan Carlos Cremata',
+    poster: posterNada,
+    duration: '92 min',
+    genre: ['Drama', 'Comedia'],
+    synopsis:
+      'Carla trabaja en una oficina de correos y sueña con irse a vivir a Miami con sus padres. Mientras espera su salida, empieza a reescribir las cartas tristes que llegan a la oficina para alegrar la vida de los destinatarios. Una fábula visualmente única filmada en blanco y negro con toques de color.',
+    videoUrl: '', // Pendiente de subir
+    awards: [
+      { name: 'Festival de La Habana', year: 2001, category: 'Mejor Ópera Prima' },
+      { name: 'Premios Goya', year: 2002, category: 'Nominada Mejor Película Extranjera' },
+    ],
+    cast: [
+      { name: 'Thais Valdés', role: 'Carla' },
+      { name: 'Nacha Guevara', role: 'La Administradora' },
+    ],
+  },
+  {
+    id: 'entre-ciclones',
+    title: 'Entre ciclones',
+    year: 2003,
+    director: 'Enrique Colina',
+    poster: posterEntreCiclones,
+    duration: '112 min',
+    genre: ['Comedia'],
+    synopsis:
+      'Tomás es un joven que intenta sobrevivir en La Habana sin meterse en líos, pero el caos lo persigue. Entre un ciclón que se acerca, una novia que lo presiona y un hermano delincuente que lo involucra en negocios turbios, su vida se convierte en un torbellino cómico.',
+    videoUrl: '', // Pendiente de subir
+    awards: [],
+    cast: [
+      { name: 'Mijail Mulkay', role: 'Tomás' },
+      { name: 'Indira Valdés', role: 'La novia' },
+    ],
+  },
+  {
     id: 'suite-habana-2003',
     title: 'Suite Habana',
     year: 2003,
@@ -748,6 +860,23 @@ const movies2000s: Movie[] = [
       },
     ],
     cast: [],
+  },
+  {
+    id: 'frutas-en-el-cafe',
+    title: 'Frutas en el café',
+    year: 2005,
+    director: 'Humberto Padrón',
+    poster: posterFrutas,
+    duration: '95 min',
+    genre: ['Drama', 'Suspense'],
+    synopsis:
+      'Tres historias independientes se entrelazan en La Habana actual: una prostituta con una deuda peligrosa, un pintor frustrado y un político corrupto. Un thriller con estética de videoclip y ritmo vertiginoso que muestra el lado más crudo de la sociedad.',
+    videoUrl: '', // Pendiente de subir
+    awards: [],
+    cast: [
+      { name: 'Jorge Perugorría', role: 'El Pintor' },
+      { name: 'Mario Limonta', role: 'El Político' },
+    ],
   },
   {
     id: 'rey-habana',
@@ -1013,24 +1142,29 @@ const movies2010s: Movie[] = [
   },
 ];
 
-const movies2020s: Movie[] = [];
+// === LÓGICA DE ORDENAMIENTO CRONOLÓGICO ===
 
-export const movies: Movie[] = [
-  ...movies1960s,
-  ...movies1970s,
-  ...movies1980s,
-  ...movies1990s,
-  ...movies2000s,
-  ...movies2010s,
-  ...movies2020s,
-];
+// 1. Función auxiliar: Recibe una lista y la devuelve ordenada por año (1990, 1991, 1992...)
+const sortByYear = (list: Movie[]) => {
+  return [...list].sort((a, b) => {
+    // 1. Primero comparamos el AÑO
+    if (a.year !== b.year) {
+      return a.year - b.year; // Ascendente (del más viejo al más nuevo)
+    }
+    // 2. Si son del MISMO AÑO, desempatamos por TÍTULO alfabético
+    return a.title.localeCompare(b.title);
+  });
+};
+
+// ... (El resto de los exports se queda igual que te pasé antes)
+export const movies = sortByYear([ ...movies1960s, ...movies1970s, /* etc */ ]);
 
 export const moviesByDecade = {
-  '1960s': movies1960s,
-  '1970s': movies1970s,
-  '1980s': movies1980s,
-  '1990s': movies1990s,
-  '2000s': movies2000s,
-  '2010s': movies2010s,
-  '2020s': movies2020s,
+  '1960s': sortByYear(movies1960s),
+  '1970s': sortByYear(movies1970s),
+  '1980s': sortByYear(movies1980s),
+  '1990s': sortByYear(movies1990s),
+  '2000s': sortByYear(movies2000s),
+  '2010s': sortByYear(movies2010s),
+  '2020s': sortByYear(movies2020s),
 };

@@ -63,12 +63,11 @@ export type Genre =
   | "Thriller"
   | "Animación"
   | "Experimental"
-  | "Aventuras"    // <--- Nuevo
-  | "Musical"      // <--- Nuevo (para Habana Blues)
-  | "Terror"       // <--- Nuevo (para Juan de los Muertos)
-  | "Crimen"       // <--- Nuevo (para Hacerse el Sueco)
-  | "Road Movie"   // <--- Nuevo (para Miel para Oshún)
-  | "Surrealista"; // <--- Nuevo (para La vida es silbar)
+  | "Aventuras"    
+  | "Musical"      
+  | "Terror"    
+  | "Crimen"      
+  | "Road Movie"   
 
 /** Estructura para premios */
 export interface Award {
