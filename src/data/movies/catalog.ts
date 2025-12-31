@@ -1166,5 +1166,4 @@ export const moviesByDecade = {
   '1990s': sortByYear(movies1990s),
   '2000s': sortByYear(movies2000s),
   '2010s': sortByYear(movies2010s),
-  '2020s': sortByYear(movies2020s),
 };
