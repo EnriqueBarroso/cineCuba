@@ -1,55 +1,17 @@
-/**
- * Tipos y definiciones para el catálogo de películas
- */
-
 export interface Movie {
-  /** ID único de la película (formato: titulo-año, ej: "lucia-1968") */
   id: string;
-  
-  /** Título de la película */
   title: string;
-  
-  /** Año de estreno */
   year: number;
-  
-  /** Director principal */
   director: string;
-  
-  /** Imagen del poster (import desde assets/posters) */
   poster: string;
-  
-  /** para el header carrucel */
-  backdrop?: string;
-  /** Sinopsis de la película */
-  synopsis: string;
-  
-  /** Duración (formato: "XXX min") */
+  backdrop?: string; // Opcional
   duration: string;
-  
-  /** Géneros de la película */
-  genre: Genre[];
-  
-  // === CAMPOS OPCIONALES ===
-  
-  /** URL del trailer (YouTube embed URL) */
-  trailerUrl?: string;
-  
-  /** URL del video completo */
-  videoUrl?: string;
-  
-  /** Premios recibidos */
+  genre: string[]; // Array de strings
+  synopsis: string;
+  videoUrl?: string;   // AQUÍ irá la PELÍCULA COMPLETA (Archive.org)
+  trailerUrl?: string; // AQUÍ irá el TRAILER (YouTube) <--- ¡NUEVO!
   awards?: Award[];
-  
-  /** Elenco principal */
   cast?: CastMember[];
-  
-  /** País de producción (default: Cuba) */
-  country?: string;
-  
-  /** Idioma original */
-  language?: string;
-  
-  /** Notas adicionales o curiosidades */
   notes?: string;
 }
 
@@ -81,3 +43,5 @@ export interface CastMember {
   name: string;
   role: string;
 }
+
+export type Genre = string;

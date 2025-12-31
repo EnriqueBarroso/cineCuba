@@ -1,77 +1,53 @@
-import { useState, useCallback, useMemo, useEffect } from "react";
-import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
-import { Link, useSearchParams } from "react-router-dom"; // <--- IMPORTANTE: Añadido useSearchParams
+import { useState, useMemo, useEffect } from "react";
+import { Heart, ChevronLeft, ChevronRight, FilterX } from "lucide-react";
+import { Link, useSearchParams } from "react-router-dom";
 import { useFavorites } from "@/hooks/useFavorites";
-import { useMovies } from "@/hooks/useMovies";
-import { Movie } from "@/data/movies";
+// CAMBIO CLAVE: Importamos directamente del catálogo estático
+import { movies as catalogMovies } from "@/data/movies/catalog";
 import { MovieSearch } from "./MovieSearch";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 
-const MOVIES_PER_PAGE = 6;
-
-const MovieCardSkeleton = () => {
-  return (
-    <div className="animate-fade-in">
-      <div className="space-y-4">
-        <Skeleton className="aspect-[2/3] w-full bg-secondary" />
-        <div className="space-y-2">
-          <Skeleton className="h-5 w-3/4 bg-secondary" />
-          <Skeleton className="h-4 w-1/2 bg-secondary" />
-        </div>
-      </div>
-    </div>
-  );
-};
+const MOVIES_PER_PAGE = 12; // Aumentado a 12 para que se vea mejor en desktop
 
 const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
-  movie: Movie;
+  movie: any; // Usamos any temporalmente para evitar conflictos de tipos si los hay
   isFavorite: boolean;
   onToggleFavorite: () => void;
 }) => {
   return (
-    <Link to={`/pelicula/${movie.id}`} className="group block">
-      <article>
-        <div className="relative aspect-[2/3] overflow-hidden bg-secondary">
+    <Link to={`/pelicula/${movie.id}`} className="group block h-full">
+      <article className="h-full flex flex-col">
+        <div className="relative aspect-[2/3] overflow-hidden bg-secondary rounded-sm">
           <img
             src={movie.poster}
             alt={`Poster de ${movie.title}`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
           />
-          <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none glow-gold" />
-
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
+          
           <button
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
               onToggleFavorite();
             }}
-            className="absolute top-3 right-3 p-2 rounded-full bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-background/80"
+            className="absolute top-2 right-2 p-2 rounded-full bg-black/40 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/60"
           >
             <Heart
               className={`w-4 h-4 transition-colors ${isFavorite
                   ? 'fill-gold text-gold'
-                  : 'text-foreground hover:text-gold'
+                  : 'text-white'
                 }`}
             />
           </button>
         </div>
 
-        <div className="mt-4 space-y-1">
-          <div className="flex items-start justify-between gap-2">
-            <h3 className="font-serif text-lg font-medium text-foreground group-hover:text-gold transition-colors duration-300">
-              {movie.title}
-            </h3>
-            {isFavorite && (
-              <Heart className="w-4 h-4 fill-gold text-gold flex-shrink-0 mt-1" />
-            )}
-          </div>
-          <div className="flex items-center gap-2 text-sm text-muted-foreground font-light">
-            <span>{movie.year}</span>
-            <span className="text-hairline">•</span>
-            <span>{movie.director}</span>
-          </div>
+        <div className="mt-3 space-y-1 flex-1">
+          <h3 className="font-medium text-white group-hover:text-gold transition-colors line-clamp-2 leading-tight">
+            {movie.title}
+          </h3>
+          <p className="text-xs text-muted-foreground">{movie.year} • {movie.director}</p>
         </div>
       </article>
     </Link>
@@ -80,26 +56,21 @@ const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
 
 export const MovieGrid = () => {
   const { isFavorite, toggleFavorite } = useFavorites();
-  const { movies, loading: loadingMovies } = useMovies();
-  
-  // Hook para leer la URL (ej: ?search=fresa)
   const [searchParams] = useSearchParams();
   const urlSearchQuery = searchParams.get("search");
 
-  const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
+  // Estado local de películas (Cargadas desde catalog.ts)
+  const [filteredMovies, setFilteredMovies] = useState(catalogMovies);
   const [currentPage, setCurrentPage] = useState(1);
   const [isFiltering, setIsFiltering] = useState(false);
 
-  // === LÓGICA DE FILTRADO PRINCIPAL ===
+  // Efecto para manejar la búsqueda desde la URL (Navbar)
   useEffect(() => {
-    if (movies.length === 0) return;
-
-    // Si hay una búsqueda en la URL (desde el Navbar)
     if (urlSearchQuery) {
       setIsFiltering(true);
       const query = urlSearchQuery.toLowerCase().trim();
       
-      const results = movies.filter(movie => 
+      const results = catalogMovies.filter(movie => 
         movie.title.toLowerCase().includes(query) ||
         movie.director.toLowerCase().includes(query) ||
         movie.year.toString().includes(query) ||
@@ -108,155 +79,114 @@ export const MovieGrid = () => {
       
       setFilteredMovies(results);
       setCurrentPage(1);
-      
-      // Hacemos scroll suave hacia la cartelera
-      document.getElementById("cartelera")?.scrollIntoView({ behavior: "smooth" });
-      
       setTimeout(() => setIsFiltering(false), 300);
-    } 
-    // Si NO hay búsqueda en URL, mostramos todas (o dejamos que MovieSearch maneje el filtro local)
-    else {
-      setFilteredMovies(movies);
-    }
-  }, [movies, urlSearchQuery]); // Se ejecuta cuando cargan las pelis o cambia la URL
-
-  // Manejador para el buscador interno (MovieSearch)
-  const handleFilteredMovies = useCallback((filtered: Movie[]) => {
-    // Solo actualizamos si NO estamos usando la búsqueda del navbar actualmente
-    if (!urlSearchQuery) {
-      setIsFiltering(true);
-      setFilteredMovies(filtered);
-      setCurrentPage(1);
-      setTimeout(() => setIsFiltering(false), 300);
+    } else {
+      // Si no hay búsqueda en URL, dejamos que el componente MovieSearch maneje el estado inicial
+      // o reseteamos a todas si venimos de una búsqueda
+      setFilteredMovies(catalogMovies);
     }
   }, [urlSearchQuery]);
 
-  const handlePageChange = (page: number) => {
-    setIsFiltering(true);
-    setCurrentPage(page);
-    document.getElementById("cartelera")?.scrollIntoView({ behavior: "smooth" });
-    setTimeout(() => setIsFiltering(false), 300);
+  // Manejador que recibe los resultados del componente MovieSearch
+  const handleSearchResults = (results: any[]) => {
+    if (!urlSearchQuery) {
+      setFilteredMovies(results);
+      setCurrentPage(1);
+    }
   };
 
-  const isLoading = loadingMovies || isFiltering;
+  // Lógica de Paginación
   const totalPages = Math.ceil(filteredMovies.length / MOVIES_PER_PAGE);
-
   const paginatedMovies = useMemo(() => {
     const startIndex = (currentPage - 1) * MOVIES_PER_PAGE;
     return filteredMovies.slice(startIndex, startIndex + MOVIES_PER_PAGE);
   }, [filteredMovies, currentPage]);
 
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    // Agregamos pt-24 para compensar el Navbar fijo
-    <section id="cartelera" className="py-20 lg:py-28 pt-24 border-t border-hairline scroll-mt-24">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-end justify-between mb-8">
-          <div className="space-y-2">
-            <span className="text-xs font-sans uppercase tracking-[0.2em] text-gold">
-              Colección
-            </span>
-            <div className="flex flex-col gap-1">
-              <h2 className="font-serif text-3xl md:text-4xl font-medium">
-                Cartelera
-              </h2>
-              {/* Mostrar qué estamos buscando si viene del Navbar */}
-              {urlSearchQuery && (
-                <p className="text-muted-foreground">
-                  Resultados para: <span className="text-gold font-medium">"{urlSearchQuery}"</span>
-                </p>
-              )}
+    <section className="py-10 animate-fade-in">
+      <div className="container px-6 lg:px-12">
+        
+        {/* Encabezado y Buscador */}
+        <div className="mb-10 space-y-6">
+          {!urlSearchQuery && (
+            <MovieSearch
+              movies={catalogMovies}  
+              onFilteredMovies={handleSearchResults}
+            />
+          )}
+
+          {urlSearchQuery && (
+            <div className="flex items-center gap-2 text-lg">
+              <span className="text-muted-foreground">Resultados para:</span>
+              <span className="text-gold font-medium">"{urlSearchQuery}"</span>
+              <Link to="/peliculas" className="ml-4 text-xs text-white/50 hover:text-white flex items-center gap-1">
+                <FilterX className="w-3 h-3" /> Limpiar búsqueda
+              </Link>
             </div>
-          </div>
+          )}
         </div>
 
-        {/* Ocultamos el buscador interno si ya estamos filtrando por URL para no confundir */}
-        {!urlSearchQuery && (
-          <div className="mb-12">
-            <MovieSearch
-              movies={movies}  
-              onFilteredMovies={handleFilteredMovies}
-            />
-          </div>
-        )}
-
-        {isLoading ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8">
-            {Array.from({ length: MOVIES_PER_PAGE }).map((_, index) => (
-              <MovieCardSkeleton key={index} />
-            ))}
-          </div>
-        ) : paginatedMovies.length > 0 ? (
-          <div
-            key={currentPage}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 animate-fade-in"
-          >
-            {paginatedMovies.map((movie, index) => (
-              <div
+        {/* Grid de Resultados */}
+        <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-x-6 gap-y-10 min-h-[400px] transition-opacity duration-300 ${isFiltering ? 'opacity-50' : 'opacity-100'}`}>
+          {paginatedMovies.length > 0 ? (
+            paginatedMovies.map((movie) => (
+              <MovieCard
                 key={movie.id}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <MovieCard
-                  movie={movie}
-                  isFavorite={isFavorite(movie.id)}
-                  onToggleFavorite={() => toggleFavorite(movie.id)}
-                />
+                movie={movie}
+                isFavorite={isFavorite(movie.id)}
+                onToggleFavorite={() => toggleFavorite(movie.id)}
+              />
+            ))
+          ) : (
+            <div className="col-span-full flex flex-col items-center justify-center py-20 text-center">
+              <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-4">
+                <FilterX className="w-8 h-8 text-muted-foreground" />
               </div>
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-16">
-            <p className="text-muted-foreground text-lg">
-              No se encontraron películas que coincidan con "{urlSearchQuery || 'tu búsqueda'}".
-            </p>
-            {urlSearchQuery && (
-               <Link to="/peliculas">
-                 <Button variant="link" className="text-gold mt-2">
-                   Ver todas las películas
-                 </Button>
-               </Link>
-            )}
-          </div>
-        )}
+              <h3 className="text-xl font-medium text-white mb-2">No encontramos películas</h3>
+              <p className="text-muted-foreground max-w-md">
+                Intenta ajustar los filtros o busca con otros términos.
+              </p>
+              <Button 
+                variant="link" 
+                className="text-gold mt-4"
+                onClick={() => window.location.href = '/peliculas'}
+              >
+                Ver todo el catálogo
+              </Button>
+            </div>
+          )}
+        </div>
 
+        {/* Paginación */}
         {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-2 mt-12">
+          <div className="mt-16 flex justify-center gap-2">
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
               onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1 || isLoading}
-              className="text-muted-foreground hover:text-foreground hover:bg-secondary disabled:opacity-30"
+              disabled={currentPage === 1}
+              className="border-white/10 hover:bg-white/5"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4" />
             </Button>
-
-            <div className="flex items-center gap-1">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <Button
-                  key={page}
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => handlePageChange(page)}
-                  disabled={isLoading}
-                  className={`w-10 h-10 ${currentPage === page
-                      ? "bg-gold text-primary-foreground hover:bg-gold/90"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                    }`}
-                >
-                  {page}
-                </Button>
-              ))}
-            </div>
+            
+            <span className="flex items-center px-4 text-sm text-muted-foreground font-medium">
+              Página {currentPage} de {totalPages}
+            </span>
 
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
               onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages || isLoading}
-              className="text-muted-foreground hover:text-foreground hover:bg-secondary disabled:opacity-30"
+              disabled={currentPage === totalPages}
+              className="border-white/10 hover:bg-white/5"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4" />
             </Button>
           </div>
         )}

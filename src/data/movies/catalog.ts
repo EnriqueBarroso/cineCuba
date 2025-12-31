@@ -1,6 +1,6 @@
 /**
  * CATÁLOGO DE PELÍCULAS DEL CINE CUBANO
- * Archivo: src/data/catalog.ts
+ * Archivo: src/data/movies/catalog.ts
  */
 
 import type { Movie } from './types';
@@ -90,6 +90,8 @@ const movies1960s: Movie[] = [
     genre: ['Comedia'],
     synopsis:
       'Un aristócrata venido a menos y su antiguo chófer buscan desesperadamente unos diamantes que fueron escondidos en una de las doce sillas de un juego de comedor antes de ser expropiadas por la Revolución. En su frenética búsqueda, se enfrentan a las nuevas realidades sociales de Cuba.',
+    videoUrl: '', 
+    trailerUrl: '',
     awards: [
       { name: 'Festival de Karlovy Vary', year: 1963, category: 'Mención Especial' },
     ],
@@ -108,7 +110,8 @@ const movies1960s: Movie[] = [
     genre: ['Comedia', 'Aventuras'],
     synopsis:
       'Juan Quin Quín es un campesino buscavidas que, junto a su amigo Jachero y su amada Teresa, vive múltiples aventuras en la Cuba prerrevolucionaria. La película parodia los géneros del cine comercial para narrar la toma de conciencia política.',
-    videoUrl: 'https://www.youtube.com/embed/3vM_z4OqTkw',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/_HilxAW2dg4',
     awards: [
       { name: 'Festival de Karlovy Vary', year: 1967, category: 'Premio Especial del Jurado' },
     ],
@@ -127,7 +130,8 @@ const movies1960s: Movie[] = [
     genre: ['Comedia'],
     synopsis:
       'Un joven intenta recuperar el carnet laboral de su tío recién fallecido, el cual fue enterrado con él, para que su viuda pueda cobrar la pensión. Esto desata una cadena de trámites absurdos y situaciones kafkianas.',
-    videoUrl: 'https://www.youtube.com/embed/ZqjeKGGE1Z4',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/ZqjeKGGE1Z4',
     awards: [
       { name: 'Festival de Karlovy Vary', year: 1966, category: 'Premio Especial del Jurado' },
     ],
@@ -143,7 +147,8 @@ const movies1960s: Movie[] = [
     genre: ['Drama', 'Histórico'],
     synopsis:
       'Tres episodios, tres mujeres llamadas Lucía, tres momentos históricos: la guerra de independencia de 1895, la lucha contra Machado en los años 30 y la Revolución de los 60.',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/A_oD1MCtk5w',
     awards: [
       { name: 'Festival de Moscú', year: 1969, category: 'Gran Premio' },
     ],
@@ -162,7 +167,8 @@ const movies1960s: Movie[] = [
     genre: ['Drama'],
     synopsis:
       'Sergio, un intelectual burgués, decide quedarse en Cuba tras el triunfo de la Revolución mientras su familia y amigos huyen a Miami. Solo y alienado, deambula por La Habana observando críticamente los vertiginosos cambios sociales.',
-    videoUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
+    videoUrl: "", // Pendiente de Archive.org
+    trailerUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
       { name: 'Festival de Karlovy Vary', year: 1968, category: 'Premio FIPRESCI' },
     ],
@@ -183,6 +189,7 @@ const movies1960s: Movie[] = [
     synopsis:
       'Una coproducción cubano-soviética visualmente deslumbrante que narra cuatro historias sobre la vida en Cuba antes de la Revolución. Famosa por sus increíbles planos secuencia y su fotografía en blanco y negro.',
     videoUrl: '', 
+    trailerUrl: '',
     awards: [{ name: 'Cannes Classics', year: 2004, category: 'Restauración' }],
     cast: [
       { name: 'Sergio Corrieri', role: 'Alberto' },
@@ -209,6 +216,8 @@ const movies1970s: Movie[] = [
     awards: [
       { name: 'Festival de Karlovy Vary', year: 1974, category: 'Premio Especial' },
     ],
+     videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/PoKUHKXj3Co&list=RDPoKUHKXj3Co&start_radio=1',
     cast: [{ name: 'Sergio Corrieri', role: 'Alberto Delgado' }],
   },
   {
@@ -222,6 +231,8 @@ const movies1970s: Movie[] = [
     synopsis:
       'Yolanda, una maestra de clase media, se enamora de Mario, un obrero de un barrio marginal. La película mezcla ficción y documental para examinar los conflictos de clase y el machismo.',
     awards: [],
+     videoUrl: 'https://archive.org/details/de-cierta-manera', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/csNWvMxNVXo',
     cast: [
       { name: 'Yolanda Cuéllar', role: 'Yolanda' },
       { name: 'Mario Balmaseda', role: 'Mario' },
@@ -240,6 +251,8 @@ const movies1970s: Movie[] = [
     awards: [
       { name: 'Festival de La Habana', year: 1976, category: 'Gran Premio' },
     ],
+    videoUrl: '',
+    trailerUrl: 'https://www.youtube.com/embed/lfluvDZsqms',
     cast: [{ name: 'Nelson Villagra', role: 'El Conde' }],
   },
   {
@@ -255,6 +268,7 @@ const movies1970s: Movie[] = [
     awards: [
       { name: 'Festival de La Habana', year: 1979, category: 'Gran Premio Coral' },
     ],
+    trailerUrl: 'https://www.youtube.com/embed/ff5SpRmTrng',
     cast: [
       { name: 'Daisy Granados', role: 'Teresa' },
       { name: 'Adolfo Llauradó', role: 'Ramón' },
@@ -270,7 +284,8 @@ const movies1970s: Movie[] = [
     genre: ['Drama'],
     synopsis:
       "Una familia aristocrática decide encerrarse en su mansión esperando que la Revolución pase. Aislados, mantienen sus jerarquías hasta involucionar hacia la barbarie.",
-    videoUrl: 'https://www.youtube.com/embed/7qKSk9fpF8M',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/7qKSk9fpF8M',
     awards: [],
     cast: [{ name: 'Enrique Santiesteban', role: 'Sebastián' }],
   },
@@ -287,6 +302,8 @@ const movies1970s: Movie[] = [
     awards: [
       { name: 'Festival de Moscú', year: 1978, category: 'Premio Especial' },
     ],
+    videoUrl: '',
+    trailerUrl: 'https://www.youtube.com/embed/sM9WoGomm_E',
     cast: [{ name: 'Salvador Wood', role: 'Mario' }],
   },
   {
@@ -298,7 +315,8 @@ const movies1970s: Movie[] = [
     duration: "70 min",
     genre: ["Animación", "Aventuras"],
     synopsis: "El largometraje que consolidó al personaje más icónico de la animación cubana. Elpidio, un coronel mambí, lucha por la independencia de Cuba contra el ejército español y el General Resoplez.",
-    videoUrl: "https://www.youtube.com/embed/6vcGn6a-0ss",
+    videoUrl: "", // Pendiente de Archive.org
+    trailerUrl: "https://www.youtube.com/embed/6vcGn6a-0ss",
     awards: [{ name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" }],
     cast: [{ name: "Frank González", role: "Elpidio Valdés (voz)" }],
     backdrop: heroElpidio,
@@ -348,7 +366,8 @@ const movies1980s: Movie[] = [
     genre: ['Comedia'],
     synopsis:
       'Dos jóvenes enamorados enfrentan un conflicto inesperado cuando sus padres solteros comienzan su propio romance, invirtiendo los roles generacionales.',
-    videoUrl: 'https://www.youtube.com/embed/yUUzGFLx7jY',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/yUUzGFLx7jY',
     awards: [],
     cast: [
       { name: 'Luis Alberto García', role: 'Carlos' },
@@ -383,7 +402,8 @@ const movies1980s: Movie[] = [
     genre: ['Animación', 'Comedia'],
     synopsis:
       "Un científico vampiro crea una fórmula para resistir el sol. Su sobrino Pepito debe protegerla de la mafia de vampiros de Chicago y Europa.",
-    videoUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
     awards: [],
     cast: [{ name: 'Frank González', role: 'Drácula (voz)' }],
     backdrop: heroVampiros,
@@ -410,7 +430,8 @@ const movies1980s: Movie[] = [
     duration: "103 min",
     genre: ["Comedia", "Romance"],
     synopsis: "David busca novia y se debate entre Olga, espectacular pero superficial, y Ofelia, su compañera intelectual con quien tiene una conexión profunda.",
-    videoUrl: "https://www.youtube.com/embed/-G-2kTjx25M",
+    videoUrl: "", // Pendiente de Archive.org
+    trailerUrl: "https://www.youtube.com/embed/-G-2kTjx25M",
     awards: [
       { name: "Festival de La Habana", year: 1985, category: "Premio de la Popularidad" }
     ],
@@ -494,6 +515,7 @@ const movies1990s: Movie[] = [
     synopsis:
       'Ambientada en los años 50. María Antonia es una mujer indomable cuya vida está marcada por la religión afrocubana y una pasión destructiva por un boxeador.',
     videoUrl: '',
+    trailerUrl: '',
     awards: [],
     cast: [
       { name: 'Alina Rodríguez', role: 'María Antonia' },
@@ -511,6 +533,7 @@ const movies1990s: Movie[] = [
     synopsis:
       'Durante la guerra de Angola, una caravana militar cubana debe abastecer un puente aislado, enfrentándose a emboscadas y tensiones internas.',
     videoUrl: '',
+    trailerUrl: '',
     awards: [],
     cast: [
       { name: 'Manuel Porto', role: 'El Jefe' },
@@ -528,6 +551,7 @@ const movies1990s: Movie[] = [
     synopsis:
       'Una instructora de teatro llega a un pueblo donde ocurren sucesos absurdos y burocráticos. Una sátira mordaz sobre la sociedad cubana.',
     videoUrl: '',
+    trailerUrl: '',
     awards: [{ name: 'Festival de Berlín', year: 1991, category: 'Premio Caligari' }],
     cast: [
       { name: 'Thais Valdés', role: 'Alicia' },
@@ -560,7 +584,8 @@ const movies1990s: Movie[] = [
     genre: ['Drama', 'Comedia'],
     synopsis:
       'Diego, un artista homosexual, y David, un joven comunista, construyen una amistad improbable que desafía la intolerancia en La Habana de los 90.',
-    videoUrl: 'https://www.youtube.com/embed/ygR1OTyVr7I',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/ygR1OTyVr7I',
     awards: [
       { name: 'Oso de Plata', year: 1994, category: 'Gran Premio del Jurado' },
       { name: 'Nominación al Oscar', year: 1995, category: 'Mejor Película Extranjera' },
@@ -607,6 +632,8 @@ const movies1990s: Movie[] = [
     genre: ['Comedia'],
     synopsis:
       'Un cortejo fúnebre debe cruzar Cuba cumpliendo un absurdo plan estatal de transporte. Un viaje tragicómico sobre la burocracia.',
+    videoUrl: "", 
+    trailerUrl: "https://www.youtube.com/embed/RueAO8A7rdw",
     awards: [],
     cast: [
       { name: 'Carlos Cruz', role: 'Adolfo' },
@@ -623,6 +650,7 @@ const movies1990s: Movie[] = [
     genre: ["Comedia", "Romance"],
     synopsis: "Estela y Ernesto intentan consumar su amor, pero no tienen dónde hacerlo. Una comedia sobre la falta de vivienda y la intimidad.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [
       { name: "Premios Goya", year: 1998, category: "Nominada a Mejor Película Extranjera" }
     ],
@@ -641,6 +669,7 @@ const movies1990s: Movie[] = [
     genre: ["Drama", "Musical"],
     synopsis: "La historia real del cuarteto vocal 'Los Zafiros', su ascenso meteórico en los 60 y su trágica caída, envuelta en su inolvidable música.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 1997, category: "Premio del Público" }
     ],
@@ -660,6 +689,7 @@ const movies1990s: Movie[] = [
     synopsis:
       'Amanda tiene el don de ver el futuro, pero esto no le sirve para resolver los conflictos de su propia vida y familia.',
     videoUrl: '',
+    trailerUrl: '',
     awards: [],
     cast: [
       { name: 'Daisy Granados', role: 'Amanda' },
@@ -676,6 +706,7 @@ const movies1990s: Movie[] = [
     genre: ["Comedia", "Crimen"],
     synopsis: "Un turista alemán aparece muerto vestido con plumas de cabaret. Una sátira policiaca llena de humor negro y choques culturales.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [],
     cast: [
       { name: "Peter Lohmeyer", role: "Klaus" },
@@ -708,6 +739,7 @@ const movies1990s: Movie[] = [
     genre: ["Drama", "Surrealista"],
     synopsis: "Tres personajes buscan la felicidad en una Habana surrealista, cruzándose con la misteriosa figura de Santa Bárbara.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [
       { name: "Festival de Sundance", year: 1999, category: "Premio del Jurado" },
       { name: "Premio Goya", year: 1999, category: "Mejor Película Extranjera" }
@@ -764,6 +796,7 @@ const movies2000s: Movie[] = [
     synopsis:
       'Carla reescribe cartas tristes en la oficina de correos para alegrar a los destinatarios mientras espera irse a vivir a Miami.',
     videoUrl: '',
+    trailerUrl: '',
     awards: [
       { name: 'Festival de La Habana', year: 2001, category: 'Mejor Ópera Prima' },
       { name: 'Premios Goya', year: 2002, category: 'Nominada Mejor Película Extranjera' },
@@ -784,6 +817,7 @@ const movies2000s: Movie[] = [
     synopsis:
       'Tomás intenta sobrevivir en La Habana, pero un ciclón, su novia y su hermano delincuente convierten su vida en un torbellino cómico.',
     videoUrl: '',
+    trailerUrl: '',
     awards: [],
     cast: [
       { name: 'Mijail Mulkay', role: 'Tomás' },
@@ -800,7 +834,8 @@ const movies2000s: Movie[] = [
     genre: ['Documental'],
     synopsis:
       'Un día en la vida de varios habitantes de La Habana. Sin diálogos, una sinfonía visual sobre la realidad cubana.',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
       { name: 'Festival de San Sebastián', year: 2003, category: 'Premio FIPRESCI' },
     ],
@@ -817,6 +852,7 @@ const movies2000s: Movie[] = [
     synopsis:
       'Tres historias se entrelazan en La Habana: una prostituta, un pintor y un político. Un thriller sobre decisiones límite.',
     videoUrl: '',
+    trailerUrl: '',
     awards: [],
     cast: [
       { name: 'Jorge Perugorría', role: 'El Pintor' },
@@ -859,6 +895,7 @@ const movies2000s: Movie[] = [
     genre: ["Drama"],
     synopsis: "Una familia se graba en video para su hijo emigrado. Lo que empieza alegre va revelando secretos y dolores familiares.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [{ name: "Festival de La Habana", year: 2001, category: "Premio Coral" }],
     cast: [{ name: "Enrique Molina", role: "Padre" }, { name: "Verónica Lynn", role: "Madre" }],
   },
@@ -871,7 +908,8 @@ const movies2000s: Movie[] = [
     duration: "115 min",
     genre: ["Drama", "Musical"],
     synopsis: "Dos músicos cubanos enfrentan un dilema: aceptar un contrato en España dejando atrás sus raíces o quedarse en Cuba.",
-    videoUrl: "https://www.youtube.com/embed/5lEAnDR46zo", 
+    videoUrl: "", // Pendiente de Archive.org
+    trailerUrl: "https://www.youtube.com/embed/5lEAnDR46zo", 
     awards: [
       { name: "Premios Goya", year: 2006, category: "Mejor Música Original" },
     ],
@@ -891,6 +929,7 @@ const movies2000s: Movie[] = [
     genre: ["Drama"],
     synopsis: "Laura investiga al famoso proxeneta Alberto Yarini, adentrándose en zonas oscuras donde pasado y presente se entrelazan.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2008, category: "Premio del Público" },
     ],
@@ -948,7 +987,8 @@ const movies2010s: Movie[] = [
     genre: ['Drama', 'Histórico'],
     synopsis:
       'Una inmersión profunda en la infancia y adolescencia de José Martí, mostrando al niño sensible que se convertiría en libertador.',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
       { name: 'Festival de La Habana', year: 2010, category: 'Gran Premio Coral' },
     ],
@@ -964,7 +1004,8 @@ const movies2010s: Movie[] = [
     genre: ['Drama', 'Experimental'],
     synopsis:
       'Un intelectual cubano en el exilio vive desconectado de la sociedad. Un collage visual sobre la alienación.',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
       { name: 'Festival de Tribeca', year: 2010, category: 'Mejor Película (New York)' },
     ],
@@ -980,7 +1021,8 @@ const movies2010s: Movie[] = [
     genre: ['Drama'],
     synopsis:
       'Chala, un niño problemático, y Carmela, su maestra, enfrentan una batalla moral cuando el sistema intenta enviarlo a una escuela de conducta.',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: '', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
       { name: 'Premio Goya', year: 2015, category: 'Mejor Película Iberoamericana' },
     ],
@@ -998,7 +1040,8 @@ const movies2010s: Movie[] = [
     duration: "92 min",
     genre: ["Comedia", "Terror"],
     synopsis: "Zombis invaden La Habana. Juan decide hacer negocio matando a los seres queridos de la gente.",
-    videoUrl: "https://www.youtube.com/embed/mhcIBEqczpg",
+    videoUrl: "", // Pendiente de Archive.org
+    trailerUrl: "https://www.youtube.com/embed/mhcIBEqczpg",
     awards: [{ name: "Premio Goya", year: 2012, category: "Mejor Película Iberoamericana" }],
     cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }],
     backdrop: heroJuan,
@@ -1013,6 +1056,7 @@ const movies2010s: Movie[] = [
     genre: ["Drama", "Aventuras"],
     synopsis: "Dos niños de entornos sociales opuestos se pierden en La Habana y forjan una amistad inesperada.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [
       { name: "Festival de Traverse City", year: 2011, category: "Premio del Público" }
     ],
@@ -1031,6 +1075,7 @@ const movies2010s: Movie[] = [
     genre: ["Drama", "Comedia"],
     synopsis: "En 1991, un radioaficionado cubano contacta con el último cosmonauta soviético olvidado en el espacio.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [
       { name: "Festival de Málaga", year: 2018, category: "Mejor Película Iberoamericana" }
     ],
@@ -1049,6 +1094,7 @@ const movies2010s: Movie[] = [
     genre: ["Drama", "Histórico"],
     synopsis: "Ocho estudiantes de medicina son injustamente condenados a muerte en 1871. Años después se busca demostrar su inocencia.",
     videoUrl: "",
+    trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2018, category: "Premio Especial del Jurado" },
     ],
