@@ -1,5 +1,6 @@
 /**
  * CATÁLOGO DE PELÍCULAS DEL CINE CUBANO
+ * Archivo: src/data/catalog.ts
  */
 
 import type { Movie } from './types';
@@ -64,7 +65,7 @@ import {
   posterFrutas,
 } from '@/assets/posters';
 
-// === NUEVOS IMPORTS HERO (Backdrops) ===
+// === IMPORTS HERO (Backdrops) ===
 import {
   heroMemorias,
   heroElpidio,
@@ -88,13 +89,9 @@ const movies1960s: Movie[] = [
     duration: '97 min',
     genre: ['Comedia'],
     synopsis:
-      'Un aristócrata venido a menos y su antiguo chófer buscan desesperadamente unos diamantes que fueron escondidos en una de las doce sillas de un juego de comedor antes de ser expropiadas por la Revolución. En su frenética búsqueda, se enfrentan a las nuevas realidades sociales de Cuba, creando situaciones hilarantes y críticas sobre la adaptación al cambio.',
+      'Un aristócrata venido a menos y su antiguo chófer buscan desesperadamente unos diamantes que fueron escondidos en una de las doce sillas de un juego de comedor antes de ser expropiadas por la Revolución. En su frenética búsqueda, se enfrentan a las nuevas realidades sociales de Cuba.',
     awards: [
-      {
-        name: 'Festival de Karlovy Vary',
-        year: 1963,
-        category: 'Mención Especial',
-      },
+      { name: 'Festival de Karlovy Vary', year: 1963, category: 'Mención Especial' },
     ],
     cast: [
       { name: 'Enrique Santiesteban', role: 'Hipólito' },
@@ -110,14 +107,10 @@ const movies1960s: Movie[] = [
     duration: '110 min',
     genre: ['Comedia', 'Aventuras'],
     synopsis:
-      'Juan Quin Quín es un campesino buscavidas que, junto a su amigo Jachero y su amada Teresa, vive múltiples aventuras en la Cuba prerrevolucionaria. La película parodia los géneros del cine comercial (western, bélico) para narrar la toma de conciencia política de sus protagonistas, mezclando humor, acción y crítica social de manera innovadora.',
+      'Juan Quin Quín es un campesino buscavidas que, junto a su amigo Jachero y su amada Teresa, vive múltiples aventuras en la Cuba prerrevolucionaria. La película parodia los géneros del cine comercial para narrar la toma de conciencia política.',
     videoUrl: 'https://www.youtube.com/embed/3vM_z4OqTkw',
     awards: [
-      {
-        name: 'Festival de Karlovy Vary',
-        year: 1967,
-        category: 'Premio Especial del Jurado',
-      },
+      { name: 'Festival de Karlovy Vary', year: 1967, category: 'Premio Especial del Jurado' },
     ],
     cast: [
       { name: 'Julio Martínez', role: 'Juan Quin Quín' },
@@ -133,14 +126,10 @@ const movies1960s: Movie[] = [
     duration: '85 min',
     genre: ['Comedia'],
     synopsis:
-      'Un joven intenta recuperar el carnet laboral de su tío recién fallecido, el cual fue enterrado con él, para que su viuda pueda cobrar la pensión. Esto desata una cadena de trámites absurdos y situaciones kafkianas mientras lucha contra la ineficiencia y el formalismo de la burocracia. Una sátira brillante que rinde homenaje a la historia del cine cómico.',
+      'Un joven intenta recuperar el carnet laboral de su tío recién fallecido, el cual fue enterrado con él, para que su viuda pueda cobrar la pensión. Esto desata una cadena de trámites absurdos y situaciones kafkianas.',
     videoUrl: 'https://www.youtube.com/embed/ZqjeKGGE1Z4',
     awards: [
-      {
-        name: 'Festival de Karlovy Vary',
-        year: 1966,
-        category: 'Premio Especial del Jurado',
-      },
+      { name: 'Festival de Karlovy Vary', year: 1966, category: 'Premio Especial del Jurado' },
     ],
     cast: [{ name: 'Salvador Wood', role: 'El sobrino' }],
   },
@@ -153,7 +142,7 @@ const movies1960s: Movie[] = [
     duration: '160 min',
     genre: ['Drama', 'Histórico'],
     synopsis:
-      'Tres episodios, tres mujeres llamadas Lucía, tres momentos históricos: la guerra de independencia de 1895, la lucha contra Machado en los años 30 y la Revolución de los 60. A través de sus vidas, la película explora la evolución de la identidad cubana, el papel de la mujer y las tensiones entre el amor, la sociedad y la política en diferentes épocas.',
+      'Tres episodios, tres mujeres llamadas Lucía, tres momentos históricos: la guerra de independencia de 1895, la lucha contra Machado en los años 30 y la Revolución de los 60.',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
       { name: 'Festival de Moscú', year: 1969, category: 'Gran Premio' },
@@ -172,14 +161,10 @@ const movies1960s: Movie[] = [
     duration: '97 min',
     genre: ['Drama'],
     synopsis:
-      'Sergio, un intelectual burgués, decide quedarse en Cuba tras el triunfo de la Revolución mientras su familia y amigos huyen a Miami. Solo y alienado, deambula por La Habana observando críticamente los vertiginosos cambios sociales, incapaz de integrarse pero tampoco de rechazar totalmente el nuevo proceso. Un estudio psicológico profundo sobre la identidad y la historia.',
+      'Sergio, un intelectual burgués, decide quedarse en Cuba tras el triunfo de la Revolución mientras su familia y amigos huyen a Miami. Solo y alienado, deambula por La Habana observando críticamente los vertiginosos cambios sociales.',
     videoUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
-      {
-        name: 'Festival de Karlovy Vary',
-        year: 1968,
-        category: 'Premio FIPRESCI',
-      },
+      { name: 'Festival de Karlovy Vary', year: 1968, category: 'Premio FIPRESCI' },
     ],
     cast: [
       { name: 'Sergio Corrieri', role: 'Sergio' },
@@ -187,7 +172,6 @@ const movies1960s: Movie[] = [
     ],
     backdrop: heroMemorias,
   },
-
   {
     id: 'soy-cuba',
     title: 'Soy Cuba',
@@ -197,14 +181,13 @@ const movies1960s: Movie[] = [
     duration: '141 min',
     genre: ['Drama', 'Histórico'],
     synopsis:
-      'Una coproducción cubano-soviética visualmente deslumbrante que narra cuatro historias sobre la vida en Cuba antes de la Revolución. Famosa por sus increíbles planos secuencia y su fotografía en blanco y negro, pasó del olvido a ser considerada una obra maestra del cine mundial.',
-    videoUrl: 'https://www.youtube.com/embed/v=example', // Busca el link real
+      'Una coproducción cubano-soviética visualmente deslumbrante que narra cuatro historias sobre la vida en Cuba antes de la Revolución. Famosa por sus increíbles planos secuencia y su fotografía en blanco y negro.',
+    videoUrl: '', 
     awards: [{ name: 'Cannes Classics', year: 2004, category: 'Restauración' }],
     cast: [
       { name: 'Sergio Corrieri', role: 'Alberto' },
       { name: 'Salvador Wood', role: 'Campesino' },
     ],
-    notes: 'Rescatada por Martin Scorsese y Francis Ford Coppola en los 90.',
   },
 ];
 
@@ -222,13 +205,9 @@ const movies1970s: Movie[] = [
     duration: '100 min',
     genre: ['Drama', 'Histórico'],
     synopsis:
-      'Basada en hechos reales de la década de 1960. Alberto Delgado, administrador de una finca, opera como agente encubierto de la Seguridad del Estado infiltrado en las bandas contrarrevolucionarias del Escambray. La película narra su peligrosa doble vida y su sacrificio en un contexto de intensa lucha política y militar.',
+      'Basada en hechos reales. Alberto Delgado opera como agente encubierto infiltrado en las bandas contrarrevolucionarias del Escambray. La película narra su peligrosa doble vida y sacrificio.',
     awards: [
-      {
-        name: 'Festival de Karlovy Vary',
-        year: 1974,
-        category: 'Premio Especial',
-      },
+      { name: 'Festival de Karlovy Vary', year: 1974, category: 'Premio Especial' },
     ],
     cast: [{ name: 'Sergio Corrieri', role: 'Alberto Delgado' }],
   },
@@ -241,7 +220,7 @@ const movies1970s: Movie[] = [
     duration: '73 min',
     genre: ['Drama', 'Documental'],
     synopsis:
-      'Yolanda, una maestra de clase media, se enamora de Mario, un obrero de un barrio marginal en transformación. A través de su relación, la película (que mezcla ficción y documental) examina los conflictos de clase, el machismo, la religión y los desafíos de integrar a los sectores marginados en la nueva sociedad revolucionaria.',
+      'Yolanda, una maestra de clase media, se enamora de Mario, un obrero de un barrio marginal. La película mezcla ficción y documental para examinar los conflictos de clase y el machismo.',
     awards: [],
     cast: [
       { name: 'Yolanda Cuéllar', role: 'Yolanda' },
@@ -257,7 +236,7 @@ const movies1970s: Movie[] = [
     duration: '120 min',
     genre: ['Drama', 'Histórico'],
     synopsis:
-      'A finales del siglo XVIII, un conde intenta instruir religiosamente a sus esclavos invitando a doce de ellos a una cena el Jueves Santo, recreando la última cena de Cristo. Les promete un día de libertad, pero cuando al día siguiente los obliga a volver al trabajo brutal, estalla una rebelión violenta que revela la hipocresía del poder colonial.',
+      'A finales del siglo XVIII, un conde recrea la última cena con doce esclavos el Jueves Santo. Les promete un día de libertad, pero la brutalidad del día siguiente desata una rebelión.',
     awards: [
       { name: 'Festival de La Habana', year: 1976, category: 'Gran Premio' },
     ],
@@ -272,13 +251,9 @@ const movies1970s: Movie[] = [
     duration: '103 min',
     genre: ['Drama'],
     synopsis:
-      'Teresa es una trabajadora textil, madre y dirigente sindical que se enfrenta a la doble moral de su esposo. Mientras él espera que ella cumpla con todos los roles domésticos tradicionales, ella lucha por su desarrollo personal y político. El conflicto marital estalla, convirtiéndose en un símbolo de la lucha de la mujer por su emancipación real en la sociedad.',
+      'Teresa es una trabajadora textil y dirigente sindical que se enfrenta al machismo de su esposo. El conflicto marital se convierte en símbolo de la lucha de la mujer por su emancipación.',
     awards: [
-      {
-        name: 'Festival de La Habana',
-        year: 1979,
-        category: 'Gran Premio Coral',
-      },
+      { name: 'Festival de La Habana', year: 1979, category: 'Gran Premio Coral' },
     ],
     cast: [
       { name: 'Daisy Granados', role: 'Teresa' },
@@ -294,7 +269,7 @@ const movies1970s: Movie[] = [
     duration: '130 min',
     genre: ['Drama'],
     synopsis:
-      "Creyendo que la Revolución Cubana será un evento pasajero, una familia aristocrática decide encerrarse en su mansión y esperar a que 'las aguas vuelvan a su nivel'. Aislados del exterior, mantienen sus jerarquías y rituales, pero a medida que pasan los años y se agotan los recursos, la familia involuciona hacia un estado de barbarie primitiva.",
+      "Una familia aristocrática decide encerrarse en su mansión esperando que la Revolución pase. Aislados, mantienen sus jerarquías hasta involucionar hacia la barbarie.",
     videoUrl: 'https://www.youtube.com/embed/7qKSk9fpF8M',
     awards: [],
     cast: [{ name: 'Enrique Santiesteban', role: 'Sebastián' }],
@@ -308,13 +283,12 @@ const movies1970s: Movie[] = [
     duration: '119 min',
     genre: ['Drama', 'Histórico'],
     synopsis:
-      'Durante la Campaña de Alfabetización de 1961, un joven estudiante de La Habana llega a una zona rural remota cerca de la Ciénaga de Zapata para enseñar a leer a los campesinos. Allí debe enfrentarse no solo a la ignorancia y la desconfianza, sino también a la amenaza violenta de las bandas contrarrevolucionarias que operan en la zona.',
+      'Durante la Campaña de Alfabetización de 1961, un joven estudiante llega a una zona rural remota para enseñar a leer, enfrentándose a la ignorancia y a las bandas contrarrevolucionarias.',
     awards: [
       { name: 'Festival de Moscú', year: 1978, category: 'Premio Especial' },
     ],
     cast: [{ name: 'Salvador Wood', role: 'Mario' }],
   },
-
   {
     id: "elpidio-valdes-film",
     title: "Elpidio Valdés",
@@ -323,11 +297,10 @@ const movies1970s: Movie[] = [
     poster: posterElpidioValdes,
     duration: "70 min",
     genre: ["Animación", "Aventuras"],
-    synopsis: "El largometraje que consolidó al personaje más icónico de la animación cubana. Elpidio, un coronel mambí, lucha por la independencia de Cuba contra el ejército español y el General Resoplez, con mucho humor, ingenio y cubanía.",
+    synopsis: "El largometraje que consolidó al personaje más icónico de la animación cubana. Elpidio, un coronel mambí, lucha por la independencia de Cuba contra el ejército español y el General Resoplez.",
     videoUrl: "https://www.youtube.com/embed/6vcGn6a-0ss",
     awards: [{ name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" }],
     cast: [{ name: "Frank González", role: "Elpidio Valdés (voz)" }],
-    notes: "Frases de esta película son parte del habla popular cubana.",
     backdrop: heroElpidio,
   },
 ];
@@ -346,13 +319,9 @@ const movies1980s: Movie[] = [
     duration: '127 min',
     genre: ['Drama', 'Romance', 'Histórico'],
     synopsis:
-      "Adaptación libre de la novela 'Cecilia Valdés'. En la Habana colonial del siglo XIX, Cecilia, una hermosa mestiza, y Leonardo, el hijo de un rico hacendado español, viven un apasionado y trágico romance. Desconocen que comparten el mismo padre, y su relación desencadena una serie de eventos fatales marcados por los prejuicios raciales y sociales de la época.",
+      "En la Habana colonial, la mestiza Cecilia y el aristócrata Leonardo viven un apasionado romance sin saber que son hermanos, desencadenando una tragedia.",
     awards: [
-      {
-        name: 'Festival de La Habana',
-        year: 1982,
-        category: 'Gran Premio Coral',
-      },
+      { name: 'Festival de La Habana', year: 1982, category: 'Gran Premio Coral' },
     ],
     cast: [{ name: 'Daisy Granados', role: 'Cecilia' }],
   },
@@ -365,7 +334,7 @@ const movies1980s: Movie[] = [
     duration: '120 min',
     genre: ['Drama'],
     synopsis:
-      "Javier es un joven ambicioso y seductor que se adapta camaleónicamente a los diferentes gobiernos corruptos de la Cuba republicana (1930-1959). Traicionando ideales y amigos para ascender socialmente, logra convertirse en un 'hombre de éxito', pero su oportunismo lo lleva a un vacío moral y personal inevitable.",
+      "Javier es un joven ambicioso que se adapta camaleónicamente a los diferentes gobiernos de la Cuba republicana para ascender socialmente, sacrificando sus ideales.",
     awards: [],
     cast: [{ name: 'César Évora', role: 'Javier' }],
   },
@@ -378,7 +347,7 @@ const movies1980s: Movie[] = [
     duration: '90 min',
     genre: ['Comedia'],
     synopsis:
-      'Dos jóvenes enamorados se ven atrapados en un conflicto inesperado cuando el padre de él (un hombre machista y tradicional) y la madre de ella comienzan su propio romance. Los hijos, paradójicamente, reaccionan con prejuicios conservadores ante la relación de sus padres, invirtiendo los roles generacionales en esta divertida comedia de costumbres.',
+      'Dos jóvenes enamorados enfrentan un conflicto inesperado cuando sus padres solteros comienzan su propio romance, invirtiendo los roles generacionales.',
     videoUrl: 'https://www.youtube.com/embed/yUUzGFLx7jY',
     awards: [],
     cast: [
@@ -395,13 +364,9 @@ const movies1980s: Movie[] = [
     duration: '100 min',
     genre: ['Comedia'],
     synopsis:
-      'Gloria, una costurera ambiciosa, mueve cielo y tierra para mudarse del barrio de Guanabacoa a una zona más exclusiva como el Vedado, creyendo que así mejorará la vida de su hija. Organiza una compleja cadena de permutas de casas que involucra a múltiples familias, generando un caos burocrático y situaciones disparatadas.',
+      'Gloria mueve cielo y tierra para mudarse de barrio mediante una compleja cadena de permutas, generando un caos burocrático y situaciones disparatadas.',
     awards: [
-      {
-        name: 'Festival de La Habana',
-        year: 1984,
-        category: 'Premio del Público',
-      },
+      { name: 'Festival de La Habana', year: 1984, category: 'Premio del Público' },
     ],
     cast: [
       { name: 'Rosita Fornés', role: 'Gloria' },
@@ -417,7 +382,7 @@ const movies1980s: Movie[] = [
     duration: '69 min',
     genre: ['Animación', 'Comedia'],
     synopsis:
-      "Un científico vampiro crea el 'Vampisol', una fórmula que permite a los vampiros resistir la luz del sol. Su sobrino Pepito, un trompetista en La Habana de los años 30, desconoce su condición de vampiro y la importancia de la fórmula. Pronto se ve perseguido por la mafia de vampiros de Chicago y el grupo de vampiros europeos, desatando una hilarante guerra.",
+      "Un científico vampiro crea una fórmula para resistir el sol. Su sobrino Pepito debe protegerla de la mafia de vampiros de Chicago y Europa.",
     videoUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
     awards: [],
     cast: [{ name: 'Frank González', role: 'Drácula (voz)' }],
@@ -432,7 +397,7 @@ const movies1980s: Movie[] = [
     duration: '100 min',
     genre: ['Comedia', 'Drama'],
     synopsis:
-      'Mario, un pelotero estrella que se acerca al final de su carrera, debe enfrentar el momento del retiro. La película explora el mundo del béisbol cubano desde dentro, mostrando las presiones, la fama, y la difícil transición hacia una vida fuera del deporte de alto rendimiento, todo ello con un toque humano y nostálgico.',
+      'Mario, un pelotero estrella, debe enfrentar el retiro. La película explora el béisbol cubano y la difícil transición fuera del deporte de alto rendimiento.',
     awards: [],
     cast: [{ name: 'Samuel Claxton', role: 'El entrenador' }],
   },
@@ -444,14 +409,14 @@ const movies1980s: Movie[] = [
     poster: posterNoviaDavid,
     duration: "103 min",
     genre: ["Comedia", "Romance"],
-    synopsis: "David es un estudiante universitario que busca novia. Se encuentra en una encrucijada entre conquistar a Olga, una chica espectacular pero superficial, o quedarse con Ofelia, su compañera de estudios, gordita e intelectual, con quien tiene una conexión profunda. Un retrato honesto y divertido de la juventud cubana de los 80.",
-    videoUrl: "https://www.youtube.com/embed/-G-2kTjx25M", // Busca el link en YouTube
+    synopsis: "David busca novia y se debate entre Olga, espectacular pero superficial, y Ofelia, su compañera intelectual con quien tiene una conexión profunda.",
+    videoUrl: "https://www.youtube.com/embed/-G-2kTjx25M",
     awards: [
       { name: "Festival de La Habana", year: 1985, category: "Premio de la Popularidad" }
     ],
     cast: [
       { name: "Jorge Luis Álvarez", role: "David" },
-      { name: "María Isabel Díaz", role: "Ofelia" } // (La Sole de Vis a Vis)
+      { name: "María Isabel Díaz", role: "Ofelia" }
     ]
   },
   {
@@ -463,7 +428,7 @@ const movies1980s: Movie[] = [
     duration: '100 min',
     genre: ['Drama', 'Histórico'],
     synopsis:
-      'La vida de un grupo de jóvenes que luchan en la clandestinidad urbana contra la dictadura de Batista en los años 50. La película se centra en la relación entre Ernesto y Nereida, mostrando el lado humano, los miedos, el amor y el sacrificio extremo de quienes vivieron esa época de peligro constante.',
+      'La vida de un grupo de jóvenes en la lucha clandestina urbana contra Batista. Se centra en la relación de amor y sacrificio entre Ernesto y Nereida.',
     awards: [],
     cast: [
       { name: 'Luis Alberto García', role: 'Ernesto' },
@@ -479,7 +444,7 @@ const movies1980s: Movie[] = [
     duration: '100 min',
     genre: ['Comedia'],
     synopsis:
-      "Concha, una mujer supersticiosa y controladora, vive obsesionada con que alguien le lanza huevos contra su casa, aunque nunca ve quién es. Entre santería, problemas vecinales y la relación complicada con su nuera, la película satiriza los miedos irracionales y la inmovilidad social mediante un humor absurdo y 'huevazos' misteriosos.",
+      "Concha vive obsesionada con que le lanzan huevos a su casa. Una sátira sobre los miedos irracionales y la inmovilidad social.",
     awards: [],
     cast: [{ name: 'Daisy Granados', role: 'Concha' }],
   },
@@ -492,13 +457,9 @@ const movies1980s: Movie[] = [
     duration: '108 min',
     genre: ['Drama', 'Musical'],
     synopsis:
-      'Inspirada en la vida del teatro musical cubano de los años 20 y 30. Rachel, una corista ambiciosa y talentosa, lucha por convertirse en la vedette principal del famoso Teatro Alhambra. Su ascenso está marcado por amores apasionados, desengaños y la turbulenta vida nocturna de una Habana fascinante y cruel.',
+      'Rachel, una corista ambiciosa, lucha por ser vedette en el famoso Teatro Alhambra en la Habana de los años 20.',
     awards: [
-      {
-        name: 'Premio Goya',
-        year: 1990,
-        category: 'Mejor Película Extranjera',
-      },
+      { name: 'Premio Goya', year: 1990, category: 'Mejor Película Extranjera' },
     ],
     cast: [{ name: 'Beatriz Valdés', role: 'Rachel' }],
   },
@@ -511,7 +472,7 @@ const movies1980s: Movie[] = [
     duration: '95 min',
     genre: ['Drama'],
     synopsis:
-      'En un grupo de teatro gobernado por una directora autoritaria, las intrigas y las relaciones de poder entre los actores reflejan las tensiones de la sociedad. Mirta, una actriz veterana relegada a papeles secundarios, lucha por mantener su dignidad y su arte en un ambiente asfixiante de control y oportunismo.',
+      'En un grupo de teatro, Mirta, una actriz veterana relegada a papeles secundarios, lucha por su dignidad en un ambiente de control y oportunismo.',
     awards: [],
     cast: [{ name: 'Rosita Fornés', role: 'Actriz' }],
   },
@@ -531,8 +492,8 @@ const movies1990s: Movie[] = [
     duration: '111 min',
     genre: ['Drama'],
     synopsis:
-      'Ambientada en los años 50 en un barrio marginal de La Habana. María Antonia es una mujer de carácter fuerte e indomable, cuya vida está marcada por la religión afrocubana, la miseria y una pasión destructiva por un boxeador. Una tragedia griega trasladada al solar habanero.',
-    videoUrl: '', // Pendiente de subir
+      'Ambientada en los años 50. María Antonia es una mujer indomable cuya vida está marcada por la religión afrocubana y una pasión destructiva por un boxeador.',
+    videoUrl: '',
     awards: [],
     cast: [
       { name: 'Alina Rodríguez', role: 'María Antonia' },
@@ -548,8 +509,8 @@ const movies1990s: Movie[] = [
     duration: '100 min',
     genre: ['Bélico', 'Aventuras'],
     synopsis:
-      'Durante la guerra de Angola, una caravana de vehículos cubanos debe llevar suministros vitales a una posición aislada. En el trayecto, enfrentan emboscadas, minas y tensiones internas, mostrando el lado humano y heroico de los combatientes internacionalistas.',
-    videoUrl: '', // Pendiente de subir
+      'Durante la guerra de Angola, una caravana militar cubana debe abastecer un puente aislado, enfrentándose a emboscadas y tensiones internas.',
+    videoUrl: '',
     awards: [],
     cast: [
       { name: 'Manuel Porto', role: 'El Jefe' },
@@ -565,8 +526,8 @@ const movies1990s: Movie[] = [
     duration: '93 min',
     genre: ['Sátira', 'Comedia'],
     synopsis:
-      'Una instructora de teatro llega a un extraño pueblo llamado Maravillas, donde ocurren sucesos absurdos: los animales hablan, la burocracia es surrealista y los habitantes actúan de forma sospechosa. Una de las sátiras más polémicas y agudas sobre la sociedad cubana.',
-    videoUrl: '', // Pendiente de subir
+      'Una instructora de teatro llega a un pueblo donde ocurren sucesos absurdos y burocráticos. Una sátira mordaz sobre la sociedad cubana.',
+    videoUrl: '',
     awards: [{ name: 'Festival de Berlín', year: 1991, category: 'Premio Caligari' }],
     cast: [
       { name: 'Thais Valdés', role: 'Alicia' },
@@ -582,7 +543,7 @@ const movies1990s: Movie[] = [
     duration: '108 min',
     genre: ['Comedia', 'Romance'],
     synopsis:
-      "Jorge Luis, un guionista fracasado, se hace pasar por un director de cine exitoso para impresionar a Sissy. Ella, a su vez, finge ser una actriz con una carrera prometedora. Ambos construyen una relación basada en 'adorables mentiras' para escapar de sus frustraciones, hasta que la realidad amenaza con desmoronar su castillo de naipes.",
+      "Jorge Luis y Sissy construyen una relación basada en mentiras sobre sus éxitos profesionales, hasta que la realidad amenaza con desmoronar todo.",
     awards: [],
     cast: [
       { name: 'Isabel Santos', role: 'Nancy' },
@@ -598,15 +559,11 @@ const movies1990s: Movie[] = [
     duration: '110 min',
     genre: ['Drama', 'Comedia'],
     synopsis:
-      'Diego, un artista culto, homosexual y escéptico, entabla una amistad improbable con David, un joven estudiante universitario comunista y lleno de prejuicios. A través de conversaciones sobre arte, política y la vida en La Habana, ambos superan sus diferencias y construyen un vínculo profundo que desafía la intolerancia de su entorno.',
+      'Diego, un artista homosexual, y David, un joven comunista, construyen una amistad improbable que desafía la intolerancia en La Habana de los 90.',
     videoUrl: 'https://www.youtube.com/embed/ygR1OTyVr7I',
     awards: [
       { name: 'Oso de Plata', year: 1994, category: 'Gran Premio del Jurado' },
-      {
-        name: 'Nominación al Oscar',
-        year: 1995,
-        category: 'Mejor Película Extranjera',
-      },
+      { name: 'Nominación al Oscar', year: 1995, category: 'Mejor Película Extranjera' },
     ],
     cast: [
       { name: 'Jorge Perugorría', role: 'Diego' },
@@ -623,7 +580,7 @@ const movies1990s: Movie[] = [
     duration: '52 min',
     genre: ['Drama'],
     synopsis:
-      'Durante el duro Período Especial en Cuba, una madre y su hija adolescente viven una relación tensa y claustrofóbica. La hija sueña obsesivamente con viajar a Madagascar, un lugar mítico y lejano que representa todo lo que no tiene en su realidad cotidiana. Un filme poético sobre la evasión y la resistencia.',
+      'Durante el Período Especial, una madre y su hija viven una relación tensa. La hija sueña obsesivamente con viajar a Madagascar como vía de escape.',
     awards: [],
     cast: [{ name: 'Laura de la Uz', role: 'Laura' }],
   },
@@ -636,7 +593,7 @@ const movies1990s: Movie[] = [
     duration: '85 min',
     genre: ['Comedia'],
     synopsis:
-      "Un joven proyeccionista ambulante llega a la Isla de la Juventud con un viejo proyector y una sola película: 'Robin Hood'. La magia del cine revoluciona la vida monótona de los habitantes, quienes empiezan a soñar con libertad y justicia, provocando situaciones absurdas y transformadoras en la comunidad.",
+      "Un proyeccionista llega a la Isla de la Juventud con la película 'Robin Hood', revolucionando a los habitantes que empiezan a soñar con libertad.",
     awards: [],
     cast: [{ name: 'Luis Alberto García', role: 'Jefe' }],
   },
@@ -649,7 +606,7 @@ const movies1990s: Movie[] = [
     duration: '101 min',
     genre: ['Comedia'],
     synopsis:
-      'Para trasladar el cadáver de la tía Yoyita desde Guantánamo hasta La Habana, un cortejo fúnebre debe cumplir con un absurdo plan estatal de transporte que obliga a cambiar de coche en cada provincia. En este viaje tragicómico, antiguos amores se reencuentran y la burocracia se muestra en toda su ridiculez.',
+      'Un cortejo fúnebre debe cruzar Cuba cumpliendo un absurdo plan estatal de transporte. Un viaje tragicómico sobre la burocracia.',
     awards: [],
     cast: [
       { name: 'Carlos Cruz', role: 'Adolfo' },
@@ -664,8 +621,8 @@ const movies1990s: Movie[] = [
     poster: posterAmorVertical,
     duration: "100 min",
     genre: ["Comedia", "Romance"],
-    synopsis: "Estela y Ernesto se conocen y sienten una atracción inmediata. Intentan consumar su amor, pero se enfrentan a un problema eterno en La Habana: no tienen dónde hacerlo. Una comedia erótica y urbana que explora las dificultades de la intimidad en medio de la crisis y la falta de vivienda.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    synopsis: "Estela y Ernesto intentan consumar su amor, pero no tienen dónde hacerlo. Una comedia sobre la falta de vivienda y la intimidad.",
+    videoUrl: "",
     awards: [
       { name: "Premios Goya", year: 1998, category: "Nominada a Mejor Película Extranjera" }
     ],
@@ -681,9 +638,9 @@ const movies1990s: Movie[] = [
     director: "Manuel Herrera",
     poster: posterZafiros,
     duration: "115 min",
-    genre: ["Drama", "Musical", "Biográfico"],
-    synopsis: "Inspirada en la historia real del cuarteto vocal 'Los Zafiros', que causó sensación en la Cuba de los años 60 con su mezcla de doo-wop y ritmos cubanos. La película narra su ascenso meteórico a la fama y su trágica caída debido a los excesos y conflictos personales, todo envuelto en su inolvidable música.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    genre: ["Drama", "Musical"],
+    synopsis: "La historia real del cuarteto vocal 'Los Zafiros', su ascenso meteórico en los 60 y su trágica caída, envuelta en su inolvidable música.",
+    videoUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 1997, category: "Premio del Público" }
     ],
@@ -701,8 +658,8 @@ const movies1990s: Movie[] = [
     duration: '90 min',
     genre: ['Drama'],
     synopsis:
-      'Amanda es una mujer humilde que posee un don extraordinario: puede ver el futuro. Sin embargo, su capacidad para profetizar no le sirve para resolver los conflictos de su propia vida, sus amores y la relación con sus hijos en la Cuba de fin de siglo.',
-    videoUrl: '', // Pendiente de subir
+      'Amanda tiene el don de ver el futuro, pero esto no le sirve para resolver los conflictos de su propia vida y familia.',
+    videoUrl: '',
     awards: [],
     cast: [
       { name: 'Daisy Granados', role: 'Amanda' },
@@ -717,8 +674,8 @@ const movies1990s: Movie[] = [
     poster: posterKleinesTropicana,
     duration: "115 min",
     genre: ["Comedia", "Crimen"],
-    synopsis: "Una sátira policiaca llena de humor negro. Un turista alemán aparece muerto en La Habana vestido con plumas de cabaret. La investigación policial destapa una red de equívocos, espionaje aficionado y choques culturales. Una mirada irónica a los estereotipos sobre Cuba y los extranjeros.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    synopsis: "Un turista alemán aparece muerto vestido con plumas de cabaret. Una sátira policiaca llena de humor negro y choques culturales.",
+    videoUrl: "",
     awards: [],
     cast: [
       { name: "Peter Lohmeyer", role: "Klaus" },
@@ -735,17 +692,12 @@ const movies1990s: Movie[] = [
     duration: '112 min',
     genre: ['Comedia', 'Drama'],
     synopsis:
-      'En una terminal de autobuses del centro de Cuba, un grupo de pasajeros queda varado cuando el único transporte disponible se rompe. Obligados a convivir, deciden reparar el vehículo ellos mismos y terminan creando una pequeña comunidad utópica y solidaria donde los sueños parecen posibles, al menos por un momento.',
+      'Pasajeros varados en una terminal de autobuses deciden reparar el vehículo ellos mismos, creando una pequeña comunidad utópica.',
     awards: [
-      {
-        name: 'Festival de La Habana',
-        year: 2000,
-        category: 'Gran Premio Coral',
-      },
+      { name: 'Festival de La Habana', year: 2000, category: 'Gran Premio Coral' },
     ],
     cast: [{ name: 'Vladimir Cruz', role: 'Emilio' }],
   },
-
   {
     id: "la-vida-es-silbar",
     title: "La vida es silbar",
@@ -754,15 +706,14 @@ const movies1990s: Movie[] = [
     poster: posterLaVidaEsSilbar,
     duration: "106 min",
     genre: ["Drama", "Surrealista"],
-    synopsis: "En una Habana surrealista, tres personajes (una bailarina, un joven salvaje y una mujer obsesionada con la limpieza) buscan la felicidad mientras se cruzan con la misteriosa figura de Santa Bárbara. Una metáfora poética sobre la libertad y el miedo.",
-    videoUrl: "https://www.youtube.com/embed/v=example",
+    synopsis: "Tres personajes buscan la felicidad en una Habana surrealista, cruzándose con la misteriosa figura de Santa Bárbara.",
+    videoUrl: "",
     awards: [
       { name: "Festival de Sundance", year: 1999, category: "Premio del Jurado" },
       { name: "Premio Goya", year: 1999, category: "Mejor Película Extranjera" }
     ],
     cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }]
   },
-
   {
     id: "hello-heminguey",
     title: "Hello Hemingüey",
@@ -771,7 +722,7 @@ const movies1990s: Movie[] = [
     poster: posterHelloHeminguey,
     duration: "90 min",
     genre: ["Drama"],
-    synopsis: "La Habana, 1956. Larita es una joven estudiante que sueña con conseguir una beca para estudiar en Estados Unidos. Es vecina del famoso escritor Ernest Hemingway, a quien observa desde la distancia, estableciendo un paralelismo entre su vida y la del viejo pescador de 'El viejo y el mar'.",
+    synopsis: "Larita sueña con una beca para estudiar en EE.UU. Es vecina de Hemingway y establece un paralelismo entre su vida y la del viejo pescador.",
     awards: [
       { name: "Festival de La Habana", year: 1990, category: "Gran Premio Coral" }
     ],
@@ -779,7 +730,6 @@ const movies1990s: Movie[] = [
       { name: "Laura de la Uz", role: "Larita" },
       { name: "Raúl Paz", role: "Víctor" }
     ],
-    notes: "Debut cinematográfico de Laura de la Uz."
   },
   {
     id: "un-paraiso-bajo-estrellas",
@@ -789,12 +739,11 @@ const movies1990s: Movie[] = [
     poster: posterParaisoEstrellas,
     duration: "90 min",
     genre: ["Comedia"],
-    synopsis: "Siso sueña con ser bailarín del Tropicana, pero el destino y los enredos amorosos se lo ponen difícil. Una comedia de enredos clásica que rinde homenaje al cabaret más famoso de Cuba y a la picaresca nacional.",
+    synopsis: "Siso sueña con ser bailarín del Tropicana. Una comedia de enredos que rinde homenaje al cabaret y a la picaresca.",
     awards: [],
     cast: [
       { name: "Thais Valdés", role: "Stacy" },
       { name: "Vladimir Cruz", role: "Sergito" },
-      { name: "Enrique Molina", role: "Cándido" }
     ]
   },
 ];
@@ -813,8 +762,8 @@ const movies2000s: Movie[] = [
     duration: '92 min',
     genre: ['Drama', 'Comedia'],
     synopsis:
-      'Carla trabaja en una oficina de correos y sueña con irse a vivir a Miami con sus padres. Mientras espera su salida, empieza a reescribir las cartas tristes que llegan a la oficina para alegrar la vida de los destinatarios. Una fábula visualmente única filmada en blanco y negro con toques de color.',
-    videoUrl: '', // Pendiente de subir
+      'Carla reescribe cartas tristes en la oficina de correos para alegrar a los destinatarios mientras espera irse a vivir a Miami.',
+    videoUrl: '',
     awards: [
       { name: 'Festival de La Habana', year: 2001, category: 'Mejor Ópera Prima' },
       { name: 'Premios Goya', year: 2002, category: 'Nominada Mejor Película Extranjera' },
@@ -833,8 +782,8 @@ const movies2000s: Movie[] = [
     duration: '112 min',
     genre: ['Comedia'],
     synopsis:
-      'Tomás es un joven que intenta sobrevivir en La Habana sin meterse en líos, pero el caos lo persigue. Entre un ciclón que se acerca, una novia que lo presiona y un hermano delincuente que lo involucra en negocios turbios, su vida se convierte en un torbellino cómico.',
-    videoUrl: '', // Pendiente de subir
+      'Tomás intenta sobrevivir en La Habana, pero un ciclón, su novia y su hermano delincuente convierten su vida en un torbellino cómico.',
+    videoUrl: '',
     awards: [],
     cast: [
       { name: 'Mijail Mulkay', role: 'Tomás' },
@@ -850,14 +799,10 @@ const movies2000s: Movie[] = [
     duration: '84 min',
     genre: ['Documental'],
     synopsis:
-      'Un día en la vida de varios habitantes de La Habana común. Sin diálogos y guiada solo por la música y los sonidos de la ciudad, la cámara sigue sus rutinas, sus alegrías modestas y sus luchas diarias, componiendo una sinfonía visual conmovedora sobre la realidad cubana contemporánea.',
+      'Un día en la vida de varios habitantes de La Habana. Sin diálogos, una sinfonía visual sobre la realidad cubana.',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
-      {
-        name: 'Festival de San Sebastián',
-        year: 2003,
-        category: 'Premio FIPRESCI',
-      },
+      { name: 'Festival de San Sebastián', year: 2003, category: 'Premio FIPRESCI' },
     ],
     cast: [],
   },
@@ -870,8 +815,8 @@ const movies2000s: Movie[] = [
     duration: '95 min',
     genre: ['Drama', 'Suspense'],
     synopsis:
-      'Tres historias independientes se entrelazan en La Habana actual: una prostituta con una deuda peligrosa, un pintor frustrado y un político corrupto. Un thriller con estética de videoclip y ritmo vertiginoso que muestra el lado más crudo de la sociedad.',
-    videoUrl: '', // Pendiente de subir
+      'Tres historias se entrelazan en La Habana: una prostituta, un pintor y un político. Un thriller sobre decisiones límite.',
+    videoUrl: '',
     awards: [],
     cast: [
       { name: 'Jorge Perugorría', role: 'El Pintor' },
@@ -887,7 +832,7 @@ const movies2000s: Movie[] = [
     duration: '97 min',
     genre: ['Comedia'],
     synopsis:
-      'Papito es un joven pícaro de un barrio marginal de La Habana que se enamora de una vecina rica. Cuando un millonario español muere accidentalmente en su casa, Papito se hace pasar por él para viajar a España y reclamar la herencia, desencadenando una serie de enredos disparatados.',
+      'Papito se hace pasar por un millonario español fallecido para reclamar una herencia, desencadenando enredos disparatados.',
     awards: [],
     cast: [{ name: 'Alexis Valdés', role: 'Papito' }],
   },
@@ -900,11 +845,10 @@ const movies2000s: Movie[] = [
     duration: '110 min',
     genre: ['Comedia'],
     synopsis:
-      'La noticia de que una herencia millonaria del siglo XVIII va a ser repartida entre los descendientes de apellido Castiñeiras revoluciona un pequeño pueblo cubano. Todos los que llevan el apellido inician trámites frenéticos para probar su linaje, desatando la codicia, las envidias y el caos familiar.',
+      'Una herencia millonaria revoluciona un pueblo. Todos los de apellido Castiñeiras intentan probar su linaje, desatando la codicia.',
     awards: [],
     cast: [{ name: 'Jorge Perugorría', role: 'Bernardito' }],
   },
-
   {
     id: "video-de-familia",
     title: "Video de familia",
@@ -913,13 +857,11 @@ const movies2000s: Movie[] = [
     poster: posterVideoDeFamilia,
     duration: "45 min",
     genre: ["Drama"],
-    synopsis: "Una familia cubana se graba en video para enviarle un mensaje a su hijo que ha emigrado a Estados Unidos. Lo que empieza como un saludo alegre va revelando poco a poco las grietas, secretos y dolores de la familia y de la sociedad cubana actual.",
-    videoUrl: "https://www.youtube.com/embed/v=example",
+    synopsis: "Una familia se graba en video para su hijo emigrado. Lo que empieza alegre va revelando secretos y dolores familiares.",
+    videoUrl: "",
     awards: [{ name: "Festival de La Habana", year: 2001, category: "Premio Coral" }],
     cast: [{ name: "Enrique Molina", role: "Padre" }, { name: "Verónica Lynn", role: "Madre" }],
-    notes: "Película de culto realizada con muy bajo presupuesto pero gran impacto emocional."
   },
-
   {
     id: "habana-blues",
     title: "Habana Blues",
@@ -928,16 +870,14 @@ const movies2000s: Movie[] = [
     poster: posterHabanaBlues,
     duration: "115 min",
     genre: ["Drama", "Musical"],
-    synopsis: "Ruy y Tito son dos jóvenes músicos cubanos que sueñan con triunfar con su grupo. Cuando unos productores españoles llegan a La Habana buscando talento, se enfrentan a un dilema: aceptar un contrato que les obliga a dejar atrás sus raíces o mantenerse fieles a su música y a su vida en Cuba.",
+    synopsis: "Dos músicos cubanos enfrentan un dilema: aceptar un contrato en España dejando atrás sus raíces o quedarse en Cuba.",
     videoUrl: "https://www.youtube.com/embed/5lEAnDR46zo", 
     awards: [
       { name: "Premios Goya", year: 2006, category: "Mejor Música Original" },
-      { name: "Festival de La Habana", year: 2005, category: "Premio Coral" }
     ],
     cast: [
       { name: "Alberto Yoel", role: "Ruy" }, 
       { name: "Roberto Sanmartín", role: "Tito" },
-      { name: "Yailene Sierra", role: "Caridad" }
     ],
     backdrop: heroHabana,
   },
@@ -949,19 +889,16 @@ const movies2000s: Movie[] = [
     poster: posterDiosesRotos,
     duration: "93 min",
     genre: ["Drama"],
-    synopsis: "Laura es una profesora universitaria que investiga la vida del famoso proxeneta cubano Alberto Yarini para su tesis de maestría. Su investigación la lleva a adentrarse en las zonas más oscuras y complejas de la Habana actual, donde el pasado y el presente se entrelazan peligrosamente.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    synopsis: "Laura investiga al famoso proxeneta Alberto Yarini, adentrándose en zonas oscuras donde pasado y presente se entrelazan.",
+    videoUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2008, category: "Premio del Público" },
-      { name: "Premios de la Crítica", year: 2008, category: "Mejor Película" }
     ],
     cast: [
       { name: "Silvia Águila", role: "Laura" }, 
       { name: "Carlos Ever Fonseca", role: "Alberto" },
-      { name: "Héctor Noas", role: "Rosendo" }
-    ]
+    ],
   },
-
   {
     id: "hacerse-el-sueco",
     title: "Hacerse el sueco",
@@ -970,13 +907,12 @@ const movies2000s: Movie[] = [
     poster: posterHacerseSueco,
     duration: "105 min",
     genre: ["Comedia", "Crimen"],
-    synopsis: "Un supuesto profesor de literatura sueco llega a La Habana. En realidad, es un ladrón de joyas retirado que busca robarse a sí mismo. Se aloja en casa de una familia cubana peculiar, desencadenando un choque cultural hilarante y situaciones inesperadas.",
+    synopsis: "Un ladrón se hace pasar por profesor sueco en La Habana, alojándose con una familia cubana peculiar.",
     awards: [],
     cast: [
       { name: "Enrique Molina", role: "Amancio" },
       { name: "Peter Lohmeyer", role: "Bjorn (El Sueco)" },
-      { name: "Coralia Veloz", role: "Marta" }
-    ]
+    ],
   },
   {
     id: "miel-para-oshun",
@@ -986,15 +922,14 @@ const movies2000s: Movie[] = [
     poster: posterMielOshun,
     duration: "110 min",
     genre: ["Drama", "Road Movie"],
-    synopsis: "Un joven cubano-americano regresa a Cuba después de muchos años para buscar a la madre que nunca conoció. Junto a un taxista y su prima, emprende un viaje por toda la isla que se convierte en un redescubrimiento de su identidad y de su país.",
+    synopsis: "Un joven cubano-americano regresa para buscar a su madre. Un viaje de redescubrimiento de identidad por toda la isla.",
     awards: [
       { name: "Festival de Sevilla", year: 2001, category: "Premio del Público" }
     ],
     cast: [
       { name: "Jorge Perugorría", role: "Roberto" },
       { name: "Isabel Santos", role: "Pilar" },
-      { name: "Mario Limonta", role: "Antonio" }
-    ]
+    ],
   },
 ];
 
@@ -1012,14 +947,10 @@ const movies2010s: Movie[] = [
     duration: '120 min',
     genre: ['Drama', 'Histórico'],
     synopsis:
-      'Una inmersión profunda en la infancia y adolescencia de José Martí, el Apóstol de la independencia cubana. Lejos de la estatua de bronce, la película muestra a un niño sensible y observador que sufre ante la injusticia de la esclavitud y el colonialismo, forjando el carácter que lo convertiría en libertador.',
+      'Una inmersión profunda en la infancia y adolescencia de José Martí, mostrando al niño sensible que se convertiría en libertador.',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
-      {
-        name: 'Festival de La Habana',
-        year: 2010,
-        category: 'Gran Premio Coral',
-      },
+      { name: 'Festival de La Habana', year: 2010, category: 'Gran Premio Coral' },
     ],
     cast: [{ name: 'Daniel Romero', role: 'José Martí' }],
   },
@@ -1032,14 +963,10 @@ const movies2010s: Movie[] = [
     duration: '112 min',
     genre: ['Drama', 'Experimental'],
     synopsis:
-      'Un intelectual cubano inadaptado vive en el exilio, desconectado de la política y de la sociedad de consumo que lo rodea. A través de un collage visual innovador, la película explora la alienación, la memoria fragmentada y la imposibilidad de pertenecer a ningún lugar.',
+      'Un intelectual cubano en el exilio vive desconectado de la sociedad. Un collage visual sobre la alienación.',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
-      {
-        name: 'Festival de Tribeca',
-        year: 2010,
-        category: 'Mejor Película (New York)',
-      },
+      { name: 'Festival de Tribeca', year: 2010, category: 'Mejor Película (New York)' },
     ],
     cast: [{ name: 'Ron Blair', role: 'Sergio' }],
   },
@@ -1052,21 +979,16 @@ const movies2010s: Movie[] = [
     duration: '108 min',
     genre: ['Drama'],
     synopsis:
-      'Chala, un niño de 11 años con una vida familiar difícil, cría palomas de pelea y es problemático en la escuela. Carmela, su veterana maestra, es la única que lo comprende y defiende. Cuando ella enferma y es sustituida, Chala es enviado a una escuela de conducta, lo que inicia una batalla moral y educativa por su futuro.',
+      'Chala, un niño problemático, y Carmela, su maestra, enfrentan una batalla moral cuando el sistema intenta enviarlo a una escuela de conducta.',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     awards: [
-      {
-        name: 'Premio Goya',
-        year: 2015,
-        category: 'Mejor Película Iberoamericana',
-      },
+      { name: 'Premio Goya', year: 2015, category: 'Mejor Película Iberoamericana' },
     ],
     cast: [
       { name: 'Armando Valdés Freire', role: 'Chala' },
       { name: 'Alina Rodríguez', role: 'Carmela' },
     ],
   },
-
   {
     id: "juan-de-los-muertos",
     title: "Juan de los Muertos",
@@ -1075,14 +997,12 @@ const movies2010s: Movie[] = [
     poster: posterJuanDeLosMuertos,
     duration: "92 min",
     genre: ["Comedia", "Terror"],
-    synopsis: "Una horda de zombis invade La Habana. El gobierno dice que son disidentes pagados por los Estados Unidos. Juan, un pícaro superviviente, decide hacer negocio: 'Juan de los Muertos, matamos a sus seres queridos'. Una sátira política hilarante y sangrienta.",
+    synopsis: "Zombis invaden La Habana. Juan decide hacer negocio matando a los seres queridos de la gente.",
     videoUrl: "https://www.youtube.com/embed/mhcIBEqczpg",
     awards: [{ name: "Premio Goya", year: 2012, category: "Mejor Película Iberoamericana" }],
     cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }],
-    notes: "La primera película de zombis del cine cubano.",
     backdrop: heroJuan,
   },
-
   {
     id: "habanastation",
     title: "Habanastation",
@@ -1091,10 +1011,10 @@ const movies2010s: Movie[] = [
     poster: posterHabanastation,
     duration: "95 min",
     genre: ["Drama", "Aventuras"],
-    synopsis: "Dos niños cubanos de entornos sociales muy diferentes —uno hijo de un músico rico y otro de un barrio humilde— se ven obligados a pasar un 1 de mayo juntos tras perderse en una manifestación. A través de su aventura por La Habana profunda, descubren la realidad del otro y forjan una amistad inesperada.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    synopsis: "Dos niños de entornos sociales opuestos se pierden en La Habana y forjan una amistad inesperada.",
+    videoUrl: "",
     awards: [
-      { name: "Festival de Traverse City", year: 2011, category: "Premio del Público (Michael Moore)" }
+      { name: "Festival de Traverse City", year: 2011, category: "Premio del Público" }
     ],
     cast: [
       { name: "Andy Fornaris", role: "Mayito" }, 
@@ -1109,16 +1029,14 @@ const movies2010s: Movie[] = [
     poster: posterSergioSerguei,
     duration: "93 min",
     genre: ["Drama", "Comedia"],
-    synopsis: "Año 1991. La URSS se desintegra y Cuba entra en el Período Especial. Sergio, un radioaficionado y profesor de marxismo en La Habana, contacta por casualidad con Serguéi, el último cosmonauta soviético, que ha quedado olvidado en la estación espacial Mir. Una amistad cósmica nace entre ambos mientras sus mundos se derrumban.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    synopsis: "En 1991, un radioaficionado cubano contacta con el último cosmonauta soviético olvidado en el espacio.",
+    videoUrl: "",
     awards: [
-      { name: "Festival de La Habana", year: 2017, category: "Premio del Público" },
       { name: "Festival de Málaga", year: 2018, category: "Mejor Película Iberoamericana" }
     ],
     cast: [
       { name: "Tomás Cao", role: "Sergio" }, 
       { name: "Héctor Noas", role: "Serguéi" },
-      { name: "Ron Perlman", role: "Peter" }
     ]
   },
   {
@@ -1129,11 +1047,10 @@ const movies2010s: Movie[] = [
     poster: posterInocencia,
     duration: "81 min",
     genre: ["Drama", "Histórico"],
-    synopsis: "Basada en hechos reales ocurridos en 1871. Ocho estudiantes de medicina son injustamente acusados de profanar la tumba de un periodista español y condenados a muerte. 16 años después, Fermín Valdés Domínguez lucha por demostrar su inocencia y encontrar sus cuerpos, revelando una de las heridas más profundas de la historia colonial cubana.",
-    videoUrl: "https://www.youtube.com/embed/v=link_real",
+    synopsis: "Ocho estudiantes de medicina son injustamente condenados a muerte en 1871. Años después se busca demostrar su inocencia.",
+    videoUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2018, category: "Premio Especial del Jurado" },
-      { name: "Premio del Público", year: 2018, category: "Festival de La Habana" }
     ],
     cast: [
       { name: "Yasmany Guerrero", role: "Fermín Valdés Domínguez" }, 
@@ -1142,23 +1059,40 @@ const movies2010s: Movie[] = [
   },
 ];
 
-// === LÓGICA DE ORDENAMIENTO CRONOLÓGICO ===
+// ============================================================================
+// DÉCADA DE 2020 (VACÍA POR AHORA PARA EVITAR ERRORES)
+// ============================================================================
+const movies2020s: Movie[] = [];
 
-// 1. Función auxiliar: Recibe una lista y la devuelve ordenada por año (1990, 1991, 1992...)
+
+// ============================================================================
+// LÓGICA DE ORDENAMIENTO Y EXPORTACIÓN
+// ============================================================================
+
+// 1. Función auxiliar: Ordena por año y luego por título
 const sortByYear = (list: Movie[]) => {
   return [...list].sort((a, b) => {
-    // 1. Primero comparamos el AÑO
+    // Primero comparamos el año
     if (a.year !== b.year) {
-      return a.year - b.year; // Ascendente (del más viejo al más nuevo)
+      return a.year - b.year; 
     }
-    // 2. Si son del MISMO AÑO, desempatamos por TÍTULO alfabético
+    // Si es el mismo año, alfabéticamente
     return a.title.localeCompare(b.title);
   });
 };
 
-// ... (El resto de los exports se queda igual que te pasé antes)
-export const movies = sortByYear([ ...movies1960s, ...movies1970s, /* etc */ ]);
+// 2. EXPORTACIÓN DE LA LISTA COMPLETA
+export const movies = sortByYear([
+  ...movies1960s,
+  ...movies1970s,
+  ...movies1980s,
+  ...movies1990s,
+  ...movies2000s,
+  ...movies2010s,
+  ...movies2020s,
+]);
 
+// 3. EXPORTACIÓN POR DÉCADAS
 export const moviesByDecade = {
   '1960s': sortByYear(movies1960s),
   '1970s': sortByYear(movies1970s),
@@ -1166,4 +1100,23 @@ export const moviesByDecade = {
   '1990s': sortByYear(movies1990s),
   '2000s': sortByYear(movies2000s),
   '2010s': sortByYear(movies2010s),
+  '2020s': sortByYear(movies2020s),
+};
+
+// 4. FUNCIONES AUXILIARES (Para Detalles y Buscador)
+export const getMovieById = (id: string | undefined): Movie | undefined => {
+  if (!id) return undefined;
+  return movies.find((movie) => movie.id === id);
+};
+
+export const getRelatedMovies = (currentMovieId: string, limit: number = 4): Movie[] => {
+  const currentMovie = getMovieById(currentMovieId);
+  if (!currentMovie) return [];
+
+  return movies
+    .filter((movie) => 
+      movie.id !== currentMovieId && 
+      (movie.genre.some(g => currentMovie.genre.includes(g)) || movie.director === currentMovie.director)
+    )
+    .slice(0, limit);
 };
