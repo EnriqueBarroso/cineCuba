@@ -231,7 +231,7 @@ const movies1970s: Movie[] = [
     synopsis:
       'Yolanda, una maestra de clase media, se enamora de Mario, un obrero de un barrio marginal. La película mezcla ficción y documental para examinar los conflictos de clase y el machismo.',
     awards: [],
-     videoUrl: 'https://archive.org/details/de-cierta-manera', // Pendiente de Archive.org
+     videoUrl: 'https://archive.org/embed/de-cierta-manera', // Pendiente de Archive.org
     trailerUrl: 'https://www.youtube.com/embed/csNWvMxNVXo',
     cast: [
       { name: 'Yolanda Cuéllar', role: 'Yolanda' },
