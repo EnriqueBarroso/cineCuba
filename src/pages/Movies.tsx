@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { MovieGrid } from "@/components/MovieGrid";
+import MovieGrid  from "@/components/MovieGrid";
 
 const Movies = () => {
   return (

@@ -43,5 +43,3 @@ export interface CastMember {
   name: string;
   role: string;
 }
-
-export type Genre = string;

@@ -90,7 +90,7 @@ const movies1960s: Movie[] = [
     genre: ['Comedia'],
     synopsis:
       'Un aristócrata venido a menos y su antiguo chófer buscan desesperadamente unos diamantes que fueron escondidos en una de las doce sillas de un juego de comedor antes de ser expropiadas por la Revolución. En su frenética búsqueda, se enfrentan a las nuevas realidades sociales de Cuba.',
-    videoUrl: '', 
+    videoUrl: 'https://archive.org/embed/las-12-sillas', 
     trailerUrl: '',
     awards: [
       { name: 'Festival de Karlovy Vary', year: 1963, category: 'Mención Especial' },
@@ -130,7 +130,7 @@ const movies1960s: Movie[] = [
     genre: ['Comedia'],
     synopsis:
       'Un joven intenta recuperar el carnet laboral de su tío recién fallecido, el cual fue enterrado con él, para que su viuda pueda cobrar la pensión. Esto desata una cadena de trámites absurdos y situaciones kafkianas.',
-    videoUrl: '', // Pendiente de Archive.org
+    videoUrl: 'https://archive.org/embed/la-muerte-de-un-burocrata',
     trailerUrl: 'https://www.youtube.com/embed/ZqjeKGGE1Z4',
     awards: [
       { name: 'Festival de Karlovy Vary', year: 1966, category: 'Premio Especial del Jurado' },
@@ -366,7 +366,7 @@ const movies1980s: Movie[] = [
     genre: ['Comedia'],
     synopsis:
       'Dos jóvenes enamorados enfrentan un conflicto inesperado cuando sus padres solteros comienzan su propio romance, invirtiendo los roles generacionales.',
-    videoUrl: '', // Pendiente de Archive.org
+    videoUrl: 'https://archive.org/embed/los-pajaros-tirandole-a-la-escopeta', 
     trailerUrl: 'https://www.youtube.com/embed/yUUzGFLx7jY',
     awards: [],
     cast: [
@@ -387,6 +387,8 @@ const movies1980s: Movie[] = [
     awards: [
       { name: 'Festival de La Habana', year: 1984, category: 'Premio del Público' },
     ],
+    trailerUrl: 'https://www.youtube.com/embed/2-0en0M6YCA',
+    videoUrl: 'https://archive.org/embed/1983-se-permuta',
     cast: [
       { name: 'Rosita Fornés', role: 'Gloria' },
       { name: 'Isabel Santos', role: 'Yolanda' },
@@ -419,6 +421,8 @@ const movies1980s: Movie[] = [
     synopsis:
       'Mario, un pelotero estrella, debe enfrentar el retiro. La película explora el béisbol cubano y la difícil transición fuera del deporte de alto rendimiento.',
     awards: [],
+     videoUrl: 'https://archive.org/embed/en.-tres.-y.-dos', // Pendiente de Archive.org
+    trailerUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
     cast: [{ name: 'Samuel Claxton', role: 'El entrenador' }],
   },
   {
@@ -1022,7 +1026,7 @@ const movies2010s: Movie[] = [
     synopsis:
       'Chala, un niño problemático, y Carmela, su maestra, enfrentan una batalla moral cuando el sistema intenta enviarlo a una escuela de conducta.',
     videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    trailerUrl: 'https://www.youtube.com/embed/uBPfo4exDZM',
     awards: [
       { name: 'Premio Goya', year: 2015, category: 'Mejor Película Iberoamericana' },
     ],
