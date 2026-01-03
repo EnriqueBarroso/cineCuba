@@ -81,101 +81,117 @@ import {
 
 const movies1960s: Movie[] = [
   {
-    id: 'doce-sillas',
-    title: 'Las doce sillas',
+    id: "doce-sillas",
+    title: "Las doce sillas",
     year: 1962,
-    director: 'Tomás Gutiérrez Alea',
+    director: "Tomás Gutiérrez Alea",
     poster: poster12Sillas,
-    duration: '97 min',
-    genre: ['Comedia'],
-    synopsis:
-      'Un aristócrata venido a menos y su antiguo chófer buscan desesperadamente unos diamantes que fueron escondidos en una de las doce sillas de un juego de comedor antes de ser expropiadas por la Revolución. En su frenética búsqueda, se enfrentan a las nuevas realidades sociales de Cuba.',
+    duration: "97 min",
+    genre: ["Comedia"],
+    synopsis: "Un aristócrata venido a menos y su antiguo chófer buscan desesperadamente unos diamantes que fueron escondidos en una de las doce sillas de un juego de comedor antes de ser expropiadas.",
     videoUrl: 'https://archive.org/embed/las-12-sillas', 
-    trailerUrl: '',
+    trailerUrl: 'https://www.youtube.com/embed/T3vdlz6Qfz8',
     awards: [
-      { name: 'Festival de Karlovy Vary', year: 1963, category: 'Mención Especial' },
+      { name: "Festival de Karlovy Vary", year: 1963, category: "Mención Especial" }
     ],
     cast: [
-      { name: 'Enrique Santiesteban', role: 'Hipólito' },
-      { name: 'Reinaldo Miravalles', role: 'Óscar' },
-    ],
+      { name: "Enrique Santiesteban", role: "Hipólito" },
+      { name: "Reinaldo Miravalles", role: "Óscar" },
+      { name: "René Sánchez", role: "Padre Cirilo" },
+      { name: "Pilín Vallejo", role: "La viuda" }
+    ]
   },
   {
-    id: 'aventuras-juan-quin-quin',
-    title: 'Las aventuras de Juan Quin Quín',
+    id: "aventuras-juan-quin-quin",
+    title: "Las aventuras de Juan Quin Quín",
     year: 1967,
-    director: 'Julio García Espinosa',
+    director: "Julio García Espinosa",
     poster: posterJuanQuinQuin,
-    duration: '110 min',
-    genre: ['Comedia', 'Aventuras'],
-    synopsis:
-      'Juan Quin Quín es un campesino buscavidas que, junto a su amigo Jachero y su amada Teresa, vive múltiples aventuras en la Cuba prerrevolucionaria. La película parodia los géneros del cine comercial para narrar la toma de conciencia política.',
-    videoUrl: '', // Pendiente de Archive.org
+    duration: "110 min",
+    genre: ["Comedia", "Aventuras"],
+    synopsis: "Juan Quin Quín es un guajiro que trabaja en diversos oficios mientras lucha contra la injusticia en la Cuba prerrevolucionaria. Una aventura picaresca con humor y crítica social.",
+    videoUrl: 'https://www.youtube.com/embed/cT3vjbkNY9o', 
     trailerUrl: 'https://www.youtube.com/embed/_HilxAW2dg4',
     awards: [
-      { name: 'Festival de Karlovy Vary', year: 1967, category: 'Premio Especial del Jurado' },
+      { name: "Festival de Karlovy Vary", year: 1967, category: "Premio Especial del Jurado" }
     ],
     cast: [
-      { name: 'Julio Martínez', role: 'Juan Quin Quín' },
-      { name: 'Erdwin Fernández', role: 'Jachero' },
+      { name: "Julio Martínez", role: "Juan Quin Quín" },
+      { name: "Erdwin Fernández", role: "Jachero" },
+      { name: "Adelaida Raymat", role: "Teresa" }
     ],
+    notes: "Una de las películas cubanas más populares y divertidas de la década."
   },
   {
-    id: 'muerte-burocrata',
-    title: 'La muerte de un burócrata',
+    id: "muerte-burocrata",
+    title: "La muerte de un burócrata",
     year: 1966,
-    director: 'Tomás Gutiérrez Alea',
+    director: "Tomás Gutiérrez Alea",
     poster: posterBurocrata,
-    duration: '85 min',
-    genre: ['Comedia'],
-    synopsis:
-      'Un joven intenta recuperar el carnet laboral de su tío recién fallecido, el cual fue enterrado con él, para que su viuda pueda cobrar la pensión. Esto desata una cadena de trámites absurdos y situaciones kafkianas.',
-    videoUrl: 'https://archive.org/embed/la-muerte-de-un-burocrata',
+    duration: "85 min",
+    genre: ["Comedia"],
+    synopsis: "Sátira genial donde un sobrino intenta exhumar el cadáver de su tío para recuperar su carnet laboral, enfrentándose a un laberinto de trámites absurdos.",
+    videoUrl: 'https://archive.org/embed/la-muerte-de-un-burocrata', 
     trailerUrl: 'https://www.youtube.com/embed/ZqjeKGGE1Z4',
     awards: [
-      { name: 'Festival de Karlovy Vary', year: 1966, category: 'Premio Especial del Jurado' },
-    ],
-    cast: [{ name: 'Salvador Wood', role: 'El sobrino' }],
-  },
-  {
-    id: 'lucia-1968',
-    title: 'Lucía',
-    year: 1968,
-    director: 'Humberto Solás',
-    poster: posterLucia,
-    duration: '160 min',
-    genre: ['Drama', 'Histórico'],
-    synopsis:
-      'Tres episodios, tres mujeres llamadas Lucía, tres momentos históricos: la guerra de independencia de 1895, la lucha contra Machado en los años 30 y la Revolución de los 60.',
-    videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/A_oD1MCtk5w',
-    awards: [
-      { name: 'Festival de Moscú', year: 1969, category: 'Gran Premio' },
+      { name: "Festival de Karlovy Vary", year: 1966, category: "Premio Especial del Jurado" },
+      { name: "Festival de Moscú", year: 1967, category: "Mención Especial" }
     ],
     cast: [
-      { name: 'Raquel Revuelta', role: 'Lucía (1895)' },
-      { name: 'Eslinda Núñez', role: 'Lucía (1932)' },
+      { name: "Salvador Wood", role: "El sobrino" },
+      { name: "Silvia Planas", role: "La tía" },
+      { name: "Manuel Estanillo", role: "El burócrata" },
+      { name: "Gaspar de Santelices", role: "El enterrador" }
     ],
+    notes: "Incluye homenajes visuales a Laurel y Hardy, Buñuel y otros maestros del cine."
   },
   {
-    id: 'memorias-subdesarrollo',
-    title: 'Memorias del subdesarrollo',
+    id: "lucia-1968",
+    title: "Lucía",
     year: 1968,
-    director: 'Tomás Gutiérrez Alea',
-    poster: posterMemoriasSub,
-    duration: '97 min',
-    genre: ['Drama'],
-    synopsis:
-      'Sergio, un intelectual burgués, decide quedarse en Cuba tras el triunfo de la Revolución mientras su familia y amigos huyen a Miami. Solo y alienado, deambula por La Habana observando críticamente los vertiginosos cambios sociales.',
-    videoUrl: "", // Pendiente de Archive.org
+    director: "Humberto Solás",
+    poster: posterLucia,
+    duration: "160 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Una obra maestra del cine cubano que narra tres historias de mujeres llamadas Lucía en tres momentos cruciales de la historia de Cuba: la guerra de independencia de 1895, la lucha contra Machado en los años 30, y la Revolución de los años 60.",
+    videoUrl: '', 
+    trailerUrl: "https://www.youtube.com/embed/A_oD1MCtk5w",
+    awards: [
+      { name: "Festival de Moscú", year: 1969, category: "Gran Premio" },
+      { name: "Festival de Karlovy Vary", year: 1969, category: "Mejor Película" }
+    ],
+    cast: [
+      { name: "Raquel Revuelta", role: "Lucía (1895)" },
+      { name: "Eslinda Núñez", role: "Lucía (1932)" },
+      { name: "Adela Legrá", role: "Lucía (1960)" },
+      { name: "Eduardo Moure", role: "Rafael" },
+      { name: "Ramón Brito", role: "Aldo" },
+      { name: "Adolfo Llauradó", role: "Tomás" }
+    ],
+    notes: "Considerada una de las obras maestras del cine latinoamericano."
+  },
+  {
+    id: "memorias-subdesarrollo",
+    title: "Memorias del subdesarrollo",
+    year: 1968,
+    director: "Tomás Gutiérrez Alea",
+    poster: posterMemoria,
+    duration: "97 min",
+    genre: ["Drama"],
+    synopsis: "Un intelectual burgués decide quedarse en Cuba tras la Revolución mientras su familia huye al exilio. Atrapado entre dos mundos, observa los cambios de la sociedad cubana mientras cuestiona su propia identidad y lugar en el nuevo orden.",
+    videoUrl: "https://archive.org/embed/memorias-del-subdesarrollo-1968",
     trailerUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
-      { name: 'Festival de Karlovy Vary', year: 1968, category: 'Premio FIPRESCI' },
+      { name: "Festival de Karlovy Vary", year: 1968, category: "Premio FIPRESCI" },
+      { name: "Revista Sight & Sound", year: 1999, category: "Una de las mejores películas del siglo XX" }
     ],
     cast: [
-      { name: 'Sergio Corrieri', role: 'Sergio' },
-      { name: 'Daisy Granados', role: 'Elena' },
+      { name: "Sergio Corrieri", role: "Sergio" },
+      { name: "Daisy Granados", role: "Elena" },
+      { name: "Eslinda Núñez", role: "Noemí" },
+      { name: "Omar Valdés", role: "Pablo" }
     ],
+    notes: "Basada en la novela de Edmundo Desnoes. Considerada una de las obras maestras del cine latinoamericano.",
     backdrop: heroMemorias,
   },
   {
@@ -187,10 +203,13 @@ const movies1960s: Movie[] = [
     duration: '141 min',
     genre: ['Drama', 'Histórico'],
     synopsis:
-      'Una coproducción cubano-soviética visualmente deslumbrante que narra cuatro historias sobre la vida en Cuba antes de la Revolución. Famosa por sus increíbles planos secuencia y su fotografía en blanco y negro.',
-    videoUrl: '', 
-    trailerUrl: '',
-    awards: [{ name: 'Cannes Classics', year: 2004, category: 'Restauración' }],
+      'Una coproducción cubano-soviética visualmente deslumbrante que narra cuatro historias sobre la vida en Cuba antes de la Revolución. Famosa por sus increíbles planos secuencia y su fotografía en blanco y negro, redescubierta décadas después.',
+    videoUrl: 'https://www.youtube.com/embed/Y3HpI898dwg', 
+    trailerUrl: 'https://www.youtube.com/embed/XnynEcy_pus',
+    awards: [
+      { name: 'Cannes Classics', year: 2004, category: 'Selección Oficial (Restauración)' },
+      { name: 'Independent Spirit Awards', year: 1996, category: 'Nominada Mejor Película Extranjera' }
+    ],
     cast: [
       { name: 'Sergio Corrieri', role: 'Alberto' },
       { name: 'Salvador Wood', role: 'Campesino' },
@@ -204,107 +223,137 @@ const movies1960s: Movie[] = [
 
 const movies1970s: Movie[] = [
   {
-    id: 'hombre-maisinicu',
-    title: 'El hombre de Maisinicú',
+    id: "hombre-maisinicu",
+    title: "El hombre de Maisinicú",
     year: 1973,
-    director: 'Manuel Pérez',
+    director: "Manuel Pérez",
     poster: posterMaisinicu,
-    duration: '100 min',
-    genre: ['Drama', 'Histórico'],
-    synopsis:
-      'Basada en hechos reales. Alberto Delgado opera como agente encubierto infiltrado en las bandas contrarrevolucionarias del Escambray. La película narra su peligrosa doble vida y sacrificio.',
+    duration: "100 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Basada en hechos reales, narra la historia de Alberto Delgado, un agente de la Seguridad del Estado que se infiltra entre los bandidos del Escambray haciéndose pasar por contrarrevolucionario.",
+    videoUrl: 'https://archive.org/embed/el-hombre-de-maisinicu', 
+    trailerUrl: 'https://www.youtube.com/watch?v=PoKUHKXj3Co&list=RDPoKUHKXj3Co&start_radio=1',
     awards: [
-      { name: 'Festival de Karlovy Vary', year: 1974, category: 'Premio Especial' },
+      { name: "Festival de Karlovy Vary", year: 1974, category: "Premio Especial" }
     ],
-     videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/PoKUHKXj3Co&list=RDPoKUHKXj3Co&start_radio=1',
-    cast: [{ name: 'Sergio Corrieri', role: 'Alberto Delgado' }],
-  },
-  {
-    id: 'de-cierta-manera',
-    title: 'De cierta manera',
-    year: 1974,
-    director: 'Sara Gómez',
-    poster: posterDeCiertaManera,
-    duration: '73 min',
-    genre: ['Drama', 'Documental'],
-    synopsis:
-      'Yolanda, una maestra de clase media, se enamora de Mario, un obrero de un barrio marginal. La película mezcla ficción y documental para examinar los conflictos de clase y el machismo.',
-    awards: [],
-     videoUrl: 'https://archive.org/embed/de-cierta-manera', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/csNWvMxNVXo',
     cast: [
-      { name: 'Yolanda Cuéllar', role: 'Yolanda' },
-      { name: 'Mario Balmaseda', role: 'Mario' },
+      { name: "Sergio Corrieri", role: "Alberto Delgado" },
+      { name: "Reinaldo Miravalles", role: "Maro" },
+      { name: "Nelson Villagra", role: "El capitán" }
     ],
+    notes: "Una de las películas cubanas más emblemáticas sobre la lucha contra bandidos."
   },
   {
-    id: 'la-ultima-cena',
-    title: 'La última cena',
-    year: 1976,
-    director: 'Tomás Gutiérrez Alea',
-    poster: posterUltimaCena,
-    duration: '120 min',
-    genre: ['Drama', 'Histórico'],
-    synopsis:
-      'A finales del siglo XVIII, un conde recrea la última cena con doce esclavos el Jueves Santo. Les promete un día de libertad, pero la brutalidad del día siguiente desata una rebelión.',
+    id: "de-cierta-manera",
+    title: "De cierta manera",
+    year: 1974,
+    director: "Sara Gómez",
+    poster: posterDeCiertaManera,
+    duration: "73 min",
+    genre: ["Drama", "Documental"],
+    synopsis: "Una maestra de origen burgués comienza a trabajar en un barrio marginal de La Habana y se enamora de un obrero. La película mezcla ficción y documental para explorar las tensiones de clase, género y los desafíos de la transformación social revolucionaria.",
+    videoUrl: 'https://archive.org/embed/de-cierta-manera',
+    trailerUrl: 'https://www.youtube.com/embed/csNWvMxNVXo',
     awards: [
-      { name: 'Festival de La Habana', year: 1976, category: 'Gran Premio' },
+      { name: "Festival de Leipzig", year: 1977, category: "Mención Especial" }
     ],
+    cast: [
+      { name: "Yolanda Cuéllar", role: "Yolanda" },
+      { name: "Mario Balmaseda", role: "Mario" },
+      { name: "Mario Limonta", role: "Humberto" },
+      { name: "Isaura Mendoza", role: "Personaje" }
+    ],
+    notes: "Primera y única película de ficción de Sara Gómez, la primera directora afrocubana."
+  },
+  {
+    id: "la-ultima-cena",
+    title: "La última cena",
+    year: 1976,
+    director: "Tomás Gutiérrez Alea",
+    poster: posterUltimaCena,
+    duration: "120 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Un conde hacendado del siglo XVIII decide recrear la Última Cena con doce de sus esclavos, ofreciéndoles libertad. Sin embargo, cuando su promesa no se cumple, estalla una rebelión que tendrá consecuencias trágicas.",
     videoUrl: '',
     trailerUrl: 'https://www.youtube.com/embed/lfluvDZsqms',
-    cast: [{ name: 'Nelson Villagra', role: 'El Conde' }],
-  },
-  {
-    id: 'retrato-de-teresa',
-    title: 'Retrato de Teresa',
-    year: 1979,
-    director: 'Pastor Vega',
-    poster: posterRetratoTeresa,
-    duration: '103 min',
-    genre: ['Drama'],
-    synopsis:
-      'Teresa es una trabajadora textil y dirigente sindical que se enfrenta al machismo de su esposo. El conflicto marital se convierte en símbolo de la lucha de la mujer por su emancipación.',
     awards: [
-      { name: 'Festival de La Habana', year: 1979, category: 'Gran Premio Coral' },
+      { name: "Festival de Taormina", year: 1977, category: "Mejor Película" },
+      { name: "Festival de La Habana", year: 1976, category: "Gran Premio" }
     ],
-    trailerUrl: 'https://www.youtube.com/embed/ff5SpRmTrng',
     cast: [
-      { name: 'Daisy Granados', role: 'Teresa' },
-      { name: 'Adolfo Llauradó', role: 'Ramón' },
+      { name: "Nelson Villagra", role: "El Conde" },
+      { name: "Silvano Rey", role: "Sebastián" },
+      { name: "Luis Alberto García", role: "Antonio" },
+      { name: "José Antonio Rodríguez", role: "Don Manuel" }
     ],
+    notes: "Alegoría poderosa sobre la esclavitud y la hipocresía religiosa en la Cuba colonial."
   },
   {
-    id: 'sobrevivientes',
-    title: 'Los sobrevivientes',
+    id: "retrato-de-teresa",
+    title: "Retrato de Teresa",
     year: 1979,
-    director: 'Tomás Gutiérrez Alea',
-    poster: posterSobrevivientes,
-    duration: '130 min',
-    genre: ['Drama'],
-    synopsis:
-      "Una familia aristocrática decide encerrarse en su mansión esperando que la Revolución pase. Aislados, mantienen sus jerarquías hasta involucionar hacia la barbarie.",
-    videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/7qKSk9fpF8M',
-    awards: [],
-    cast: [{ name: 'Enrique Santiesteban', role: 'Sebastián' }],
+    director: "Pastor Vega",
+    poster: posterRetratoTeresa,
+    duration: "103 min",
+    genre: ["Drama"],
+    synopsis: "Teresa es una trabajadora textil, esposa y madre que participa activamente en actividades culturales. Cuando su marido exige que abandone sus actividades para dedicarse exclusivamente al hogar, ella se niega, desencadenando un conflicto sobre los roles de género en la Cuba revolucionaria.",
+    trailerUrl: 'https://www.youtube.com/embed/ff5SpRmTrng',
+    awards: [
+      { name: "Festival de La Habana", year: 1979, category: "Gran Premio Coral" },
+      { name: "Festival de Karlovy Vary", year: 1980, category: "Premio del Público" }
+    ],
+    cast: [
+      { name: "Daisy Granados", role: "Teresa" },
+      { name: "Adolfo Llauradó", role: "Ramón" },
+      { name: "Alina Sánchez", role: "Personaje" },
+      { name: "Raúl Pomares", role: "Personaje" }
+    ],
+    notes: "Película emblemática del feminismo cubano."
   },
   {
-    id: 'el-brigadista',
-    title: 'El Brigadista',
-    year: 1977,
-    director: 'Octavio Cortázar',
-    poster: posterBrigadista,
-    duration: '119 min',
-    genre: ['Drama', 'Histórico'],
-    synopsis:
-      'Durante la Campaña de Alfabetización de 1961, un joven estudiante llega a una zona rural remota para enseñar a leer, enfrentándose a la ignorancia y a las bandas contrarrevolucionarias.',
+    id: "sobrevivientes",
+    title: "Los sobrevivientes",
+    year: 1979,
+    director: "Tomás Gutiérrez Alea",
+    poster: posterSobrevivientes,
+    duration: "130 min",
+    genre: ["Drama"],
+    synopsis: "Una familia aristocrática decide encerrarse en su mansión creyendo que la Revolución será algo pasajero. Aislados del mundo, comienzan a involucionar hacia el salvajismo.",
+    videoUrl: 'https://archive.org/embed/los-sobrevivientes', 
+    trailerUrl: 'https://www.youtube.com/embed/7qKSk9fpF8M',
     awards: [
-      { name: 'Festival de Moscú', year: 1978, category: 'Premio Especial' },
+      { name: "Festival de San Sebastián", year: 1979, category: "Premio Especial del Jurado" }
     ],
+    cast: [
+      { name: "Enrique Santiesteban", role: "Sebastián" },
+      { name: "Reynaldo Miravalles", role: "Olegario" },
+      { name: "Germán Pinelli", role: "Ramiro" },
+      { name: "Ana Viña", role: "María" },
+      { name: "Vicente Revuelta", role: "Fernando" }
+    ],
+    notes: "Alegoría sobre la resistencia al cambio y la decadencia de la clase burguesa."
+  },
+  {
+    id: "el-brigadista",
+    title: "El Brigadista",
+    year: 1977,
+    director: "Octavio Cortázar",
+    poster: posterBrigadista,
+    duration: "119 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Durante la Campaña de Alfabetización de 1961, un joven habanero viaja a las montañas del Escambray para enseñar a leer y escribir a los campesinos, enfrentándose a bandidos contrarrevolucionarios.",
     videoUrl: '',
     trailerUrl: 'https://www.youtube.com/embed/sM9WoGomm_E',
-    cast: [{ name: 'Salvador Wood', role: 'Mario' }],
+    awards: [
+      { name: "Festival de Moscú", year: 1978, category: "Premio Especial" }
+    ],
+    cast: [
+      { name: "Salvador Wood", role: "Mario" },
+      { name: "Jorge Villazón", role: "Eladio" },
+      { name: "Idalia Anreus", role: "Clarita" },
+      { name: "Raúl Pomares", role: "Ciro" }
+    ],
+    notes: "Película emblemática sobre la Campaña de Alfabetización cubana."
   },
   {
     id: "elpidio-valdes-film",
@@ -315,9 +364,12 @@ const movies1970s: Movie[] = [
     duration: "70 min",
     genre: ["Animación", "Aventuras"],
     synopsis: "El largometraje que consolidó al personaje más icónico de la animación cubana. Elpidio, un coronel mambí, lucha por la independencia de Cuba contra el ejército español y el General Resoplez.",
-    videoUrl: "", // Pendiente de Archive.org
+    videoUrl: "", 
     trailerUrl: "https://www.youtube.com/embed/6vcGn6a-0ss",
-    awards: [{ name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" }],
+    awards: [
+      { name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" },
+      { name: "Festival de Moscú", year: 1981, category: "Tercer Premio" }
+    ],
     cast: [{ name: "Frank González", role: "Elpidio Valdés (voz)" }],
     backdrop: heroElpidio,
   },
@@ -329,101 +381,135 @@ const movies1970s: Movie[] = [
 
 const movies1980s: Movie[] = [
   {
-    id: 'cecilia',
-    title: 'Cecilia',
+    id: "cecilia",
+    title: "Cecilia",
     year: 1982,
-    director: 'Humberto Solás',
+    director: "Humberto Solás",
     poster: posterCecilia,
-    duration: '127 min',
-    genre: ['Drama', 'Romance', 'Histórico'],
-    synopsis:
-      "En la Habana colonial, la mestiza Cecilia y el aristócrata Leonardo viven un apasionado romance sin saber que son hermanos, desencadenando una tragedia.",
+    duration: "127 min",
+    genre: ["Drama", "Romance", "Histórico"],
+    synopsis: "En la Cuba colonial del siglo XIX, Cecilia Valdés, una bella mulata, se enamora de Leonardo, un joven criollo blanco, sin saber que son medio hermanos. Una historia de pasión, tragedia y desigualdad social.",
     awards: [
-      { name: 'Festival de La Habana', year: 1982, category: 'Gran Premio Coral' },
+      { name: "Festival de La Habana", year: 1982, category: "Gran Premio Coral" },
+      { name: "Festival de Cartagena", year: 1983, category: "Mejor Película" }
     ],
-    cast: [{ name: 'Daisy Granados', role: 'Cecilia' }],
+    trailerUrl: 'https://www.youtube.com/embed/xg8Fbj4nA1I',
+    videoUrl: '',
+    cast: [
+      { name: "Daisy Granados", role: "Cecilia Valdés" },
+      { name: "Imanol Arias", role: "Leonardo Gamboa" },
+      { name: "Nelson Villagra", role: "Don Cándido Gamboa" },
+      { name: "Raquel Revuelta", role: "Doña Rosa" }
+    ],
+    notes: "Basada en la novela clásica de Cirilo Villaverde."
   },
   {
-    id: 'un-hombre-de-exito',
-    title: 'Un hombre de éxito',
+    id: "un-hombre-de-exito",
+    title: "Un hombre de éxito",
     year: 1986,
-    director: 'Humberto Solás',
+    director: "Humberto Solás",
     poster: posterHombreExito,
-    duration: '120 min',
-    genre: ['Drama'],
-    synopsis:
-      "Javier es un joven ambicioso que se adapta camaleónicamente a los diferentes gobiernos de la Cuba republicana para ascender socialmente, sacrificando sus ideales.",
-    awards: [],
-    cast: [{ name: 'César Évora', role: 'Javier' }],
+    duration: "120 min",
+    genre: ["Drama"],
+    synopsis: "Javier es un joven ambicioso que traiciona sus ideales revolucionarios para escalar posiciones durante las décadas del 30 al 50 en Cuba. Un retrato mordaz del oportunismo político.",
+    awards: [
+      { name: "Festival de La Habana", year: 1986, category: "Premio Coral" },
+      { name: "Festival de Biarritz", year: 1987, category: "Premio del Público" }
+    ],
+    cast: [
+      { name: "César Évora", role: "Javier" },
+      { name: "Daisy Granados", role: "Julia" },
+      { name: "Jorge Trinchet", role: "Darío" },
+      { name: "Raúl Pomares", role: "Jacinto" }
+    ],
+    notes: "Una de las películas cubanas más críticas con el oportunismo político."
   },
   {
-    id: 'pajaros-escopeta',
-    title: 'Los pájaros tirándole a la escopeta',
+    id: "pajaros-escopeta",
+    title: "Los pájaros tirándole a la escopeta",
     year: 1984,
-    director: 'Rolando Díaz',
+    director: "Rolando Díaz",
     poster: posterLosPajaros,
-    duration: '90 min',
-    genre: ['Comedia'],
-    synopsis:
-      'Dos jóvenes enamorados enfrentan un conflicto inesperado cuando sus padres solteros comienzan su propio romance, invirtiendo los roles generacionales.',
+    duration: "90 min",
+    genre: ["Comedia"],
+    synopsis: "Dos jóvenes enamorados intentan impedir el romance entre el padre de él y la madre de ella. Una comedia clásica cubana que invierte los conflictos generacionales habituales.",
     videoUrl: 'https://archive.org/embed/los-pajaros-tirandole-a-la-escopeta', 
     trailerUrl: 'https://www.youtube.com/embed/yUUzGFLx7jY',
-    awards: [],
-    cast: [
-      { name: 'Luis Alberto García', role: 'Carlos' },
-      { name: 'Beatriz Valdés', role: 'Ofelia' },
+    awards: [
+      { name: "Festival de Comedia de Peñíscola", year: 1985, category: "Mejor Película" }
     ],
+    cast: [
+      { name: "Luis Alberto García", role: "Carlos" },
+      { name: "Thais Valdés", role: "Ofelia" },
+      { name: "Daisy Granados", role: "La madre" },
+      { name: "César Évora", role: "El padre" }
+    ],
+    notes: "Una de las comedias cubanas más populares de la década."
   },
   {
-    id: 'se-permuta',
-    title: 'Se permuta',
+    id: "se-permuta",
+    title: "Se permuta",
     year: 1984,
-    director: 'Juan Carlos Tabío',
+    director: "Juan Carlos Tabío",
     poster: posterSePermuta,
-    duration: '100 min',
-    genre: ['Comedia'],
-    synopsis:
-      'Gloria mueve cielo y tierra para mudarse de barrio mediante una compleja cadena de permutas, generando un caos burocrático y situaciones disparatadas.',
-    awards: [
-      { name: 'Festival de La Habana', year: 1984, category: 'Premio del Público' },
-    ],
+    duration: "100 min",
+    genre: ["Comedia"],
+    synopsis: "Gloria vive en un apartamento pequeño en Centro Habana y sueña con mudarse a un lugar mejor. A través de una cadena de permutas de viviendas, la película satiriza la burocracia y las aspiraciones de la clase media cubana.",
     trailerUrl: 'https://www.youtube.com/embed/2-0en0M6YCA',
     videoUrl: 'https://archive.org/embed/1983-se-permuta',
-    cast: [
-      { name: 'Rosita Fornés', role: 'Gloria' },
-      { name: 'Isabel Santos', role: 'Yolanda' },
+    awards: [
+      { name: "Festival de La Habana", year: 1984, category: "Premio del Público" }
     ],
+    cast: [
+      { name: "Rosita Fornés", role: "Gloria" },
+      { name: "Isabel Santos", role: "Yolanda" },
+      { name: "Luis Alberto García", role: "Eugenio" },
+      { name: "Mario Balmaseda", role: "Personaje" }
+    ],
+    notes: "Una de las comedias cubanas más populares y queridas de los 80s."
   },
   {
-    id: 'vampiros-habana',
-    title: '¡Vampiros en La Habana!',
+    id: "vampiros-habana",
+    title: "¡Vampiros en La Habana!",
     year: 1985,
-    director: 'Juan Padrón',
+    director: "Juan Padrón",
     poster: posterVampirosHabana,
-    duration: '69 min',
-    genre: ['Animación', 'Comedia'],
-    synopsis:
-      "Un científico vampiro crea una fórmula para resistir el sol. Su sobrino Pepito debe protegerla de la mafia de vampiros de Chicago y Europa.",
-    videoUrl: '', // Pendiente de Archive.org
+    duration: "69 min",
+    genre: ["Animación", "Comedia"],
+    synopsis: "Un científico vampiro cubano inventa una fórmula que permite a los vampiros resistir la luz del sol. Mientras tanto, las mafias vampíricas de Estados Unidos y Europa oriental luchan por hacerse con el secreto. Una sátira animada llena de humor negro.",
+    videoUrl: '', 
     trailerUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
-    awards: [],
-    cast: [{ name: 'Frank González', role: 'Drácula (voz)' }],
+    awards: [
+      { name: "Encuesta Noticine.com", year: 2009, category: "Top 100 Mejores Películas Iberoamericanas" }
+    ],
+    cast: [
+      { name: "Manuel Marín", role: "Pepito (voz)" },
+      { name: "Frank González", role: "Drácula (voz)" },
+      { name: "Margarita Agüero", role: "Lola (voz)" }
+    ],
+    notes: "Coproducida con España y Alemania. Banda sonora de Arturo Sandoval.",
     backdrop: heroVampiros,
   },
   {
-    id: 'en-tres-y-dos',
-    title: 'En tres y dos',
+    id: "en-tres-y-dos",
+    title: "En tres y dos",
     year: 1985,
-    director: 'Rolando Díaz',
+    director: "Rolando Díaz",
     poster: posterEnTresYDos,
-    duration: '100 min',
-    genre: ['Comedia', 'Drama'],
-    synopsis:
-      'Mario, un pelotero estrella, debe enfrentar el retiro. La película explora el béisbol cubano y la difícil transición fuera del deporte de alto rendimiento.',
-    awards: [],
-     videoUrl: 'https://archive.org/embed/en.-tres.-y.-dos', // Pendiente de Archive.org
+    duration: "100 min",
+    genre: ["Comedia", "Drama"],
+    synopsis: "Una comedia deportiva que sigue las peripecias de un equipo de béisbol cubano y su entrenador. La película captura con humor y sensibilidad el mundo del deporte nacional cubano.",
+    videoUrl: 'https://archive.org/embed/en.-tres.-y.-dos',
     trailerUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
-    cast: [{ name: 'Samuel Claxton', role: 'El entrenador' }],
+    awards: [
+      { name: "Festival de La Habana", year: 1985, category: "Premio del Público" }
+    ],
+    cast: [
+      { name: "Samuel Claxton", role: "El entrenador" },
+      { name: "Mario Balmaseda", role: "Personaje principal" },
+      { name: "Luis Alberto García", role: "Jugador" }
+    ],
+    notes: "Una de las películas de béisbol más queridas del cine cubano."
   },
   {
     id: "una-novia-para-david",
@@ -434,7 +520,7 @@ const movies1980s: Movie[] = [
     duration: "103 min",
     genre: ["Comedia", "Romance"],
     synopsis: "David busca novia y se debate entre Olga, espectacular pero superficial, y Ofelia, su compañera intelectual con quien tiene una conexión profunda.",
-    videoUrl: "", // Pendiente de Archive.org
+    videoUrl: "https://archive.org/embed/una-novia-para-david", 
     trailerUrl: "https://www.youtube.com/embed/-G-2kTjx25M",
     awards: [
       { name: "Festival de La Habana", year: 1985, category: "Premio de la Popularidad" }
@@ -445,61 +531,86 @@ const movies1980s: Movie[] = [
     ]
   },
   {
-    id: 'clandestinos',
-    title: 'Clandestinos',
+    id: "clandestinos",
+    title: "Clandestinos",
     year: 1987,
-    director: 'Fernando Pérez',
+    director: "Fernando Pérez",
     poster: posterClandestinos,
-    duration: '100 min',
-    genre: ['Drama', 'Histórico'],
-    synopsis:
-      'La vida de un grupo de jóvenes en la lucha clandestina urbana contra Batista. Se centra en la relación de amor y sacrificio entre Ernesto y Nereida.',
-    awards: [],
-    cast: [
-      { name: 'Luis Alberto García', role: 'Ernesto' },
-      { name: 'Isabel Santos', role: 'Nereida' },
-    ],
-  },
-  {
-    id: 'plaff',
-    title: 'Plaff o Demasiado miedo a la vida',
-    year: 1988,
-    director: 'Juan Carlos Tabío',
-    poster: posterPlaff,
-    duration: '100 min',
-    genre: ['Comedia'],
-    synopsis:
-      "Concha vive obsesionada con que le lanzan huevos a su casa. Una sátira sobre los miedos irracionales y la inmovilidad social.",
-    awards: [],
-    cast: [{ name: 'Daisy Granados', role: 'Concha' }],
-  },
-  {
-    id: 'bella-alhambra',
-    title: 'La bella del Alhambra',
-    year: 1989,
-    director: 'Enrique Pineda Barnet',
-    poster: posterBellaAlhambra,
-    duration: '108 min',
-    genre: ['Drama', 'Musical'],
-    synopsis:
-      'Rachel, una corista ambiciosa, lucha por ser vedette en el famoso Teatro Alhambra en la Habana de los años 20.',
+    duration: "100 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "La Habana, 1958. Un grupo de jóvenes revolucionarios vive en la clandestinidad mientras prepara acciones contra la dictadura de Batista. La película explora el amor, la lealtad y el sacrificio en tiempos de lucha.",
     awards: [
-      { name: 'Premio Goya', year: 1990, category: 'Mejor Película Extranjera' },
+      { name: "Festival de La Habana", year: 1987, category: "Gran Premio Coral" },
+      { name: "Festival de Karlovy Vary", year: 1988, category: "Premio Especial" }
     ],
-    cast: [{ name: 'Beatriz Valdés', role: 'Rachel' }],
+    videoUrl: "https://archive.org/embed/clandestinos-01", 
+    trailerUrl: "https://www.youtube.com/embed/E5UI-pav-Xo",
+    cast: [
+      { name: "Luis Alberto García", role: "Ernesto" },
+      { name: "Isabel Santos", role: "Nereida" },
+      { name: "Susana Pérez", role: "Rosa" }
+    ],
+    notes: "Ópera prima de Fernando Pérez."
   },
   {
-    id: 'papeles-secundarios',
-    title: 'Papeles secundarios',
+    id: "plaff",
+    title: "Plaff o Demasiado miedo a la vida",
+    year: 1988,
+    director: "Juan Carlos Tabío",
+    poster: posterPlaff,
+    duration: "100 min",
+    genre: ["Comedia"],
+    synopsis: "Concha, una viuda hipocondríaca y supersticiosa, vive atormentada por misteriosos huevos que caen sobre ella. Una comedia negra que satiriza los miedos irracionales.",
+    awards: [
+      { name: "Festival de La Habana", year: 1988, category: "Premio Coral a la Comedia" },
+      { name: "Festival de Bogotá", year: 1989, category: "Mejor Película" }
+    ],
+    cast: [
+      { name: "Daisy Granados", role: "Concha" },
+      { name: "Thais Valdés", role: "Clarita" },
+      { name: "Luis Alberto García", role: "José Ramón" }
+    ],
+    notes: "Título onomatopéyico que representa el sonido de los huevos al caer."
+  },
+  {
+    id: "bella-alhambra",
+    title: "La bella del Alhambra",
     year: 1989,
-    director: 'Orlando Rojas',
+    director: "Enrique Pineda Barnet",
+    poster: posterBellaAlhambra,
+    duration: "108 min",
+    genre: ["Drama", "Musical"],
+    synopsis: "La historia de Rachel, una joven mulata que sueña con convertirse en vedette del famoso teatro Alhambra de La Habana a principios del siglo XX.",
+    awards: [
+      { name: "Premio Goya", year: 1990, category: "Mejor Película Extranjera de Habla Hispana" },
+      { name: "Festival de La Habana", year: 1989, category: "Gran Premio Coral" }
+    ],
+    videoUrl: "https://archive.org/embed/la-bella-del-alhambra-vcd", 
+    trailerUrl: "",
+    cast: [
+      { name: "Beatriz Valdés", role: "Rachel" },
+      { name: "César Évora", role: "Adolfo" },
+      { name: "Omar Valdés", role: "Federico" }
+    ],
+    notes: "Ganadora del primer Goya a Mejor Película Extranjera de Habla Hispana."
+  },
+  {
+    id: "papeles-secundarios",
+    title: "Papeles secundarios",
+    year: 1989,
+    director: "Orlando Rojas",
     poster: posterPapelesSecundarios,
-    duration: '95 min',
-    genre: ['Drama'],
-    synopsis:
-      'En un grupo de teatro, Mirta, una actriz veterana relegada a papeles secundarios, lucha por su dignidad en un ambiente de control y oportunismo.',
-    awards: [],
-    cast: [{ name: 'Rosita Fornés', role: 'Actriz' }],
+    duration: "95 min",
+    genre: ["Drama"],
+    synopsis: "Un grupo de actores de teatro enfrenta las dificultades de ensayar una obra mientras lidian con sus propios dramas personales.",
+    awards: [
+      { name: "Festival de La Habana", year: 1989, category: "Premio Coral" }
+    ],
+    cast: [
+      { name: "Rosita Fornés", role: "Actriz principal" },
+      { name: "Leonor Arocha", role: "Personaje" }
+    ],
+    notes: "Una de las películas cubanas más importantes sobre el mundo teatral."
   },
 ];
 
@@ -509,140 +620,161 @@ const movies1980s: Movie[] = [
 
 const movies1990s: Movie[] = [
   {
-    id: 'maria-antonia',
-    title: 'María Antonia',
-    year: 1990,
-    director: 'Sergio Giral',
-    poster: posterMariaAntonia,
-    duration: '111 min',
-    genre: ['Drama'],
-    synopsis:
-      'Ambientada en los años 50. María Antonia es una mujer indomable cuya vida está marcada por la religión afrocubana y una pasión destructiva por un boxeador.',
-    videoUrl: '',
-    trailerUrl: '',
-    awards: [],
-    cast: [
-      { name: 'Alina Rodríguez', role: 'María Antonia' },
-      { name: 'Alexis Valdés', role: 'Julián' },
-    ],
-  },
-  {
-    id: 'caravana',
-    title: 'Caravana',
-    year: 1990,
-    director: 'Rogelio París',
-    poster: posterCaravana,
-    duration: '100 min',
-    genre: ['Bélico', 'Aventuras'],
-    synopsis:
-      'Durante la guerra de Angola, una caravana militar cubana debe abastecer un puente aislado, enfrentándose a emboscadas y tensiones internas.',
-    videoUrl: '',
-    trailerUrl: '',
-    awards: [],
-    cast: [
-      { name: 'Manuel Porto', role: 'El Jefe' },
-      { name: 'Patricio Wood', role: 'Soldado' },
-    ],
-  },
-  {
-    id: 'alicia-en-el-pueblo-de-maravillas',
-    title: 'Alicia en el pueblo de Maravillas',
+    id: "adorables-mentiras",
+    title: "Adorables mentiras",
     year: 1991,
-    director: 'Daniel Díaz Torres',
-    poster: posterAlicia,
-    duration: '93 min',
-    genre: ['Sátira', 'Comedia'],
-    synopsis:
-      'Una instructora de teatro llega a un pueblo donde ocurren sucesos absurdos y burocráticos. Una sátira mordaz sobre la sociedad cubana.',
-    videoUrl: '',
-    trailerUrl: '',
-    awards: [{ name: 'Festival de Berlín', year: 1991, category: 'Premio Caligari' }],
-    cast: [
-      { name: 'Thais Valdés', role: 'Alicia' },
-      { name: 'Reynaldo Miravalles', role: 'El Director' },
-    ],
-  },
-  {
-    id: 'adorables-mentiras',
-    title: 'Adorables mentiras',
-    year: 1991,
-    director: 'Gerardo Chijona',
+    director: "Gerardo Chijona",
     poster: posterAdorablesMentiras,
-    duration: '108 min',
-    genre: ['Comedia', 'Romance'],
-    synopsis:
-      "Jorge Luis y Sissy construyen una relación basada en mentiras sobre sus éxitos profesionales, hasta que la realidad amenaza con desmoronar todo.",
-    awards: [],
+    duration: "108 min",
+    genre: ["Comedia", "Romance"],
+    synopsis: "Nancy es una aspirante a actriz que sobrevive en La Habana del Período Especial. Cuando conoce a un extranjero que la confunde con una actriz famosa, decide seguir el juego.",
+    awards: [
+      { name: "Festival de La Habana", year: 1991, category: "Premio del Público" }
+    ],
     cast: [
-      { name: 'Isabel Santos', role: 'Nancy' },
-      { name: 'Luis Alberto García', role: 'Lombardi' },
+      { name: "Isabel Santos", role: "Nancy" },
+      { name: "Luis Alberto García", role: "Lombardi" },
+      { name: "Mirtha Ibarra", role: "Personaje" }
+    ],
+    notes: "Guion coescrito con Senel Paz."
+  },
+  {
+    id: "maria-antonia",
+    title: "María Antonia",
+    year: 1990,
+    director: "Sergio Giral",
+    poster: posterMariaAntonia,
+    duration: "111 min",
+    genre: ["Drama"],
+    synopsis: "Ambientada en los años 50. María Antonia es una mujer indomable cuya vida está marcada por la religión afrocubana y una pasión destructiva por un boxeador.",
+    videoUrl: '',
+    trailerUrl: '',
+    awards: [
+      { name: "Festival de La Habana", year: 1990, category: "Premio Coral a la Mejor Fotografía" }
+    ],
+    cast: [
+      { name: "Alina Rodríguez", role: "María Antonia" },
+      { name: "Alexis Valdés", role: "Julián" }
     ],
   },
   {
-    id: 'fresa-chocolate-1993',
-    title: 'Fresa y Chocolate',
+    id: "caravana",
+    title: "Caravana",
+    year: 1990,
+    director: "Rogelio París",
+    poster: posterCaravana,
+    duration: "100 min",
+    genre: ["Bélico", "Aventuras"],
+    synopsis: "Durante la guerra de Angola, una caravana militar cubana debe abastecer un puente aislado, enfrentándose a emboscadas y tensiones internas.",
+    videoUrl: '',
+    trailerUrl: '',
+    awards: [],
+    cast: [
+      { name: "Manuel Porto", role: "El Jefe" },
+      { name: "Patricio Wood", role: "Soldado" }
+    ],
+  },
+  {
+    id: "alicia-en-el-pueblo-de-maravillas",
+    title: "Alicia en el pueblo de Maravillas",
+    year: 1991,
+    director: "Daniel Díaz Torres",
+    poster: posterAlicia,
+    duration: "93 min",
+    genre: ["Sátira", "Comedia"],
+    synopsis: "Una instructora de teatro llega a un pueblo donde ocurren sucesos absurdos y burocráticos. Una sátira mordaz sobre la sociedad cubana.",
+    videoUrl: '',
+    trailerUrl: '',
+    awards: [{ name: "Festival de Berlín", year: 1991, category: "Premio Caligari" }],
+    cast: [
+      { name: "Thais Valdés", role: "Alicia" },
+      { name: "Reynaldo Miravalles", role: "El Director" }
+    ],
+  },
+  {
+    id: "fresa-chocolate-1993",
+    title: "Fresa y Chocolate",
     year: 1993,
-    director: 'Tomás Gutiérrez Alea, Juan Carlos Tabío',
+    director: "Tomás Gutiérrez Alea, Juan Carlos Tabío",
     poster: posterFresa,
-    duration: '110 min',
-    genre: ['Drama', 'Comedia'],
-    synopsis:
-      'Diego, un artista homosexual, y David, un joven comunista, construyen una amistad improbable que desafía la intolerancia en La Habana de los 90.',
-    videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/ygR1OTyVr7I',
+    duration: "110 min",
+    genre: ["Drama", "Comedia"],
+    synopsis: "En La Habana de los años 90, Diego, un artista homosexual y culto, entabla una amistad inesperada con David, un joven militante comunista heterosexual. La película explora temas de tolerancia y libertad.",
+    trailerUrl: "https://www.youtube.com/embed/ygR1OTyVr7I",
+    videoUrl: "https://archive.org/embed/fresa-y-chocolate-1993",
     awards: [
-      { name: 'Oso de Plata', year: 1994, category: 'Gran Premio del Jurado' },
-      { name: 'Nominación al Oscar', year: 1995, category: 'Mejor Película Extranjera' },
+      { name: "Oso de Plata - Festival de Berlín", year: 1994, category: "Gran Premio del Jurado" },
+      { name: "Premio Goya", year: 1995, category: "Mejor Película Extranjera de Habla Hispana" },
+      { name: "Nominación al Oscar", year: 1995, category: "Mejor Película Extranjera" }
     ],
     cast: [
-      { name: 'Jorge Perugorría', role: 'Diego' },
-      { name: 'Vladimir Cruz', role: 'David' },
+      { name: "Jorge Perugorría", role: "Diego" },
+      { name: "Vladimir Cruz", role: "David" },
+      { name: "Mirta Ibarra", role: "Nancy" }
     ],
+    notes: "Primera película cubana nominada al Oscar.",
     backdrop: heroFresa,
   },
   {
-    id: 'madagascar',
-    title: 'Madagascar',
+    id: "madagascar",
+    title: "Madagascar",
     year: 1994,
-    director: 'Fernando Pérez',
+    director: "Fernando Pérez",
     poster: posterMadagascar,
-    duration: '52 min',
-    genre: ['Drama'],
-    synopsis:
-      'Durante el Período Especial, una madre y su hija viven una relación tensa. La hija sueña obsesivamente con viajar a Madagascar como vía de escape.',
-    awards: [],
-    cast: [{ name: 'Laura de la Uz', role: 'Laura' }],
-  },
-  {
-    id: 'elefante-bicicleta',
-    title: 'El elefante y la bicicleta',
-    year: 1994,
-    director: 'Juan Carlos Tabío',
-    poster: posterElefanteBicicleta,
-    duration: '85 min',
-    genre: ['Comedia'],
-    synopsis:
-      "Un proyeccionista llega a la Isla de la Juventud con la película 'Robin Hood', revolucionando a los habitantes que empiezan a soñar con libertad.",
-    awards: [],
-    cast: [{ name: 'Luis Alberto García', role: 'Jefe' }],
-  },
-  {
-    id: 'guantanamera',
-    title: 'Guantanamera',
-    year: 1995,
-    director: 'Tomás Gutiérrez Alea, Juan Carlos Tabío',
-    poster: posterGuantanamera,
-    duration: '101 min',
-    genre: ['Comedia'],
-    synopsis:
-      'Un cortejo fúnebre debe cruzar Cuba cumpliendo un absurdo plan estatal de transporte. Un viaje tragicómico sobre la burocracia.',
-    videoUrl: "", 
-    trailerUrl: "https://www.youtube.com/embed/RueAO8A7rdw",
-    awards: [],
-    cast: [
-      { name: 'Carlos Cruz', role: 'Adolfo' },
-      { name: 'Mirtha Ibarra', role: 'Gina' },
+    duration: "52 min",
+    genre: ["Drama"],
+    synopsis: "En el Período Especial, una madre profesora y su hija adolescente enfrentan la crisis económica de los años 90 en Cuba. El título hace referencia al sueño de escape.",
+    awards: [
+      { name: "Festival de La Habana", year: 1994, category: "Premio Coral" },
+      { name: "Festival de Gramado", year: 1994, category: "Mejor Película" }
     ],
+    cast: [
+      { name: "Laura de la Uz", role: "Laura" },
+      { name: "Zaida Castellanos", role: "Laura madre" }
+    ],
+    notes: "Retrato intimista del Período Especial."
+  },
+  {
+    id: "elefante-bicicleta",
+    title: "El elefante y la bicicleta",
+    year: 1994,
+    director: "Juan Carlos Tabío",
+    poster: posterElefanteBicicleta,
+    duration: "85 min",
+    genre: ["Comedia", "Drama"],
+    synopsis: "En un pueblo costero aislado de Cuba, la llegada del cine ambulante genera un conflicto entre el cura del pueblo y los habitantes que quieren disfrutar del séptimo arte.",
+    awards: [
+      { name: "Festival de La Habana", year: 1994, category: "Premio del Público" }
+    ],
+     videoUrl: "https://archive.org/embed/el-elefante-y-la-bicicleta", 
+    trailerUrl: "https://www.youtube.com/embed/RueAO8A7rdw",
+    cast: [
+      { name: "Luis Alberto García", role: "Jefe del pueblo" },
+      { name: "Lilliam Vega", role: "Personaje" }
+    ],
+    notes: "Una celebración poética del cine."
+  },
+  {
+    id: "guantanamera",
+    title: "Guantanamera",
+    year: 1995,
+    director: "Tomás Gutiérrez Alea, Juan Carlos Tabío",
+    poster: posterGuantanamera,
+    duration: "101 min",
+    genre: ["Comedia"],
+    synopsis: "Un cortejo fúnebre atraviesa Cuba de punta a punta para trasladar el cadáver de la tía Yoyita, enfrentando los absurdos de la burocracia cubana.",
+    videoUrl: "https://archive.org/embed/guantanamera-1995_202601", 
+    trailerUrl: "https://www.youtube.com/embed/RueAO8A7rdw",
+    awards: [
+      { name: "Festival de Berlín", year: 1995, category: "Nominación al Oso de Oro" },
+      { name: "Festival de La Habana", year: 1995, category: "Premio del Público" }
+    ],
+    cast: [
+      { name: "Carlos Cruz", role: "Adolfo" },
+      { name: "Mirtha Ibarra", role: "Gina" },
+      { name: "Jorge Perugorría", role: "Mariano" }
+    ],
+    notes: "Última película de Tomás Gutiérrez Alea."
   },
   {
     id: "amor-vertical",
@@ -653,7 +785,7 @@ const movies1990s: Movie[] = [
     duration: "100 min",
     genre: ["Comedia", "Romance"],
     synopsis: "Estela y Ernesto intentan consumar su amor, pero no tienen dónde hacerlo. Una comedia sobre la falta de vivienda y la intimidad.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/details/amor-vertical",
     trailerUrl: "",
     awards: [
       { name: "Premios Goya", year: 1998, category: "Nominada a Mejor Película Extranjera" }
@@ -672,7 +804,7 @@ const movies1990s: Movie[] = [
     duration: "115 min",
     genre: ["Drama", "Musical"],
     synopsis: "La historia real del cuarteto vocal 'Los Zafiros', su ascenso meteórico en los 60 y su trágica caída, envuelta en su inolvidable música.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/zafiros-locura-azul",
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 1997, category: "Premio del Público" }
@@ -683,21 +815,22 @@ const movies1990s: Movie[] = [
     ]
   },
   {
-    id: 'las-profecias-de-amanda',
-    title: 'Las profecías de Amanda',
+    id: "las-profecias-de-amanda",
+    title: "Las profecías de Amanda",
     year: 1999,
-    director: 'Pastor Vega',
+    director: "Pastor Vega",
     poster: posterAmanda,
-    duration: '90 min',
-    genre: ['Drama'],
-    synopsis:
-      'Amanda tiene el don de ver el futuro, pero esto no le sirve para resolver los conflictos de su propia vida y familia.',
-    videoUrl: '',
-    trailerUrl: '',
-    awards: [],
+    duration: "90 min",
+    genre: ["Drama"],
+    synopsis: "Amanda tiene el don de ver el futuro, pero esto no le sirve para resolver los conflictos de su propia vida y familia.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Huelva", year: 1999, category: "Colón de Plata a la Mejor Actriz (Daisy Granados)" }
+    ],
     cast: [
-      { name: 'Daisy Granados', role: 'Amanda' },
-      { name: 'Laura Moras', role: 'Hija' },
+      { name: "Daisy Granados", role: "Amanda" },
+      { name: "Laura Moras", role: "Hija" }
     ],
   },
   {
@@ -719,19 +852,26 @@ const movies1990s: Movie[] = [
     ]
   },
   {
-    id: 'lista-espera',
-    title: 'Lista de espera',
+    id: "lista-espera",
+    title: "Lista de espera",
     year: 2000,
-    director: 'Juan Carlos Tabío',
+    director: "Juan Carlos Tabío",
     poster: posterListaEspera,
-    duration: '112 min',
-    genre: ['Comedia', 'Drama'],
-    synopsis:
-      'Pasajeros varados en una terminal de autobuses deciden reparar el vehículo ellos mismos, creando una pequeña comunidad utópica.',
+    duration: "112 min",
+    genre: ["Comedia", "Drama"],
+    synopsis: "Un grupo de pasajeros queda varado en una terminal de ómnibus. Mientras esperan, deciden transformar la estación en una comunidad ideal.",
     awards: [
-      { name: 'Festival de La Habana', year: 2000, category: 'Gran Premio Coral' },
+      { name: "Festival de La Habana", year: 2000, category: "Gran Premio Coral" },
+      { name: "Festival de Gramado", year: 2000, category: "Mejor Película" }
     ],
-    cast: [{ name: 'Vladimir Cruz', role: 'Emilio' }],
+     videoUrl: "https://archive.org/embed/lista-de-espera",
+    trailerUrl: "",
+    cast: [
+      { name: "Vladimir Cruz", role: "Emilio" },
+      { name: "Tahimí Alvariño", role: "Jacqueline" },
+      { name: "Jorge Perugorría", role: "Roldán" }
+    ],
+    notes: "Una de las comedias cubanas más queridas del nuevo milenio."
   },
   {
     id: "la-vida-es-silbar",
@@ -742,11 +882,11 @@ const movies1990s: Movie[] = [
     duration: "106 min",
     genre: ["Drama", "Surrealista"],
     synopsis: "Tres personajes buscan la felicidad en una Habana surrealista, cruzándose con la misteriosa figura de Santa Bárbara.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/la-vida-es-silvar",
     trailerUrl: "",
     awards: [
-      { name: "Festival de Sundance", year: 1999, category: "Premio del Jurado" },
-      { name: "Premio Goya", year: 1999, category: "Mejor Película Extranjera" }
+      { name: "Festival de Sundance", year: 1999, category: "Premio a la Libertad de Expresión" },
+      { name: "Premios Goya", year: 1999, category: "Mejor Película Extranjera de Habla Hispana" }
     ],
     cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }]
   },
@@ -760,7 +900,7 @@ const movies1990s: Movie[] = [
     genre: ["Drama"],
     synopsis: "Larita sueña con una beca para estudiar en EE.UU. Es vecina de Hemingway y establece un paralelismo entre su vida y la del viejo pescador.",
     awards: [
-      { name: "Festival de La Habana", year: 1990, category: "Gran Premio Coral" }
+      { name: "Festival de La Habana", year: 1990, category: "Primer Premio Coral" }
     ],
     cast: [
       { name: "Laura de la Uz", role: "Larita" },
@@ -790,104 +930,116 @@ const movies1990s: Movie[] = [
 
 const movies2000s: Movie[] = [
   {
-    id: 'nada',
-    title: 'Nada',
+    id: "nada",
+    title: "Nada",
     year: 2001,
-    director: 'Juan Carlos Cremata',
+    director: "Juan Carlos Cremata",
     poster: posterNada,
-    duration: '92 min',
-    genre: ['Drama', 'Comedia'],
-    synopsis:
-      'Carla reescribe cartas tristes en la oficina de correos para alegrar a los destinatarios mientras espera irse a vivir a Miami.',
-    videoUrl: '',
-    trailerUrl: '',
+    duration: "92 min",
+    genre: ["Drama", "Comedia"],
+    synopsis: "Carla reescribe cartas tristes en la oficina de correos para alegrar a los destinatarios mientras espera irse a vivir a Miami.",
+    videoUrl: "https://archive.org/embed/nada_20260103",
+    trailerUrl: "",
     awards: [
-      { name: 'Festival de La Habana', year: 2001, category: 'Mejor Ópera Prima' },
-      { name: 'Premios Goya', year: 2002, category: 'Nominada Mejor Película Extranjera' },
+      { name: "Festival de La Habana", year: 2001, category: "Premio Coral a la Ópera Prima" },
+      { name: "Premios Goya", year: 2002, category: "Nominada Mejor Película Extranjera" },
     ],
     cast: [
-      { name: 'Thais Valdés', role: 'Carla' },
-      { name: 'Nacha Guevara', role: 'La Administradora' },
+      { name: "Thais Valdés", role: "Carla" },
+      { name: "Nacha Guevara", role: "La Administradora" },
     ],
   },
   {
-    id: 'entre-ciclones',
-    title: 'Entre ciclones',
+    id: "entre-ciclones",
+    title: "Entre ciclones",
     year: 2003,
-    director: 'Enrique Colina',
+    director: "Enrique Colina",
     poster: posterEntreCiclones,
-    duration: '112 min',
-    genre: ['Comedia'],
-    synopsis:
-      'Tomás intenta sobrevivir en La Habana, pero un ciclón, su novia y su hermano delincuente convierten su vida en un torbellino cómico.',
-    videoUrl: '',
-    trailerUrl: '',
+    duration: "112 min",
+    genre: ["Comedia"],
+    synopsis: "Tomás intenta sobrevivir en La Habana, pero un ciclón, su novia y su hermano delincuente convierten su vida en un torbellino cómico.",
+    videoUrl: "",
+    trailerUrl: "",
     awards: [],
     cast: [
-      { name: 'Mijail Mulkay', role: 'Tomás' },
-      { name: 'Indira Valdés', role: 'La novia' },
+      { name: "Mijail Mulkay", role: "Tomás" },
+      { name: "Indira Valdés", role: "La novia" },
     ],
   },
   {
-    id: 'suite-habana-2003',
-    title: 'Suite Habana',
+    id: "suite-habana-2003",
+    title: "Suite Habana",
     year: 2003,
-    director: 'Fernando Pérez',
+    director: "Fernando Pérez",
     poster: posterSuite,
-    duration: '84 min',
-    genre: ['Documental'],
-    synopsis:
-      'Un día en la vida de varios habitantes de La Habana. Sin diálogos, una sinfonía visual sobre la realidad cubana.',
-    videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    duration: "84 min",
+    genre: ["Documental"],
+    synopsis: "Un retrato poético y silencioso de La Habana a través de las vidas cotidianas de sus habitantes. Sin diálogos, una sinfonía visual sobre la realidad cubana.",
+    videoUrl: "", 
+    trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     awards: [
-      { name: 'Festival de San Sebastián', year: 2003, category: 'Premio FIPRESCI' },
+      { name: "Festival de San Sebastián", year: 2003, category: "Premio FIPRESCI" },
+      { name: "Festival de La Habana", year: 2003, category: "Gran Premio Coral" },
+      { name: "Premios Goya", year: 2004, category: "Nominación Mejor Documental" }
     ],
-    cast: [],
+    cast: [
+      { name: "Francisquito", role: "Él mismo" },
+      { name: "Amanda", role: "Ella misma" }
+    ],
+    notes: "Sin diálogos, solo música e imágenes."
   },
   {
-    id: 'frutas-en-el-cafe',
-    title: 'Frutas en el café',
+    id: "frutas-en-el-cafe",
+    title: "Frutas en el café",
     year: 2005,
-    director: 'Humberto Padrón',
+    director: "Humberto Padrón",
     poster: posterFrutas,
-    duration: '95 min',
-    genre: ['Drama', 'Suspense'],
-    synopsis:
-      'Tres historias se entrelazan en La Habana: una prostituta, un pintor y un político. Un thriller sobre decisiones límite.',
-    videoUrl: '',
-    trailerUrl: '',
+    duration: "95 min",
+    genre: ["Drama", "Suspense"],
+    synopsis: "Tres historias se entrelazan en La Habana: una prostituta, un pintor y un político. Un thriller sobre decisiones límite.",
+    videoUrl: "https://archive.org/embed/frutas-en-el-cafe",
+    trailerUrl: "",
     awards: [],
     cast: [
-      { name: 'Jorge Perugorría', role: 'El Pintor' },
-      { name: 'Mario Limonta', role: 'El Político' },
+      { name: "Jorge Perugorría", role: "El Pintor" },
+      { name: "Mario Limonta", role: "El Político" },
     ],
   },
   {
-    id: 'rey-habana',
-    title: 'Un rey en La Habana',
+    id: "rey-habana",
+    title: "Un rey en La Habana",
     year: 2005,
-    director: 'Alexis Valdés',
+    director: "Alexis Valdés",
     poster: posterReyHabana,
-    duration: '97 min',
-    genre: ['Comedia'],
-    synopsis:
-      'Papito se hace pasar por un millonario español fallecido para reclamar una herencia, desencadenando enredos disparatados.',
-    awards: [],
-    cast: [{ name: 'Alexis Valdés', role: 'Papito' }],
+    duration: "97 min",
+    genre: ["Comedia"],
+    synopsis: "Papito es un joven actor criado en un barrio marginal que sueña con salir adelante. Una comedia sobre supervivencia, amor y sueños en La Habana.",
+    awards: [
+      { name: "Festival de Comedia de Peñíscola", year: 2005, category: "Premio del Público" }
+    ],
+    cast: [
+      { name: "Alexis Valdés", role: "Papito" },
+      { name: "Carmen Salinas", role: "La Caimana" }
+    ],
+    notes: "Ópera prima de Alexis Valdés como director."
   },
   {
-    id: 'cuerno-abundancia',
-    title: 'El cuerno de la abundancia',
+    id: "cuerno-abundancia",
+    title: "El cuerno de la abundancia",
     year: 2008,
-    director: 'Juan Carlos Tabío',
+    director: "Juan Carlos Tabío",
     poster: posterCuernoAbundancia,
-    duration: '110 min',
-    genre: ['Comedia'],
-    synopsis:
-      'Una herencia millonaria revoluciona un pueblo. Todos los de apellido Castiñeiras intentan probar su linaje, desatando la codicia.',
-    awards: [],
-    cast: [{ name: 'Jorge Perugorría', role: 'Bernardito' }],
+    duration: "110 min",
+    genre: ["Comedia"],
+    synopsis: "Los habitantes de un pueblo cubano descubren que podrían heredar una fortuna millonaria de un antepasado, desatando el caos.",
+    awards: [
+      { name: "Festival de La Habana", year: 2008, category: "Premio del Público" }
+    ],
+    cast: [
+      { name: "Jorge Perugorría", role: "Bernardito" },
+      { name: "Enrique Molina", role: "Personaje" }
+    ],
+    notes: "Una sátira sobre la ambición."
   },
   {
     id: "video-de-familia",
@@ -900,7 +1052,9 @@ const movies2000s: Movie[] = [
     synopsis: "Una familia se graba en video para su hijo emigrado. Lo que empieza alegre va revelando secretos y dolores familiares.",
     videoUrl: "",
     trailerUrl: "",
-    awards: [{ name: "Festival de La Habana", year: 2001, category: "Premio Coral" }],
+    awards: [
+      { name: "Festival de La Habana", year: 2001, category: "Premio Coral al Mejor Cortometraje" }
+    ],
     cast: [{ name: "Enrique Molina", role: "Padre" }, { name: "Verónica Lynn", role: "Madre" }],
   },
   {
@@ -912,10 +1066,11 @@ const movies2000s: Movie[] = [
     duration: "115 min",
     genre: ["Drama", "Musical"],
     synopsis: "Dos músicos cubanos enfrentan un dilema: aceptar un contrato en España dejando atrás sus raíces o quedarse en Cuba.",
-    videoUrl: "", // Pendiente de Archive.org
+    videoUrl: "", 
     trailerUrl: "https://www.youtube.com/embed/5lEAnDR46zo", 
     awards: [
       { name: "Premios Goya", year: 2006, category: "Mejor Música Original" },
+      { name: "Premios Goya", year: 2006, category: "Mejor Montaje" }
     ],
     cast: [
       { name: "Alberto Yoel", role: "Ruy" }, 
@@ -936,6 +1091,7 @@ const movies2000s: Movie[] = [
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2008, category: "Premio del Público" },
+      { name: "Premios ACE (Nueva York)", year: 2009, category: "Mejor Película" }
     ],
     cast: [
       { name: "Silvia Águila", role: "Laura" }, 
@@ -952,6 +1108,8 @@ const movies2000s: Movie[] = [
     genre: ["Comedia", "Crimen"],
     synopsis: "Un ladrón se hace pasar por profesor sueco en La Habana, alojándose con una familia cubana peculiar.",
     awards: [],
+    videoUrl: "https://archive.org/embed/hacerse-el-sueco-cuba-icaic",
+    trailerUrl: "", 
     cast: [
       { name: "Enrique Molina", role: "Amancio" },
       { name: "Peter Lohmeyer", role: "Bjorn (El Sueco)" },
@@ -967,8 +1125,11 @@ const movies2000s: Movie[] = [
     genre: ["Drama", "Road Movie"],
     synopsis: "Un joven cubano-americano regresa para buscar a su madre. Un viaje de redescubrimiento de identidad por toda la isla.",
     awards: [
-      { name: "Festival de Sevilla", year: 2001, category: "Premio del Público" }
+      { name: "Festival de Sevilla", year: 2001, category: "Premio del Público" },
+      { name: "Festival de La Habana", year: 2001, category: "Premio Especial del Jurado" }
     ],
+    videoUrl: "https://archive.org/embed/miel-para-oshun",
+    trailerUrl: "",
     cast: [
       { name: "Jorge Perugorría", role: "Roberto" },
       { name: "Isabel Santos", role: "Pilar" },
@@ -982,58 +1143,59 @@ const movies2000s: Movie[] = [
 
 const movies2010s: Movie[] = [
   {
-    id: 'marti-2010',
-    title: 'José Martí: El Ojo del Canario',
+    id: "marti-2010",
+    title: "José Martí: El Ojo del Canario",
     year: 2010,
-    director: 'Fernando Pérez',
+    director: "Fernando Pérez",
     poster: posterMarti,
-    duration: '120 min',
-    genre: ['Drama', 'Histórico'],
-    synopsis:
-      'Una inmersión profunda en la infancia y adolescencia de José Martí, mostrando al niño sensible que se convertiría en libertador.',
-    videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    duration: "120 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Una mirada íntima a la infancia y juventud de José Martí, el héroe nacional de Cuba.",
+    trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     awards: [
-      { name: 'Festival de La Habana', year: 2010, category: 'Gran Premio Coral' },
-    ],
-    cast: [{ name: 'Daniel Romero', role: 'José Martí' }],
-  },
-  {
-    id: 'memoria-2010',
-    title: 'Memorias del Desarrollo',
-    year: 2010,
-    director: 'Miguel Coyula',
-    poster: posterMemoria,
-    duration: '112 min',
-    genre: ['Drama', 'Experimental'],
-    synopsis:
-      'Un intelectual cubano en el exilio vive desconectado de la sociedad. Un collage visual sobre la alienación.',
-    videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    awards: [
-      { name: 'Festival de Tribeca', year: 2010, category: 'Mejor Película (New York)' },
-    ],
-    cast: [{ name: 'Ron Blair', role: 'Sergio' }],
-  },
-  {
-    id: 'conducta-2014',
-    title: 'Conducta',
-    year: 2014,
-    director: 'Ernesto Daranas',
-    poster: posterChala,
-    duration: '108 min',
-    genre: ['Drama'],
-    synopsis:
-      'Chala, un niño problemático, y Carmela, su maestra, enfrentan una batalla moral cuando el sistema intenta enviarlo a una escuela de conducta.',
-    videoUrl: '', // Pendiente de Archive.org
-    trailerUrl: 'https://www.youtube.com/embed/uBPfo4exDZM',
-    awards: [
-      { name: 'Premio Goya', year: 2015, category: 'Mejor Película Iberoamericana' },
+      { name: "Festival de La Habana", year: 2010, category: "Gran Premio Coral" },
+      { name: "Premios Ariel", year: 2011, category: "Mejor Película Iberoamericana" }
     ],
     cast: [
-      { name: 'Armando Valdés Freire', role: 'Chala' },
-      { name: 'Alina Rodríguez', role: 'Carmela' },
+      { name: "Damián Rodríguez", role: "Pepe Martí (niño)" },
+      { name: "Daniel Romero", role: "José Martí (adolescente)" }
     ],
+    notes: "Retrato humanista del héroe nacional cubano en su juventud."
+  },
+  {
+    id: "memoria-2010",
+    title: "Memorias del Desarrollo",
+    year: 2010,
+    director: "Miguel Coyula",
+    poster: posterMemoria,
+    duration: "112 min",
+    genre: ["Drama", "Experimental"],
+    synopsis: "Un intelectual cubano en el exilio vive desconectado de la sociedad. Un collage visual sobre la alienación.",
+    trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    awards: [
+      { name: "Festival de Tribeca", year: 2010, category: "Mejor Película (New York)" }
+    ],
+    cast: [{ name: "Ron Blair", role: "Sergio" }],
+  },
+  {
+    id: "conducta-2014",
+    title: "Conducta",
+    year: 2014,
+    director: "Ernesto Daranas",
+    poster: posterChala,
+    duration: "108 min",
+    genre: ["Drama"],
+    synopsis: "Chala es un niño de once años que vive en un barrio marginal. Carmela, su maestra, lucha contra el sistema educativo para salvarlo.",
+    trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    awards: [
+      { name: "Premio Goya", year: 2015, category: "Mejor Película Iberoamericana" },
+      { name: "Festival de La Habana", year: 2014, category: "Gran Premio Coral" }
+    ],
+    cast: [
+      { name: "Armando Valdés Freire", role: "Chala" },
+      { name: "Alina Rodríguez", role: "Carmela" }
+    ],
+    notes: "La película cubana más taquillera de la historia en su país."
   },
   {
     id: "juan-de-los-muertos",
@@ -1044,9 +1206,12 @@ const movies2010s: Movie[] = [
     duration: "92 min",
     genre: ["Comedia", "Terror"],
     synopsis: "Zombis invaden La Habana. Juan decide hacer negocio matando a los seres queridos de la gente.",
-    videoUrl: "", // Pendiente de Archive.org
+    videoUrl: "", 
     trailerUrl: "https://www.youtube.com/embed/mhcIBEqczpg",
-    awards: [{ name: "Premio Goya", year: 2012, category: "Mejor Película Iberoamericana" }],
+    awards: [
+      { name: "Premios Goya", year: 2013, category: "Mejor Película Iberoamericana" },
+      { name: "Festival de La Habana", year: 2011, category: "Premio de la Popularidad" }
+    ],
     cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }],
     backdrop: heroJuan,
   },
@@ -1062,7 +1227,8 @@ const movies2010s: Movie[] = [
     videoUrl: "",
     trailerUrl: "",
     awards: [
-      { name: "Festival de Traverse City", year: 2011, category: "Premio del Público" }
+      { name: "Festival de Traverse City", year: 2011, category: "Premio Fundadores" },
+      { name: "Festival de La Habana", year: 2011, category: "Premio de la UNICEF" }
     ],
     cast: [
       { name: "Andy Fornaris", role: "Mayito" }, 
@@ -1081,7 +1247,8 @@ const movies2010s: Movie[] = [
     videoUrl: "",
     trailerUrl: "",
     awards: [
-      { name: "Festival de Málaga", year: 2018, category: "Mejor Película Iberoamericana" }
+      { name: "Festival de Málaga", year: 2018, category: "Premio SIGNIS" },
+      { name: "Festival de La Habana", year: 2017, category: "Premio del Público" }
     ],
     cast: [
       { name: "Tomás Cao", role: "Sergio" }, 
@@ -1101,6 +1268,7 @@ const movies2010s: Movie[] = [
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2018, category: "Premio Especial del Jurado" },
+      { name: "Festival de La Habana", year: 2018, category: "Premio del Público" }
     ],
     cast: [
       { name: "Yasmany Guerrero", role: "Fermín Valdés Domínguez" }, 
@@ -1110,7 +1278,7 @@ const movies2010s: Movie[] = [
 ];
 
 // ============================================================================
-// DÉCADA DE 2020 (VACÍA POR AHORA PARA EVITAR ERRORES)
+// DÉCADA DE 2020
 // ============================================================================
 const movies2020s: Movie[] = [];
 

@@ -2,13 +2,14 @@ import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link, useSearchParams } from "react-router-dom"; 
 import { useFavorites } from "@/hooks/useFavorites";
-import { useMovies } from "@/hooks/useMovies";
-import { Movie } from "@/data/movies";
+// ❌ BORRAMOS: import { useMovies } from "@/hooks/useMovies"; 
+// ✅ AÑADIMOS: Importación directa del catálogo
+import { movies as catalogMovies } from "@/data/movies/catalog"; // <--- IMPORTANTE: Leemos del archivo
+import { Movie } from "@/data/movies/types";
 import { MovieSearch } from "./MovieSearch";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 
-// 12 películas por página
 const MOVIES_PER_PAGE = 12;
 
 const MovieCardSkeleton = () => {
@@ -78,10 +79,12 @@ const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
   );
 };
 
-// Quitamos el 'export' de aquí para ponerlo al final como default
 const MovieGrid = () => {
   const { isFavorite, toggleFavorite } = useFavorites();
-  const { movies, loading: loadingMovies } = useMovies();
+  
+  // ✅ CAMBIO CLAVE: Usamos la variable 'catalogMovies' directamente
+  const movies = catalogMovies; 
+  const loadingMovies = false; // Como es local, no hay tiempo de carga
   
   const [searchParams] = useSearchParams();
   const urlSearchQuery = searchParams.get("search");
@@ -90,7 +93,6 @@ const MovieGrid = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isFiltering, setIsFiltering] = useState(false);
 
-  // Ref para evitar el bug de reseteo de página
   const lastFilterSignature = useRef("");
 
   // === LÓGICA DE FILTRADO ===
@@ -118,14 +120,13 @@ const MovieGrid = () => {
       
       setTimeout(() => setIsFiltering(false), 300);
     } else {
-      // Si no hay búsqueda URL, inicializamos con todas (MovieSearch se encarga luego)
+      // Si no hay búsqueda URL, inicializamos con todas si está vacío
       if (filteredMovies.length === 0 && !isFiltering) {
          setFilteredMovies(movies);
       }
     }
   }, [movies, urlSearchQuery]); 
 
-  // Callback del buscador interno
   const handleFilteredMovies = useCallback((filtered: Movie[]) => {
     if (!urlSearchQuery) {
       const signature = filtered.map(m => m.id).join(',');
@@ -272,5 +273,4 @@ const MovieGrid = () => {
   );
 };
 
-// === AQUÍ ESTÁ EL CAMBIO CLAVE ===
 export default MovieGrid;

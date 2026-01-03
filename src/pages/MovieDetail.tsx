@@ -72,6 +72,7 @@ const MovieDetail = () => {
     setLoading(true);
     const foundMovie = getMovieById(id);
     setMovie(foundMovie);
+    // Por defecto mostramos trailer si hay, si no nada
     setPlayerMode('trailer');
     if (foundMovie) {
       setRelatedMovies(getRelatedMovies(id, 4));
@@ -106,6 +107,8 @@ const MovieDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      
+      {/* === SECCIÓN DEL REPRODUCTOR === */}
       <section ref={playerRef} className="relative pt-24 pb-10 bg-black/50">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto aspect-video bg-black relative rounded-xl overflow-hidden shadow-2xl border border-white/10 group">
@@ -142,6 +145,7 @@ const MovieDetail = () => {
         </div>
       </section>
 
+      {/* === INFO Y BOTONES === */}
       <section className="py-12 lg:py-20">
         <div className="container mx-auto px-6 lg:px-12">
           <Link to="/peliculas" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
@@ -176,6 +180,7 @@ const MovieDetail = () => {
                 </div>
               </div>
 
+              {/* BOTONES */}
               <div className="flex flex-wrap gap-4">
                 {movie.videoUrl ? (
                   <Button size="lg" className={`font-bold px-8 h-12 gap-2 text-base shadow-lg transition-all ${playerMode === 'movie' ? 'bg-white text-black hover:bg-gray-200' : 'bg-gold text-black hover:bg-gold/90'}`} onClick={handleWatchMovie}>
@@ -196,10 +201,71 @@ const MovieDetail = () => {
                 </Button>
               </div>
 
+              {/* SINOPSIS */}
               <div className="space-y-4 border-t border-white/10 pt-8">
                 <h2 className="font-serif text-2xl text-white">Sinopsis</h2>
                 <p className="text-gray-300 leading-relaxed text-lg font-light">{movie.synopsis}</p>
               </div>
+              
+              {/* FICHA TÉCNICA RÁPIDA */}
+              <div className="grid sm:grid-cols-2 gap-6 border-t border-white/10 pt-8">
+                <div className="space-y-1">
+                  <span className="text-xs uppercase tracking-wider text-gold/80">Director</span>
+                  <p className="text-white font-medium">{movie.director}</p>
+                </div>
+                <div className="space-y-1">
+                  <span className="text-xs uppercase tracking-wider text-gold/80">Año</span>
+                  <p className="text-white font-medium">{movie.year}</p>
+                </div>
+              </div>
+
+              {/* === PREMIOS (AQUÍ ESTABA LO QUE FALTABA) === */}
+              {movie.awards && movie.awards.length > 0 && (
+                <div className="space-y-6 border-t border-white/10 pt-8">
+                  <div className="flex items-center gap-3">
+                    <Award className="w-5 h-5 text-gold" />
+                    <h2 className="font-serif text-2xl text-white">Premios y Reconocimientos</h2>
+                  </div>
+                  <div className="grid gap-3">
+                    {movie.awards.map((award, index) => (
+                      <div 
+                        key={index}
+                        className="flex items-start gap-4 p-4 bg-white/5 border border-white/5 rounded-sm hover:border-gold/30 transition-colors"
+                      >
+                        <Award className="w-5 h-5 text-gold mt-0.5 shrink-0" />
+                        <div>
+                          <p className="font-medium text-white">{award.name}</p>
+                          <p className="text-sm text-gray-400">{award.category} ({award.year})</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* ELENCO */}
+              {movie.cast && movie.cast.length > 0 && (
+                <div className="space-y-6 border-t border-white/10 pt-8">
+                   <div className="flex items-center gap-3">
+                    <Users className="w-5 h-5 text-gold" />
+                    <h2 className="font-serif text-2xl text-white">Elenco</h2>
+                  </div>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {movie.cast.map((member, index) => (
+                      <div key={index} className="flex items-center gap-3 p-3 bg-white/5 border border-white/5 rounded-sm">
+                        <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center shrink-0 text-gold font-serif font-bold">
+                          {member.name.charAt(0)}
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-medium text-white truncate">{member.name}</p>
+                          <p className="text-sm text-gray-400 truncate">{member.role}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
             </div>
           </div>
           
