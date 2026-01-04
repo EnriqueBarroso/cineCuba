@@ -5,13 +5,15 @@ interface SEOProps {
   description: string;
   image?: string;
   url?: string;
+  type?: string; // <--- ¡ESTA ES LA LÍNEA QUE FALTABA PARA CORREGIR EL ERROR!
 }
 
-export const SEO = ({ title, description, image, url }: SEOProps) => {
+export const SEO = ({ title, description, image, url, type = 'website' }: SEOProps) => {
   const siteTitle = "CineCuba | Archivo del Cine Cubano";
   const fullTitle = title === "Inicio" ? siteTitle : `${title} | CineCuba`;
-  const defaultImage = "https://cinecuba.vercel.app/og-image.jpg"; // (Luego crearemos esta imagen genérica)
-  const siteUrl = "https://cinecuba.vercel.app"; // Tu dominio temporal o final
+  // Usamos la imagen del repositorio como fallback
+  const defaultImage = "https://raw.githubusercontent.com/enriquebarroso/cinecuba-landing/main/src/assets/hero-memorias.jpg"; 
+  const siteUrl = "https://cinecuba.vercel.app";
 
   return (
     <Helmet>
@@ -20,7 +22,7 @@ export const SEO = ({ title, description, image, url }: SEOProps) => {
       <meta name="description" content={description} />
 
       {/* Facebook / Open Graph */}
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={type} />
       <meta property="og:url" content={url || siteUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />

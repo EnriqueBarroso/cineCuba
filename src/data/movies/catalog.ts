@@ -4,65 +4,22 @@
  */
 
 import type { Movie } from './types';
+
+// === IMPORTACIÓN CENTRALIZADA DE POSTERS ===
+// Gracias al archivo index.ts, ahora importamos todo de una sola vez.
 import {
-  posterLucia,
-  posterBurocrata,
-  poster12Sillas,
-  posterJuanQuinQuin,
-  posterDeCiertaManera,
-  posterMaisinicu,
-  posterRetratoTeresa,
-  posterSobrevivientes,
-  posterUltimaCena,
-  posterLosPajaros,
-  posterVampirosHabana,
-  posterEnTresYDos,
-  posterBellaAlhambra,
-  posterCecilia,
-  posterHombreExito,
-  posterBrigadista,
-  posterClandestinos,
-  posterPlaff,
-  posterAdorablesMentiras,
-  posterElefanteBicicleta,
-  posterFresa,
-  posterMadagascar,
-  posterListaEspera,
-  posterSuite,
-  posterCuernoAbundancia,
-  posterReyHabana,
-  posterChala,
-  posterMarti,
-  posterMemoria,
-  posterGuantanamera,
-  posterSePermuta,
-  posterPapelesSecundarios,
-  posterMemoriasSub,
-  posterSoyCuba,
-  posterElpidioValdes,
-  posterLaVidaEsSilbar,
-  posterJuanDeLosMuertos,
-  posterVideoDeFamilia,
-  posterHabanaBlues,
-  posterDiosesRotos,
-  posterHabanastation,
-  posterSergioSerguei,
-  posterInocencia,
-  posterHelloHeminguey,
-  posterParaisoEstrellas,
-  posterHacerseSueco,
-  posterMielOshun,
-  posterNoviaDavid,
-  posterAmorVertical,
-  posterZafiros,
-  posterKleinesTropicana,
-  posterMariaAntonia,
-  posterCaravana,
-  posterAlicia,
-  posterAmanda,
-  posterNada,
-  posterEntreCiclones,
-  posterFrutas,
+  // 60s
+  posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
+  // 70s
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  // 80s
+  posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
+  // 90s
+  posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
+  // 2000s
+  posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterDileALaura, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterDiosesRotos,
+  // 2010s
+  posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia
 } from '@/assets/posters';
 
 // === IMPORTS HERO (Backdrops) ===
@@ -175,7 +132,7 @@ const movies1960s: Movie[] = [
     title: "Memorias del subdesarrollo",
     year: 1968,
     director: "Tomás Gutiérrez Alea",
-    poster: posterMemoria,
+    poster: posterMemoriasSub,
     duration: "97 min",
     genre: ["Drama"],
     synopsis: "Un intelectual burgués decide quedarse en Cuba tras la Revolución mientras su familia huye al exilio. Atrapado entre dos mundos, observa los cambios de la sociedad cubana mientras cuestiona su propia identidad y lugar en el nuevo orden.",
@@ -779,6 +736,40 @@ const movies1990s: Movie[] = [
     notes: "Última película de Tomás Gutiérrez Alea."
   },
   {
+    id: "azucar-amarga",
+    title: "Azúcar amarga",
+    year: 1996,
+    director: "Leon Ichaso",
+    poster: posterAzucarAmarga,
+    duration: "102 min",
+    genre: ["Drama"],
+    synopsis: "Filmada en blanco y negro, cuenta la historia de Gustavo, un joven comunista devoto que comienza a cuestionar sus ideales al enfrentarse a las duras realidades de la vida en La Habana.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "René Lavan", role: "Gustavo" },
+      { name: "Mayte Vilán", role: "Yolanda" }
+    ]
+  },
+  {
+    id: "bambola",
+    title: "Bámbola",
+    year: 1996,
+    director: "Bigas Luna",
+    poster: posterBambola,
+    duration: "95 min",
+    genre: ["Drama", "Romance"],
+    synopsis: "Un drama erótico y pasional donde Jorge Perugorría interpreta a Furio. Aunque es una producción europea, marcó la expansión internacional de los actores cubanos tras el éxito de Fresa y Chocolate.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Valeria Marini", role: "Mina" },
+      { name: "Jorge Perugorría", role: "Furio" }
+    ]
+  },
+  {
     id: "amor-vertical",
     title: "Amor vertical",
     year: 1997,
@@ -815,6 +806,23 @@ const movies1990s: Movie[] = [
       { name: "Luis Alberto García", role: "Ignacio" },
       { name: "Sirio Soto", role: "Miguelito" }
     ]
+  },
+  {
+    id: "la-vida-es-silbar",
+    title: "La vida es silbar",
+    year: 1998,
+    director: "Fernando Pérez",
+    poster: posterLaVidaEsSilbar,
+    duration: "106 min",
+    genre: ["Drama", "Surrealista"],
+    synopsis: "Tres personajes buscan la felicidad en una Habana surrealista, cruzándose con la misteriosa figura de Santa Bárbara.",
+    videoUrl: "https://archive.org/embed/la-vida-es-silvar",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Sundance", year: 1999, category: "Premio a la Libertad de Expresión" },
+      { name: "Premios Goya", year: 1999, category: "Mejor Película Extranjera de Habla Hispana" }
+    ],
+    cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }]
   },
   {
     id: "las-profecias-de-amanda",
@@ -854,6 +862,45 @@ const movies1990s: Movie[] = [
     ]
   },
   {
+    id: "un-paraiso-bajo-estrellas",
+    title: "Un paraíso bajo las estrellas",
+    year: 1999,
+    director: "Gerardo Chijona",
+    poster: posterParaisoEstrellas,
+    duration: "90 min",
+    genre: ["Comedia"],
+    synopsis: "Siso sueña con ser bailarín del Tropicana. Una comedia de enredos que rinde homenaje al cabaret y a la picaresca.",
+    awards: [],
+    cast: [
+      { name: "Thais Valdés", role: "Stacy" },
+      { name: "Vladimir Cruz", role: "Sergito" },
+    ]
+  },
+  {
+    id: "hello-heminguey",
+    title: "Hello Hemingüey",
+    year: 1990,
+    director: "Fernando Pérez",
+    poster: posterHelloHeminguey,
+    duration: "90 min",
+    genre: ["Drama"],
+    synopsis: "Larita sueña con una beca para estudiar en EE.UU. Es vecina de Hemingway y establece un paralelismo entre su vida y la del viejo pescador.",
+    awards: [
+      { name: "Festival de La Habana", year: 1990, category: "Primer Premio Coral" }
+    ],
+    cast: [
+      { name: "Laura de la Uz", role: "Larita" },
+      { name: "Raúl Paz", role: "Víctor" }
+    ],
+  },
+];
+
+// ============================================================================
+// DÉCADA DE 2000
+// ============================================================================
+
+const movies2000s: Movie[] = [
+  {
     id: "lista-espera",
     title: "Lista de espera",
     year: 2000,
@@ -876,61 +923,42 @@ const movies1990s: Movie[] = [
     notes: "Una de las comedias cubanas más queridas del nuevo milenio."
   },
   {
-    id: "la-vida-es-silbar",
-    title: "La vida es silbar",
-    year: 1998,
-    director: "Fernando Pérez",
-    poster: posterLaVidaEsSilbar,
-    duration: "106 min",
-    genre: ["Drama", "Surrealista"],
-    synopsis: "Tres personajes buscan la felicidad en una Habana surrealista, cruzándose con la misteriosa figura de Santa Bárbara.",
-    videoUrl: "https://archive.org/embed/la-vida-es-silvar",
+    id: "antes-que-anochezca",
+    title: "Antes de que anochezca",
+    year: 2000,
+    director: "Julian Schnabel",
+    poster: posterAntesAnochezca,
+    duration: "133 min",
+    genre: ["Drama", "Biopic"],
+    synopsis: "Biografía del escritor cubano Reinaldo Arenas, desde su infancia en el campo, su participación en la Revolución y su posterior persecución por ser homosexual y escritor disidente.",
+    videoUrl: "",
     trailerUrl: "",
     awards: [
-      { name: "Festival de Sundance", year: 1999, category: "Premio a la Libertad de Expresión" },
-      { name: "Premios Goya", year: 1999, category: "Mejor Película Extranjera de Habla Hispana" }
-    ],
-    cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }]
-  },
-  {
-    id: "hello-heminguey",
-    title: "Hello Hemingüey",
-    year: 1990,
-    director: "Fernando Pérez",
-    poster: posterHelloHeminguey,
-    duration: "90 min",
-    genre: ["Drama"],
-    synopsis: "Larita sueña con una beca para estudiar en EE.UU. Es vecina de Hemingway y establece un paralelismo entre su vida y la del viejo pescador.",
-    awards: [
-      { name: "Festival de La Habana", year: 1990, category: "Primer Premio Coral" }
+      { name: "Festival de Venecia", year: 2000, category: "Gran Premio del Jurado" },
+      { name: "Premios Oscar", year: 2001, category: "Nominación Mejor Actor (Javier Bardem)" }
     ],
     cast: [
-      { name: "Laura de la Uz", role: "Larita" },
-      { name: "Raúl Paz", role: "Víctor" }
-    ],
-  },
-  {
-    id: "un-paraiso-bajo-estrellas",
-    title: "Un paraíso bajo las estrellas",
-    year: 1999,
-    director: "Gerardo Chijona",
-    poster: posterParaisoEstrellas,
-    duration: "90 min",
-    genre: ["Comedia"],
-    synopsis: "Siso sueña con ser bailarín del Tropicana. Una comedia de enredos que rinde homenaje al cabaret y a la picaresca.",
-    awards: [],
-    cast: [
-      { name: "Thais Valdés", role: "Stacy" },
-      { name: "Vladimir Cruz", role: "Sergito" },
+      { name: "Javier Bardem", role: "Reinaldo Arenas" },
+      { name: "Olivier Martinez", role: "Lázaro Gómez" }
     ]
   },
-];
-
-// ============================================================================
-// DÉCADA DE 2000
-// ============================================================================
-
-const movies2000s: Movie[] = [
+  {
+    id: "pata-negra",
+    title: "Pata Negra",
+    year: 2001,
+    director: "Luis Oliveros",
+    poster: posterPataNegra,
+    duration: "112 min",
+    genre: ["Comedia", "Thriller"],
+    synopsis: "Un joven español viaja a Cuba para hacerse cargo de la herencia de su padre, pero se ve envuelto en una trama de enredos y santería.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Gabino Diego", role: "José" },
+      { name: "Laura Ramos", role: "Actriz" }
+    ]
+  },
   {
     id: "nada",
     title: "Nada",
@@ -949,6 +977,59 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Thais Valdés", role: "Carla" },
       { name: "Nacha Guevara", role: "La Administradora" },
+    ],
+  },
+  {
+    id: "video-de-familia",
+    title: "Video de familia",
+    year: 2001,
+    director: "Humberto Padrón",
+    poster: posterVideoDeFamilia,
+    duration: "45 min",
+    genre: ["Drama"],
+    synopsis: "Una familia se graba en video para su hijo emigrado. Lo que empieza alegre va revelando secretos y dolores familiares.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de La Habana", year: 2001, category: "Premio Coral al Mejor Cortometraje" }
+    ],
+    cast: [{ name: "Enrique Molina", role: "Padre" }, { name: "Verónica Lynn", role: "Madre" }],
+  },
+  {
+    id: "hacerse-el-sueco",
+    title: "Hacerse el sueco",
+    year: 2001,
+    director: "Daniel Díaz Torres",
+    poster: posterHacerseSueco,
+    duration: "105 min",
+    genre: ["Comedia", "Crimen"],
+    synopsis: "Un ladrón se hace pasar por profesor sueco en La Habana, alojándose con una familia cubana peculiar.",
+    awards: [],
+    videoUrl: "https://archive.org/embed/hacerse-el-sueco-cuba-icaic",
+    trailerUrl: "", 
+    cast: [
+      { name: "Enrique Molina", role: "Amancio" },
+      { name: "Peter Lohmeyer", role: "Bjorn (El Sueco)" },
+    ],
+  },
+  {
+    id: "miel-para-oshun",
+    title: "Miel para Oshún",
+    year: 2001,
+    director: "Humberto Solás",
+    poster: posterMielOshun,
+    duration: "110 min",
+    genre: ["Drama", "Road Movie"],
+    synopsis: "Un joven cubano-americano regresa para buscar a su madre. Un viaje de redescubrimiento de identidad por toda la isla.",
+    awards: [
+      { name: "Festival de Sevilla", year: 2001, category: "Premio del Público" },
+      { name: "Festival de La Habana", year: 2001, category: "Premio Especial del Jurado" }
+    ],
+    videoUrl: "https://archive.org/embed/miel-para-oshun",
+    trailerUrl: "",
+    cast: [
+      { name: "Jorge Perugorría", role: "Roberto" },
+      { name: "Isabel Santos", role: "Pilar" },
     ],
   },
   {
@@ -991,6 +1072,150 @@ const movies2000s: Movie[] = [
     notes: "Sin diálogos, solo música e imágenes."
   },
   {
+    id: "aunque-estes-lejos",
+    title: "Aunque estés lejos",
+    year: 2003,
+    director: "Juan Carlos Tabío",
+    poster: posterAunqueEstesLejos,
+    duration: "100 min",
+    genre: ["Drama"],
+    synopsis: "Una coproducción que narra la historia de una guionista cubana y un productor español que intentan hacer una película sobre la emigración y los lazos rotos.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Mirtha Ibarra", role: "Mercedes" },
+      { name: "Antonio Valero", role: "Alberto" }
+    ]
+  },
+  {
+    id: "tres-veces-dos",
+    title: "3 veces 2",
+    year: 2004,
+    director: "Pavel Giroud, Lester Hamlet, Esteban Insausti",
+    poster: posterTresVecesDos,
+    duration: "90 min",
+    genre: ["Drama", "Antología"],
+    synopsis: "Tres historias sobre el amor y las relaciones humanas en la Cuba contemporánea, dirigidas por tres jóvenes realizadores que renovaron el cine cubano.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Montreal", year: 2004, category: "Mejor Ópera Prima" }
+    ],
+    cast: [
+      { name: "Georbis Martínez", role: "Actor" },
+      { name: "Veronica Lynn", role: "Actriz" }
+    ]
+  },
+  {
+    id: "perfecto-amor-equivocado",
+    title: "Perfecto amor equivocado",
+    year: 2004,
+    director: "Gerardo Chijona",
+    poster: posterPerfectoAmor,
+    duration: "100 min",
+    genre: ["Comedia", "Romance"],
+    synopsis: "Julio es un escritor exitoso que ve cómo su mundo se desmorona cuando su hija, su amante y su esposa coinciden en un enredo amoroso.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de La Habana", year: 2004, category: "Premio de la Popularidad" }
+    ],
+    cast: [
+      { name: "Luis Alberto García", role: "Julio" },
+      { name: "Susana Pérez", role: "Esposa" }
+    ]
+  },
+  {
+    id: "bailando-chachacha",
+    title: "Bailando Cha Cha Cha",
+    year: 2005,
+    director: "Manuel Herrera",
+    poster: posterBailandoCha,
+    duration: "98 min",
+    genre: ["Musical", "Drama"],
+    synopsis: "Un homenaje a la música cubana de los años 50, centrado en una familia de músicos que intenta triunfar en medio de un ambiente competitivo y festivo.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Eslinda Núñez", role: "Actriz" }
+    ]
+  },
+  {
+    id: "viva-cuba",
+    title: "Viva Cuba",
+    year: 2005,
+    director: "Juan Carlos Cremata",
+    poster: posterVivaCuba,
+    duration: "80 min",
+    genre: ["Drama", "Infantil"],
+    synopsis: "Malu y Jorgito son dos niños amigos inseparables, aunque sus familias se odian. Cuando la madre de Malu decide irse de Cuba, ambos escapan para evitar la separación.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Cannes", year: 2005, category: "Grand Prix Écrans Juniors" }
+    ],
+    cast: [
+      { name: "Malú Tarrau", role: "Malú" },
+      { name: "Jorgito Miló", role: "Jorgito" }
+    ]
+  },
+  {
+    id: "barrio-cuba",
+    title: "Barrio Cuba",
+    year: 2005,
+    director: "Humberto Solás",
+    poster: posterBarrioCuba,
+    duration: "105 min",
+    genre: ["Drama"],
+    synopsis: "Historias entrecruzadas de personajes que buscan la felicidad y luchan por sobrevivir en una Habana dura pero llena de esperanza.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Huelva", year: 2005, category: "Colón de Plata" }
+    ],
+    cast: [
+      { name: "Jorge Perugorría", role: "El camionero" },
+      { name: "Isabel Santos", role: "La Maga" }
+    ]
+  },
+  {
+    id: "90-millas",
+    title: "90 millas",
+    year: 2005,
+    director: "Francisco Rodríguez",
+    poster: poster90Millas,
+    duration: "100 min",
+    genre: ["Drama"],
+    synopsis: "Una familia cubana decide emprender un peligroso viaje en balsa hacia Estados Unidos, enfrentándose al mar y a sus propios demonios.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Cine Latino de Nueva York", year: 2005, category: "Mejor Película" }
+    ],
+    cast: [
+      { name: "Alexis Valdés", role: "Actor" }
+    ]
+  },
+  {
+    id: "dile-a-laura-que-la-quiero",
+    title: "Dile a Laura que la quiero",
+    year: 2005,
+    director: "José Miguel Juárez",
+    poster: posterDileALaura,
+    duration: "100 min",
+    genre: ["Comedia", "Romance"],
+    synopsis: "Jorge, un español, se enamora de Laura en Cuba. Pero el matrimonio con un extranjero está lleno de complicaciones y malentendidos culturales.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Jorge Perugorría", role: "Marcos" },
+      { name: "Nancho Novo", role: "Jorge" }
+    ]
+  },
+  {
     id: "frutas-en-el-cafe",
     title: "Frutas en el café",
     year: 2005,
@@ -1028,42 +1253,6 @@ const movies2000s: Movie[] = [
     notes: "Ópera prima de Alexis Valdés como director."
   },
   {
-    id: "cuerno-abundancia",
-    title: "El cuerno de la abundancia",
-    year: 2008,
-    director: "Juan Carlos Tabío",
-    poster: posterCuernoAbundancia,
-    duration: "110 min",
-    genre: ["Comedia"],
-    synopsis: "Los habitantes de un pueblo cubano descubren que podrían heredar una fortuna millonaria de un antepasado, desatando el caos.",
-    awards: [
-      { name: "Festival de La Habana", year: 2008, category: "Premio del Público" }
-    ],
-    videoUrl: "https://archive.org/embed/el-cuerno-de-la-abundancia",
-    trailerUrl: "",
-    cast: [
-      { name: "Jorge Perugorría", role: "Bernardito" },
-      { name: "Enrique Molina", role: "Personaje" }
-    ],
-    notes: "Una sátira sobre la ambición."
-  },
-  {
-    id: "video-de-familia",
-    title: "Video de familia",
-    year: 2001,
-    director: "Humberto Padrón",
-    poster: posterVideoDeFamilia,
-    duration: "45 min",
-    genre: ["Drama"],
-    synopsis: "Una familia se graba en video para su hijo emigrado. Lo que empieza alegre va revelando secretos y dolores familiares.",
-    videoUrl: "",
-    trailerUrl: "",
-    awards: [
-      { name: "Festival de La Habana", year: 2001, category: "Premio Coral al Mejor Cortometraje" }
-    ],
-    cast: [{ name: "Enrique Molina", role: "Padre" }, { name: "Verónica Lynn", role: "Madre" }],
-  },
-  {
     id: "habana-blues",
     title: "Habana Blues",
     year: 2005,
@@ -1085,6 +1274,131 @@ const movies2000s: Movie[] = [
     backdrop: heroHabana,
   },
   {
+    id: "el-benny",
+    title: "El Benny",
+    year: 2006,
+    director: "Jorge Luis Sánchez",
+    poster: posterElBenny,
+    duration: "125 min",
+    genre: ["Musical", "Biopic"],
+    synopsis: "Biografía novelada de Benny Moré, el Bárbaro del Ritmo. La película recorre su genialidad musical, sus excesos y su lucha interna en la Cuba de los años 50.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Locarno", year: 2006, category: "Premio Boccalino" }
+    ],
+    cast: [
+      { name: "Renny Arozarena", role: "Benny Moré" },
+      { name: "Enrique Molina", role: "Olimpio" }
+    ]
+  },
+  {
+    id: "paginas-del-diario-de-mauricio",
+    title: "Páginas del diario de Mauricio",
+    year: 2006,
+    director: "Manuel Pérez",
+    poster: posterPaginasMauricio,
+    duration: "100 min",
+    genre: ["Drama"],
+    synopsis: "Mauricio repasa su vida y los acontecimientos de Cuba desde el año 2000, en un día crucial: su cumpleaños 60.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de La Habana", year: 2006, category: "Premio Especial del Jurado" }
+    ],
+    cast: [
+      { name: "Rolando Brito", role: "Mauricio" },
+      { name: "Larisa Vega", role: "Esposa" }
+    ]
+  },
+  {
+    id: "el-eden-perdido",
+    title: "El Edén perdido",
+    year: 2007,
+    director: "Manuel Estudillo",
+    poster: posterElEdenPerdido,
+    duration: "96 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Película ambientada en 1895, durante la guerra de independencia. Una joven cubana se debate entre la lealtad a España y el amor por un insurrecto mambí.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Ana Polvorosa", role: "Actriz" }
+    ]
+  },
+  {
+    id: "camino-al-eden",
+    title: "Camino al Edén",
+    year: 2007,
+    director: "Daniel Díaz Torres",
+    poster: posterCaminoEden,
+    duration: "90 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Una historia de amor y guerra donde una mujer española en la Cuba colonial debe transformar su visión del mundo ante el conflicto independentista.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Renny Arozarena", role: "Mambí" }
+    ]
+  },
+  {
+    id: "cuerno-abundancia",
+    title: "El cuerno de la abundancia",
+    year: 2008,
+    director: "Juan Carlos Tabío",
+    poster: posterCuernoAbundancia,
+    duration: "110 min",
+    genre: ["Comedia"],
+    synopsis: "Los habitantes de un pueblo cubano descubren que podrían heredar una fortuna millonaria de un antepasado, desatando el caos.",
+    awards: [
+      { name: "Festival de La Habana", year: 2008, category: "Premio del Público" }
+    ],
+    videoUrl: "https://archive.org/embed/el-cuerno-de-la-abundancia",
+    trailerUrl: "",
+    cast: [
+      { name: "Jorge Perugorría", role: "Bernardito" },
+      { name: "Enrique Molina", role: "Personaje" }
+    ],
+    notes: "Una sátira sobre la ambición."
+  },
+  {
+    id: "cercania",
+    title: "Cercanía",
+    year: 2008,
+    director: "Rolando Díaz",
+    poster: posterCercania,
+    duration: "95 min",
+    genre: ["Drama"],
+    synopsis: "Retrato de la vida de los cubanos inmigrantes en Miami, explorando el reencuentro de un padre anciano que llega desde Cuba con su hijo.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Reynaldo Miravalles", role: "Padre" }
+    ]
+  },
+  {
+    id: "che",
+    title: "Che",
+    year: 2008,
+    director: "Steven Soderbergh",
+    poster: posterChe,
+    duration: "134 min",
+    genre: ["Drama", "Biopic", "Bélico"],
+    synopsis: "La épica historia de Ernesto 'Che' Guevara, centrada en su papel fundamental durante la Revolución Cubana y su posterior campaña en Bolivia.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Cannes", year: 2008, category: "Mejor Actor (Benicio del Toro)" }
+    ],
+    cast: [
+      { name: "Benicio del Toro", role: "Che Guevara" },
+      { name: "Demián Bichir", role: "Fidel Castro" }
+    ]
+  },
+  {
     id: "los-dioses-rotos",
     title: "Los dioses rotos",
     year: 2008,
@@ -1102,43 +1416,6 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Silvia Águila", role: "Laura" }, 
       { name: "Carlos Ever Fonseca", role: "Alberto" },
-    ],
-  },
-  {
-    id: "hacerse-el-sueco",
-    title: "Hacerse el sueco",
-    year: 2001,
-    director: "Daniel Díaz Torres",
-    poster: posterHacerseSueco,
-    duration: "105 min",
-    genre: ["Comedia", "Crimen"],
-    synopsis: "Un ladrón se hace pasar por profesor sueco en La Habana, alojándose con una familia cubana peculiar.",
-    awards: [],
-    videoUrl: "https://archive.org/embed/hacerse-el-sueco-cuba-icaic",
-    trailerUrl: "", 
-    cast: [
-      { name: "Enrique Molina", role: "Amancio" },
-      { name: "Peter Lohmeyer", role: "Bjorn (El Sueco)" },
-    ],
-  },
-  {
-    id: "miel-para-oshun",
-    title: "Miel para Oshún",
-    year: 2001,
-    director: "Humberto Solás",
-    poster: posterMielOshun,
-    duration: "110 min",
-    genre: ["Drama", "Road Movie"],
-    synopsis: "Un joven cubano-americano regresa para buscar a su madre. Un viaje de redescubrimiento de identidad por toda la isla.",
-    awards: [
-      { name: "Festival de Sevilla", year: 2001, category: "Premio del Público" },
-      { name: "Festival de La Habana", year: 2001, category: "Premio Especial del Jurado" }
-    ],
-    videoUrl: "https://archive.org/embed/miel-para-oshun",
-    trailerUrl: "",
-    cast: [
-      { name: "Jorge Perugorría", role: "Roberto" },
-      { name: "Isabel Santos", role: "Pilar" },
     ],
   },
 ];

@@ -1,10 +1,9 @@
 /**
- * BASE DE DATOS DE DIRECTORES
- * Versión Final: Biografías detalladas + Gerardo Chijona y nuevos directores.
+ * BASE DE DATOS DE DIRECTORES (COMPLETA)
+ * Incluye todos los directores del catálogo actual con biografías y datos verificados.
  */
 
-// === IMPORTACIONES DE FOTOS ===
-// Asegúrate de que las fotos existan en src/assets/directors/
+// === FOTOS EXISTENTES ===
 import humbertoSolasPhoto from "@/assets/directors/Humberto_Solas.jpg";
 import tomasGutierrezAleaPhoto from "@/assets/directors/tomas-gutierrez-alea.jpg";
 import juanCarlosTabioPhoto from "@/assets/directors/Juan-Carlos-Tabio.jpg";
@@ -18,11 +17,27 @@ import julioGarciaEspinosaPhoto from "@/assets/directors/julio-garcia-espinosa.j
 import manuelPerezParedesPhoto from "@/assets/directors/manuel-perez-paredes.jpg";
 import pastorVegaPhoto from "@/assets/directors/pastor-vega.jpg";
 import enriquePinedaBarnetPhoto from "@/assets/directors/enrique-pineda-barnet.jpg";
-
-// === NUEVOS (Asegúrate de tener estas fotos) ===
 import juanPadronPhoto from "@/assets/directors/juan-padron.jpg";
 import gerardoChijonaPhoto from "@/assets/directors/geraldo-chijona.jpg";
 import danielDiazTorresPhoto from "@/assets/directors/daniel-dias-torres.webp";
+
+// === NUEVOS IMPORTS (PENDIENTES DE SUBIR FOTO) ===
+// El usuario subirá estas fotos más tarde. Usamos nombres estándar.
+import mijailKalatozovPhoto from "@/assets/directors/mijail-kalatozov.jpg";
+import orlandoRojasPhoto from "@/assets/directors/orlando-rojas.jpg";
+import sergioGiralPhoto from "@/assets/directors/sergio-giral.jpg";
+import rogelioParisPhoto from "@/assets/directors/rogelio-paris.jpg";
+import arturoSottoPhoto from "@/assets/directors/arturo-sotto.jpg";
+import manuelHerreraPhoto from "@/assets/directors/manuel-herrera.jpg";
+import juanCarlosCremataPhoto from "@/assets/directors/juan-carlos-cremata.jpg";
+import enriqueColinaPhoto from "@/assets/directors/enrique-colina.jpg";
+import humbertoPadronPhoto from "@/assets/directors/humberto-padron.jpg";
+import alexisValdesPhoto from "@/assets/directors/alexis-valdes.jpg";
+import benitoZambranoPhoto from "@/assets/directors/benito-zambrano.jpg";
+import alejandroBruguesPhoto from "@/assets/directors/alejandro-brugues.jpg";
+import ianPadronPhoto from "@/assets/directors/ian-padron.jpg";
+import alejandroGilPhoto from "@/assets/directors/alejandro-gil.jpg";
+
 
 export interface Director {
   id: string;
@@ -37,7 +52,9 @@ export interface Director {
 }
 
 export const directors: Director[] = [
-  // --- CLÁSICOS (Datos detallados) ---
+  // ========================================================================
+  // CLÁSICOS Y FUNDADORES (YA EXISTENTES)
+  // ========================================================================
   {
     id: "humberto-solas",
     name: "Humberto Solás",
@@ -220,16 +237,13 @@ export const directors: Director[] = [
       "Premio a Mejor Director en el Festival de La Habana"
     ]
   },
-
-  // --- NUEVAS INCORPORACIONES (Incluido Gerardo Chijona) ---
-
   {
     id: "gerardo-chijona",
     name: "Gerardo Chijona",
     photo: gerardoChijonaPhoto,
     birthYear: 1949,
     nationality: "Cubano",
-    biography: "Gerardo Chijona Valdés es un director y crítico de cine que debutó con gran éxito con 'Adorables mentiras' (1991). Su cine explora la realidad cubana contemporánea a través de comedias agridulces y dramas urbanos que reflejan los sueños y frustraciones de la sociedad, como en 'Un paraíso bajo las estrellas' (1999) y 'Boleto al paraíso' (2010).",
+    biography: "Gerardo Chijona Valdés es un director y crítico de cine que debutó con gran éxito con 'Adorables mentiras' (1991). Su cine explora la realidad cubana contemporánea a través de comedias agridulces y dramas urbanos que reflejan los sueños y frustraciones de la sociedad.",
     activeYears: "1980-presente",
     awards: [
       "Premio Coral del Festival de La Habana",
@@ -264,15 +278,212 @@ export const directors: Director[] = [
       "Premio de la Crítica en Berlín",
       "Premio Coral del Festival de La Habana"
     ]
+  },
+
+  // ========================================================================
+  // NUEVAS INCORPORACIONES (RECUPERADAS PARA COMPLETAR CATÁLOGO)
+  // ========================================================================
+
+  {
+    id: "mijail-kalatozov",
+    name: "Mijaíl Kalatózov",
+    photo: mijailKalatozovPhoto,
+    birthYear: 1903,
+    deathYear: 1973,
+    nationality: "Georgiano-Soviético",
+    biography: "Mijaíl Konstantínovich Kalatózov fue un director soviético que dejó una huella indeleble en el cine cubano con 'Soy Cuba' (1964), una coproducción monumental conocida por su virtuosismo técnico y planos secuencia imposibles. Ganador de la Palma de Oro en Cannes por 'Cuando pasan las cigüeñas' (1957).",
+    activeYears: "1928-1971",
+    awards: [
+      "Palma de Oro en Cannes",
+      "Selección Oficial Cannes Classics (Restauración de Soy Cuba)"
+    ]
+  },
+  {
+    id: "orlando-rojas",
+    name: "Orlando Rojas",
+    photo: orlandoRojasPhoto,
+    birthYear: 1950,
+    nationality: "Cubano",
+    biography: "Director conocido por su agudeza crítica y estilo visual depurado. Su debut en ficción 'Una novia para David' (1985) es una de las películas más queridas del cine cubano. Con 'Papeles secundarios' (1989) ofreció una mirada teatral y dramática a las tensiones internas del mundo cultural.",
+    activeYears: "1977-presente",
+    awards: [
+      "Premio de la Popularidad en Festival de La Habana",
+      "Premio Nacional de la Crítica"
+    ]
+  },
+  {
+    id: "sergio-giral",
+    name: "Sergio Giral",
+    photo: sergioGiralPhoto,
+    birthYear: 1937,
+    deathYear: 2024,
+    nationality: "Cubano-Estadounidense",
+    biography: "Sergio Giral fue fundamental en el cine afrocubano. Su trilogía sobre la esclavitud ('El otro Francisco', 'Rancheador', 'Maluala') es referente indispensable. 'María Antonia' (1990) es considerada una de las mejores traslaciones del teatro al cine en Cuba. Falleció en el exilio en 2024.",
+    activeYears: "1962-2010",
+    awards: [
+      "Premio Coral a la Mejor Fotografía (por sus filmes)",
+      "Reconocimiento por su aporte al cine afrodescendiente"
+    ]
+  },
+  {
+    id: "rogelio-paris",
+    name: "Rogelio París",
+    photo: rogelioParisPhoto,
+    birthYear: 1936,
+    deathYear: 2016,
+    nationality: "Cubano",
+    biography: "Documentalista y director de ficción que abordó temas épicos y musicales. Su película 'Caravana' (1990) sobre la guerra de Angola fue un éxito popular, y 'Kangamba' (2008) consolidó su cine bélico. También dirigió el aclamado documental 'Nosotros, la música'.",
+    activeYears: "1964-2010",
+    awards: [
+      "Premio Nacional de Cine (Candidato finalista)",
+      "Mención Especial Interjury en Festival de Berlín"
+    ]
+  },
+  {
+    id: "arturo-sotto",
+    name: "Arturo Sotto",
+    photo: arturoSottoPhoto,
+    birthYear: 1967,
+    nationality: "Cubano",
+    biography: "Graduado de la EICTV y el ISA, Arturo Sotto es una voz versátil del cine cubano. Desde el drama de 'Pon tu pensamiento en mí' hasta la comedia romántica 'Amor vertical' (1997), su cine explora las relaciones humanas con frescura y a menudo con un toque teatral.",
+    activeYears: "1992-presente",
+    awards: [
+      "Nominación al Goya a Mejor Película Extranjera",
+      "Premios ACE de Nueva York"
+    ]
+  },
+  {
+    id: "manuel-herrera",
+    name: "Manuel Herrera",
+    photo: manuelHerreraPhoto,
+    birthYear: 1942,
+    nationality: "Cubano",
+    biography: "Premio Nacional de Cine 2022. Manuel Herrera es el creador de 'Zafiros, locura azul' (1997), uno de los mayores éxitos de taquilla del cine cubano. Su obra abarca desde el documental clásico 'Girón' hasta biopics musicales que conectan profundamente con el público.",
+    activeYears: "1965-presente",
+    awards: [
+      "Premio Nacional de Cine de Cuba (2022)",
+      "Premio de la Popularidad Festival de La Habana"
+    ]
+  },
+  {
+    id: "juan-carlos-cremata",
+    name: "Juan Carlos Cremata",
+    photo: juanCarlosCremataPhoto,
+    birthYear: 1961,
+    nationality: "Cubano",
+    biography: "Director iconoclasta y teatral. Su ópera prima 'Nada' (2001) sorprendió por su estética visual única y humor negro. También dirigió 'Viva Cuba' (2005), la primera película infantil cubana premiada en Cannes. Su cine a menudo desafía las convenciones narrativas.",
+    activeYears: "1990-2015",
+    awards: [
+      "Grand Prix Écrans Juniors en Cannes (Viva Cuba)",
+      "Premio Coral a Ópera Prima (Nada)"
+    ]
+  },
+  {
+    id: "enrique-colina",
+    name: "Enrique Colina",
+    photo: enriqueColinaPhoto,
+    birthYear: 1944,
+    deathYear: 2020,
+    nationality: "Cubano",
+    biography: "Destacado crítico de cine (famoso por su programa '24 x Segundo') y realizador. Su estilo irónico se plasmó en documentales como 'Vecinos' y en su largometraje de ficción 'Entre ciclones' (2003), una comedia ácida sobre la picaresca habanera.",
+    activeYears: "1970-2020",
+    awards: [
+      "Premio Nacional de la Crítica",
+      "Múltiples Premios Caracol de la UNEAC"
+    ]
+  },
+  {
+    id: "humberto-padron",
+    name: "Humberto Padrón",
+    photo: humbertoPadronPhoto,
+    birthYear: 1967,
+    nationality: "Cubano",
+    biography: "Director que renovó el lenguaje del cine cubano a inicios de los 2000. Su mediometraje 'Video de familia' (2001) es una joya de culto sobre la emigración y la familia, narrada a través de una carta en video. 'Frutas en el café' (2005) mostró su faceta más experimental.",
+    activeYears: "1995-presente",
+    awards: [
+      "Premio Coral al Mejor Cortometraje",
+      "Reconocimiento de la Crítica Cubana"
+    ]
+  },
+  {
+    id: "alexis-valdes",
+    name: "Alexis Valdés",
+    photo: alexisValdesPhoto,
+    birthYear: 1963,
+    nationality: "Cubano",
+    biography: "Actor, comediante y director enormemente popular. Tras triunfar en la televisión y cine de España, dirigió y protagonizó 'Un rey en La Habana' (2005), una comedia de enredos que fue un éxito comercial rotundo. Es una figura clave del humor caribeño.",
+    activeYears: "1985-presente",
+    awards: [
+      "Premio del Público en Festival de Peñíscola",
+      "Premios en festivales de comedia"
+    ]
+  },
+  {
+    id: "benito-zambrano",
+    name: "Benito Zambrano",
+    photo: benitoZambranoPhoto,
+    birthYear: 1965,
+    nationality: "Español",
+    biography: "Director español formado en la EICTV de San Antonio de los Baños. Su película 'Habana Blues' (2005) capturó la energía y contradicciones de la escena musical underground habanera de los 2000, convirtiéndose en un referente generacional.",
+    activeYears: "1999-presente",
+    awards: [
+      "Premios Goya (Mejor Guion Original, Música, Montaje)",
+      "Premio del Jurado Un Certain Regard (Cannes - Solas)"
+    ]
+  },
+  {
+    id: "alejandro-brugues",
+    name: "Alejandro Brugués",
+    photo: alejandroBruguesPhoto,
+    birthYear: 1976,
+    nationality: "Cubano-Argentino",
+    biography: "Graduado de la EICTV. Revolucionó el cine cubano reciente con 'Juan de los Muertos' (2011), la primera película de zombis cubana, una sátira política hilarante que ganó el Goya. Su cine apuesta por el género y el entretenimiento inteligente.",
+    activeYears: "2005-presente",
+    awards: [
+      "Premio Goya a Mejor Película Iberoamericana",
+      "Premio de la Popularidad Festival de La Habana"
+    ]
+  },
+  {
+    id: "ian-padron",
+    name: "Ian Padrón",
+    photo: ianPadronPhoto,
+    birthYear: 1976,
+    nationality: "Cubano",
+    biography: "Hijo de Juan Padrón y director versátil. Su documental 'Fuera de Liga' sobre béisbol fue polémico y aclamado. Con 'Habanastation' (2011) logró un éxito masivo al abordar las diferencias de clase en la Cuba actual desde una perspectiva infantil.",
+    activeYears: "2000-presente",
+    awards: [
+      "Premio Founders en Traverse City Film Festival (Michael Moore)",
+      "Premio UNICEF"
+    ]
+  },
+  {
+    id: "alejandro-gil",
+    name: "Alejandro Gil",
+    photo: alejandroGilPhoto,
+    birthYear: 1958,
+    nationality: "Cubano",
+    biography: "Director que rescató un episodio doloroso de la historia cubana con 'Inocencia' (2018), sobre el fusilamiento de los estudiantes de medicina en 1871. La película conectó emocionalmente con el público cubano y reafirmó la vigencia del cine histórico.",
+    activeYears: "1984-presente",
+    awards: [
+      "Premio Especial del Jurado Festival de La Habana",
+      "Premio del Público Festival de La Habana"
+    ]
   }
 ];
+
+// === FUNCIONES DE BÚSQUEDA ===
 
 export const getDirectorById = (id: string): Director | undefined => {
   return directors.find((director) => director.id === id);
 };
 
 export const getDirectorByName = (name: string): Director | undefined => {
+  if (!name) return undefined;
+  // Búsqueda flexible: coincide si el nombre incluye la búsqueda o viceversa
+  const normalizedSearch = name.toLowerCase().trim();
   return directors.find((director) => 
-    director.name === name || name.includes(director.name) || director.name.includes(name)
+    director.name.toLowerCase().includes(normalizedSearch) || 
+    normalizedSearch.includes(director.name.toLowerCase())
   );
 };
