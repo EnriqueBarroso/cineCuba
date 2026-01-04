@@ -1019,6 +1019,8 @@ const movies2000s: Movie[] = [
     awards: [
       { name: "Festival de Comedia de Peñíscola", year: 2005, category: "Premio del Público" }
     ],
+    videoUrl: "https://archive.org/embed/un-rey-en-la-habana-dvdrip-spanish-xvi-d-1.1-sedg",
+    trailerUrl: "",
     cast: [
       { name: "Alexis Valdés", role: "Papito" },
       { name: "Carmen Salinas", role: "La Caimana" }
@@ -1070,7 +1072,7 @@ const movies2000s: Movie[] = [
     duration: "115 min",
     genre: ["Drama", "Musical"],
     synopsis: "Dos músicos cubanos enfrentan un dilema: aceptar un contrato en España dejando atrás sus raíces o quedarse en Cuba.",
-    videoUrl: "", 
+    videoUrl: "https://archive.org/embed/habana-blues", 
     trailerUrl: "https://www.youtube.com/embed/5lEAnDR46zo", 
     awards: [
       { name: "Premios Goya", year: 2006, category: "Mejor Música Original" },
