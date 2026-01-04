@@ -7,6 +7,8 @@ import { Footer } from "@/components/Footer";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Movie, getMovieById, getRelatedMovies } from "@/data/movies"; 
 import { getDirectorByName } from "@/data/directors";
+// 1. Importamos el componente SEO
+import { SEO } from "@/components/SEO";
 
 const RelatedMovieCard = ({ 
   movie, 
@@ -72,7 +74,6 @@ const MovieDetail = () => {
     setLoading(true);
     const foundMovie = getMovieById(id);
     setMovie(foundMovie);
-    // Por defecto mostramos trailer si hay, si no nada
     setPlayerMode('trailer');
     if (foundMovie) {
       setRelatedMovies(getRelatedMovies(id, 4));
@@ -106,6 +107,15 @@ const MovieDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* 2. Añadimos el SEO Dinámico aquí */}
+      <SEO 
+        title={movie.title}
+        description={movie.synopsis}
+        image={movie.poster}
+        url={`https://cinecuba.vercel.app/pelicula/${movie.id}`}
+        type="video.movie"
+      />
+
       <Navbar />
       
       {/* === SECCIÓN DEL REPRODUCTOR === */}
@@ -219,7 +229,7 @@ const MovieDetail = () => {
                 </div>
               </div>
 
-              {/* === PREMIOS (AQUÍ ESTABA LO QUE FALTABA) === */}
+              {/* PREMIOS */}
               {movie.awards && movie.awards.length > 0 && (
                 <div className="space-y-6 border-t border-white/10 pt-8">
                   <div className="flex items-center gap-3">
