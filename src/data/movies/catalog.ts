@@ -154,7 +154,7 @@ const movies1960s: Movie[] = [
     duration: "160 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Una obra maestra del cine cubano que narra tres historias de mujeres llamadas Lucía en tres momentos cruciales de la historia de Cuba: la guerra de independencia de 1895, la lucha contra Machado en los años 30, y la Revolución de los años 60.",
-    videoUrl: '', 
+    videoUrl: 'https://www.youtube.com/embed/HOgmtOQvuwY', 
     trailerUrl: "https://www.youtube.com/embed/A_oD1MCtk5w",
     awards: [
       { name: "Festival de Moscú", year: 1969, category: "Gran Premio" },
@@ -179,7 +179,7 @@ const movies1960s: Movie[] = [
     duration: "97 min",
     genre: ["Drama"],
     synopsis: "Un intelectual burgués decide quedarse en Cuba tras la Revolución mientras su familia huye al exilio. Atrapado entre dos mundos, observa los cambios de la sociedad cubana mientras cuestiona su propia identidad y lugar en el nuevo orden.",
-    videoUrl: "https://archive.org/embed/memorias-del-subdesarrollo-1968",
+    videoUrl: "https://archive.org/embde/memorias-del-subdesarrollo",
     trailerUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
       { name: "Festival de Karlovy Vary", year: 1968, category: "Premio FIPRESCI" },
@@ -274,7 +274,7 @@ const movies1970s: Movie[] = [
     duration: "120 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Un conde hacendado del siglo XVIII decide recrear la Última Cena con doce de sus esclavos, ofreciéndoles libertad. Sin embargo, cuando su promesa no se cumple, estalla una rebelión que tendrá consecuencias trágicas.",
-    videoUrl: '',
+    videoUrl: 'https://archive.org/embed/la-ultima-cena',
     trailerUrl: 'https://www.youtube.com/embed/lfluvDZsqms',
     awards: [
       { name: "Festival de Taormina", year: 1977, category: "Mejor Película" },
@@ -364,7 +364,7 @@ const movies1970s: Movie[] = [
     duration: "70 min",
     genre: ["Animación", "Aventuras"],
     synopsis: "El largometraje que consolidó al personaje más icónico de la animación cubana. Elpidio, un coronel mambí, lucha por la independencia de Cuba contra el ejército español y el General Resoplez.",
-    videoUrl: "", 
+    videoUrl: "https://www.youtube.com/embed/Ejq_lJVCqKU", 
     trailerUrl: "https://www.youtube.com/embed/6vcGn6a-0ss",
     awards: [
       { name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" },
@@ -477,7 +477,7 @@ const movies1980s: Movie[] = [
     duration: "69 min",
     genre: ["Animación", "Comedia"],
     synopsis: "Un científico vampiro cubano inventa una fórmula que permite a los vampiros resistir la luz del sol. Mientras tanto, las mafias vampíricas de Estados Unidos y Europa oriental luchan por hacerse con el secreto. Una sátira animada llena de humor negro.",
-    videoUrl: '', 
+    videoUrl: 'https://www.youtube.com/embed/Z8RUvL_ChM0', 
     trailerUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
     awards: [
       { name: "Encuesta Noticine.com", year: 2009, category: "Top 100 Mejores Películas Iberoamericanas" }
@@ -565,6 +565,8 @@ const movies1980s: Movie[] = [
       { name: "Festival de La Habana", year: 1988, category: "Premio Coral a la Comedia" },
       { name: "Festival de Bogotá", year: 1989, category: "Mejor Película" }
     ],
+    videoUrl: "https://www.youtube.com/embed/v-shMw0bZug",
+    trailerUrl: "https://www.youtube.com/embed/7toSR5w4YEE",
     cast: [
       { name: "Daisy Granados", role: "Concha" },
       { name: "Thais Valdés", role: "Clarita" },
@@ -586,7 +588,7 @@ const movies1980s: Movie[] = [
       { name: "Festival de La Habana", year: 1989, category: "Gran Premio Coral" }
     ],
     videoUrl: "https://archive.org/embed/la-bella-del-alhambra-vcd", 
-    trailerUrl: "",
+    trailerUrl: "https://www.youtube.com/embed/xWEimAgTGic",
     cast: [
       { name: "Beatriz Valdés", role: "Rachel" },
       { name: "César Évora", role: "Adolfo" },
@@ -1035,6 +1037,8 @@ const movies2000s: Movie[] = [
     awards: [
       { name: "Festival de La Habana", year: 2008, category: "Premio del Público" }
     ],
+    videoUrl: "https://archive.org/embed/el-cuerno-de-la-abundancia",
+    trailerUrl: "",
     cast: [
       { name: "Jorge Perugorría", role: "Bernardito" },
       { name: "Enrique Molina", role: "Personaje" }
@@ -1152,6 +1156,7 @@ const movies2010s: Movie[] = [
     genre: ["Drama", "Histórico"],
     synopsis: "Una mirada íntima a la infancia y juventud de José Martí, el héroe nacional de Cuba.",
     trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrl: "https://archive.org/embed/el-ojo-del-canario-marti",
     awards: [
       { name: "Festival de La Habana", year: 2010, category: "Gran Premio Coral" },
       { name: "Premios Ariel", year: 2011, category: "Mejor Película Iberoamericana" }
@@ -1225,7 +1230,7 @@ const movies2010s: Movie[] = [
     genre: ["Drama", "Aventuras"],
     synopsis: "Dos niños de entornos sociales opuestos se pierden en La Habana y forjan una amistad inesperada.",
     videoUrl: "",
-    trailerUrl: "",
+    trailerUrl: "https://www.youtube.com/embed/3t3fa6WIQ0U",
     awards: [
       { name: "Festival de Traverse City", year: 2011, category: "Premio Fundadores" },
       { name: "Festival de La Habana", year: 2011, category: "Premio de la UNICEF" }
