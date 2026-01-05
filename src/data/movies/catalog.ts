@@ -255,6 +255,7 @@ const movies1970s: Movie[] = [
     genre: ["Drama"],
     synopsis: "Teresa es una trabajadora textil, esposa y madre que participa activamente en actividades culturales. Cuando su marido exige que abandone sus actividades para dedicarse exclusivamente al hogar, ella se niega, desencadenando un conflicto sobre los roles de género en la Cuba revolucionaria.",
     trailerUrl: 'https://www.youtube.com/embed/ff5SpRmTrng',
+    videoUrl: "https://www.youtube.com/embed/H9chq3TSKbE",
     awards: [
       { name: "Festival de La Habana", year: 1979, category: "Gran Premio Coral" },
       { name: "Festival de Karlovy Vary", year: 1980, category: "Premio del Público" }
@@ -373,6 +374,7 @@ const movies1980s: Movie[] = [
       { name: "Festival de La Habana", year: 1986, category: "Premio Coral" },
       { name: "Festival de Biarritz", year: 1987, category: "Premio del Público" }
     ],
+    videoUrl: "https://archive.org/embed/un-hombre-de-exito", 
     cast: [
       { name: "César Évora", role: "Javier" },
       { name: "Daisy Granados", role: "Julia" },
@@ -606,7 +608,7 @@ const movies1990s: Movie[] = [
     duration: "111 min",
     genre: ["Drama"],
     synopsis: "Ambientada en los años 50. María Antonia es una mujer indomable cuya vida está marcada por la religión afrocubana y una pasión destructiva por un boxeador.",
-    videoUrl: '',
+    videoUrl: 'https://archive.org/embed/maria-antonia-1990',
     trailerUrl: '',
     awards: [
       { name: "Festival de La Habana", year: 1990, category: "Premio Coral a la Mejor Fotografía" }
@@ -626,7 +628,7 @@ const movies1990s: Movie[] = [
     genre: ["Bélico", "Aventuras"],
     synopsis: "Durante la guerra de Angola, una caravana militar cubana debe abastecer un puente aislado, enfrentándose a emboscadas y tensiones internas.",
     videoUrl: '',
-    trailerUrl: '',
+    trailerUrl: 'https://www.youtube.com/embed/L8xKX7DaJYQ',
     awards: [],
     cast: [
       { name: "Manuel Porto", role: "El Jefe" },
@@ -778,8 +780,8 @@ const movies1990s: Movie[] = [
     duration: "100 min",
     genre: ["Comedia", "Romance"],
     synopsis: "Estela y Ernesto intentan consumar su amor, pero no tienen dónde hacerlo. Una comedia sobre la falta de vivienda y la intimidad.",
-    videoUrl: "https://archive.org/details/amor-vertical",
-    trailerUrl: "",
+    videoUrl: "https://archive.org/embed/amor-vertical",
+    trailerUrl: "https://www.youtube.com/embed/9oO-5y0fldc",
     awards: [
       { name: "Premios Goya", year: 1998, category: "Nominada a Mejor Película Extranjera" }
     ],
@@ -1097,7 +1099,7 @@ const movies2000s: Movie[] = [
     duration: "90 min",
     genre: ["Drama", "Antología"],
     synopsis: "Tres historias sobre el amor y las relaciones humanas en la Cuba contemporánea, dirigidas por tres jóvenes realizadores que renovaron el cine cubano.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/3-veces-2",
     trailerUrl: "",
     awards: [
       { name: "Festival de Montreal", year: 2004, category: "Mejor Ópera Prima" }
@@ -1151,7 +1153,7 @@ const movies2000s: Movie[] = [
     duration: "80 min",
     genre: ["Drama", "Infantil"],
     synopsis: "Malu y Jorgito son dos niños amigos inseparables, aunque sus familias se odian. Cuando la madre de Malu decide irse de Cuba, ambos escapan para evitar la separación.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/viva-cuba_202601",
     trailerUrl: "",
     awards: [
       { name: "Festival de Cannes", year: 2005, category: "Grand Prix Écrans Juniors" }
@@ -1471,6 +1473,7 @@ const movies2010s: Movie[] = [
     genre: ["Drama"],
     synopsis: "Chala es un niño de once años que vive en un barrio marginal. Carmela, su maestra, lucha contra el sistema educativo para salvarlo.",
     trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrl: "https://archive.org/embed/conducta_202601",
     awards: [
       { name: "Premio Goya", year: 2015, category: "Mejor Película Iberoamericana" },
       { name: "Festival de La Habana", year: 2014, category: "Gran Premio Coral" }
