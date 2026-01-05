@@ -352,7 +352,7 @@ const movies1980s: Movie[] = [
       { name: "Festival de Cartagena", year: 1983, category: "Mejor Película" }
     ],
     trailerUrl: 'https://www.youtube.com/embed/xg8Fbj4nA1I',
-    videoUrl: '',
+    videoUrl: 'https://archive.org/embed/cecilia_202601',
     cast: [
       { name: "Daisy Granados", role: "Cecilia Valdés" },
       { name: "Imanol Arias", role: "Leonardo Gamboa" },

@@ -12,7 +12,7 @@ export const SEO = ({ title, description, image, url, type = 'website' }: SEOPro
   const siteTitle = "CineCuba | Archivo del Cine Cubano";
   const fullTitle = title === "Inicio" ? siteTitle : `${title} | CineCuba`;
   // Usamos la imagen del repositorio como fallback
-  const defaultImage = "https://raw.githubusercontent.com/enriquebarroso/cinecuba-landing/main/src/assets/hero-memorias.jpg"; 
+  const defaultImage = "https://cinecuba.vercel.app/og-image.jpg";
   const siteUrl = "https://cinecuba.vercel.app";
 
   return (
