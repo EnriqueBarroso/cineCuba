@@ -1,13 +1,6 @@
-import { User, Search, Menu, LogOut, Film, X } from "lucide-react";
+import { Search, Menu, X, Coffee, Film } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { useAuth } from "@/hooks/useAuth";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const navLinks = [
   { label: "Inicio", href: "/" },
@@ -21,14 +14,8 @@ export const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   
-  const { user, signOut } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-
-  const handleSignOut = async () => {
-    await signOut();
-    navigate('/');
-  };
 
   const isActive = (href: string) => {
     if (href === "/") {
@@ -42,194 +29,139 @@ export const Navbar = () => {
     if (searchQuery.trim()) {
       navigate(`/peliculas?search=${encodeURIComponent(searchQuery)}`);
       setIsSearchOpen(false);
-      setIsMenuOpen(false);
       setSearchQuery("");
     }
   };
 
   return (
-    // HE RECUPERADO TU ESTILO ORIGINAL AQUÍ:
-    // Mantiene 'fixed' para que se quede fija, pero con el degradado transparente que te gustaba
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isSearchOpen 
-        ? "bg-background/95 backdrop-blur-md" // Cuando buscas, fondo sólido para leer bien
-        : "bg-gradient-to-b from-background via-background/95 to-transparent backdrop-blur-md" // Tu estilo original
-    }`}>
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-20 relative">
+    <>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
+        <div className="container mx-auto px-6 h-16 flex items-center justify-between gap-4">
           
-          {/* === MODO BUSCADOR ACTIVO === */}
-          {isSearchOpen ? (
-            <form 
-              onSubmit={handleSearch} 
-              className="absolute inset-0 flex items-center w-full z-50 animate-in fade-in slide-in-from-top-2 duration-200"
-            >
-              <Search className="w-5 h-5 text-gold mr-3 shrink-0" />
-              <input
-                autoFocus
-                type="text"
-                placeholder="Buscar..."
-                className="flex-1 bg-transparent border-none outline-none text-foreground placeholder:text-muted-foreground text-lg"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-              <button 
-                type="button" 
-                onClick={() => setIsSearchOpen(false)}
-                className="p-2 hover:bg-foreground/10 rounded-full transition-colors ml-2"
+          {/* LOGO CON EFECTO DE GIRO 360 */}
+          <Link to="/" className="flex items-center gap-2 group z-50 shrink-0">
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gold/10 overflow-hidden transition-transform duration-500 group-hover:scale-110">
+              {/* Aquí está el cambio: group-hover:rotate-[360deg] */}
+              <Film className="w-5 h-5 text-gold relative z-10 transition-transform duration-700 ease-in-out group-hover:rotate-[360deg]" />
+              <div className="absolute inset-0 bg-gold/20 blur-xl group-hover:bg-gold/40 transition-all duration-500" />
+            </div>
+            <span className="text-2xl font-serif font-bold text-white tracking-tight hidden sm:block">
+              Cine<span className="text-gold">Cuba</span>
+            </span>
+            <span className="text-xl font-serif font-bold text-white tracking-tight sm:hidden">
+              <span className="text-gold">CC</span>
+            </span>
+          </Link>
+
+          {/* ESCRITORIO: Enlaces Centrales */}
+          <div className="hidden md:flex items-center gap-1 bg-white/5 rounded-full px-2 py-1 border border-white/5">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                to={link.href}
+                className={`
+                  px-4 py-1.5 text-sm font-medium rounded-full transition-all duration-300
+                  ${isActive(link.href) 
+                    ? "bg-gold/20 text-gold" 
+                    : "text-muted-foreground hover:text-white hover:bg-white/5"
+                  }
+                `}
               >
-                <X className="w-5 h-5 text-muted-foreground" />
-              </button>
-            </form>
-          ) : (
-            <>
-              {/* === MODO NORMAL (Logo y Menú) === */}
-              
-              {/* Logo */}
-              <Link to="/" className="flex items-center gap-3 group">
-                <div className="relative">
-                  <Film className="w-6 h-6 text-gold transition-transform duration-500 group-hover:rotate-180" />
-                </div>
-                <span className="font-serif text-2xl font-semibold tracking-tight text-foreground">
-                  Cine<span className="text-gold">Cuba</span>
-                </span>
+                {link.label}
               </Link>
+            ))}
+          </div>
 
-              {/* Desktop Navigation */}
-              <div className="hidden md:flex items-center gap-1">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.label}
-                    to={link.href}
-                    className={`
-                      relative px-5 py-2 text-sm tracking-wide uppercase
-                      transition-all duration-300 ease-out
-                      ${isActive(link.href) 
-                        ? "text-gold font-medium" 
-                        : "text-muted-foreground font-light hover:text-foreground"
-                      }
-                    `}
-                  >
-                    {link.label}
-                    <span 
-                      className={`
-                        absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-gold
-                        transition-all duration-300 ease-out
-                        ${isActive(link.href) ? "w-full" : "w-0"}
-                      `}
-                    />
-                    {/* Efecto hover original */}
-                    <span 
-                      className={`
-                        absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-foreground/30
-                        transition-all duration-300 ease-out
-                        ${!isActive(link.href) ? "group-hover:w-1/2 w-0" : "w-0"}
-                      `}
-                    />
-                  </Link>
-                ))}
-              </div>
+          {/* HERRAMIENTAS (Buscador + Donación + Menú Móvil) */}
+          <div className="flex items-center gap-2 md:gap-4">
+            
+            {/* Botón Abrir Buscador */}
+            <button
+              onClick={() => setIsSearchOpen(!isSearchOpen)}
+              className={`
+                p-2 rounded-full transition-colors
+                ${isSearchOpen ? "text-gold bg-gold/10" : "text-muted-foreground hover:text-white hover:bg-white/10"}
+              `}
+              aria-label="Buscar"
+            >
+              <Search className="w-5 h-5" />
+            </button>
 
-              {/* Separador decorativo (Original) */}
-              <div className="hidden lg:flex items-center gap-1 mx-6 opacity-20">
-                <div className="w-1 h-3 bg-foreground rounded-sm" />
-                <div className="w-1 h-3 bg-foreground rounded-sm" />
-                <div className="w-1 h-3 bg-foreground rounded-sm" />
-              </div>
+            {/* Botón Donación (Visible en escritorio) */}
+            <a
+              href="https://www.buymeacoffee.com/" // ⚠️ Tu enlace aquí
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-2 px-4 py-2 bg-gold text-black rounded-full text-xs font-bold hover:bg-gold/90 transition-transform hover:scale-105"
+            >
+              <Coffee className="w-4 h-4" />
+              <span>Apoyar</span>
+            </a>
 
-              {/* Right Section */}
-              <div className="flex items-center gap-4">
-                <button 
-                  onClick={() => setIsSearchOpen(true)}
-                  className="p-2.5 text-muted-foreground hover:text-gold transition-colors duration-300 rounded-full hover:bg-foreground/5"
-                >
-                  <Search className="w-5 h-5" />
-                </button>
-                
-                {user ? (
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <button className="hidden md:flex items-center justify-center w-9 h-9 rounded-full bg-gold border-2 border-gold/50 overflow-hidden transition-all duration-300 hover:border-gold hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]">
-                        <User className="w-4 h-4 text-background" />
-                      </button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent align="end" className="bg-card/95 backdrop-blur-md border-hairline">
-                      <DropdownMenuItem className="text-muted-foreground text-sm">
-                        {user.email}
-                      </DropdownMenuItem>
-                      <DropdownMenuItem 
-                        onClick={handleSignOut}
-                        className="text-destructive cursor-pointer"
-                      >
-                        <LogOut className="w-4 h-4 mr-2" />
-                        Cerrar Sesión
-                      </DropdownMenuItem>
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                ) : (
-                  <Link 
-                    to="/auth"
-                    className="hidden md:flex items-center justify-center w-9 h-9 rounded-full bg-secondary/50 border border-hairline overflow-hidden hover:bg-gold hover:border-gold transition-all duration-300 hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"
-                  >
-                    <User className="w-4 h-4 text-muted-foreground" />
-                  </Link>
-                )}
-                
-                <button
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <Menu className="w-5 h-5" />
-                </button>
-              </div>
-            </>
-          )}
+            {/* Botón Menú Móvil */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden p-2 text-muted-foreground hover:text-white transition-colors"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && !isSearchOpen && (
-          <div className="md:hidden py-6 border-t border-white/10 animate-fade-in">
-            <div className="flex flex-col gap-2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  className={`
-                    py-3 px-4 text-sm uppercase tracking-wide rounded-lg transition-all duration-300
-                    ${isActive(link.href)
-                      ? "text-gold bg-gold/10 font-medium border-l-2 border-gold"
-                      : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-                    }
-                  `}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <div className="border-t border-white/10 my-2" />
-              {user ? (
-                <button
-                  onClick={() => {
-                    handleSignOut();
-                    setIsMenuOpen(false);
-                  }}
-                  className="py-3 px-4 text-sm text-destructive hover:bg-destructive/10 rounded-lg text-left transition-colors"
-                >
-                  Cerrar Sesión
-                </button>
-              ) : (
-                <Link
-                  to="/auth"
-                  className="py-3 px-4 text-sm text-gold hover:bg-gold/10 rounded-lg transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Iniciar Sesión
-                </Link>
-              )}
-            </div>
+        {/* BARRA DE BÚSQUEDA DESPLEGABLE */}
+        <div
+          className={`
+            overflow-hidden transition-all duration-300 ease-in-out border-b border-white/5 bg-black/50
+            ${isSearchOpen ? "max-h-20 opacity-100" : "max-h-0 opacity-0"}
+          `}
+        >
+          <div className="container mx-auto px-6 py-4">
+            <form onSubmit={handleSearch} className="relative max-w-2xl mx-auto">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Buscar película, director o año..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                autoFocus={isSearchOpen}
+                className="w-full bg-white/5 border border-white/10 rounded-full py-2.5 pl-10 pr-4 text-sm text-white placeholder:text-muted-foreground focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-all"
+              />
+            </form>
           </div>
-        )}
-      </div>
-    </nav>
+        </div>
+      </nav>
+
+      {/* MENÚ MÓVIL (Overlay) */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl md:hidden pt-24 px-6 animate-in fade-in slide-in-from-top-10 duration-200">
+          <div className="flex flex-col gap-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                to={link.href}
+                className={`
+                  py-4 px-4 text-lg font-medium border-b border-white/5 transition-colors
+                  ${isActive(link.href) ? "text-gold" : "text-white/80"}
+                `}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            
+            {/* Opción de donar en móvil */}
+            <a 
+              href="https://www.buymeacoffee.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 py-3 px-4 flex items-center justify-center gap-2 bg-gold/10 text-gold rounded-lg font-bold border border-gold/20 hover:bg-gold/20 transition-colors"
+            >
+              <Coffee className="w-5 h-5" />
+              Invítanos a un café
+            </a>
+          </div>
+        </div>
+      )}
+    </>
   );
 };

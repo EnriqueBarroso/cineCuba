@@ -3,25 +3,27 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter } from "react-router-dom";
-import { AuthProvider } from "@/hooks/useAuth";
+// Borramos AuthProvider porque ya no usamos login
 import { AnimatedRoutes } from "@/components/AnimatedRoutes";
 import ScrollToTop from "./components/ScrollToTop";
+import { AnalyticsTracker } from "./components/AnalyticsTracker";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <AuthProvider>
+      {/* <AuthProvider>  <-- Lo quitamos */}
         <Toaster />
         <Sonner />
         <BrowserRouter>
-        <ScrollToTop />
+          <AnalyticsTracker /> {/* ✅ Perfecto: Está dentro del Router */}
+          <ScrollToTop />
           <AnimatedRoutes />
         </BrowserRouter>
-      </AuthProvider>
+      {/* </AuthProvider> */}
     </TooltipProvider>
   </QueryClientProvider>
 );
 
-export default App;
+export default App; 

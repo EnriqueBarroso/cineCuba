@@ -627,7 +627,7 @@ const movies1990s: Movie[] = [
     duration: "100 min",
     genre: ["Bélico", "Aventuras"],
     synopsis: "Durante la guerra de Angola, una caravana militar cubana debe abastecer un puente aislado, enfrentándose a emboscadas y tensiones internas.",
-    videoUrl: '',
+    videoUrl: 'https://archive.org/embed/caravana-1990',
     trailerUrl: 'https://www.youtube.com/embed/L8xKX7DaJYQ',
     awards: [],
     cast: [

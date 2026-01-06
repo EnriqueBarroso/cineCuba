@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/home/Hero";
+import { HeroSection } from "@/components/HeroSection";
 import { Footer } from "@/components/Footer";
 import { MovieRow } from "@/components/catalog/MovieRow"; // Importamos el nuevo componente
 import { moviesByDecade } from "@/data/movies"; // Importamos los datos ya organizados
@@ -11,7 +11,7 @@ const Index = () => {
       
       <main>
         {/* El Hero Principal (Slider grande) */}
-        <Hero />
+        <HeroSection />
         
         {/* ZONA DE FILAS (CARROUSELES) */}
         {/* Usamos -mt-16 o -mt-20 y z-10 para que la primera fila se monte 
