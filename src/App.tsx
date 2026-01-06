@@ -17,7 +17,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <AnalyticsTracker /> {/* ✅ Perfecto: Está dentro del Router */}
+          <AnalyticsTracker /> 
           <ScrollToTop />
           <AnimatedRoutes />
         </BrowserRouter>

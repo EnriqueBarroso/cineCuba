@@ -45,6 +45,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-gray-400">
               <li><Link to="/acerca" className="hover:text-gold transition-colors">Sobre CineCuba</Link></li>
               <li><Link to="/privacidad" className="hover:text-gold transition-colors">Política de Privacidad</Link></li>
+              <li><Link to="/terminos" className="hover:underline text-sm">Términos y Condiciones</Link></li>
               <li>
                 <a href="mailto:contacto@cinecuba.com" className="hover:text-gold transition-colors flex items-center gap-2">
                   <Mail className="w-4 h-4" /> contacto@cinecuba.com

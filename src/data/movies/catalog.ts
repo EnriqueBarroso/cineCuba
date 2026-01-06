@@ -567,6 +567,8 @@ const movies1980s: Movie[] = [
     awards: [
       { name: "Festival de La Habana", year: 1989, category: "Premio Coral" }
     ],
+    videoUrl: "https://archive.org/embed/papeles-secundarios",
+    trailerUrl: "",
     cast: [
       { name: "Rosita Fornés", role: "Actriz principal" },
       { name: "Leonor Arocha", role: "Personaje" }
@@ -644,7 +646,7 @@ const movies1990s: Movie[] = [
     duration: "93 min",
     genre: ["Sátira", "Comedia"],
     synopsis: "Una instructora de teatro llega a un pueblo donde ocurren sucesos absurdos y burocráticos. Una sátira mordaz sobre la sociedad cubana.",
-    videoUrl: '',
+    videoUrl: 'https://archive.org/embed/alicia-en-el-pueblo-de-maravillas',
     trailerUrl: '',
     awards: [{ name: "Festival de Berlín", year: 1991, category: "Premio Caligari" }],
     cast: [
@@ -689,6 +691,7 @@ const movies1990s: Movie[] = [
       { name: "Festival de La Habana", year: 1994, category: "Premio Coral" },
       { name: "Festival de Gramado", year: 1994, category: "Mejor Película" }
     ],
+    videoUrl: 'https://archive.org/embed/madagascar_202601',
     cast: [
       { name: "Laura de la Uz", role: "Laura" },
       { name: "Zaida Castellanos", role: "Laura madre" }

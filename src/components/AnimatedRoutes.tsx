@@ -10,6 +10,7 @@ import DirectorDetail from "@/pages/DirectorDetail";
 import Eras from "@/pages/Eras";
 import EraDetail from "@/pages/EraDetail";
 import About from "@/pages/About";
+import Terms from "@/pages/Terms";
 import NotFound from "@/pages/NotFound";
 
 export const AnimatedRoutes = () => {
@@ -80,13 +81,13 @@ export const AnimatedRoutes = () => {
             <PageTransition>
               <About />
             </PageTransition>
-          }
+          }  
         />
         <Route
-          path="/auth"
+          path="/terminos"
           element={
             <PageTransition>
-              <Auth />
+              <Terms />
             </PageTransition>
           }
         />
