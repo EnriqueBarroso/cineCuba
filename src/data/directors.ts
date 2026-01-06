@@ -37,6 +37,12 @@ import benitoZambranoPhoto from "@/assets/directors/benito-zambrano.jpg";
 import alejandroBruguesPhoto from "@/assets/directors/alejandro-brugues.jpg";
 import ianPadronPhoto from "@/assets/directors/ian-padron.jpg";
 import alejandroGilPhoto from "@/assets/directors/alejandro-gil.jpg";
+import jorgeLuisSanchezPhoto from "@/assets/directors/jorge-luis-sanchez.jpg";
+import pavelGiroudPhoto from "@/assets/directors/pavel-giroud.jpg";
+import lesterHamletPhoto from "@/assets/directors/lester-hamlet.jpg";
+import estebanInsaustiPhoto from "@/assets/directors/esteban-insausti.jpg";
+import leonIchasoPhoto from "@/assets/directors/leon-ichaso.jpg";
+import julianSchnabelPhoto from "@/assets/directors/julian-schnabel.jpg";
 
 
 export interface Director {
@@ -468,6 +474,84 @@ export const directors: Director[] = [
     awards: [
       "Premio Especial del Jurado Festival de La Habana",
       "Premio del Público Festival de La Habana"
+    ]
+  },
+  {
+    id: "jorge-luis-sanchez",
+    name: "Jorge Luis Sánchez",
+    photo: jorgeLuisSanchezPhoto,
+    birthYear: 1960,
+    nationality: "Cubano",
+    biography: "Cineasta con una fuerte vocación por la historia y la música. Comenzó como documentalista. Su ópera prima de ficción, 'El Benny' (2006), fue un éxito masivo que recuperó la figura de Benny Moré para las nuevas generaciones. Su cine se caracteriza por una visualidad barroca y expresiva.",
+    activeYears: "1981-presente",
+    awards: [
+      "Premio Boccalino en el Festival de Locarno (El Benny)",
+      "Premio Coral a la Ópera Prima en La Habana"
+    ]
+  },
+  {
+    id: "pavel-giroud",
+    name: "Pavel Giroud",
+    photo: pavelGiroudPhoto,
+    birthYear: 1975,
+    nationality: "Cubano",
+    biography: "Uno de los directores más destacados de su generación. Debutó con el segmento de '3 veces 2'. Su película 'La edad de la peseta' (2006) fue candidata al Goya. Recientemente, su documental 'El caso Padilla' (2022) ha recibido aclamación internacional por su rescate de la memoria histórica.",
+    activeYears: "2004-presente",
+    awards: [
+      "Premio Platino a Mejor Documental (El Caso Padilla)",
+      "Zenith de Plata en Festival de Montreal"
+    ]
+  },
+  {
+    id: "lester-hamlet",
+    name: "Lester Hamlet",
+    photo: lesterHamletPhoto,
+    birthYear: 1971,
+    nationality: "Cubano",
+    biography: "Director de cine y videoclips reconocido por su sensibilidad hacia el melodrama y la dirección de actores. Tras '3 veces 2', dirigió éxitos como 'Casa Vieja' (2010) y 'Fábula' (2011), explorando las complejidades emocionales de la sociedad cubana actual.",
+    activeYears: "1995-presente",
+    awards: [
+      "Premio de la Popularidad en Festival de La Habana",
+      "Múltiples Premios Lucas (Videoclips)"
+    ]
+  },
+  {
+    id: "esteban-insausti",
+    name: "Esteban Insausti",
+    photo: estebanInsaustiPhoto,
+    birthYear: 1971,
+    nationality: "Cubano",
+    biography: "Cineasta con una marcada voz autoral y estética experimental. Su segmento en '3 veces 2' mostró su estilo visual único. Su largometraje 'Larga distancia' (2010) aborda el tema de la emigración y la soledad desde una perspectiva íntima y dolorosa.",
+    activeYears: "2004-presente",
+    awards: [
+      "Premio Especial del Jurado en Festival de La Habana (por Larga Distancia)"
+    ]
+  },
+  {
+    id: "leon-ichaso",
+    name: "Leon Ichaso",
+    photo: leonIchasoPhoto,
+    birthYear: 1948,
+    deathYear: 2023,
+    nationality: "Cubano-Americano",
+    biography: "Figura clave del cine de la diáspora. Su película 'El Súper' (1979) es un clásico sobre el exilio en Nueva York. Con 'Azúcar amarga' (1996) realizó una crítica contundente a la realidad cubana de los 90. Su obra tendió puentes entre las dos orillas.",
+    activeYears: "1979-2015",
+    awards: [
+      "Grand Prix en el Festival de Cine de París",
+      "Nominación al Premio de la Crítica en Venecia"
+    ]
+  },
+  {
+    id: "julian-schnabel",
+    name: "Julian Schnabel",
+    photo: julianSchnabelPhoto,
+    birthYear: 1951,
+    nationality: "Estadounidense",
+    biography: "Reconocido pintor y cineasta neoexpresionista. Su dirección de 'Antes de que anochezca' (2000), basada en las memorias de Reinaldo Arenas, llevó la historia de la persecución de los artistas en Cuba a una audiencia global, con una actuación icónica de Javier Bardem.",
+    activeYears: "1996-presente",
+    awards: [
+      "Gran Premio del Jurado en Festival de Venecia",
+      "Mejor Director en el Festival de Cannes (por otra obra)"
     ]
   }
 ];
