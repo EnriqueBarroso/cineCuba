@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
-import { useParams, Link } from "react-router-dom";
+// Añadimos useNavigate para el botón de volver
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, Heart, Play, Calendar, Clock, Film, Award, Users, Video, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
@@ -7,7 +8,6 @@ import { Footer } from "@/components/Footer";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Movie, getMovieById, getRelatedMovies } from "@/data/movies"; 
 import { getDirectorByName } from "@/data/directors";
-// 1. Importamos el componente SEO
 import { SEO } from "@/components/SEO";
 
 const RelatedMovieCard = ({ 
@@ -61,6 +61,7 @@ const RelatedMovieCard = ({
 
 const MovieDetail = () => {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate(); // Hook para navegar atrás
   const { isFavorite, toggleFavorite } = useFavorites();
   const playerRef = useRef<HTMLDivElement>(null);
   
@@ -68,6 +69,9 @@ const MovieDetail = () => {
   const [relatedMovies, setRelatedMovies] = useState<Movie[]>([]);
   const [loading, setLoading] = useState(true);
   const [playerMode, setPlayerMode] = useState<'trailer' | 'movie'>('trailer');
+
+  // 1. LÓGICA NUEVA: Buscamos el objeto del director si tenemos la película
+  const directorObj = movie ? getDirectorByName(movie.director) : null;
 
   useEffect(() => {
     if (!id) return;
@@ -107,7 +111,6 @@ const MovieDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* 2. Añadimos el SEO Dinámico aquí */}
       <SEO 
         title={movie.title}
         description={movie.synopsis}
@@ -158,9 +161,13 @@ const MovieDetail = () => {
       {/* === INFO Y BOTONES === */}
       <section className="py-12 lg:py-20">
         <div className="container mx-auto px-6 lg:px-12">
-          <Link to="/peliculas" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
+          {/* Botón de volver con historial */}
+          <button 
+            onClick={() => navigate(-1)} 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 cursor-pointer"
+          >
             <ArrowLeft className="w-4 h-4" /> <span className="text-sm">Volver al catálogo</span>
-          </Link>
+          </button>
 
           <div className="grid lg:grid-cols-[300px_1fr] gap-12">
             <div className="hidden lg:block">
@@ -181,12 +188,28 @@ const MovieDetail = () => {
                 <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-white">
                   {movie.title}
                 </h1>
+                
+                {/* 2. CAMBIO AQUÍ: Cabecera con enlace al director */}
                 <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
                   <div className="flex items-center gap-2"><Calendar className="w-4 h-4" /><span>{movie.year}</span></div>
                   <span className="text-hairline">•</span>
                   <div className="flex items-center gap-2"><Clock className="w-4 h-4" /><span>{movie.duration}</span></div>
                   <span className="text-hairline">•</span>
-                  <div className="flex items-center gap-2"><Users className="w-4 h-4" /> <span>{movie.director}</span></div>
+                  
+                  {/* Bloque del Director Linkeado */}
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4" /> 
+                    {directorObj ? (
+                      <Link 
+                        to={`/director/${directorObj.id}`} 
+                        className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold"
+                      >
+                        {movie.director}
+                      </Link>
+                    ) : (
+                      <span>{movie.director}</span>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -217,11 +240,22 @@ const MovieDetail = () => {
                 <p className="text-gray-300 leading-relaxed text-lg font-light">{movie.synopsis}</p>
               </div>
               
-              {/* FICHA TÉCNICA RÁPIDA */}
+              {/* 3. CAMBIO AQUÍ: Ficha Técnica con enlace al director */}
               <div className="grid sm:grid-cols-2 gap-6 border-t border-white/10 pt-8">
                 <div className="space-y-1">
                   <span className="text-xs uppercase tracking-wider text-gold/80">Director</span>
-                  <p className="text-white font-medium">{movie.director}</p>
+                  <p className="text-white font-medium">
+                    {directorObj ? (
+                      <Link 
+                        to={`/director/${directorObj.id}`} 
+                        className="hover:text-gold transition-colors"
+                      >
+                        {movie.director}
+                      </Link>
+                    ) : (
+                      movie.director
+                    )}
+                  </p>
                 </div>
                 <div className="space-y-1">
                   <span className="text-xs uppercase tracking-wider text-gold/80">Año</span>

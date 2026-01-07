@@ -2,7 +2,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { PageTransition } from "./PageTransition";
 import Index from "@/pages/Index";
-import Auth from "@/pages/Auth";
 import MovieDetail from "@/pages/MovieDetail";
 import Movies from "@/pages/Movies";
 import Directors from "@/pages/Directors";

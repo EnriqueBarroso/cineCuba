@@ -749,7 +749,7 @@ const movies1990s: Movie[] = [
     duration: "102 min",
     genre: ["Drama"],
     synopsis: "Filmada en blanco y negro, cuenta la historia de Gustavo, un joven comunista devoto que comienza a cuestionar sus ideales al enfrentarse a las duras realidades de la vida en La Habana.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/azucar-amarga-bitter-sugar-1996-ichaso-spanish-eng-sub-dvd",
     trailerUrl: "",
     awards: [],
     cast: [
@@ -766,7 +766,7 @@ const movies1990s: Movie[] = [
     duration: "95 min",
     genre: ["Drama", "Romance"],
     synopsis: "Un drama erótico y pasional donde Jorge Perugorría interpreta a Furio. Aunque es una producción europea, marcó la expansión internacional de los actores cubanos tras el éxito de Fresa y Chocolate.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/details/bambola_202601",
     trailerUrl: "",
     awards: [],
     cast: [
@@ -838,7 +838,7 @@ const movies1990s: Movie[] = [
     duration: "90 min",
     genre: ["Drama"],
     synopsis: "Amanda tiene el don de ver el futuro, pero esto no le sirve para resolver los conflictos de su propia vida y familia.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/las-profecias-de-amanda",
     trailerUrl: "",
     awards: [
       { name: "Festival de Huelva", year: 1999, category: "Colón de Plata a la Mejor Actriz (Daisy Granados)" }
@@ -857,7 +857,7 @@ const movies1990s: Movie[] = [
     duration: "115 min",
     genre: ["Comedia", "Crimen"],
     synopsis: "Un turista alemán aparece muerto vestido con plumas de cabaret. Una sátira policiaca llena de humor negro y choques culturales.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/kleines-tropikana",
     trailerUrl: "",
     awards: [],
     cast: [
@@ -876,6 +876,8 @@ const movies1990s: Movie[] = [
     genre: ["Comedia"],
     synopsis: "Siso sueña con ser bailarín del Tropicana. Una comedia de enredos que rinde homenaje al cabaret y a la picaresca.",
     awards: [],
+    videoUrl: "https://archive.org/embed/un-paraiso-bajo-las-estrellas",
+    trailerUrl: "",
     cast: [
       { name: "Thais Valdés", role: "Stacy" },
       { name: "Vladimir Cruz", role: "Sergito" },
@@ -956,7 +958,7 @@ const movies2000s: Movie[] = [
     duration: "112 min",
     genre: ["Comedia", "Thriller"],
     synopsis: "Un joven español viaja a Cuba para hacerse cargo de la herencia de su padre, pero se ve envuelto en una trama de enredos y santería.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/pata-negra",
     trailerUrl: "",
     awards: [],
     cast: [
@@ -1385,7 +1387,7 @@ const movies2000s: Movie[] = [
     ]
   },
   {
-    id: "che",
+    id: "che, el argentino",
     title: "Che",
     year: 2008,
     director: "Steven Soderbergh",
@@ -1393,7 +1395,26 @@ const movies2000s: Movie[] = [
     duration: "134 min",
     genre: ["Drama", "Biopic", "Bélico"],
     synopsis: "La épica historia de Ernesto 'Che' Guevara, centrada en su papel fundamental durante la Revolución Cubana y su posterior campaña en Bolivia.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/el-argentino/El+argentino.avi",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Cannes", year: 2008, category: "Mejor Actor (Benicio del Toro)" }
+    ],
+    cast: [
+      { name: "Benicio del Toro", role: "Che Guevara" },
+      { name: "Demián Bichir", role: "Fidel Castro" }
+    ]
+  },
+    {
+    id: "che, la guerrilla",
+    title: "Che",
+    year: 2008,
+    director: "Steven Soderbergh",
+    poster: posterChe,
+    duration: "134 min",
+    genre: ["Drama", "Biopic", "Bélico"],
+    synopsis: "La épica historia de Ernesto 'Che' Guevara, centrada en su papel fundamental durante la Revolución Cubana y su posterior campaña en Bolivia.",
+    videoUrl: "https://archive.org/details/el-argentino/Guerrilla.avi",
     trailerUrl: "",
     awards: [
       { name: "Festival de Cannes", year: 2008, category: "Mejor Actor (Benicio del Toro)" }
@@ -1412,7 +1433,7 @@ const movies2000s: Movie[] = [
     duration: "93 min",
     genre: ["Drama"],
     synopsis: "Laura investiga al famoso proxeneta Alberto Yarini, adentrándose en zonas oscuras donde pasado y presente se entrelazan.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/el-argentino/Los+Dioses+Rotos.mpg",
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2008, category: "Premio del Público" },
@@ -1439,7 +1460,7 @@ const movies2010s: Movie[] = [
     duration: "120 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Una mirada íntima a la infancia y juventud de José Martí, el héroe nacional de Cuba.",
-    trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    trailerUrl: "https://www.youtube.com/embed/1f7KHlOuzCA",
     videoUrl: "https://archive.org/embed/el-ojo-del-canario-marti",
     awards: [
       { name: "Festival de La Habana", year: 2010, category: "Gran Premio Coral" },

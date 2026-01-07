@@ -17,8 +17,9 @@ export const Footer = () => {
             </p>
             
             <div className="pt-2">
+              {/* ⚠️ PENDIENTE: Pon tu enlace real de BuyMeACoffee o borra este bloque */}
               <a 
-                href="https://www.buymeacoffee.com/" // ⚠️ RECUERDA: Poner tu URL real aquí
+                href="https://www.buymeacoffee.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#FFDD00] text-black px-5 py-3 rounded-full font-bold hover:bg-[#FFDD00]/90 transition-transform hover:scale-105 shadow-lg"
@@ -35,6 +36,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-gray-400">
               <li><Link to="/peliculas" className="hover:text-gold transition-colors">Catálogo Completo</Link></li>
               <li><Link to="/directores" className="hover:text-gold transition-colors">Directores</Link></li>
+              {/* Nota: Asegúrate de que en tu Home tengas un id="catalogo" o cambia esto */}
               <li><Link to="/#catalogo" className="hover:text-gold transition-colors">Por Décadas</Link></li>
             </ul>
           </div>
@@ -44,11 +46,12 @@ export const Footer = () => {
             <h3 className="font-bold text-white uppercase tracking-wider text-xs">Información</h3>
             <ul className="space-y-3 text-gray-400">
               <li><Link to="/acerca" className="hover:text-gold transition-colors">Sobre CineCuba</Link></li>
-              <li><Link to="/privacidad" className="hover:text-gold transition-colors">Política de Privacidad</Link></li>
+              {/* 🟢 CORREGIDO: Eliminado enlace roto a Privacidad */}
               <li><Link to="/terminos" className="hover:underline text-sm">Términos y Condiciones</Link></li>
               <li>
-                <a href="mailto:contacto@cinecuba.com" className="hover:text-gold transition-colors flex items-center gap-2">
-                  <Mail className="w-4 h-4" /> contacto@cinecuba.com
+                {/* ⚠️ PENDIENTE: Pon tu email real */}
+                <a href="mailto:tu-contacto@cine-cubano.com" className="hover:text-gold transition-colors flex items-center gap-2">
+                  <Mail className="w-4 h-4" /> Contactar
                 </a>
               </li>
             </ul>
@@ -62,8 +65,7 @@ export const Footer = () => {
           </p>
           
           <div className="flex gap-6">
-            <a href="#" className="text-gray-500 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
+            {/* Si no tienes Twitter/Insta aún, mejor no ponerlos para no llevar a # */}
             <a href="https://github.com/enriquebarroso/cinecuba" target="_blank" className="text-gray-500 hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
           </div>
         </div>

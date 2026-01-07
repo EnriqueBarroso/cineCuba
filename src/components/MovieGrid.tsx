@@ -2,9 +2,7 @@ import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link, useSearchParams } from "react-router-dom"; 
 import { useFavorites } from "@/hooks/useFavorites";
-// ❌ BORRAMOS: import { useMovies } from "@/hooks/useMovies"; 
-// ✅ AÑADIMOS: Importación directa del catálogo
-import { movies as catalogMovies } from "@/data/movies/catalog"; // <--- IMPORTANTE: Leemos del archivo
+import { movies as catalogMovies } from "@/data/movies/catalog";
 import { Movie } from "@/data/movies/types";
 import { MovieSearch } from "./MovieSearch";
 import { Button } from "@/components/ui/button";
@@ -82,15 +80,17 @@ const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
 const MovieGrid = () => {
   const { isFavorite, toggleFavorite } = useFavorites();
   
-  // ✅ CAMBIO CLAVE: Usamos la variable 'catalogMovies' directamente
   const movies = catalogMovies; 
-  const loadingMovies = false; // Como es local, no hay tiempo de carga
+  const loadingMovies = false;
   
-  const [searchParams] = useSearchParams();
+  // 1. OBTENEMOS LOS PARÁMETROS Y LA FUNCIÓN PARA ACTUALIZARLOS
+  const [searchParams, setSearchParams] = useSearchParams();
   const urlSearchQuery = searchParams.get("search");
 
+  // 2. LA PÁGINA ACTUAL VIENE DE LA URL (SI NO EXISTE, ES 1)
+  const currentPage = parseInt(searchParams.get("page") || "1");
+
   const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
-  const [currentPage, setCurrentPage] = useState(1);
   const [isFiltering, setIsFiltering] = useState(false);
 
   const lastFilterSignature = useRef("");
@@ -111,7 +111,7 @@ const MovieGrid = () => {
       );
       
       setFilteredMovies(results);
-      setCurrentPage(1);
+      // Nota: No forzamos la página 1 aquí, asumimos que quien pone el ?search en la URL también pone el ?page=1 si es nueva búsqueda.
       
       const carteleraElement = document.getElementById("cartelera");
       if (carteleraElement) {
@@ -120,7 +120,6 @@ const MovieGrid = () => {
       
       setTimeout(() => setIsFiltering(false), 300);
     } else {
-      // Si no hay búsqueda URL, inicializamos con todas si está vacío
       if (filteredMovies.length === 0 && !isFiltering) {
          setFilteredMovies(movies);
       }
@@ -132,19 +131,37 @@ const MovieGrid = () => {
       const signature = filtered.map(m => m.id).join(',');
 
       if (signature !== lastFilterSignature.current) {
+        // Detectamos si es la carga inicial para no resetear la página si vienes del historial
+        const isFirstLoad = lastFilterSignature.current === "";
         lastFilterSignature.current = signature;
         
         setIsFiltering(true);
         setFilteredMovies(filtered);
-        setCurrentPage(1);
+        
+        // Si el usuario cambia los filtros (no es la carga inicial), volvemos a página 1
+        if (!isFirstLoad) {
+           setSearchParams(prev => {
+             const newParams = new URLSearchParams(prev);
+             newParams.set("page", "1");
+             return newParams;
+           }, { replace: true });
+        }
+
         setTimeout(() => setIsFiltering(false), 300);
       }
     }
-  }, [urlSearchQuery]);
+  }, [urlSearchQuery, setSearchParams]);
 
+  // 3. ACTUALIZAR URL AL CAMBIAR DE PÁGINA
   const handlePageChange = (page: number) => {
     setIsFiltering(true);
-    setCurrentPage(page);
+    
+    setSearchParams(prev => {
+      const newParams = new URLSearchParams(prev);
+      newParams.set("page", page.toString());
+      return newParams;
+    });
+
     document.getElementById("cartelera")?.scrollIntoView({ behavior: "smooth" });
     setTimeout(() => setIsFiltering(false), 300);
   };
