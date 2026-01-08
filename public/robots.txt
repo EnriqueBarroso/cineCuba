@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# ✅ AÑADE ESTO AL FINAL:
+Sitemap: https://cine-cubano.com/sitemap.xml

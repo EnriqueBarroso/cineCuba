@@ -115,7 +115,7 @@ const MovieDetail = () => {
         title={movie.title}
         description={movie.synopsis}
         image={movie.poster}
-        url={`https://cinecuba.vercel.app/pelicula/${movie.id}`}
+        url={`https://cine-cubano.com/pelicula/${movie.id}`}
         type="video.movie"
       />
 
