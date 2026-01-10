@@ -89,7 +89,7 @@ export const Navbar = () => {
 
             {/* Botón Donación (Visible en escritorio) */}
             <a
-              href="https://www.buymeacoffee.com/" // ⚠️ Tu enlace aquí
+              href="https://buymeacoffee.com/enriquedesv" // ⚠️ Tu enlace aquí
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center gap-2 px-4 py-2 bg-gold text-black rounded-full text-xs font-bold hover:bg-gold/90 transition-transform hover:scale-105"
@@ -151,7 +151,7 @@ export const Navbar = () => {
             
             {/* Opción de donar en móvil */}
             <a 
-              href="https://www.buymeacoffee.com/"
+              href="https://buymeacoffee.com/enriquedesv"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 py-3 px-4 flex items-center justify-center gap-2 bg-gold/10 text-gold rounded-lg font-bold border border-gold/20 hover:bg-gold/20 transition-colors"

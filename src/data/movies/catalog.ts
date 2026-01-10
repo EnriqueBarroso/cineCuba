@@ -17,9 +17,36 @@ import {
   // 90s
   posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
-  posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterDileALaura, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterDiosesRotos,
+  posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterDileALaura, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
-  posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia
+  posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
+  posterJuliette,
+  posterRosaLaChina,
+  posterEnfinElMar,
+  posterHormigas,
+  posterUnaRosaDeFrancia,
+  posterCiudadEnRojo,
+  posterElPremioFlaco,
+  posterCuandoLaVerdadDespierta,
+  posterLaAnunciacion,
+  posterAfinidades,
+  posterBoletoAlParaiso,
+  posterCasaVieja,
+  posterChamaco,
+  posterLisanka,
+  posterMolinaFeroz,
+  posterExtravios,
+  posterFabula,
+  posterPenumbras,
+  posterSumbe,
+  posterEsther,
+  posterLaPeliculaDeAna,
+  posterBoccacherias,
+  posterVirgilio,
+  posterContigoPanyCebolla,
+  posterFatima,
+  posterLaParedDeLasPalabras,
+  posterOmega3
 } from '@/assets/posters';
 
 // === IMPORTS HERO (Backdrops) ===
@@ -647,7 +674,7 @@ const movies1990s: Movie[] = [
     genre: ["Sátira", "Comedia"],
     synopsis: "Una instructora de teatro llega a un pueblo donde ocurren sucesos absurdos y burocráticos. Una sátira mordaz sobre la sociedad cubana.",
     videoUrl: 'https://archive.org/embed/alicia-en-el-pueblo-de-maravillas',
-    trailerUrl: '',
+    trailerUrl: 'https://www.youtube.com/embed/DYtGWXBJEU0',
     awards: [{ name: "Festival de Berlín", year: 1991, category: "Premio Caligari" }],
     cast: [
       { name: "Thais Valdés", role: "Alicia" },
@@ -895,6 +922,7 @@ const movies1990s: Movie[] = [
     awards: [
       { name: "Festival de La Habana", year: 1990, category: "Primer Premio Coral" }
     ],
+    videoUrl:"https://archive.org/embed/hello-hemingway",
     cast: [
       { name: "Laura de la Uz", role: "Larita" },
       { name: "Raúl Paz", role: "Víctor" }
@@ -921,7 +949,7 @@ const movies2000s: Movie[] = [
       { name: "Festival de Gramado", year: 2000, category: "Mejor Película" }
     ],
      videoUrl: "https://archive.org/embed/lista-de-espera",
-    trailerUrl: "",
+    trailerUrl: "https://www.youtube.com/embed/AvhSlIs0ABE",
     cast: [
       { name: "Vladimir Cruz", role: "Emilio" },
       { name: "Tahimí Alvariño", role: "Jacqueline" },
@@ -939,7 +967,7 @@ const movies2000s: Movie[] = [
     genre: ["Drama", "Biopic"],
     synopsis: "Biografía del escritor cubano Reinaldo Arenas, desde su infancia en el campo, su participación en la Revolución y su posterior persecución por ser homosexual y escritor disidente.",
     videoUrl: "",
-    trailerUrl: "",
+    trailerUrl: "https://www.youtube.com/embed/-yAfOGi8Jx4",
     awards: [
       { name: "Festival de Venecia", year: 2000, category: "Gran Premio del Jurado" },
       { name: "Premios Oscar", year: 2001, category: "Nominación Mejor Actor (Javier Bardem)" }
@@ -1196,7 +1224,7 @@ const movies2000s: Movie[] = [
     duration: "100 min",
     genre: ["Drama"],
     synopsis: "Una familia cubana decide emprender un peligroso viaje en balsa hacia Estados Unidos, enfrentándose al mar y a sus propios demonios.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/el-mani-es-asi/90+Millas.mp4",
     trailerUrl: "",
     awards: [
       { name: "Festival de Cine Latino de Nueva York", year: 2005, category: "Mejor Película" }
@@ -1289,7 +1317,7 @@ const movies2000s: Movie[] = [
     duration: "125 min",
     genre: ["Musical", "Biopic"],
     synopsis: "Biografía novelada de Benny Moré, el Bárbaro del Ritmo. La película recorre su genialidad musical, sus excesos y su lucha interna en la Cuba de los años 50.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/el-benny/El+Benny.mp4",
     trailerUrl: "",
     awards: [
       { name: "Festival de Locarno", year: 2006, category: "Premio Boccalino" }
@@ -1308,7 +1336,7 @@ const movies2000s: Movie[] = [
     duration: "100 min",
     genre: ["Drama"],
     synopsis: "Mauricio repasa su vida y los acontecimientos de Cuba desde el año 2000, en un día crucial: su cumpleaños 60.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/paginas-del-diario-de-mauricio",
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2006, category: "Premio Especial del Jurado" }
@@ -1327,7 +1355,7 @@ const movies2000s: Movie[] = [
     duration: "96 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Película ambientada en 1895, durante la guerra de independencia. Una joven cubana se debate entre la lealtad a España y el amor por un insurrecto mambí.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/el-benny/El+Ed%C3%A9n+Perdido.mp4",
     trailerUrl: "",
     awards: [],
     cast: [
@@ -1343,13 +1371,91 @@ const movies2000s: Movie[] = [
     duration: "90 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Una historia de amor y guerra donde una mujer española en la Cuba colonial debe transformar su visión del mundo ante el conflicto independentista.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/el-benny/Camino+al+eden.mp4",
     trailerUrl: "",
     awards: [],
     cast: [
       { name: "Renny Arozarena", role: "Mambí" }
     ]
   },
+  {
+  id: "quien-diablos-es-juliette",
+  title: "¿Quién diablos es Juliette?",
+  director: "Carlos Marcovich",
+  year: 1997,
+  genre: ["Documental", "Drama"],
+  duration: "1h 31m",
+  synopsis: "Yuliet, una adolescente cubana, y Fabiola, una modelo mexicana, se cruzan en La Habana. El director Carlos Marcovich las sigue en un vibrante collage visual que explora sus vidas, sueños y las realidades contrastantes de sus mundos.",
+  poster: posterJuliette,
+  awards: [{ name: "Premio Ariel", year: 1998, category: "Mejor Ópera Prima" }],
+  cast: [
+    { name: "Yuliet Ortega", role: "Ella misma" },
+    { name: "Fabiola Quiroz", role: "Ella misma" }
+  ]
+},
+{
+  id: "rosa-la-china",
+  title: "Rosa la china",
+  director: "Valeria Sarmiento",
+  year: 2002,
+  genre: ["Drama", "Romance"],
+  duration: "1h 55m",
+  synopsis: "Rosa, una mujer apasionada y de fuerte carácter en La Habana, busca reencontrar el amor mientras navega por las complejidades de la vida cotidiana y las relaciones en la isla.",
+  poster: posterRosaLaChina,
+  videoUrl: "https://archive.org/embed/el-mani-es-asi/Rosa+La+China.mpg",
+  cast: [
+    { name: "Mirtha Ibarra", role: "Rosa" },
+    { name: "Azucena De La Fuente", role: "Amiga" }
+  ]
+},
+{
+  id: "en-fin-el-mar",
+  title: "En fin, el mar (Al fin, el mar)",
+  director: "Jorge Dyszel",
+  year: 2003,
+  genre: ["Drama", "Romance"],
+  duration: "1h 42m",
+  synopsis: "Tony, un operador financiero de Nueva York de origen cubano, encuentra los restos de una balsa con un nombre pintado. Su viaje a Cuba para encontrar respuestas le lleva a conocer a Mariana, una nadadora de ballet acuático, descubriendo que no todo es lo que parece.",
+  poster: posterEnfinElMar,
+  videoUrl:"https://archive.org/embed/el-mani-es-asi/En+Fin%2C+El+Mar-2003.mp4",
+  cast: [
+    { name: "Audry Gutiérrez Alea", role: "Mariana" },
+    { name: "Joel Joan", role: "Tony" },
+    { name: "Vladimir Cruz", role: "Amigo" }
+  ]
+},
+{
+  id: "hormigas-en-la-boca",
+  title: "Hormigas en la boca",
+  director: "Mariano Barroso",
+  year: 2004,
+  genre: ["Thriller", "Cine Negro"],
+  duration: "1h 35m",
+  synopsis: "La Habana, 1958. Martín vuelve a la isla tras años de cárcel en España para buscar a Julia y el botín de un antiguo robo. En medio de la agitación política previa a la revolución, se ve envuelto en una trama de traición y pasiones peligrosas.",
+  poster: posterHormigas,
+  awards: [{ name: "Festival de Málaga", year: 2004, category: "Premio Especial del Jurado" }],
+  videoUrl:"https://archive.org/embed/el-mani-es-asi/Hormigas+En+La+Boca..mp4",
+  cast: [
+    { name: "Eduard Fernández", role: "Martín" },
+    { name: "Jorge Perugorría", role: "Actor" },
+    { name: "Ariadna Gil", role: "Julia" }
+  ]
+},
+{
+  id: "una-rosa-de-francia",
+  title: "Una rosa de Francia",
+  director: "Manuel Gutiérrez Aragón",
+  year: 2005,
+  genre: ["Aventura", "Drama", "Romance"],
+  duration: "1h 40m",
+  synopsis: "En la Cuba pre-revolucionaria, Andrés, un joven idealista, se enamora de Marie (Ana de Armas), una chica bajo la tutela de Simón, un contrabandista español. Juntos intentan escapar de la isla hacia una nueva vida.",
+  poster: posterUnaRosaDeFrancia,
+  cast: [
+    { name: "Ana de Armas", role: "Marie" },
+    { name: "Álex González", role: "Andrés" },
+    { name: "Jorge Perugorría", role: "Simón" }
+  ]
+},
   {
     id: "cuerno-abundancia",
     title: "El cuerno de la abundancia",
@@ -1388,10 +1494,10 @@ const movies2000s: Movie[] = [
   },
   {
     id: "che, el argentino",
-    title: "Che",
+    title: "Che, el argentino",
     year: 2008,
     director: "Steven Soderbergh",
-    poster: posterChe,
+    poster: posterCheArgentino,
     duration: "134 min",
     genre: ["Drama", "Biopic", "Bélico"],
     synopsis: "La épica historia de Ernesto 'Che' Guevara, centrada en su papel fundamental durante la Revolución Cubana y su posterior campaña en Bolivia.",
@@ -1407,14 +1513,14 @@ const movies2000s: Movie[] = [
   },
     {
     id: "che, la guerrilla",
-    title: "Che",
+    title: "Che, la guerrilla",
     year: 2008,
     director: "Steven Soderbergh",
     poster: posterChe,
     duration: "134 min",
     genre: ["Drama", "Biopic", "Bélico"],
     synopsis: "La épica historia de Ernesto 'Che' Guevara, centrada en su papel fundamental durante la Revolución Cubana y su posterior campaña en Bolivia.",
-    videoUrl: "https://archive.org/details/el-argentino/Guerrilla.avi",
+    videoUrl: "https://archive.org/embed/el-argentino/Guerrilla.avi",
     trailerUrl: "",
     awards: [
       { name: "Festival de Cannes", year: 2008, category: "Mejor Actor (Benicio del Toro)" }
@@ -1444,6 +1550,65 @@ const movies2000s: Movie[] = [
       { name: "Carlos Ever Fonseca", role: "Alberto" },
     ],
   },
+  {
+  id: "ciudad-en-rojo",
+  title: "Ciudad en rojo",
+  director: "Rebeca Chávez",
+  year: 2008,
+  genre: ["Drama", "Histórico", "Acción"],
+  duration: "1h 30m",
+  synopsis: "Santiago de Cuba, 1957. La ciudad vive bajo la tensión de la lucha clandestina contra la dictadura de Batista. En medio de la violencia y el peligro constante, un grupo de jóvenes revolucionarios intenta sobrevivir y amar sin perder la ternura.",
+  poster: posterCiudadEnRojo,
+  videoUrl: "https://archive.org/embed/el-argentino/Ciudad+En+Rojo.mp4",
+  cast: [
+    { name: "Rafael Ernesto Hernández", role: "Protagonista" },
+    { name: "Eman Xor Oña", role: "Protagonista" }
+  ]
+},
+{
+  id: "cuando-la-verdad-despierta",
+  title: "Cuando la verdad despierta",
+  director: "Angelo Rizzi",
+  year: 2008,
+  genre: ["Drama", "Suspense"],
+  duration: "1h 30m",
+  synopsis: "Coproducción italo-cubana. Un hombre despierta en un hospital de La Habana sin memoria tras un accidente. Poco a poco, con la ayuda de una enfermera, intenta reconstruir su pasado, descubriendo verdades que quizás era mejor no recordar.",
+  poster: posterCuandoLaVerdadDespierta,
+  cast: [
+    { name: "Rogelio Blaín", role: "Actor" },
+    { name: "Enrique Molina", role: "Actor" }
+  ]
+},
+{
+  id: "el-premio-flaco",
+  title: "El premio flaco",
+  director: "Juan Carlos Cremata",
+  year: 2009,
+  genre: ["Comedia", "Drama"],
+  duration: "1h 30m",
+  synopsis: "Adaptación de la obra de Héctor Quintero. Iluminada gana un premio en un concurso que consiste en una casa nueva y despensa llena. Sin embargo, su suerte atrae la envidia y el oportunismo de vecinos y familiares, convirtiendo el premio en una pesadilla tragicómica.",
+  poster: posterElPremioFlaco,
+  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/EL+PREMIO+FLACO+VCD.mpg",
+  cast: [
+    { name: "Rosa Vasconcelos", role: "Iluminada" },
+    { name: "Alina Rodríguez", role: "Vecina" }
+  ]
+},
+{
+  id: "la-anunciacion",
+  title: "La anunciación",
+  director: "Enrique Pineda Barnet",
+  year: 2009,
+  genre: ["Drama", "Familiar"],
+  duration: "1h 20m",
+  synopsis: "Una anciana médium convoca a su familia, dispersa por la emigración y los conflictos, para una reunión espiritual y física en La Habana. Un drama íntimo sobre la separación, la fe y la reconciliación familiar.",
+  poster: posterLaAnunciacion,
+  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/La+anunciacion.mpg",
+  cast: [
+    { name: "Verónica Lynn", role: "Amada" },
+    { name: "Héctor Noas", role: "Hijo" }
+  ]
+},
 ];
 
 // ============================================================================
@@ -1452,7 +1617,272 @@ const movies2000s: Movie[] = [
 
 const movies2010s: Movie[] = [
   {
-    id: "marti-2010",
+  id: "afinidades",
+  title: "Afinidades",
+  director: "Vladimir Cruz y Jorge Perugorría",
+  year: 2010,
+  genre: ["Drama", "Psicológico"],
+  duration: "1h 30m",
+  synopsis: "Dos parejas deciden pasar un fin de semana en un resort exclusivo para salir de la rutina. Lo que comienza como una escapada hedonista se convierte en un juego psicológico sobre los límites del deseo, el poder y el vacío emocional.",
+  poster: posterAfinidades,
+  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/Afinidades.mpg",
+  cast: [
+    { name: "Jorge Perugorría", role: "Actor/Director" },
+    { name: "Vladimir Cruz", role: "Actor/Director" },
+    { name: "Cuca Escribano", role: "Actriz" }
+  ]
+},
+{
+  id: "boleto-al-paraiso",
+  title: "Boleto al paraíso",
+  director: "Gerardo Chijona",
+  year: 2010,
+  genre: ["Drama"],
+  duration: "1h 28m",
+  synopsis: "Basada en hechos reales ocurridos en 1993. Un grupo de jóvenes rockeros y desilusionados decide inocularse voluntariamente el virus del VIH para ingresar en un sanatorio, donde creen que encontrarán comida garantizada y paz, su particular 'paraíso'.",
+  poster: posterBoletoAlParaiso,
+  videoUrl: "https://archive.org/embed/m-0-0",
+  awards: [{ name: "Festival de Sundance", year: 2011, category: "Nominada Gran Premio del Jurado" }],
+  cast: [
+    { name: "Miriel Cejas", role: "Eunice" },
+    { name: "Héctor Medina", role: "Alejandro" }
+  ]
+},
+{
+  id: "casa-vieja",
+  title: "Casa vieja",
+  director: "Lester Hamlet",
+  year: 2010,
+  genre: ["Drama"],
+  duration: "1h 35m",
+  synopsis: "Tras la muerte de su padre, esteban regresa a Cuba después de años viviendo en España. El reencuentro con su madre y su hermano en la vieja casa familiar desata secretos guardados, frustraciones y el dolor de la ausencia. Basada en la obra de Abelardo Estorino.",
+  poster: posterCasaVieja,
+  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/VCD+CASA+VIEJA.mpg",
+  cast: [
+    { name: "Yadro Reyes", role: "Esteban" },
+    { name: "Daisy Granados", role: "Madre" }
+  ]
+},
+{
+  id: "chamaco",
+  title: "Chamaco",
+  director: "Juan Carlos Cremata",
+  year: 2010,
+  genre: ["Drama", "Crimen", "LGBT"],
+  duration: "1h 30m",
+  synopsis: "En la oscura noche de La Habana, el asesinato de un joven en el Parque Central conecta a una serie de personajes diversos: prostitución masculina, corrupción, ajedrez y soledad. Una mirada cruda a los márgenes de la sociedad.",
+  poster: posterChamaco,
+  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/Chamaco.mpg",
+  cast: [
+    { name: "Pancho García", role: "Padre" },
+    { name: "Caleb Casas", role: "Hijo" }
+  ]
+},
+{
+  id: "molina-ferozz",
+  title: "Molina's Ferozz",
+  director: "Jorge Molina",
+  year: 2010,
+  genre: ["Terror", "Erótico"],
+  duration: "1h 14m",
+  synopsis: "Una reinterpretación visceral, gótica y erótica del cuento de Caperucita Roja ambientada en el campo cubano. Miranda vive con su abuela dominante mientras el deseo y el peligro acechan en el bosque.",
+  poster: posterMolinaFeroz,
+  videoUrl: "https://archive.org/embed/Lisanka/Molina+Feroz.mp4",
+  cast: [
+    { name: "Dayana Legrá", role: "Miranda" },
+    { name: "Roberto Perdomo", role: "Lobo" }
+  ]
+},
+{
+  id: "lisanka",
+  title: "Lisanka",
+  director: "Daniel Díaz Torres",
+  year: 2010,
+  genre: ["Comedia", "Romance"],
+  duration: "1h 45m",
+  synopsis: "En un pueblo ficticio durante la Crisis de los Misiles (1962), tres hombres (dos cubanos y un soldado soviético) se disputan el amor de Lisanka, la muchacha más bella del lugar, mientras el mundo está al borde de la guerra nuclear.",
+  poster: posterLisanka,
+  videoUrl: "https://archive.org/embed/Lisanka",
+  cast: [
+    { name: "Miriel Cejas", role: "Lisanka" },
+    { name: "Carlos Enrique Almirante", role: "Pretendiente" }
+  ]
+},
+{
+  id: "extravios",
+  title: "Extravíos",
+  director: "Alejandro Gil",
+  year: 2011,
+  genre: ["Drama"],
+  duration: "1h 20m",
+  synopsis: "Un escritor en crisis creativa y existencial intenta terminar su novela mientras su realidad se desmorona. Una reflexión sobre el arte, la soledad y la locura en el contexto cubano contemporáneo.",
+  poster: posterExtravios,
+  videoUrl: "https://archive.org/embed/Lisanka/Extravios.wmv",
+  cast: [
+    { name: "Laura de la Uz", role: "Actriz" },
+    { name: "Héctor Noas", role: "Escritor" }
+  ]
+},
+{
+  id: "fabula",
+  title: "Fábula",
+  director: "Lester Hamlet",
+  year: 2011,
+  genre: ["Drama", "Romance"],
+  duration: "1h 32m",
+  synopsis: "Arturo e Ignacia, dos jóvenes con sueños frustrados, inician una intensa relación amorosa en una Habana difícil. Deben decidir si luchar por su amor o ceder ante las presiones económicas y la posibilidad de emigrar.",
+  poster: posterFabula,
+  videoUrl: "https://archive.org/embed/Lisanka/fabula.mpg",
+  cast: [
+    { name: "Carlos Luis González", role: "Arturo" },
+    { name: "Alicia Hechavarría", role: "Ignacia" }
+  ]
+},
+{
+  id: "sumbe",
+  title: "Sumbe",
+  director: "Eduardo Moyano",
+  year: 2011,
+  genre: ["Bélico", "Drama", "Histórico"],
+  duration: "1h 25m",
+  synopsis: "Basada en hechos reales. Narra la resistencia de un grupo de colaboradores civiles cubanos (médicos, maestros, constructores) en Angola, que debieron tomar las armas para defender la ciudad de Sumbe ante el ataque de fuerzas de la UNITA en 1984.",
+  poster: posterSumbe,
+  videoUrl: "https://archive.org/embed/Lisanka/Sumbe.wmv",
+  cast: [
+    { name: "Fernando Hechavarría", role: "Protagonista" },
+    { name: "Jorge Martínez", role: "Protagonista" }
+  ]
+},
+{
+  id: "penumbras",
+  title: "Penumbras",
+  director: "Charlie Medina",
+  year: 2012,
+  genre: ["Drama"],
+  duration: "1h 15m",
+  synopsis: "La Habana de los años 90 durante el Periodo Especial. Tres personajes alquilan habitaciones en una posada barata, enfrentándose a la incertidumbre, la falta de electricidad y la búsqueda de dignidad en medio de la crisis.",
+  poster: posterPenumbras,
+  cast: [
+    { name: "Omar Franco", role: "Actor" },
+    { name: "Tomás Cao", role: "Actor" }
+  ]
+},
+{
+  id: "esther-en-alguna-parte",
+  title: "Esther en alguna parte",
+  director: "Gerardo Chijona",
+  year: 2013,
+  genre: ["Comedia", "Drama"],
+  duration: "1h 35m",
+  synopsis: "Lino, un anciano serio y rutinario, es abordado por Larry, un viejo extravagante que le revela que su difunta esposa, Maruja, tenía una doble vida. Juntos emprenden una búsqueda tragicómica para encontrar a Esther, el amor del pasado de Larry.",
+  poster: posterEsther,
+  cast: [
+    { name: "Reynaldo Miravalles", role: "Lino" },
+    { name: "Enrique Molina", role: "Larry" },
+    { name: "Daisy Granados", role: "Maruja" }
+  ]
+},
+{
+  id: "la-pelicula-de-ana",
+  title: "La película de Ana",
+  director: "Daniel Díaz Torres",
+  year: 2013,
+  genre: ["Comedia", "Sátira"],
+  duration: "1h 40m",
+  synopsis: "Una actriz sin suerte decide fingir ser una prostituta para protagonizar un documental realizado por extranjeros y así ganar dinero y fama. Una crítica mordaz al turismo sexual y a los estereotipos sobre Cuba.",
+  poster: posterLaPeliculaDeAna,
+  awards: [{ name: "Festival de La Habana", year: 2013, category: "Mejor Guion" }],
+  cast: [
+    { name: "Laura de la Uz", role: "Ana" },
+    { name: "Yuliet Cruz", role: "Amiga" }
+  ]
+},
+{
+  id: "boccaccerias-habaneras",
+  title: "Boccaccerías Habaneras",
+  director: "Arturo Sotto",
+  year: 2014,
+  genre: ["Comedia"],
+  duration: "1h 40m",
+  synopsis: "Tres historias independientes enlazadas por un hilo conductor: un escritor en crisis que paga por escuchar cuentos. Una adaptación libre y tropical del Decamerón de Boccaccio, llena de picardía, ingenio y sensualidad cubana.",
+  poster: posterBoccacherias,
+  cast: [
+    { name: "Daniel Amat", role: "Escritor" },
+    { name: "Jorge Perugorría", role: "Actor" }
+  ]
+},
+{
+  id: "contigo-pan-y-cebolla",
+  title: "Contigo pan y cebolla",
+  director: "Juan Carlos Cremata",
+  year: 2014,
+  genre: ["Comedia", "Drama", "Clásico"],
+  duration: "1h 40m",
+  synopsis: "Adaptación del clásico teatral de Héctor Quintero. Lala Fundora es una matriarca cubana de los años 50 obsesionada con comprar un refrigerador para aparentar estatus social, arrastrando a su familia a situaciones hilarantes y conmovedoras.",
+  poster: posterContigoPanyCebolla,
+  cast: [
+    { name: "Alina Rodríguez", role: "Lala Fundora" },
+    { name: "Enrique Molina", role: "Anselmo" }
+  ]
+},
+{
+  id: "fatima",
+  title: "Fátima o el Parque de la Fraternidad",
+  director: "Jorge Perugorría",
+  year: 2014,
+  genre: ["Drama", "LGBT"],
+  duration: "1h 30m",
+  synopsis: "Basada en el cuento de Miguel Barnet. Fátima (antes Manolito) es un travesti de inquebrantable autoestima que se prostituye en La Habana. La película narra su vida, sus amores conflictivos y su devoción religiosa a la Virgen de Fátima.",
+  poster: posterFatima,
+  cast: [
+    { name: "Carlos Enrique Almirante", role: "Fátima" },
+    { name: "Tomás Cao", role: "Vaselina" }
+  ]
+},
+{
+  id: "la-pared-de-las-palabras",
+  title: "La pared de las palabras",
+  director: "Fernando Pérez",
+  year: 2014,
+  genre: ["Drama"],
+  duration: "1h 38m",
+  synopsis: "Luis padece una distonía que le impide comunicarse corporalmente, aunque su mente está lúcida. Su madre es su único puente con el mundo. Un drama profundo sobre el dolor, la incomunicación y los límites del sacrificio familiar en una institución psiquiátrica.",
+  poster: posterLaParedDeLasPalabras,
+  cast: [
+    { name: "Jorge Perugorría", role: "Luis" },
+    { name: "Isabel Santos", role: "Madre" }
+  ]
+},
+{
+  id: "omega-3",
+  title: "Omega 3",
+  director: "Eduardo del Llano",
+  year: 2014,
+  genre: ["Ciencia Ficción", "Sátira"],
+  duration: "1h 14m",
+  synopsis: "En un futuro distópico, una guerra mundial se ha desatado entre los Vegs (vegetarianos), los Macs (carnívoros) y los Ovos (ovo-lácteo-vegetarianos). Un oficial Veg es interrogado para descubrir una supuesta conspiración. Una rareza de ciencia ficción en el cine cubano.",
+  poster: posterOmega3,
+  cast: [
+    { name: "Carlos Gonzalvo", role: "Oficial" },
+    { name: "Dailenys Fuentes", role: "Soldado" }
+  ]
+},
+{
+  id: "si-vas-a-comer-espera-por-virgilio",
+  title: "Si vas a comer espera por Virgilio",
+  director: "Tomás Piard",
+  year: 2013,
+  genre: ["Drama", "Teatro"],
+  duration: "1h 25m",
+  synopsis: "Basada en la obra de José Milián. Una recreación de la mítica obra teatral donde el propio dramaturgo Virgilio Piñera regresa del más allá para sentarse a comer en una cafetería de La Habana, reflexionando sobre la cultura, la censura y el destino del artista.",
+  poster: posterVirgilio,
+  cast: [
+    { name: "Iván García", role: "Virgilio" },
+    { name: "Javier Castro", role: "Pepe" }
+  ]
+},
+  {
+    id: "marti-2011",
     title: "José Martí: El Ojo del Canario",
     year: 2010,
     director: "Fernando Pérez",
@@ -1517,7 +1947,7 @@ const movies2010s: Movie[] = [
     duration: "92 min",
     genre: ["Comedia", "Terror"],
     synopsis: "Zombis invaden La Habana. Juan decide hacer negocio matando a los seres queridos de la gente.",
-    videoUrl: "", 
+    videoUrl: "https://archive.org/embed/juan-de-los-muertos", 
     trailerUrl: "https://www.youtube.com/embed/mhcIBEqczpg",
     awards: [
       { name: "Premios Goya", year: 2013, category: "Mejor Película Iberoamericana" },
@@ -1535,7 +1965,7 @@ const movies2010s: Movie[] = [
     duration: "95 min",
     genre: ["Drama", "Aventuras"],
     synopsis: "Dos niños de entornos sociales opuestos se pierden en La Habana y forjan una amistad inesperada.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/juan-de-los-muertos/HABANASTATION.mpg",
     trailerUrl: "https://www.youtube.com/embed/3t3fa6WIQ0U",
     awards: [
       { name: "Festival de Traverse City", year: 2011, category: "Premio Fundadores" },
@@ -1555,7 +1985,7 @@ const movies2010s: Movie[] = [
     duration: "93 min",
     genre: ["Drama", "Comedia"],
     synopsis: "En 1991, un radioaficionado cubano contacta con el último cosmonauta soviético olvidado en el espacio.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/juan-de-los-muertos/%5BSergio+Y+Serguei+(Pelicula+Cubana%5D%5BAAA%5D%5B2018%5D.mp4",
     trailerUrl: "",
     awards: [
       { name: "Festival de Málaga", year: 2018, category: "Premio SIGNIS" },

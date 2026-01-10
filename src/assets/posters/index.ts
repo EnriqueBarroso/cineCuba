@@ -52,9 +52,11 @@ export { default as posterParaisoEstrellas } from './un-paraiso-bajo-estrellas.j
 // === NUEVAS INCORPORACIONES (Para que catalog.ts quede limpio) ===
 export { default as posterAzucarAmarga } from './azucar-amarga.jpg';
 export { default as posterBambola } from './bambola.jpg';
+export { default as posterJuliette } from './quien-diablos-es-juliette.jpg';
 export { default as posterAntesAnochezca } from './antes-que-anochezca.jpg';
 export { default as posterPataNegra } from './pata-negra.jpg';
 export { default as posterTresVecesDos } from './3-veces-2.jpg';
+export { default as posterHormigas } from './hormigas-en-la-boca.jpg';
 export { default as posterPerfectoAmor } from './perfecto-amor-equivocado.jpg';
 export { default as posterBailandoCha } from './bailando-chachacha.jpg';
 export { default as posterVivaCuba } from './viva-cuba.jpg';
@@ -67,10 +69,19 @@ export { default as posterElEdenPerdido } from './el-eden-perdido.jpg';
 export { default as posterCaminoEden } from './camino-al-eden.jpg';
 export { default as posterCercania } from './cercania.jpg';
 export { default as posterChe } from './che.jpg';
+export { default as posterCheArgentino } from './che-el-argentino.jpg'
+export { default as posterUnaRosaDeFrancia } from './una-rosa-de-francia.jpg';
+export { default as posterCiudadEnRojo } from './ciudad-en-rojo.jpg';
+export { default as posterElPremioFlaco } from './el-premio-flaco.jpg';
+export { default as posterCuandoLaVerdadDespierta } from './Cuando-la-verdad-despierta-Poster.jpg';
+export { default as posterLaAnunciacion } from './la-anunciación.jpg';
+
 
 // === AÑOS 2000s y 2010s (Existentes) ===
 export { default as posterNada } from './nada.jpg';
 export { default as posterEntreCiclones } from './entre-ciclones.jpg';
+export { default as posterRosaLaChina } from './rosa-la-china.jpg';
+export { default as posterEnfinElMar } from './en-fin-el-mar.jpg';
 export { default as posterSuite } from './poster-SuiteHabana.jpg';
 export { default as posterFrutas } from './frutas-en-el-cafe.jpg';
 export { default as posterReyHabana } from './un-rey-en-la-habana.jpg';
@@ -81,11 +92,29 @@ export { default as posterDiosesRotos } from './los-dioses-rotos.jpg';
 export { default as posterHacerseSueco } from './hacerse-el-sueco.jpg';
 export { default as posterMielOshun } from './miel-para-oshun.jpg';
 export { default as posterAunqueEstesLejos } from './poster-aunque-estes-lejos.jpg';
+export { default as posterAfinidades } from './afinidades.jpg';
+export { default as posterBoletoAlParaiso } from './boleto-al-paraiso.jpg';
+export { default as posterCasaVieja } from './casa-vieja.jpg';
+export { default as posterChamaco } from './chamaco.jpg';
+export { default as posterLisanka } from './Lisanka-poster.jpg';
+export { default as posterMolinaFeroz } from './molina-feroz.jpg';
+export { default as posterExtravios } from './extravios.jpg';
+export { default as posterFabula } from './fabula.jpg';
 
 export { default as posterMarti } from './poster-Marti.jpg';
-export { default as posterMemoria } from './poster-Memoria.jpg';
+export { default as posterMemoria } from './memorias-del-desarrollo.jpg';
 export { default as posterChala } from './poster-Conducta.jpg';
 export { default as posterJuanDeLosMuertos } from './juan-de-los-muertos.jpg';
 export { default as posterHabanastation } from './habanastation.jpg';
 export { default as posterSergioSerguei } from './sergio-y-serguei.jpg';
 export { default as posterInocencia } from './inocencia.jpg';
+export { default as posterSumbe } from './sumbe.jpg';
+export { default as posterPenumbras } from './Penumbras-Poster.jpg';
+export { default as posterEsther } from './ether-en-alguna-parte.jpg';
+export { default as posterLaPeliculaDeAna } from './La-pelicula-de-Ana-poster.jpg';
+export { default as posterBoccacherias } from './boccacherias-habaneras.jpg';
+export { default as posterVirgilio } from './si-vas-a-comer.jpg';
+export { default as posterContigoPanyCebolla } from './Contigo_pan_y_cebolla_poster.jpg';
+export { default as posterFatima } from './fatima.jpg';
+export { default as posterLaParedDeLasPalabras } from './la-pared-de-las-palabras.jpg';
+export { default as posterOmega3 } from './omega-3.jpg';
