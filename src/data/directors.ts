@@ -44,6 +44,24 @@ import estebanInsaustiPhoto from "@/assets/directors/esteban-insausti.jpg";
 import leonIchasoPhoto from "@/assets/directors/leon-ichaso.jpg";
 import julianSchnabelPhoto from "@/assets/directors/julian-schnabel.jpg";
 
+// === MÁS IMPORTS NUEVOS ===
+import luisFelipeBernazaPhoto from "@/assets/directors/luis-felipe-bernaza.jpg";
+import carlosMarcovichPhoto from "@/assets/directors/carlos-marcovich.jpg";
+import valeriaSarmientoPhoto from "@/assets/directors/valeria-sarmiento.jpg";
+import jorgeDyszelPhoto from "@/assets/directors/jorge-dyszel.jpg";
+import virgenTabaresPhoto from "@/assets/directors/virgen-tabares.jpg";
+import charlieMedinaPhoto from "@/assets/directors/charlie-medina.jpg";
+import marianoBarrosoPhoto from "@/assets/directors/mariano-barroso.jpg";
+import manuelGutierrezAragonPhoto from "@/assets/directors/manuel-gutierrez-aragon.jpg";
+import rebecaChavezPhoto from "@/assets/directors/rebeca-chavez.jpg";
+import angeloRizziPhoto from "@/assets/directors/angelo-rizzi.jpg";
+import vladimirCruzPhoto from "@/assets/directors/vladimir-cruz.jpg";
+import jorgePerugorriaPhoto from "@/assets/directors/jorge-perugorria.jpg";
+import jorgeMolinaPhoto from "@/assets/directors/jorge-molina.jpg";
+import eduardoMoyanoPhoto from "@/assets/directors/eduardo-moyano.jpg";
+import eduardoDelLlanoPhoto from "@/assets/directors/eduardo-del-llano.jpg";
+import tomasPiardPhoto from "@/assets/directors/tomas-piard.jpg";
+
 
 export interface Director {
   id: string;
@@ -553,7 +571,160 @@ export const directors: Director[] = [
       "Gran Premio del Jurado en Festival de Venecia",
       "Mejor Director en el Festival de Cannes (por otra obra)"
     ]
+  },
+  {
+    id: "luis-felipe-bernaza",
+    name: "Luis Felipe Bernaza",
+    photo: luisFelipeBernazaPhoto,
+    birthYear: 1940,
+    deathYear: 2001,
+    nationality: "Cubano",
+    biography: "Documentalista y director conocido por su agudo sentido del humor y la sátira social. Su obra 'El maní es así' y 'De tal Pedro tal astilla' son referentes del documental costumbrista cubano.",
+    activeYears: "1960-2001",
+    awards: ["Premios en Festival de La Habana"]
+  },
+  {
+    id: "valeria-sarmiento",
+    name: "Valeria Sarmiento",
+    photo: valeriaSarmientoPhoto,
+    birthYear: 1948,
+    nationality: "Chilena",
+    biography: "Destacada directora y montadora, viuda del cineasta Raúl Ruiz. Ha desarrollado una carrera propia explorando el melodrama y las pasiones femeninas. Rodó en Cuba 'Rosa la China', aportando una mirada externa estilizada.",
+    activeYears: "1970-presente",
+    awards: ["Concha de Plata en San Sebastián (por otra obra)"]
+  },
+  {
+    id: "jorge-dyszel",
+    name: "Jorge Dyszel",
+    photo: jorgeDyszelPhoto,
+    birthYear: 1950, 
+    nationality: "Argentino",
+    biography: "Director y guionista argentino que realizó la coproducción 'En fin, el mar' (Al fin, el mar), una historia que une a personajes de distintas orillas en el escenario cubano.",
+    activeYears: "1980-presente",
+    awards: []
+  },
+  {
+    id: "virgen-tabares",
+    name: "Virgen Tabares",
+    photo: virgenTabaresPhoto,
+    birthYear: 1965, 
+    nationality: "Cubana",
+    biography: "Directora de televisión y cine. Se destacó enormemente por sus teleplays como 'Dos en busca de una', que abordaban con realismo, humor y sensibilidad los agudos problemas de vivienda y convivencia en la sociedad cubana.",
+    activeYears: "1990-presente",
+    awards: ["Premios Caracol de la UNEAC"]
+  },
+  {
+    id: "charlie-medina",
+    name: "Charlie Medina",
+    photo: charlieMedinaPhoto,
+    birthYear: 1960, 
+    nationality: "Cubano",
+    biography: "Director con una sólida carrera en la televisión y el cine. Sus obras, como 'Penumbras' y 'Pompas de jabón', suelen explorar los márgenes de la sociedad, la prostitución y los conflictos éticos en situaciones límite del Período Especial.",
+    activeYears: "1990-presente",
+    awards: ["Premios Caracol"]
+  },
+  {
+    id: "mariano-barroso",
+    name: "Mariano Barroso",
+    photo: marianoBarrosoPhoto,
+    birthYear: 1959,
+    nationality: "Español",
+    biography: "Director y guionista español, ganador del Goya. Su película 'Hormigas en la boca', rodada en La Habana, explora el género negro y el thriller político en el contexto histórico de la revolución cubana de 1958.",
+    activeYears: "1990-presente",
+    awards: ["Premio Goya", "Premio Especial del Jurado en Málaga"]
+  },
+  {
+    id: "manuel-gutierrez-aragon",
+    name: "Manuel Gutiérrez Aragón",
+    photo: manuelGutierrezAragonPhoto,
+    birthYear: 1942,
+    nationality: "Español",
+    biography: "Uno de los directores fundamentales del cine español post-franquista. Rodó en Cuba 'Una rosa de Francia', película de aventuras y romance que sirvió de plataforma internacional para la actriz Ana de Armas.",
+    activeYears: "1970-2010",
+    awards: ["Concha de Oro en San Sebastián", "Oso de Plata en Berlín"]
+  },
+  {
+    id: "rebeca-chavez",
+    name: "Rebeca Chávez",
+    photo: rebecaChavezPhoto,
+    birthYear: 1946,
+    nationality: "Cubana",
+    biography: "Historiadora y cineasta, comenzó como documentalista registrando momentos clave de la Revolución junto a los grandes maestros. 'Ciudad en Rojo' fue su salto a la ficción, manteniendo su rigor histórico sobre la lucha clandestina en Santiago.",
+    activeYears: "1970-presente",
+    awards: ["Distinción por la Cultura Nacional"]
+  },
+  {
+    id: "angelo-rizzi",
+    name: "Angelo Rizzi",
+    photo: angeloRizziPhoto,
+    birthYear: 1957,
+    nationality: "Italiano",
+    biography: "Director italiano que incursionó en el cine cubano con la coproducción 'Cuando la verdad despierta', un thriller psicológico sobre la memoria y el pasado.",
+    activeYears: "1990-presente",
+    awards: []
+  },
+  {
+    id: "vladimir-cruz",
+    name: "Vladimir Cruz",
+    photo: vladimirCruzPhoto,
+    birthYear: 1965,
+    nationality: "Cubano",
+    biography: "Actor icónico del cine cubano ('Fresa y Chocolate'). Debutó en la dirección junto a Perugorría con 'Afinidades', mostrando una faceta introspectiva y psicológica detrás de la cámara, explorando el vacío existencial.",
+    activeYears: "1990-presente",
+    awards: ["Reconocimientos como Actor y Director en festivales internacionales"]
+  },
+  {
+    id: "jorge-perugorria",
+    name: "Jorge Perugorría",
+    photo: jorgePerugorriaPhoto,
+    birthYear: 1965,
+    nationality: "Cubano",
+    biography: "El rostro más internacional del cine cubano actual. Además de su legendaria carrera actoral, ha dirigido películas como 'Afinidades', 'Amor Crónico' y 'Fátima', demostrando una gran sensibilidad hacia la música y la diversidad de género.",
+    activeYears: "1990-presente",
+    awards: ["Gloria del Cine (Festival de La Habana)", "Miembro de la Academia de Hollywood"]
+  },
+  {
+    id: "jorge-molina",
+    name: "Jorge Molina",
+    photo: jorgeMolinaPhoto,
+    birthYear: 1966,
+    nationality: "Cubano",
+    biography: "El 'enfant terrible' del cine cubano. Sus obras transitan por el terror, el gore y el erotismo explícito, rompiendo todos los esquemas del cine institucional. 'Molina's Ferozz' es su visión gótica del campo cubano.",
+    activeYears: "1990-presente",
+    awards: ["Mención Especial en festivales de cine fantástico"]
+  },
+  {
+    id: "eduardo-moyano",
+    name: "Eduardo Moyano",
+    photo: eduardoMoyanoPhoto,
+    birthYear: 1950, 
+    nationality: "Español", // Aunque rodó Sumbe, es una coproducción
+    biography: "Director que abordó la épica internacionalista cubana en 'Sumbe', narrando la resistencia de los trabajadores civiles cubanos en Angola. Su cine busca rescatar la memoria histórica reciente.",
+    activeYears: "1980-presente",
+    awards: []
+  },
+  {
+    id: "eduardo-del-llano",
+    name: "Eduardo del Llano",
+    photo: eduardoDelLlanoPhoto,
+    birthYear: 1962,
+    nationality: "Cubano",
+    biography: "Escritor, guionista y director, famoso por su serie de cortometrajes satíricos de 'Nicanor'. Su largometraje 'Omega 3' es una rara y audaz incursión del cine cubano en la ciencia ficción distópica.",
+    activeYears: "1990-presente",
+    awards: ["Premio Coral (como guionista)"]
+  },
+  {
+    id: "tomas-piard",
+    name: "Tomás Piard",
+    photo: tomasPiardPhoto,
+    birthYear: 1948,
+    deathYear: 2019,
+    nationality: "Cubano",
+    biography: "Cineasta prolífico, experimental y de culto. Su obra se distingue por una búsqueda estética constante, referencias literarias profundas y temas históricos, como en su homenaje 'Si vas a comer espera por Virgilio'.",
+    activeYears: "1970-2019",
+    awards: ["Premio Nacional de Cine (nominado)", "Premios Caracol"]
   }
+  
 ];
 
 // === FUNCIONES DE BÚSQUEDA ===
