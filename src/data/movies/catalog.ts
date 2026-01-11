@@ -1762,6 +1762,7 @@ const movies2010s: Movie[] = [
   duration: "1h 15m",
   synopsis: "La Habana de los años 90 durante el Periodo Especial. Tres personajes alquilan habitaciones en una posada barata, enfrentándose a la incertidumbre, la falta de electricidad y la búsqueda de dignidad en medio de la crisis.",
   poster: posterPenumbras,
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/PENUMBRA.mpg",  
   cast: [
     { name: "Omar Franco", role: "Actor" },
     { name: "Tomás Cao", role: "Actor" }
@@ -1776,6 +1777,7 @@ const movies2010s: Movie[] = [
   duration: "1h 35m",
   synopsis: "Lino, un anciano serio y rutinario, es abordado por Larry, un viejo extravagante que le revela que su difunta esposa, Maruja, tenía una doble vida. Juntos emprenden una búsqueda tragicómica para encontrar a Esther, el amor del pasado de Larry.",
   poster: posterEsther,
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/Esther.mkv",
   cast: [
     { name: "Reynaldo Miravalles", role: "Lino" },
     { name: "Enrique Molina", role: "Larry" },
@@ -1792,6 +1794,7 @@ const movies2010s: Movie[] = [
   synopsis: "Una actriz sin suerte decide fingir ser una prostituta para protagonizar un documental realizado por extranjeros y así ganar dinero y fama. Una crítica mordaz al turismo sexual y a los estereotipos sobre Cuba.",
   poster: posterLaPeliculaDeAna,
   awards: [{ name: "Festival de La Habana", year: 2013, category: "Mejor Guion" }],
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/LA+PELICULA+DE+ANA.mpg",
   cast: [
     { name: "Laura de la Uz", role: "Ana" },
     { name: "Yuliet Cruz", role: "Amiga" }
@@ -1834,6 +1837,7 @@ const movies2010s: Movie[] = [
   duration: "1h 30m",
   synopsis: "Basada en el cuento de Miguel Barnet. Fátima (antes Manolito) es un travesti de inquebrantable autoestima que se prostituye en La Habana. La película narra su vida, sus amores conflictivos y su devoción religiosa a la Virgen de Fátima.",
   poster: posterFatima,
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/Fatima+%5BCubana%5D+%5B2014%5D.mpg",
   cast: [
     { name: "Carlos Enrique Almirante", role: "Fátima" },
     { name: "Tomás Cao", role: "Vaselina" }
@@ -1848,6 +1852,7 @@ const movies2010s: Movie[] = [
   duration: "1h 38m",
   synopsis: "Luis padece una distonía que le impide comunicarse corporalmente, aunque su mente está lúcida. Su madre es su único puente con el mundo. Un drama profundo sobre el dolor, la incomunicación y los límites del sacrificio familiar en una institución psiquiátrica.",
   poster: posterLaParedDeLasPalabras,
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/LA+PARED+DE+LAS+PALABRAS.mp4",
   cast: [
     { name: "Jorge Perugorría", role: "Luis" },
     { name: "Isabel Santos", role: "Madre" }
@@ -1862,6 +1867,7 @@ const movies2010s: Movie[] = [
   duration: "1h 14m",
   synopsis: "En un futuro distópico, una guerra mundial se ha desatado entre los Vegs (vegetarianos), los Macs (carnívoros) y los Ovos (ovo-lácteo-vegetarianos). Un oficial Veg es interrogado para descubrir una supuesta conspiración. Una rareza de ciencia ficción en el cine cubano.",
   poster: posterOmega3,
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/Omega+3+(Eduardo+del+Llano%2C+2014).mkv",
   cast: [
     { name: "Carlos Gonzalvo", role: "Oficial" },
     { name: "Dailenys Fuentes", role: "Soldado" }
