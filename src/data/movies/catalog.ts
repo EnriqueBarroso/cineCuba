@@ -1809,6 +1809,7 @@ const movies2010s: Movie[] = [
   duration: "1h 40m",
   synopsis: "Tres historias independientes enlazadas por un hilo conductor: un escritor en crisis que paga por escuchar cuentos. Una adaptación libre y tropical del Decamerón de Boccaccio, llena de picardía, ingenio y sensualidad cubana.",
   poster: posterBoccacherias,
+  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Boccaccerias+Habaneras+(2014).mpg",
   cast: [
     { name: "Daniel Amat", role: "Escritor" },
     { name: "Jorge Perugorría", role: "Actor" }
@@ -1823,6 +1824,7 @@ const movies2010s: Movie[] = [
   duration: "1h 40m",
   synopsis: "Adaptación del clásico teatral de Héctor Quintero. Lala Fundora es una matriarca cubana de los años 50 obsesionada con comprar un refrigerador para aparentar estatus social, arrastrando a su familia a situaciones hilarantes y conmovedoras.",
   poster: posterContigoPanyCebolla,
+  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Contigo+Pan+y+Cebolla+%5B2014%5D.avi",
   cast: [
     { name: "Alina Rodríguez", role: "Lala Fundora" },
     { name: "Enrique Molina", role: "Anselmo" }
@@ -1882,6 +1884,7 @@ const movies2010s: Movie[] = [
   duration: "1h 25m",
   synopsis: "Basada en la obra de José Milián. Una recreación de la mítica obra teatral donde el propio dramaturgo Virgilio Piñera regresa del más allá para sentarse a comer en una cafetería de La Habana, reflexionando sobre la cultura, la censura y el destino del artista.",
   poster: posterVirgilio,
+  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Si+vas+a+comer+espera+por+Virgilio+%5BCubana%5D%5B2014%5D.avi",
   cast: [
     { name: "Iván García", role: "Virgilio" },
     { name: "Javier Castro", role: "Pepe" }
