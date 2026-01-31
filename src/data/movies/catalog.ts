@@ -1935,7 +1935,7 @@ const movies2010s: Movie[] = [
     duration: "108 min",
     genre: ["Drama"],
     synopsis: "Chala es un niño de once años que vive en un barrio marginal. Carmela, su maestra, lucha contra el sistema educativo para salvarlo.",
-    trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    trailerUrl: "https://www.youtube.com/embed/uBPfo4exDZM",
     videoUrl: "https://archive.org/embed/conducta_202601",
     awards: [
       { name: "Premio Goya", year: 2015, category: "Mejor Película Iberoamericana" },
