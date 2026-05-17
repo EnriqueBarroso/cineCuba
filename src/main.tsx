@@ -1,15 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-// 1. Importamos HelmetProvider
-import { HelmetProvider } from 'react-helmet-async';
+import { ViteReactSSG } from "vite-react-ssg";
+import { routes } from "./routes";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    {/* 2. Envolvemos la App */}
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
-  </React.StrictMode>,
-)
+export const createRoot = ViteReactSSG({ routes });

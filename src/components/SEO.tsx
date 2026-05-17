@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { Head } from 'vite-react-ssg';
 
 interface SEOProps {
   title: string;
@@ -16,7 +16,7 @@ export const SEO = ({ title, description, image, url, type = 'website' }: SEOPro
   const siteUrl = "https://cinecuba.vercel.app";
 
   return (
-    <Helmet>
+    <Head>
       {/* Estándar */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
@@ -33,6 +33,6 @@ export const SEO = ({ title, description, image, url, type = 'website' }: SEOPro
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image || defaultImage} />
-    </Helmet>
+    </Head>
   );
 };

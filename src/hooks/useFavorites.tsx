@@ -3,17 +3,18 @@ import { useState, useEffect } from 'react';
 export const useFavorites = () => {
   // 1. Cargamos los favoritos guardados al iniciar
   const [favorites, setFavorites] = useState<string[]>(() => {
+    if (typeof localStorage === 'undefined') return [];
     try {
       const saved = localStorage.getItem('cinecuba_favorites');
       return saved ? JSON.parse(saved) : [];
-    } catch (e) {
-      console.error("Error al cargar favoritos", e);
+    } catch {
       return [];
     }
   });
 
   // 2. Cada vez que cambien, guardamos en el navegador
   useEffect(() => {
+    if (typeof localStorage === 'undefined') return;
     localStorage.setItem('cinecuba_favorites', JSON.stringify(favorites));
   }, [favorites]);
 

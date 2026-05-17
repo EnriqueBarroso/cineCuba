@@ -64,10 +64,11 @@ const MovieDetail = () => {
   const navigate = useNavigate(); // Hook para navegar atrás
   const { isFavorite, toggleFavorite } = useFavorites();
   const playerRef = useRef<HTMLDivElement>(null);
-  
-  const [movie, setMovie] = useState<Movie | undefined>(undefined);
-  const [relatedMovies, setRelatedMovies] = useState<Movie[]>([]);
-  const [loading, setLoading] = useState(true);
+
+  // Datos síncronos: se inicializan en el primer render (SSR y cliente)
+  const [movie, setMovie] = useState<Movie | undefined>(() => id ? getMovieById(id) : undefined);
+  const [relatedMovies, setRelatedMovies] = useState<Movie[]>(() => id ? getRelatedMovies(id, 4) : []);
+  const [loading, setLoading] = useState(false);
   const [playerMode, setPlayerMode] = useState<'trailer' | 'movie'>('trailer');
 
   // 1. LÓGICA NUEVA: Buscamos el objeto del director si tenemos la película
@@ -75,14 +76,11 @@ const MovieDetail = () => {
 
   useEffect(() => {
     if (!id) return;
-    setLoading(true);
+    // Actualiza si el id cambia por navegación SPA
     const foundMovie = getMovieById(id);
     setMovie(foundMovie);
     setPlayerMode('trailer');
-    if (foundMovie) {
-      setRelatedMovies(getRelatedMovies(id, 4));
-    }
-    setLoading(false);
+    setRelatedMovies(foundMovie ? getRelatedMovies(id, 4) : []);
     window.scrollTo(0, 0);
   }, [id]);
 
