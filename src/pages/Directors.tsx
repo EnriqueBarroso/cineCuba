@@ -5,7 +5,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Input } from "@/components/ui/input";
 import { directors } from "@/data/directors";
-import { movies } from "@/data/movies"; // <--- IMPORTANTE: Importamos las películas para contar
+import { movies } from "@/data/movies";
+import { SEO } from "@/components/SEO";
 
 const Directors = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -16,6 +17,11 @@ const Directors = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Directores"
+        description="Conoce a los grandes directores del cine cubano. Biografías, filmografías y trayectorias de los cineastas más importantes de Cuba."
+        url="https://cine-cubano.com/directores"
+      />
       <Navbar />
       
       <div className="container mx-auto px-6 lg:px-12 pt-32 pb-16">

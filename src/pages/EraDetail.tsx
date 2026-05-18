@@ -5,6 +5,7 @@ import { getEraById, eras } from "@/data/eras";
 import { getMovieById } from "@/data/movies";
 import { ArrowLeft, Calendar, Film, Users, Sparkles, ChevronRight, ChevronLeft } from "lucide-react";
 import { motion } from "framer-motion";
+import { SEO } from "@/components/SEO";
 
 const EraDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -39,8 +40,13 @@ const EraDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={era.name}
+        description={era.shortDescription}
+        url={`https://cine-cubano.com/epoca/${era.id}`}
+      />
       <Navbar />
-      
+
       <main className="pt-24 pb-20">
         {/* Hero Section */}
         <motion.section 

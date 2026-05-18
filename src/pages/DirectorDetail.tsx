@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { getDirectorById } from "@/data/directors";
 import { movies, Movie } from "@/data/movies";
 import { useFavorites } from "@/hooks/useFavorites";
+import { SEO } from "@/components/SEO";
 
 const DirectorInitials = ({ name }: { name: string }) => {
   const initials = name
@@ -107,8 +108,14 @@ const DirectorDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={director.name}
+        description={`Biografía y filmografía de ${director.name}. Director cubano activo ${director.activeYears}. ${director.biography.slice(0, 120)}...`}
+        image={director.photo}
+        url={`https://cine-cubano.com/director/${director.id}`}
+      />
       <Navbar />
-      
+
       <section className="pt-32 pb-16 lg:pb-24 animate-fade-in">
         <div className="container mx-auto px-6 lg:px-12">
           {/* CAMBIO 2: Enlace corregido en la navegación principal */}

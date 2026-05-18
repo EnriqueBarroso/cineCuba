@@ -6,10 +6,16 @@ import { movies } from "@/data/movies";
 import { getMovieById } from "@/data/movies";
 import { Calendar, ArrowRight, Film } from "lucide-react";
 import { motion } from "framer-motion";
+import { SEO } from "@/components/SEO";
 
 const Eras = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Épocas del Cine Cubano"
+        description="Un recorrido por más de un siglo de historia cinematográfica cubana, desde las primeras proyecciones en 1897 hasta las producciones contemporáneas."
+        url="https://cine-cubano.com/epocas"
+      />
       <Navbar />
       
       <main className="pt-32 pb-20">
