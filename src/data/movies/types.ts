@@ -1,18 +1,28 @@
+export type ContentType = "pelicula" | "serial" | "corto";
+
 export interface Movie {
   id: string;
   title: string;
   year: number;
   director: string;
   poster: string;
-  backdrop?: string; // Opcional
+  backdrop?: string;
   duration: string;
-  genre: string[]; // Array de strings
+  genre: string[];
   synopsis: string;
-  videoUrl?: string;   // AQUÍ irá la PELÍCULA COMPLETA (Archive.org)
-  trailerUrl?: string; // AQUÍ irá el TRAILER (YouTube) <--- ¡NUEVO!
+  videoUrl?: string;
+  trailerUrl?: string;
   awards?: Award[];
   cast?: CastMember[];
   notes?: string;
+  // Tipo de contenido — omitir equivale a "pelicula"
+  tipo?: ContentType;
+  // Campos de seriales
+  temporadas?: number;
+  episodios?: number;
+  estado?: "completo" | "parcial";
+  // Campos de cortos
+  duracionMinutos?: number;
 }
 
 /** Géneros disponibles para las películas */

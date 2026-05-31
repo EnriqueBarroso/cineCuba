@@ -18,6 +18,8 @@ const navLinks = [
   { label: "Películas", href: "/peliculas" },
   { label: "Directores", href: "/directores" },
   { label: "Épocas", href: "/epocas" },
+  { label: "Seriales", href: "/seriales" },
+  { label: "Cortos", href: "/cortos" },
 ];
 
 const UserAvatar = ({ avatarUrl, name }: { avatarUrl?: string; name?: string }) => {

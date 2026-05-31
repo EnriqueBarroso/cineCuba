@@ -11,6 +11,8 @@ import MovieDetail from "./pages/MovieDetail";
 import About from "./pages/About";
 import Terms from "./pages/Terms";
 import Favorites from "./pages/Favorites";
+import Serials from "./pages/Serials";
+import Shorts from "./pages/Shorts";
 import NotFound from "./pages/NotFound";
 
 export const routes: RouteObject[] = [
@@ -49,6 +51,22 @@ export const routes: RouteObject[] = [
       {
         path: "favoritos",
         element: <PageTransition><Favorites /></PageTransition>,
+      },
+      {
+        path: "seriales",
+        element: <PageTransition><Serials /></PageTransition>,
+      },
+      {
+        path: "serial/:id",
+        element: <PageTransition><Serials /></PageTransition>,
+      },
+      {
+        path: "cortos",
+        element: <PageTransition><Shorts /></PageTransition>,
+      },
+      {
+        path: "corto/:id",
+        element: <PageTransition><Shorts /></PageTransition>,
       },
       {
         path: "acerca",
