@@ -12,7 +12,9 @@ import About from "./pages/About";
 import Terms from "./pages/Terms";
 import Favorites from "./pages/Favorites";
 import Serials from "./pages/Serials";
+import SerialDetail from "./pages/SerialDetail";
 import Shorts from "./pages/Shorts";
+import ShortDetail from "./pages/ShortDetail";
 import NotFound from "./pages/NotFound";
 
 export const routes: RouteObject[] = [
@@ -58,7 +60,7 @@ export const routes: RouteObject[] = [
       },
       {
         path: "serial/:id",
-        element: <PageTransition><Serials /></PageTransition>,
+        element: <PageTransition><SerialDetail /></PageTransition>,
       },
       {
         path: "cortos",
@@ -66,7 +68,7 @@ export const routes: RouteObject[] = [
       },
       {
         path: "corto/:id",
-        element: <PageTransition><Shorts /></PageTransition>,
+        element: <PageTransition><ShortDetail /></PageTransition>,
       },
       {
         path: "acerca",
