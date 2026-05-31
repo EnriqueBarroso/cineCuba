@@ -1,4 +1,4 @@
-import { Search, Menu, X, Coffee, Film, LogOut } from "lucide-react";
+import { Search, Menu, X, Coffee, Film, LogOut, Heart } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -163,6 +163,13 @@ export const Navbar = () => {
                       )}
                     </DropdownMenuLabel>
                     <DropdownMenuSeparator className="bg-hairline" />
+                    <DropdownMenuItem asChild>
+                      <Link to="/favoritos" className="cursor-pointer gap-2 flex items-center">
+                        <Heart className="w-4 h-4" />
+                        Mis favoritos
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator className="bg-hairline" />
                     <DropdownMenuItem
                       onClick={handleSignOut}
                       className="text-muted-foreground hover:text-foreground cursor-pointer gap-2"
@@ -236,13 +243,23 @@ export const Navbar = () => {
             {/* Auth en móvil */}
             {!loading && (
               user ? (
-                <button
-                  onClick={() => { handleSignOut(); setIsMenuOpen(false); }}
-                  className="mt-2 py-4 px-4 flex items-center gap-3 text-lg font-medium text-muted-foreground border-b border-white/5 transition-colors"
-                >
-                  <UserAvatar avatarUrl={avatarUrl} name={displayName} />
-                  <span>Cerrar sesión</span>
-                </button>
+                <>
+                  <Link
+                    to="/favoritos"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="mt-2 py-4 px-4 flex items-center gap-3 text-lg font-medium text-white/80 border-b border-white/5 transition-colors hover:text-gold"
+                  >
+                    <Heart className="w-5 h-5" />
+                    Mis favoritos
+                  </Link>
+                  <button
+                    onClick={() => { handleSignOut(); setIsMenuOpen(false); }}
+                    className="py-4 px-4 flex items-center gap-3 text-lg font-medium text-muted-foreground border-b border-white/5 transition-colors hover:text-white"
+                  >
+                    <UserAvatar avatarUrl={avatarUrl} name={displayName} />
+                    <span>Cerrar sesión</span>
+                  </button>
+                </>
               ) : (
                 <button
                   onClick={() => { setIsMenuOpen(false); setIsAuthModalOpen(true); }}

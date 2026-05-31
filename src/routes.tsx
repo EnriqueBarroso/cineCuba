@@ -10,6 +10,7 @@ import EraDetail from "./pages/EraDetail";
 import MovieDetail from "./pages/MovieDetail";
 import About from "./pages/About";
 import Terms from "./pages/Terms";
+import Favorites from "./pages/Favorites";
 import NotFound from "./pages/NotFound";
 
 export const routes: RouteObject[] = [
@@ -44,6 +45,10 @@ export const routes: RouteObject[] = [
       {
         path: "pelicula/:id",
         element: <PageTransition><MovieDetail /></PageTransition>,
+      },
+      {
+        path: "favoritos",
+        element: <PageTransition><Favorites /></PageTransition>,
       },
       {
         path: "acerca",
