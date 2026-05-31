@@ -1,6 +1,17 @@
-import { Search, Menu, X, Coffee, Film } from "lucide-react";
+import { Search, Menu, X, Coffee, Film, LogOut } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth";
+import { AuthModal } from "@/components/AuthModal";
+import { toast } from "sonner";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const navLinks = [
   { label: "Inicio", href: "/" },
@@ -9,18 +20,40 @@ const navLinks = [
   { label: "Épocas", href: "/epocas" },
 ];
 
+const UserAvatar = ({ avatarUrl, name }: { avatarUrl?: string; name?: string }) => {
+  const initials = name
+    ? name.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase()
+    : "?";
+
+  if (avatarUrl) {
+    return (
+      <img
+        src={avatarUrl}
+        alt={name || "Usuario"}
+        className="w-8 h-8 rounded-full object-cover border border-gold/30"
+      />
+    );
+  }
+
+  return (
+    <div className="w-8 h-8 rounded-full bg-gold/20 border border-gold/30 flex items-center justify-center">
+      <span className="text-gold text-xs font-semibold">{initials}</span>
+    </div>
+  );
+};
+
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+
+  const { user, loading, signOut } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
   const isActive = (href: string) => {
-    if (href === "/") {
-      return location.pathname === "/";
-    }
+    if (href === "/") return location.pathname === "/";
     return location.pathname.startsWith(href);
   };
 
@@ -33,15 +66,27 @@ export const Navbar = () => {
     }
   };
 
+  const handleSignOut = async () => {
+    await signOut();
+    toast.success("Sesión cerrada");
+  };
+
+  const displayName =
+    user?.user_metadata?.full_name ||
+    user?.user_metadata?.name ||
+    user?.email?.split("@")[0] ||
+    "Usuario";
+
+  const avatarUrl = user?.user_metadata?.avatar_url;
+
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between gap-4">
-          
-          {/* LOGO CON EFECTO DE GIRO 360 */}
+
+          {/* LOGO */}
           <Link to="/" className="flex items-center gap-2 group z-50 shrink-0">
             <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gold/10 overflow-hidden transition-transform duration-500 group-hover:scale-110">
-              {/* Aquí está el cambio: group-hover:rotate-[360deg] */}
               <Film className="w-5 h-5 text-gold relative z-10 transition-transform duration-700 ease-in-out group-hover:rotate-[360deg]" />
               <div className="absolute inset-0 bg-gold/20 blur-xl group-hover:bg-gold/40 transition-all duration-500" />
             </div>
@@ -53,7 +98,7 @@ export const Navbar = () => {
             </span>
           </Link>
 
-          {/* ESCRITORIO: Enlaces Centrales */}
+          {/* ESCRITORIO: enlaces centrales */}
           <div className="hidden md:flex items-center gap-1 bg-white/5 rounded-full px-2 py-1 border border-white/5">
             {navLinks.map((link) => (
               <Link
@@ -61,8 +106,8 @@ export const Navbar = () => {
                 to={link.href}
                 className={`
                   px-4 py-1.5 text-sm font-medium rounded-full transition-all duration-300
-                  ${isActive(link.href) 
-                    ? "bg-gold/20 text-gold" 
+                  ${isActive(link.href)
+                    ? "bg-gold/20 text-gold"
                     : "text-muted-foreground hover:text-white hover:bg-white/5"
                   }
                 `}
@@ -72,10 +117,10 @@ export const Navbar = () => {
             ))}
           </div>
 
-          {/* HERRAMIENTAS (Buscador + Donación + Menú Móvil) */}
-          <div className="flex items-center gap-2 md:gap-4">
-            
-            {/* Botón Abrir Buscador */}
+          {/* HERRAMIENTAS */}
+          <div className="flex items-center gap-2 md:gap-3">
+
+            {/* Buscador */}
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
               className={`
@@ -87,9 +132,9 @@ export const Navbar = () => {
               <Search className="w-5 h-5" />
             </button>
 
-            {/* Botón Donación (Visible en escritorio) */}
+            {/* Donación (solo escritorio) */}
             <a
-              href="https://buymeacoffee.com/enriquedesv" // ⚠️ Tu enlace aquí
+              href="https://buymeacoffee.com/enriquedesv"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center gap-2 px-4 py-2 bg-gold text-black rounded-full text-xs font-bold hover:bg-gold/90 transition-transform hover:scale-105"
@@ -98,7 +143,46 @@ export const Navbar = () => {
               <span>Apoyar</span>
             </a>
 
-            {/* Botón Menú Móvil */}
+            {/* AUTH: solo cuando no está cargando */}
+            {!loading && (
+              user ? (
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <button className="outline-none focus:ring-1 focus:ring-gold/50 rounded-full">
+                      <UserAvatar avatarUrl={avatarUrl} name={displayName} />
+                    </button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent
+                    align="end"
+                    className="bg-card border border-hairline text-foreground min-w-[180px]"
+                  >
+                    <DropdownMenuLabel className="font-normal">
+                      <p className="text-sm font-medium truncate">{displayName}</p>
+                      {user.email && (
+                        <p className="text-xs text-muted-foreground truncate">{user.email}</p>
+                      )}
+                    </DropdownMenuLabel>
+                    <DropdownMenuSeparator className="bg-hairline" />
+                    <DropdownMenuItem
+                      onClick={handleSignOut}
+                      className="text-muted-foreground hover:text-foreground cursor-pointer gap-2"
+                    >
+                      <LogOut className="w-4 h-4" />
+                      Cerrar sesión
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <button
+                  onClick={() => setIsAuthModalOpen(true)}
+                  className="hidden md:flex items-center px-4 py-2 text-xs font-medium text-muted-foreground border border-hairline hover:border-gold/40 hover:text-foreground transition-all duration-200"
+                >
+                  Entrar
+                </button>
+              )
+            )}
+
+            {/* Menú móvil */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2 text-muted-foreground hover:text-white transition-colors"
@@ -108,7 +192,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* BARRA DE BÚSQUEDA DESPLEGABLE */}
+        {/* BUSCADOR DESPLEGABLE */}
         <div
           className={`
             overflow-hidden transition-all duration-300 ease-in-out border-b border-white/5 bg-black/50
@@ -131,7 +215,7 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* MENÚ MÓVIL (Overlay) */}
+      {/* MENÚ MÓVIL */}
       {isMenuOpen && (
         <div className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl md:hidden pt-24 px-6 animate-in fade-in slide-in-from-top-10 duration-200">
           <div className="flex flex-col gap-2">
@@ -148,9 +232,28 @@ export const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            
-            {/* Opción de donar en móvil */}
-            <a 
+
+            {/* Auth en móvil */}
+            {!loading && (
+              user ? (
+                <button
+                  onClick={() => { handleSignOut(); setIsMenuOpen(false); }}
+                  className="mt-2 py-4 px-4 flex items-center gap-3 text-lg font-medium text-muted-foreground border-b border-white/5 transition-colors"
+                >
+                  <UserAvatar avatarUrl={avatarUrl} name={displayName} />
+                  <span>Cerrar sesión</span>
+                </button>
+              ) : (
+                <button
+                  onClick={() => { setIsMenuOpen(false); setIsAuthModalOpen(true); }}
+                  className="mt-2 py-4 px-4 text-lg font-medium text-muted-foreground border-b border-white/5 text-left transition-colors hover:text-white"
+                >
+                  Entrar
+                </button>
+              )
+            )}
+
+            <a
               href="https://buymeacoffee.com/enriquedesv"
               target="_blank"
               rel="noopener noreferrer"
@@ -162,6 +265,9 @@ export const Navbar = () => {
           </div>
         </div>
       )}
+
+      {/* MODAL DE AUTH */}
+      <AuthModal isOpen={isAuthModalOpen} onClose={() => setIsAuthModalOpen(false)} />
     </>
   );
 };
