@@ -11,10 +11,13 @@ import MovieDetail from "./pages/MovieDetail";
 import About from "./pages/About";
 import Terms from "./pages/Terms";
 import Favorites from "./pages/Favorites";
+import SagaDetail from "./pages/SagaDetail";
 import Serials from "./pages/Serials";
 import SerialDetail from "./pages/SerialDetail";
 import Shorts from "./pages/Shorts";
 import ShortDetail from "./pages/ShortDetail";
+import Suggest from "./pages/Suggest";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 export const routes: RouteObject[] = [
@@ -55,6 +58,10 @@ export const routes: RouteObject[] = [
         element: <PageTransition><Favorites /></PageTransition>,
       },
       {
+        path: "saga/:id",
+        element: <PageTransition><SagaDetail /></PageTransition>,
+      },
+      {
         path: "seriales",
         element: <PageTransition><Serials /></PageTransition>,
       },
@@ -69,6 +76,14 @@ export const routes: RouteObject[] = [
       {
         path: "corto/:id",
         element: <PageTransition><ShortDetail /></PageTransition>,
+      },
+      {
+        path: "sugerir",
+        element: <PageTransition><Suggest /></PageTransition>,
+      },
+      {
+        path: "admin",
+        element: <PageTransition><Admin /></PageTransition>,
       },
       {
         path: "acerca",

@@ -1,4 +1,4 @@
-import { Search, Menu, X, Coffee, Film, LogOut, Heart } from "lucide-react";
+import { Search, Menu, X, Coffee, Film, LogOut, Heart, Lightbulb, ShieldCheck } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -171,6 +171,20 @@ export const Navbar = () => {
                         Mis favoritos
                       </Link>
                     </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/sugerir" className="cursor-pointer gap-2 flex items-center">
+                        <Lightbulb className="w-4 h-4" />
+                        Sugerir título
+                      </Link>
+                    </DropdownMenuItem>
+                    {user.email === "enrique.barroso84@gmail.com" && (
+                      <DropdownMenuItem asChild>
+                        <Link to="/admin" className="cursor-pointer gap-2 flex items-center text-gold">
+                          <ShieldCheck className="w-4 h-4" />
+                          Panel admin
+                        </Link>
+                      </DropdownMenuItem>
+                    )}
                     <DropdownMenuSeparator className="bg-hairline" />
                     <DropdownMenuItem
                       onClick={handleSignOut}
@@ -254,6 +268,24 @@ export const Navbar = () => {
                     <Heart className="w-5 h-5" />
                     Mis favoritos
                   </Link>
+                  <Link
+                    to="/sugerir"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="py-4 px-4 flex items-center gap-3 text-lg font-medium text-white/80 border-b border-white/5 transition-colors hover:text-gold"
+                  >
+                    <Lightbulb className="w-5 h-5" />
+                    Sugerir título
+                  </Link>
+                  {user.email === "enrique.barroso84@gmail.com" && (
+                    <Link
+                      to="/admin"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="py-4 px-4 flex items-center gap-3 text-lg font-medium text-gold border-b border-white/5 transition-colors"
+                    >
+                      <ShieldCheck className="w-5 h-5" />
+                      Panel admin
+                    </Link>
+                  )}
                   <button
                     onClick={() => { handleSignOut(); setIsMenuOpen(false); }}
                     className="py-4 px-4 flex items-center gap-3 text-lg font-medium text-muted-foreground border-b border-white/5 transition-colors hover:text-white"
