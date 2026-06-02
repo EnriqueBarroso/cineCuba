@@ -2021,8 +2021,55 @@ const movies2010s: Movie[] = [
       { name: "Festival de La Habana", year: 2018, category: "Premio del Público" }
     ],
     cast: [
-      { name: "Yasmany Guerrero", role: "Fermín Valdés Domínguez" }, 
+      { name: "Yasmany Guerrero", role: "Fermín Valdés Domínguez" },
       { name: "Luis Manuel Álvarez", role: "Estudiante" }
+    ]
+  },
+  {
+    id: "regreso-a-itaca",
+    title: "Regreso a Ítaca",
+    year: 2014,
+    director: "Laurent Cantet",
+    poster: "",
+    duration: "95 min",
+    genre: ["Drama"],
+    synopsis: "Una terraza sobre La Habana. La puesta de sol. Cinco amigos se reúnen para celebrar el regreso de Amadeo después de dieciséis años de exilio en Madrid. Desde el crepúsculo hasta el amanecer recuerdan su juventud, la pandilla que formaban, su fe en el futuro y la decepción del presente. Basada en la novela La novela de mi vida de Leonardo Padura, la película es un retrato íntimo y agridulce de una generación marcada por la Revolución cubana.",
+    videoUrl: "https://archive.org/embed/regreso-a-itaca",
+    awards: [
+      { name: "Premio Venice Days", category: "Festival Internacional de Cine de Venecia", year: 2014 }
+    ],
+    cast: [
+      { name: "Néstor Jiménez", role: "Amadeo" },
+      { name: "Jorge Perugorría", role: "Eddy" },
+      { name: "Isabel Santos", role: "Tania" },
+      { name: "Fernando Hechavarría", role: "Rafa" },
+      { name: "Pedro Julio Díaz Ferrán", role: "Aldo" }
+    ]
+  },
+  {
+    id: "el-acompanante",
+    title: "El acompañante",
+    year: 2015,
+    director: "Pavel Giroud",
+    poster: "",
+    duration: "104 min",
+    genre: ["Drama"],
+    synopsis: "Cuba, 1988. Horacio Romero, el más grande boxeador cubano del momento, acaba de dar positivo en un control antidoping. Su castigo está en Los Cocos, un sanatorio bajo régimen militar donde ingresan los enfermos de VIH de manera obligatoria y del que solo pueden salir una vez por semana vigilados por los acompañantes. Horacio será uno de ellos, y de él dependerán las pequeñas libertades de Daniel, el paciente más conflictivo. Sus intereses chocan: Daniel quiere vivir sus últimos días en libertad y está dispuesto a todo. Horacio quiere volver al ring y para ello debe pactar.",
+    videoUrl: "https://archive.org/embed/el-acompanante",
+    awards: [
+      { name: "Selección Cuba para los Premios Oscar y Goya", category: "Mejor Película Extranjera", year: 2016 },
+      { name: "Premio del Público", category: "Festival de Cine Latinoamericano de Toulouse", year: 2016 },
+      { name: "Premio del Público", category: "Festival de Cine de Miami", year: 2016 },
+      { name: "Mejor Guion", category: "Havana Film Festival Nueva York", year: 2016 },
+      { name: "Premio TDN Changemaker", category: "Transdiaspora Network Nueva York", year: 2016 }
+    ],
+    cast: [
+      { name: "Armando Miguel Gómez", role: "Horacio Romero" },
+      { name: "Yotuel Romero", role: "Daniel" },
+      { name: "Camila Arteche", role: "" },
+      { name: "Yailene Sierra", role: "" },
+      { name: "Jazz Vilá", role: "" },
+      { name: "Jorge Molina", role: "" }
     ]
   },
 ];
