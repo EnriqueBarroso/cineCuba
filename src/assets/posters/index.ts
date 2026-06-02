@@ -118,3 +118,5 @@ export { default as posterContigoPanyCebolla } from './Contigo_pan_y_cebolla_pos
 export { default as posterFatima } from './fatima.jpg';
 export { default as posterLaParedDeLasPalabras } from './la-pared-de-las-palabras.jpg';
 export { default as posterOmega3 } from './omega-3.jpg';
+export { default as posterElAcompanante } from './el-acompanante.jpg';
+export { default as posterRegresoAItaca } from './regreso-a-itaca.jpg';

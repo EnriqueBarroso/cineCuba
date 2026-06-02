@@ -46,7 +46,9 @@ import {
   posterContigoPanyCebolla,
   posterFatima,
   posterLaParedDeLasPalabras,
-  posterOmega3
+  posterOmega3,
+  posterElAcompanante,
+  posterRegresoAItaca
 } from '@/assets/posters';
 
 // === IMPORTS HERO (Backdrops) ===
@@ -2030,11 +2032,11 @@ const movies2010s: Movie[] = [
     title: "Regreso a Ítaca",
     year: 2014,
     director: "Laurent Cantet",
-    poster: "",
+    poster: posterRegresoAItaca,
     duration: "95 min",
     genre: ["Drama"],
     synopsis: "Una terraza sobre La Habana. La puesta de sol. Cinco amigos se reúnen para celebrar el regreso de Amadeo después de dieciséis años de exilio en Madrid. Desde el crepúsculo hasta el amanecer recuerdan su juventud, la pandilla que formaban, su fe en el futuro y la decepción del presente. Basada en la novela La novela de mi vida de Leonardo Padura, la película es un retrato íntimo y agridulce de una generación marcada por la Revolución cubana.",
-    videoUrl: "https://archive.org/embed/regreso-a-itaca",
+    videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/REGRESO+A+ITACA+(Cuba%2C+Isabel+Santos%2C+Jorge+Perugor%C3%ADa).DVDR.LAT.avi",
     awards: [
       { name: "Premio Venice Days", category: "Festival Internacional de Cine de Venecia", year: 2014 }
     ],
@@ -2051,7 +2053,7 @@ const movies2010s: Movie[] = [
     title: "El acompañante",
     year: 2015,
     director: "Pavel Giroud",
-    poster: "",
+    poster: posterElAcompanante,
     duration: "104 min",
     genre: ["Drama"],
     synopsis: "Cuba, 1988. Horacio Romero, el más grande boxeador cubano del momento, acaba de dar positivo en un control antidoping. Su castigo está en Los Cocos, un sanatorio bajo régimen militar donde ingresan los enfermos de VIH de manera obligatoria y del que solo pueden salir una vez por semana vigilados por los acompañantes. Horacio será uno de ellos, y de él dependerán las pequeñas libertades de Daniel, el paciente más conflictivo. Sus intereses chocan: Daniel quiere vivir sus últimos días en libertad y está dispuesto a todo. Horacio quiere volver al ring y para ello debe pactar.",
