@@ -48,7 +48,8 @@ import {
   posterLaParedDeLasPalabras,
   posterOmega3,
   posterElAcompanante,
-  posterRegresoAItaca
+  posterRegresoAItaca,
+  posterViva
 } from '@/assets/posters';
 
 // === IMPORTS HERO (Backdrops) ===
@@ -2079,7 +2080,7 @@ const movies2010s: Movie[] = [
     title: "Viva",
     year: 2015,
     director: "Paddy Breathnach",
-    poster: "",
+    poster: posterViva,
     duration: "100 min",
     genre: ["Drama"],
     synopsis: "Jesús, un joven cubano de 18 años, sobrevive peinando señoras del barrio y arreglando pelucas en un cabaret de drag queens en La Habana. Su vida cambia por completo cuando su padre, un exitoso boxeador al que daba por muerto, sale de la cárcel tras quince años. Los dos hombres, con mundos completamente opuestos, chocarán y lucharán por entenderse y reconstruir los lazos rotos.",
