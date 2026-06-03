@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 // Añadimos useNavigate para el botón de volver
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, Heart, Play, Calendar, Clock, Film, Award, Users, Video, Youtube } from "lucide-react";
+import { ArrowLeft, Heart, Play, Calendar, Clock, Film, Award, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -69,7 +69,6 @@ const MovieDetail = () => {
   const [movie, setMovie] = useState<Movie | undefined>(() => id ? getMovieById(id) : undefined);
   const [relatedMovies, setRelatedMovies] = useState<Movie[]>(() => id ? getRelatedMovies(id, 4) : []);
   const [loading, setLoading] = useState(false);
-  const [playerMode, setPlayerMode] = useState<'trailer' | 'movie'>('trailer');
 
   // 1. LÓGICA NUEVA: Buscamos el objeto del director si tenemos la película
   const directorObj = movie ? getDirectorByName(movie.director) : null;
@@ -79,7 +78,6 @@ const MovieDetail = () => {
     // Actualiza si el id cambia por navegación SPA
     const foundMovie = getMovieById(id);
     setMovie(foundMovie);
-    setPlayerMode('trailer');
     setRelatedMovies(foundMovie ? getRelatedMovies(id, 4) : []);
     window.scrollTo(0, 0);
   }, [id]);
@@ -90,22 +88,11 @@ const MovieDetail = () => {
     }
   };
 
-  const handleWatchMovie = () => {
-    setPlayerMode('movie');
-    scrollToPlayer();
-  };
-
-  const handleWatchTrailer = () => {
-    setPlayerMode('trailer');
-    scrollToPlayer();
-  };
-
   if (loading) return <div className="min-h-screen bg-black flex items-center justify-center text-gold">Cargando...</div>;
   if (!movie) return null;
 
   const favorite = isFavorite(movie.id);
-  const currentVideoUrl = playerMode === 'movie' ? movie.videoUrl : movie.trailerUrl;
-  const showIframe = !!currentVideoUrl; 
+  const showIframe = !!movie.videoUrl;
 
   return (
     <div className="min-h-screen bg-background">
@@ -125,9 +112,8 @@ const MovieDetail = () => {
           <div className="max-w-5xl mx-auto aspect-video bg-black relative rounded-xl overflow-hidden shadow-2xl border border-white/10 group">
             {showIframe ? (
               <iframe
-                key={playerMode} 
-                src={currentVideoUrl}
-                title={playerMode === 'movie' ? `Película: ${movie.title}` : `Trailer: ${movie.title}`}
+                src={movie.videoUrl}
+                title={`Película: ${movie.title}`}
                 className="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -141,17 +127,12 @@ const MovieDetail = () => {
                 )}
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
                   <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center mb-4 backdrop-blur-md">
-                    {playerMode === 'movie' ? <Film className="w-8 h-8 text-white/50" /> : <Video className="w-8 h-8 text-white/50" />}
+                    <Film className="w-8 h-8 text-white/50" />
                   </div>
-                  <p className="text-muted-foreground font-medium text-lg">
-                    {playerMode === 'movie' ? "Película completa no disponible aún" : "Tráiler no disponible"}
-                  </p>
+                  <p className="text-muted-foreground font-medium text-lg">Película completa no disponible aún</p>
                 </div>
               </div>
             )}
-            <div className="absolute top-4 left-4 px-3 py-1 bg-black/60 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider rounded border border-white/10 pointer-events-none">
-              {playerMode === 'movie' ? '🎬 Película Completa' : '🍿 Tráiler Oficial'}
-            </div>
           </div>
         </div>
       </section>
@@ -214,17 +195,12 @@ const MovieDetail = () => {
               {/* BOTONES */}
               <div className="flex flex-wrap gap-4">
                 {movie.videoUrl ? (
-                  <Button size="lg" className={`font-bold px-8 h-12 gap-2 text-base shadow-lg transition-all ${playerMode === 'movie' ? 'bg-white text-black hover:bg-gray-200' : 'bg-gold text-black hover:bg-gold/90'}`} onClick={handleWatchMovie}>
-                    <Play className="w-5 h-5 fill-current" /> {playerMode === 'movie' ? 'Viendo Película' : 'Ver Película'}
+                  <Button size="lg" className="font-bold px-8 h-12 gap-2 text-base shadow-lg bg-gold text-black hover:bg-gold/90" onClick={scrollToPlayer}>
+                    <Play className="w-5 h-5 fill-current" /> Ver Película
                   </Button>
                 ) : (
                   <Button disabled size="lg" className="bg-white/10 text-white/50 h-12 px-8 gap-2">
                     <Film className="w-5 h-5" /> Próximamente
-                  </Button>
-                )}
-                {movie.trailerUrl && (
-                  <Button variant="outline" size="lg" className="h-12 px-8 gap-2 text-base border-white/20 hover:bg-white/10" onClick={handleWatchTrailer}>
-                    <Youtube className="w-5 h-5" /> Ver Tráiler
                   </Button>
                 )}
                 <Button variant="outline" size="lg" className={`h-12 px-4 gap-2 text-base border-white/20 hover:bg-white/10 ${favorite ? 'text-gold border-gold/50 bg-gold/10' : 'text-white'}`} onClick={() => toggleFavorite(movie.id)}>

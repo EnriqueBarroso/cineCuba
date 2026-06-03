@@ -2084,7 +2084,7 @@ const movies2010s: Movie[] = [
     duration: "100 min",
     genre: ["Drama"],
     synopsis: "Jesús, un joven cubano de 18 años, sobrevive peinando señoras del barrio y arreglando pelucas en un cabaret de drag queens en La Habana. Su vida cambia por completo cuando su padre, un exitoso boxeador al que daba por muerto, sale de la cárcel tras quince años. Los dos hombres, con mundos completamente opuestos, chocarán y lucharán por entenderse y reconstruir los lazos rotos.",
-    videoUrl: "https://archive.org/details/boccaccerias-habaneras-2014/Viva+%5B2015%5D.avi",
+    videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Viva+%5B2015%5D.avi",
     awards: [
       { name: "Candidatura irlandesa Premios Oscar", category: "Mejor Película Extranjera", year: 2016 },
       { name: "Premio ADL Stand Up", category: "Festival de Santa Bárbara", year: 2016 }

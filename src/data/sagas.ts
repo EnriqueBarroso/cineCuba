@@ -41,7 +41,7 @@ export const sagas: Saga[] = [
         anio: 2004,
         sinopsis:
           "Unos agentes de la Seguridad del Estado llegan al apartamento de Nicanor para instalar micrófonos, llegando al absurdo de pedirle colaboración por falta de presupuesto.",
-        videoUrl: "https://www.youtube.com/embed/YAXYKeu5hKo",
+        videoUrl: "https://archive.org/embed/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/Cortometraje_cubano_MONTE_ROUGE_-_Eduardo_del_Llano_-__con_Luis_Alberto_Garcia_e.mp4",
       },
       {
         id: "high-tech",
@@ -76,7 +76,7 @@ export const sagas: Saga[] = [
         id: "pas-de-quatre",
         titulo: "Pas de Quatre",
         anio: 2009,
-        videoUrl: "https://www.youtube.com/embed/KrSuxlHJYhI",
+        videoUrl: "https://archive.org/embed/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/Nicanor_O_27Donnell_-_Pas_de_Quatre.mp4",
       },
       {
         id: "ache",
@@ -100,6 +100,7 @@ export const sagas: Saga[] = [
         id: "arte",
         titulo: "Arte",
         anio: 2015,
+        videoUrl:"https://archive.org/embed/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/ARTE_Episodio_11_corto_de__Nicanor%2C_Los_Cuentos_de_Nicanor_O_Donnell_comedia_cub.mp4"
       },
       {
         id: "epica",
@@ -112,6 +113,7 @@ export const sagas: Saga[] = [
         anio: 2017,
         sinopsis:
           "Nicanor y sus amigos debaten qué pasaría si un jeque árabe comprara Cuba por 5.000 millones de dólares.",
+          videoUrl:"https://archive.org/embed/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/DOMINO_new_complete_episode_of_NICANOR_O_27DONNELL_TALES_by_Eduardo_del_Llano_2C_fea.mp4"
       },
       {
         id: "rallame-la-zanahoria",
