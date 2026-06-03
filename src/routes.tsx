@@ -12,6 +12,8 @@ import About from "./pages/About";
 import Terms from "./pages/Terms";
 import Favorites from "./pages/Favorites";
 import SagaDetail from "./pages/SagaDetail";
+import Actors from "./pages/Actors";
+import ActorDetail from "./pages/ActorDetail";
 import Serials from "./pages/Serials";
 import SerialDetail from "./pages/SerialDetail";
 import Shorts from "./pages/Shorts";
@@ -40,6 +42,14 @@ export const routes: RouteObject[] = [
       {
         path: "director/:id",
         element: <PageTransition><DirectorDetail /></PageTransition>,
+      },
+      {
+        path: "actores",
+        element: <PageTransition><Actors /></PageTransition>,
+      },
+      {
+        path: "actor/:id",
+        element: <PageTransition><ActorDetail /></PageTransition>,
       },
       {
         path: "epocas",

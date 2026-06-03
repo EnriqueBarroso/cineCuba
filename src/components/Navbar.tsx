@@ -17,6 +17,7 @@ const navLinks = [
   { label: "Inicio", href: "/" },
   { label: "Películas", href: "/peliculas" },
   { label: "Directores", href: "/directores" },
+  { label: "Actores", href: "/actores" },
   { label: "Épocas", href: "/epocas" },
   { label: "Seriales", href: "/seriales" },
   { label: "Cortos", href: "/cortos" },
