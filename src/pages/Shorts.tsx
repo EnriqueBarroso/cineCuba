@@ -106,8 +106,8 @@ const Shorts = () => (
           </p>
         </div>
 
-        {/* SAGAS */}
-        {sagas.length > 0 && (
+        {/* SAGAS (solo las de tipo corto) */}
+        {sagas.filter(s => s.tipo !== 'serial').length > 0 && (
           <div className="mb-16">
             <div className="flex items-center gap-3 mb-6">
               <Layers className="w-4 h-4 text-gold" />
@@ -115,7 +115,7 @@ const Shorts = () => (
               <span className="text-xs text-muted-foreground">Series de cortometrajes</span>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
-              {sagas.map((saga, i) => (
+              {sagas.filter(s => s.tipo !== 'serial').map((saga, i) => (
                 <div key={saga.id} className="animate-fade-in" style={{ animationDelay: `${i * 60}ms` }}>
                   <SagaCard saga={saga} />
                 </div>
@@ -143,7 +143,7 @@ const Shorts = () => (
           </div>
         )}
 
-        {shorts.length === 0 && sagas.length === 0 && (
+        {shorts.length === 0 && sagas.filter(s => s.tipo !== 'serial').length === 0 && (
           <div className="flex flex-col items-center justify-center py-32 text-center">
             <div className="w-20 h-20 rounded-full bg-gold/10 flex items-center justify-center mb-6">
               <Film className="w-8 h-8 text-gold/30" />

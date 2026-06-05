@@ -17,6 +17,7 @@ export interface Saga {
   genre: string[];
   synopsis: string;
   estado: "completo" | "parcial";
+  tipo?: "corto" | "serial"; // omitir = "corto"
   episodios: Episodio[];
   cast?: { name: string; role: string }[];
   awards?: { name: string; category: string; year: number }[];
@@ -144,6 +145,7 @@ export const sagas: Saga[] = [
     anioInicio: 1985,
     anioFin: 1985,
     poster: "",
+    tipo: "serial",
     genre: ["Drama", "Bélico", "Romance"],
     synopsis:
       "Un clásico irrepetible de la televisión cubana. A principios de los años 80, las Fuerzas Armadas Revolucionarias reclutan estudiantes para formarlos como oficiales. Esta es la historia de cuatro jóvenes cadetes — Carlos Manuel, Antonio, Ignacio y sus compañeras — sus amores, sueños y realidades, desde que ingresan en la escuela militar hasta su participación en la guerra de Angola. Con música de Pablo Milanés, la serie se convirtió en un fenómeno generacional que marcó a millones de cubanos.",
