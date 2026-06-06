@@ -11,6 +11,7 @@ import { SEO } from "@/components/SEO";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { getDirectorByName } from "@/data/directors";
+import { getActorByName } from "@/data/actors";
 import { sagas } from "@/data/sagas";
 import type { Saga, Episodio } from "@/data/sagas";
 
@@ -361,20 +362,33 @@ const SagaDetail = () => {
                     <h2 className="font-serif text-2xl text-white">Elenco</h2>
                   </div>
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                    {saga.cast.map((member, i) => (
-                      <div
-                        key={i}
-                        className="flex items-center gap-3 p-3 bg-white/5 border border-white/5 rounded-sm"
-                      >
-                        <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center shrink-0 text-gold font-serif font-bold">
-                          {member.name.charAt(0)}
+                    {saga.cast.map((member, i) => {
+                      const actorObj = getActorByName(member.name);
+                      const inner = (
+                        <>
+                          <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center shrink-0 text-gold font-serif font-bold">
+                            {member.name.charAt(0)}
+                          </div>
+                          <div className="min-w-0">
+                            <p className={`font-medium truncate text-sm ${actorObj ? "text-gold" : "text-white"}`}>{member.name}</p>
+                            <p className="text-xs text-gray-400 truncate">{member.role}</p>
+                          </div>
+                        </>
+                      );
+                      return actorObj ? (
+                        <Link
+                          key={i}
+                          to={`/actor/${actorObj.id}`}
+                          className="flex items-center gap-3 p-3 bg-white/5 border border-white/5 rounded-sm hover:border-gold/30 transition-colors"
+                        >
+                          {inner}
+                        </Link>
+                      ) : (
+                        <div key={i} className="flex items-center gap-3 p-3 bg-white/5 border border-white/5 rounded-sm">
+                          {inner}
                         </div>
-                        <div className="min-w-0">
-                          <p className="font-medium text-white truncate text-sm">{member.name}</p>
-                          <p className="text-xs text-gray-400 truncate">{member.role}</p>
-                        </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               )}

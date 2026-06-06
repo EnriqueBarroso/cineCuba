@@ -631,9 +631,20 @@ export const actors: Actor[] = [
   {
     id: 'luis-alberto-garcia',
     name: 'Luis Alberto García',
+    birthYear: 1961,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/luis-alberto-garcia.jpg',
+    biography: "Luis Alberto García Novoa es uno de los actores más versátiles y queridos del cine y la televisión cubana. Nació el 10 de noviembre de 1961 en La Habana, hijo del también actor Luis Alberto García Hernández. Se graduó en 1984 del Instituto Superior de Arte (ISA) en la especialidad de Actuación. Debutó en el cine con Algo más que soñar (1985), la serie televisiva que marcaría a toda una generación de cubanos. Desde entonces ha demostrado un dominio extraordinario de todos los registros, desde el drama más profundo hasta la comedia, pasando por el thriller político. Es especialmente conocido por encarnar durante quince años a Nicanor O'Donnell, el irreverente intelectual habanero de la saga de cortometrajes de Eduardo del Llano, convertida en fenómeno cultural dentro y fuera de Cuba. Ha trabajado también en producciones internacionales y en 2023 recibió el premio al Mejor Actor Principal en los Premios PRODU por su interpretación del dictador Trujillo en la serie El grito de las mariposas.",
+    awards: [
+      'Premio a la Mejor Actuación Masculina en Cine — UNEAC, La Habana (1988)',
+      'Premio a la Mejor Actuación Masculina en Televisión — UNEAC, La Habana (1986)',
+      'Premio a la Mejor Actuación Masculina — Festival de Cine de Amiens, Francia (1998)',
+      'Premio a la Mejor Actuación Masculina — Festival Internacional de Cine de Viña del Mar, Chile',
+      'Premio Catalina de Oro a la Mejor Actuación Masculina — Festival Internacional de Cartagena de Indias',
+      'Premio a la Mejor Actuación Masculina de Reparto — UNEAC, La Habana (1995)',
+      'Premio al Mejor Actor Principal — Premios PRODU (2023)',
+    ],
   },
   {
     id: 'luis-manuel-alvarez',
