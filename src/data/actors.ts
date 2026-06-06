@@ -530,9 +530,19 @@ export const actors: Actor[] = [
   {
     id: 'jorge-perugorria',
     name: 'Jorge Perugorría',
+    birthYear: 1965,
+    birthPlace: 'Wajay, La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/jorge-perugorria.jpg',
+    biography: "Conocido cariñosamente como 'Pichi', Jorge Perugorría Rodríguez es uno de los actores más reconocidos del cine cubano e iberoamericano. Nació el 13 de agosto de 1965 en Wajay, La Habana. Inició su carrera en el teatro a los 17 años y en 1990 cofundó el grupo Teatro El Público. En 1993 debutó en el cine con Fresa y Chocolate de Tomás Gutiérrez Alea, interpretando a Diego, un intelectual homosexual en la Cuba revolucionaria. El papel lo catapultó al estrellato internacional y la película fue nominada al Oscar a la Mejor Película Extranjera en 1995. Desde entonces ha protagonizado más de 60 producciones en Cuba, España, Italia, Brasil, Colombia, Chile y Argentina. Es además pintor, escultor y director de cine. Miembro de las Academias de las Artes y Ciencias Cinematográficas de España y Hollywood. En 2024 recibió el Premio Nacional de Cine de Cuba.",
+    awards: [
+      'Premio Coral al Mejor Actor — Festival Internacional del Nuevo Cine Latinoamericano, La Habana (1993)',
+      'Premio Kikito al Mejor Actor — Festival de Gramado, Brasil (1994)',
+      'Premio Goya a la Mejor Película Extranjera de habla hispana — por Fresa y Chocolate (1995)',
+      'Nominación Oscar a la Mejor Película Extranjera — por Fresa y Chocolate (1995)',
+      'Caballo de Honor — Festival de Cine de Salamanca (2019)',
+      'Premio Nacional de Cine de Cuba (2024)',
+    ],
   },
   {
     id: 'jorge-trinchet',
