@@ -1056,9 +1056,19 @@ export const actors: Actor[] = [
   {
     id: 'vladimir-cruz',
     name: 'Vladimir Cruz',
+    birthYear: 1965,
+    birthPlace: 'Placetas, Villa Clara, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/vladimir-cruz.jpg',
+    biography: "Vladimir Cruz Marrero nació el 26 de julio de 1965 en Placetas, Villa Clara. Comenzó en el teatro a los quince años como aficionado y a los diecisiete ya estudiaba en el Instituto Superior de Arte de La Habana, donde se graduó en 1988 como Licenciado en Artes Escénicas. Su nombre se hizo conocido en todo el mundo gracias a su papel de David en Fresa y Chocolate (1994) de Tomás Gutiérrez Alea, donde dio vida a un joven militante comunista que forja una inesperada amistad con un intelectual homosexual. La película fue nominada al Oscar a la Mejor Película Extranjera en 1995 y se convirtió en un hito del cine latinoamericano. Desde entonces ha desarrollado una extensa carrera internacional rodando en Cuba, España, Colombia, México, Brasil, Argentina, Italia y Puerto Rico, trabajando con directores como Steven Soderbergh y Arturo Ripstein. En 2003 obtuvo la nacionalidad española y divide su tiempo entre La Habana y Madrid. A partir de 2005 amplió su actividad a la escritura de guiones y la dirección cinematográfica.",
+    awards: [
+      'Premio UNEAC a la Mejor Actuación Masculina en Cine — por Fresa y Chocolate (1994)',
+      'Premio Kikito de Actuación — Festival de Cine de Gramado, Brasil (1994, compartido con Jorge Perugorría)',
+      'Premio Panambí al Mejor Trabajo Actoral — Festival de Cine de Asunción, Paraguay (1994)',
+      'Premio ACE al Mejor Actor de Reparto — Asociación de Cronistas de Espectáculos de Nueva York (1995)',
+      'Premio Especial del Jurado — Festival de Cine de Mar del Plata (2009)',
+      'Biznaga de Plata al Mejor Actor de Reparto — Festival de Cine de Málaga (2018)',
+    ],
   },
   {
     id: 'yadro-reyes',
