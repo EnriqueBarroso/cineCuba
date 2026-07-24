@@ -763,9 +763,19 @@ export const actors: Actor[] = [
   {
     id: 'mirta-ibarra',
     name: 'Mirta Ibarra',
+    birthYear: 1946,
+    birthPlace: 'San José de las Lajas, La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/mirtha-ibarra.jpg',
+    biography: "Basilia Mirtha Ibarra Collado nació el 28 de febrero de 1946 en San José de las Lajas. Se graduó de la Escuela Nacional de Arte y obtuvo la licenciatura en Literatura Latinoamericana en la Universidad de La Habana. Comenzó su carrera en el teatro en 1967 y trabajó en grupos emblemáticos como Teatro Estudio, Teatro Bertolt Brecht y El Público. En el cine debutó con La última cena (1976) de Tomás Gutiérrez Alea, director con quien construiría una de las asociaciones más fructíferas del cine cubano y con quien compartiría también su vida. Su consagración llegó con Hasta cierto punto (1983), donde interpretó a una obrera portuaria que se convierte en objeto de estudio de un documentalista burgués, un papel que le valió el Premio Coral a la Mejor Actriz. Diez años después volvió a deslumbrar con su Nancy en Fresa y Chocolate (1993), uno de los personajes femeninos más queridos del cine cubano. Siguió colaborando con Juan Carlos Tabío en Guantanamera, Aunque estés lejos y El cuerno de la abundancia. Viuda de Gutiérrez Alea desde 1996, ha preservado su legado y en 2008 dirigió el documental Titón: de La Habana a Guantanamera, una biografía íntima de su esposo. En 2025 recibió el Premio Nacional de Cine de Cuba, máximo reconocimiento de la isla.",
+    awards: [
+      'Premio Coral a la Mejor Actriz — Festival Internacional del Nuevo Cine Latinoamericano, La Habana, por Hasta cierto punto (1983)',
+      'Premio Coral a la Mejor Actriz de Reparto — Festival Internacional del Nuevo Cine Latinoamericano, por Fresa y Chocolate (1993)',
+      'Distinción por la Cultura Nacional — Cuba (1996)',
+      'Premio Lucía de Honor (2018)',
+      'Premio ACTUAR por la Obra de la Vida (2019)',
+      'Premio Nacional de Cine de Cuba (2025)',
+    ],
   },
   {
     id: 'nacha-guevara',
