@@ -1138,7 +1138,8 @@ const movies2000s: Movie[] = [
     awards: [],
     cast: [
       { name: "Mirtha Ibarra", role: "Mercedes" },
-      { name: "Antonio Valero", role: "Alberto" }
+      { name: "Antonio Valero", role: "Alberto" },
+      { name: "Laura de la Uz", role: "Ana" }
     ]
   },
   {
