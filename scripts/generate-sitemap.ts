@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
-import { movieIds, directorIds, eraIds } from "../src/data/routeIds";
+import { movieIds, directorIds, eraIds, serialIds, sagaIds, actorIds } from "../src/data/routeIds";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const BASE_URL = "https://cine-cubano.com";
@@ -18,6 +18,9 @@ const staticRoutes: SitemapEntry[] = [
   { path: "/peliculas",   priority: "0.9", changefreq: "weekly"  },
   { path: "/directores",  priority: "0.9", changefreq: "weekly"  },
   { path: "/epocas",      priority: "0.8", changefreq: "monthly" },
+  { path: "/seriales",    priority: "0.8", changefreq: "monthly" },
+  { path: "/cortos",      priority: "0.8", changefreq: "monthly" },
+  { path: "/actores",     priority: "0.8", changefreq: "monthly" },
   { path: "/acerca",      priority: "0.4", changefreq: "yearly"  },
   { path: "/terminos",    priority: "0.3", changefreq: "yearly"  },
 ];
@@ -36,6 +39,21 @@ const dynamicRoutes: SitemapEntry[] = [
   ...eraIds.map((id) => ({
     path:        `/epoca/${id}`,
     priority:    "0.7",
+    changefreq:  "monthly",
+  })),
+  ...serialIds.map((id) => ({
+    path:        `/serial/${id}`,
+    priority:    "0.7",
+    changefreq:  "monthly",
+  })),
+  ...sagaIds.map((id) => ({
+    path:        `/saga/${id}`,
+    priority:    "0.7",
+    changefreq:  "monthly",
+  })),
+  ...actorIds.map((id) => ({
+    path:        `/actor/${id}`,
+    priority:    "0.6",
     changefreq:  "monthly",
   })),
 ];

@@ -2,992 +2,1934 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cine-cubano.com/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/peliculas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/directores</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/epocas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/seriales</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/cortos</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actores</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/acerca</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/terminos</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/doce-sillas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/aventuras-juan-quin-quin</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/muerte-burocrata</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/lucia-1968</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/memorias-subdesarrollo</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/soy-cuba</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/hombre-maisinicu</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/de-cierta-manera</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/la-ultima-cena</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/retrato-de-teresa</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/sobrevivientes</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/el-brigadista</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/elpidio-valdes-film</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/cecilia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/un-hombre-de-exito</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/pajaros-escopeta</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/se-permuta</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/vampiros-habana</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/en-tres-y-dos</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/una-novia-para-david</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/clandestinos</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/plaff</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/bella-alhambra</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/papeles-secundarios</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/adorables-mentiras</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/maria-antonia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/caravana</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/alicia-en-el-pueblo-de-maravillas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/fresa-chocolate-1993</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/madagascar</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/elefante-bicicleta</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/guantanamera</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/azucar-amarga</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/bambola</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/amor-vertical</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/zafiros-locura-azul</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/la-vida-es-silbar</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/las-profecias-de-amanda</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/kleines-tropicana</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/un-paraiso-bajo-estrellas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/hello-heminguey</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/lista-espera</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/antes-que-anochezca</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/pata-negra</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/nada</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/video-de-familia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/hacerse-el-sueco</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/miel-para-oshun</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/entre-ciclones</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/suite-habana-2003</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/aunque-estes-lejos</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/tres-veces-dos</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/perfecto-amor-equivocado</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/bailando-chachacha</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/viva-cuba</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/barrio-cuba</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/90-millas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/dile-a-laura-que-la-quiero</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/frutas-en-el-cafe</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/rey-habana</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/habana-blues</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/el-benny</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/paginas-del-diario-de-mauricio</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/el-eden-perdido</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/camino-al-eden</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/quien-diablos-es-juliette</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/rosa-la-china</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/en-fin-el-mar</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/hormigas-en-la-boca</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/una-rosa-de-francia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/cuerno-abundancia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/cercania</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/los-dioses-rotos</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/ciudad-en-rojo</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/cuando-la-verdad-despierta</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/el-premio-flaco</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/la-anunciacion</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/afinidades</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/boleto-al-paraiso</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/casa-vieja</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/chamaco</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/molina-ferozz</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/lisanka</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/extravios</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/fabula</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/sumbe</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/penumbras</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/esther-en-alguna-parte</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/la-pelicula-de-ana</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/boccaccerias-habaneras</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/contigo-pan-y-cebolla</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/fatima</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/la-pared-de-las-palabras</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/omega-3</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/si-vas-a-comer-espera-por-virgilio</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/marti-2011</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/memoria-2010</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/conducta-2014</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/juan-de-los-muertos</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/habanastation</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/sergio-y-serguei</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/pelicula/inocencia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/humberto-solas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/tomas-gutierrez-alea</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/juan-carlos-tabio</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/fernando-perez</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/ernesto-daranas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/sara-gomez</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/julio-garcia-espinosa</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/manuel-perez</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/pastor-vega</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/enrique-pineda-barnet</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/octavio-cortazar</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/rolando-diaz</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/miguel-coyula</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/gerardo-chijona</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/juan-padron</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/daniel-diaz-torres</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/mijail-kalatozov</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/orlando-rojas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/sergio-giral</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/rogelio-paris</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/arturo-sotto</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/manuel-herrera</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/juan-carlos-cremata</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/enrique-colina</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/humberto-padron</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/alexis-valdes</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/benito-zambrano</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/alejandro-brugues</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/ian-padron</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/alejandro-gil</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/jorge-luis-sanchez</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/pavel-giroud</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/lester-hamlet</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/esteban-insausti</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/leon-ichaso</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/julian-schnabel</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/luis-felipe-bernaza</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/valeria-sarmiento</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/jorge-dyszel</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/virgen-tabares</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/charlie-medina</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/mariano-barroso</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/manuel-gutierrez-aragon</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/rebeca-chavez</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/angelo-rizzi</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/vladimir-cruz</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/jorge-perugorria</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/jorge-molina</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/eduardo-moyano</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/eduardo-del-llano</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/director/tomas-piard</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/epoca/pre-revolucionario</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/epoca/nueva-ola-icaic</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/epoca/consolidacion</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/epoca/periodo-especial</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/epoca/nuevo-milenio</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cine-cubano.com/epoca/contemporaneo</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/serial/en-silencio-ha-tenido-que-ser</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/saga/nicanor-odonnell</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/saga/algo-mas-que-sonar</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/adela-legra</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/adelaida-raymat</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/adolfo-llaurado</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/alberto-yoel</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/alex-gonzalez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/alexis-diaz-de-villegas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/alexis-valdes</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/alicia-hechavarria</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/alina-rodriguez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/alina-sanchez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/amanda</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/ana-de-armas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/ana-polvorosa</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/ana-vina</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/andy-fornaris</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/antonio-valero</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/ariadna-gil</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/armando-miguel-gomez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/armando-valdes-freire</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/audry-gutierrez-alea</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/azucena-de-la-fuente</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/beatriz-valdes</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/benicio-del-toro</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/caleb-casas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/camila-arteche</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/carlos-cruz</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/carlos-enrique-almirante</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/carlos-ever-fonseca</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/carlos-gonzalvo</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/carlos-luis-gonzalez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/carmen-salinas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/cesar-evora</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/coralia-veloz</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/cuca-escribano</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/dailenys-fuentes</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/daisy-granados</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/damian-rodriguez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/daniel-amat</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/daniel-romero</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/dayana-legra</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/demian-bichir</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/eduard-fernandez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/eduardo-moure</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/eman-xor-ona</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/enrique-molina</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/enrique-santiesteban</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/erdwin-fernandez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/ernesto-escalona</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/eslinda-nunez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/fabiola-quiroz</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/fernando-hechavarria</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/francisquito</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/frank-gonzalez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/gabino-diego</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/gaspar-de-santelices</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/georbis-martinez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/german-pinelli</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/hector-medina</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/hector-noas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/idalia-anreus</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/imanol-arias</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/indira-valdes</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/isabel-santos</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/isaura-mendoza</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/ivan-garcia</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/javier-bardem</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/javier-castro</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jazz-vila</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/joel-joan</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jorge-luis-alvarez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jorge-martinez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jorge-molina</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jorge-perugorria</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jorge-trinchet</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jorge-villazon</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jorgito-milo</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/jose-antonio-rodriguez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/julio-martinez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/larisa-vega</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/laura-aleman</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/laura-de-la-uz</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/laura-moras</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/laura-ramos</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/leonor-arocha</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/lilliam-vega</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/luis-alberto-garcia</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/luis-manuel-alvarez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/malu-tarrau</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/manuel-estanillo</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/manuel-marin</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/manuel-porto</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/margarita-aguero</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/maria-isabel-diaz</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/mario-balmaseda</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/mario-limonta</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/mayte-vilan</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/mijail-mulkay</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/miriel-cejas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/mirta-ibarra</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/nacha-guevara</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/nancho-novo</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/nelson-villagra</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/nestor-jimenez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/olivier-martinez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/omar-franco</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/omar-valdes</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/pancho-garcia</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/patricio-wood</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/pedro-julio-diaz-ferran</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/peter-lohmeyer</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/pilin-vallejo</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/rafael-ernesto-hernandez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/ramon-brito</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/raquel-revuelta</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/raul-paz</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/raul-pomares</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/reinaldo-miravalles</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/renata-maikel-machin-blanco</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/rene-lavan</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/rene-sanchez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/renny-arozarena</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/roberto-perdomo</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/roberto-sanmartin</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/rogelio-blain</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/rolando-brito</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/ron-blair</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/rosa-vasconcelos</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/rosita-fornes</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/salvador-wood</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/samuel-claxton</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/sergio-corrieri</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/silvano-rey</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/silvia-aguila</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/silvia-planas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/sirio-soto</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/susana-perez</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/tahimi-alvarino</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/thais-valdes</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/tomas-cao</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/valeria-marini</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/veronica-lynn</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/vicente-revuelta</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/vladimir-cruz</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/yadro-reyes</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/yailene-sierra</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/yasmany-guerrero</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/yolanda-cuellar</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/yotuel-romero</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/yuliet-cruz</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/yuliet-ortega</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/zaida-castellanos</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
