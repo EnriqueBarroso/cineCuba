@@ -82,6 +82,12 @@ const ActorDetail = () => {
 
   const actor = id ? getActorById(id) : undefined;
 
+  const lifeYears = actor?.birthYear
+    ? actor.deathYear
+      ? `${actor.birthYear} - ${actor.deathYear}`
+      : `n. ${actor.birthYear}`
+    : undefined;
+
   const actorMovies = actor
     ? movies
         .filter((m) =>
@@ -128,6 +134,7 @@ const ActorDetail = () => {
             name: actor.name,
             nationality: actor.nationality,
             ...(actor.birthYear && { birthDate: String(actor.birthYear) }),
+            ...(actor.deathYear && { deathDate: String(actor.deathYear) }),
             ...(actor.biography && { description: actor.biography }),
             ...(actor.photo && { image: actor.photo }),
           }),
@@ -176,10 +183,10 @@ const ActorDetail = () => {
                     <MapPin className="w-4 h-4" />
                     <span>{actor.nationality}</span>
                   </div>
-                  {actor.birthYear && (
+                  {lifeYears && (
                     <>
                       <span className="text-hairline">•</span>
-                      <span>n. {actor.birthYear}</span>
+                      <span>{lifeYears}</span>
                     </>
                   )}
                   {actor.birthPlace && (

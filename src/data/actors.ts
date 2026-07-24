@@ -9,6 +9,7 @@ export interface Actor {
   name: string;
   birthYear?: number;
   birthPlace?: string;
+  deathYear?: number;
   nationality: string;
   biography: string;
   photo?: string;
@@ -888,9 +889,19 @@ export const actors: Actor[] = [
   {
     id: 'reinaldo-miravalles',
     name: 'Reinaldo Miravalles',
+    birthYear: 1923,
+    birthPlace: 'La Habana Vieja, La Habana, Cuba',
+    deathYear: 2016,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/reinaldo-miravalles.jpg',
+    biography: "Reynaldo Agustín Miravalles de la Luz (22 de enero de 1923 — 31 de octubre de 2016) fue el gran actor total del cine y la televisión cubana. Comenzó en la radio en 1944 y en 1951 debutó en televisión, recibiendo ese mismo año el premio al actor más destacado del medio. Su personaje del guajiro Melesio lo convirtió en un rostro familiar para generaciones de cubanos. En el cine trabajó estrechamente con Tomás Gutiérrez Alea desde los años 60 y protagonizó algunos de los títulos más importantes de la cinematografía nacional: Las doce sillas, El hombre de Maisinicú, Los sobrevivientes y Los pájaros tirándole a la escopeta. En 1991 participó en Alicia en el pueblo de Maravillas, la polémica comedia de Daniel Díaz Torres que fue retirada de los cines por las autoridades cubanas. Poco después emigró a Estados Unidos, donde siguió actuando en producciones internacionales junto a actores como Harvey Keitel y Saffron Burrows. Regresó al cine cubano en 2013 con Esther en alguna parte, su última película, por la que recibió el premio al Mejor Actor en el Festival de Cine Latinoamericano de Nueva York. Falleció en La Habana el 31 de octubre de 2016 a los 93 años, dejando una huella imborrable en más de siete décadas de arte cubano.",
+    awards: [
+      'Premio al Actor Más Destacado — Televisión Cubana (1951)',
+      'Premio Caracol a la Mejor Actuación Masculina — UNEAC, por De tal Pedro tal astilla (1986)',
+      'Premio Catalina de Oro de Actuación Masculina — Festival de Cartagena de Indias, por El corazón sobre la tierra (1985)',
+      'Premio Coral a la Mejor Actuación Masculina — Festival Internacional del Nuevo Cine Latinoamericano, La Habana, por Mascaró el cazador americano (1992)',
+      'Premio Havana Star al Mejor Actor — Havana Film Festival Nueva York, por Esther en alguna parte (2013)',
+    ],
   },
   {
     id: 'renata-maikel-machin-blanco',
