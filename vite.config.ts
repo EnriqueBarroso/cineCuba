@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-import { movieIds, directorIds, eraIds } from "./src/data/routeIds";
+import { movieIds, directorIds, eraIds, serialIds, sagaIds, actorIds } from "./src/data/routeIds";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -30,9 +30,15 @@ export default defineConfig(({ mode }) => ({
       "/epocas",
       "/acerca",
       "/terminos",
+      "/seriales",
+      "/cortos",
+      "/actores",
       ...movieIds.map((id) => `/pelicula/${id}`),
       ...directorIds.map((id) => `/director/${id}`),
       ...eraIds.map((id) => `/epoca/${id}`),
+      ...serialIds.map((id) => `/serial/${id}`),
+      ...sagaIds.map((id) => `/saga/${id}`),
+      ...actorIds.map((id) => `/actor/${id}`),
     ],
   },
 }));
