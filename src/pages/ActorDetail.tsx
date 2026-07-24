@@ -4,7 +4,7 @@ import { ArrowLeft, Award, MapPin, Heart, Users } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
-import { getActorById } from "@/data/actors";
+import { getActorById, getActorByName } from "@/data/actors";
 import { movies, Movie } from "@/data/movies";
 import { useFavorites } from "@/hooks/useFavorites";
 
@@ -91,11 +91,11 @@ const ActorDetail = () => {
   const actorMovies = actor
     ? movies
         .filter((m) =>
-          m.cast?.some((c) => c.name.toLowerCase() === actor.name.toLowerCase())
+          m.cast?.some((c) => getActorByName(c.name)?.id === actor.id)
         )
         .map((m) => ({
           movie: m,
-          role: m.cast?.find((c) => c.name.toLowerCase() === actor.name.toLowerCase())?.role ?? "",
+          role: m.cast?.find((c) => getActorByName(c.name)?.id === actor.id)?.role ?? "",
         }))
         .sort((a, b) => a.movie.year - b.movie.year)
     : [];

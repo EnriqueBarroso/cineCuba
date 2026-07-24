@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Input } from "@/components/ui/input";
 import { SEO } from "@/components/SEO";
-import { actors, type Actor } from "@/data/actors";
+import { actors, getActorByName, type Actor } from "@/data/actors";
 import { movies } from "@/data/movies";
 import { cn } from "@/lib/utils";
 
@@ -23,11 +23,10 @@ const sortedActors = [...actors].sort((a, b) =>
 
 const movieCounts = new Map<string, number>(
   actors.map((actor) => {
-    const key = actor.name.toLowerCase();
     const count = movies.filter((m) =>
-      m.cast?.some((c) => c.name.toLowerCase() === key)
+      m.cast?.some((c) => getActorByName(c.name)?.id === actor.id)
     ).length;
-    return [key, count];
+    return [actor.id, count];
   })
 );
 
@@ -41,7 +40,7 @@ for (const actor of sortedActors) {
 const availableLetters = ALPHABET.filter((letter) => groupsByLetter.has(letter));
 
 const ActorCard = ({ actor }: { actor: Actor }) => {
-  const movieCount = movieCounts.get(actor.name.toLowerCase()) ?? 0;
+  const movieCount = movieCounts.get(actor.id) ?? 0;
 
   return (
     <Link to={`/actor/${actor.id}`} className="group block">
