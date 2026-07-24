@@ -21,6 +21,8 @@ export interface Saga {
   episodios: Episodio[];
   cast?: { name: string; role: string }[];
   awards?: { name: string; category: string; year: number }[];
+  // Temporadas o entregas relacionadas (ej. otra temporada de la misma serie)
+  relatedSeasons?: { id: string; label: string }[];
 }
 
 export const sagas: Saga[] = [
@@ -217,5 +219,226 @@ export const sagas: Saga[] = [
       { name: "Obelia Blanco", role: "reparto" },
       { name: "Martha del Río", role: "reparto" },
     ],
+  },
+  {
+    id: "su-propia-guerra",
+    title: "Su propia guerra",
+    director: "Abel Ponce y José Andrés Torres",
+    anioInicio: 1990,
+    anioFin: 1990,
+    poster: "",
+    tipo: "serial",
+    genre: ["Policíaco", "Drama", "Acción"],
+    synopsis:
+      "Miniserie policíaca perteneciente al espacio 'Día y Noche' de la televisión cubana, estrenada al inicio del Período Especial. Narra la historia de Octavio Sánchez Guzmán, conocido como 'El Tavo', un hombre de respeto en la delincuencia callejera habanera que, tras ser arrestado, es captado por el DTI (Departamento Técnico de Investigaciones) de la Policía Cubana. Se convierte en agente encubierto, infiltrado en los bajos fondos de La Habana mientras ayuda a neutralizar importantes grupos delictivos. Se convirtió en una de las series más populares y recordadas de la televisión cubana.",
+    estado: "completo",
+    episodios: [
+      {
+        id: "su-propia-guerra-e01",
+        titulo: "Capítulo 1",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x01.mp4",
+      },
+      {
+        id: "su-propia-guerra-e02",
+        titulo: "Capítulo 2",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x02.mp4",
+      },
+      {
+        id: "su-propia-guerra-e03",
+        titulo: "Capítulo 3",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x03.mp4",
+      },
+      {
+        id: "su-propia-guerra-e04",
+        titulo: "Capítulo 4",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x04.mp4",
+      },
+      {
+        id: "su-propia-guerra-e05",
+        titulo: "Capítulo 5",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x05.mp4",
+      },
+      {
+        id: "su-propia-guerra-e06",
+        titulo: "Capítulo 6",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x06.mp4",
+      },
+      {
+        id: "su-propia-guerra-e07",
+        titulo: "Capítulo 7",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x07.mp4",
+      },
+      {
+        id: "su-propia-guerra-e08",
+        titulo: "Capítulo 8",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x08.mp4",
+      },
+      {
+        id: "su-propia-guerra-e09",
+        titulo: "Capítulo 9",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x09.mp4",
+      },
+      {
+        id: "su-propia-guerra-e10",
+        titulo: "Capítulo 10",
+        anio: 1990,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-1x-05/Su+propia+guerra+1x10.mp4",
+      },
+    ],
+    cast: [
+      { name: "Alberto Pujols", role: "" },
+      { name: "Fidel Pérez Michel", role: "" },
+      { name: "Orlando Fundichely", role: "" },
+      { name: "César Évora", role: "" },
+      { name: "Jorge Villazón", role: "" },
+      { name: "Sirio Soto", role: "" },
+      { name: "Coralia Veloz", role: "" },
+    ],
+    relatedSeasons: [{ id: "su-propia-guerra-2", label: "Temporada 2" }],
+  },
+  {
+    id: "su-propia-guerra-2",
+    title: "Su propia guerra 2",
+    director: "Abel Ponce y José Andrés Torres",
+    anioInicio: 1991,
+    anioFin: 1991,
+    poster: "",
+    tipo: "serial",
+    genre: ["Policíaco", "Drama", "Acción"],
+    synopsis:
+      "Segunda temporada de la exitosa miniserie policíaca cubana. El Tavo, ya consolidado como agente encubierto del DTI, continúa infiltrado en el ambiente de la delincuencia callejera cubana, involucrándose en nuevos y turbulentos 'negocios' mientras libra su particular guerra entre dos mundos.",
+    estado: "completo",
+    episodios: [
+      {
+        id: "su-propia-guerra-2-e01",
+        titulo: "Capítulo 1",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x01.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e02",
+        titulo: "Capítulo 2",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x02.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e03",
+        titulo: "Capítulo 3",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x03.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e04",
+        titulo: "Capítulo 4",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x04.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e05",
+        titulo: "Capítulo 5",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x05.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e06",
+        titulo: "Capítulo 6",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x06.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e07",
+        titulo: "Capítulo 7",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x07.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e08",
+        titulo: "Capítulo 8",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x08.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e09",
+        titulo: "Capítulo 9",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x09.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e10",
+        titulo: "Capítulo 10",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x10.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e11",
+        titulo: "Capítulo 11",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x11.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e12",
+        titulo: "Capítulo 12",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x12.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e13",
+        titulo: "Capítulo 13",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x13.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e14",
+        titulo: "Capítulo 14",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x14.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e15",
+        titulo: "Capítulo 15",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x15.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e16",
+        titulo: "Capítulo 16",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x16.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e17",
+        titulo: "Capítulo 17",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x17.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e18",
+        titulo: "Capítulo 18",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x18.mp4",
+      },
+      {
+        id: "su-propia-guerra-2-e19",
+        titulo: "Capítulo 19",
+        anio: 1991,
+        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su+propia+guerra+2x19.mp4",
+      },
+    ],
+    cast: [
+      { name: "Alberto Pujols", role: "" },
+      { name: "Jorge Villazón", role: "" },
+      { name: "César Évora", role: "" },
+      { name: "Sirio Soto", role: "" },
+    ],
+    relatedSeasons: [{ id: "su-propia-guerra", label: "Temporada 1" }],
   },
 ];

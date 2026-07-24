@@ -177,6 +177,21 @@ const SagaDetail = () => {
                     )}
                   </div>
                 </div>
+
+                {saga.relatedSeasons && saga.relatedSeasons.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-2 pt-1">
+                    {saga.relatedSeasons.map((related) => (
+                      <Link
+                        key={related.id}
+                        to={`/saga/${related.id}`}
+                        className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 bg-gold/10 border border-gold/30 text-gold rounded-full font-medium hover:bg-gold/20 transition-colors"
+                      >
+                        <Layers className="w-3 h-3" />
+                        Ver {related.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* BOTONES */}
