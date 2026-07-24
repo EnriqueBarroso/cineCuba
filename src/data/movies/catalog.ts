@@ -331,7 +331,7 @@ const movies1970s: Movie[] = [
     ],
     cast: [
       { name: "Enrique Santiesteban", role: "Sebastián" },
-      { name: "Reynaldo Miravalles", role: "Olegario" },
+      { name: "Reinaldo Miravalles", role: "Olegario" },
       { name: "Germán Pinelli", role: "Ramiro" },
       { name: "Ana Viña", role: "María" },
       { name: "Vicente Revuelta", role: "Fernando" }
@@ -699,7 +699,7 @@ const movies1990s: Movie[] = [
     awards: [{ name: "Festival de Berlín", year: 1991, category: "Premio Caligari" }],
     cast: [
       { name: "Thais Valdés", role: "Alicia" },
-      { name: "Reynaldo Miravalles", role: "El Director" }
+      { name: "Reinaldo Miravalles", role: "El Director" }
     ],
   },
   {
@@ -721,7 +721,7 @@ const movies1990s: Movie[] = [
     cast: [
       { name: "Jorge Perugorría", role: "Diego" },
       { name: "Vladimir Cruz", role: "David" },
-      { name: "Mirta Ibarra", role: "Nancy" }
+      { name: "Mirtha Ibarra", role: "Nancy" }
     ],
     notes: "Primera película cubana nominada al Oscar.",
     backdrop: heroFresa,
@@ -1492,7 +1492,7 @@ const movies2000s: Movie[] = [
     trailerUrl: "",
     awards: [],
     cast: [
-      { name: "Reynaldo Miravalles", role: "Padre" }
+      { name: "Reinaldo Miravalles", role: "Padre" }
     ]
   },
   {
@@ -1782,7 +1782,7 @@ const movies2010s: Movie[] = [
   poster: posterEsther,
   videoUrl: "https://archive.org/embed/fatima-cubana-2014/Esther.mkv",
   cast: [
-    { name: "Reynaldo Miravalles", role: "Lino" },
+    { name: "Reinaldo Miravalles", role: "Lino" },
     { name: "Enrique Molina", role: "Larry" },
     { name: "Daisy Granados", role: "Maruja" }
   ]
