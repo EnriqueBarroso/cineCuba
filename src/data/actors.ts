@@ -378,9 +378,20 @@ export const actors: Actor[] = [
   {
     id: 'eslinda-nunez',
     name: 'Eslinda Núñez',
+    birthYear: 1943,
+    birthPlace: 'Santa Clara, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/eslinda-nunez.jpg',
+    biography: "Eslinda Esther Núñez Pérez nació el 27 de diciembre de 1943 en Santa Clara. Hija de una ama de casa y un chofer de ómnibus, a los 14 años conoció a Manuel Herrera, quien años después se convertiría en director de cine y su esposo. En 1961 se mudó a La Habana y comenzó como cantante, actriz y bailarina en el Teatro Musical de La Habana. Debutó en el cine en 1963 con El otro Cristóbal y en 1968 protagonizó dos de las películas más importantes del cine cubano: Lucía de Humberto Solás, donde interpretó a la Lucía de 1932, y Memorias del subdesarrollo de Tomás Gutiérrez Alea. Estos dos filmes la consagraron como una de las grandes del cine cubano. Su devoción por el teatro nunca la abandonó y alternó siempre ambas disciplinas, destacándose en obras como La casa de Bernarda Alba y Santa Camila de La Habana Vieja. En 1983 obtuvo un nuevo reconocimiento internacional por su trabajo en Amada de Humberto Solás. Ha participado en festivales internacionales de cine en Moscú, Karlovy Vary, San Sebastián, Biarritz, Huelva, Bogotá, Amiens y Nantes. En 2026 recibió el Premio Internacional Gaviota de la Academia de Premios Latinos en Ciudad de México.",
+    awards: [
+      'Premio de Actuación — Festival de Cine Iberoamericano de Huelva, por Amada (1983)',
+      'Premio de Actuación — UNEAC, por Amada (1983)',
+      'Distinción por la Cultura Nacional — Consejo de Estado de Cuba',
+      'Premio Nacional de Cine de Cuba (2011)',
+      'Premio ACTUAR por la Obra de la Vida (2016)',
+      'Premio Maestro de Juventudes — Asociación Hermanos Saíz (2019)',
+      'Premio Internacional Gaviota — Academia de Premios Latinos, Ciudad de México (2026)',
+    ],
   },
   {
     id: 'fabiola-quiroz',
