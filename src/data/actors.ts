@@ -1035,9 +1035,18 @@ export const actors: Actor[] = [
   {
     id: 'thais-valdes',
     name: 'Thais Valdés',
+    birthYear: 1963,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/thais-valdes.jpg',
+    biography: "Thais Valdés Maceira nació el 25 de septiembre de 1963 en La Habana. Se graduó en 1985 de la Escuela Nacional de Instructores de Arte y ese mismo año debutó en el cine con Una novia para David de Orlando Rojas. Su carrera despegó con Plaff o demasiado miedo a la vida (1988) de Juan Carlos Tabío, considerada una de las mejores comedias del cine cubano. Luego protagonizó Alicia en el pueblo de Maravillas (1991) de Daniel Díaz Torres, una película tan incómoda para las autoridades cubanas que fue retirada de los cines tres días después de su estreno y permaneció prohibida durante años. Su papel más memorable llegaría con Nada (2001) de Juan Carlos Cremata, donde interpretó a Carla, una joven que se debate entre quedarse o irse de Cuba — un personaje que de alguna manera anticipó su propia historia: en 2003 emigró a México, donde ha trabajado en el teatro y como maestra de actuación, incluyendo el trabajo con niños con autismo. En 2024 regresó a Cuba para participar en La fiesta de Gerardo Chijona.",
+    awards: [
+      'Segundo Premio de Actuación en Televisión — UNEAC, La Habana (1986)',
+      '2do Premio de Actuación — VII Concurso Nacional de Actuación, La Habana (1986)',
+      'Mención de Actuación Femenina — VII Foro de las Artes Escénicas (1986)',
+      'Mención de Actuación Femenina en Cine — UNEAC, La Habana (1989)',
+      'Premio Pitirre a la Mejor Actriz — XIV Cinemafest San Juan de Puerto Rico (2002)',
+    ],
   },
   {
     id: 'tomas-cao',
