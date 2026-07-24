@@ -23,6 +23,8 @@ export interface Movie {
   estado?: "completo" | "parcial";
   // Campos de cortos
   duracionMinutos?: number;
+  // Disponibilidad de reproducción — omitir equivale a true
+  disponible?: boolean;
 }
 
 /** Géneros disponibles para las películas */

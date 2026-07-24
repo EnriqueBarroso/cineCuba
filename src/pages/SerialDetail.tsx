@@ -45,7 +45,20 @@ const SerialDetail = () => {
       <section className="relative pt-24 pb-10 bg-black/50">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto aspect-video bg-black relative rounded-xl overflow-hidden shadow-2xl border border-white/10">
-            {serial.videoUrl ? (
+            {serial.disponible === false ? (
+              <div className="w-full h-full flex flex-col items-center justify-center">
+                {serial.backdrop && (
+                  <img src={serial.backdrop} alt="Fondo" className="absolute inset-0 w-full h-full object-cover opacity-20" />
+                )}
+                <div className="relative z-10 flex flex-col items-center text-center px-6">
+                  <div className="w-20 h-20 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4 backdrop-blur-md">
+                    <Tv className="w-8 h-8 text-gold" />
+                  </div>
+                  <p className="text-gold font-serif text-2xl font-medium">Próximamente en CineCuba</p>
+                  <p className="text-muted-foreground text-sm mt-2">Esta serie estará disponible muy pronto.</p>
+                </div>
+              </div>
+            ) : serial.videoUrl ? (
               <iframe
                 src={serial.videoUrl}
                 title={serial.title}
@@ -130,7 +143,7 @@ const SerialDetail = () => {
 
               {/* BOTONES */}
               <div className="flex flex-wrap gap-4">
-                {serial.videoUrl ? (
+                {serial.disponible !== false && serial.videoUrl ? (
                   <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-bold px-8 h-12 gap-2 text-base shadow-lg">
                     <Play className="w-5 h-5 fill-current" /> Ver Serial
                   </Button>

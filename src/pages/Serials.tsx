@@ -37,6 +37,13 @@ const SerialCard = ({ serial }: { serial: Movie }) => (
           </div>
         )}
         <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
+        {serial.disponible === false && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/60 backdrop-blur-[1px]">
+            <span className="text-xs px-3 py-1.5 bg-black/70 border border-gold/40 text-gold rounded-full font-medium tracking-wide">
+              Próximamente
+            </span>
+          </div>
+        )}
         {serial.episodios && (
           <div className="absolute bottom-3 left-3">
             <span className="text-xs px-2 py-1 bg-black/70 backdrop-blur-sm text-white rounded font-medium">
