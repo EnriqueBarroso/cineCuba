@@ -30,7 +30,7 @@ export const sagas: Saga[] = [
     director: "Eduardo del Llano",
     anioInicio: 2004,
     anioFin: 2019,
-    poster: "",
+    poster: "/images/sagas/nicanor-odonnell.jpg",
     genre: ["Comedia"],
     synopsis:
       "La saga más irreverente del cine cubano independiente. Quince cortometrajes que siguen las aventuras de Nicanor O'Donnell, un intelectual habanero que enfrenta con humor y sarcasmo las contradicciones de la sociedad cubana contemporánea. Dirigida y escrita por Eduardo del Llano, la serie se convirtió en un fenómeno cultural dentro y fuera de Cuba.",
@@ -144,7 +144,7 @@ export const sagas: Saga[] = [
     director: "Eduardo Moya",
     anioInicio: 1985,
     anioFin: 1985,
-    poster: "",
+    poster: "/images/sagas/algo-mas-que-sonar.jpg",
     tipo: "serial",
     genre: ["Drama", "Bélico", "Romance"],
     synopsis:
