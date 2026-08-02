@@ -1243,7 +1243,7 @@ const movies2000s: Movie[] = [
     duration: "100 min",
     genre: ["Drama"],
     synopsis: "Una familia cubana decide emprender un peligroso viaje en balsa hacia Estados Unidos, enfrentándose al mar y a sus propios demonios.",
-    videoUrl: "https://archive.org/embed/el-mani-es-asi/90+Millas.mp4",
+    videoUrl: "https://archive.org/embed/el-mani-es-asi/90%20Millas.mp4",
     trailerUrl: "",
     awards: [
       { name: "Festival de Cine Latino de Nueva York", year: 2005, category: "Mejor Película" }
@@ -1336,7 +1336,7 @@ const movies2000s: Movie[] = [
     duration: "125 min",
     genre: ["Musical", "Biopic"],
     synopsis: "Biografía novelada de Benny Moré, el Bárbaro del Ritmo. La película recorre su genialidad musical, sus excesos y su lucha interna en la Cuba de los años 50.",
-    videoUrl: "https://archive.org/embed/el-benny/El+Benny.mp4",
+    videoUrl: "https://archive.org/embed/el-benny/El%20Benny.mp4",
     trailerUrl: "",
     awards: [
       { name: "Festival de Locarno", year: 2006, category: "Premio Boccalino" }
@@ -1374,7 +1374,7 @@ const movies2000s: Movie[] = [
     duration: "96 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Película ambientada en 1895, durante la guerra de independencia. Una joven cubana se debate entre la lealtad a España y el amor por un insurrecto mambí.",
-    videoUrl: "https://archive.org/embed/el-benny/El+Ed%C3%A9n+Perdido.mp4",
+    videoUrl: "https://archive.org/embed/el-benny/El%20Ed%C3%A9n%20Perdido.mp4",
     trailerUrl: "",
     awards: [],
     cast: [
@@ -1390,7 +1390,7 @@ const movies2000s: Movie[] = [
     duration: "90 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Una historia de amor y guerra donde una mujer española en la Cuba colonial debe transformar su visión del mundo ante el conflicto independentista.",
-    videoUrl: "https://archive.org/embed/el-benny/Camino+al+eden.mp4",
+    videoUrl: "https://archive.org/embed/el-benny/Camino%20al%20eden.mp4",
     trailerUrl: "",
     awards: [],
     cast: [
@@ -1406,7 +1406,7 @@ const movies2000s: Movie[] = [
   duration: "1h 55m",
   synopsis: "Rosa, una mujer apasionada y de fuerte carácter en La Habana, busca reencontrar el amor mientras navega por las complejidades de la vida cotidiana y las relaciones en la isla.",
   poster: posterRosaLaChina,
-  videoUrl: "https://archive.org/embed/el-mani-es-asi/Rosa+La+China.mpg",
+  videoUrl: "https://archive.org/embed/el-mani-es-asi/Rosa%20La%20China.mpg",
   cast: [
     { name: "Mirtha Ibarra", role: "Rosa" },
     { name: "Azucena De La Fuente", role: "Amiga" }
@@ -1421,7 +1421,7 @@ const movies2000s: Movie[] = [
   duration: "1h 42m",
   synopsis: "Tony, un operador financiero de Nueva York de origen cubano, encuentra los restos de una balsa con un nombre pintado. Su viaje a Cuba para encontrar respuestas le lleva a conocer a Mariana, una nadadora de ballet acuático, descubriendo que no todo es lo que parece.",
   poster: posterEnfinElMar,
-  videoUrl:"https://archive.org/embed/el-mani-es-asi/En+Fin%2C+El+Mar-2003.mp4",
+  videoUrl:"https://archive.org/embed/el-mani-es-asi/En%20Fin%2C%20El%20Mar-2003.mp4",
   cast: [
     { name: "Audry Gutiérrez Alea", role: "Mariana" },
     { name: "Joel Joan", role: "Tony" },
@@ -1438,7 +1438,7 @@ const movies2000s: Movie[] = [
   synopsis: "La Habana, 1958. Martín vuelve a la isla tras años de cárcel en España para buscar a Julia y el botín de un antiguo robo. En medio de la agitación política previa a la revolución, se ve envuelto en una trama de traición y pasiones peligrosas.",
   poster: posterHormigas,
   awards: [{ name: "Festival de Málaga", year: 2004, category: "Premio Especial del Jurado" }],
-  videoUrl:"https://archive.org/embed/el-mani-es-asi/Hormigas+En+La+Boca..mp4",
+  videoUrl:"https://archive.org/embed/el-mani-es-asi/Hormigas%20En%20La%20Boca..mp4",
   cast: [
     { name: "Eduard Fernández", role: "Martín" },
     { name: "Jorge Perugorría", role: "Actor" },
@@ -1505,7 +1505,7 @@ const movies2000s: Movie[] = [
     duration: "134 min",
     genre: ["Drama", "Biopic", "Bélico"],
     synopsis: "La épica historia de Ernesto 'Che' Guevara, centrada en su papel fundamental durante la Revolución Cubana y su posterior campaña en Bolivia.",
-    videoUrl: "https://archive.org/embed/el-argentino/El+argentino.avi",
+    videoUrl: "https://archive.org/embed/el-argentino/El%20argentino.avi",
     trailerUrl: "",
     awards: [
       { name: "Festival de Cannes", year: 2008, category: "Mejor Actor (Benicio del Toro)" }
@@ -1543,7 +1543,7 @@ const movies2000s: Movie[] = [
     duration: "93 min",
     genre: ["Drama"],
     synopsis: "Laura investiga al famoso proxeneta Alberto Yarini, adentrándose en zonas oscuras donde pasado y presente se entrelazan.",
-    videoUrl: "https://archive.org/embed/el-argentino/Los+Dioses+Rotos.mpg",
+    videoUrl: "https://archive.org/embed/el-argentino/Los%20Dioses%20Rotos.mpg",
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2008, category: "Premio del Público" },
@@ -1563,7 +1563,7 @@ const movies2000s: Movie[] = [
   duration: "1h 30m",
   synopsis: "Santiago de Cuba, 1957. La ciudad vive bajo la tensión de la lucha clandestina contra la dictadura de Batista. En medio de la violencia y el peligro constante, un grupo de jóvenes revolucionarios intenta sobrevivir y amar sin perder la ternura.",
   poster: posterCiudadEnRojo,
-  videoUrl: "https://archive.org/embed/el-argentino/Ciudad+En+Rojo.mp4",
+  videoUrl: "https://archive.org/embed/el-argentino/Ciudad%20En%20Rojo.mp4",
   cast: [
     { name: "Rafael Ernesto Hernández", role: "Protagonista" },
     { name: "Eman Xor Oña", role: "Protagonista" }
@@ -1592,7 +1592,7 @@ const movies2000s: Movie[] = [
   duration: "1h 30m",
   synopsis: "Adaptación de la obra de Héctor Quintero. Iluminada gana un premio en un concurso que consiste en una casa nueva y despensa llena. Sin embargo, su suerte atrae la envidia y el oportunismo de vecinos y familiares, convirtiendo el premio en una pesadilla tragicómica.",
   poster: posterElPremioFlaco,
-  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/EL+PREMIO+FLACO+VCD.mpg",
+  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/EL%20PREMIO%20FLACO%20VCD.mpg",
   cast: [
     { name: "Rosa Vasconcelos", role: "Iluminada" },
     { name: "Alina Rodríguez", role: "Vecina" }
@@ -1607,7 +1607,7 @@ const movies2000s: Movie[] = [
   duration: "1h 20m",
   synopsis: "Una anciana médium convoca a su familia, dispersa por la emigración y los conflictos, para una reunión espiritual y física en La Habana. Un drama íntimo sobre la separación, la fe y la reconciliación familiar.",
   poster: posterLaAnunciacion,
-  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/La+anunciacion.mpg",
+  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/La%20anunciacion.mpg",
   cast: [
     { name: "Verónica Lynn", role: "Amada" },
     { name: "Héctor Noas", role: "Hijo" }
@@ -1661,7 +1661,7 @@ const movies2010s: Movie[] = [
   duration: "1h 35m",
   synopsis: "Tras la muerte de su padre, esteban regresa a Cuba después de años viviendo en España. El reencuentro con su madre y su hermano en la vieja casa familiar desata secretos guardados, frustraciones y el dolor de la ausencia. Basada en la obra de Abelardo Estorino.",
   poster: posterCasaVieja,
-  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/VCD+CASA+VIEJA.mpg",
+  videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/VCD%20CASA%20VIEJA.mpg",
   cast: [
     { name: "Yadro Reyes", role: "Esteban" },
     { name: "Daisy Granados", role: "Madre" }
@@ -1691,7 +1691,7 @@ const movies2010s: Movie[] = [
   duration: "1h 14m",
   synopsis: "Una reinterpretación visceral, gótica y erótica del cuento de Caperucita Roja ambientada en el campo cubano. Miranda vive con su abuela dominante mientras el deseo y el peligro acechan en el bosque.",
   poster: posterMolinaFeroz,
-  videoUrl: "https://archive.org/embed/Lisanka/Molina+Feroz.mp4",
+  videoUrl: "https://archive.org/embed/Lisanka/Molina%20Feroz.mp4",
   cast: [
     { name: "Dayana Legrá", role: "Miranda" },
     { name: "Roberto Perdomo", role: "Lobo" }
@@ -1798,7 +1798,7 @@ const movies2010s: Movie[] = [
   synopsis: "Una actriz sin suerte decide fingir ser una prostituta para protagonizar un documental realizado por extranjeros y así ganar dinero y fama. Una crítica mordaz al turismo sexual y a los estereotipos sobre Cuba.",
   poster: posterLaPeliculaDeAna,
   awards: [{ name: "Festival de La Habana", year: 2013, category: "Mejor Guion" }],
-  videoUrl: "https://archive.org/embed/fatima-cubana-2014/LA+PELICULA+DE+ANA.mpg",
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/LA%20PELICULA%20DE%20ANA.mpg",
   cast: [
     { name: "Laura de la Uz", role: "Ana" },
     { name: "Yuliet Cruz", role: "Amiga" }
@@ -1813,7 +1813,7 @@ const movies2010s: Movie[] = [
   duration: "1h 40m",
   synopsis: "Tres historias independientes enlazadas por un hilo conductor: un escritor en crisis que paga por escuchar cuentos. Una adaptación libre y tropical del Decamerón de Boccaccio, llena de picardía, ingenio y sensualidad cubana.",
   poster: posterBoccacherias,
-  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Boccaccerias+Habaneras+(2014).mpg",
+  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Boccaccerias%20Habaneras%20(2014).mpg",
   cast: [
     { name: "Daniel Amat", role: "Escritor" },
     { name: "Jorge Perugorría", role: "Actor" }
@@ -1828,7 +1828,7 @@ const movies2010s: Movie[] = [
   duration: "1h 40m",
   synopsis: "Adaptación del clásico teatral de Héctor Quintero. Lala Fundora es una matriarca cubana de los años 50 obsesionada con comprar un refrigerador para aparentar estatus social, arrastrando a su familia a situaciones hilarantes y conmovedoras.",
   poster: posterContigoPanyCebolla,
-  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Contigo+Pan+y+Cebolla+%5B2014%5D.avi",
+  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Contigo%20Pan%20y%20Cebolla%20%5B2014%5D.avi",
   cast: [
     { name: "Alina Rodríguez", role: "Lala Fundora" },
     { name: "Enrique Molina", role: "Anselmo" }
@@ -1843,7 +1843,7 @@ const movies2010s: Movie[] = [
   duration: "1h 30m",
   synopsis: "Basada en el cuento de Miguel Barnet. Fátima (antes Manolito) es un travesti de inquebrantable autoestima que se prostituye en La Habana. La película narra su vida, sus amores conflictivos y su devoción religiosa a la Virgen de Fátima.",
   poster: posterFatima,
-  videoUrl: "https://archive.org/embed/fatima-cubana-2014/Fatima+%5BCubana%5D+%5B2014%5D.mpg",
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/Fatima%20%5BCubana%5D%20%5B2014%5D.mpg",
   cast: [
     { name: "Carlos Enrique Almirante", role: "Fátima" },
     { name: "Tomás Cao", role: "Vaselina" }
@@ -1858,7 +1858,7 @@ const movies2010s: Movie[] = [
   duration: "1h 38m",
   synopsis: "Luis padece una distonía que le impide comunicarse corporalmente, aunque su mente está lúcida. Su madre es su único puente con el mundo. Un drama profundo sobre el dolor, la incomunicación y los límites del sacrificio familiar en una institución psiquiátrica.",
   poster: posterLaParedDeLasPalabras,
-  videoUrl: "https://archive.org/embed/fatima-cubana-2014/LA+PARED+DE+LAS+PALABRAS.mp4",
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/LA%20PARED%20DE%20LAS%20PALABRAS.mp4",
   cast: [
     { name: "Jorge Perugorría", role: "Luis" },
     { name: "Isabel Santos", role: "Madre" }
@@ -1873,7 +1873,7 @@ const movies2010s: Movie[] = [
   duration: "1h 14m",
   synopsis: "En un futuro distópico, una guerra mundial se ha desatado entre los Vegs (vegetarianos), los Macs (carnívoros) y los Ovos (ovo-lácteo-vegetarianos). Un oficial Veg es interrogado para descubrir una supuesta conspiración. Una rareza de ciencia ficción en el cine cubano.",
   poster: posterOmega3,
-  videoUrl: "https://archive.org/embed/fatima-cubana-2014/Omega+3+(Eduardo+del+Llano%2C+2014).mkv",
+  videoUrl: "https://archive.org/embed/fatima-cubana-2014/Omega%203%20(Eduardo%20del%20Llano%2C%202014).mkv",
   cast: [
     { name: "Carlos Gonzalvo", role: "Oficial" },
     { name: "Dailenys Fuentes", role: "Soldado" }
@@ -1888,7 +1888,7 @@ const movies2010s: Movie[] = [
   duration: "1h 25m",
   synopsis: "Basada en la obra de José Milián. Una recreación de la mítica obra teatral donde el propio dramaturgo Virgilio Piñera regresa del más allá para sentarse a comer en una cafetería de La Habana, reflexionando sobre la cultura, la censura y el destino del artista.",
   poster: posterVirgilio,
-  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Si+vas+a+comer+espera+por+Virgilio+%5BCubana%5D%5B2014%5D.avi",
+  videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Si%20vas%20a%20comer%20espera%20por%20Virgilio%20%5BCubana%5D%5B2014%5D.avi",
   cast: [
     { name: "Iván García", role: "Virgilio" },
     { name: "Javier Castro", role: "Pepe" }
@@ -1998,7 +1998,7 @@ const movies2010s: Movie[] = [
     duration: "93 min",
     genre: ["Drama", "Comedia"],
     synopsis: "En 1991, un radioaficionado cubano contacta con el último cosmonauta soviético olvidado en el espacio.",
-    videoUrl: "https://archive.org/embed/juan-de-los-muertos/%5BSergio+Y+Serguei+(Pelicula+Cubana%5D%5BAAA%5D%5B2018%5D.mp4",
+    videoUrl: "https://archive.org/embed/juan-de-los-muertos/%5BSergio%20Y%20Serguei%20(Pelicula%20Cubana%5D%5BAAA%5D%5B2018%5D.mp4",
     trailerUrl: "",
     awards: [
       { name: "Festival de Málaga", year: 2018, category: "Premio SIGNIS" },
@@ -2038,7 +2038,7 @@ const movies2010s: Movie[] = [
     duration: "95 min",
     genre: ["Drama"],
     synopsis: "Una terraza sobre La Habana. La puesta de sol. Cinco amigos se reúnen para celebrar el regreso de Amadeo después de dieciséis años de exilio en Madrid. Desde el crepúsculo hasta el amanecer recuerdan su juventud, la pandilla que formaban, su fe en el futuro y la decepción del presente. Basada en la novela La novela de mi vida de Leonardo Padura, la película es un retrato íntimo y agridulce de una generación marcada por la Revolución cubana.",
-    videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/REGRESO+A+ITACA+(Cuba%2C+Isabel+Santos%2C+Jorge+Perugor%C3%ADa).DVDR.LAT.avi",
+    videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/REGRESO%20A%20ITACA%20(Cuba%2C%20Isabel%20Santos%2C%20Jorge%20Perugor%C3%ADa).DVDR.LAT.avi",
     awards: [
       { name: "Premio Venice Days", category: "Festival Internacional de Cine de Venecia", year: 2014 }
     ],
@@ -2059,7 +2059,7 @@ const movies2010s: Movie[] = [
     duration: "104 min",
     genre: ["Drama"],
     synopsis: "Cuba, 1988. Horacio Romero, el más grande boxeador cubano del momento, acaba de dar positivo en un control antidoping. Su castigo está en Los Cocos, un sanatorio bajo régimen militar donde ingresan los enfermos de VIH de manera obligatoria y del que solo pueden salir una vez por semana vigilados por los acompañantes. Horacio será uno de ellos, y de él dependerán las pequeñas libertades de Daniel, el paciente más conflictivo. Sus intereses chocan: Daniel quiere vivir sus últimos días en libertad y está dispuesto a todo. Horacio quiere volver al ring y para ello debe pactar.",
-    videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/El+acompa%C3%B1ante+(2016).mpg",
+    videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/El%20acompa%C3%B1ante%20(2016).mpg",
     awards: [
       { name: "Selección Cuba para los Premios Oscar y Goya", category: "Mejor Película Extranjera", year: 2016 },
       { name: "Premio del Público", category: "Festival de Cine Latinoamericano de Toulouse", year: 2016 },
@@ -2085,7 +2085,7 @@ const movies2010s: Movie[] = [
     duration: "100 min",
     genre: ["Drama"],
     synopsis: "Jesús, un joven cubano de 18 años, sobrevive peinando señoras del barrio y arreglando pelucas en un cabaret de drag queens en La Habana. Su vida cambia por completo cuando su padre, un exitoso boxeador al que daba por muerto, sale de la cárcel tras quince años. Los dos hombres, con mundos completamente opuestos, chocarán y lucharán por entenderse y reconstruir los lazos rotos.",
-    videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Viva+%5B2015%5D.avi",
+    videoUrl: "https://archive.org/embed/boccaccerias-habaneras-2014/Viva%20%5B2015%5D.avi",
     awards: [
       { name: "Candidatura irlandesa Premios Oscar", category: "Mejor Película Extranjera", year: 2016 },
       { name: "Premio ADL Stand Up", category: "Festival de Santa Bárbara", year: 2016 }
