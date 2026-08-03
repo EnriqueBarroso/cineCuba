@@ -12,3 +12,8 @@ export { default as heroHabana } from './habana-blues.jpg';
 // === 2. IMÁGENES VIEJAS (Necesarias para que catalog.ts no se rompa) ===
 export { default as heroElpidio } from './elpidio.jpg';
 export { default as heroJuan } from './juan-de-los-muertos.jpg';
+
+// === 3. IMÁGENES DE ESCENA DEL CARRUSEL DEL HERO ===
+export { default as heroJuanDeLosMuertosEscena } from './Juan_de_los_Muertos.jpg';
+export { default as heroAlgoMasQueSonar } from './algo-mas-que-sonar-hero.jpg';
+export { default as heroNicanor } from './nicanor-hero.jpg';

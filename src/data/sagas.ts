@@ -442,3 +442,6 @@ export const sagas: Saga[] = [
     relatedSeasons: [{ id: "su-propia-guerra", label: "Temporada 1" }],
   },
 ];
+
+export const getSagaById = (id: string): Saga | undefined =>
+  sagas.find((saga) => saga.id === id);

@@ -4,8 +4,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Play, Info, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getMovieById } from "@/data/movies";
+import { getSagaById } from "@/data/sagas";
+import { heroJuanDeLosMuertosEscena, heroAlgoMasQueSonar, heroNicanor } from "@/assets/hero";
 
-const HERO_MOVIES = [
+interface HeroEntry {
+  id: string;
+  title: string;
+  year: string;
+  director: string;
+  description: string;
+  badge: string;
+  // Imagen de escena panorámica (opcional). Si no existe, se usa el poster como fallback.
+  image?: string;
+}
+
+const HERO_MOVIES: HeroEntry[] = [
   {
     id: "memorias-subdesarrollo",
     title: "Memorias del Subdesarrollo",
@@ -53,6 +66,33 @@ const HERO_MOVIES = [
     director: "Ernesto Daranas",
     description: "Chala, un niño de 11 años, y Carmela, su maestra, enfrentan juntos los desafíos de un sistema educativo rígido y una vida dura.",
     badge: "Cine Contemporáneo"
+  },
+  {
+    id: "juan-de-los-muertos",
+    title: "Juan de los Muertos",
+    year: "2011",
+    director: "Alejandro Brugués",
+    image: heroJuanDeLosMuertosEscena,
+    description: "El primer zombie movie cubano. Juan y sus amigos sobreviven al apocalipsis de los no-muertos en La Habana con humor negro y mucha inventiva.",
+    badge: "Terror / Comedia"
+  },
+  {
+    id: "algo-mas-que-sonar",
+    title: "Algo más que soñar",
+    year: "1985",
+    director: "Eduardo Moya",
+    image: heroAlgoMasQueSonar,
+    description: "La serie que marcó a una generación. Cuatro jóvenes cadetes viven sus sueños, amores y la dura realidad de la guerra de Angola.",
+    badge: "Serie Clásica"
+  },
+  {
+    id: "nicanor-odonnell",
+    title: "Los cuentos de Nicanor",
+    year: "2004 — 2019",
+    director: "Eduardo del Llano",
+    image: heroNicanor,
+    description: "15 cortometrajes sobre Nicanor O'Donnell, el intelectual habanero más irreverente del cine cubano independiente. Con Luis Alberto García.",
+    badge: "Saga de Cortos"
   }
 ];
 
@@ -75,7 +115,11 @@ export const HeroSection = () => {
   };
 
   const movie = HERO_MOVIES[currentIndex];
-  const poster = getMovieById(movie.id)?.poster;
+  const saga = getSagaById(movie.id);
+  const isSaga = Boolean(saga);
+  const linkTo = isSaga ? `/saga/${movie.id}` : `/pelicula/${movie.id}`;
+  const fallbackPoster = saga?.poster || getMovieById(movie.id)?.poster;
+  const visual = movie.image || fallbackPoster;
 
   return (
     <div className="relative w-full overflow-hidden bg-background text-white lg:min-h-screen">
@@ -94,17 +138,23 @@ export const HeroSection = () => {
           className="relative"
         >
           <div className="container mx-auto px-6 pt-28 pb-24 lg:pt-32 lg:pb-24 lg:min-h-screen flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10">
-            {/* POSTER MÓVIL */}
+            {/* IMAGEN MÓVIL */}
             <div className="lg:hidden relative -mx-6 h-[300px] overflow-hidden">
-              {poster && (
+              {visual && (
                 <img
-                  src={poster}
+                  src={visual}
                   alt={movie.title}
                   loading={currentIndex === 0 ? "eager" : "lazy"}
                   fetchPriority="high"
+                  style={{ filter: "brightness(0.85) contrast(1.05)" }}
                   className="w-full h-full object-cover"
                 />
               )}
+              {/* Viñeta radial sutil para disimular la falta de resolución */}
+              <div
+                className="absolute inset-0"
+                style={{ background: "radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.4) 100%)" }}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
             </div>
 
@@ -133,12 +183,12 @@ export const HeroSection = () => {
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-4">
-                <Link to={`/pelicula/${movie.id}`}>
+                <Link to={linkTo}>
                   <Button size="lg" className="bg-white text-black hover:bg-gray-200 font-bold px-8 h-12 gap-2 text-base shadow-xl">
                     <Play className="w-5 h-5 fill-black" /> Ver Ahora
                   </Button>
                 </Link>
-                <Link to={`/pelicula/${movie.id}`}>
+                <Link to={linkTo}>
                   <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 h-12 px-8 gap-2 text-base">
                     <Info className="w-5 h-5" /> Más Info
                   </Button>
@@ -146,7 +196,7 @@ export const HeroSection = () => {
               </div>
             </motion.div>
 
-            {/* POSTER ESCRITORIO */}
+            {/* IMAGEN ESCRITORIO */}
             <div className="hidden lg:flex lg:w-[45%] justify-center">
               <motion.div
                 initial={{ opacity: 0, x: 40 }}
@@ -154,16 +204,22 @@ export const HeroSection = () => {
                 transition={{ delay: 0.15, duration: 0.6 }}
                 className="relative w-full max-w-sm aspect-[2/3] rounded-lg overflow-hidden shadow-2xl shadow-black/70"
               >
-                {poster && (
+                {visual && (
                   <img
-                    src={poster}
+                    src={visual}
                     alt={movie.title}
                     loading={currentIndex === 0 ? "eager" : "lazy"}
                     fetchPriority="high"
+                    style={{ filter: "brightness(0.85) contrast(1.05)" }}
                     className="w-full h-full object-cover"
                   />
                 )}
-                {/* Difumina el borde izquierdo del poster hacia el fondo */}
+                {/* Viñeta radial sutil para disimular la falta de resolución */}
+                <div
+                  className="absolute inset-0"
+                  style={{ background: "radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.4) 100%)" }}
+                />
+                {/* Difumina el borde izquierdo de la imagen hacia el fondo */}
                 <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-background to-transparent" />
               </motion.div>
             </div>
