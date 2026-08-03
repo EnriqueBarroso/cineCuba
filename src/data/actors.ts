@@ -69,9 +69,18 @@ export const actors: Actor[] = [
   {
     id: 'alexis-valdes',
     name: 'Alexis Valdés',
+    birthYear: 1963,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/alexis-valdes.jpg',
+    biography: "Alexis Valdés Gutiérrez nació el 16 de agosto de 1963 en La Habana, hijo del reconocido actor y humorista cubano Leonel Valdés. Se graduó de Ingeniería y luego de Dirección Cinematográfica en el Instituto Superior de Arte. Desde 1985 hasta 1995 fue una de las figuras más populares de la televisión y la radio cubana, consagrándose con su personaje Cristinito en el programa Sabadazo y ganando el Gran Premio de Popularidad en el Festival Internacional de Monólogo de La Habana. En los años 90 emigró a España, donde se convirtió en un referente del humor en programas como El Club de la Comedia, ganando el Premio Ancla de Oro al Humorista Revelación en Madrid. En 2005 actuó, dirigió y produjo su primera película, Un rey en La Habana, y ese mismo año participó en 90 millas. Actualmente reside en Miami, donde produce y presenta su propio podcast y sigue activo en el teatro, el cine y la televisión. En 2022 publicó sus memorias El miedo nos hizo fuertes.",
+    awards: [
+      'Premio a la Mejor Actuación y Gran Premio de la Popularidad — Festival Internacional de Monólogo, La Habana (1989)',
+      'Premio a la Mejor Actuación y Gran Premio de la Popularidad — Festival Internacional de Monólogo, La Habana (1992)',
+      'Premio Chez Monique al Mejor Actor Cómico — La Habana (1990)',
+      'Premio Ancla de Oro al Humorista Revelación — Madrid (1998)',
+      'Premio Sebastià Guasch al Mejor Espectáculo Teatral — Barcelona (1999)',
+    ],
   },
   {
     id: 'alicia-hechavarria',
