@@ -22,7 +22,8 @@ const HERO_MOVIES = [
     director: "Tomás Gutiérrez Alea",
     image: heroMemorias, // Usa tu archivo local
     description: "La obra maestra del cine cubano. Un intelectual burgués intenta encontrar su lugar en una sociedad en plena revolución.",
-    badge: "Clásico Imprescindible"
+    badge: "Clásico Imprescindible",
+    objectPosition: "object-center"
   },
   {
     id: "lucia-1968",
@@ -30,9 +31,10 @@ const HERO_MOVIES = [
     year: "1968",
     director: "Humberto Solás",
     // 👇 AQUÍ ESTÁ EL TRUCO: Enlace directo de internet
-    image: heroLucia, 
+    image: heroLucia,
     description: "Tres mujeres, tres épocas, un mismo nombre. Una epopeya visual sobre la identidad femenina en la historia de Cuba.",
-    badge: "Drama Histórico"
+    badge: "Drama Histórico",
+    objectPosition: "object-center"
   },
   {
     id: "vampiros-habana",
@@ -41,7 +43,8 @@ const HERO_MOVIES = [
     director: "Juan Padrón",
     image: heroVampiros, // Usa tu archivo local
     description: "Un científico vampiro ha creado una fórmula para resistir el sol. Mafias de Chicago y Europa luchan por el control en esta comedia de culto.",
-    badge: "Animación de Culto"
+    badge: "Animación de Culto",
+    objectPosition: "object-center"
   },
   {
     id: "fresa-chocolate-1993",
@@ -50,7 +53,8 @@ const HERO_MOVIES = [
     director: "T. G. Alea & J. C. Tabío",
     image: heroFresa, // Usa tu archivo local
     description: "La amistad improbable entre un joven comunista y un artista homosexual que desafió los prejuicios de una época.",
-    badge: "Nominada al Oscar"
+    badge: "Nominada al Oscar",
+    objectPosition: "object-center"
   },
   {
     id: "habana-blues",
@@ -59,7 +63,8 @@ const HERO_MOVIES = [
     director: "Benito Zambrano",
     image: heroHabana, // Usa tu archivo local
     description: "Música, dilemas y despedidas. Dos jóvenes músicos intentan triunfar sin perder su esencia en la Cuba de los 2000.",
-    badge: "Musical / Drama"
+    badge: "Musical / Drama",
+    objectPosition: "object-top"
   },
   {
     id: "conducta-2014",
@@ -67,9 +72,10 @@ const HERO_MOVIES = [
     year: "2014",
     director: "Ernesto Daranas",
     // 👇 AQUÍ ESTÁ EL TRUCO: Enlace directo de internet
-    image: heroConducta, 
+    image: heroConducta,
     description: "Chala, un niño de 11 años, y Carmela, su maestra, enfrentan juntos los desafíos de un sistema educativo rígido y una vida dura.",
-    badge: "Cine Contemporáneo"
+    badge: "Cine Contemporáneo",
+    objectPosition: "object-top"
   }
 ];
 
@@ -109,7 +115,9 @@ export const HeroSection = () => {
             <img
               src={movie.image}
               alt={movie.title}
-              className="w-full h-full object-cover object-center"
+              loading={currentIndex === 0 ? "eager" : "lazy"}
+              fetchPriority="high"
+              className={`w-full h-full object-cover ${movie.objectPosition}`}
             />
             {/* Gradientes */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
