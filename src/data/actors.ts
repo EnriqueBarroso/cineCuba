@@ -112,9 +112,21 @@ export const actors: Actor[] = [
   {
     id: 'alina-rodriguez',
     name: 'Alina Rodríguez',
+    birthYear: 1951,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 2015,
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/alina-rodriguez.jpg',
+    biography: "Alina Rodríguez (4 de octubre de 1951 — 27 de julio de 2015) fue una de las actrices más queridas y relevantes de la historia del cine, el teatro y la televisión cubana. Se graduó primero de Técnico en Anatomía Patológica y posteriormente de Licenciada en Artes Escénicas en el Instituto Superior de Arte en 1982, formándose en el emblemático Teatro Estudio. Su consagración en el cine llegó con María Antonia (1990) de Sergio Giral, que la catapultó al estrellato y le valió el premio de actuación en el Festival Latino de Nueva York. Su papel de Justa en la telenovela Tierra Brava la convirtió en la favorita del público cubano. Su última y más celebrada actuación fue como la maestra Carmela en Conducta (2013) de Ernesto Daranas, por la que recibió múltiples premios internacionales. Admirada tanto por su talento como por su nobleza como persona, falleció el 27 de julio de 2015 a los 63 años víctima de cáncer. Su legado permanece vivo en la memoria colectiva del pueblo cubano.",
+    awards: [
+      'Premio de Actuación Femenina — Festival Latino de Nueva York, por María Antonia (1991)',
+      'Mención de Actuación Femenina — UNEAC, por En el Parque (1987)',
+      'Premio ACE a la Mejor Actriz — Asociación de Cronistas del Espectáculo de Nueva York, por El premio flaco (2011)',
+      'Premio a la Mejor Actriz — Havana Film Festival Nueva York, por Conducta (2014)',
+      'Premio a la Mejor Actriz — Festival de Cine Español de Málaga, por Conducta (2014)',
+      'Premio a la Mejor Actriz Latinoamericana — Festival de Lleida, por Conducta (2015)',
+      'Premio ACE a la Mejor Actriz de Cine — Nueva York, por Conducta (2015)',
+    ],
   },
   {
     id: 'alina-sanchez',
