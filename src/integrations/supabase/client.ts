@@ -2,20 +2,47 @@
 import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 
+// Proyecto correcto de Supabase para CineCuba — usado como referencia de validación y como fallback de URL.
+const EXPECTED_PROJECT_REF = 'xdejxwlyjzrntexidnbe';
+const FALLBACK_URL = `https://${EXPECTED_PROJECT_REF}.supabase.co`;
+const FALLBACK_KEY = 'invalid-key-check-env-vars';
+
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
 if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
-  throw new Error(
-    'Faltan variables de entorno de Supabase. Revisa VITE_SUPABASE_URL y VITE_SUPABASE_PUBLISHABLE_KEY en .env'
+  console.error(
+    'Faltan variables de entorno de Supabase (VITE_SUPABASE_URL / VITE_SUPABASE_PUBLISHABLE_KEY). ' +
+    'La app seguirá funcionando, pero sin autenticación ni funciones que dependan de Supabase.'
+  );
+} else if (!SUPABASE_URL.includes(EXPECTED_PROJECT_REF)) {
+  console.error(
+    `VITE_SUPABASE_URL ("${SUPABASE_URL}") no apunta al proyecto esperado (${EXPECTED_PROJECT_REF}.supabase.co). Verifica la configuración de entorno.`
   );
 }
 
-export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
-  auth: {
-    persistSession: true,
-    autoRefreshToken: true,
-    detectSessionInUrl: true,
-    flowType: 'pkce',
-  },
-});
+function createSafeClient() {
+  try {
+    return createClient<Database>(SUPABASE_URL || FALLBACK_URL, SUPABASE_PUBLISHABLE_KEY || FALLBACK_KEY, {
+      auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        detectSessionInUrl: true,
+        flowType: 'pkce',
+      },
+    });
+  } catch (error) {
+    console.error('No se pudo inicializar el cliente de Supabase, se usará un cliente inactivo:', error);
+    return createClient<Database>(FALLBACK_URL, FALLBACK_KEY, {
+      auth: {
+        persistSession: false,
+        autoRefreshToken: false,
+        detectSessionInUrl: false,
+      },
+    });
+  }
+}
+
+// Nunca lanza en tiempo de carga: si Supabase no está disponible o mal configurado,
+// el resto de la app sigue funcionando sin sesión activa.
+export const supabase = createSafeClient();

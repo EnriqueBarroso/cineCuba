@@ -19,35 +19,55 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (_event, session) => {
+    let subscription: { unsubscribe: () => void } | undefined;
+
+    try {
+      const { data } = supabase.auth.onAuthStateChange((_event, session) => {
         setSession(session);
         setUser(session?.user ?? null);
         setLoading(false);
-      }
-    );
+      });
+      subscription = data.subscription;
+    } catch (error) {
+      console.error('Error al inicializar la autenticación de Supabase:', error);
+      setLoading(false);
+    }
 
-    return () => subscription.unsubscribe();
+    return () => subscription?.unsubscribe();
   }, []);
 
   const signInWithGoogle = async () => {
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: { redirectTo: `${window.location.origin}/` },
-    });
-    return { error };
+    try {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: { redirectTo: `${window.location.origin}/` },
+      });
+      return { error };
+    } catch (error) {
+      console.error('Error al iniciar sesión con Google:', error);
+      return { error: error instanceof Error ? error : new Error('Error desconocido al iniciar sesión con Google') };
+    }
   };
 
   const signInWithGitHub = async () => {
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'github',
-      options: { redirectTo: `${window.location.origin}/` },
-    });
-    return { error };
+    try {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'github',
+        options: { redirectTo: `${window.location.origin}/` },
+      });
+      return { error };
+    } catch (error) {
+      console.error('Error al iniciar sesión con GitHub:', error);
+      return { error: error instanceof Error ? error : new Error('Error desconocido al iniciar sesión con GitHub') };
+    }
   };
 
   const signOut = async () => {
-    await supabase.auth.signOut();
+    try {
+      await supabase.auth.signOut();
+    } catch (error) {
+      console.error('Error al cerrar sesión:', error);
+    }
   };
 
   return (
