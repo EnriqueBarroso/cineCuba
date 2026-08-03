@@ -3,16 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Info, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-// Importamos lo básico para que no se rompa
-import { 
-  heroMemorias, 
-  heroVampiros, 
-  heroFresa, 
-  heroHabana, 
-  heroLucia,
-  heroConducta
-} from "@/assets/hero";
+import { getMovieById } from "@/data/movies";
 
 const HERO_MOVIES = [
   {
@@ -20,62 +11,48 @@ const HERO_MOVIES = [
     title: "Memorias del Subdesarrollo",
     year: "1968",
     director: "Tomás Gutiérrez Alea",
-    image: heroMemorias, // Usa tu archivo local
     description: "La obra maestra del cine cubano. Un intelectual burgués intenta encontrar su lugar en una sociedad en plena revolución.",
-    badge: "Clásico Imprescindible",
-    objectPosition: "object-center"
+    badge: "Clásico Imprescindible"
   },
   {
     id: "lucia-1968",
     title: "Lucía",
     year: "1968",
     director: "Humberto Solás",
-    // 👇 AQUÍ ESTÁ EL TRUCO: Enlace directo de internet
-    image: heroLucia,
     description: "Tres mujeres, tres épocas, un mismo nombre. Una epopeya visual sobre la identidad femenina en la historia de Cuba.",
-    badge: "Drama Histórico",
-    objectPosition: "object-center"
+    badge: "Drama Histórico"
   },
   {
     id: "vampiros-habana",
     title: "¡Vampiros en La Habana!",
     year: "1985",
     director: "Juan Padrón",
-    image: heroVampiros, // Usa tu archivo local
     description: "Un científico vampiro ha creado una fórmula para resistir el sol. Mafias de Chicago y Europa luchan por el control en esta comedia de culto.",
-    badge: "Animación de Culto",
-    objectPosition: "object-center"
+    badge: "Animación de Culto"
   },
   {
     id: "fresa-chocolate-1993",
     title: "Fresa y Chocolate",
     year: "1993",
     director: "T. G. Alea & J. C. Tabío",
-    image: heroFresa, // Usa tu archivo local
     description: "La amistad improbable entre un joven comunista y un artista homosexual que desafió los prejuicios de una época.",
-    badge: "Nominada al Oscar",
-    objectPosition: "object-center"
+    badge: "Nominada al Oscar"
   },
   {
     id: "habana-blues",
     title: "Habana Blues",
     year: "2005",
     director: "Benito Zambrano",
-    image: heroHabana, // Usa tu archivo local
     description: "Música, dilemas y despedidas. Dos jóvenes músicos intentan triunfar sin perder su esencia en la Cuba de los 2000.",
-    badge: "Musical / Drama",
-    objectPosition: "object-top"
+    badge: "Musical / Drama"
   },
   {
     id: "conducta-2014",
     title: "Conducta",
     year: "2014",
     director: "Ernesto Daranas",
-    // 👇 AQUÍ ESTÁ EL TRUCO: Enlace directo de internet
-    image: heroConducta,
     description: "Chala, un niño de 11 años, y Carmela, su maestra, enfrentan juntos los desafíos de un sistema educativo rígido y una vida dura.",
-    badge: "Cine Contemporáneo",
-    objectPosition: "object-top"
+    badge: "Cine Contemporáneo"
   }
 ];
 
@@ -98,9 +75,15 @@ export const HeroSection = () => {
   };
 
   const movie = HERO_MOVIES[currentIndex];
+  const poster = getMovieById(movie.id)?.poster;
 
   return (
-    <div className="relative w-full h-screen min-h-[600px] overflow-hidden bg-black text-white">
+    <div className="relative w-full overflow-hidden bg-background text-white lg:min-h-screen">
+      {/* Glow dorado sutil, centrado en el lado izquierdo */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/2 left-0 -translate-x-1/3 -translate-y-1/2 w-[700px] h-[700px] bg-gold/10 blur-[150px] rounded-full" />
+      </div>
+
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -108,29 +91,29 @@ export const HeroSection = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8 }}
-          className="absolute inset-0"
+          className="relative"
         >
-          {/* Imagen de Fondo */}
-          <div className="absolute inset-0">
-            <img
-              src={movie.image}
-              alt={movie.title}
-              loading={currentIndex === 0 ? "eager" : "lazy"}
-              fetchPriority="high"
-              className={`w-full h-full object-cover ${movie.objectPosition}`}
-            />
-            {/* Gradientes */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-          </div>
+          <div className="container mx-auto px-6 pt-28 pb-24 lg:pt-32 lg:pb-24 lg:min-h-screen flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10">
+            {/* POSTER MÓVIL */}
+            <div className="lg:hidden relative -mx-6 h-[300px] overflow-hidden">
+              {poster && (
+                <img
+                  src={poster}
+                  alt={movie.title}
+                  loading={currentIndex === 0 ? "eager" : "lazy"}
+                  fetchPriority="high"
+                  className="w-full h-full object-cover"
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+            </div>
 
-          {/* Contenido */}
-          <div className="relative h-full container mx-auto px-6 flex flex-col justify-end pb-24 lg:pb-32 lg:justify-center lg:pt-20">
+            {/* TEXTO */}
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="max-w-2xl space-y-6"
+              className="relative z-10 w-full lg:w-[55%] space-y-6"
             >
               <div className="flex items-center gap-3">
                 <span className="px-3 py-1 bg-gold text-black text-xs font-bold uppercase tracking-wider rounded-sm">
@@ -162,6 +145,28 @@ export const HeroSection = () => {
                 </Link>
               </div>
             </motion.div>
+
+            {/* POSTER ESCRITORIO */}
+            <div className="hidden lg:flex lg:w-[45%] justify-center">
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.15, duration: 0.6 }}
+                className="relative w-full max-w-sm aspect-[2/3] rounded-lg overflow-hidden shadow-2xl shadow-black/70"
+              >
+                {poster && (
+                  <img
+                    src={poster}
+                    alt={movie.title}
+                    loading={currentIndex === 0 ? "eager" : "lazy"}
+                    fetchPriority="high"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {/* Difumina el borde izquierdo del poster hacia el fondo */}
+                <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-background to-transparent" />
+              </motion.div>
+            </div>
           </div>
         </motion.div>
       </AnimatePresence>
@@ -175,7 +180,7 @@ export const HeroSection = () => {
           <ChevronRight className="w-6 h-6 text-white" />
         </button>
       </div>
-      
+
       {/* Indicadores */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
         {HERO_MOVIES.map((_, idx) => (
