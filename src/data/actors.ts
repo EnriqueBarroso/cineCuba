@@ -27,9 +27,16 @@ export const actors: Actor[] = [
   {
     id: 'adela-legra',
     name: 'Adela Legrá',
+    birthYear: 1939,
+    birthPlace: 'Caimanera, Guantánamo, Cuba',
+    deathYear: 2026,
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/adela-legra.jpg',
+    biography: "Adelaida López Legrá nació el 17 de octubre de 1939 en Caimanera, en el extremo oriental de Cuba. De origen humilde y sin formación actoral, trabajó desde joven en labores agrícolas — recogiendo café y cultivando viandas — y como activista de la Federación de Mujeres Cubanas en Baracoa, la ciudad más antigua de Cuba. Fue precisamente allí donde el director Humberto Solás la descubrió y le ofreció el papel protagónico del mediometraje Manuela (1966). Su rostro campesino, recio y bello, su sinceridad y su frescura interpretativa la convirtieron en la elección perfecta para encarnar a la Lucía del tercer relato de Lucía (1968), la obra cumbre del cine cubano. Esa sola mirada — reproducida hasta el cansancio en afiches y carteles — bastó para inscribirla para siempre en la historia del cine latinoamericano. Nunca dejó de ser lo que siempre fue, y precisamente esa autenticidad inquebrantable fue su mayor virtud como actriz. Tras décadas en La Habana, se retiró a Santiago de Cuba sin abandonar el cine. Falleció el 2 de enero de 2026 a los 86 años.",
+    awards: [
+      'Premio Lucía de Honor — Festival Internacional de Cine Pobre de Gibara (2017)',
+      'Placa Heredia — reconocimiento a su trayectoria artística',
+    ],
   },
   {
     id: 'adelaida-raymat',
