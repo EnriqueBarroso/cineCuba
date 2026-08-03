@@ -5,7 +5,15 @@ import { Play, Info, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getMovieById } from "@/data/movies";
 import { getSagaById } from "@/data/sagas";
-import { heroJuanDeLosMuertosEscena, heroAlgoMasQueSonar, heroNicanor } from "@/assets/hero";
+import {
+  heroMemorias,
+  heroLucia,
+  heroVampiros,
+  heroFresa,
+  heroHabana,
+  heroConducta,
+  heroJuanDeLosMuertosEscena,
+} from "@/assets/hero";
 
 interface HeroEntry {
   id: string;
@@ -24,6 +32,7 @@ const HERO_MOVIES: HeroEntry[] = [
     title: "Memorias del Subdesarrollo",
     year: "1968",
     director: "Tomás Gutiérrez Alea",
+    image: heroMemorias,
     description: "La obra maestra del cine cubano. Un intelectual burgués intenta encontrar su lugar en una sociedad en plena revolución.",
     badge: "Clásico Imprescindible"
   },
@@ -32,6 +41,7 @@ const HERO_MOVIES: HeroEntry[] = [
     title: "Lucía",
     year: "1968",
     director: "Humberto Solás",
+    image: heroLucia,
     description: "Tres mujeres, tres épocas, un mismo nombre. Una epopeya visual sobre la identidad femenina en la historia de Cuba.",
     badge: "Drama Histórico"
   },
@@ -40,6 +50,7 @@ const HERO_MOVIES: HeroEntry[] = [
     title: "¡Vampiros en La Habana!",
     year: "1985",
     director: "Juan Padrón",
+    image: heroVampiros,
     description: "Un científico vampiro ha creado una fórmula para resistir el sol. Mafias de Chicago y Europa luchan por el control en esta comedia de culto.",
     badge: "Animación de Culto"
   },
@@ -48,6 +59,7 @@ const HERO_MOVIES: HeroEntry[] = [
     title: "Fresa y Chocolate",
     year: "1993",
     director: "T. G. Alea & J. C. Tabío",
+    image: heroFresa,
     description: "La amistad improbable entre un joven comunista y un artista homosexual que desafió los prejuicios de una época.",
     badge: "Nominada al Oscar"
   },
@@ -56,6 +68,7 @@ const HERO_MOVIES: HeroEntry[] = [
     title: "Habana Blues",
     year: "2005",
     director: "Benito Zambrano",
+    image: heroHabana,
     description: "Música, dilemas y despedidas. Dos jóvenes músicos intentan triunfar sin perder su esencia en la Cuba de los 2000.",
     badge: "Musical / Drama"
   },
@@ -64,6 +77,7 @@ const HERO_MOVIES: HeroEntry[] = [
     title: "Conducta",
     year: "2014",
     director: "Ernesto Daranas",
+    image: heroConducta,
     description: "Chala, un niño de 11 años, y Carmela, su maestra, enfrentan juntos los desafíos de un sistema educativo rígido y una vida dura.",
     badge: "Cine Contemporáneo"
   },
@@ -81,7 +95,7 @@ const HERO_MOVIES: HeroEntry[] = [
     title: "Algo más que soñar",
     year: "1985",
     director: "Eduardo Moya",
-    image: heroAlgoMasQueSonar,
+    // Sin imagen de escena todavía — se usa el poster de la saga como fallback (ver getSagaById).
     description: "La serie que marcó a una generación. Cuatro jóvenes cadetes viven sus sueños, amores y la dura realidad de la guerra de Angola.",
     badge: "Serie Clásica"
   },
@@ -90,7 +104,7 @@ const HERO_MOVIES: HeroEntry[] = [
     title: "Los cuentos de Nicanor",
     year: "2004 — 2019",
     director: "Eduardo del Llano",
-    image: heroNicanor,
+    // Sin imagen de escena todavía — se usa el poster de la saga como fallback (ver getSagaById).
     description: "15 cortometrajes sobre Nicanor O'Donnell, el intelectual habanero más irreverente del cine cubano independiente. Con Luis Alberto García.",
     badge: "Saga de Cortos"
   }
@@ -139,14 +153,14 @@ export const HeroSection = () => {
         >
           <div className="container mx-auto px-6 pt-28 pb-24 lg:pt-32 lg:pb-24 lg:min-h-screen flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10">
             {/* IMAGEN MÓVIL */}
-            <div className="lg:hidden relative -mx-6 h-[300px] overflow-hidden">
+            <div className="lg:hidden relative -mx-6 h-[250px] overflow-hidden">
               {visual && (
                 <img
                   src={visual}
                   alt={movie.title}
                   loading={currentIndex === 0 ? "eager" : "lazy"}
                   fetchPriority="high"
-                  style={{ filter: "brightness(0.85) contrast(1.05)" }}
+                  style={{ filter: "brightness(0.9) contrast(1.1)" }}
                   className="w-full h-full object-cover"
                 />
               )}
@@ -202,7 +216,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, x: 40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.15, duration: 0.6 }}
-                className="relative w-full max-w-sm aspect-[2/3] rounded-lg overflow-hidden shadow-2xl shadow-black/70"
+                className="relative w-full max-w-lg h-[420px] rounded-lg overflow-hidden shadow-2xl shadow-black/70"
               >
                 {visual && (
                   <img
@@ -210,7 +224,7 @@ export const HeroSection = () => {
                     alt={movie.title}
                     loading={currentIndex === 0 ? "eager" : "lazy"}
                     fetchPriority="high"
-                    style={{ filter: "brightness(0.85) contrast(1.05)" }}
+                    style={{ filter: "brightness(0.9) contrast(1.1)" }}
                     className="w-full h-full object-cover"
                   />
                 )}
