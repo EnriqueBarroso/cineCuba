@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Award, MapPin, Heart, Users, Layers } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -110,9 +110,11 @@ const ActorSagaCard = ({ saga, role }: { saga: Saga; role: string }) => (
 const ActorDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { isFavorite, toggleFavorite } = useFavorites();
+  const [photoError, setPhotoError] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setPhotoError(false);
   }, [id]);
 
   const actor = id ? getActorById(id) : undefined;
@@ -204,10 +206,11 @@ const ActorDetail = () => {
             {/* Foto sticky */}
             <div className="mx-auto lg:mx-0 w-full max-w-[320px] lg:sticky lg:top-32 self-start">
               <div className="aspect-[3/4] overflow-hidden bg-secondary border border-hairline shadow-xl">
-                {actor.photo ? (
+                {actor.photo && !photoError ? (
                   <img
                     src={actor.photo}
                     alt={actor.name}
+                    onError={() => setPhotoError(true)}
                     className="w-full h-full object-cover"
                   />
                 ) : (

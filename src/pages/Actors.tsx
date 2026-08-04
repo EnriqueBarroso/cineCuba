@@ -41,15 +41,17 @@ const availableLetters = ALPHABET.filter((letter) => groupsByLetter.has(letter))
 
 const ActorCard = ({ actor }: { actor: Actor }) => {
   const movieCount = movieCounts.get(actor.id) ?? 0;
+  const [photoError, setPhotoError] = useState(false);
 
   return (
     <Link to={`/actor/${actor.id}`} className="group block">
       <article className="space-y-4">
         <div className="aspect-[3/4] overflow-hidden bg-secondary border border-hairline relative">
-          {actor.photo ? (
+          {actor.photo && !photoError ? (
             <img
               src={actor.photo}
               alt={actor.name}
+              onError={() => setPhotoError(true)}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           ) : (
