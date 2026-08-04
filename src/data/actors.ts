@@ -1114,9 +1114,21 @@ export const actors: Actor[] = [
   {
     id: 'sergio-corrieri',
     name: 'Sergio Corrieri',
+    birthYear: 1938,
+    birthPlace: 'Jaimanitas, La Habana, Cuba',
+    deathYear: 2008,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/sergio-corrieri.jpg',
+    biography: "Sergio Lucio Corrieri Hernández (2 de marzo de 1938 — 29 de febrero de 2008) fue uno de los actores más importantes del cine cubano revolucionario y una figura central de la cultura de la isla durante décadas. Debutó en el Teatro Universitario en 1954 con solo 16 años y en 1958 ganó el Premio Prometeo de actuación. Cofundador del Grupo Teatro Estudio, en 1968 dio un paso histórico al fundar el Grupo Teatro Escambray en la sierra central de Cuba, llevando el teatro directamente al pueblo campesino. En el cine colaboró con el ICAIC desde su fundación en 1959 y protagonizó algunas de las películas más importantes del cine cubano: Soy Cuba (1964) de Mikhail Kalatozov y Memorias del subdesarrollo (1968) de Tomás Gutiérrez Alea, donde encarnó a Sergio Carmona, un intelectual burgués atrapado entre dos mundos. Su papel más popular fue el del agente David en el serial televisivo En silencio ha tenido que ser (1979), el más exitoso en la historia de la televisión cubana. Su consagración cinematográfica llegó con El hombre de Maisinicú (1973) de Manuel Pérez, que le valió el premio al Mejor Actor en el Festival de Moscú. Más allá de las artes, ocupó altos cargos en el Partido Comunista y fue Presidente del Instituto Cubano de Amistad con los Pueblos hasta su muerte. Falleció en La Habana el 29 de febrero de 2008.",
+    awards: [
+      'Premio Prometeo de Actuación — Teatro Universitario (1958)',
+      'Premio a la Mejor Actuación Masculina — VIII Festival Internacional de Cine de Moscú, por El hombre de Maisinicú (1973)',
+      'Orden Alejo Carpentier — Consejo de Estado de Cuba (1982)',
+      'Orden Félix Varela de Primer Grado — Consejo de Estado de Cuba (1984)',
+      'Premio Caracol a la Mejor Dirección — UNEAC, por La Emboscada (1994)',
+      'Premio Caracol a la Mejor Adaptación — UNEAC, por La Emboscada (1994)',
+      'Premio Nacional de Teatro — Cuba (2006)',
+    ],
   },
   {
     id: 'silvano-rey',
