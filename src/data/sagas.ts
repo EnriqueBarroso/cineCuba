@@ -134,7 +134,7 @@ export const sagas: Saga[] = [
     ],
     cast: [
       { name: "Luis Alberto García", role: "Nicanor O'Donnell" },
-      { name: "Néstor Jiménez", role: "Elenco recurrente" },
+      { name: "Néstor Jiménez", role: "Rodríguez" },
       { name: "Osvaldo Doimeadiós", role: "Elenco recurrente" },
       { name: "Mario Guerra", role: "Elenco recurrente" },
       { name: "Carlos Gonzalvo", role: "Elenco recurrente" },
