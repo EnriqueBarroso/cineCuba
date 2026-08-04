@@ -575,9 +575,19 @@ export const actors: Actor[] = [
   {
     id: 'imanol-arias',
     name: 'Imanol Arias',
+    birthYear: 1956,
+    birthPlace: 'Riaño, León, España',
     nationality: 'Español',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/imanol-arias.jpg',
+    biography: "Manuel María Arias Domínguez nació el 26 de abril de 1956 en Riaño, León, aunque se crió en Ermua, País Vasco, lo que le llevó a identificarse profundamente con la cultura vasca. Abandonó sus estudios de electrónica para dedicarse al teatro, debutando en compañías independientes del País Vasco antes de trasladarse a Madrid e incorporarse al Centro Dramático Nacional. Su primer gran papel cinematográfico lo llevó literalmente al otro lado del mundo: en 1980 viajó a Cuba para protagonizar Cecilia de Humberto Solás, una producción de dos años de rodaje que se presentó en el Festival de Cannes en 1982. Fue él quien convenció a Almodóvar para ir a ver actuar a un joven Antonio Banderas, y luego protagonizó Laberinto de pasiones (1982) del propio Almodóvar. Su consagración artística llegó con El Lute: camina o revienta (1987) de Vicente Aranda, que le valió la Concha de Plata al Mejor Actor en el Festival de San Sebastián. Durante años fue el galán indiscutible del cine español, pero su papel más querido por el gran público es Antonio Alcántara en Cuéntame cómo pasó, la serie más longeva de la televisión española, donde lleva más de dos décadas interpretando al mismo personaje.",
+    awards: [
+      'Concha de Plata al Mejor Actor — Festival Internacional de Cine de San Sebastián, por El Lute: camina o revienta (1987)',
+      'Premio de los Críticos de Nueva York al Mejor Actor — por El Lute: mañana seré libre (1988)',
+      'Fotogramas de Plata al Mejor Actor de Televisión (2008)',
+      'TP de Oro al Mejor Actor (2010 y 2011)',
+      'Premio Sant Jordi a la Trayectoria Profesional (2016)',
+      'Distinción Lan Onari — Gobierno Vasco (2010)',
+    ],
   },
   {
     id: 'indira-valdes',
