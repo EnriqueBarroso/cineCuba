@@ -1379,7 +1379,8 @@ const movies2000s: Movie[] = [
     trailerUrl: "",
     awards: [],
     cast: [
-      { name: "Ana Polvorosa", role: "Actriz" }
+      { name: "Ana Polvorosa", role: "Actriz" },
+      { name: "Ana de Armas", role: "" }
     ]
   },
   {
