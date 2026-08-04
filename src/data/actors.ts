@@ -928,9 +928,15 @@ export const actors: Actor[] = [
   {
     id: 'nestor-jimenez',
     name: 'Néstor Jiménez',
+    birthYear: 1962,
+    birthPlace: 'Trinidad, Sancti Spíritus, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/nestor-jimenez.jpg',
+    biography: "Néstor Jiménez Rodríguez nació el 25 de agosto de 1962 en Trinidad, una de las ciudades más bellas de Cuba. Es hermano gemelo de la actriz Luisa María Jiménez. Ambos descubrieron su vocación de la mano del instructor de teatro Pablo Dalmau en Trinidad, ganando premios en festivales nacionales que les abrieron las puertas de la sala Hubert de Blanck en La Habana. A los 17 años ingresaron juntos en la Escuela Nacional de Arte. Debutó en televisión como presentador del programa juvenil Para Bailar en 1978, que lo lanzó a la fama. En el cine su papel más recordado es el del Chino en Zafiros, locura azul (1997), donde retrató magistralmente la complejidad del legendario cantante del quinteto cubano. Es también uno de los actores recurrentes de la saga Los cuentos de Nicanor O'Donnell de Eduardo del Llano, donde interpreta a Rodríguez en múltiples entregas, convirtiéndose en uno de los pilares del elenco de esa saga. Ha participado en más de 20 películas y ha destacado igualmente en televisión con series como La guarida del topo y dramatizados como Con palabras propias, donde compartió escena con su propio hijo. Es uno de los actores cubanos más versátiles de su generación, con especial talento para los personajes complejos y los roles de antagonista.",
+    awards: [
+      'Premio de Actuación — Festival de Teatro de La Habana',
+      'Premio de Actuación — Festival Nacional de Teatro, La Habana',
+    ],
   },
   {
     id: 'olivier-martinez',

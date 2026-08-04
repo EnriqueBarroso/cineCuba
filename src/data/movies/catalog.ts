@@ -872,7 +872,8 @@ const movies1990s: Movie[] = [
     ],
     cast: [
       { name: "Luis Alberto García", role: "Ignacio" },
-      { name: "Sirio Soto", role: "Miguelito" }
+      { name: "Sirio Soto", role: "Miguelito" },
+      { name: "Néstor Jiménez", role: "El Chino" }
     ]
   },
   {
