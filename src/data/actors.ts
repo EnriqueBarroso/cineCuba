@@ -1129,9 +1129,17 @@ export const actors: Actor[] = [
   {
     id: 'salvador-wood',
     name: 'Salvador Wood',
+    birthYear: 1928,
+    birthPlace: 'Santiago de Cuba, Cuba',
+    deathYear: 2019,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/salvador-wood.jpg',
+    biography: "Salvador Juan de la Cruz Wood Fonseca (24 de noviembre de 1928 — 1 de junio de 2019) fue uno de los actores más queridos y respetados de la cultura cubana. Actor empírico y autodidacta — nunca estudió en ninguna escuela de arte — aprendió observando y preguntando a los actores académicos. Comenzó en la radio en 1943 con solo 15 años y en 1945 debutó en el teatro en Santiago de Cuba con Don Juan Tenorio. En 1952 dio el salto a la televisión y en 1960 debutó en el cine. A lo largo de su carrera interpretó 18 campesinos distintos, siendo su papel en La muerte de un burócrata (1966) de Tomás Gutiérrez Alea uno de los más recordados. Donde vivió su mayor alegría como actor fue en El brigadista (1977), porque allí debutó su hijo Patricio Wood, compartiendo escena padre e hijo. Fue el patriarca de una verdadera dinastía actoral cubana — su esposa Yolanda Pujols, su hijo Patricio y su nieto Gabriel Wood son también actores reconocidos. Compartió 59 años de vida con Yolanda, quien falleció en 2015. Falleció el 1 de junio de 2019 a los 90 años en La Habana.",
+    awards: [
+      'Premio ACTUAR por la Obra de la Vida — Agencia Artística ACTUAR (2016)',
+      'Premio Nacional de Televisión por la Obra de la Vida — ICRT (2018)',
+      'Título de Héroe del Trabajo de la República de Cuba',
+    ],
   },
   {
     id: 'samuel-claxton',
