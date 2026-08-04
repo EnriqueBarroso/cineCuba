@@ -1007,9 +1007,18 @@ export const actors: Actor[] = [
   {
     id: 'raul-pomares',
     name: 'Raúl Pomares',
+    birthYear: 1934,
+    birthPlace: 'Omaja, Las Tunas, Cuba',
+    deathYear: 2015,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/raul-pomares.jpg',
+    biography: "Raúl Ramón Pomares Bory (17 de septiembre de 1934 — 19 de enero de 2015) fue una de las figuras más queridas y versátiles del cine, la televisión y el teatro cubano. Comenzó su carrera artística en 1956 en el Teatro Universitario de Santiago de Cuba y tras el triunfo de la Revolución integró el Conjunto Dramático de Oriente. Debutó en el cine en 1969 con La primera carga al machete de Manuel Octavio Gómez y en más de treinta películas dejó personajes memorables, siempre reconocidos por la crítica y el público. Era un actor de amplio espectro con especial aptitud para la comedia — su trabajo con Juan Carlos Tabío en Plaff o demasiado miedo a la vida es uno de los más celebrados. También fue muy recordado en Retrato de Teresa y Un hombre de éxito. Su presencia en la televisión cubana fue igualmente enorme, con participación en decenas de telenovelas y series. Fue además profesor de actuación en la Escuela Internacional de Cine y Televisión de San Antonio de los Baños y en la Escuela de Instructores de Arte. La UNEAC le otorgó el Premio Caracol por la Obra de la Vida poco antes de su fallecimiento.",
+    awards: [
+      'Distinción por la Cultura Nacional — Cuba',
+      'Premio Nacional de Teatro — Cuba',
+      'Artista de Mérito — Instituto Cubano de Radio y Televisión (ICRT)',
+      'Premio Caracol por la Obra de la Vida — UNEAC (2014)',
+    ],
   },
   {
     id: 'reinaldo-miravalles',
