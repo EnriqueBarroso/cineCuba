@@ -215,9 +215,18 @@ export const actors: Actor[] = [
   {
     id: 'beatriz-valdes',
     name: 'Beatriz Valdés',
+    birthYear: 1963,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/beatriz-valdes.jpg',
+    biography: "Beatriz Valdés Fidalgo nació el 12 de mayo de 1963 en La Habana. A los 8 años comenzó su formación artística en el taller infantil de Teatro Estudio. Se graduó de la Escuela Nacional de Arte en 1983 y debutó ese mismo año en la televisión cubana. Se hizo popular en toda Cuba con la serie Algo más que soñar (1984), donde además interpretó el tema musical Ya se va aquella edad de Pablo Milanés. Su consagración en el cine llegó con La bella del Alhambra (1989) de Enrique Pineda Barnet, donde interpretó a Concha, la vedette que asciende desde los barrios humildes de La Habana hasta los escenarios más glamurosos de la República. La película ganó el Premio Goya y la convirtió en una de las actrices más reconocidas del cine cubano. A principios de los 90 emigró a Venezuela, donde desarrolló una carrera igualmente brillante en telenovelas y cine, consagrándose con el papel de Manuela Sáenz en el filme homónimo de Diego Rísquez (2000). También destacó en Azul y no tan rosa (2012), primera película venezolana en ganar el Goya a la Mejor Película Iberoamericana. Actualmente reside en Miami.",
+    awards: [
+      'Premio Goya a la Mejor Película Extranjera de Habla Hispana — por La bella del Alhambra (1990, compartido con el equipo)',
+      'Premio de Actuación — Festival de Cine de La Habana, por La bella del Alhambra',
+      'Premio Mara de Venezuela como Mejor Actriz — por Reina de corazones (1999)',
+      'Premio Mara de Venezuela como Primera Actriz — Caracas (2000)',
+      'Premio Gran Águila de Venezuela como Mejor Actriz de Cine — por Manuela Sáenz (2001)',
+    ],
   },
   {
     id: 'benicio-del-toro',
