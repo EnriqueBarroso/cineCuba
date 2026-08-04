@@ -835,9 +835,21 @@ export const actors: Actor[] = [
   {
     id: 'mario-balmaseda',
     name: 'Mario Balmaseda',
+    birthYear: 1941,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 2022,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/mario-balmaseda.jpg',
+    biography: "Mario Federico Balmaseda Maurisco (19 de enero de 1941 — 8 de octubre de 2022) fue el actor cubano más completo de su generación y el único en la historia de Cuba en obtener los tres máximos premios nacionales: Teatro, Televisión y Cine. Nació en La Habana en una familia cercana al espectáculo — su madre era declamadora y su prima era la vedette Digna Zapata — y desde niño estuvo vinculado al mundo del arte. Estudió Dramaturgia en el Teatro Nacional de Cuba y amplió su formación durante tres años en la República Democrática Alemana, donde se impregnó del rigor del teatro de Brecht. Debutó en el cine en 1970 con Los días del agua y a lo largo de más de tres décadas protagonizó algunos de los títulos más importantes del cine cubano: De cierta manera (1974), Se permuta (1984) y su papel más celebrado, Antonio Maceo en Baraguá (1986), considerado una de las mejores caracterizaciones de la historia del cine cubano. Para prepararlo, estudió durante meses biografías y fotografías del Titán de Bronce y entrenó equitación durante horas. Fue también profesor de actuación en la Escuela Nacional de Arte y referente para generaciones de actores cubanos. Falleció el 8 de octubre de 2022 en La Habana a los 81 años.",
+    awards: [
+      'Premio Nacional de Teatro — Cuba (2006)',
+      'Premio ACTUAR por la Obra de la Vida (2016)',
+      'Premio Nacional de Televisión — Cuba (2019)',
+      'Premio Nacional de Cine — Cuba (2021)',
+      'Orden Juan Marinello — Cuba',
+      'Medalla Alejo Carpentier — Consejo de Estado de Cuba',
+      'Distinción de Oro — Teatro Nacional de Bratislava, Checoslovaquia',
+    ],
   },
   {
     id: 'mario-limonta',
