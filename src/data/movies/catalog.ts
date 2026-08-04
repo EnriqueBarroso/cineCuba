@@ -1498,7 +1498,7 @@ const movies2000s: Movie[] = [
     ]
   },
   {
-    id: "che, el argentino",
+    id: "che-el-argentino",
     title: "Che, el argentino",
     year: 2008,
     director: "Steven Soderbergh",
@@ -1517,7 +1517,7 @@ const movies2000s: Movie[] = [
     ]
   },
     {
-    id: "che, la guerrilla",
+    id: "che-la-guerrilla",
     title: "Che, la guerrilla",
     year: 2008,
     director: "Steven Soderbergh",

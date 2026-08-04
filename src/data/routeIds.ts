@@ -109,6 +109,8 @@ export const movieIds: string[] = [
   "habanastation",
   "sergio-y-serguei",
   "inocencia",
+  "che-el-argentino",
+  "che-la-guerrilla",
 ];
 
 export const directorIds: string[] = [
