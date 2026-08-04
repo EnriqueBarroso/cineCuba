@@ -145,9 +145,20 @@ export const actors: Actor[] = [
   {
     id: 'ana-de-armas',
     name: 'Ana de Armas',
+    birthYear: 1988,
+    birthPlace: 'Santa Cruz del Norte, La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/ana-de-armas.jpg',
+    biography: "Ana Celia de Armas Caso nació el 30 de abril de 1988 en Santa Cruz del Norte, La Habana. Con 14 años ingresó en la Escuela Nacional de Arte de Cuba y con solo 16 protagonizó su primera película, Una rosa de Francia (2006), rodada en Cuba junto a Jorge Perugorría. Ese papel le abrió las puertas de Madrid, donde se mudó a los 18 años y protagonizó la serie El internado durante cuatro temporadas. En 2014 dio el salto a Hollywood con una sola habitación compartida en Los Ángeles y sin hablar inglés — lo aprendió en dos años a base de audiciones y determinación. La consagración internacional llegó con Blade Runner 2049 (2017) y se consolidó con Puñales por la espalda (2019) de Rian Johnson. Su interpretación de Marilyn Monroe en Blonde (2022) le ganó nominaciones al Oscar, BAFTA, Globos de Oro y SAG Awards. Ha protagonizado también Sin tiempo para morir (2021) en la saga James Bond. Es la actriz cubana con mayor proyección internacional de la historia.",
+    awards: [
+      'Nominación Oscar a la Mejor Actriz — por Blonde (2023)',
+      'Nominación BAFTA a la Mejor Actriz — por Blonde (2023)',
+      'Nominación Globo de Oro a la Mejor Actriz de Drama — por Blonde (2023)',
+      'Nominación SAG Award a la Mejor Actriz — por Blonde (2023)',
+      'Nominación Globo de Oro a la Mejor Actriz de Comedia — por Puñales por la espalda (2020)',
+      'Saturn Award a la Mejor Actriz — por Puñales por la espalda (2020)',
+      'Time 100 Next — Personas más influyentes del mundo (2021)',
+    ],
   },
   {
     id: 'ana-polvorosa',
