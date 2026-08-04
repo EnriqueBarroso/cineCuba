@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Award, Calendar, Film, MapPin, Heart } from "lucide-react";
+import { ArrowLeft, Award, Calendar, Film, MapPin, Heart, Layers } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { getDirectorById } from "@/data/directors";
 import { movies, Movie } from "@/data/movies";
+import { sagas, Saga } from "@/data/sagas";
+import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { SEO } from "@/components/SEO";
 
@@ -71,6 +73,38 @@ const DirectorFilmCard = ({
   </Link>
 );
 
+const DirectorSagaCard = ({ saga }: { saga: Saga }) => (
+  <Link to={`/saga/${saga.id}`} className="group block">
+    <article>
+      <div className="relative aspect-[2/3] overflow-hidden bg-secondary rounded-sm">
+        {saga.poster ? (
+          <img
+            src={saga.poster}
+            alt={`Poster de ${saga.title}`}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <SagaPosterPlaceholder title={saga.title} episodios={saga.episodios.length} />
+        )}
+        <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
+        <div className="absolute bottom-3 right-3">
+          <span className="flex items-center gap-1 text-xs px-2 py-1 bg-black/70 backdrop-blur-sm text-gold border border-gold/20 rounded font-medium">
+            <Layers className="w-3 h-3" />
+            {saga.episodios.length} ep.
+          </span>
+        </div>
+      </div>
+
+      <div className="mt-4 space-y-1">
+        <h3 className="font-serif text-lg font-medium text-foreground group-hover:text-gold transition-colors duration-300 line-clamp-1">
+          {saga.title}
+        </h3>
+        <p className="text-sm text-muted-foreground">{saga.anioInicio}–{saga.anioFin}</p>
+      </div>
+    </article>
+  </Link>
+);
+
 const DirectorDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -82,8 +116,12 @@ const DirectorDetail = () => {
 
   const director = id ? getDirectorById(id) : undefined;
   
-  const directorMovies = director 
+  const directorMovies = director
     ? movies.filter((m) => m.director.includes(director.name))
+    : [];
+
+  const directorSagas = director
+    ? sagas.filter((s) => s.director.includes(director.name))
     : [];
 
   if (!director) {
@@ -168,6 +206,18 @@ const DirectorDetail = () => {
                     <Film className="w-4 h-4" />
                     <span>{director.activeYears}</span>
                   </div>
+                  {directorSagas.length > 0 && (
+                    <>
+                      <span className="text-hairline">•</span>
+                      <div className="flex items-center gap-2">
+                        <Layers className="w-4 h-4" />
+                        <span>
+                          {directorSagas.length}{" "}
+                          {directorSagas.length === 1 ? "saga" : "sagas"} en catálogo
+                        </span>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
 
@@ -221,6 +271,27 @@ const DirectorDetail = () => {
                   isFavorite={isFavorite(movie.id)}
                   onToggleFavorite={() => toggleFavorite(movie.id)}
                 />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {directorSagas.length > 0 && (
+        <section className="py-16 lg:py-24 border-t border-hairline">
+          <div className="container mx-auto px-6 lg:px-12">
+            <div className="space-y-2 mb-12">
+              <span className="text-xs font-sans uppercase tracking-[0.2em] text-gold">
+                Series de cortometrajes
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl font-medium">
+                Sagas en CineCuba
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
+              {directorSagas.map((saga) => (
+                <DirectorSagaCard key={saga.id} saga={saga} />
               ))}
             </div>
           </div>

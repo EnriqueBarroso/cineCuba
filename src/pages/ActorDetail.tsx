@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Award, MapPin, Heart, Users } from "lucide-react";
+import { ArrowLeft, Award, MapPin, Heart, Users, Layers } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { getActorById, getActorByName } from "@/data/actors";
 import { movies, Movie } from "@/data/movies";
+import { sagas, Saga } from "@/data/sagas";
+import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 
 const ActorInitials = ({ name }: { name: string }) => {
@@ -72,6 +74,39 @@ const ActorFilmCard = ({
   </Link>
 );
 
+const ActorSagaCard = ({ saga, role }: { saga: Saga; role: string }) => (
+  <Link to={`/saga/${saga.id}`} className="group block">
+    <article>
+      <div className="relative aspect-[2/3] overflow-hidden bg-secondary rounded-sm">
+        {saga.poster ? (
+          <img
+            src={saga.poster}
+            alt={`Poster de ${saga.title}`}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <SagaPosterPlaceholder title={saga.title} episodios={saga.episodios.length} />
+        )}
+        <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
+        <div className="absolute bottom-3 right-3">
+          <span className="flex items-center gap-1 text-xs px-2 py-1 bg-black/70 backdrop-blur-sm text-gold border border-gold/20 rounded font-medium">
+            <Layers className="w-3 h-3" />
+            {saga.episodios.length} ep.
+          </span>
+        </div>
+      </div>
+
+      <div className="mt-4 space-y-1">
+        <h3 className="font-serif text-lg font-medium text-foreground group-hover:text-gold transition-colors duration-300 line-clamp-1">
+          {saga.title}
+        </h3>
+        <p className="text-sm text-muted-foreground">{saga.anioInicio}–{saga.anioFin}</p>
+        {role && <p className="text-xs text-gold/70 truncate">como {role}</p>}
+      </div>
+    </article>
+  </Link>
+);
+
 const ActorDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -98,6 +133,18 @@ const ActorDetail = () => {
           role: m.cast?.find((c) => getActorByName(c.name)?.id === actor.id)?.role ?? "",
         }))
         .sort((a, b) => a.movie.year - b.movie.year)
+    : [];
+
+  const actorSagas = actor
+    ? sagas
+        .filter((s) =>
+          s.cast?.some((c) => getActorByName(c.name)?.id === actor.id)
+        )
+        .map((s) => ({
+          saga: s,
+          role: s.cast?.find((c) => getActorByName(c.name)?.id === actor.id)?.role ?? "",
+        }))
+        .sort((a, b) => a.saga.anioInicio - b.saga.anioInicio)
     : [];
 
   if (!actor) {
@@ -203,6 +250,18 @@ const ActorDetail = () => {
                       {actorMovies.length === 1 ? "película" : "películas"} en catálogo
                     </span>
                   </div>
+                  {actorSagas.length > 0 && (
+                    <>
+                      <span className="text-hairline">•</span>
+                      <div className="flex items-center gap-2">
+                        <Layers className="w-4 h-4" />
+                        <span>
+                          {actorSagas.length}{" "}
+                          {actorSagas.length === 1 ? "saga" : "sagas"} en catálogo
+                        </span>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
 
@@ -259,6 +318,27 @@ const ActorDetail = () => {
                   isFavorite={isFavorite(movie.id)}
                   onToggleFavorite={() => toggleFavorite(movie.id)}
                 />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {actorSagas.length > 0 && (
+        <section className="py-16 lg:py-24 border-t border-hairline">
+          <div className="container mx-auto px-6 lg:px-12">
+            <div className="space-y-2 mb-12">
+              <span className="text-xs font-sans uppercase tracking-[0.2em] text-gold">
+                Series de cortometrajes
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl font-medium">
+                Sagas en CineCuba
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
+              {actorSagas.map(({ saga, role }) => (
+                <ActorSagaCard key={saga.id} saga={saga} role={role} />
               ))}
             </div>
           </div>
