@@ -410,9 +410,18 @@ export const actors: Actor[] = [
   {
     id: 'demian-bichir',
     name: 'Demián Bichir',
+    birthYear: 1963,
+    birthPlace: 'Ciudad de México, México',
     nationality: 'Mexicano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/demian-bichir.jpg',
+    biography: "Demián Bichir Nájera nació el 1 de agosto de 1963 en Ciudad de México, en el seno de una verdadera dinastía actoral — su padre Alejandro Bichir, su madre Maricruz Nájera y sus hermanos Odiseo y Bruno son también actores. A los 3 años ya aparecía en representaciones teatrales y a los 19 firmó un contrato con Televisa. Su carrera cinematográfica despegó con Rojo amanecer (1989) y se consolidó con Hasta morir (1994), que le valió su primer Ariel. En el catálogo de CineCuba aparece en el papel más importante de su carrera internacional: Ernesto Che Guevara en el díptico Che (2008) de Steven Soderbergh, junto a Benicio del Toro. La película, rodada en parte en Cuba y España, es una de las producciones más ambiciosas sobre la Revolución cubana. Su consagración en Hollywood llegó con Una vida mejor (2011) de Chris Weitz, donde interpretó a un inmigrante mexicano en Los Ángeles — la actuación le valió una nominación al Oscar al Mejor Actor, convirtiéndose en el segundo mexicano en conseguirlo tras Anthony Quinn. Ha trabajado también con Quentin Tarantino en Los odiosos ocho (2015) y con Oliver Stone en Salvajes (2012). En 2019 perdió trágicamente a su esposa, la actriz canadiense Stefanie Sherk.",
+    awards: [
+      'Premio Ariel al Mejor Actor — Academia Mexicana de Artes y Ciencias Cinematográficas, por Hasta morir (1995)',
+      'MTV Movie Award México — por Sin noticias de Dios (2002)',
+      'Premio al Mejor Actor — Festival de Cine de Huelva, por Hidalgo: La historia jamás contada (2010)',
+      'Nominación Oscar al Mejor Actor — por Una vida mejor (2012)',
+      'Premio Cuervo Tradicional — Festival Internacional de Cine de Morelia (2016)',
+    ],
   },
   {
     id: 'eduard-fernandez',
