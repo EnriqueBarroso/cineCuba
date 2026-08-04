@@ -187,7 +187,7 @@ const movies1960s: Movie[] = [
     duration: "97 min",
     genre: ["Drama"],
     synopsis: "Un intelectual burgués decide quedarse en Cuba tras la Revolución mientras su familia huye al exilio. Atrapado entre dos mundos, observa los cambios de la sociedad cubana mientras cuestiona su propia identidad y lugar en el nuevo orden.",
-    videoUrl: "https://archive.org/embde/memorias-del-subdesarrollo",
+    videoUrl: "https://archive.org/embed/memorias-del-subdesarrollo",
     trailerUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
       { name: "Festival de Karlovy Vary", year: 1968, category: "Premio FIPRESCI" },
@@ -814,7 +814,7 @@ const movies1990s: Movie[] = [
     duration: "95 min",
     genre: ["Drama", "Romance"],
     synopsis: "Un drama erótico y pasional donde Jorge Perugorría interpreta a Furio. Aunque es una producción europea, marcó la expansión internacional de los actores cubanos tras el éxito de Fresa y Chocolate.",
-    videoUrl: "https://archive.org/details/bambola_202601",
+    videoUrl: "https://archive.org/embed/bambola_202601",
     trailerUrl: "",
     awards: [],
     cast: [
