@@ -901,9 +901,17 @@ export const actors: Actor[] = [
   {
     id: 'nelson-villagra',
     name: 'Nelson Villagra',
+    birthYear: 1937,
+    birthPlace: 'El Carmen, Biobío, Chile',
+    deathYear: 2024,
     nationality: 'Chileno',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/nelson-villagra.jpg',
+    biography: "Eddie Nelson Villagra Garrido (9 de agosto de 1937 — 24 de enero de 2024) fue uno de los actores más importantes del cine latinoamericano del siglo XX. Estudió teatro en la Universidad de Chile y se consagró internacionalmente con El Chacal de Nahueltoro (1969) de Miguel Littín, considerada la mejor película chilena de la historia — en 2002 fue elegido Mejor Actor Chileno del Siglo XX por actores y directores en encuesta del diario La Tercera. Tras el golpe de Estado de Pinochet en 1973, fue forzado al exilio por su apoyo al gobierno de Allende. Después de pasar por Honduras y México, se radicó en Cuba durante más de diez años, uno de los períodos más fructíferos de su carrera. En La Habana trabajó con Humberto Solás en Cantata de Chile (1975) y con Tomás Gutiérrez Alea en La última cena (1976) y Cecilia (1981), ganando el Premio al Mejor Actor en el Festival de Biarritz por La última cena. En 1979, desde el exilio, protagonizó Prisioneros desaparecidos de Sergio Castilla, obteniendo el Premio al Mejor Actor en el Festival de San Sebastián, el primero de un actor chileno en ese certamen. Regresó a Chile tras la democracia y trabajó en cine y televisión hasta sus últimos años. Falleció el 24 de enero de 2024.",
+    awards: [
+      'Premio al Mejor Actor — Festival de Biarritz, por La última cena (1978)',
+      'Premio al Mejor Actor — Festival Internacional de San Sebastián, por Prisioneros desaparecidos (1979)',
+      'Mejor Actor Chileno del Siglo XX — Encuesta diario La Tercera (2002)',
+    ],
   },
   {
     id: 'nestor-jimenez',
