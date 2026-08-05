@@ -1,5 +1,5 @@
 import { Search, Menu, X, Coffee, Film, LogOut, Heart, Lightbulb, ShieldCheck } from "lucide-react";
-import { useState, FormEvent } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { AuthModal } from "@/components/AuthModal";
@@ -50,6 +50,15 @@ export const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [scrollOffset, setScrollOffset] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollOffset(Math.min(window.scrollY * 0.15, 8));
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const { user, loading, signOut } = useAuth();
   const navigate = useNavigate();
@@ -102,7 +111,13 @@ export const Navbar = () => {
           </Link>
 
           {/* ESCRITORIO: enlaces centrales */}
-          <div className="hidden md:flex items-center gap-1 bg-white/5 rounded-full px-2 py-1 border border-white/5">
+          <div
+            className="hidden md:flex items-center gap-1 bg-white/5 rounded-full px-2 py-1 border border-white/5"
+            style={{
+              transform: `translateY(-${scrollOffset}px)`,
+              transition: "transform 0.1s ease-out",
+            }}
+          >
             {navLinks.map((link) => (
               <Link
                 key={link.label}

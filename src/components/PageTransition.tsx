@@ -1,5 +1,5 @@
 import { motion, type Transition } from "framer-motion";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 
 interface PageTransitionProps {
   children: ReactNode;
@@ -15,7 +15,7 @@ const pageVariants = {
   animate: {
     opacity: 1,
     scale: 1,
-    filter: "blur(0px)",
+    filter: "none",
   },
   exit: {
     opacity: 0,
@@ -31,14 +31,25 @@ const pageTransition: Transition = {
 };
 
 export const PageTransition = ({ children }: PageTransitionProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+
   return (
     <motion.div
+      ref={ref}
       initial="initial"
       animate="animate"
       exit="exit"
       variants={pageVariants}
       transition={pageTransition}
       className="min-h-screen"
+      onAnimationComplete={(variant) => {
+        // Framer Motion resuelve filter: "none" como "blur(0px)" para poder interpolar,
+        // lo que deja un filter no-"none" en el DOM y rompe position:fixed en descendientes
+        // (cualquier filter distinto de "none" crea un containing block). Lo limpiamos a mano.
+        if (variant === "animate" && ref.current) {
+          ref.current.style.filter = "";
+        }
+      }}
     >
       {children}
     </motion.div>
