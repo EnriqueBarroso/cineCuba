@@ -563,9 +563,17 @@ export const actors: Actor[] = [
   {
     id: 'hector-medina',
     name: 'Héctor Medina',
+    birthYear: 1989,
+    birthPlace: 'Pinar del Río, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/hector-medina.jpg',
+    biography: "Héctor Medina Valdés nació el 10 de septiembre de 1989 en Pinar del Río. Se graduó de la Escuela Nacional de Arte en 2008 y desde el principio de su carrera formó parte de la prestigiosa compañía teatral El Público. Su debut cinematográfico en Boleto al paraíso (2010) le valió de inmediato el Premio Adolfo Llauradó al Mejor Actor — un inicio fulgurante para uno de los actores más talentosos de su generación. En 2015 dio el salto internacional con dos películas simultáneas: El rey de La Habana del director español Agustí Villaronga, nominada al Festival de San Sebastián, y Viva del irlandés Paddy Breathnach, donde interpretó a Jesús, un joven drag queen habanero que recibe a su padre boxeador tras años de ausencia. Viva fue seleccionada por Irlanda para competir al Oscar a la Mejor Película Extranjera y Héctor recibió críticas extraordinarias — The Hollywood Reporter la calificó de revelación. En 2016 participó en la serie Cuatro estaciones en La Habana de Netflix. Actualmente reside en Miami donde ha desarrollado también una exitosa carrera teatral y fue jurado del Miami International Film Festival.",
+    awards: [
+      'Premio Adolfo Llauradó al Mejor Actor — por Boleto al paraíso (2011)',
+      'Premio de la UNEAC al Mejor Actor — por Boleto al paraíso (2011)',
+      'Premio al Mejor Actor — Festival Iberoamericano de Cine y Video, por Boleto al paraíso',
+      'Candidatura irlandesa al Oscar a la Mejor Película Extranjera — por Viva (2016)',
+    ],
   },
   {
     id: 'hector-noas',
