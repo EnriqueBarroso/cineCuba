@@ -944,9 +944,15 @@ export const actors: Actor[] = [
   {
     id: 'miriel-cejas',
     name: 'Miriel Cejas',
+    birthYear: 1988,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/miriel-cejas.jpg',
+    biography: "Mirielys Cejas González nació el 7 de agosto de 1988 en La Habana. Desde los 7 u 8 años ya se había construido un personaje propio — una especie de 'viejita habladora' — que representaba ante los amigos y vecinos cuando su familia recibía visitas. Se graduó de la Escuela Nacional de Arte en 2007 y dos años después debutó en el cine con su primer papel protagonista en Lisanka (2010) de Daniel Díaz Torres, que le valió el Premio a la Mejor Actriz en el Festival Iberoamericano de Cine de Ceará, Brasil, y el Premio Adolfo Llauradó. Ese mismo año apareció en Boleto al paraíso, también premiada internacionalmente. Su trabajo más significativo fue en Conducta (2014) de Ernesto Daranas, una de las películas cubanas más premiadas de la última década — nominada a los Premios Goya, ganadora en el Festival de Málaga y con premios en festivales de todo el mundo. Desde 2015 reside en España, donde trabajó para RTVE en La princesa Paca. Además de actriz, imparte talleres de teatro con niños y colabora en una revista escribiendo artículos sobre psicología y cine.",
+    awards: [
+      'Premio a la Mejor Actriz — 20º Festival Iberoamericano de Cine de Ceará, Brasil, por Lisanka (2010)',
+      'Premio Adolfo Llauradó a la Mejor Actuación Femenina en Cine — por Lisanka y Boleto al paraíso (2010)',
+    ],
   },
   {
     id: 'mirta-ibarra',
