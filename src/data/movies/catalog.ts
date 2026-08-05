@@ -1479,7 +1479,8 @@ const movies2000s: Movie[] = [
     trailerUrl: "",
     cast: [
       { name: "Jorge Perugorría", role: "Bernardito" },
-      { name: "Enrique Molina", role: "Personaje" }
+      { name: "Enrique Molina", role: "Personaje" },
+      { name: "Tahimí Alvariño", role: "" }
     ],
     notes: "Una sátira sobre la ambición."
   },

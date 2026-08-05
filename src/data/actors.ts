@@ -1314,9 +1314,17 @@ export const actors: Actor[] = [
   {
     id: 'tahimi-alvarino',
     name: 'Tahimí Alvariño',
+    birthYear: 1969,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/tahimi-alvarino.jpg',
+    biography: "Tahimí Alvariño Veloz nació el 24 de febrero de 1969 en La Habana, en el seno de una familia íntimamente ligada al arte — su madre es la actriz Coralita Veloz y sus abuelos fueron pilares de la música campesina cubana. De niña quería ser médica, específicamente cirujana, hasta el día que vio sangre y se desmayó. Sin experiencia previa en grupos de teatro, aprobó las pruebas de ingreso al Instituto Superior de Arte, donde se graduó en Actuación. Desde entonces ha recorrido la escala dramatúrgica completa en el cine, el teatro y la televisión cubana e internacional: joven acaudalada, mambisa, burguesa, dama romántica, madre coraje. Su primer gran reconocimiento cinematográfico llegó con Lista de espera (2000) de Juan Carlos Tabío, por la que ganó el Premio a la Mejor Actuación Femenina en el Festival de Cine de Málaga. Ha trabajado también con Jorge Perugorría en El cuerno de la abundancia (2008). A partir de 2009 se radicó durante casi una década en Colombia junto al actor Bárbaro Marín, trabajando en producciones televisivas de ese país. De regreso a Cuba protagonizó la telenovela Entrega y ha continuado activa en cine, teatro y televisión. Es una de las actrices cubanas más queridas por el público de la isla.",
+    awards: [
+      'Mención Premio Caricato a la Mejor Actuación Femenina de Televisión — por la serie Punto 40',
+      'Premio a la Mejor Actuación Femenina — Festival de Cine de Málaga, España, por Lista de espera (2001)',
+      'Premio Caricato a la Mejor Actuación Femenina de Televisión — por el teleplay El ojo de la noche',
+      'Mención Premio a la Mejor Actuación Femenina — Festival de Cine y Video Joven, por El ojo de la noche',
+    ],
   },
   {
     id: 'thais-valdes',
