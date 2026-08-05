@@ -291,6 +291,7 @@ const movies1970s: Movie[] = [
     ],
     cast: [
       { name: "Salvador Wood", role: "Mario" },
+      { name: "Patricio Wood", role: "" },
       { name: "Jorge Villazón", role: "Eladio" },
       { name: "Idalia Anreus", role: "Clarita" },
       { name: "Raúl Pomares", role: "Ciro" }
