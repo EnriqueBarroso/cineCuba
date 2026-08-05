@@ -1385,9 +1385,17 @@ export const actors: Actor[] = [
   {
     id: 'tomas-cao',
     name: 'Tomás Cao',
+    birthYear: 1978,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/tomas-cao.jpg',
+    biography: "Tomás Cao nació el 24 de mayo de 1978 en La Habana. Debutó en el cine en 2005 con Habana Blues de Benito Zambrano, película en la que además colaboró musicalmente con tres canciones de su autoría. Ese doble perfil de actor y músico lo acompañó durante años, participando en los espectáculos Tempo Havana y Havana 50. En 2009 obtuvo el Premio de Actuación Masculina Adolfo Llauradó por su trabajo en el mediometraje Los aretes que le faltan a la Luna. Su carrera cinematográfica se consolidó con una serie de películas que lo convirtieron en uno de los actores más interesantes del cine cubano contemporáneo: Penumbras (2012), La película de Ana (2012), Conducta (2014) y Fátima o el parque de la fraternidad (2015). Su consagración llegó con Sergio y Serguéi (2017) de Ernesto Daranas, donde protagonizó el papel de Sergio, un profesor cubano y radioaficionado atrapado entre el final de la Unión Soviética y su amistad con un cosmonauta ruso. La película fue seleccionada como candidatura cubana al Oscar a la Mejor Película Extranjera en la edición 91, obtuvo un 86% en Rotten Tomatoes y le valió el Premio Caricato de la UNEAC a la Mejor Actuación Masculina en Cine. Reside actualmente en Estados Unidos.",
+    awards: [
+      'Premio de Actuación Masculina Adolfo Llauradó — por Los aretes que le faltan a la Luna (2009)',
+      'Nominación Premios Platino del Cine Iberoamericano — Mejor Actor, por La emboscada (2015)',
+      'Premio Caricato UNEAC — Mejor Actuación Masculina en Cine, por Sergio y Serguéi (2018)',
+      'Candidatura cubana al Oscar a la Mejor Película Extranjera — por Sergio y Serguéi (2019)',
+    ],
   },
   {
     id: 'valeria-marini',
