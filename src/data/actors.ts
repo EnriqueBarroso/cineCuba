@@ -1168,9 +1168,16 @@ export const actors: Actor[] = [
   {
     id: 'renny-arozarena',
     name: 'Renny Arozarena',
+    birthYear: 1971,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/renny-arozarena.jpg',
+    biography: "Renny Arozarena nació el 12 de noviembre de 1971 en La Habana. Comenzó sus estudios de Medicina, carrera que abandonó para dedicarse al arte, graduándose en la Escuela Nacional de Instructores de Arte. Desde niño actuó en teatro, debutando profesionalmente en obras como Andoba, Santa Camila de La Habana Vieja, Romeo y Julieta y Otelo. Formó parte de grupos teatrales emblemáticos como Hermanos Ruiz Aboy, Olga Alonso, Teatro de Arte Popular y Teatro Caribeño, y actualmente dirige la compañía teatral Arozarena y el taller de actuación, danza y canto Infinito. Su consagración en el cine llegó con El Benny (2006) de Jorge Luis Sánchez, donde encarnó al legendario cantante cubano Bartolomé Maximiliano Moré con tal maestría que The Hollywood Reporter escribió: 'Es Arozarena quien trae la leyenda a la vida en una actuación memorable y dinámica.' La película se presentó en el Festival de Locarno 2006 donde ganó el Premio Boccalino al Mejor Actor, y luego acumuló premios en Santo Domingo y Madrid Móstoles. Es una voz crítica sobre la discriminación racial en el cine cubano: 'Los personajes protagónicos de las películas y telenovelas cubanas tienden a ser blancos. Es vergonzoso en un país multirracial', declaró en 2019. Ha participado también en la película animada Chico & Rita (2010) de Fernando Trueba y Javier Mariscal, que ganó el Premio Goya a la Mejor Película de Animación.",
+    awards: [
+      'Premio Boccalino al Mejor Actor — Festival Internacional de Cine de Locarno, Suiza, por El Benny (2006)',
+      'Premio a la Mejor Actuación Masculina — Festival Internacional de Cine de Santo Domingo, por El Benny (2007)',
+      'Premio al Mejor Actor — Festival Internacional de Cine Madrid Móstoles, por El Benny (2007)',
+    ],
   },
   {
     id: 'roberto-perdomo',
