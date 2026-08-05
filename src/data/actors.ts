@@ -198,9 +198,15 @@ export const actors: Actor[] = [
   {
     id: 'armando-miguel-gomez',
     name: 'Armando Miguel Gómez',
+    birthYear: 1985,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/armando-miguel-gomez.jpg',
+    biography: "Armando Miguel Gómez Quiroga nació el 9 de noviembre de 1985 en La Habana. Graduado de mecánica automotriz, descubrió su vocación actoral después de cumplir el servicio militar, cuando un amigo actor le recomendó el grupo de teatro de aficionados Olga Alonso. Su debut escénico fue el papel de Orestes en Electra Garrigó — un comienzo exigente para alguien sin formación previa. De ahí saltó a la televisión con la telenovela Aquí estamos y la teleserie Adrenalina 360. En el cine su carrera despegó con Melaza (2012) de Carlos Lechuga y se consolidó con Conducta (2014) de Ernesto Daranas, donde interpretó al marginal del barrio. En 2015 fue doblemente nominado al Premio Caricato — el más importante del cine cubano — por La emboscada y El acompañante, donde dio vida a Horacio Romero, un boxeador cubano que da positivo en un control antidoping y acaba como vigilante de un paciente de VIH en el sanatorio Los Cocos. El crítico cubano Enrique Colina lo calificó de 'uno de los actores más versátiles y prometedores del cine cubano contemporáneo'. Actualmente reside en Paraguay.",
+    awards: [
+      'Premio Adolfo Llauradó de Actuación en Cine — por Conducta (2013)',
+      'Doble nominación al Premio Caricato — por La emboscada y El acompañante (2016)',
+    ],
   },
   {
     id: 'armando-valdes-freire',

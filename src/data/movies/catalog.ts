@@ -1951,7 +1951,8 @@ const movies2010s: Movie[] = [
     ],
     cast: [
       { name: "Armando Valdés Freire", role: "Chala" },
-      { name: "Alina Rodríguez", role: "Carmela" }
+      { name: "Alina Rodríguez", role: "Carmela" },
+      { name: "Armando Miguel Gómez", role: "El marginal" }
     ],
     notes: "La película cubana más taquillera de la historia en su país."
   },
