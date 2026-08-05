@@ -1445,9 +1445,17 @@ export const actors: Actor[] = [
   {
     id: 'yotuel-romero',
     name: 'Yotuel Romero',
+    birthYear: 1976,
+    birthPlace: 'Vedado, La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/yotuel-romero.jpg',
+    biography: "Yotuel Omar Romero Manzanares nació el 6 de octubre de 1976 en el Vedado, La Habana. Su nombre es una combinación de los pronombres yo, tú y él — sus padres no se ponían de acuerdo y decidieron fusionarlos. Desde niño practicó waterpolo y jiu-jitsu, pero la música lo atrapó a los 18 años cuando fundó el grupo de rap Amenaza. En 1997 ganaron el Primer Premio en el Festival de Rap Cubano de Alamar y poco después viajaron a París, donde junto al productor Niko Noki y el cantante Roldán González fundaron Orishas, el grupo que revolucionó la música urbana mezclando el rap con la tradición afrocubana. Sus álbumes A lo cubano (1999), Emigrante (2002) y El Kilo (2005) les consagraron globalmente — la revista Time los incluyó en 2003 entre las 10 bandas más importantes fuera de Estados Unidos. En 2021 se convirtió en un símbolo de resistencia con Patria y Vida, compuesta junto a Descemer Bueno, Gente de Zona y activistas cubanos, que ganó dos Grammy Latinos y se convirtió en himno de las protestas del 11J en Cuba. Como actor debutó en España con la serie Un paso adelante (2002), donde conoció a su esposa, la cantante Beatriz Luengo. En el cine cubano destaca su papel de Daniel en El acompañante (2015) de Pavel Giroud, un joven enfermo de VIH cuya historia choca con la de un boxeador en la Cuba de los 80.",
+    awards: [
+      'Primer Premio — Festival de Rap Cubano de Alamar (1997)',
+      'Grammy Latino al Mejor Álbum de Rap/Hip-Hop — con Orishas, por Emigrante (2002)',
+      'Grammy Latino a la Canción del Año — por Patria y Vida (2021)',
+      'Grammy Latino a la Mejor Canción Urbana — por Patria y Vida (2021)',
+    ],
   },
   {
     id: 'yuliet-cruz',
