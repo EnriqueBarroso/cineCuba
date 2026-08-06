@@ -111,6 +111,7 @@ export const movieIds: string[] = [
   "inocencia",
   "che-el-argentino",
   "che-la-guerrilla",
+  "cuba-libre-2015",
 ];
 
 export const directorIds: string[] = [

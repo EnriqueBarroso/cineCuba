@@ -49,7 +49,8 @@ import {
   posterOmega3,
   posterElAcompanante,
   posterRegresoAItaca,
-  posterViva
+  posterViva,
+  posterCubaLibre
 } from '@/assets/posters';
 
 // === IMPORTS HERO (Backdrops) ===
@@ -2101,6 +2102,35 @@ const movies2010s: Movie[] = [
       { name: "Luis Alberto García", role: "" },
       { name: "Renata Maikel Machín Blanco", role: "" },
       { name: "Laura Alemán", role: "" }
+    ]
+  },
+  {
+    id: "cuba-libre-2015",
+    title: "Cuba Libre",
+    year: 2015,
+    director: "Jorge Luis Sánchez",
+    poster: posterCubaLibre,
+    duration: "120 min",
+    genre: ["Drama", "Histórico", "Bélico"],
+    synopsis: "Cuba, 1898. Samuel y Simón son dos niños que, tras la derrota y salida de España al final de la Guerra de Independencia, viven intensamente el momento en que los norteamericanos se comportan como un ejército de ocupación. La historia se cuenta desde la inocencia de ambos personajes infantiles — Samuel, descendiente de jamaicanos, y Simón, hijo de un coronel mambí — en un pueblo ficticio reconstruido para la película, mostrando la convergencia de tres ejércitos (español, mambí y estadounidense) en un momento bisagra de la historia cubana.",
+    videoUrl: "https://www.youtube.com/embed/AaiTW7oSLdY",
+    awards: [
+      { name: "Premio Coral de Cartel", category: "Festival Internacional del Nuevo Cine Latinoamericano de La Habana", year: 2015 },
+      { name: "Premio del Círculo de Cultura de la UPEC", year: 2015 },
+      { name: "Premio Caracol de Edición", year: 2016 }
+    ],
+    cast: [
+      { name: "Christian Sánchez", role: "Samuel" },
+      { name: "Alejandro Guerrero", role: "Simón" },
+      { name: "Jo Adrian Haavind", role: "Coronel americano" },
+      { name: "Isabel Santos", role: "Doña Alfonsa" },
+      { name: "Manuel Porto", role: "Padre Gabriel" },
+      { name: "Adael Rosales", role: "José María" },
+      { name: "Georgina Almanza", role: "Ma'Julia" },
+      { name: "Serafín García", role: "General español" },
+      { name: "Wilfredo Candebat", role: "Carburo (el jamaicano)" },
+      { name: "Otto Bucholz", role: "Lucilo" },
+      { name: "Malú Tarrau", role: "Fela" }
     ]
   },
 ];
