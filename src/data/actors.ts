@@ -366,9 +366,21 @@ export const actors: Actor[] = [
   {
     id: 'coralia-veloz',
     name: 'Coralia Veloz',
+    birthYear: 1949,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/coralia-veloz.jpg',
+    biography:
+      'Coralia Veloz Fernández, conocida cariñosamente como Coralita, nació el 4 de noviembre de 1949 en La Habana en el seno de una familia artística de excepción — hija de los célebres actores y cantantes Ramón Veloz y Coralia Fernández, y madre de las también actrices Tahimí Alvariño y María Karla Rivero. Comenzó a actuar a los siete años en comerciales y una telenovela cubana, sin ninguna formación académica — su escuela fue la vida misma y el arte que respiró desde la cuna. Ha brillado durante más de seis décadas en todos los medios: televisión, radio, teatro y cine. En la televisión cubana es una de las figuras más queridas y reconocibles, con una presencia ininterrumpida en seriales, novelas y teleteatros desde los años 60. En el cine trabajó con Tomás Gutiérrez Alea en Hasta cierto punto (1983) y con Fernando Pérez en La vida es silbar (1998) y Kleines Tropicana (1997). En el teatro destacó en Teatro Estudio junto a figuras legendarias. Su voz inconfundible también la llevó a protagonizar decenas de novelas y obras de la literatura universal en la radio cubana. Premio Nacional de Radio y Televisión Cubana en 2020, es reconocida como una de las grandes actrices cubanas de todos los tiempos.',
+    awards: [
+      'Premio a la Mejor Actriz de Reparto — UNEAC, por Reina y Rey (1995)',
+      'Premio a la Mejor Actuación Femenina — UNEAC, por Hacerse el sueco (2000)',
+      'Premio Caricato — UNEAC, por Las razones oscuras (2001)',
+      'Sello 80 Aniversario de la Radio Cubana',
+      'Medalla por el Servicio Distinguido — Cuba',
+      'Distinción por la Cultura Cubana — Cuba',
+      'Premio Nacional de Radio y Televisión Cubana (2020)',
+    ],
   },
   {
     id: 'cuca-escribano',
