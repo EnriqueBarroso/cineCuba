@@ -302,9 +302,17 @@ export const actors: Actor[] = [
   {
     id: 'carlos-enrique-almirante',
     name: 'Carlos Enrique Almirante',
+    birthYear: 1983,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/carlos-enrique-almirante.jpg',
+    biography:
+      'Carlos Enrique Almirante Herrera nació el 2 de abril de 1983 en La Habana, hijo del reconocido actor cubano Enrique Almirante (1930-2007), Premio Nacional de Televisión. Desde niño acompañaba a su padre a las filmaciones y fue precisamente en uno de esos rodajes donde le propusieron un pequeño papel en la serie El dragón mambí — tenía solo 10 años, aceptó sin dudarlo y en ese momento supo que quería ser actor. Se graduó en la Escuela Nacional de Arte en 2004 y ha desarrollado una extensa carrera en cine, teatro y televisión que supera los treinta largometrajes. En teatro ha trabajado con los grupos más importantes de La Habana — Teatro de la Luna, El Público, Hubert de Blanck — en obras como La Celestina, El cartero de Neruda y Morir del cuento. En el cine ha trabajado con directores como Fernando Pérez, Daniel Díaz Torres y Gerardo Chijona. Su mayor proyección internacional llegó con la serie de Netflix Cuatro estaciones en La Habana, ganadora del Premio Platino al Mejor Reparto, y con Fátima o el Parque de la Fraternidad (2015), su personaje más arriesgado — una persona transgénero — que le valió una nominación al Premio Platino. Ha ganado el Premio del Público en el Festival de Cine de Miami por Comandante Fritz, donde interpretó a Fidel Castro, y ha expandido su carrera internacional con películas en inglés para Amazon Prime.',
+    awards: [
+      'Premio Platino al Mejor Reparto — por Cuatro estaciones en La Habana (2017, compartido con el elenco)',
+      'Nominación Premio Platino al Mejor Actor — por Fátima o el Parque de la Fraternidad',
+      'Premio del Público — Festival Internacional de Cine de Miami, por Comandante Fritz',
+    ],
   },
   {
     id: 'carlos-ever-fonseca',
