@@ -468,6 +468,33 @@ const movies1970s: Movie[] = [
     ],
     notes: "Guion de Onelio Jorge Cardoso y Manuel Herrera, inspirado en la obra teatral 'San Cleto' de Julio Medina y el Grupo Teatro Escambray. Producción ICAIC en 35 mm."
   },
+  {
+    id: "maluala",
+    title: "Maluala",
+    year: 1979,
+    director: "Sergio Giral",
+    poster: "",
+    duration: "95 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "En la época colonial, los negros esclavos que huían —cimarrones— fundaban comunidades conocidas como palenques. Maluala fue el principal palenque de la región oriental de Cuba. Ante la imposibilidad de vencer a los sublevados, los representantes de la metrópoli optan por pactar y sembrar la división entre los rebeldes. Al comprender que han sido engañados, los cimarrones tienden una emboscada al Ejército Libertador.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "I Festival Internacional del Nuevo Cine Latinoamericano, La Habana", year: 1979, category: "Gran Coral a Mejor Película (ex-aequo)" },
+      { name: "Festival de Karlovy Vary", year: 1980, category: "Premio C.I.D.A.L.C." },
+      { name: "UNEAC", year: 1979, category: "Premio de Edición" }
+    ],
+    cast: [
+      { name: "Samuel Claxton", role: "Gallo" },
+      { name: "Miguel Gutiérrez", role: "Coba" },
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Jorge Losada", role: "" },
+      { name: "Miguel Navarro", role: "" },
+      { name: "Hilda Oates", role: "" },
+      { name: "Raúl Pomares", role: "" }
+    ],
+    notes: "Guion de Sergio Giral y Jorge Sotolongo. Tercera y última entrega de la trilogía de Sergio Giral sobre la esclavitud en Cuba, precedida por 'El otro Francisco' (1974) y 'Rancheador' (1976). Producción ICAIC."
+  },
 ];
 
 // ══════════════════════════════════════

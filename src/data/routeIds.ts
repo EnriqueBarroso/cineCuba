@@ -18,6 +18,7 @@ export const movieIds: string[] = [
   "la-ultima-cena",
   "retrato-de-teresa",
   "no-hay-sabado-sin-sol",
+  "maluala",
   "sobrevivientes",
   "el-brigadista",
   "elpidio-valdes-film",
