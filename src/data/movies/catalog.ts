@@ -495,6 +495,26 @@ const movies1970s: Movie[] = [
     ],
     notes: "Guion de Sergio Giral y Jorge Sotolongo. Tercera y última entrega de la trilogía de Sergio Giral sobre la esclavitud en Cuba, precedida por 'El otro Francisco' (1974) y 'Rancheador' (1976). Producción ICAIC."
   },
+  {
+    id: "patty-candela",
+    title: "Patty Candela",
+    year: 1976,
+    director: "Rogelio París",
+    poster: "",
+    duration: "91 min",
+    genre: ["Drama"],
+    synopsis: "Basada en hechos reales: reconstruye una fallida operación de magnicidio contra Fidel y Raúl Castro, abortada por la Seguridad del Estado cubana en 1962. Es uno de los primeros títulos del llamado 'cine de espionaje' del ICAIC, junto con obras posteriores del mismo director como Kangamba (2008).",
+    videoUrl: "",
+    trailerUrl: "",
+    cast: [
+      { name: "Rogelio Blain", role: "" },
+      { name: "Noel García", role: "" },
+      { name: "Carlos Gili", role: "" },
+      { name: "Raúl Pomares", role: "" },
+      { name: "Luis Alberto Ramírez", role: "" }
+    ],
+    notes: "También referenciada como 'Operación Patty Candela'. Producción ICAIC."
+  },
 ];
 
 // ══════════════════════════════════════
