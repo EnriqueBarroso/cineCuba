@@ -515,6 +515,34 @@ const movies1970s: Movie[] = [
     ],
     notes: "También referenciada como 'Operación Patty Candela'. Producción ICAIC."
   },
+  {
+    id: "rancheador",
+    title: "Rancheador",
+    year: 1976,
+    director: "Sergio Giral",
+    poster: "",
+    duration: "95 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "El rancheador Francisco Estévez era un mercenario al servicio de los esclavistas para capturar a los negros esclavos en fuga y devolverlos a sus amos. No se detiene ante nada y reprime incluso a los campesinos blancos; su meta es Melchora, la incapturable líder de los negros fugados.",
+    videoUrl: "https://www.youtube.com/embed/dOvR6XDEfSo",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival Internacional de Cine de Jamaica", year: 1977, category: "Mejor Director y Mejor Filme de Ficción" },
+      { name: "Festival Internacional de Cine de Panamá", year: 1977, category: "Mejor Actor de Reparto (Adolfo Llauradó) y Premio Derechos Humanos" },
+      { name: "Festival de Checoslovaquia", year: 1978, category: "Mención especial" },
+      { name: "Festival de Tashkent", year: 1978, category: "Distinción del Comité Organizador" }
+    ],
+    cast: [
+      { name: "Reinaldo Miravalles", role: "" },
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Samuel Claxton", role: "" },
+      { name: "Omar Valdés", role: "" },
+      { name: "Salvador Wood", role: "" },
+      { name: "Carlos Bermúdez", role: "" },
+      { name: "Adela Legrá", role: "" }
+    ],
+    notes: "Guion de Sergio Giral y Jorge Sotolongo, basado en el 'Diario del Rancheador' de Cirilo Villaverde. Segunda entrega de la trilogía de Sergio Giral sobre la esclavitud en Cuba, entre 'El otro Francisco' (1974) y 'Maluala' (1979). Producción ICAIC."
+  },
 ];
 
 // ══════════════════════════════════════

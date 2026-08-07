@@ -20,6 +20,7 @@ export const movieIds: string[] = [
   "no-hay-sabado-sin-sol",
   "maluala",
   "patty-candela",
+  "rancheador",
   "sobrevivientes",
   "el-brigadista",
   "elpidio-valdes-film",
