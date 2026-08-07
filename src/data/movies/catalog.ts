@@ -86,7 +86,14 @@ const movies1960s: Movie[] = [
       { name: "Enrique Santiesteban", role: "Hipólito" },
       { name: "Reinaldo Miravalles", role: "Óscar" },
       { name: "René Sánchez", role: "Padre Cirilo" },
-      { name: "Pilín Vallejo", role: "La viuda" }
+      { name: "Pilín Vallejo", role: "La viuda" },
+      { name: "Idalberto Delgado", role: "" },
+      { name: "Ana Viña", role: "" },
+      { name: "Manuel Pereiro", role: "" },
+      { name: "Max Beltán", role: "" },
+      { name: "María Pardo", role: "" },
+      { name: "Raúl Xiqués", role: "" },
+      { name: "Gilda Hernández", role: "" }
     ]
   },
   {
@@ -108,6 +115,13 @@ const movies1960s: Movie[] = [
     cast: [
       { name: 'Sergio Corrieri', role: 'Alberto' },
       { name: 'Salvador Wood', role: 'Campesino' },
+      { name: 'Alberto Morgan', role: '' },
+      { name: 'Zilia Rodríguez', role: '' },
+      { name: 'Fausto Mirabal', role: '' },
+      { name: 'Roberto García York', role: '' },
+      { name: 'María de las Mercedes Díez', role: '' },
+      { name: 'Bárbara Domínguez', role: '' },
+      { name: 'Raquel Revuelta', role: 'Voz de Cuba (narradora)' },
     ],
   },
   {
@@ -129,7 +143,11 @@ const movies1960s: Movie[] = [
       { name: "Salvador Wood", role: "El sobrino" },
       { name: "Silvia Planas", role: "La tía" },
       { name: "Manuel Estanillo", role: "El burócrata" },
-      { name: "Gaspar de Santelices", role: "El enterrador" }
+      { name: "Gaspar de Santelices", role: "El enterrador" },
+      { name: "Pedro Pablo Astorga", role: "" },
+      { name: "Carlos Gargallo", role: "" },
+      { name: "Alicia Bustamante", role: "" },
+      { name: "Carlos Ruiz de la Tejera", role: "" }
     ],
     notes: "Incluye homenajes visuales a Laurel y Hardy, Buñuel y otros maestros del cine."
   },
@@ -150,7 +168,9 @@ const movies1960s: Movie[] = [
     cast: [
       { name: "Julio Martínez", role: "Juan Quin Quín" },
       { name: "Erdwin Fernández", role: "Jachero" },
-      { name: "Adelaida Raymat", role: "Teresa" }
+      { name: "Adelaida Raymat", role: "Teresa" },
+      { name: "Agustín Campos", role: "" },
+      { name: "Blanca Contreras", role: "" }
     ],
     notes: "Una de las películas cubanas más populares y divertidas de la década."
   },
@@ -175,7 +195,12 @@ const movies1960s: Movie[] = [
       { name: "Adela Legrá", role: "Lucía (1960)" },
       { name: "Eduardo Moure", role: "Rafael" },
       { name: "Ramón Brito", role: "Aldo" },
-      { name: "Adolfo Llauradó", role: "Tomás" }
+      { name: "Adolfo Llauradó", role: "Tomás" },
+      { name: "Idalia Anreus", role: "" },
+      { name: "Silvia Planas", role: "" },
+      { name: "Flora Lauten", role: "" },
+      { name: "Rogelio Blain", role: "" },
+      { name: "Teté Vergara", role: "" }
     ],
     notes: "Considerada una de las obras maestras del cine latinoamericano."
   },
@@ -198,7 +223,10 @@ const movies1960s: Movie[] = [
       { name: "Sergio Corrieri", role: "Sergio" },
       { name: "Daisy Granados", role: "Elena" },
       { name: "Eslinda Núñez", role: "Noemí" },
-      { name: "Omar Valdés", role: "Pablo" }
+      { name: "Omar Valdés", role: "Pablo" },
+      { name: "Beatriz Ponchova", role: "" },
+      { name: "Gilda Hernández", role: "" },
+      { name: "Yolanda Farr", role: "" }
     ],
     notes: "Basada en la novela de Edmundo Desnoes. Considerada una de las obras maestras del cine latinoamericano.",
     backdrop: heroMemorias,
@@ -227,7 +255,14 @@ const movies1970s: Movie[] = [
     cast: [
       { name: "Sergio Corrieri", role: "Alberto Delgado" },
       { name: "Reinaldo Miravalles", role: "Maro" },
-      { name: "Nelson Villagra", role: "El capitán" }
+      { name: "Nelson Villagra", role: "El capitán" },
+      { name: "Mario Balmaseda", role: "" },
+      { name: "Rigoberto Águila", role: "" },
+      { name: "Raúl Eguren", role: "" },
+      { name: "Rogelio Blaín", role: "" },
+      { name: "Miguel Benavides", role: "" },
+      { name: "Iván Colas", role: "" },
+      { name: "Josefina Enríquez", role: "" }
     ],
     notes: "Una de las películas cubanas más emblemáticas sobre la lucha contra bandidos."
   },
@@ -249,7 +284,9 @@ const movies1970s: Movie[] = [
       { name: "Yolanda Cuéllar", role: "Yolanda" },
       { name: "Mario Balmaseda", role: "Mario" },
       { name: "Mario Limonta", role: "Humberto" },
-      { name: "Isaura Mendoza", role: "Personaje" }
+      { name: "Isaura Mendoza", role: "Personaje" },
+      { name: "Bobby Carcasés", role: "" },
+      { name: "Sarita Reyes", role: "" }
     ],
     notes: "Primera y única película de ficción de Sara Gómez, la primera directora afrocubana."
   },
@@ -272,7 +309,13 @@ const movies1970s: Movie[] = [
       { name: "Nelson Villagra", role: "El Conde" },
       { name: "Silvano Rey", role: "Sebastián" },
       { name: "Luis Alberto García", role: "Antonio" },
-      { name: "José Antonio Rodríguez", role: "Don Manuel" }
+      { name: "José Antonio Rodríguez", role: "Don Manuel" },
+      { name: "Mario Balmaseda", role: "" },
+      { name: "Tito Junco", role: "" },
+      { name: "Mirta Ibarra", role: "" },
+      { name: "Idelfonso Tamayo", role: "" },
+      { name: "Andrés Cortina", role: "" },
+      { name: "Elio Mesa", role: "" }
     ],
     notes: "Alegoría poderosa sobre la esclavitud y la hipocresía religiosa en la Cuba colonial."
   },
@@ -359,7 +402,14 @@ const movies1970s: Movie[] = [
       { name: "Daisy Granados", role: "Teresa" },
       { name: "Adolfo Llauradó", role: "Ramón" },
       { name: "Alina Sánchez", role: "Personaje" },
-      { name: "Raúl Pomares", role: "Personaje" }
+      { name: "Raúl Pomares", role: "Personaje" },
+      { name: "Miguel Benavides", role: "" },
+      { name: "Samuel Claxton", role: "" },
+      { name: "Elsa Gay", role: "" },
+      { name: "Eloísa Álvarez Guedes", role: "" },
+      { name: "Alejandro Lugo", role: "" },
+      { name: "Mario Limonta", role: "" },
+      { name: "Germán Pinelli", role: "" }
     ],
     notes: "Película emblemática del feminismo cubano."
   },
@@ -853,6 +903,7 @@ const movies1990s: Movie[] = [
   duration: "1h 31m",
   synopsis: "Yuliet, una adolescente cubana, y Fabiola, una modelo mexicana, se cruzan en La Habana. El director Carlos Marcovich las sigue en un vibrante collage visual que explora sus vidas, sueños y las realidades contrastantes de sus mundos.",
   poster: posterJuliette,
+  videoUrl: "https://archive.org/embed/quien-diablos-es-juliette-marcovich-1997/Quien%20Diablos%20Es%20Juliette-Marcovich%201997.mp4",
   awards: [{ name: "Premio Ariel", year: 1998, category: "Mejor Ópera Prima" }],
   cast: [
     { name: "Yuliet Ortega", role: "Ella misma" },
