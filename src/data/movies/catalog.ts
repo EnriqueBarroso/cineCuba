@@ -1160,7 +1160,19 @@ const movies2000s: Movie[] = [
     awards: [],
     cast: [
       { name: "Gabino Diego", role: "José" },
-      { name: "Laura Ramos", role: "Actriz" }
+      { name: "Yamilé Blanco", role: "" },
+      { name: "Santiago Ramos", role: "" },
+      { name: "Manuel Manquiña", role: "" },
+      { name: "Javier Gurruchaga", role: "" },
+      { name: "Carlos Lozano", role: "" },
+      { name: "Enrique Almirante", role: "" },
+      { name: "Irela Bravo", role: "" },
+      { name: "Jorge Losada", role: "" },
+      { name: "Néstor Jiménez", role: "" },
+      { name: "Ulises Toirac", role: "" },
+      { name: "Carlos Treto", role: "" },
+      { name: "Zenia Marabal", role: "" },
+      { name: "Carlos Massola", role: "" }
     ]
   },
   {
@@ -1288,8 +1300,18 @@ const movies2000s: Movie[] = [
       { name: "Premios Goya", year: 2004, category: "Nominación Mejor Documental" }
     ],
     cast: [
-      { name: "Francisquito", role: "Él mismo" },
-      { name: "Amanda", role: "Ella misma" }
+      { name: "Francisquito Cardet", role: "Él mismo" },
+      { name: "Amanda Gautier", role: "Ella misma" },
+      { name: "Francisco Cardet", role: "" },
+      { name: "Norma Pérez", role: "" },
+      { name: "Waldo Morales", role: "" },
+      { name: "Iván Carbonell", role: "" },
+      { name: "Raquel Nodal", role: "" },
+      { name: "Heriberto Boroto", role: "" },
+      { name: "Juan Carlos Roque", role: "" },
+      { name: "Jorge Luis Roque", role: "" },
+      { name: "Julio Castro", role: "" },
+      { name: "Ernesto Díaz", role: "" }
     ],
     notes: "Sin diálogos, solo música e imágenes."
   },
