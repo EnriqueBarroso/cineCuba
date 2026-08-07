@@ -347,7 +347,12 @@ const movies1970s: Movie[] = [
       { name: "Patricio Wood", role: "" },
       { name: "Jorge Villazón", role: "Eladio" },
       { name: "Idalia Anreus", role: "Clarita" },
-      { name: "Raúl Pomares", role: "Ciro" }
+      { name: "Raúl Pomares", role: "Ciro" },
+      { name: "Mario Balmaseda", role: "" },
+      { name: "Luis Rielo", role: "" },
+      { name: "Javier González", role: "" },
+      { name: "Adela Legrá", role: "" },
+      { name: "Maribel Rodríguez", role: "" }
     ],
     notes: "Película emblemática sobre la Campaña de Alfabetización cubana."
   },
@@ -366,7 +371,15 @@ const movies1970s: Movie[] = [
       { name: "Festival de Gijón", year: 1979, category: "Mejor Película Infantil" },
       { name: "Festival de Moscú", year: 1981, category: "Tercer Premio" }
     ],
-    cast: [{ name: "Frank González", role: "Elpidio Valdés (voz)" }],
+    cast: [
+      { name: "Frank González", role: "Elpidio Valdés (voz)" },
+      { name: "Eddy Vidal", role: "" },
+      { name: "María Eugenia García", role: "" },
+      { name: "Irela Bravo", role: "" },
+      { name: "Juan Julio Alfonso", role: "" },
+      { name: "Teresita Rúa", role: "" },
+      { name: "Erdwin Fernández", role: "" }
+    ],
     backdrop: heroElpidio,
   },
   {
@@ -388,7 +401,9 @@ const movies1970s: Movie[] = [
       { name: "Reinaldo Miravalles", role: "Olegario" },
       { name: "Germán Pinelli", role: "Ramiro" },
       { name: "Ana Viña", role: "María" },
-      { name: "Vicente Revuelta", role: "Fernando" }
+      { name: "Vicente Revuelta", role: "Fernando" },
+      { name: "Leonor Borrero", role: "" },
+      { name: "Juanita Caldevilla", role: "" }
     ],
     notes: "Alegoría sobre la resistencia al cambio y la decadencia de la clase burguesa."
   },
@@ -449,7 +464,11 @@ const movies1980s: Movie[] = [
       { name: "Daisy Granados", role: "Cecilia Valdés" },
       { name: "Imanol Arias", role: "Leonardo Gamboa" },
       { name: "Nelson Villagra", role: "Don Cándido Gamboa" },
-      { name: "Raquel Revuelta", role: "Doña Rosa" }
+      { name: "Raquel Revuelta", role: "Doña Rosa" },
+      { name: "Eslinda Núñez", role: "" },
+      { name: "José Antonio Rodríguez", role: "" },
+      { name: "Gerardo Riverón", role: "" },
+      { name: "Omara Portuondo", role: "Mercedes (cameo musical)" }
     ],
     notes: "Basada en la novela clásica de Cirilo Villaverde."
   },
@@ -471,7 +490,11 @@ const movies1980s: Movie[] = [
       { name: "Luis Alberto García", role: "Carlos" },
       { name: "Thais Valdés", role: "Ofelia" },
       { name: "Daisy Granados", role: "La madre" },
-      { name: "César Évora", role: "El padre" }
+      { name: "César Évora", role: "El padre" },
+      { name: "Silvia Planas", role: "" },
+      { name: "Néstor Jiménez", role: "" },
+      { name: "Filiberto Romero", role: "" },
+      { name: "Carlos Gómez", role: "" }
     ],
     notes: "Una de las comedias cubanas más populares de la década."
   },
@@ -493,7 +516,11 @@ const movies1980s: Movie[] = [
       { name: "Rosita Fornés", role: "Gloria" },
       { name: "Isabel Santos", role: "Yolanda" },
       { name: "Luis Alberto García", role: "Eugenio" },
-      { name: "Mario Balmaseda", role: "Personaje" }
+      { name: "Mario Balmaseda", role: "Personaje" },
+      { name: "Rine Cruz", role: "" },
+      { name: "Mirta Ibarra", role: "" },
+      { name: "Manuel Porto", role: "" },
+      { name: "Maritza Rodríguez", role: "" }
     ],
     notes: "Una de las comedias cubanas más populares y queridas de los 80s."
   },
@@ -514,7 +541,10 @@ const movies1980s: Movie[] = [
     cast: [
       { name: "Samuel Claxton", role: "El entrenador" },
       { name: "Mario Balmaseda", role: "Personaje principal" },
-      { name: "Luis Alberto García", role: "Jugador" }
+      { name: "Luis Alberto García", role: "Jugador" },
+      { name: "Luis Alberto García (hijo)", role: "" },
+      { name: "Elvira Cervera", role: "" },
+      { name: "Enrique Molina", role: "" }
     ],
     notes: "Una de las películas de béisbol más queridas del cine cubano."
   },
@@ -534,7 +564,9 @@ const movies1980s: Movie[] = [
     ],
     cast: [
       { name: "Jorge Luis Álvarez", role: "David" },
-      { name: "María Isabel Díaz", role: "Ofelia" }
+      { name: "María Isabel Díaz", role: "Ofelia" },
+      { name: "Edith Massola", role: "Olga" },
+      { name: "Rolando Tarajano", role: "" }
     ]
   },
   {
@@ -554,7 +586,10 @@ const movies1980s: Movie[] = [
     cast: [
       { name: "Manuel Marín", role: "Pepito (voz)" },
       { name: "Frank González", role: "Drácula (voz)" },
-      { name: "Margarita Agüero", role: "Lola (voz)" }
+      { name: "Margarita Agüero", role: "Lola (voz)" },
+      { name: "Mirella Guillot", role: "" },
+      { name: "Carmen Solar", role: "" },
+      { name: "Juan Padrón", role: "voz (cameo del director)" }
     ],
     notes: "Coproducida con España y Alemania. Banda sonora de Arturo Sandoval.",
     backdrop: heroVampiros,
@@ -577,7 +612,12 @@ const movies1980s: Movie[] = [
       { name: "César Évora", role: "Javier" },
       { name: "Daisy Granados", role: "Julia" },
       { name: "Jorge Trinchet", role: "Darío" },
-      { name: "Raúl Pomares", role: "Jacinto" }
+      { name: "Raúl Pomares", role: "Jacinto" },
+      { name: "Mabel Roch", role: "" },
+      { name: "Miguel Navarro", role: "" },
+      { name: "Omar Valdés", role: "" },
+      { name: "Carlos Cruz", role: "" },
+      { name: "Isabel Moreno", role: "" }
     ],
     notes: "Una de las películas cubanas más críticas con el oportunismo político."
   },
