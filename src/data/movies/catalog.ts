@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -443,7 +443,7 @@ const movies1970s: Movie[] = [
     title: "No hay sábado sin sol",
     year: 1979,
     director: "Manuel Herrera",
-    poster: "",
+    poster: posterNoHaySabadoSinSol,
     duration: "92 min",
     genre: ["Comedia"],
     synopsis: "María, una joven trabajadora comunal, lucha contra los hábitos y creencias arraigados en familias campesinas para que abandonen sus bohíos y se trasladen a un nuevo pueblo construido por la Revolución. Aunque el conflicto de la película nació de una idea dramática, el propio Manuel Herrera la definió finalmente como comedia ligera.",
