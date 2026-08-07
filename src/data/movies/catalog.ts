@@ -504,7 +504,7 @@ const movies1970s: Movie[] = [
     duration: "91 min",
     genre: ["Drama"],
     synopsis: "Basada en hechos reales: reconstruye una fallida operación de magnicidio contra Fidel y Raúl Castro, abortada por la Seguridad del Estado cubana en 1962. Es uno de los primeros títulos del llamado 'cine de espionaje' del ICAIC, junto con obras posteriores del mismo director como Kangamba (2008).",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/zTgcMQK5kOs",
     trailerUrl: "",
     cast: [
       { name: "Rogelio Blain", role: "" },
