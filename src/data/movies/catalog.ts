@@ -639,7 +639,8 @@ const movies1980s: Movie[] = [
     cast: [
       { name: "Luis Alberto García", role: "Ernesto" },
       { name: "Isabel Santos", role: "Nereida" },
-      { name: "Susana Pérez", role: "Rosa" }
+      { name: "Susana Pérez", role: "Rosa" },
+      { name: "Miguel Gutiérrez", role: "" }
     ],
     notes: "Ópera prima de Fernando Pérez."
   },
@@ -661,7 +662,10 @@ const movies1980s: Movie[] = [
     cast: [
       { name: "Daisy Granados", role: "Concha" },
       { name: "Thais Valdés", role: "Clarita" },
-      { name: "Luis Alberto García", role: "José Ramón" }
+      { name: "Luis Alberto García", role: "José Ramón" },
+      { name: "Jorge Cao", role: "" },
+      { name: "Miriam Socarrás", role: "" },
+      { name: "Jacqueline Arenal", role: "" }
     ],
     notes: "Título onomatopéyico que representa el sonido de los huevos al caer."
   },
@@ -683,7 +687,11 @@ const movies1980s: Movie[] = [
     cast: [
       { name: "Beatriz Valdés", role: "Rachel" },
       { name: "César Évora", role: "Adolfo" },
-      { name: "Omar Valdés", role: "Federico" }
+      { name: "Omar Valdés", role: "Federico" },
+      { name: "Isabel Moreno", role: "" },
+      { name: "Jorge Martínez", role: "" },
+      { name: "Miguel Gutiérrez", role: "" },
+      { name: "Miguel Navarro", role: "" }
     ],
     notes: "Ganadora del primer Goya a Mejor Película Extranjera de Habla Hispana."
   },
@@ -703,7 +711,12 @@ const movies1980s: Movie[] = [
     trailerUrl: "",
     cast: [
       { name: "Rosita Fornés", role: "Actriz principal" },
-      { name: "Leonor Arocha", role: "Personaje" }
+      { name: "Leonor Arocha", role: "Personaje" },
+      { name: "Ernesto Tapia", role: "" },
+      { name: "Carlos Cruz", role: "" },
+      { name: "María Isabel Díaz", role: "" },
+      { name: "Francisco Gattorno", role: "" },
+      { name: "Miriam Socarrás", role: "" }
     ],
     notes: "Una de las películas cubanas más importantes sobre el mundo teatral."
   },
@@ -728,7 +741,11 @@ const movies1990s: Movie[] = [
     awards: [],
     cast: [
       { name: "Manuel Porto", role: "El Jefe" },
-      { name: "Patricio Wood", role: "Soldado" }
+      { name: "Patricio Wood", role: "Soldado" },
+      { name: "Omar Moynello", role: "" },
+      { name: "Enrique Molina", role: "" },
+      { name: "Salvador Wood", role: "" },
+      { name: "Nancy González", role: "" }
     ],
   },
   {
@@ -765,7 +782,11 @@ const movies1990s: Movie[] = [
     ],
     cast: [
       { name: "Alina Rodríguez", role: "María Antonia" },
-      { name: "Alexis Valdés", role: "Julián" }
+      { name: "Alexis Valdés", role: "Julián" },
+      { name: "Assenech Rodríguez", role: "" },
+      { name: "Elena Huerta", role: "" },
+      { name: "Tito Junco", role: "" },
+      { name: "Daisy Granados", role: "Nena Capitolio (aparición especial)" }
     ],
   },
   {
@@ -784,7 +805,13 @@ const movies1990s: Movie[] = [
     cast: [
       { name: "Isabel Santos", role: "Nancy" },
       { name: "Luis Alberto García", role: "Lombardi" },
-      { name: "Mirtha Ibarra", role: "Personaje" }
+      { name: "Mirtha Ibarra", role: "Personaje" },
+      { name: "Miguel Gutiérrez", role: "" },
+      { name: "Alicia Bustamante", role: "" },
+      { name: "Ernesto Tapia", role: "" },
+      { name: "Carlos Cruz", role: "" },
+      { name: "Rogelio Meneses", role: "" },
+      { name: "Silvia Planas", role: "" }
     ],
     notes: "Guion coescrito con Senel Paz."
   },
@@ -802,7 +829,10 @@ const movies1990s: Movie[] = [
     awards: [{ name: "Festival de Berlín", year: 1991, category: "Premio Caligari" }],
     cast: [
       { name: "Thais Valdés", role: "Alicia" },
-      { name: "Reinaldo Miravalles", role: "El Director" }
+      { name: "Reinaldo Miravalles", role: "El Director" },
+      { name: "Raúl Pomares", role: "" },
+      { name: "Jorge Martínez", role: "" },
+      { name: "Enrique Molina", role: "" }
     ],
   },
   {
@@ -824,7 +854,9 @@ const movies1990s: Movie[] = [
     cast: [
       { name: "Jorge Perugorría", role: "Diego" },
       { name: "Vladimir Cruz", role: "David" },
-      { name: "Mirtha Ibarra", role: "Nancy" }
+      { name: "Mirtha Ibarra", role: "Nancy" },
+      { name: "Joel Angelino", role: "Germán" },
+      { name: "Marilyn Solaya", role: "Vivian" }
     ],
     notes: "Primera película cubana nominada al Oscar.",
     backdrop: heroFresa,
@@ -865,7 +897,10 @@ const movies1990s: Movie[] = [
     videoUrl: 'https://archive.org/embed/madagascar_202601',
     cast: [
       { name: "Laura de la Uz", role: "Laura" },
-      { name: "Zaida Castellanos", role: "Laura madre" }
+      { name: "Zaida Castellanos", role: "Laura madre" },
+      { name: "Jorge Molina", role: "" },
+      { name: "Roberto Delgado", role: "" },
+      { name: "Nancy Rodríguez", role: "" }
     ],
     notes: "Retrato intimista del Período Especial."
   },
