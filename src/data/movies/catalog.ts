@@ -677,6 +677,7 @@ const movies1990s: Movie[] = [
     duration: "108 min",
     genre: ["Comedia", "Romance"],
     synopsis: "Nancy es una aspirante a actriz que sobrevive en La Habana del Período Especial. Cuando conoce a un extranjero que la confunde con una actriz famosa, decide seguir el juego.",
+    videoUrl: "https://archive.org/embed/adorables-mentiras-cubana_202608/Adorables%20Mentiras%20%20Cubana.mp4",
     awards: [
       { name: "Festival de La Habana", year: 1991, category: "Premio del Público" }
     ],
