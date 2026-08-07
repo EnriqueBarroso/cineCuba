@@ -438,6 +438,36 @@ const movies1970s: Movie[] = [
     ],
     notes: "Película emblemática del feminismo cubano."
   },
+  {
+    id: "no-hay-sabado-sin-sol",
+    title: "No hay sábado sin sol",
+    year: 1979,
+    director: "Manuel Herrera",
+    poster: "",
+    duration: "92 min",
+    genre: ["Comedia"],
+    synopsis: "María, una joven trabajadora comunal, lucha contra los hábitos y creencias arraigados en familias campesinas para que abandonen sus bohíos y se trasladen a un nuevo pueblo construido por la Revolución. Aunque el conflicto de la película nació de una idea dramática, el propio Manuel Herrera la definió finalmente como comedia ligera.",
+    videoUrl: "https://www.youtube.com/embed/kmHdkkBT6oM",
+    trailerUrl: "",
+    awards: [
+      { name: "Unión de Escritores y Artistas de Uzbekistán, VI Festival Internacional de Cine de Tashkent, URSS", year: 1980, category: "Premio" }
+    ],
+    cast: [
+      { name: "Eslinda Núñez", role: "María" },
+      { name: "Mario Balmaseda", role: "" },
+      { name: "Alejandro Lugo", role: "" },
+      { name: "Salvador Wood", role: "" },
+      { name: "René de la Cruz", role: "" },
+      { name: "Idalia Anreus", role: "" },
+      { name: "Julio Hernández", role: "" },
+      { name: "Humberto García Espinosa", role: "" },
+      { name: "Carmen Pallas", role: "" },
+      { name: "Yolanda Pujols", role: "" },
+      { name: "Elio Mesa", role: "" },
+      { name: "Jorge Losada", role: "" }
+    ],
+    notes: "Guion de Onelio Jorge Cardoso y Manuel Herrera, inspirado en la obra teatral 'San Cleto' de Julio Medina y el Grupo Teatro Escambray. Producción ICAIC en 35 mm."
+  },
 ];
 
 // ══════════════════════════════════════
