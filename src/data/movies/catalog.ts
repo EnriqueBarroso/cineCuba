@@ -1361,7 +1361,7 @@ const movies2000s: Movie[] = [
     duration: "100 min",
     genre: ["Comedia", "Romance"],
     synopsis: "Julio es un escritor exitoso que ve cómo su mundo se desmorona cuando su hija, su amante y su esposa coinciden en un enredo amoroso.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/perfecto-amor-equivocado",
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2004, category: "Premio de la Popularidad" }
