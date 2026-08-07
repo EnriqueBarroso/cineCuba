@@ -122,6 +122,10 @@ const movies1960s: Movie[] = [
       { name: 'María de las Mercedes Díez', role: '' },
       { name: 'Bárbara Domínguez', role: '' },
       { name: 'Raquel Revuelta', role: 'Voz de Cuba (narradora)' },
+      { name: 'Luz María Collazo', role: '' },
+      { name: 'José Gallardo', role: '' },
+      { name: 'Raúl García', role: '' },
+      { name: 'Jean Bouise', role: '' },
     ],
   },
   {
@@ -170,7 +174,8 @@ const movies1960s: Movie[] = [
       { name: "Erdwin Fernández", role: "Jachero" },
       { name: "Adelaida Raymat", role: "Teresa" },
       { name: "Agustín Campos", role: "" },
-      { name: "Blanca Contreras", role: "" }
+      { name: "Blanca Contreras", role: "" },
+      { name: "Enrique Santiesteban", role: "Der Feind" }
     ],
     notes: "Una de las películas cubanas más populares y divertidas de la década."
   },
@@ -226,7 +231,8 @@ const movies1960s: Movie[] = [
       { name: "Omar Valdés", role: "Pablo" },
       { name: "Beatriz Ponchova", role: "" },
       { name: "Gilda Hernández", role: "" },
-      { name: "Yolanda Farr", role: "" }
+      { name: "Yolanda Farr", role: "" },
+      { name: "René de la Cruz", role: "" }
     ],
     notes: "Basada en la novela de Edmundo Desnoes. Considerada una de las obras maestras del cine latinoamericano.",
     backdrop: heroMemorias,
@@ -262,7 +268,9 @@ const movies1970s: Movie[] = [
       { name: "Rogelio Blaín", role: "" },
       { name: "Miguel Benavides", role: "" },
       { name: "Iván Colas", role: "" },
-      { name: "Josefina Enríquez", role: "" }
+      { name: "Josefina Enríquez", role: "" },
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Raúl Pomares", role: "" }
     ],
     notes: "Una de las películas cubanas más emblemáticas sobre la lucha contra bandidos."
   },
@@ -315,7 +323,8 @@ const movies1970s: Movie[] = [
       { name: "Mirta Ibarra", role: "" },
       { name: "Idelfonso Tamayo", role: "" },
       { name: "Andrés Cortina", role: "" },
-      { name: "Elio Mesa", role: "" }
+      { name: "Elio Mesa", role: "" },
+      { name: "Samuel Claxton", role: "" }
     ],
     notes: "Alegoría poderosa sobre la esclavitud y la hipocresía religiosa en la Cuba colonial."
   },
@@ -409,7 +418,8 @@ const movies1970s: Movie[] = [
       { name: "Eloísa Álvarez Guedes", role: "" },
       { name: "Alejandro Lugo", role: "" },
       { name: "Mario Limonta", role: "" },
-      { name: "Germán Pinelli", role: "" }
+      { name: "Germán Pinelli", role: "" },
+      { name: "Idalia Anreus", role: "" }
     ],
     notes: "Película emblemática del feminismo cubano."
   },
