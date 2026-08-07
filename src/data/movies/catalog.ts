@@ -543,6 +543,33 @@ const movies1970s: Movie[] = [
     ],
     notes: "Guion de Sergio Giral y Jorge Sotolongo, basado en el 'Diario del Rancheador' de Cirilo Villaverde. Segunda entrega de la trilogía de Sergio Giral sobre la esclavitud en Cuba, entre 'El otro Francisco' (1974) y 'Maluala' (1979). Producción ICAIC."
   },
+  {
+    id: "mella",
+    title: "Mella",
+    year: 1975,
+    director: "Enrique Pineda Barnet",
+    poster: "",
+    duration: "110 min",
+    genre: ["Drama", "Histórico", "Documental"],
+    synopsis: "Filme histórico experimental, con elementos de documental. Un estudio del desarrollo conceptual del joven héroe Julio Antonio Mella, fundador del Partido Comunista de Cuba, desde el proceso de las Reformas Estudiantiles hasta su asesinato en México a los 25 años, en brazos de la fotógrafa italiana Tina Modotti.",
+    videoUrl: "https://www.youtube.com/embed/DfHyZQNhRQE",
+    trailerUrl: "",
+    awards: [
+      { name: "Selección Anual de la Crítica, La Habana", year: 1975, category: "Filme más significativo del año" },
+      { name: "Festival de Tashkent, URSS", year: 1976, category: "Premio del Comité de Lucha por la Paz y la Soberanía Nacional y Diploma de la Unión de Sindicatos" }
+    ],
+    cast: [
+      { name: "Sergio Corrieri", role: "" },
+      { name: "Ramón Brito", role: "" },
+      { name: "Norma Martínez", role: "" },
+      { name: "Armando Soler", role: "" },
+      { name: "Ángel Espasande", role: "" },
+      { name: "Alejandro Lugo", role: "" },
+      { name: "Omar Valdés", role: "" },
+      { name: "René de la Cruz", role: "" }
+    ],
+    notes: "Guion de Enrique Pineda Barnet, con la colaboración de Julio García Espinosa, Eduardo Rodríguez, Manuel Octavio Gómez y José Massip. Asistente de dirección: Daniel Díaz Torres. Según ENDAC, fue la primera película cubana en colores revelada e impresa en Cuba. Durante el rodaje falleció trágicamente el director de fotografía original, José Tabío. Producción ICAIC."
+  },
 ];
 
 // ══════════════════════════════════════
