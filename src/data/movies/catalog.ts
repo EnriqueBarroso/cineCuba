@@ -477,7 +477,7 @@ const movies1970s: Movie[] = [
     duration: "95 min",
     genre: ["Drama", "Histórico"],
     synopsis: "En la época colonial, los negros esclavos que huían —cimarrones— fundaban comunidades conocidas como palenques. Maluala fue el principal palenque de la región oriental de Cuba. Ante la imposibilidad de vencer a los sublevados, los representantes de la metrópoli optan por pactar y sembrar la división entre los rebeldes. Al comprender que han sido engañados, los cimarrones tienden una emboscada al Ejército Libertador.",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/v6vGqACEP8A",
     trailerUrl: "",
     awards: [
       { name: "I Festival Internacional del Nuevo Cine Latinoamericano, La Habana", year: 1979, category: "Gran Coral a Mejor Película (ex-aequo)" },
