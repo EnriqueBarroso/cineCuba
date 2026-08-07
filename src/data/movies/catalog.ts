@@ -763,7 +763,10 @@ const movies1990s: Movie[] = [
     videoUrl:"https://archive.org/embed/hello-hemingway",
     cast: [
       { name: "Laura de la Uz", role: "Larita" },
-      { name: "Raúl Paz", role: "Víctor" }
+      { name: "Raúl Paz", role: "Víctor" },
+      { name: "Enrique Molina", role: "Manolo" },
+      { name: "Marta del Río", role: "Doctora Martínez" },
+      { name: "Caridad Hernández", role: "" }
     ],
   },
   {
@@ -1111,7 +1114,9 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Vladimir Cruz", role: "Emilio" },
       { name: "Tahimí Alvariño", role: "Jacqueline" },
-      { name: "Jorge Perugorría", role: "Roldán" }
+      { name: "Jorge Perugorría", role: "Roldán" },
+      { name: "Alina Rodríguez", role: "" },
+      { name: "Saturnino García", role: "" }
     ],
     notes: "Una de las comedias cubanas más queridas del nuevo milenio."
   },
@@ -1132,7 +1137,13 @@ const movies2000s: Movie[] = [
     ],
     cast: [
       { name: "Javier Bardem", role: "Reinaldo Arenas" },
-      { name: "Olivier Martinez", role: "Lázaro Gómez" }
+      { name: "Olivier Martinez", role: "Lázaro Gómez" },
+      { name: "Sean Penn", role: "Cuco Sánchez" },
+      { name: "Michael Wincott", role: "" },
+      { name: "Olatz López Garmendia", role: "" },
+      { name: "Francisco Gattorno", role: "" },
+      { name: "Diego Luna", role: "" },
+      { name: "Najwa Nimri", role: "" }
     ]
   },
   {
@@ -1170,6 +1181,10 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Thais Valdés", role: "Carla" },
       { name: "Nacha Guevara", role: "La Administradora" },
+      { name: "Luis Manuel Iglesias", role: "" },
+      { name: "Raúl Eguren", role: "" },
+      { name: "Edith Massola", role: "" },
+      { name: "Raúl Pomares", role: "" }
     ],
   },
   {
@@ -1186,7 +1201,12 @@ const movies2000s: Movie[] = [
     awards: [
       { name: "Festival de La Habana", year: 2001, category: "Premio Coral al Mejor Cortometraje" }
     ],
-    cast: [{ name: "Enrique Molina", role: "Padre" }, { name: "Verónica Lynn", role: "Madre" }],
+    cast: [
+      { name: "Enrique Molina", role: "Padre" },
+      { name: "Verónica Lynn", role: "Madre" },
+      { name: "Elsa Camp", role: "" },
+      { name: "Yipsia Torres", role: "" }
+    ],
   },
   {
     id: "hacerse-el-sueco",
@@ -1203,6 +1223,9 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Enrique Molina", role: "Amancio" },
       { name: "Peter Lohmeyer", role: "Bjorn (El Sueco)" },
+      { name: "Mijail Mulkay", role: "" },
+      { name: "Coralia Veloz", role: "" },
+      { name: "Raúl Pomares", role: "" }
     ],
   },
   {
@@ -1223,6 +1246,8 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Jorge Perugorría", role: "Roberto" },
       { name: "Isabel Santos", role: "Pilar" },
+      { name: "Saturnino García", role: "" },
+      { name: "Mario Limonta", role: "" }
     ],
   },
   {
@@ -1240,6 +1265,10 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Mijail Mulkay", role: "Tomás" },
       { name: "Indira Valdés", role: "La novia" },
+      { name: "Tito Junco", role: "" },
+      { name: "Klara Badiola", role: "" },
+      { name: "Renny Arozarena", role: "" },
+      { name: "Raúl Pomares", role: "" }
     ],
   },
   {
