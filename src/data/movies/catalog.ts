@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -520,7 +520,7 @@ const movies1970s: Movie[] = [
     title: "Rancheador",
     year: 1976,
     director: "Sergio Giral",
-    poster: "",
+    poster: posterRancheador,
     duration: "95 min",
     genre: ["Drama", "Histórico"],
     synopsis: "El rancheador Francisco Estévez era un mercenario al servicio de los esclavistas para capturar a los negros esclavos en fuga y devolverlos a sus amos. No se detiene ante nada y reprime incluso a los campesinos blancos; su meta es Melchora, la incapturable líder de los negros fugados.",
