@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -473,7 +473,7 @@ const movies1970s: Movie[] = [
     title: "Maluala",
     year: 1979,
     director: "Sergio Giral",
-    poster: "",
+    poster: posterMaluala,
     duration: "95 min",
     genre: ["Drama", "Histórico"],
     synopsis: "En la época colonial, los negros esclavos que huían —cimarrones— fundaban comunidades conocidas como palenques. Maluala fue el principal palenque de la región oriental de Cuba. Ante la imposibilidad de vencer a los sublevados, los representantes de la metrópoli optan por pactar y sembrar la división entre los rebeldes. Al comprender que han sido engañados, los cimarrones tienden una emboscada al Ejército Libertador.",

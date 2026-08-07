@@ -16,6 +16,7 @@ export { default as posterDeCiertaManera } from './de-cierta-manera.jpg';
 export { default as posterUltimaCena } from './la-ultima-cena.jpg';
 export { default as posterRetratoTeresa } from './retrato-de-teresa.jpg';
 export { default as posterNoHaySabadoSinSol } from './no-hay-sabado-sin-sol.jpg';
+export { default as posterMaluala } from './maluala.jpg';
 export { default as posterSobrevivientes } from './sobrevivientes.jpg';
 export { default as posterBrigadista } from './el-brigadista.jpg';
 export { default as posterElpidioValdes } from './elpidio-valdes.jpg';
