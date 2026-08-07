@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -500,7 +500,7 @@ const movies1970s: Movie[] = [
     title: "Patty Candela",
     year: 1976,
     director: "Rogelio París",
-    poster: "",
+    poster: posterPattyCandela,
     duration: "91 min",
     genre: ["Drama"],
     synopsis: "Basada en hechos reales: reconstruye una fallida operación de magnicidio contra Fidel y Raúl Castro, abortada por la Seguridad del Estado cubana en 1962. Es uno de los primeros títulos del llamado 'cine de espionaje' del ICAIC, junto con obras posteriores del mismo director como Kangamba (2008).",
