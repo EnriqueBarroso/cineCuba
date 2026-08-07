@@ -1089,7 +1089,7 @@ const movies2000s: Movie[] = [
     duration: "133 min",
     genre: ["Drama", "Biopic"],
     synopsis: "Biografía del escritor cubano Reinaldo Arenas, desde su infancia en el campo, su participación en la Revolución y su posterior persecución por ser homosexual y escritor disidente.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/antes-de-que-anochezca-cuba-javier-bardem-divx/Antes%20De%20Que%20Anochezca%20-Cuba%20-%20Javier%20Bardem%20(Divx).mp4",
     trailerUrl: "https://www.youtube.com/embed/-yAfOGi8Jx4",
     awards: [
       { name: "Festival de Venecia", year: 2000, category: "Gran Premio del Jurado" },
