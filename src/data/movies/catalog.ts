@@ -1114,7 +1114,7 @@ const movies2000s: Movie[] = [
     duration: "84 min",
     genre: ["Documental"],
     synopsis: "Un retrato poético y silencioso de La Habana a través de las vidas cotidianas de sus habitantes. Sin diálogos, una sinfonía visual sobre la realidad cubana.",
-    videoUrl: "", 
+    videoUrl: "https://archive.org/embed/suite-havana/Suite%20Havana.mp4",
     trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     awards: [
       { name: "Festival de San Sebastián", year: 2003, category: "Premio FIPRESCI" },
