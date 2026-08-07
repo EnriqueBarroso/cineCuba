@@ -19,6 +19,7 @@ export { default as posterNoHaySabadoSinSol } from './no-hay-sabado-sin-sol.jpg'
 export { default as posterMaluala } from './maluala.jpg';
 export { default as posterPattyCandela } from './patty-candela.jpg';
 export { default as posterRancheador } from './rancheador.jpg';
+export { default as posterMella } from './mella.jpg';
 export { default as posterSobrevivientes } from './sobrevivientes.jpg';
 export { default as posterBrigadista } from './el-brigadista.jpg';
 export { default as posterElpidioValdes } from './elpidio-valdes.jpg';

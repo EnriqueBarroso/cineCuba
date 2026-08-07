@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -548,7 +548,7 @@ const movies1970s: Movie[] = [
     title: "Mella",
     year: 1975,
     director: "Enrique Pineda Barnet",
-    poster: "",
+    poster: posterMella,
     duration: "110 min",
     genre: ["Drama", "Histórico", "Documental"],
     synopsis: "Filme histórico experimental, con elementos de documental. Un estudio del desarrollo conceptual del joven héroe Julio Antonio Mella, fundador del Partido Comunista de Cuba, desde el proceso de las Reformas Estudiantiles hasta su asesinato en México a los 25 años, en brazos de la fotógrafa italiana Tina Modotti.",
