@@ -245,6 +245,34 @@ const movies1960s: Movie[] = [
 
 const movies1970s: Movie[] = [
   {
+    id: "pelea-cubana-contra-demonios",
+    title: "Una pelea cubana contra los demonios",
+    year: 1971,
+    director: "Tomás Gutiérrez Alea",
+    poster: "",
+    duration: "130 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Región de Remedios, siglo XVII. Los demonios se desatan cuando un cura, respondiendo a sus propios intereses, pretende que la comunidad se traslade de lugar. Ni el temor a los ataques piratas ni las bondades que el cura atribuye al nuevo asentamiento convencen a los habitantes. La cruzada oscurantista provoca la muerte y la destrucción.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival Internacional de Cine de Karlovy Vary, Checoslovaquia", year: 1972, category: "Premio CIDALC" }
+    ],
+    cast: [
+      { name: "José Antonio Rodríguez", role: "" },
+      { name: "Raúl Pomares", role: "" },
+      { name: "Silvano Rey", role: "" },
+      { name: "Marés González", role: "" },
+      { name: "Reinaldo Miravalles", role: "" },
+      { name: "Olivia Belizaire", role: "" },
+      { name: "Verónica Lynn", role: "" },
+      { name: "Armando Bianchi", role: "" },
+      { name: "Pancho García", role: "" },
+      { name: "Ada Nocetti", role: "" }
+    ],
+    notes: "Guion de Tomás Gutiérrez Alea, con la colaboración de José Triana, Vicente Revuelta y Miguel Barnet, inspirado en el libro 'Historia de una pelea cubana contra los demonios' del antropólogo Fernando Ortiz. En 2016 fue restaurada por la Academy Film Archive (Academia de Artes y Ciencias Cinematográficas de Hollywood) en colaboración con el ICAIC, bajo supervisión de Josef Lindner. Producción ICAIC, fotografía en blanco y negro."
+  },
+  {
     id: "hombre-maisinicu",
     title: "El hombre de Maisinicú",
     year: 1973,
