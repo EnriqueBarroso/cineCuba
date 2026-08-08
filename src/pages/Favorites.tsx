@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Heart, Film } from 'lucide-react';
-import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { SEO } from '@/components/SEO';
 import { useFavorites } from '@/hooks/useFavorites';
@@ -68,7 +67,6 @@ const Favorites = () => {
         description="Tu colección personal de películas del cine cubano."
         url="https://cine-cubano.com/favoritos"
       />
-      <Navbar />
 
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-6 lg:px-12">

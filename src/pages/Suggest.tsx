@@ -1,7 +1,6 @@
 import { useState, useEffect, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Lightbulb, Send, Film, Tv, Clapperboard } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -95,7 +94,6 @@ const Suggest = () => {
         description="Sugiere una película, serial o cortometraje cubano para añadir al catálogo de CineCuba."
         url="https://cine-cubano.com/sugerir"
       />
-      <Navbar />
 
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl">

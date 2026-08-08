@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Layers } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
@@ -57,7 +56,6 @@ const Sagas = () => (
       description="Colecciones y sagas del cine cubano independiente. Series de cortometrajes y obras conectadas por personajes y universos."
       url="https://cine-cubano.com/sagas"
     />
-    <Navbar />
 
     <main className="pt-32 pb-20">
       <div className="container mx-auto px-6 lg:px-12">

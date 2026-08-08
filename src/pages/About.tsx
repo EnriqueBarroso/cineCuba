@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Film, Heart, Globe, Users, BookOpen, Award, Mail } from "lucide-react";
 import { motion } from "framer-motion";
@@ -7,8 +6,6 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      
       <main className="pt-24 pb-20">
         {/* Hero Section */}
         <motion.section 

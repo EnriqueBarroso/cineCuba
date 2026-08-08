@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import MovieGrid from "@/components/MovieGrid";
 import { SEO } from "@/components/SEO";
@@ -11,8 +10,6 @@ const Movies = () => {
         description="Explora el catálogo completo del cine cubano. Filtra por género, año o director y descubre más de cien películas de la cinematografía de Cuba."
         url="https://cine-cubano.com/peliculas"
       />
-      <Navbar />
-      
       <main className="pt-24 pb-20">
         <div className="container px-6 lg:px-12 mb-8 fade-in">
           <h1 className="text-4xl md:text-5xl font-serif text-white mb-4">

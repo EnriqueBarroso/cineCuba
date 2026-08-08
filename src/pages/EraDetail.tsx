@@ -1,5 +1,4 @@
 import { useParams, Link } from "react-router-dom";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { getEraById, eras } from "@/data/eras";
 import { getMovieById } from "@/data/movies";
@@ -19,7 +18,6 @@ const EraDetail = () => {
   if (!era) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <main className="pt-32 pb-20">
           <div className="container mx-auto px-6 lg:px-12 text-center">
             <h1 className="font-serif text-4xl text-foreground mb-4">Época no encontrada</h1>
@@ -45,7 +43,6 @@ const EraDetail = () => {
         description={era.shortDescription}
         url={`https://cine-cubano.com/epoca/${era.id}`}
       />
-      <Navbar />
 
       <main className="pt-24 pb-20">
         {/* Hero Section */}

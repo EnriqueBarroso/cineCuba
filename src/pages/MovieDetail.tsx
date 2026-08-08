@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, Heart, Play, Calendar, Clock, Film, Award, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Movie, getMovieById, getRelatedMovies } from "@/data/movies";
@@ -105,8 +104,6 @@ const MovieDetail = () => {
         type="video.movie"
       />
 
-      <Navbar />
-      
       {/* === SECCIÓN DEL REPRODUCTOR === */}
       <section ref={playerRef} className="relative pt-24 pb-10 bg-black/50">
         <div className="container mx-auto px-6">

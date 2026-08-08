@@ -5,7 +5,6 @@ import {
   Clock, CheckCircle, Film,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
@@ -55,7 +54,6 @@ const SagaDetail = () => {
         url={`https://cine-cubano.com/saga/${saga.id}`}
         type="video.movie"
       />
-      <Navbar />
 
       {/* REPRODUCTOR */}
       <section className="relative pt-24 pb-10 bg-black/50">

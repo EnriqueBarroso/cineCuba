@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Film, Clock, Layers } from 'lucide-react';
-import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { SEO } from '@/components/SEO';
 import { SagaPosterPlaceholder } from '@/components/SagaPosterPlaceholder';
@@ -94,7 +93,6 @@ const Shorts = () => (
       description="Cortometrajes y sagas del cine cubano. Obras breves, mirada profunda."
       url="https://cine-cubano.com/cortos"
     />
-    <Navbar />
     <main className="pt-32 pb-20">
       <div className="container mx-auto px-6 lg:px-12">
 

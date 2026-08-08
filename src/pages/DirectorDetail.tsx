@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Award, Calendar, Film, MapPin, Heart, Layers } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { getDirectorById } from "@/data/directors";
 import { movies, Movie } from "@/data/movies";
@@ -127,7 +126,6 @@ const DirectorDetail = () => {
   if (!director) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <div className="container mx-auto px-6 lg:px-12 py-32 text-center">
           <h1 className="font-serif text-3xl mb-4">Director no encontrado</h1>
           {/* CAMBIO 1: Enlace corregido en pantalla de error */}
@@ -152,7 +150,6 @@ const DirectorDetail = () => {
         image={director.photo}
         url={`https://cine-cubano.com/director/${director.id}`}
       />
-      <Navbar />
 
       <section className="pt-32 pb-16 lg:pb-24 animate-fade-in">
         <div className="container mx-auto px-6 lg:px-12">

@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { ShieldCheck, Check, X, Clock, RefreshCw, ExternalLink } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -110,7 +109,6 @@ const Admin = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO title="Admin — Sugerencias" description="" url="https://cine-cubano.com/admin" />
-      <Navbar />
 
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-6 lg:px-12">

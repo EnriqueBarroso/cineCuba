@@ -1,7 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Search, X } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Input } from "@/components/ui/input";
 import { SEO } from "@/components/SEO";
@@ -129,7 +128,6 @@ const Actors = () => {
         description="Fichas de los actores del cine cubano. Trayectorias y filmografías de las figuras más destacadas del cine de Cuba."
         url="https://cine-cubano.com/actores"
       />
-      <Navbar />
 
       <div className="pt-32 pb-16">
         <div className="container mx-auto px-6 lg:px-12">

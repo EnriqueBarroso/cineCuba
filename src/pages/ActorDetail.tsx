@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Award, MapPin, Heart, Users, Layers } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { getActorById, getActorByName } from "@/data/actors";
@@ -152,7 +151,6 @@ const ActorDetail = () => {
   if (!actor) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <div className="container mx-auto px-6 lg:px-12 py-32 text-center">
           <h1 className="font-serif text-3xl mb-4">Actor no encontrado</h1>
           <Link to="/actores" className="text-gold hover:underline">
@@ -189,8 +187,6 @@ const ActorDetail = () => {
           }),
         }}
       />
-
-      <Navbar />
 
       <section className="pt-32 pb-16 lg:pb-24 animate-fade-in">
         <div className="container mx-auto px-6 lg:px-12">

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Tv, Layers } from 'lucide-react';
-import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { SEO } from '@/components/SEO';
 import { serials } from '@/data/serials';
@@ -122,7 +121,6 @@ const Serials = () => {
         description="Catálogo de series y producciones seriadas del cine y la televisión cubana."
         url="https://cine-cubano.com/seriales"
       />
-      <Navbar />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="mb-12">

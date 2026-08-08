@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, Heart, Play, Calendar, Film, Award, Users, Tv, CheckCircle, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { useFavorites } from "@/hooks/useFavorites";
 import { getDirectorByName } from "@/data/directors";
@@ -39,7 +38,6 @@ const SerialDetail = () => {
         url={`https://cine-cubano.com/serial/${serial.id}`}
         type="video.movie"
       />
-      <Navbar />
 
       {/* REPRODUCTOR */}
       <section className="relative pt-24 pb-10 bg-black/50">

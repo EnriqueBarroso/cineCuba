@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { Footer } from "@/components/Footer";
 import { MovieRow } from "@/components/catalog/MovieRow"; // Importamos el nuevo componente
@@ -7,8 +6,6 @@ import { moviesByDecade } from "@/data/movies"; // Importamos los datos ya organ
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      
       <main>
         {/* El Hero Principal (Slider grande) */}
         <HeroSection />

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Input } from "@/components/ui/input";
 import { directors } from "@/data/directors";
@@ -22,8 +21,6 @@ const Directors = () => {
         description="Conoce a los grandes directores del cine cubano. Biografías, filmografías y trayectorias de los cineastas más importantes de Cuba."
         url="https://cine-cubano.com/directores"
       />
-      <Navbar />
-      
       <div className="container mx-auto px-6 lg:px-12 pt-32 pb-16">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
           <h1 className="font-serif text-4xl md:text-5xl font-bold">Directores</h1>

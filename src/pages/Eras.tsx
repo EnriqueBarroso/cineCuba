@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { eras } from "@/data/eras";
 import { movies } from "@/data/movies";
@@ -16,8 +15,6 @@ const Eras = () => {
         description="Un recorrido por más de un siglo de historia cinematográfica cubana, desde las primeras proyecciones en 1897 hasta las producciones contemporáneas."
         url="https://cine-cubano.com/epocas"
       />
-      <Navbar />
-      
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-6 lg:px-12">
           {/* Header */}
