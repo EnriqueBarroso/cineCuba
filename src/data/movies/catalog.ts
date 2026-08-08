@@ -2015,6 +2015,34 @@ const movies2000s: Movie[] = [
 
 const movies2010s: Movie[] = [
   {
+    id: "larga-distancia",
+    title: "Larga distancia",
+    year: 2010,
+    director: "Esteban Insausti",
+    poster: "",
+    duration: "90 min",
+    genre: ["Drama"],
+    synopsis: "Cuatro amigos han pactado no separarse jamás, hasta que llegan a Cuba los difíciles años 90. Ana cumplirá treinta y cinco años y ha descubierto que ya no tiene amigos a quienes invitar a su celebración, así que decide reinventárselos. Una disección de la mentalidad de quienes parten, centrada en la emigración, el desarraigo y la amistad.",
+    videoUrl: "https://archive.org/embed/larga-distancia",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival Internacional del Nuevo Cine Latinoamericano de La Habana", year: 2010, category: "Premio Especial del Jurado" }
+    ],
+    cast: [
+      { name: "Tomás Cao", role: "Carlos" },
+      { name: "Zulema Clares", role: "Ana" },
+      { name: "Lynn Cruz", role: "Bárbara" },
+      { name: "Alexis Díaz de Villegas", role: "David" },
+      { name: "Idalmis García", role: "Teresa" },
+      { name: "Annia Bu Maure", role: "" },
+      { name: "Alain Ortiz", role: "" },
+      { name: "Coralia Veloz", role: "La rusa" },
+      { name: "Miriam Socarrás", role: "" },
+      { name: "Verónica Lynn", role: "" }
+    ],
+    notes: "Primer largometraje de ficción de Esteban Insausti, guion propio. Rodada en video digital full-HD. Estrenada el 2 de diciembre de 2010 en Cuba, en el Festival Internacional del Nuevo Cine Latinoamericano de La Habana. Descrita por la crítica como una de las películas más pesimistas y asfixiantes del cine cubano."
+  },
+  {
   id: "afinidades",
   title: "Afinidades",
   director: "Vladimir Cruz y Jorge Perugorría",
