@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -249,11 +249,11 @@ const movies1970s: Movie[] = [
     title: "Los días del agua",
     year: 1971,
     director: "Manuel Octavio Gómez",
-    poster: "",
+    poster: posterDiasDelAgua,
     duration: "110 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Basada en hechos reales ocurridos en 1936 en la provincia de Pinar del Río, relata la historia de Antoñica Izquierdo, una campesina que se atribuía poderes curativos por medio del agua. Seguida por una multitud de creyentes, es manipulada por los políticos y especuladores de la época, que explotan en beneficio propio el oscurantismo y los prejuicios de las masas. Termina finalmente en prisión. Un filme que reflexiona críticamente sobre la sociedad cubana durante la Seudorrepública.",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/hA10uMBSrno",
     trailerUrl: "",
     awards: [
       { name: "Festival Internacional de Cine de Moscú", year: 1971, category: "Premio Especial del Jurado, Mejor Actuación Femenina (ex-aequo, Idalia Anreus) y Premio FIPRESCI" },
