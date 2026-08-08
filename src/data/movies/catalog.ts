@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -249,11 +249,11 @@ const movies1970s: Movie[] = [
     title: "Una pelea cubana contra los demonios",
     year: 1971,
     director: "Tomás Gutiérrez Alea",
-    poster: "",
+    poster: posterPeleaCubanaDemonios,
     duration: "130 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Región de Remedios, siglo XVII. Los demonios se desatan cuando un cura, respondiendo a sus propios intereses, pretende que la comunidad se traslade de lugar. Ni el temor a los ataques piratas ni las bondades que el cura atribuye al nuevo asentamiento convencen a los habitantes. La cruzada oscurantista provoca la muerte y la destrucción.",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/9W23P-uY70o",
     trailerUrl: "",
     awards: [
       { name: "Festival Internacional de Cine de Karlovy Vary, Checoslovaquia", year: 1972, category: "Premio CIDALC" }
