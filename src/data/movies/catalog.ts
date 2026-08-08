@@ -1603,7 +1603,7 @@ const movies2000s: Movie[] = [
     duration: "105 min",
     genre: ["Drama"],
     synopsis: "Magalis, Ignacio, Vivian, Miguelito y Santo son algunos de los personajes que pueblan Barrio Cuba, seres que buscan su pedazo de felicidad en La Habana, que apuran la vida y se rebelan contra un destino incierto. Es una historia de luchadores, hombres y mujeres, jóvenes y viejos, cuyas vidas se cruzan tejiendo un mosaico de emociones, a veces contradictorias, siempre honestas.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/barrio-cuba",
     trailerUrl: "",
     awards: [
       { name: "Festival de Huelva, España", year: 2005, category: "Premio del Público Colón de Plata y Mención Especial al realizador" },
