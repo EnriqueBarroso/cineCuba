@@ -1813,13 +1813,18 @@ const movies2000s: Movie[] = [
     poster: posterCercania,
     duration: "95 min",
     genre: ["Drama"],
-    synopsis: "Retrato de la vida de los cubanos inmigrantes en Miami, explorando el reencuentro de un padre anciano que llega desde Cuba con su hijo.",
-    videoUrl: "",
+    synopsis: "Heriberto, un cubano de origen canario de 78 años, viaja a Miami invitado por su hijo médico tras diez años de separación. El reencuentro no es solo con su hijo, sino también con un antiguo amor del pasado. Un drama sobre el dolor de la separación familiar en el exilio cubano, con la perseverancia de un hombre mayor como eje central.",
+    videoUrl: "https://archive.org/embed/cercania",
     trailerUrl: "",
     awards: [],
     cast: [
-      { name: "Reinaldo Miravalles", role: "Padre" }
-    ]
+      { name: "Reinaldo Miravalles", role: "Heriberto" },
+      { name: "Gretel Trujillo", role: "" },
+      { name: "Larry Villanueva", role: "" },
+      { name: "Ana Viñas", role: "" },
+      { name: "Carlos Cruz", role: "" }
+    ],
+    notes: "Coproducción Cuba/España. Producción: Luna Llena Producciones SL / American Country Broadcasting TV."
   },
   {
     id: "che-el-argentino",
