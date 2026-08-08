@@ -245,6 +245,34 @@ const movies1960s: Movie[] = [
 
 const movies1970s: Movie[] = [
   {
+    id: "dias-del-agua",
+    title: "Los días del agua",
+    year: 1971,
+    director: "Manuel Octavio Gómez",
+    poster: "",
+    duration: "110 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Basada en hechos reales ocurridos en 1936 en la provincia de Pinar del Río, relata la historia de Antoñica Izquierdo, una campesina que se atribuía poderes curativos por medio del agua. Seguida por una multitud de creyentes, es manipulada por los políticos y especuladores de la época, que explotan en beneficio propio el oscurantismo y los prejuicios de las masas. Termina finalmente en prisión. Un filme que reflexiona críticamente sobre la sociedad cubana durante la Seudorrepública.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival Internacional de Cine de Moscú", year: 1971, category: "Premio Especial del Jurado, Mejor Actuación Femenina (ex-aequo, Idalia Anreus) y Premio FIPRESCI" },
+      { name: "Festival de Londres", year: 1971, category: "Filme destacado del año" },
+      { name: "Festival de Milán", year: 1972, category: "Tercero y Cuarto Premios" },
+      { name: "Semana Internacional de Cine de Autor, Benalmádena, España", year: 1973, category: "Primer Premio Placa de Plata" }
+    ],
+    cast: [
+      { name: "Idalia Anreus", role: "Antoñica" },
+      { name: "Raúl Pomares", role: "" },
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Mario Balmaseda", role: "" },
+      { name: "Omar Valdés", role: "" },
+      { name: "Raúl Eguren", role: "" },
+      { name: "Teté Vergara", role: "" }
+    ],
+    notes: "Guion de Manuel Octavio Gómez y Bernabé Hernández. Según EcuRed, fue el primer largometraje cubano de ficción en colores y con sonido directo, rodado en escenarios naturales (Valle de Viñales, Cayo San Felipe, Soroa, Santa María del Rosario, Remedios y Trinidad). Producción ICAIC."
+  },
+  {
     id: "pelea-cubana-contra-demonios",
     title: "Una pelea cubana contra los demonios",
     year: 1971,
