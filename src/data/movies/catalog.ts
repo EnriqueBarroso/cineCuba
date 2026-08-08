@@ -2413,7 +2413,7 @@ const movies2010s: Movie[] = [
     duration: "81 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Ocho estudiantes de medicina son injustamente condenados a muerte en 1871. Años después se busca demostrar su inocencia.",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/Hh_gdv4yb6A",
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2018, category: "Premio Especial del Jurado" },
