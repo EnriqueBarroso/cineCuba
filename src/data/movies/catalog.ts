@@ -1602,16 +1602,24 @@ const movies2000s: Movie[] = [
     poster: posterBarrioCuba,
     duration: "105 min",
     genre: ["Drama"],
-    synopsis: "Historias entrecruzadas de personajes que buscan la felicidad y luchan por sobrevivir en una Habana dura pero llena de esperanza.",
+    synopsis: "Magalis, Ignacio, Vivian, Miguelito y Santo son algunos de los personajes que pueblan Barrio Cuba, seres que buscan su pedazo de felicidad en La Habana, que apuran la vida y se rebelan contra un destino incierto. Es una historia de luchadores, hombres y mujeres, jóvenes y viejos, cuyas vidas se cruzan tejiendo un mosaico de emociones, a veces contradictorias, siempre honestas.",
     videoUrl: "",
     trailerUrl: "",
     awards: [
-      { name: "Festival de Huelva", year: 2005, category: "Colón de Plata" }
+      { name: "Festival de Huelva, España", year: 2005, category: "Premio del Público Colón de Plata y Mención Especial al realizador" },
+      { name: "27º Festival Internacional del Nuevo Cine Latinoamericano de La Habana", year: 2005, category: "Premio Especial del Jurado, Mejor Actuación Femenina ex aequo (Luisa María Jiménez), Tercer Premio del Público, Mejor Cartel y Premio El Mégano" }
     ],
     cast: [
-      { name: "Jorge Perugorría", role: "El camionero" },
-      { name: "Isabel Santos", role: "La Maga" }
-    ]
+      { name: "Jorge Perugorría", role: "El Chino" },
+      { name: "Isabel Santos", role: "Vivian" },
+      { name: "Mario Limonta", role: "Ignacio" },
+      { name: "Adela Legrá", role: "" },
+      { name: "Luisa María Jiménez", role: "Magalis" },
+      { name: "Rafael Lahera", role: "" },
+      { name: "Enrique Molina", role: "Padre de Magalis" },
+      { name: "Manuel Porto", role: "" }
+    ],
+    notes: "Guion de Humberto Solás, Sergio Benvenuto y Elia Solás. Coproducción Cuba/España, ICAIC."
   },
   {
     id: "90-millas",
