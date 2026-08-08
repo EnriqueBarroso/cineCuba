@@ -1,6 +1,6 @@
 /**
  * Punto de entrada principal del módulo de películas
- * 
+ *
  * Uso:
  * import { movies, getMovieById, Movie } from "@/data/movies";
  */

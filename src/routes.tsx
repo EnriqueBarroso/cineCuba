@@ -1,27 +1,11 @@
 import type { RouteObject } from "react-router-dom";
 import { AppLayout } from "./components/AppLayout";
 import { PageTransition } from "./components/PageTransition";
-import Index from "./pages/Index";
-import Movies from "./pages/Movies";
-import Directors from "./pages/Directors";
-import DirectorDetail from "./pages/DirectorDetail";
-import Eras from "./pages/Eras";
-import EraDetail from "./pages/EraDetail";
-import MovieDetail from "./pages/MovieDetail";
-import About from "./pages/About";
-import Terms from "./pages/Terms";
-import Favorites from "./pages/Favorites";
-import SagaDetail from "./pages/SagaDetail";
-import Actors from "./pages/Actors";
-import ActorDetail from "./pages/ActorDetail";
-import Serials from "./pages/Serials";
-import SerialDetail from "./pages/SerialDetail";
-import Shorts from "./pages/Shorts";
-import ShortDetail from "./pages/ShortDetail";
-import Suggest from "./pages/Suggest";
-import Admin from "./pages/Admin";
-import NotFound from "./pages/NotFound";
 
+// Cada ruta usa el campo `lazy` de react-router-dom (no React.lazy/Suspense):
+// vite-react-ssg espera explícitamente `route.lazy()` antes de prerenderizar
+// con renderToString, así que este es el único mecanismo de code-splitting
+// por ruta compatible con su pipeline de SSG.
 export const routes: RouteObject[] = [
   {
     path: "/",
@@ -29,83 +13,123 @@ export const routes: RouteObject[] = [
     children: [
       {
         index: true,
-        element: <PageTransition><Index /></PageTransition>,
+        lazy: () => import("./pages/Index").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "peliculas",
-        element: <PageTransition><Movies /></PageTransition>,
+        lazy: () => import("./pages/Movies").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "directores",
-        element: <PageTransition><Directors /></PageTransition>,
+        lazy: () => import("./pages/Directors").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "director/:id",
-        element: <PageTransition><DirectorDetail /></PageTransition>,
+        lazy: () => import("./pages/DirectorDetail").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "actores",
-        element: <PageTransition><Actors /></PageTransition>,
+        lazy: () => import("./pages/Actors").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "actor/:id",
-        element: <PageTransition><ActorDetail /></PageTransition>,
+        lazy: () => import("./pages/ActorDetail").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "epocas",
-        element: <PageTransition><Eras /></PageTransition>,
+        lazy: () => import("./pages/Eras").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "epoca/:id",
-        element: <PageTransition><EraDetail /></PageTransition>,
+        lazy: () => import("./pages/EraDetail").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "pelicula/:id",
-        element: <PageTransition><MovieDetail /></PageTransition>,
+        lazy: () => import("./pages/MovieDetail").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "favoritos",
-        element: <PageTransition><Favorites /></PageTransition>,
+        lazy: () => import("./pages/Favorites").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "saga/:id",
-        element: <PageTransition><SagaDetail /></PageTransition>,
+        lazy: () => import("./pages/SagaDetail").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "seriales",
-        element: <PageTransition><Serials /></PageTransition>,
+        lazy: () => import("./pages/Serials").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "serial/:id",
-        element: <PageTransition><SerialDetail /></PageTransition>,
+        lazy: () => import("./pages/SerialDetail").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "cortos",
-        element: <PageTransition><Shorts /></PageTransition>,
+        lazy: () => import("./pages/Shorts").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "corto/:id",
-        element: <PageTransition><ShortDetail /></PageTransition>,
+        lazy: () => import("./pages/ShortDetail").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "sugerir",
-        element: <PageTransition><Suggest /></PageTransition>,
+        lazy: () => import("./pages/Suggest").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "admin",
-        element: <PageTransition><Admin /></PageTransition>,
+        lazy: () => import("./pages/Admin").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "acerca",
-        element: <PageTransition><About /></PageTransition>,
+        lazy: () => import("./pages/About").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "terminos",
-        element: <PageTransition><Terms /></PageTransition>,
+        lazy: () => import("./pages/Terms").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
       {
         path: "*",
-        element: <PageTransition><NotFound /></PageTransition>,
+        lazy: () => import("./pages/NotFound").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
       },
     ],
   },
