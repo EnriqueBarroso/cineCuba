@@ -1968,14 +1968,29 @@ const movies2000s: Movie[] = [
   title: "Cuando la verdad despierta",
   director: "Angelo Rizzi",
   year: 2008,
-  genre: ["Drama", "Suspense"],
+  genre: ["Drama", "Thriller"],
   duration: "1h 30m",
-  synopsis: "Coproducción italo-cubana. Un hombre despierta en un hospital de La Habana sin memoria tras un accidente. Poco a poco, con la ayuda de una enfermera, intenta reconstruir su pasado, descubriendo verdades que quizás era mejor no recordar.",
+  synopsis: "Reconstruye el atentado con bomba ocurrido en el hotel Copacabana de La Habana el 4 de septiembre de 1997, que le costó la vida al joven empresario italiano Fabio Di Celmo, la única víctima mortal de una serie de atentados contra sitios turísticos de la capital cubana ese año. La película, basada en las confesiones del autor material del atentado, el salvadoreño Ernesto Cruz León, sigue la trama a través de varios planos espaciales (Cuba, El Salvador, Miami, Washington) para situar el contexto de la operación.",
   poster: posterCuandoLaVerdadDespierta,
+  videoUrl: "https://archive.org/embed/cuando-la-verdad-despierta",
+  trailerUrl: "",
+  awards: [],
   cast: [
-    { name: "Rogelio Blaín", role: "Actor" },
-    { name: "Enrique Molina", role: "Actor" }
-  ]
+    { name: "Michel Altieri", role: "Fabio Di Celmo" },
+    { name: "Michael Wong", role: "John Mack" },
+    { name: "Carlos Padrón", role: "Posada Carriles" },
+    { name: "Rogelio Blaín", role: "" },
+    { name: "Enrique Molina", role: "" },
+    { name: "Verónica Lynn", role: "" },
+    { name: "Armando Tomey", role: "" },
+    { name: "Patricio Wood", role: "" },
+    { name: "Enrique Almirante", role: "Giustino Di Celmo" },
+    { name: "Yamil Jaled", role: "" },
+    { name: "Roberto Perdomo", role: "" },
+    { name: "Max Álvarez", role: "" },
+    { name: "Rubén Breña", role: "" }
+  ],
+  notes: "Título de trabajo inicial: 'El muchacho del Copacabana'. Coproducción Cuba/Italia/España. Producción ICAIC junto con Trimagen y la agencia Caricatos (Cuba), con respaldo de las Fuerzas Armadas y el Ministerio del Interior cubanos, más instituciones italianas y españolas."
 },
 {
   id: "el-premio-flaco",
