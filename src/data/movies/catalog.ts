@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -1289,11 +1289,11 @@ const movies2000s: Movie[] = [
     title: "Kangamba",
     year: 2008,
     director: "Rogelio París",
-    poster: "",
+    poster: posterKangamba,
     duration: "97 min",
     genre: ["Bélico", "Drama"],
     synopsis: "África, República Popular de Angola, agosto de 1983. Miles de efectivos de la UNITA —entrenados y armados por el régimen sudafricano del apartheid— lanzan una violenta ofensiva contra fuerzas de las FAPLA, leales al gobierno angolano, y un grupo de asesores cubanos, combatientes de las FAR, estacionados en Cangamba, un pequeño poblado situado al sur del país. Durante más de una semana se desarrolla una desigual batalla que también golpea a la población civil inocente. Basada en hechos reales de la Batalla de Cangamba (1983), en la provincia de Moxico.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/kangamba_202608",
     trailerUrl: "",
     awards: [],
     cast: [

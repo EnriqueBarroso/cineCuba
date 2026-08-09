@@ -23,6 +23,7 @@ export { default as posterMella } from './mella.jpg';
 export { default as posterPeleaCubanaDemonios } from './una-pelea-cubana-contra-los-demonios.jpg';
 export { default as posterDiasDelAgua } from './los-dias-del-agua.jpg';
 export { default as posterLargaDistancia } from './larga-distancia.jpg';
+export { default as posterKangamba } from './kangamba.jpg';
 export { default as posterSobrevivientes } from './sobrevivientes.jpg';
 export { default as posterBrigadista } from './el-brigadista.jpg';
 export { default as posterElpidioValdes } from './elpidio-valdes.jpg';
