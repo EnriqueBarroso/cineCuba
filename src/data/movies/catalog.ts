@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -2019,7 +2019,7 @@ const movies2010s: Movie[] = [
     title: "Larga distancia",
     year: 2010,
     director: "Esteban Insausti",
-    poster: "",
+    poster: posterLargaDistancia,
     duration: "90 min",
     genre: ["Drama"],
     synopsis: "Cuatro amigos han pactado no separarse jamás, hasta que llegan a Cuba los difíciles años 90. Ana cumplirá treinta y cinco años y ha descubierto que ya no tiene amigos a quienes invitar a su celebración, así que decide reinventárselos. Una disección de la mentalidad de quienes parten, centrada en la emigración, el desarraigo y la amistad.",
