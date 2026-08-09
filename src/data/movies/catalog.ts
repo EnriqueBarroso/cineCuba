@@ -218,7 +218,7 @@ const movies1960s: Movie[] = [
     duration: "97 min",
     genre: ["Drama"],
     synopsis: "Un intelectual burgués decide quedarse en Cuba tras la Revolución mientras su familia huye al exilio. Atrapado entre dos mundos, observa los cambios de la sociedad cubana mientras cuestiona su propia identidad y lugar en el nuevo orden.",
-    videoUrl: "https://archive.org/embed/memorias-del-subdesarrollo",
+    videoUrl: "https://www.youtube.com/embed/NhXR16xOhw8",
     trailerUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
       { name: "Festival de Karlovy Vary", year: 1968, category: "Premio FIPRESCI" },
