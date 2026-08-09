@@ -1285,6 +1285,30 @@ const movies1990s: Movie[] = [
 
 const movies2000s: Movie[] = [
   {
+    id: "kangamba",
+    title: "Kangamba",
+    year: 2008,
+    director: "Rogelio París",
+    poster: "",
+    duration: "97 min",
+    genre: ["Bélico", "Drama"],
+    synopsis: "África, República Popular de Angola, agosto de 1983. Miles de efectivos de la UNITA —entrenados y armados por el régimen sudafricano del apartheid— lanzan una violenta ofensiva contra fuerzas de las FAPLA, leales al gobierno angolano, y un grupo de asesores cubanos, combatientes de las FAR, estacionados en Cangamba, un pequeño poblado situado al sur del país. Durante más de una semana se desarrolla una desigual batalla que también golpea a la población civil inocente. Basada en hechos reales de la Batalla de Cangamba (1983), en la provincia de Moxico.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Armando Tomey", role: "" },
+      { name: "Rafael Lahera", role: "" },
+      { name: "Linnett Hernández", role: "" },
+      { name: "Samuel Claxton", role: "" },
+      { name: "Alexis Díaz de Villegas", role: "" },
+      { name: "Herón Vega Granados", role: "" },
+      { name: "Julio Quesada", role: "" },
+      { name: "Renny Arozarena", role: "" }
+    ],
+    notes: "Guion de Jorge Fuentes y Rogelio París. Producción ICAIC con apoyo del MINFAR. Rodada en el polígono general de las FAR de El Paso de Lesca, en Camagüey, donde se excavaron varios kilómetros de trincheras sobre terreno rocoso para simular el paisaje angoleño."
+  },
+  {
     id: "lista-espera",
     title: "Lista de espera",
     year: 2000,
