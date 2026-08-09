@@ -11,6 +11,7 @@ export const movieIds: string[] = [
   "pelea-cubana-contra-demonios",
   "larga-distancia",
   "kangamba",
+  "7-dias-en-la-habana",
   "doce-sillas",
   "aventuras-juan-quin-quin",
   "muerte-burocrata",

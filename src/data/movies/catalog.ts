@@ -2037,6 +2037,34 @@ const movies2000s: Movie[] = [
 
 const movies2010s: Movie[] = [
   {
+    id: "7-dias-en-la-habana",
+    title: "7 días en La Habana",
+    year: 2012,
+    director: "Benicio del Toro, Pablo Trapero, Julio Medem, Gaspar Noé, Elia Suleiman, Juan Carlos Tabío, Laurent Cantet",
+    poster: "",
+    duration: "125 min",
+    genre: ["Drama"],
+    synopsis: "Siete cortometrajes que narran la vida de distintos personajes en La Habana, cada uno correspondiente a un día de la semana y dirigido por un cineasta diferente. Lejos de los tópicos turísticos, busca reflejar el alma de la ciudad a través de sus barrios, generaciones y culturas, con lugares emblemáticos como el Hotel Nacional y el Malecón como escenario común. Entre los episodios más destacados: el de Elia Suleiman, quien se dirige a sí mismo en su viaje a La Habana para entrevistar a Fidel Castro; y el de Julio Medem, inspirado en la novela cubana Cecilia Valdés o La loma del ángel, de Cirilo Villaverde.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Cannes", year: 2012, category: "Selección oficial 'Un Certain Regard'" }
+    ],
+    cast: [
+      { name: "Jorge Perugorría", role: "" },
+      { name: "Mirta Ibarra", role: "" },
+      { name: "Vladimir Cruz", role: "" },
+      { name: "Daisy Granados", role: "" },
+      { name: "Emir Kusturica", role: "" },
+      { name: "Daniel Brühl", role: "" },
+      { name: "Josh Hutcherson", role: "" },
+      { name: "Elia Suleiman", role: "" },
+      { name: "Othello Rensoli", role: "" },
+      { name: "Melvis Estévez", role: "" }
+    ],
+    notes: "Película de episodios/antología. Guion de Leonardo Padura. Coproducción Francia/España (Morena Films / Full House), sin participación del ICAIC; único director cubano del grupo: Juan Carlos Tabío."
+  },
+  {
     id: "larga-distancia",
     title: "Larga distancia",
     year: 2010,
