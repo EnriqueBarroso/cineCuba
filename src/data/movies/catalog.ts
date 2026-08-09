@@ -1568,7 +1568,7 @@ const movies2000s: Movie[] = [
     duration: "98 min",
     genre: ["Musical", "Drama"],
     synopsis: "Un homenaje a la música cubana de los años 50, centrado en una familia de músicos que intenta triunfar en medio de un ambiente competitivo y festivo.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/bailando-chachacha",
     trailerUrl: "",
     awards: [],
     cast: [
