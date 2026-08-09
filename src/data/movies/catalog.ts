@@ -17,7 +17,7 @@ import {
   // 90s
   posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
-  posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterDileALaura, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
+  posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
   posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
   posterJuliette,
@@ -1637,23 +1637,6 @@ const movies2000s: Movie[] = [
     ],
     cast: [
       { name: "Alexis Valdés", role: "Actor" }
-    ]
-  },
-  {
-    id: "dile-a-laura-que-la-quiero",
-    title: "Dile a Laura que la quiero",
-    year: 2005,
-    director: "José Miguel Juárez",
-    poster: posterDileALaura,
-    duration: "100 min",
-    genre: ["Comedia", "Romance"],
-    synopsis: "Jorge, un español, se enamora de Laura en Cuba. Pero el matrimonio con un extranjero está lleno de complicaciones y malentendidos culturales.",
-    videoUrl: "",
-    trailerUrl: "",
-    awards: [],
-    cast: [
-      { name: "Jorge Perugorría", role: "Marcos" },
-      { name: "Nancho Novo", role: "Jorge" }
     ]
   },
   {

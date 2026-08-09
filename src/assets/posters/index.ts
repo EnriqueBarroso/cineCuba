@@ -70,7 +70,6 @@ export { default as posterBailandoCha } from './bailando-chachacha.jpg';
 export { default as posterVivaCuba } from './viva-cuba.jpg';
 export { default as poster90Millas } from './90-millas.jpg';
 export { default as posterBarrioCuba } from './barrio-cuba.jpg';
-export { default as posterDileALaura } from './dile-a-laura.jpg';
 export { default as posterElBenny } from './el-benny.jpg';
 export { default as posterPaginasMauricio } from './paginas-diario-mauricio.jpg';
 export { default as posterElEdenPerdido } from './el-eden-perdido.jpg';
