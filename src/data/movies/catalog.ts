@@ -1293,7 +1293,7 @@ const movies2000s: Movie[] = [
     duration: "N/D",
     genre: ["Drama"],
     synopsis: "Héctor es un joven campesino cubano que sueña con ser campeón de béisbol. En la búsqueda de su destino, se enfrenta a obstáculos aparentemente imposibles de superar, como la enfermedad, la envidia, el odio y el más intenso amor, que harán de su vida un verdadero desafío, tanto dentro como fuera del campo de béisbol. Es la historia de un hombre que, en lugar de aceptar la realidad, transforma su vida para lograr su anhelado sueño. Ambientada en Cuba, donde el béisbol es más que un deporte — es un elemento fundamental que se combina con las escenas de la vida cotidiana.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/el-sonador_202608",
     trailerUrl: "",
     awards: [],
     cast: [
