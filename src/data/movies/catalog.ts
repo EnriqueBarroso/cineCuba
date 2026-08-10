@@ -11,7 +11,7 @@ import {
   // 60s
   posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
   // 70s
-  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
+  posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
   posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
@@ -2041,11 +2041,11 @@ const movies2010s: Movie[] = [
     title: "7 días en La Habana",
     year: 2012,
     director: "Benicio del Toro, Pablo Trapero, Julio Medem, Gaspar Noé, Elia Suleiman, Juan Carlos Tabío, Laurent Cantet",
-    poster: "",
+    poster: poster7DiasEnLaHabana,
     duration: "125 min",
     genre: ["Drama"],
     synopsis: "Siete cortometrajes que narran la vida de distintos personajes en La Habana, cada uno correspondiente a un día de la semana y dirigido por un cineasta diferente. Lejos de los tópicos turísticos, busca reflejar el alma de la ciudad a través de sus barrios, generaciones y culturas, con lugares emblemáticos como el Hotel Nacional y el Malecón como escenario común. Entre los episodios más destacados: el de Elia Suleiman, quien se dirige a sí mismo en su viaje a La Habana para entrevistar a Fidel Castro; y el de Julio Medem, inspirado en la novela cubana Cecilia Valdés o La loma del ángel, de Cirilo Villaverde.",
-    videoUrl: "",
+    videoUrl: "https://archive.org/embed/7-dias-en-la-habana",
     trailerUrl: "",
     awards: [
       { name: "Festival de Cannes", year: 2012, category: "Selección oficial 'Un Certain Regard'" }
