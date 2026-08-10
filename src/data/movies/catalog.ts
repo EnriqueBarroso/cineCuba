@@ -677,7 +677,7 @@ const movies1980s: Movie[] = [
     cast: [
       { name: "Luis Alberto García", role: "Carlos" },
       { name: "Thais Valdés", role: "Ofelia" },
-      { name: "Daisy Granados", role: "La madre" },
+      { name: "Consuelo Vidal", role: "La madre" },
       { name: "César Évora", role: "El padre" },
       { name: "Silvia Planas", role: "" },
       { name: "Néstor Jiménez", role: "" },
@@ -1284,6 +1284,30 @@ const movies1990s: Movie[] = [
 // ============================================================================
 
 const movies2000s: Movie[] = [
+  {
+    id: "el-sonador",
+    title: "El soñador",
+    year: 2004,
+    director: "Angelo Rizzo",
+    poster: "",
+    duration: "N/D",
+    genre: ["Drama"],
+    synopsis: "Héctor es un joven campesino cubano que sueña con ser campeón de béisbol. En la búsqueda de su destino, se enfrenta a obstáculos aparentemente imposibles de superar, como la enfermedad, la envidia, el odio y el más intenso amor, que harán de su vida un verdadero desafío, tanto dentro como fuera del campo de béisbol. Es la historia de un hombre que, en lugar de aceptar la realidad, transforma su vida para lograr su anhelado sueño. Ambientada en Cuba, donde el béisbol es más que un deporte — es un elemento fundamental que se combina con las escenas de la vida cotidiana.",
+    videoUrl: "",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Pablo Montero", role: "Héctor" },
+      { name: "Elizabeth Rivero Ruiz", role: "" },
+      { name: "Armando Tomey", role: "" },
+      { name: "Liudmila Alonso", role: "" },
+      { name: "Enrique Almirante", role: "" },
+      { name: "Hilario Peña", role: "" },
+      { name: "Diana Rosa Suárez", role: "" },
+      { name: "Mario Guerra", role: "" }
+    ],
+    notes: "Clasificación de duración ambigua entre fuentes: IMDb la lista como cortometraje, mientras FilmAffinity y ENDAC la tratan como largometraje sin especificar duración exacta. Incluida como largometraje en este catálogo."
+  },
   {
     id: "kangamba",
     title: "Kangamba",
@@ -2136,7 +2160,7 @@ const movies2010s: Movie[] = [
   videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/VCD%20CASA%20VIEJA.mpg",
   cast: [
     { name: "Yadro Reyes", role: "Esteban" },
-    { name: "Daisy Granados", role: "Madre" }
+    { name: "Daisy Quintana", role: "Madre" }
   ]
 },
 {

@@ -12,6 +12,7 @@ export const movieIds: string[] = [
   "larga-distancia",
   "kangamba",
   "7-dias-en-la-habana",
+  "el-sonador",
   "doce-sillas",
   "aventuras-juan-quin-quin",
   "muerte-burocrata",
