@@ -66,7 +66,7 @@ export const MovieRow = ({ title, movies }: MovieRowProps) => {
               to={`/pelicula/${movie.id}`}
               className="flex-none w-[160px] md:w-[220px] snap-start group/card"
             >
-              <div className="relative aspect-[2/3] rounded-sm overflow-hidden bg-secondary mb-3 transition-transform duration-300 group-hover/card:scale-105 group-hover/card:shadow-xl">
+              <div className="relative aspect-[2/3] rounded-xl overflow-hidden bg-zinc-800 mb-3 shadow-lg shadow-black/40 transition-all duration-300 group-hover/card:scale-105 group-hover/card:shadow-xl group-hover/card:shadow-black/60">
                 <img 
                   src={movie.poster} 
                   alt={movie.title}
