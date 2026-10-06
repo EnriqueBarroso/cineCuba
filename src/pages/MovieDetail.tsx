@@ -10,6 +10,7 @@ import { getDirectorByName } from "@/data/directors";
 import { getActorByName } from "@/data/actors";
 import { SEO } from "@/components/SEO";
 import { VideoJsonLd } from "@/components/VideoJsonLd";
+import { MovieJsonLd } from "@/components/MovieJsonLd";
 
 const RelatedMovieCard = ({ 
   movie, 
@@ -104,6 +105,8 @@ const MovieDetail = () => {
         url={`https://cine-cubano.com/pelicula/${movie.id}`}
         type="video.movie"
       />
+
+      <MovieJsonLd movie={movie} />
 
       {movie.videoUrl && (
         <VideoJsonLd
