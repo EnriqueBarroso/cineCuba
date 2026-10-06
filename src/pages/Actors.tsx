@@ -49,7 +49,7 @@ const ActorCard = ({ actor }: { actor: Actor }) => {
           {actor.photo && !photoError ? (
             <img
               src={actor.photo}
-              alt={actor.name}
+              alt={`${actor.name} - Actor cubano`}
               onError={() => setPhotoError(true)}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />

@@ -58,7 +58,7 @@ export const Hero = () => {
         
         <img
           src={movie.backdrop}
-          alt={movie.title}
+          alt={`Escena de ${movie.title} (${movie.year})`}
           className="w-full h-full object-cover object-top opacity-80"
         />
       </div>

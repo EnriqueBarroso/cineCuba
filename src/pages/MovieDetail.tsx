@@ -9,6 +9,7 @@ import { Movie, getMovieById, getRelatedMovies } from "@/data/movies";
 import { getDirectorByName } from "@/data/directors";
 import { getActorByName } from "@/data/actors";
 import { SEO } from "@/components/SEO";
+import { VideoJsonLd } from "@/components/VideoJsonLd";
 
 const RelatedMovieCard = ({ 
   movie, 
@@ -25,7 +26,7 @@ const RelatedMovieCard = ({
         <div className="relative aspect-[2/3] overflow-hidden bg-secondary">
           <img
             src={movie.poster}
-            alt={`Poster de ${movie.title}`}
+            alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
@@ -104,6 +105,18 @@ const MovieDetail = () => {
         type="video.movie"
       />
 
+      {movie.videoUrl && (
+        <VideoJsonLd
+          name={`${movie.title} - Película Completa`}
+          description={movie.synopsis}
+          thumbnail={movie.poster}
+          year={movie.year}
+          videoUrl={movie.videoUrl}
+          genre={movie.genre}
+          director={movie.director}
+        />
+      )}
+
       {/* === SECCIÓN DEL REPRODUCTOR === */}
       <section ref={playerRef} className="relative pt-24 pb-10 bg-black/50">
         <div className="container mx-auto px-6">
@@ -119,7 +132,7 @@ const MovieDetail = () => {
             ) : (
               <div className="w-full h-full relative">
                 {movie.backdrop ? (
-                   <img src={movie.backdrop} alt="Fondo" className="w-full h-full object-cover opacity-50" />
+                   <img src={movie.backdrop} alt={`Escena de ${movie.title} (${movie.year})`} className="w-full h-full object-cover opacity-50" />
                 ) : (
                    <div className="w-full h-full bg-secondary/20" />
                 )}
@@ -149,7 +162,7 @@ const MovieDetail = () => {
           <div className="grid lg:grid-cols-[300px_1fr] gap-12">
             <div className="hidden lg:block">
               <div className="aspect-[2/3] overflow-hidden bg-secondary sticky top-24 rounded-sm shadow-lg">
-                <img src={movie.poster} alt={`Poster de ${movie.title}`} className="w-full h-full object-cover" />
+                <img src={movie.poster} alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`} className="w-full h-full object-cover" />
               </div>
             </div>
 

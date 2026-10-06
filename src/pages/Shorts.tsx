@@ -55,7 +55,7 @@ const SagaCard = ({ saga }: { saga: Saga }) => (
           <div className="aspect-[2/3] overflow-hidden bg-secondary">
             <img
               src={saga.poster}
-              alt={`Poster de ${saga.title}`}
+              alt={`Poster de ${saga.title} - ${saga.director}`}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>

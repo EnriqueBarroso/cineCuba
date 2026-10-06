@@ -51,7 +51,7 @@ const Directors = () => {
                     {director.photo ? (
                       <img
                         src={director.photo}
-                        alt={director.name}
+                        alt={`${director.name} - Director de cine cubano`}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (

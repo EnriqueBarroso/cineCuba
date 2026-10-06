@@ -35,7 +35,7 @@ const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
         <div className="relative aspect-[2/3] rounded-xl overflow-hidden bg-zinc-800 shadow-lg shadow-black/40 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-black/60">
           <img
             src={movie.poster}
-            alt={`Poster de ${movie.title}`}
+            alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />

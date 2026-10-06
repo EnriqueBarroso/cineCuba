@@ -46,7 +46,7 @@ const SerialDetail = () => {
             {serial.disponible === false ? (
               <div className="w-full h-full flex flex-col items-center justify-center">
                 {serial.backdrop && (
-                  <img src={serial.backdrop} alt="Fondo" className="absolute inset-0 w-full h-full object-cover opacity-20" />
+                  <img src={serial.backdrop} alt={`Escena de ${serial.title}`} className="absolute inset-0 w-full h-full object-cover opacity-20" />
                 )}
                 <div className="relative z-10 flex flex-col items-center text-center px-6">
                   <div className="w-20 h-20 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4 backdrop-blur-md">
@@ -67,7 +67,7 @@ const SerialDetail = () => {
             ) : (
               <div className="w-full h-full flex flex-col items-center justify-center">
                 {serial.backdrop && (
-                  <img src={serial.backdrop} alt="Fondo" className="absolute inset-0 w-full h-full object-cover opacity-30" />
+                  <img src={serial.backdrop} alt={`Escena de ${serial.title}`} className="absolute inset-0 w-full h-full object-cover opacity-30" />
                 )}
                 <div className="relative z-10 flex flex-col items-center">
                   <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center mb-4 backdrop-blur-md">

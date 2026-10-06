@@ -111,7 +111,7 @@ const Eras = () => {
                                 <div key={movie!.id} className="w-16 aspect-[2/3] rounded overflow-hidden">
                                   <img 
                                     src={movie!.poster} 
-                                    alt={movie!.title}
+                                    alt={`Poster de ${movie!.title} (${movie!.year}) - Dir. ${movie!.director}`}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                   />
                                 </div>

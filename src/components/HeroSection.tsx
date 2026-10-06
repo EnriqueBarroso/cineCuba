@@ -157,7 +157,7 @@ export const HeroSection = () => {
               {visual && (
                 <img
                   src={visual}
-                  alt={movie.title}
+                  alt={`Escena de ${movie.title} (${movie.year})`}
                   loading={currentIndex === 0 ? "eager" : "lazy"}
                   fetchPriority="high"
                   style={{ filter: "brightness(0.9) contrast(1.1)" }}
@@ -221,7 +221,7 @@ export const HeroSection = () => {
                 {visual && (
                   <img
                     src={visual}
-                    alt={movie.title}
+                    alt={`Escena de ${movie.title} (${movie.year})`}
                     loading={currentIndex === 0 ? "eager" : "lazy"}
                     fetchPriority="high"
                     style={{ filter: "brightness(0.9) contrast(1.1)" }}

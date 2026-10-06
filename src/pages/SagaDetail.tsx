@@ -7,6 +7,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import { VideoJsonLd } from "@/components/VideoJsonLd";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { getDirectorByName } from "@/data/directors";
@@ -54,6 +55,19 @@ const SagaDetail = () => {
         url={`https://cine-cubano.com/saga/${saga.id}`}
         type="video.movie"
       />
+
+      {saga.episodios.filter((ep) => ep.videoUrl).map((ep) => (
+        <VideoJsonLd
+          key={ep.id}
+          name={`${saga.title} - ${ep.titulo}`}
+          description={ep.sinopsis || saga.synopsis}
+          thumbnail={saga.poster}
+          year={ep.anio}
+          videoUrl={ep.videoUrl!}
+          genre={saga.genre}
+          director={saga.director}
+        />
+      ))}
 
       {/* REPRODUCTOR */}
       <section className="relative pt-24 pb-10 bg-black/50">
@@ -114,7 +128,7 @@ const SagaDetail = () => {
                   <div className="aspect-[2/3] overflow-hidden rounded-sm shadow-lg">
                     <img
                       src={saga.poster}
-                      alt={`Poster de ${saga.title}`}
+                      alt={`Poster de ${saga.title} - ${saga.director}`}
                       className="w-full h-full object-cover"
                     />
                   </div>

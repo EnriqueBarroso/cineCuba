@@ -69,7 +69,7 @@ export const MovieRow = ({ title, movies }: MovieRowProps) => {
               <div className="relative aspect-[2/3] rounded-xl overflow-hidden bg-zinc-800 mb-3 shadow-lg shadow-black/40 transition-all duration-300 group-hover/card:scale-105 group-hover/card:shadow-xl group-hover/card:shadow-black/60">
                 <img 
                   src={movie.poster} 
-                  alt={movie.title}
+                  alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

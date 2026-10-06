@@ -54,7 +54,7 @@ const ShortDetail = () => {
             ) : (
               <div className="w-full h-full flex flex-col items-center justify-center">
                 {short.backdrop && (
-                  <img src={short.backdrop} alt="Fondo" className="absolute inset-0 w-full h-full object-cover opacity-30" />
+                  <img src={short.backdrop} alt={`Escena de ${short.title}`} className="absolute inset-0 w-full h-full object-cover opacity-30" />
                 )}
                 <div className="relative z-10 flex flex-col items-center">
                   <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center mb-4 backdrop-blur-md">

@@ -1,4 +1,5 @@
 import { Head } from 'vite-react-ssg';
+import { absoluteUrl } from '@/lib/seo';
 
 interface SEOProps {
   title: string;
@@ -14,6 +15,7 @@ export const SEO = ({ title, description, image, url, type = 'website' }: SEOPro
   // Usamos la imagen del repositorio como fallback
   const defaultImage = "https://cine-cubano.com/og-image.jpg";
   const siteUrl = "https://cine-cubano.com";
+  const ogImage = absoluteUrl(image) || defaultImage;
 
   return (
     <Head>
@@ -26,13 +28,13 @@ export const SEO = ({ title, description, image, url, type = 'website' }: SEOPro
       <meta property="og:url" content={url || siteUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image || defaultImage} />
+      <meta property="og:image" content={ogImage} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image || defaultImage} />
+      <meta name="twitter:image" content={ogImage} />
     </Head>
   );
 };
