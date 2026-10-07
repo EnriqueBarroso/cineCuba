@@ -397,11 +397,11 @@ export const directors: Director[] = [
     birthYear: 1936,
     deathYear: 2016,
     nationality: "Cubano",
-    biography: "Documentalista y director de ficción que abordó temas épicos y musicales. Su película 'Caravana' (1990) sobre la guerra de Angola fue un éxito popular, y 'Kangamba' (2008) consolidó su cine bélico. También dirigió el aclamado documental 'Nosotros, la música'.",
+    biography: "Rogelio Alfonso París Ramírez (6 de enero de 1936 — 28 de marzo de 2016) fue un cineasta, guionista y pedagogo cubano cuya obra abarca más de cincuenta años de la historia del cine y la televisión de la isla. Graduado en Derecho por la Universidad de La Habana, en 1959 comenzó como director y guionista de programas dramáticos en la televisión cubana. Fue director artístico de la delegación cubana en el Festival Mundial de la Juventud de Helsinki (1962) y director general artístico del Festival Mundial de la Juventud de Sofía. En 1964 se incorporó al ICAIC y debutó como documentalista con Nosotros, la música, un retrato extraordinario de la música popular cubana. Dirigió más de veinte documentales y cinco largometrajes de ficción, con dos ejes temáticos principales: la música cubana y las misiones militares de Cuba en África. Sus dos obras de ficción más celebradas forman un díptico épico sobre Angola: Caravana (1990), muy bien recibida por el público cubano, y Kangamba (2008), resultado de catorce años de búsqueda de una estética propia para retratar al hombre en situaciones límite. Fue Profesor Titular de la Facultad de Cine, Radio y Televisión del Instituto Superior de Arte, y en 2009 recibió la categoría especial de Profesor de Mérito. Falleció en La Habana el 28 de marzo de 2016 a los 80 años.",
     activeYears: "1964-2010",
     awards: [
-      "Premio Nacional de Cine (Candidato finalista)",
-      "Mención Especial Interjury en Festival de Berlín"
+      "Mención de Realización — Festival Internacional del Nuevo Cine Latinoamericano",
+      "Categoría especial de Profesor de Mérito — Instituto Superior de Arte (2009)"
     ]
   },
   {
