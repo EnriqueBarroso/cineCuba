@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
+import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { MovieRow } from "@/components/catalog/MovieRow"; // Importamos el nuevo componente
 import { moviesByDecade } from "@/data/movies"; // Importamos los datos ya organizados
@@ -6,6 +7,11 @@ import { moviesByDecade } from "@/data/movies"; // Importamos los datos ya organ
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Inicio"
+        description="Catálogo digital y gratuito del cine cubano. Explora películas, directores y la historia de nuestra cinematografía."
+        url="https://cine-cubano.com/"
+      />
       <main>
         {/* El Hero Principal (Slider grande) */}
         <HeroSection />

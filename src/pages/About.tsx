@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { Film, Heart, Globe, Users, BookOpen, Award, Mail } from "lucide-react";
 import { motion } from "framer-motion";
@@ -6,6 +7,11 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Acerca de"
+        description="Conoce el proyecto CineCuba: un archivo digital y gratuito dedicado a preservar y difundir el cine cubano."
+        url="https://cine-cubano.com/acerca"
+      />
       <main className="pt-24 pb-20">
         {/* Hero Section */}
         <motion.section 

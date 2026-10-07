@@ -1,10 +1,16 @@
 // src/pages/Terms.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
 
 const Terms = () => {
   return (
     <div className="min-h-screen bg-background text-foreground py-12 px-4 sm:px-6 lg:px-8">
+      <SEO
+        title="Términos y Condiciones"
+        description="Términos y condiciones de uso de CineCuba, el archivo digital del cine cubano."
+        url="https://cine-cubano.com/terminos"
+      />
       <div className="max-w-3xl mx-auto">
         {/* Cabecera */}
         <div className="mb-10">
