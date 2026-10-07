@@ -423,11 +423,14 @@ export const directors: Director[] = [
     photo: manuelHerreraPhoto,
     birthYear: 1942,
     nationality: "Cubano",
-    biography: "Premio Nacional de Cine 2022. Manuel Herrera es el creador de 'Zafiros, locura azul' (1997), uno de los mayores éxitos de taquilla del cine cubano. Su obra abarca desde el documental clásico 'Girón' hasta biopics musicales que conectan profundamente con el público.",
+    biography: "Manuel Herrera Reyes nació el 14 de octubre de 1942 en Santa Clara. De adolescente organizó un cine club en su instituto y rodó varios filmes experimentales. En 1960, cuando se creó el ICAIC, se mudó solo a La Habana y se incorporó al instituto, trabajando primero en la revista Cine Cubano y luego como asistente de dirección de Tomás Gutiérrez Alea en Las doce sillas (1962). Fue uno de los miembros fundadores del ICAIC y a lo largo de seis décadas compaginó su labor como director con la docencia — fue Jefe de Cátedra en la EICTV de San Antonio de los Baños — y la gestión cultural, siendo Director de la Cinemateca de Cuba de 2007 a 2013 y Presidente de la Federación de Cine Clubes de Cuba. Su filmografía abarca documentales y largometrajes de ficción, destacando el biopic Capablanca (1986) sobre el legendario ajedrecista cubano, y Zafiros, locura azul (1997), uno de los mayores éxitos de taquilla del cine cubano, que reconstruye la historia del mítico quinteto habanero de los años 60. En 2022 recibió el Premio Nacional de Cine por la obra de la vida. Está casado con la actriz Eslinda Núñez, también Premio Nacional de Cine.",
     activeYears: "1965-presente",
     awards: [
+      "Premio de la Unión de Escritores de la URSS — Festival Internacional de Cine de Taskent, por No hay sábado sin sol (1979)",
+      "Premio El Mégano de la Federación Nacional de Cine Clubes — XIX Festival Internacional del Nuevo Cine Latinoamericano, por Zafiros, locura azul (1997)",
+      "Premios Caracol — por Zafiros, locura azul (1998)",
       "Premio Nacional de Cine de Cuba (2022)",
-      "Premio de la Popularidad Festival de La Habana"
+      "Premio Maestro de Juventudes (2024)"
     ]
   },
   {
