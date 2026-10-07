@@ -576,11 +576,15 @@ export const directors: Director[] = [
     photo: lesterHamletPhoto,
     birthYear: 1971,
     nationality: "Cubano",
-    biography: "Director de cine y videoclips reconocido por su sensibilidad hacia el melodrama y la dirección de actores. Tras '3 veces 2', dirigió éxitos como 'Casa Vieja' (2010) y 'Fábula' (2011), explorando las complejidades emocionales de la sociedad cubana actual.",
+    biography: "Lester Hamlet Vieira nació el 5 de febrero de 1971 en La Habana. Se graduó de Dirección Teatral en la Escuela de Instructores de Arte en 1991 y luego se especializó en Dirección de Cine en la FAMCA del Instituto Superior de Arte, ampliando su formación con estudios de Montaje, Dirección de Arte y Guion en la EICTV de San Antonio de los Baños. Su obra abarca videoclips, documentales y largometrajes de ficción. Codirigió el tríptico Tres veces dos (2004) junto a Pavel Giroud y Esteban Insausti, que ganó el Premio Zénith de Plata a la Mejor Ópera Prima en el Festival de Montreal. Debutó en solitario con Casa Vieja (2010), adaptación del clásico teatral de Abelardo Estorino, que ganó el Premio del Público y la Mención del Jurado en el Festival de La Habana. Al año siguiente estrenó Fábula (2011), que obtuvo el Tercer Premio Coral a la Mejor Película de Ficción y el Premio El Mégano de la Federación de Cine Clubes. Fue director del Festival Internacional de Cine Pobre de Gibara. Ha ganado en varias ocasiones los Premios Caracol de la UNEAC. Actualmente reside en Estados Unidos.",
     activeYears: "1995-presente",
     awards: [
-      "Premio de la Popularidad en Festival de La Habana",
-      "Múltiples Premios Lucas (Videoclips)"
+      "Premio Zénith de Plata a la Mejor Ópera Prima — Festival Mundial de Cine de Montreal, por Tres veces dos (2004)",
+      "Premios Caracol a la Mejor Banda Sonora, Mejor Edición, Mejor Fotografía y Mejor Dirección de Arte — UNEAC, por Tres veces dos (2004)",
+      "Premio del Público — Festival Internacional del Nuevo Cine Latinoamericano, por Casa Vieja (2010)",
+      "Mención del Jurado — Festival Internacional del Nuevo Cine Latinoamericano, por Casa Vieja (2010)",
+      "Tercer Premio Coral al Mejor Largometraje de Ficción — Festival Internacional del Nuevo Cine Latinoamericano, por Fábula (2011)",
+      "Premio El Mégano — Federación Nacional de Cine Clubes, por Fábula (2011)"
     ]
   },
   {
