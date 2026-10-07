@@ -277,12 +277,17 @@ export const directors: Director[] = [
     photo: gerardoChijonaPhoto,
     birthYear: 1949,
     nationality: "Cubano",
-    biography: "Gerardo Chijona Valdés es un director y crítico de cine que debutó con gran éxito con 'Adorables mentiras' (1991). Su cine explora la realidad cubana contemporánea a través de comedias agridulces y dramas urbanos que reflejan los sueños y frustraciones de la sociedad.",
+    biography: "Gerardo Chijona Valdés nació el 19 de septiembre de 1949 en La Habana. Licenciado en Lengua y Literatura Inglesas por la Universidad de La Habana, en 1974 comenzó a trabajar en el ICAIC como crítico de cine para el periódico Granma y la revista Cine Cubano. Desde 1976 fue asistente de dirección en películas de Manuel Pérez, Pastor Vega y Rogelio París. En 1984 pasó a dirigir documentales, obteniendo premios en los principales festivales del mundo. Su debut en el largometraje de ficción fue Adorables mentiras (1991), que se presentó en Sundance, fue finalista a la Cámara de Oro en Cannes y candidatura cubana al Oscar. Siguió con Un paraíso bajo las estrellas (1999), Perfecto amor equivocado (2004), Boleto al paraíso (2010) — seleccionada para los Premios Goya y ganadora del Havana Star Prize en Nueva York — y Esther en alguna parte (2013). Su película Los buenos demonios (2018), con guión póstumo de Daniel Díaz Torres, ganó en el Festival de Málaga los premios al Mejor Actor de Reparto, Mejor Guion y Mejor Música. Ha sido jurado en los festivales de Sundance, Chicago, Huelva, La Habana, Lima, Ceará y Cartagena.",
     activeYears: "1980-presente",
     awards: [
-      "Premio Coral del Festival de La Habana",
-      "Nominación al Goya",
-      "Biznaga de Plata en Málaga"
+      "Finalista Cámara de Oro — Festival de Cannes, por Adorables mentiras (1992)",
+      "Colón de Oro — Festival Iberoamericano de Cine de Huelva, por Adorables mentiras",
+      "Candidatura cubana al Oscar a la Mejor Película Extranjera — por Adorables mentiras (1993)",
+      "Selección — Festival de Sundance, por Boleto al paraíso (2011)",
+      "Havana Star Prize a la Mejor Película — Havana Film Festival Nueva York, por Boleto al paraíso (2011)",
+      "Candidatura cubana a los Premios Goya — por Boleto al paraíso (2012)",
+      "Premio a la Mejor Dirección — Festival de Cine Iberoamericano",
+      "Premio al Mejor Actor de Reparto, Mejor Guion y Mejor Música — Festival de Málaga, por Los buenos demonios (2018)"
     ]
   },
   {
