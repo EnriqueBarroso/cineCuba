@@ -133,12 +133,19 @@ export const directors: Director[] = [
     photo: fernandoPerezPhoto,
     birthYear: 1944,
     nationality: "Cubano",
-    biography: "Fernando Pérez Valdés es el poeta del cine cubano contemporáneo. 'Suite Habana' (2003) es su obra maestra, un documental lírico sobre la vida habanera. También dirigió 'Madagascar' (1994), 'La vida es silbar' (1998) y 'José Martí: El ojo del canario' (2010).",
+    biography: "Fernando Pérez Valdés nació el 19 de noviembre de 1944 en Guanabacoa, La Habana. Licenciado en Lengua y Literatura Hispánicas por la Universidad de La Habana, en 1962 se incorporó al ICAIC como asistente de dirección trabajando junto a Tomás Gutiérrez Alea, Manuel Octavio Gómez y Sergio Giral. Debutó como director en 1975 con documentales y en 1987 dirigió su primer largometraje de ficción, Clandestinos, Premio de Ópera Prima en La Habana. Su obra posterior lo consolidó como el cineasta cubano más reconocido internacionalmente: Hello Hemingway (1990) ganó el Primer Premio Coral en La Habana; Madagascar (1994) obtuvo el Gran Premio en el Festival de Sundance y el Premio Especial del Jurado en La Habana; La vida es silbar (1998) repitió el Primer Premio Coral; Suite Habana (2003) ganó el Premio FIPRESCI en San Sebastián y el Primer Premio Coral. Su biopicé José Martí: el ojo del canario (2010) ganó el Premio a la Mejor Dirección en La Habana. Últimos días en La Habana (2016) obtuvo el Premio Goya a la Mejor Película Iberoamericana y el Premio Ariel. Recibió el Premio Nacional de Cine de Cuba en 2007.",
     activeYears: "1975-presente",
     awards: [
-      "Premio Nacional de Cine de Cuba (2007)",
-      "Gran Premio del Festival de La Habana por 'Suite Habana'",
-      "Premio Goya por 'La vida es silbar'"
+      "Primer Premio Coral — Festival Internacional del Nuevo Cine Latinoamericano, por Hello Hemingway (1990)",
+      "Gran Premio — Festival de Sundance, por Madagascar (1994)",
+      "Premio Especial del Jurado — Festival Internacional del Nuevo Cine Latinoamericano, por Madagascar (1994)",
+      "Primer Premio Coral — Festival Internacional del Nuevo Cine Latinoamericano, por La vida es silbar (1998)",
+      "Primer Premio Coral — Festival Internacional del Nuevo Cine Latinoamericano, por Suite Habana (2003)",
+      "Premio FIPRESCI — Festival Internacional de Cine de San Sebastián, por Suite Habana (2003)",
+      "Premio a la Mejor Dirección — Festival Internacional del Nuevo Cine Latinoamericano, por José Martí: el ojo del canario (2010)",
+      "Premio Goya a la Mejor Película Iberoamericana — por Últimos días en La Habana (2017)",
+      "Premio Ariel a la Mejor Película Iberoamericana — por Últimos días en La Habana (2017)",
+      "Premio Nacional de Cine de Cuba (2007)"
     ]
   },
   {
