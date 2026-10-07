@@ -306,11 +306,14 @@ export const directors: Director[] = [
     birthYear: 1948,
     deathYear: 2013,
     nationality: "Cubano",
-    biography: "Director valiente conocido por su sátira política. 'Alicia en el pueblo de Maravillas' (1991) causó gran polémica. Con 'Hacerse el sueco' (2001) demostró su talento para la comedia costumbrista.",
+    biography: "Daniel Díaz Torres (31 de diciembre de 1948 — 16 de septiembre de 2013) fue uno de los directores más irreverentes y comprometidos del cine cubano. Licenciado en Ciencias Políticas por la Universidad de La Habana, en 1961 participó en la Campaña de Alfabetización en la Sierra del Escambray. Desde 1968 trabajó en el ICAIC como crítico de cine y posteriormente como asistente de dirección, realizando también noventa ediciones del Noticiero ICAIC Latinoamericano. Debutó en el largometraje con Jíbaro (1985), seleccionada para el Festival de Moscú. Su consagración llegó con Alicia en el pueblo de Maravillas (1991), una de las sátiras más audaces del cine cubano — fue retirada de los cines por las autoridades tres días después de su estreno y permaneció prohibida años. La película tenía guión de Eduardo del Llano y contó con Thais Valdés en el papel principal. Continuó con la comedia irreverente en Kleines Tropicana (1997) y Hacerse el sueco (2000), ambas premiadas internacionalmente. Sus últimas películas, Lisanka (2010) y La película de Ana (2012), ganaron múltiples premios en festivales de América Latina y Europa. Fue también profesor en la Escuela Internacional de Cine y TV de San Antonio de los Baños desde 1986 hasta su muerte, víctima de un cáncer a los 64 años.",
     activeYears: "1975-2013",
     awards: [
-      "Premio de la Crítica en Berlín",
-      "Premio Coral del Festival de La Habana"
+      "Selección — XIV Festival Internacional de Cine de Moscú, por Jíbaro (1985)",
+      "Premio de la Popularidad — Festival Internacional del Nuevo Cine Latinoamericano, por Hacerse el sueco (2000)",
+      "Premio del Público — Festival Internacional de Cine de Friburgo, Suiza, por Hacerse el sueco (2001)",
+      "Premio a la Mejor Actriz — Festival Iberoamericano de Cine de Ceará, Brasil, por Lisanka (2010)",
+      "Nominación Premio Goya a la Mejor Película Iberoamericana — por La película de Ana (2013)"
     ]
   },
 
