@@ -241,11 +241,16 @@ export const directors: Director[] = [
     birthYear: 1933,
     deathYear: 2021,
     nationality: "Cubano",
-    biography: "Cineasta y poeta. Su obra 'La bella del Alhambra' (1989) ganó el primer Premio Goya a Mejor Película Extranjera de Habla Hispana. Artista multifacético que dejó un legado invaluable en la cultura cubana.",
+    biography: "Enrique Pineda Barnet (28 de octubre de 1933 — 12 de enero de 2021) fue uno de los artistas más versátiles y completos de la cultura cubana: cineasta, guionista, poeta, actor, periodista, crítico y profesor universitario. A los 20 años ganó el Premio Nacional de Literatura Hernández Catá. Fue cofundador de Teatro Estudio y de la UNEAC, e integró el ICAIC desde sus inicios en 1960. Su filmografía abarca más de 25 títulos. Fue coguionista junto al poeta soviético Evgueni Evtushenko de Soy Cuba (1964) de Mikhail Kalatozov — la más vanguardista coproducción cubano-soviética — y asesor de Franco Solinas para Quemada (1969) de Gillo Pontecorvo, protagonizada por Marlon Brando. Su cortometraje Cosmorama (1964) es considerado el primer corto experimental del cine cubano. Sus dos obras más celebradas son Giselle (1963), considerada una de las mejores películas de ballet de la historia, y La bella del Alhambra (1989), basada en la novela Canción de Rachel de Miguel Barnet, que ganó el Premio Goya a la Mejor Película de Habla Hispana y fue candidatura cubana al Oscar. Fue también Jefe de la Cátedra de Guion de la EICTV de San Antonio de los Baños durante años. Recibió el Premio Nacional de Cine en 2006 y el Premio Coral de Honor del Festival de La Habana por la obra de la vida en 2016.",
     activeYears: "1960-2015",
     awards: [
-      "Premio Goya por 'La bella del Alhambra' (1990)",
-      "Premio Nacional de Cine de Cuba"
+      "Premio Nacional de Literatura Hernández Catá (1953)",
+      "Premio Goya a la Mejor Película de Habla Hispana — por La bella del Alhambra (1990)",
+      "Premio Mano de Bronce — Festival Latino de Nueva York, por La bella del Alhambra",
+      "Candidatura cubana al Oscar a la Mejor Película Extranjera — por La bella del Alhambra (1991)",
+      "Premio Nacional de Cine de Cuba (2006)",
+      "Premio Coral de Honor por la Obra de la Vida — Festival Internacional del Nuevo Cine Latinoamericano (2016)",
+      "Premio por trayectoria — Havana Film Festival Nueva York (2010)"
     ]
   },
   {
