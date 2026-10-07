@@ -101,12 +101,16 @@ export const directors: Director[] = [
     birthYear: 1928,
     deathYear: 1996,
     nationality: "Cubano",
-    biography: "Tomás Gutiérrez Alea, conocido como 'Titón', es considerado el más grande cineasta cubano. Su filmografía es un testimonio de la evolución de Cuba, desde 'Memorias del Subdesarrollo' (1968) hasta 'Fresa y Chocolate' (1993), nominada al Oscar. Titón combinaba compromiso político con una sofisticación artística única.",
+    biography: "Tomás Gutiérrez Alea, conocido cariñosamente como Titón (11 de diciembre de 1928 — 16 de abril de 1996), fue el director más importante en la historia del cine cubano y uno de los grandes maestros del cine latinoamericano del siglo XX. Nacido en La Habana en el seno de una familia acomodada, se graduó de Derecho por la Universidad de La Habana aunque nunca ejerció, pues el cine era su verdadera vocación. En 1951 viajó a Roma a estudiar en el Centro Sperimentale di Cinematografia. Tras el triunfo de la Revolución en 1959 fue uno de los fundadores del ICAIC junto a Alfredo Guevara. Dirigió más de veinte largometrajes, documentales y cortometrajes, siempre con una mirada crítica, poética y profundamente humana sobre la realidad cubana. Sus obras más celebradas — Las doce sillas (1962), La muerte de un burócrata (1966), Memorias del subdesarrollo (1968), La última cena (1976), Los sobrevivientes (1978) y Fresa y chocolate (1993) — son patrimonio del cine mundial. Memorias del subdesarrollo fue incluida por el New York Times entre las 1000 mejores películas de la historia. Fresa y chocolate, codirigida con Juan Carlos Tabío cuando ya combatía el cáncer que lo mataría, fue nominada al Oscar a la Mejor Película Extranjera en 1995 y ganó el Premio Especial del Jurado en la Berlinale. Su última película, Guantanamera (1995), la rodó completamente enfermo. Falleció en La Habana el 16 de abril de 1996 a los 67 años. Está casado con la actriz Mirtha Ibarra, quien en 2008 le dedicó el documental Titón: de La Habana a Guantanamera.",
     activeYears: "1950-1996",
     awards: [
-      "Nominación al Oscar por 'Fresa y Chocolate' (1994)",
-      "Oso de Plata en Berlín por 'Fresa y Chocolate' (1994)",
-      "Premio Nacional de Cine de Cuba (1988)"
+      "Premio Especial del Jurado — Festival Internacional de Cine de Berlín, por Fresa y Chocolate (1994, compartido con Juan Carlos Tabío)",
+      "Premio Goya a la Mejor Película Extranjera de Habla Hispana — por Fresa y Chocolate (1995)",
+      "Nominación Oscar a la Mejor Película Extranjera — por Fresa y Chocolate (1995)",
+      "Medalla de Oro — Festival Internacional de Cine de Venecia (1992)",
+      "Orden Félix Varela de Primer Grado — Consejo de Estado de Cuba",
+      "Premio Nacional de Cine de Cuba (póstumo)",
+      "Memorias del subdesarrollo incluida en la lista de las 1000 mejores películas de la historia — The New York Times"
     ]
   },
   {
