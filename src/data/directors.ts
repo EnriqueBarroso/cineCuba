@@ -86,12 +86,17 @@ export const directors: Director[] = [
     birthYear: 1941,
     deathYear: 2008,
     nationality: "Cubano",
-    biography: "Humberto Solás Borrego fue uno de los cineastas más influyentes de América Latina. Su obra maestra 'Lucía' (1968) es considerada una de las películas más importantes del cine latinoamericano. Solás era conocido por su estilo visual barroco y su exploración de las experiencias de las mujeres cubanas a través de diferentes épocas.",
+    biography: "Humberto Bárbaro Solás Borrego (4 de diciembre de 1941 — 17 de septiembre de 2008) fue uno de los directores más importantes del cine cubano y latinoamericano. Marcado desde joven por el neorrealismo italiano y la Nouvelle Vague francesa, a los 18 años dirigió su primer cortometraje La huida (1959) y en 1960 se incorporó al ICAIC como asistente de dirección. Se reveló internacionalmente con el mediometraje Manuela (1966) — dedicado a la mujer cubana — y alcanzó la cima con Lucía (1968), un extraordinario tríptico sobre tres mujeres cubanas en tres momentos históricos distintos, considerada una de las diez mejores películas de América Latina. Le siguieron Cantata de Chile (1975), Un hombre de éxito (1986) — primera película cubana candidata al Oscar a la Mejor Película Extranjera, presentada en Un Certain Regard en Cannes — y Miel para Oshún (2001), la más vista del cine cubano contemporáneo con más de un millón de espectadores. Ha ganado premios en San Sebastián, Huelva, Cartagena, Moscú, Karlovy Vary, Valladolid, Tokio, Sundance y la Habana. En 2003 fundó el Festival Internacional de Cine Pobre de Gibara, hoy rebautizado con su nombre. Falleció de leucemia en La Habana el 17 de septiembre de 2008.",
     activeYears: "1964-2008",
     awards: [
-      "Premio de la Crítica en Cannes por 'Lucía' (1969)",
-      "Premio Nacional de Cine de Cuba (1994)",
-      "Premio Coral de Honor del Festival de La Habana"
+      "Premio Coral — Festival Internacional del Nuevo Cine Latinoamericano, por Lucía (1968)",
+      "Premio en el Festival Internacional de Cine de Moscú — por Lucía",
+      "Primera película cubana candidata al Oscar — Un hombre de éxito (1987)",
+      "Selección Un Certain Regard — Festival de Cannes, por Un hombre de éxito (1987)",
+      "Premio Coral al Mejor Director — Festival Internacional del Nuevo Cine Latinoamericano, por Un hombre de éxito (1986)",
+      "Premio en el Festival de Huelva — por Miel para Oshún",
+      "Premio Nacional de Cine de Cuba (2005)",
+      "Premio La Gloria por toda su carrera cinematográfica"
     ]
   },
   {
