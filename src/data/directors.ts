@@ -154,11 +154,19 @@ export const directors: Director[] = [
     photo: ernestoDaranasPhoto,
     birthYear: 1961,
     nationality: "Cubano",
-    biography: "Ernesto Daranas es uno de los directores más importantes del cine actual. Su película 'Conducta' (2014) fue un fenómeno cultural, abordando la educación y la marginación. También ha dirigido 'Los dioses rotos' (2008) y 'Sergio y Serguéi' (2017).",
+    biography: "Ernesto Daranas Serrano nació el 7 de diciembre de 1961 en La Habana. Licenciado en Pedagogía y Geografía, comenzó su carrera como narrador en la radio cubana, donde escribió crónicas, obras de teatro, series dramáticas y radionovelas. Pasó luego a la televisión como guionista y director de telefilmes. Su documental Los últimos gaiteros de La Habana (2004) ganó el Premio Internacional de Periodismo Rey de España. Debutó en el largometraje con Los dioses rotos (2008), inspirada en la vida del proxeneta cubano Alberto Yarini, que fue candidatura cubana al Oscar y ganó premios en La Habana, Providence, Ceará y Gibara. Conducta (2014), su película más celebrada, fue también candidatura cubana al Oscar, ganó más de 50 premios internacionales — entre ellos la Biznaga de Plata a la Mejor Dirección en Málaga y premios en Bogotá, Brasilia y La Habana — y fue nominada a los Premios Platino. Sergio y Serguéi (2017) tuvo su estreno mundial en el Festival de Toronto y fue igualmente candidatura cubana al Oscar. Sus tres largometrajes de ficción han sido las tres candidaturas cubanas consecutivas a los Oscar, un hecho sin precedentes en la historia del cine cubano.",
     activeYears: "1990-presente",
     awards: [
-      "Premio Goya a Mejor Película Iberoamericana por 'Conducta'",
-      "Premio del Público en el Festival de La Habana"
+      "Premio Internacional de Periodismo Rey de España — por Los últimos gaiteros de La Habana (2004)",
+      "Candidatura cubana al Oscar a la Mejor Película Extranjera — por Los dioses rotos (2009)",
+      "Premio del Público — Festival Internacional del Nuevo Cine Latinoamericano, por Los dioses rotos (2009)",
+      "Candidatura cubana al Oscar a la Mejor Película Extranjera — por Conducta (2015)",
+      "Biznaga de Plata a la Mejor Dirección — Festival de Cine de Málaga, por Conducta (2015)",
+      "Premio al Mejor Guion — Festival Internacional de Cine de Brasilia, por Conducta (2014)",
+      "Gran Premio — Festival Internacional de Cine de Bogotá, por Conducta (2014)",
+      "Nominación Premio Platino a la Mejor Película Iberoamericana — por Conducta (2015)",
+      "Candidatura cubana al Oscar a la Mejor Película Extranjera — por Sergio y Serguéi (2018)",
+      "Estreno mundial — Festival Internacional de Cine de Toronto, por Sergio y Serguéi (2017)"
     ]
   },
   {
