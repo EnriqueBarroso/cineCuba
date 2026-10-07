@@ -413,11 +413,17 @@ export const directors: Director[] = [
     photo: juanCarlosCremataPhoto,
     birthYear: 1961,
     nationality: "Cubano",
-    biography: "Director iconoclasta y teatral. Su ópera prima 'Nada' (2001) sorprendió por su estética visual única y humor negro. También dirigió 'Viva Cuba' (2005), la primera película infantil cubana premiada en Cannes. Su cine a menudo desafía las convenciones narrativas.",
+    biography: "Juan Carlos Cremata Malberti nació el 18 de noviembre de 1961 en el Vedado, La Habana, hijo de la coreógrafa y directora Iraida Malberti. Se graduó de Teatrología y Dramaturgia en el ISA en 1986 y luego de la primera generación de la Escuela Internacional de Cine y TV de San Antonio de los Baños en 1990. Su cortometraje de graduación Oscuros rinocerontes enjaulados (1990) ganó el Gran Premio Eisenstein en Alemania y fue adquirido por el MoMA de Nueva York. En 1996 recibió la prestigiosa Beca Guggenheim. Debutó en el largometraje con Nada (2001), presentada en la Quincena de Realizadores de Cannes, nominada al Goya y al Ariel, y ganadora del Premio Coral de Ópera Prima en La Habana. Su siguiente película, Viva Cuba (2005), codirigida con su madre, ganó más de 42 premios internacionales y fue el primer filme cubano en obtener el Grand Prix Écrans Juniors en el Festival de Cannes. Continuó con El premio flaco (2008) y Chamaco (2010), película polémica sobre la prostitución masculina en La Habana. Es también destacado director de teatro, con obras como El malentendido de Camus.",
     activeYears: "1990-2015",
     awards: [
-      "Grand Prix Écrans Juniors en Cannes (Viva Cuba)",
-      "Premio Coral a Ópera Prima (Nada)"
+      "Gran Premio Eisenstein — Festival Internacional de Cine de Wilhelmshaven, Alemania, por Oscuros rinocerontes enjaulados (1992)",
+      "Archivado en el MoMA de Nueva York — Oscuros rinocerontes enjaulados (1996)",
+      "Beca Guggenheim — Fundación John Simon Guggenheim (1996)",
+      "Premio Coral de Ópera Prima — Festival Internacional del Nuevo Cine Latinoamericano, por Nada (2001)",
+      "Premio Caracol a la Mejor Dirección — UNEAC, por Nada (2002)",
+      "Nominación Premio Goya a la Mejor Película Extranjera de Habla Hispana — por Nada",
+      "Nominación Premio Ariel — por Nada",
+      "Grand Prix Écrans Juniors — Festival Internacional de Cine de Cannes, por Viva Cuba (2005)"
     ]
   },
   {
