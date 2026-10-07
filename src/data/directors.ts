@@ -227,11 +227,13 @@ export const directors: Director[] = [
     birthYear: 1940,
     deathYear: 2005,
     nationality: "Cubano",
-    biography: "Director de 'Retrato de Teresa' (1979), película que abrió un fuerte debate sobre el machismo y la doble moral en Cuba. Su cine se caracterizó por un compromiso feminista y una mirada crítica social.",
+    biography: "Pastor Vega Torres (12 de febrero de 1940 — 2 de junio de 2005) fue uno de los directores más influyentes del cine cubano y una figura clave en la institucionalización del cine latinoamericano. En 1958 fue cofundador de Teatro Estudio junto a Vicente y Raquel Revuelta. En 1960 se incorporó al ICAIC como asistente de dirección y en 1964 comenzó su carrera como director de documentales. Su obra maestra, Retrato de Teresa (1979), protagonizada por su esposa Daisy Granados, desató una inusual polémica en Cuba por su retrato del machismo y la emancipación femenina — fue seleccionada para el Festival de Moscú donde Daisy Granados ganó el Premio a la Mejor Actriz. La película fue exhibida en más de 50 países. Entre 1978 y 1987 ocupó el cargo de Director de Relaciones Internacionales del ICAIC. Su contribución más duradera a la cultura cinematográfica latinoamericana fue la fundación en 1979 del Festival Internacional del Nuevo Cine Latinoamericano de La Habana, del que fue director durante sus primeras doce ediciones — el festival más importante del cine latinoamericano hasta hoy. Falleció en La Habana el 2 de junio de 2005 víctima de un cáncer.",
     activeYears: "1965-2000",
     awards: [
-      "Premio Coral del Festival de La Habana por 'Retrato de Teresa'",
-      "Premio Nacional de Cine de Cuba"
+      "Premio a la Mejor Actriz (Daisy Granados) — XI Festival Internacional de Cine de Moscú, por Retrato de Teresa (1979)",
+      "Mención Especial del Jurado — IX Festival Internacional de Cine de Huelva, por Retrato de Teresa",
+      "Premio India Catalina de Oro — Festival Internacional de Cine de Cartagena, por Retrato de Teresa",
+      "Distinción por la Cultura Nacional — Cuba"
     ]
   },
   {
