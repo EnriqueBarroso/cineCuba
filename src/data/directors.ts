@@ -382,11 +382,12 @@ export const directors: Director[] = [
     birthYear: 1937,
     deathYear: 2024,
     nationality: "Cubano-Estadounidense",
-    biography: "Sergio Giral fue fundamental en el cine afrocubano. Su trilogía sobre la esclavitud ('El otro Francisco', 'Rancheador', 'Maluala') es referente indispensable. 'María Antonia' (1990) es considerada una de las mejores traslaciones del teatro al cine en Cuba. Falleció en el exilio en 2024.",
+    biography: "Sergio Giral (2 de enero de 1937 — 12 de marzo de 2024) fue una figura fundamental del cine cubano y uno de los principales exponentes del cine afrocubano en América Latina. Nacido en La Habana de padre cubano y madre norteamericana, entre 1953 y 1959 estudió en Estados Unidos, donde también estudió pintura en el Art Students League de Nueva York. Regresó a Cuba tras el triunfo de la Revolución y en 1962 fue invitado por el fotógrafo Néstor Almendros a trabajar en el ICAIC, donde se convirtió en uno de sus miembros fundadores. Dirigió más de 16 películas, nueve de ellas documentales. Su obra más celebrada es la trilogía sobre la esclavitud en Cuba en el siglo XIX: El otro Francisco (1974), Rancheador (1976) y Maluala (1979) — una contribución única al cine latinoamericano sobre las raíces africanas de la cultura cubana. El otro Francisco ganó el Diploma al Mejor Actor en el Festival de Moscú. María Antonia (1990), su última película cubana, fue una de las más taquilleras de la isla. En 1991 regresó definitivamente a Estados Unidos, donde continuó filmando. Falleció en Miami el 12 de marzo de 2024 a los 87 años, siendo considerado un precursor mundial en la representación de la cultura y la historia afrocubana en el cine.",
     activeYears: "1962-2010",
     awards: [
-      "Premio Coral a la Mejor Fotografía (por sus filmes)",
-      "Reconocimiento por su aporte al cine afrodescendiente"
+      "Diploma al Mejor Actor — IX Festival Internacional de Cine de Moscú, por El otro Francisco (1975)",
+      "Premio Coral — Festival Internacional del Nuevo Cine Latinoamericano, por Maluala (1979)",
+      "Premio de Actuación Femenina — Festival Internacional del Nuevo Cine Latinoamericano, por María Antonia (1990)"
     ]
   },
   {
