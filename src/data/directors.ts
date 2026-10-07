@@ -116,12 +116,15 @@ export const directors: Director[] = [
     birthYear: 1943,
     deathYear: 2021,
     nationality: "Cubano",
-    biography: "Juan Carlos Tabío fue un destacado director cubano conocido por combinar la comedia con la crítica social aguda. Co-dirigió 'Fresa y Chocolate'. Sus obras como 'Se permuta' (1984), 'Plaff' (1988) y 'Lista de espera' (2000) retratan con ingenio las contradicciones de la vida cotidiana en Cuba.",
+    biography: "Juan Carlos Tabío Fernández (3 de septiembre de 1943 — 18 de enero de 2021) fue uno de los directores y guionistas más importantes del cine cubano. Entró al mundo del cine de casualidad — sus padres le habían preparado una carrera en política — y en 1961 comenzó a trabajar en el ICAIC como asistente de producción. Dirigió 41 documentales y largometrajes de ficción a lo largo de su carrera, destacándose como el gran maestro de la comedia cubana con títulos como Se permuta (1983), Plaff o demasiado miedo a la vida (1988) y El elefante y la bicicleta (1994). Su mayor reconocimiento internacional llegó cuando Tomás Gutiérrez Alea, al ser llamado de urgencia al quirófano durante el rodaje de Fresa y chocolate (1993), le pidió que asumiera la codirección — una película que obtuvo el Premio Especial del Jurado en la Berlinale, el Premio Goya y una nominación al Oscar. Repitió la codirección con Gutiérrez Alea en Guantanamera (1995). Su Lista de espera (2000) se presentó en la sección Un Certain Regard del Festival de Cannes. Recibió el Premio Nacional de Cine de Cuba en 2014 y falleció en La Habana el 18 de enero de 2021.",
     activeYears: "1970-2021",
     awards: [
-      "Nominación al Oscar por 'Fresa y Chocolate'",
-      "Premio Coral en el Festival de La Habana",
-      "Premio Goya por 'Lista de espera' (2000)"
+      "Premio Especial del Jurado — Festival Internacional de Cine de Berlín, por Fresa y Chocolate (1994, compartido con Gutiérrez Alea)",
+      "Premio Goya a la Mejor Película Extranjera de Habla Hispana — por Fresa y Chocolate (1995)",
+      "Nominación Oscar a la Mejor Película Extranjera — por Fresa y Chocolate (1995)",
+      "Premio FIPRESCI — X Festival Internacional del Nuevo Cine Latinoamericano, por Se permuta",
+      "Selección Un Certain Regard — Festival de Cannes, por Lista de espera (2000)",
+      "Premio Nacional de Cine de Cuba (2014)"
     ]
   },
   {
