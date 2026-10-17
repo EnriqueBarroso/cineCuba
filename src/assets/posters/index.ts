@@ -105,6 +105,7 @@ export { default as posterAunqueEstesLejos } from './poster-aunque-estes-lejos.j
 export { default as posterAfinidades } from './afinidades.jpg';
 export { default as posterBoletoAlParaiso } from './boleto-al-paraiso.jpg';
 export { default as posterCasaVieja } from './casa-vieja.jpg';
+export { default as posterSeVende } from './se-vende.jpg';
 export { default as posterChamaco } from './chamaco.jpg';
 export { default as posterLisanka } from './Lisanka-poster.jpg';
 export { default as posterMolinaFeroz } from './molina-feroz.jpg';
