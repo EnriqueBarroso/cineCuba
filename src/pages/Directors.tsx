@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { directors } from "@/data/directors";
 import { movies } from "@/data/movies";
 import { SEO } from "@/components/SEO";
+import { hasDirector } from "@/lib/directors";
 
 const Directors = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -42,7 +43,7 @@ const Directors = () => {
             
             // === LÓGICA DE CONTEO AUTOMÁTICO ===
             // Contamos cuántas películas en el catálogo tienen el nombre de este director
-            const movieCount = movies.filter(m => m.director.includes(director.name)).length;
+            const movieCount = movies.filter(m => hasDirector(m.director, director.name)).length;
 
             return (
               <Link key={director.id} to={`/director/${director.id}`} className="group block">

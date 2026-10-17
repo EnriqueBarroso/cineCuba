@@ -63,6 +63,7 @@ import {
   heroHabana,
   heroJuan
 } from '@/assets/hero';
+import { shareDirector } from "@/lib/directors";
 
 // ══════════════════════════════════════
 // DÉCADA DE 1960s
@@ -2089,7 +2090,7 @@ const movies2010s: Movie[] = [
     id: "7-dias-en-la-habana",
     title: "7 días en La Habana",
     year: 2012,
-    director: "Benicio del Toro, Pablo Trapero, Julio Medem, Gaspar Noé, Elia Suleiman, Juan Carlos Tabío, Laurent Cantet",
+    director: ["Benicio del Toro", "Pablo Trapero", "Julio Medem", "Gaspar Noé", "Elia Suleiman", "Juan Carlos Tabío", "Laurent Cantet"],
     poster: poster7DiasEnLaHabana,
     duration: "125 min",
     genre: ["Drama"],
@@ -2713,7 +2714,7 @@ export const getRelatedMovies = (currentMovieId: string, limit: number = 4): Mov
   return movies
     .filter((movie) => 
       movie.id !== currentMovieId && 
-      (movie.genre.some(g => currentMovie.genre.includes(g)) || movie.director === currentMovie.director)
+      (movie.genre.some(g => currentMovie.genre.includes(g)) || shareDirector(movie.director, currentMovie.director))
     )
     .slice(0, limit);
 };

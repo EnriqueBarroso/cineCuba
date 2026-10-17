@@ -8,6 +8,7 @@ import { getDirectorByName } from "@/data/directors";
 import { SEO } from "@/components/SEO";
 import { serials } from "@/data/serials";
 import type { Movie } from "@/data/movies/types";
+import { directorLabel } from "@/lib/directors";
 
 const SerialDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -27,7 +28,7 @@ const SerialDetail = () => {
   if (!serial) return null;
 
   const favorite = isFavorite(serial.id);
-  const directorObj = getDirectorByName(serial.director);
+  const directorObj = getDirectorByName(directorLabel(serial.director));
 
   return (
     <div className="min-h-screen bg-background">
@@ -130,10 +131,10 @@ const SerialDetail = () => {
                     <Users className="w-4 h-4" />
                     {directorObj ? (
                       <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/serial/${serial.id}`, label: serial.title } }} className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold">
-                        {serial.director}
+                        {directorLabel(serial.director)}
                       </Link>
                     ) : (
-                      <span>{serial.director}</span>
+                      <span>{directorLabel(serial.director)}</span>
                     )}
                   </div>
                 </div>
@@ -206,9 +207,9 @@ const SerialDetail = () => {
                   <p className="text-white font-medium">
                     {directorObj ? (
                       <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/serial/${serial.id}`, label: serial.title } }} className="hover:text-gold transition-colors">
-                        {serial.director}
+                        {directorLabel(serial.director)}
                       </Link>
-                    ) : serial.director}
+                    ) : directorLabel(serial.director)}
                   </p>
                 </div>
                 <div className="space-y-1">

@@ -11,6 +11,7 @@ import { getActorByName } from "@/data/actors";
 import { SEO } from "@/components/SEO";
 import { VideoJsonLd } from "@/components/VideoJsonLd";
 import { MovieJsonLd } from "@/components/MovieJsonLd";
+import { directorLabel, directorList } from "@/lib/directors";
 
 const RelatedMovieCard = ({ 
   movie, 
@@ -27,7 +28,7 @@ const RelatedMovieCard = ({
         <div className="relative aspect-[2/3] overflow-hidden bg-secondary">
           <img
             src={movie.poster}
-            alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
+            alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
@@ -53,13 +54,42 @@ const RelatedMovieCard = ({
           <div className="flex items-center gap-2 text-sm text-muted-foreground font-light">
             <span>{movie.year}</span>
             <span className="text-hairline">•</span>
-            <span>{movie.director}</span>
+            <span>{directorLabel(movie.director)}</span>
           </div>
         </div>
       </article>
     </Link>
   );
 };
+
+/** Cada director como enlace independiente (a su ficha si existe), separados por coma. */
+const DirectorNames = ({
+  director,
+  from,
+  linkClassName,
+}: {
+  director: Movie["director"];
+  from: { path: string; label: string };
+  linkClassName: string;
+}) => (
+  <>
+    {directorList(director).map((name, i) => {
+      const obj = getDirectorByName(name);
+      return (
+        <span key={name}>
+          {i > 0 && ", "}
+          {obj ? (
+            <Link to={`/director/${obj.id}`} state={{ from }} className={linkClassName}>
+              {name}
+            </Link>
+          ) : (
+            name
+          )}
+        </span>
+      );
+    })}
+  </>
+);
 
 const MovieDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -71,9 +101,6 @@ const MovieDetail = () => {
   const [movie, setMovie] = useState<Movie | undefined>(() => id ? getMovieById(id) : undefined);
   const [relatedMovies, setRelatedMovies] = useState<Movie[]>(() => id ? getRelatedMovies(id, 4) : []);
   const [loading, setLoading] = useState(false);
-
-  // 1. LÓGICA NUEVA: Buscamos el objeto del director si tenemos la película
-  const directorObj = movie ? getDirectorByName(movie.director) : null;
 
   useEffect(() => {
     if (!id) return;
@@ -165,7 +192,7 @@ const MovieDetail = () => {
           <div className="grid lg:grid-cols-[300px_1fr] gap-12">
             <div className="hidden lg:block">
               <div className="aspect-[2/3] overflow-hidden bg-secondary sticky top-24 rounded-sm shadow-lg">
-                <img src={movie.poster} alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`} className="w-full h-full object-cover" />
+                <img src={movie.poster} alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`} className="w-full h-full object-cover" />
               </div>
             </div>
 
@@ -192,16 +219,13 @@ const MovieDetail = () => {
                   {/* Bloque del Director Linkeado */}
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4" /> 
-                    {directorObj ? (
-                      <Link 
-                        to={`/director/${directorObj.id}`} state={{ from: { path: `/pelicula/${movie.id}`, label: movie.title } }} 
-                        className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold"
-                      >
-                        {movie.director}
-                      </Link>
-                    ) : (
-                      <span>{movie.director}</span>
-                    )}
+                    <span>
+                      <DirectorNames
+                        director={movie.director}
+                        from={{ path: `/pelicula/${movie.id}`, label: movie.title }}
+                        linkClassName="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold"
+                      />
+                    </span>
                   </div>
                 </div>
               </div>
@@ -233,16 +257,11 @@ const MovieDetail = () => {
                 <div className="space-y-1">
                   <span className="text-xs uppercase tracking-wider text-gold/80">Director</span>
                   <p className="text-white font-medium">
-                    {directorObj ? (
-                      <Link 
-                        to={`/director/${directorObj.id}`} state={{ from: { path: `/pelicula/${movie.id}`, label: movie.title } }} 
-                        className="hover:text-gold transition-colors"
-                      >
-                        {movie.director}
-                      </Link>
-                    ) : (
-                      movie.director
-                    )}
+                    <DirectorNames
+                      director={movie.director}
+                      from={{ path: `/pelicula/${movie.id}`, label: movie.title }}
+                      linkClassName="hover:text-gold transition-colors"
+                    />
                   </p>
                 </div>
                 <div className="space-y-1">

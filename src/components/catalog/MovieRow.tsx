@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, PlayCircle } from "lucide-react";
 import { Movie } from "@/data/movies";
+import { directorLabel } from "@/lib/directors";
 
 interface MovieRowProps {
   title: string;
@@ -69,7 +70,7 @@ export const MovieRow = ({ title, movies }: MovieRowProps) => {
               <div className="relative aspect-[2/3] rounded-xl overflow-hidden bg-zinc-800 mb-3 shadow-lg shadow-black/40 transition-all duration-300 group-hover/card:scale-105 group-hover/card:shadow-xl group-hover/card:shadow-black/60">
                 <img 
                   src={movie.poster} 
-                  alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
+                  alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

@@ -13,7 +13,9 @@ export const MovieJsonLd = ({ movie }: { movie: Movie }) => (
         dateCreated: movie.year.toString(),
         image: absoluteUrl(movie.poster),
         genre: movie.genre,
-        director: { "@type": "Person", name: movie.director },
+        director: Array.isArray(movie.director)
+          ? movie.director.map((name) => ({ "@type": "Person", name }))
+          : { "@type": "Person", name: movie.director },
         actor: movie.cast?.map((m) => ({ "@type": "Person", name: m.name })) || [],
         url: `${SITE_URL}/pelicula/${movie.id}`,
       }),

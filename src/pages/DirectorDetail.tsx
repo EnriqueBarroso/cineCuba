@@ -9,6 +9,7 @@ import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { SEO } from "@/components/SEO";
 import { useBackLink } from "@/hooks/useBackLink";
+import { directorLabel, hasDirector } from "@/lib/directors";
 
 const DirectorInitials = ({ name }: { name: string }) => {
   const initials = name
@@ -38,7 +39,7 @@ const DirectorFilmCard = ({
       <div className="relative aspect-[2/3] overflow-hidden bg-secondary rounded-sm">
         <img
           src={movie.poster}
-          alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
+          alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
@@ -118,7 +119,7 @@ const DirectorDetail = () => {
   const director = id ? getDirectorById(id) : undefined;
   
   const directorMovies = director
-    ? movies.filter((m) => m.director.includes(director.name))
+    ? movies.filter((m) => hasDirector(m.director, director.name))
     : [];
 
   const directorSagas = director

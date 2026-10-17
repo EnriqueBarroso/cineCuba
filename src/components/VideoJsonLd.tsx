@@ -7,7 +7,7 @@ interface VideoJsonLdProps {
   year: number;
   videoUrl: string;
   genre: string[];
-  director: string;
+  director: string | string[];
 }
 
 export const VideoJsonLd = ({ name, description, thumbnail, year, videoUrl, genre, director }: VideoJsonLdProps) => (
@@ -25,7 +25,7 @@ export const VideoJsonLd = ({ name, description, thumbnail, year, videoUrl, genr
         embedUrl: videoUrl,
         inLanguage: "es",
         genre: genre.join(", "),
-        director: { "@type": "Person", name: director },
+        director: Array.isArray(director) ? director.map((name) => ({ "@type": "Person", name })) : { "@type": "Person", name: director },
       }),
     }}
   />

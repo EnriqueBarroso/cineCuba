@@ -4,7 +4,7 @@ export interface Movie {
   id: string;
   title: string;
   year: number;
-  director: string;
+  director: string | string[];
   poster: string;
   backdrop?: string;
   duration: string;

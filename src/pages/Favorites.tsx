@@ -6,6 +6,7 @@ import { useFavorites } from '@/hooks/useFavorites';
 import { useAuth } from '@/hooks/useAuth';
 import { movies } from '@/data/movies/catalog';
 import { Movie } from '@/data/movies/types';
+import { directorLabel } from "@/lib/directors";
 
 const FavoriteCard = ({ movie, onRemove }: { movie: Movie; onRemove: () => void }) => (
   <Link to={`/pelicula/${movie.id}`} className="group block">
@@ -13,7 +14,7 @@ const FavoriteCard = ({ movie, onRemove }: { movie: Movie; onRemove: () => void 
       <div className="relative aspect-[2/3] overflow-hidden bg-secondary">
         <img
           src={movie.poster}
-          alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
+          alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
@@ -37,7 +38,7 @@ const FavoriteCard = ({ movie, onRemove }: { movie: Movie; onRemove: () => void 
         <div className="flex items-center gap-2 text-sm text-muted-foreground font-light">
           <span>{movie.year}</span>
           <span className="text-hairline">•</span>
-          <span className="truncate">{movie.director}</span>
+          <span className="truncate">{directorLabel(movie.director)}</span>
         </div>
       </div>
     </article>

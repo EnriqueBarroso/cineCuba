@@ -8,6 +8,7 @@ import { getDirectorByName } from "@/data/directors";
 import { SEO } from "@/components/SEO";
 import { shorts } from "@/data/shorts";
 import type { Movie } from "@/data/movies/types";
+import { directorLabel } from "@/lib/directors";
 
 const ShortDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -27,7 +28,7 @@ const ShortDetail = () => {
   if (!short) return null;
 
   const favorite = isFavorite(short.id);
-  const directorObj = getDirectorByName(short.director);
+  const directorObj = getDirectorByName(directorLabel(short.director));
 
   return (
     <div className="min-h-screen bg-background">
@@ -117,10 +118,10 @@ const ShortDetail = () => {
                     <Users className="w-4 h-4" />
                     {directorObj ? (
                       <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/corto/${short.id}`, label: short.title } }} className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold">
-                        {short.director}
+                        {directorLabel(short.director)}
                       </Link>
                     ) : (
-                      <span>{short.director}</span>
+                      <span>{directorLabel(short.director)}</span>
                     )}
                   </div>
                 </div>
@@ -160,9 +161,9 @@ const ShortDetail = () => {
                   <p className="text-white font-medium">
                     {directorObj ? (
                       <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/corto/${short.id}`, label: short.title } }} className="hover:text-gold transition-colors">
-                        {short.director}
+                        {directorLabel(short.director)}
                       </Link>
-                    ) : short.director}
+                    ) : directorLabel(short.director)}
                   </p>
                 </div>
                 <div className="space-y-1">

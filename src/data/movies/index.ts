@@ -24,6 +24,7 @@ export {
 
 import { movies } from "./catalog";
 import type { Movie } from "./types";
+import { directorLabel, hasDirector, shareDirector } from "@/lib/directors";
 
 /**
  * Obtiene una película por su ID
@@ -50,8 +51,8 @@ export function getRelatedMovies(currentId: string, limit: number = 4): Movie[] 
       let scoreB = 0;
       
       // Mismo director: +10 puntos
-      if (a.director === currentMovie.director) scoreA += 10;
-      if (b.director === currentMovie.director) scoreB += 10;
+      if (shareDirector(a.director, currentMovie.director)) scoreA += 10;
+      if (shareDirector(b.director, currentMovie.director)) scoreB += 10;
       
       // Géneros en común: +3 puntos por género
       const commonGenresA = a.genre.filter(g => currentMovie.genre.includes(g)).length;
@@ -82,7 +83,7 @@ export function searchMovies(query: string): Movie[] {
   
   return movies.filter((movie) => 
     movie.title.toLowerCase().includes(normalizedQuery) ||
-    movie.director.toLowerCase().includes(normalizedQuery) ||
+    directorLabel(movie.director).toLowerCase().includes(normalizedQuery) ||
     movie.synopsis.toLowerCase().includes(normalizedQuery) ||
     movie.genre.some(g => g.toLowerCase().includes(normalizedQuery))
   );
@@ -111,6 +112,6 @@ export function filterByDecade(decade: number): Movie[] {
  */
 export function filterByDirector(director: string): Movie[] {
   return movies.filter((movie) => 
-    movie.director.toLowerCase().includes(director.toLowerCase())
+    hasDirector(movie.director, director)
   );
 }

@@ -10,6 +10,7 @@ import { movies, Movie } from "@/data/movies";
 import { sagas, Saga } from "@/data/sagas";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
+import { directorLabel } from "@/lib/directors";
 
 const ActorInitials = ({ name }: { name: string }) => {
   const initials = name
@@ -41,7 +42,7 @@ const ActorFilmCard = ({
       <div className="relative aspect-[2/3] overflow-hidden bg-secondary rounded-sm">
         <img
           src={movie.poster}
-          alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
+          alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />

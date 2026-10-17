@@ -5,6 +5,7 @@ import { getMovieById } from "@/data/movies";
 import { ArrowLeft, Calendar, Film, Users, Sparkles, ChevronRight, ChevronLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import { SEO } from "@/components/SEO";
+import { directorLabel } from "@/lib/directors";
 
 const EraDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -159,7 +160,7 @@ const EraDetail = () => {
                         <div className="aspect-[2/3] overflow-hidden">
                           <img 
                             src={movie!.poster} 
-                            alt={`Poster de ${movie!.title} (${movie!.year}) - Dir. ${movie!.director}`}
+                            alt={`Poster de ${movie!.title} (${movie!.year}) - Dir. ${directorLabel(movie!.director)}`}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                         </div>
@@ -168,7 +169,7 @@ const EraDetail = () => {
                             {movie!.title}
                           </h3>
                           <p className="text-sm text-muted-foreground mt-1">
-                            {movie!.year} · {movie!.director}
+                            {movie!.year} · {directorLabel(movie!.director)}
                           </p>
                         </div>
                       </Link>

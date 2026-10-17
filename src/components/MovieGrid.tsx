@@ -7,6 +7,7 @@ import { Movie } from "@/data/movies/types";
 import { MovieSearch } from "./MovieSearch";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import { directorLabel } from "@/lib/directors";
 
 const MOVIES_PER_PAGE = 12;
 
@@ -35,7 +36,7 @@ const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
         <div className="relative aspect-[2/3] rounded-xl overflow-hidden bg-zinc-800 shadow-lg shadow-black/40 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-black/60">
           <img
             src={movie.poster}
-            alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${movie.director}`}
+            alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
@@ -69,7 +70,7 @@ const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
           <div className="flex items-center gap-2 text-sm text-muted-foreground font-light">
             <span>{movie.year}</span>
             <span className="text-hairline">•</span>
-            <span>{movie.director}</span>
+            <span>{directorLabel(movie.director)}</span>
           </div>
         </div>
       </article>
@@ -105,7 +106,7 @@ const MovieGrid = () => {
       
       const results = movies.filter(movie => 
         movie.title.toLowerCase().includes(query) ||
-        movie.director.toLowerCase().includes(query) ||
+        directorLabel(movie.director).toLowerCase().includes(query) ||
         movie.year.toString().includes(query) ||
         movie.genre.some(g => g.toLowerCase().includes(query))
       );

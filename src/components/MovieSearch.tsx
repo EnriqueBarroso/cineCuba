@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/select";
 // IMPORTANTE: Solo importamos el tipo, NO los datos
 import type { Movie, Genre } from "@/data/movies";
+import { directorList, directorLabel } from "@/lib/directors";
 
 interface MovieSearchProps {
   movies: Movie[]; // Nueva prop para recibir las películas reales
@@ -37,7 +38,7 @@ export const MovieSearch = ({ movies, onFilteredMovies }: MovieSearchProps) => {
 
   // Calcular directores únicos
   const directors = useMemo(() => {
-    const allDirectors = movies.map((movie) => movie.director);
+    const allDirectors = movies.flatMap((movie) => directorList(movie.director));
     return [...new Set(allDirectors)].sort();
   }, [movies]);
 
@@ -47,7 +48,7 @@ export const MovieSearch = ({ movies, onFilteredMovies }: MovieSearchProps) => {
       const matchesSearch =
         searchQuery === "" ||
         movie.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        movie.director.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        directorLabel(movie.director).toLowerCase().includes(searchQuery.toLowerCase()) ||
         movie.synopsis.toLowerCase().includes(searchQuery.toLowerCase());
 
       const matchesGenre =
@@ -57,7 +58,7 @@ export const MovieSearch = ({ movies, onFilteredMovies }: MovieSearchProps) => {
         selectedYear === "all" || movie.year.toString() === selectedYear;
 
       const matchesDirector =
-        selectedDirector === "all" || movie.director === selectedDirector;
+        selectedDirector === "all" || directorList(movie.director).includes(selectedDirector);
 
       return matchesSearch && matchesGenre && matchesYear && matchesDirector;
     });

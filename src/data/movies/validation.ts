@@ -5,6 +5,7 @@
  */
 
 import type { Movie } from "./types";
+import { directorList } from "@/lib/directors";
 
 export interface ValidationError {
   movieId: string;
@@ -57,7 +58,7 @@ export function validateMovie(movie: Movie, allIds: Set<string>): ValidationErro
   }
   
   // Validar director
-  if (!movie.director || movie.director.trim() === "") {
+  if (directorList(movie.director).every((n) => !n || n.trim() === "")) {
     errors.push({
       movieId: movie.id,
       field: "director",
@@ -195,7 +196,7 @@ export function getCatalogStats(movies: Movie[]) {
   }, {} as Record<number, number>);
   
   const byDirector = movies.reduce((acc, movie) => {
-    acc[movie.director] = (acc[movie.director] || 0) + 1;
+    for (const name of directorList(movie.director)) acc[name] = (acc[name] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
   
