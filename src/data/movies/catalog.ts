@@ -2179,8 +2179,13 @@ const movies2010s: Movie[] = [
   poster: posterCasaVieja,
   videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/VCD%20CASA%20VIEJA.mpg",
   cast: [
-    { name: "Yadro Reyes", role: "Esteban" },
-    { name: "Daisy Quintana", role: "Madre" }
+    { name: "Yadier Fernández", role: "Esteban" },
+    { name: "Daisy Quintana", role: "Laura" },
+    { name: "Alberto Pujol", role: "Diego" },
+    { name: "Adria Santana", role: "Onelia" },
+    { name: "Susana Tejera", role: "Dalia" },
+    { name: "Isabel Santos", role: "Flora" },
+    { name: "Manuel Porto", role: "Higinio" }
   ]
 },
 {
