@@ -2061,6 +2061,25 @@ const movies2000s: Movie[] = [
 
 const movies2010s: Movie[] = [
   {
+    id: "se-vende",
+    title: "Se vende",
+    year: 2012,
+    director: "Jorge Perugorría",
+    poster: "",
+    duration: "95 min",
+    genre: ["Comedia", "Comedia negra"],
+    synopsis: "Nácar, una joven técnica de laboratorio con serios problemas económicos, conversa a diario con el espíritu de su madre en la tumba familiar. Ella le aconseja vender el panteón para resolver sus apuros. Una comedia de humor negro sobre la vida cotidiana cubana, donde llegar a fin de mes exige maniobras absurdamente creativas.",
+    awards: [],
+    cast: [
+      { name: "Daylenis Fuentes", role: "Nácar" },
+      { name: "Jorge Perugorría", role: "Noel" },
+      { name: "Mirta Ibarra", role: "La madre" },
+      { name: "Mario Balmaseda", role: "El padre" },
+      { name: "Yuliet Cruz", role: "La amiga" }
+    ],
+    notes: "Título internacional: For Sale. Producción del ICAIC. Estrenada en el Festival Internacional del Nuevo Cine Latinoamericano de La Habana en diciembre de 2012; estreno comercial en Cuba en junio de 2013."
+  },
+  {
     id: "7-dias-en-la-habana",
     title: "7 días en La Habana",
     year: 2012,
