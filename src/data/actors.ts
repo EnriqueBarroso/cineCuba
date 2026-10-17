@@ -1476,13 +1476,6 @@ export const actors: Actor[] = [
     ],
   },
   {
-    id: 'yadro-reyes',
-    name: 'Yadro Reyes',
-    nationality: 'Cubano',
-    biography: '',
-    awards: [],
-  },
-  {
     id: 'yailene-sierra',
     name: 'Yailene Sierra',
     nationality: 'Cubana',
