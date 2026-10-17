@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { SUPPORT_URL } from "@/lib/links";
 import { Heart, Mail, Github, Twitter, Instagram, Coffee } from "lucide-react";
 
 export const Footer = () => {
@@ -17,9 +18,8 @@ export const Footer = () => {
             </p>
             
             <div className="pt-2">
-              {/* ⚠️ PENDIENTE: Pon tu enlace real de BuyMeACoffee o borra este bloque */}
               <a 
-                href="https://www.buymeacoffee.com/" 
+                href={SUPPORT_URL} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#FFDD00] text-black px-5 py-3 rounded-full font-bold hover:bg-[#FFDD00]/90 transition-transform hover:scale-105 shadow-lg"

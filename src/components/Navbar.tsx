@@ -2,6 +2,7 @@ import { Search, Menu, X, Coffee, Film, LogOut, Heart, Lightbulb, ShieldCheck } 
 import { useState, useEffect, FormEvent } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
+import { SUPPORT_URL } from "@/lib/links";
 import { AuthModal } from "@/components/AuthModal";
 import { toast } from "sonner";
 import {
@@ -152,7 +153,7 @@ export const Navbar = () => {
 
             {/* Donación (solo escritorio) */}
             <a
-              href="https://buymeacoffee.com/enriquedesv"
+              href={SUPPORT_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center gap-2 px-4 py-2 bg-gold text-black rounded-full text-xs font-bold hover:bg-gold/90 transition-transform hover:scale-105"
@@ -321,7 +322,7 @@ export const Navbar = () => {
             )}
 
             <a
-              href="https://buymeacoffee.com/enriquedesv"
+              href={SUPPORT_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 py-3 px-4 flex items-center justify-center gap-2 bg-gold/10 text-gold rounded-lg font-bold border border-gold/20 hover:bg-gold/20 transition-colors"
