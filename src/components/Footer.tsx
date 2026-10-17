@@ -49,8 +49,7 @@ export const Footer = () => {
               {/* 🟢 CORREGIDO: Eliminado enlace roto a Privacidad */}
               <li><Link to="/terminos" className="hover:underline text-sm">Términos y Condiciones</Link></li>
               <li>
-                {/* ⚠️ PENDIENTE: Pon tu email real */}
-                <a href="mailto:tu-contacto@cine-cubano.com" className="hover:text-gold transition-colors flex items-center gap-2">
+                <a href="mailto:cinecuba537@gmail.com" className="hover:text-gold transition-colors flex items-center gap-2">
                   <Mail className="w-4 h-4" /> Contactar
                 </a>
               </li>
