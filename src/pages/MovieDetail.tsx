@@ -194,7 +194,7 @@ const MovieDetail = () => {
                     <Users className="w-4 h-4" /> 
                     {directorObj ? (
                       <Link 
-                        to={`/director/${directorObj.id}`} 
+                        to={`/director/${directorObj.id}`} state={{ from: { path: `/pelicula/${movie.id}`, label: movie.title } }} 
                         className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold"
                       >
                         {movie.director}
@@ -235,7 +235,7 @@ const MovieDetail = () => {
                   <p className="text-white font-medium">
                     {directorObj ? (
                       <Link 
-                        to={`/director/${directorObj.id}`} 
+                        to={`/director/${directorObj.id}`} state={{ from: { path: `/pelicula/${movie.id}`, label: movie.title } }} 
                         className="hover:text-gold transition-colors"
                       >
                         {movie.director}
@@ -300,6 +300,7 @@ const MovieDetail = () => {
                         <Link
                           key={index}
                           to={`/actor/${actorObj.id}`}
+                          state={{ from: { path: `/pelicula/${movie.id}`, label: movie.title } }}
                           className="flex items-center gap-3 p-3 bg-white/5 border border-white/5 rounded-sm hover:border-gold/30 transition-colors"
                         >
                           {inner}

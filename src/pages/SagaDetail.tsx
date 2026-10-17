@@ -179,7 +179,7 @@ const SagaDetail = () => {
                     <Users className="w-4 h-4" />
                     {directorObj ? (
                       <Link
-                        to={`/director/${directorObj.id}`}
+                        to={`/director/${directorObj.id}`} state={{ from: { path: `/saga/${saga.id}`, label: saga.title } }}
                         className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold"
                       >
                         {saga.director}
@@ -359,7 +359,7 @@ const SagaDetail = () => {
                   <span className="text-xs uppercase tracking-wider text-gold/80">Director</span>
                   <p className="text-white font-medium">
                     {directorObj ? (
-                      <Link to={`/director/${directorObj.id}`} className="hover:text-gold transition-colors">
+                      <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/saga/${saga.id}`, label: saga.title } }} className="hover:text-gold transition-colors">
                         {saga.director}
                       </Link>
                     ) : (
@@ -406,6 +406,7 @@ const SagaDetail = () => {
                         <Link
                           key={i}
                           to={`/actor/${actorObj.id}`}
+                          state={{ from: { path: `/saga/${saga.id}`, label: saga.title } }}
                           className="flex items-center gap-3 p-3 bg-white/5 border border-white/5 rounded-sm hover:border-gold/30 transition-colors"
                         >
                           {inner}

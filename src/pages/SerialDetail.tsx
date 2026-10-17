@@ -129,7 +129,7 @@ const SerialDetail = () => {
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4" />
                     {directorObj ? (
-                      <Link to={`/director/${directorObj.id}`} className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold">
+                      <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/serial/${serial.id}`, label: serial.title } }} className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold">
                         {serial.director}
                       </Link>
                     ) : (
@@ -205,7 +205,7 @@ const SerialDetail = () => {
                   <span className="text-xs uppercase tracking-wider text-gold/80">Director</span>
                   <p className="text-white font-medium">
                     {directorObj ? (
-                      <Link to={`/director/${directorObj.id}`} className="hover:text-gold transition-colors">
+                      <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/serial/${serial.id}`, label: serial.title } }} className="hover:text-gold transition-colors">
                         {serial.director}
                       </Link>
                     ) : serial.director}

@@ -8,6 +8,7 @@ import { sagas, Saga } from "@/data/sagas";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { SEO } from "@/components/SEO";
+import { useBackLink } from "@/hooks/useBackLink";
 
 const DirectorInitials = ({ name }: { name: string }) => {
   const initials = name
@@ -106,6 +107,7 @@ const DirectorSagaCard = ({ saga }: { saga: Saga }) => (
 
 const DirectorDetail = () => {
   const { id } = useParams<{ id: string }>();
+  const back = useBackLink({ path: "/directores", label: "Volver a directores" });
   const { isFavorite, toggleFavorite } = useFavorites();
   
   // Scroll arriba al cargar
@@ -155,11 +157,11 @@ const DirectorDetail = () => {
         <div className="container mx-auto px-6 lg:px-12">
           {/* CAMBIO 2: Enlace corregido en la navegación principal */}
           <Link 
-            to="/directores" 
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12"
+            to={back.path} 
+            className="inline-flex max-w-full items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12"
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span className="text-sm">Volver a directores</span>
+            <ArrowLeft className="w-4 h-4 shrink-0" />
+            <span className="text-sm truncate">{back.label}</span>
           </Link>
 
           <div className="grid lg:grid-cols-[320px_1fr] gap-12 lg:gap-16">

@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Award, MapPin, Heart, Users, Layers } from "lucide-react";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import { useBackLink } from "@/hooks/useBackLink";
 import { absoluteUrl } from "@/lib/seo";
 import { getActorById, getActorByName } from "@/data/actors";
 import { movies, Movie } from "@/data/movies";
@@ -111,6 +112,7 @@ const ActorDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { isFavorite, toggleFavorite } = useFavorites();
   const [photoError, setPhotoError] = useState(false);
+  const back = useBackLink({ path: "/actores", label: "Volver a actores" });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -192,11 +194,11 @@ const ActorDetail = () => {
       <section className="pt-32 pb-16 lg:pb-24 animate-fade-in">
         <div className="container mx-auto px-6 lg:px-12">
           <Link
-            to="/actores"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12"
+            to={back.path}
+            className="inline-flex max-w-full items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12"
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span className="text-sm">Volver a actores</span>
+            <ArrowLeft className="w-4 h-4 shrink-0" />
+            <span className="text-sm truncate">{back.label}</span>
           </Link>
 
           <div className="grid lg:grid-cols-[320px_1fr] gap-12 lg:gap-16">

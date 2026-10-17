@@ -116,7 +116,7 @@ const ShortDetail = () => {
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4" />
                     {directorObj ? (
-                      <Link to={`/director/${directorObj.id}`} className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold">
+                      <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/corto/${short.id}`, label: short.title } }} className="hover:text-gold transition-colors underline decoration-gold/50 hover:decoration-gold">
                         {short.director}
                       </Link>
                     ) : (
@@ -159,7 +159,7 @@ const ShortDetail = () => {
                   <span className="text-xs uppercase tracking-wider text-gold/80">Director</span>
                   <p className="text-white font-medium">
                     {directorObj ? (
-                      <Link to={`/director/${directorObj.id}`} className="hover:text-gold transition-colors">
+                      <Link to={`/director/${directorObj.id}`} state={{ from: { path: `/corto/${short.id}`, label: short.title } }} className="hover:text-gold transition-colors">
                         {short.director}
                       </Link>
                     ) : short.director}
