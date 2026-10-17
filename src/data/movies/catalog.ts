@@ -996,7 +996,7 @@ const movies1990s: Movie[] = [
     cast: [
       { name: "Isabel Santos", role: "Nancy" },
       { name: "Luis Alberto García", role: "Lombardi" },
-      { name: "Mirtha Ibarra", role: "Personaje" },
+      { name: "Mirta Ibarra", role: "Personaje" },
       { name: "Miguel Gutiérrez", role: "" },
       { name: "Alicia Bustamante", role: "" },
       { name: "Ernesto Tapia", role: "" },
@@ -1045,7 +1045,7 @@ const movies1990s: Movie[] = [
     cast: [
       { name: "Jorge Perugorría", role: "Diego" },
       { name: "Vladimir Cruz", role: "David" },
-      { name: "Mirtha Ibarra", role: "Nancy" },
+      { name: "Mirta Ibarra", role: "Nancy" },
       { name: "Joel Angelino", role: "Germán" },
       { name: "Marilyn Solaya", role: "Vivian" }
     ],
@@ -1112,7 +1112,7 @@ const movies1990s: Movie[] = [
     ],
     cast: [
       { name: "Carlos Cruz", role: "Adolfo" },
-      { name: "Mirtha Ibarra", role: "Gina" },
+      { name: "Mirta Ibarra", role: "Gina" },
       { name: "Jorge Perugorría", role: "Mariano" }
     ],
     notes: "Última película de Tomás Gutiérrez Alea."
@@ -1564,7 +1564,7 @@ const movies2000s: Movie[] = [
     trailerUrl: "",
     awards: [],
     cast: [
-      { name: "Mirtha Ibarra", role: "Mercedes" },
+      { name: "Mirta Ibarra", role: "Mercedes" },
       { name: "Antonio Valero", role: "Alberto" },
       { name: "Laura de la Uz", role: "Ana" }
     ]
@@ -1827,7 +1827,7 @@ const movies2000s: Movie[] = [
   poster: posterRosaLaChina,
   videoUrl: "https://archive.org/embed/el-mani-es-asi/Rosa%20La%20China.mpg",
   cast: [
-    { name: "Mirtha Ibarra", role: "Rosa" },
+    { name: "Mirta Ibarra", role: "Rosa" },
     { name: "Azucena De La Fuente", role: "Amiga" }
   ]
 },
