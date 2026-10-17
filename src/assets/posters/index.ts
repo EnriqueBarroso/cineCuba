@@ -66,7 +66,7 @@ export { default as posterBambola } from './bambola.jpg';
 export { default as posterJuliette } from './quien-diablos-es-juliette.jpg';
 export { default as posterAntesAnochezca } from './antes-que-anochezca.jpg';
 export { default as posterPataNegra } from './pata-negra.jpg';
-export { default as posterTresVecesDos } from './3-veces-2.jpg';
+export { default as posterTresVecesDos } from './3-veces-2.png';
 export { default as posterHormigas } from './hormigas-en-la-boca.jpg';
 export { default as posterPerfectoAmor } from './perfecto-amor-equivocado.jpg';
 export { default as posterBailandoCha } from './bailando-chachacha.jpg';
@@ -79,7 +79,7 @@ export { default as posterElEdenPerdido } from './el-eden-perdido.jpg';
 export { default as posterCaminoEden } from './camino-al-eden.jpg';
 export { default as posterCercania } from './cercania.jpg';
 export { default as posterChe } from './che.jpg';
-export { default as posterCheArgentino } from './che-el-argentino.jpg'
+export { default as posterCheArgentino } from './che-el-argentino.png'
 export { default as posterUnaRosaDeFrancia } from './una-rosa-de-francia.jpg';
 export { default as posterCiudadEnRojo } from './ciudad-en-rojo.jpg';
 export { default as posterElPremioFlaco } from './el-premio-flaco.jpg';
