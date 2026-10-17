@@ -1377,12 +1377,15 @@ const movies2000s: Movie[] = [
     ],
     cast: [
       { name: "Javier Bardem", role: "Reinaldo Arenas" },
-      { name: "Olivier Martinez", role: "Lázaro Gómez" },
+      { name: "Johnny Depp", role: "Bon Bon / Teniente Víctor" },
+      { name: "Olivier Martinez", role: "Lázaro Gómez Carilles" },
       { name: "Sean Penn", role: "Cuco Sánchez" },
-      { name: "Michael Wincott", role: "" },
-      { name: "Olatz López Garmendia", role: "" },
-      { name: "Francisco Gattorno", role: "" },
-      { name: "Diego Luna", role: "" },
+      { name: "Michael Wincott", role: "Heberto Zorrilla Ochoa" },
+      { name: "Andrea Di Stefano", role: "Pepe Malas" },
+      { name: "Maurice Compte", role: "José Lezama Lima" },
+      { name: "Olatz López Garmendia", role: "La madre de Reinaldo" },
+      { name: "Francisco Gattorno", role: "Amigo francés" },
+      { name: "Diego Luna", role: "Carlos" },
       { name: "Najwa Nimri", role: "" }
     ]
   },
