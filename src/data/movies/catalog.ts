@@ -767,7 +767,7 @@ const movies1980s: Movie[] = [
     duration: "69 min",
     genre: ["Animación", "Comedia"],
     synopsis: "Un científico vampiro cubano inventa una fórmula que permite a los vampiros resistir la luz del sol. Mientras tanto, las mafias vampíricas de Estados Unidos y Europa oriental luchan por hacerse con el secreto. Una sátira animada llena de humor negro.",
-    videoUrl: 'https://www.youtube.com/embed/Z8RUvL_ChM0',
+    videoUrl: 'https://www.youtube.com/embed/0_dBIkKe-9s',
     trailerUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
     awards: [
       { name: "Encuesta Noticine.com", year: 2009, category: "Top 100 Mejores Películas Iberoamericanas" }
