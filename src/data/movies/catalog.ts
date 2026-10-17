@@ -2069,6 +2069,7 @@ const movies2010s: Movie[] = [
     duration: "95 min",
     genre: ["Comedia", "Comedia negra"],
     synopsis: "Nácar, una joven técnica de laboratorio con serios problemas económicos, conversa a diario con el espíritu de su madre en la tumba familiar. Ella le aconseja vender el panteón para resolver sus apuros. Una comedia de humor negro sobre la vida cotidiana cubana, donde llegar a fin de mes exige maniobras absurdamente creativas.",
+    videoUrl: "https://archive.org/embed/se-vende",
     awards: [],
     cast: [
       { name: "Daylenis Fuentes", role: "Nácar" },
