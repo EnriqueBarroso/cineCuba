@@ -954,9 +954,11 @@ const movies1990s: Movie[] = [
     cast: [
       { name: "Laura de la Uz", role: "Larita" },
       { name: "Raúl Paz", role: "Víctor" },
-      { name: "Enrique Molina", role: "Manolo" },
+      { name: "José Antonio Rodríguez", role: "Tomás" },
+      { name: "Herminia Sánchez", role: "Josefa" },
+      { name: "Micheline Calvert", role: "Miss Amalia" },
       { name: "Marta del Río", role: "Doctora Martínez" },
-      { name: "Caridad Hernández", role: "" }
+      { name: "Wendy Guerra", role: "Estela" }
     ],
   },
   {
