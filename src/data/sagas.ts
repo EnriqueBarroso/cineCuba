@@ -311,7 +311,7 @@ export const sagas: Saga[] = [
     director: "Abel Ponce y José Andrés Torres",
     anioInicio: 1991,
     anioFin: 1991,
-    poster: "",
+    poster: "/images/sagas/su-propia-guerra-2.jpg",
     tipo: "serial",
     genre: ["Policíaco", "Drama", "Acción"],
     synopsis:
