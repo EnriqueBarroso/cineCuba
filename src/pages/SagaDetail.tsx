@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { VideoJsonLd } from "@/components/VideoJsonLd";
+import { isDirectVideoFile } from "@/lib/video";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { getDirectorByName } from "@/data/directors";
@@ -74,22 +75,34 @@ const SagaDetail = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto aspect-video bg-black relative rounded-xl overflow-hidden shadow-2xl border border-white/10">
             {activeEpisode?.videoUrl ? (
-              <>
-                <iframe
-                  key={activeEpisode.videoUrl}
+              isDirectVideoFile(activeEpisode.videoUrl) ? (
+                <video
+                  key={activeEpisode.id}
                   src={activeEpisode.videoUrl}
                   title={activeEpisode.titulo}
-                  className="w-full h-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="w-full h-full bg-black"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent pointer-events-none">
-                  <p className="text-white text-sm font-medium">
-                    {saga.episodios.findIndex((e) => e.id === activeEpisode.id) + 1}. {activeEpisode.titulo}
-                    <span className="text-muted-foreground ml-2 text-xs">{activeEpisode.anio}</span>
-                  </p>
-                </div>
-              </>
+              ) : (
+                <>
+                  <iframe
+                    key={activeEpisode.videoUrl}
+                    src={activeEpisode.videoUrl}
+                    title={activeEpisode.titulo}
+                    className="w-full h-full border-0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent pointer-events-none">
+                    <p className="text-white text-sm font-medium">
+                      {saga.episodios.findIndex((e) => e.id === activeEpisode.id) + 1}. {activeEpisode.titulo}
+                      <span className="text-muted-foreground ml-2 text-xs">{activeEpisode.anio}</span>
+                    </p>
+                  </div>
+                </>
+              )
             ) : (
               <div className="w-full h-full flex flex-col items-center justify-center">
                 <div className="relative z-10 flex flex-col items-center">

@@ -1,4 +1,5 @@
 import { absoluteUrl } from "@/lib/seo";
+import { isDirectVideoFile } from "@/lib/video";
 
 interface VideoJsonLdProps {
   name: string;
@@ -22,7 +23,7 @@ export const VideoJsonLd = ({ name, description, thumbnail, year, videoUrl, genr
         ...(thumbnail && { thumbnailUrl: absoluteUrl(thumbnail) }),
         uploadDate: `${year}-01-01`,
         contentUrl: videoUrl,
-        embedUrl: videoUrl,
+        ...(!isDirectVideoFile(videoUrl) && { embedUrl: videoUrl }),
         inLanguage: "es",
         genre: genre.join(", "),
         director: Array.isArray(director) ? director.map((name) => ({ "@type": "Person", name })) : { "@type": "Person", name: director },
