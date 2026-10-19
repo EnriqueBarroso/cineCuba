@@ -44,7 +44,7 @@ export const sagas: Saga[] = [
         anio: 2004,
         sinopsis:
           "Unos agentes de la Seguridad del Estado llegan al apartamento de Nicanor para instalar micrófonos, llegando al absurdo de pedirle colaboración por falta de presupuesto.",
-        videoUrl: "https://archive.org/embed/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/Cortometraje_cubano_MONTE_ROUGE_-_Eduardo_del_Llano_-__con_Luis_Alberto_Garcia_e.mp4",
+        videoUrl: "https://archive.org/download/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/Cortometraje_cubano_MONTE_ROUGE_-_Eduardo_del_Llano_-__con_Luis_Alberto_Garcia_e.mp4",
       },
       {
         id: "high-tech",
@@ -79,7 +79,7 @@ export const sagas: Saga[] = [
         id: "pas-de-quatre",
         titulo: "Pas de Quatre",
         anio: 2009,
-        videoUrl: "https://archive.org/embed/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/Nicanor_O_27Donnell_-_Pas_de_Quatre.mp4",
+        videoUrl: "https://archive.org/download/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/Nicanor_O_27Donnell_-_Pas_de_Quatre.mp4",
       },
       {
         id: "ache",
@@ -103,7 +103,7 @@ export const sagas: Saga[] = [
         id: "arte",
         titulo: "Arte",
         anio: 2015,
-        videoUrl:"https://archive.org/embed/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/ARTE_Episodio_11_corto_de__Nicanor%2C_Los_Cuentos_de_Nicanor_O_Donnell_comedia_cub.mp4"
+        videoUrl:"https://archive.org/download/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/ARTE_Episodio_11_corto_de__Nicanor%2C_Los_Cuentos_de_Nicanor_O_Donnell_comedia_cub.mp4"
       },
       {
         id: "epica",
@@ -116,7 +116,7 @@ export const sagas: Saga[] = [
         anio: 2017,
         sinopsis:
           "Nicanor y sus amigos debaten qué pasaría si un jeque árabe comprara Cuba por 5.000 millones de dólares.",
-          videoUrl:"https://archive.org/embed/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/DOMINO_new_complete_episode_of_NICANOR_O_27DONNELL_TALES_by_Eduardo_del_Llano_2C_fea.mp4"
+          videoUrl:"https://archive.org/download/domino-new-complete-episode-of-nicanor-o-27-donnell-tales-by-eduardo-del-llano-2-c-fea/DOMINO_new_complete_episode_of_NICANOR_O_27DONNELL_TALES_by_Eduardo_del_Llano_2C_fea.mp4"
       },
       {
         id: "rallame-la-zanahoria",
@@ -322,115 +322,115 @@ export const sagas: Saga[] = [
         id: "su-propia-guerra-2-e01",
         titulo: "Capítulo 1",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x01.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x01.mp4",
       },
       {
         id: "su-propia-guerra-2-e02",
         titulo: "Capítulo 2",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x02.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x02.mp4",
       },
       {
         id: "su-propia-guerra-2-e03",
         titulo: "Capítulo 3",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x03.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x03.mp4",
       },
       {
         id: "su-propia-guerra-2-e04",
         titulo: "Capítulo 4",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x04.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x04.mp4",
       },
       {
         id: "su-propia-guerra-2-e05",
         titulo: "Capítulo 5",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x05.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x05.mp4",
       },
       {
         id: "su-propia-guerra-2-e06",
         titulo: "Capítulo 6",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x06.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x06.mp4",
       },
       {
         id: "su-propia-guerra-2-e07",
         titulo: "Capítulo 7",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x07.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x07.mp4",
       },
       {
         id: "su-propia-guerra-2-e08",
         titulo: "Capítulo 8",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x08.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x08.mp4",
       },
       {
         id: "su-propia-guerra-2-e09",
         titulo: "Capítulo 9",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x09.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x09.mp4",
       },
       {
         id: "su-propia-guerra-2-e10",
         titulo: "Capítulo 10",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x10.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x10.mp4",
       },
       {
         id: "su-propia-guerra-2-e11",
         titulo: "Capítulo 11",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x11.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x11.mp4",
       },
       {
         id: "su-propia-guerra-2-e12",
         titulo: "Capítulo 12",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x12.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x12.mp4",
       },
       {
         id: "su-propia-guerra-2-e13",
         titulo: "Capítulo 13",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x13.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x13.mp4",
       },
       {
         id: "su-propia-guerra-2-e14",
         titulo: "Capítulo 14",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x14.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x14.mp4",
       },
       {
         id: "su-propia-guerra-2-e15",
         titulo: "Capítulo 15",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x15.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x15.mp4",
       },
       {
         id: "su-propia-guerra-2-e16",
         titulo: "Capítulo 16",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x16.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x16.mp4",
       },
       {
         id: "su-propia-guerra-2-e17",
         titulo: "Capítulo 17",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x17.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x17.mp4",
       },
       {
         id: "su-propia-guerra-2-e18",
         titulo: "Capítulo 18",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x18.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x18.mp4",
       },
       {
         id: "su-propia-guerra-2-e19",
         titulo: "Capítulo 19",
         anio: 1991,
-        videoUrl: "https://archive.org/embed/su-propia-guerra-2x-18/Su%20propia%20guerra%202x19.mp4",
+        videoUrl: "https://archive.org/download/su-propia-guerra-2x-18/Su%20propia%20guerra%202x19.mp4",
       },
     ],
     cast: [
