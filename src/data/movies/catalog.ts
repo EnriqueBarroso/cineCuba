@@ -1272,13 +1272,21 @@ const movies1990s: Movie[] = [
     poster: posterParaisoEstrellas,
     duration: "90 min",
     genre: ["Comedia"],
-    synopsis: "Siso sueña con ser bailarín del Tropicana. Una comedia de enredos que rinde homenaje al cabaret y a la picaresca.",
+    synopsis: "En el cabaret Tropicana de La Habana, Sissy sueña con bailar en el mismo escenario donde brilló su madre, pero su padre, Cándido, un antiguo cantante que ahora conduce un camión, se lo prohíbe por una vieja rivalidad con Armando, el empresario y coreógrafo del cabaret. Todo se enreda cuando Cándido y su amigo Promedio conocen a Sergito, un joven con una marca de nacimiento en forma de estrella idéntica a la de Cándido. Entre Sissy y Sergito nace un romance que amenaza con convertirse en un lío familiar. Comedia de equívocos, música, baile y color, que retrata la vida cotidiana en la Cuba de los noventa.",
     awards: [],
     videoUrl: "https://archive.org/embed/un-paraiso-bajo-las-estrellas",
     trailerUrl: "",
     cast: [
-      { name: "Thais Valdés", role: "Stacy" },
+      { name: "Thais Valdés", role: "Sissy" },
       { name: "Vladimir Cruz", role: "Sergito" },
+      { name: "Enrique Molina", role: "Cándido" },
+      { name: "Daisy Granados", role: "Mabel" },
+      { name: "Amparo Muñoz", role: "Olivia" },
+      { name: "Santiago Alfonso", role: "Armando" },
+      { name: "Jacqueline Arenal", role: "Sonia" },
+      { name: "José Manuel (Lítico) Rodríguez", role: "Promedio" },
+      { name: "Alicia Bustamante", role: "Josefa" },
+      { name: "Luis Alberto García", role: "Maestro de ceremonias / policía" },
     ]
   },
 ];
