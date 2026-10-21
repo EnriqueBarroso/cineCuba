@@ -31,6 +31,7 @@ export { default as posterBrigadista } from './el-brigadista.jpg';
 export { default as posterElpidioValdes } from './elpidio-valdes.jpg';
 
 export { default as posterCecilia } from './cecilia.jpg';
+export { default as posterAmada } from './amada.jpg';
 export { default as posterHombreExito } from './un-hombre-de-exito.jpg';
 export { default as posterLosPajaros } from './los_pajaros.jpg';
 export { default as posterSePermuta } from './se-permuta.jpg';

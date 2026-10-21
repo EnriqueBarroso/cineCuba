@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
   // 90s
   posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
@@ -661,6 +661,34 @@ const movies1980s: Movie[] = [
       { name: "Omara Portuondo", role: "Mercedes (cameo musical)" }
     ],
     notes: "Basada en la novela clásica de Cirilo Villaverde."
+  },
+  {
+    id: "amada",
+    title: "Amada",
+    year: 1983,
+    director: "Humberto Solás",
+    poster: posterAmada,
+    duration: "105 min",
+    genre: ["Drama", "Romance", "Histórico"],
+    synopsis: "La Habana, 1914, cuando estalla la Primera Guerra Mundial. Amada, una joven burguesa casada y de costumbres conservadoras, vive atrapada en un mundo decadente que ha perdido su sentido. Su primo Marcial, inquieto e inconformista, intenta sacarla de él, y entre ambos surge una pasión que desafía las normas de su clase. Adaptación de la novela La esfinge, de Miguel de Carrión, con música de Leo Brouwer.",
+    awards: [
+      { name: "Festival de Cine Iberoamericano de Huelva", year: 1983, category: "Premio de Actuación — Eslinda Núñez" },
+      { name: "UNEAC", year: 1983, category: "Premio de Actuación — Eslinda Núñez" },
+    ],
+    videoUrl: "https://archive.org/embed/amada_202601",
+    trailerUrl: "",
+    cast: [
+      { name: "Eslinda Núñez", role: "Amada" },
+      { name: "César Évora", role: "" },
+      { name: "Silvia Planas", role: "" },
+      { name: "Andrés Hernández", role: "" },
+      { name: "Oneida Hernández", role: "" },
+      { name: "Gerardo Riverón", role: "" },
+      { name: "Mónica Guffanti", role: "" },
+      { name: "Georgina Almanza", role: "" },
+      { name: "Elio Mesa", role: "" },
+      { name: "Fela Jar", role: "" },
+    ],
   },
   {
     id: "pajaros-escopeta",
