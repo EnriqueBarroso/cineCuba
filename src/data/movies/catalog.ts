@@ -39,6 +39,7 @@ import {
   posterExtravios,
   posterFabula,
   posterPenumbras,
+  posterPablo,
   posterSumbe,
   posterEsther,
   posterLaPeliculaDeAna,
@@ -2339,6 +2340,25 @@ const movies2010s: Movie[] = [
     { name: "Omar Franco", role: "Actor" },
     { name: "Tomás Cao", role: "Actor" }
   ]
+},
+{
+  id: "pablo-2012",
+  title: "Pablo",
+  year: 2012,
+  director: "Yosmani Acosta Martínez",
+  poster: posterPablo,
+  duration: "91 min",
+  genre: ["Drama"],
+  synopsis: "Pablo es un niño de 12 años que, tras perder a su madre y a su abuela, debe irse a vivir con su padre. Drama social rodado en el centro histórico de Camagüey que aborda la violencia intrafamiliar. Guion de Yoel Ortega, con Yosmani Acosta y la periodista Luisa Alejo.",
+  awards: [],
+  videoUrl: "https://archive.org/embed/pablo_20261021",
+  trailerUrl: "",
+  cast: [
+    { name: "Javier Díaz Varona", role: "Pablo (12 años)" },
+    { name: "Daniel Barcén Varona", role: "Pablo (5 años)" },
+    { name: "Omar Franco", role: "Rogelio" },
+    { name: "Aramís Delgado", role: "Mantecón" },
+  ],
 },
 {
   id: "esther-en-alguna-parte",

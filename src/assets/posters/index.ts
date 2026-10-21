@@ -122,6 +122,7 @@ export { default as posterSergioSerguei } from './sergio-y-serguei.jpg';
 export { default as posterInocencia } from './inocencia.jpg';
 export { default as posterSumbe } from './sumbe.jpg';
 export { default as posterPenumbras } from './Penumbras-Poster.jpg';
+export { default as posterPablo } from './pablo.jpg';
 export { default as posterEsther } from './ether-en-alguna-parte.jpg';
 export { default as posterLaPeliculaDeAna } from './La-pelicula-de-Ana-poster.jpg';
 export { default as posterBoccacherias } from './boccacherias-habaneras.jpg';

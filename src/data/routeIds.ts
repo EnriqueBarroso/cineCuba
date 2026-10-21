@@ -106,6 +106,7 @@ export const movieIds: string[] = [
   "fabula",
   "sumbe",
   "penumbras",
+  "pablo-2012",
   "esther-en-alguna-parte",
   "la-pelicula-de-ana",
   "boccaccerias-habaneras",
