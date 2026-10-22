@@ -848,20 +848,28 @@ const movies1980s: Movie[] = [
     poster: posterClandestinos,
     duration: "100 min",
     genre: ["Drama", "Histórico"],
-    synopsis: "La Habana, 1958. Un grupo de jóvenes revolucionarios vive en la clandestinidad mientras prepara acciones contra la dictadura de Batista. La película explora el amor, la lealtad y el sacrificio en tiempos de lucha.",
+    synopsis: "La Habana, finales de los años cincuenta. Ernesto, joven miembro de la resistencia urbana contra la dictadura de Batista, sale de la cárcel tras ser encarcelado por su militancia. Poco después conoce a Nereida, una muchacha a la que al principio mira con desconfianza y que acaba integrándose en el grupo clandestino que él dirige. Entre los riesgos de cada acción, entre ambos nace una historia de amor que el peligro vuelve a la vez más intensa y más frágil. Inspirada en hechos reales de la lucha clandestina entre 1956 y 1958, pero contada como ficción, la ópera prima de Fernando Pérez, con guion de Jesús Díaz, prefiere la dimensión humana a la crónica histórica: una pareja, una causa y el precio de la lealtad.",
     awards: [
-      { name: "Festival de La Habana", year: 1987, category: "Gran Premio Coral" },
-      { name: "Festival de Karlovy Vary", year: 1988, category: "Premio Especial" }
+      { name: "Festival del Nuevo Cine Latinoamericano de La Habana", year: 1987, category: "Premio Coral a la mejor ópera prima" },
+      { name: "Festival del Nuevo Cine Latinoamericano de La Habana", year: 1987, category: "Mejor actriz — Isabel Santos" },
+      { name: "Festival de Cartagena", year: 1988, category: "India Catalina a la mejor película" },
+      { name: "Festival de Cartagena", year: 1988, category: "Mejor actor — Luis Alberto García" },
+      { name: "Festival de Tashkent", year: 1988, category: "Mejor primera película" },
+      { name: "Festival de San Juan (Puerto Rico)", year: 1988, category: "Mejor guion" }
     ],
     videoUrl: "https://archive.org/embed/clandestinos-01",
     trailerUrl: "https://www.youtube.com/embed/E5UI-pav-Xo",
     cast: [
       { name: "Luis Alberto García", role: "Ernesto" },
       { name: "Isabel Santos", role: "Nereida" },
-      { name: "Susana Pérez", role: "Rosa" },
-      { name: "Miguel Gutiérrez", role: "" }
+      { name: "Susana Pérez", role: "" },
+      { name: "Amado del Pino", role: "" },
+      { name: "Rolando Tarajano", role: "" },
+      { name: "René Losada", role: "" },
+      { name: "Miguel Gutiérrez", role: "" },
+      { name: "Miguel Navarro", role: "" }
     ],
-    notes: "Ópera prima de Fernando Pérez."
+    notes: "Ópera prima de Fernando Pérez. Guion de Jesús Díaz. Producción ICAIC."
   },
   {
     id: "plaff",
