@@ -81,6 +81,7 @@ export const movieIds: string[] = [
   "habana-blues",
   "el-benny",
   "paginas-del-diario-de-mauricio",
+  "personal-belongings",
   "el-eden-perdido",
   "camino-al-eden",
   "quien-diablos-es-juliette",

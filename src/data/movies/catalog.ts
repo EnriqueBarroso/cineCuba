@@ -1842,6 +1842,29 @@ const movies2000s: Movie[] = [
     ]
   },
   {
+    id: "personal-belongings",
+    title: "Personal Belongings",
+    year: 2006,
+    director: "Alejandro Brugués",
+    poster: "",
+    duration: "N/D",
+    genre: ["Drama"],
+    synopsis: "Ana es una joven médica que se queda en Cuba cuando su familia se marcha hacia Estados Unidos en una balsa. Ernesto lleva años intentando salir del país con sus pocas pertenencias, de embajada en embajada. Se conocen cuando él acude a la clínica donde ella trabaja. Cada uno ve en el otro lo que le falta, pero los caminos que han elegido los mantienen separados, y aun así se enamoran. La película aborda la emigración y el dolor que provoca, un tema recurrente en el arte y la literatura cubanos.",
+    videoUrl: "https://archive.org/embed/personal-belogings",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Caleb Casas", role: "Ernesto" },
+      { name: "Heidi García", role: "Ana" },
+      { name: "Osvaldo Doimeadiós", role: "Alberto" },
+      { name: "Rubén Breñas", role: "El doctor" },
+      { name: "Roly Peña", role: "Leo" },
+      { name: "Jazz Vilá", role: "Mayito" },
+      { name: "Caridad Herrera", role: "Balsera n.º 1" }
+    ],
+    notes: "Ópera prima de Alejandro Brugués, director de Juan de los Muertos (2011). Producción cubana, 2006."
+  },
+  {
     id: "el-eden-perdido",
     title: "El Edén perdido",
     year: 2007,
