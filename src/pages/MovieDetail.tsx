@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-// Añadimos useNavigate para el botón de volver
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Heart, Play, Calendar, Clock, Film, Award, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
@@ -9,6 +8,7 @@ import { Movie, getMovieById, getRelatedMovies } from "@/data/movies";
 import { getDirectorByName } from "@/data/directors";
 import { getActorByName } from "@/data/actors";
 import { SEO } from "@/components/SEO";
+import { useGoBack } from "@/hooks/useBackLink";
 import { VideoJsonLd } from "@/components/VideoJsonLd";
 import { MovieJsonLd } from "@/components/MovieJsonLd";
 import { directorLabel, directorList } from "@/lib/directors";
@@ -93,7 +93,7 @@ const DirectorNames = ({
 
 const MovieDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate(); // Hook para navegar atrás
+  const goBack = useGoBack("/peliculas"); // atrás en el historial; sin historial, al catálogo
   const { isFavorite, toggleFavorite } = useFavorites();
   const playerRef = useRef<HTMLDivElement>(null);
 
@@ -183,7 +183,7 @@ const MovieDetail = () => {
         <div className="container mx-auto px-6 lg:px-12">
           {/* Botón de volver con historial */}
           <button 
-            onClick={() => navigate(-1)} 
+            onClick={goBack}
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" /> <span className="text-sm">Volver al catálogo</span>

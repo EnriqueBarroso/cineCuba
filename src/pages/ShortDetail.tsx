@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Heart, Play, Calendar, Clock, Film, Award, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { useFavorites } from "@/hooks/useFavorites";
 import { getDirectorByName } from "@/data/directors";
 import { SEO } from "@/components/SEO";
+import { useGoBack } from "@/hooks/useBackLink";
 import { shorts } from "@/data/shorts";
 import type { Movie } from "@/data/movies/types";
 import { directorLabel } from "@/lib/directors";
 
 const ShortDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
+  const goBack = useGoBack("/cortos");
   const { isFavorite, toggleFavorite } = useFavorites();
 
   const [short, setShort] = useState<Movie | undefined>(() =>
@@ -73,7 +74,7 @@ const ShortDetail = () => {
       <section className="py-12 lg:py-20">
         <div className="container mx-auto px-6 lg:px-12">
           <button
-            onClick={() => navigate(-1)}
+            onClick={goBack}
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />

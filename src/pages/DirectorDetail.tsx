@@ -157,8 +157,9 @@ const DirectorDetail = () => {
       <section className="pt-32 pb-16 lg:pb-24 animate-fade-in">
         <div className="container mx-auto px-6 lg:px-12">
           {/* CAMBIO 2: Enlace corregido en la navegación principal */}
-          <Link 
-            to={back.path} 
+          <Link
+            to={back.path}
+            onClick={back.onClick}
             className="inline-flex max-w-full items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12"
           >
             <ArrowLeft className="w-4 h-4 shrink-0" />

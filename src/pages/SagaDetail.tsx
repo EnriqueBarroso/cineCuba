@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import {
   ArrowLeft, Heart, Play, Calendar, Layers, Award, Users,
   Clock, CheckCircle, Film,
@@ -7,6 +7,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import { useGoBack } from "@/hooks/useBackLink";
 import { VideoJsonLd } from "@/components/VideoJsonLd";
 import { isDirectVideoFile } from "@/lib/video";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
@@ -18,7 +19,7 @@ import type { Saga, Episodio } from "@/data/sagas";
 
 const SagaDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
+  const goBack = useGoBack(() => (sagas.find((s) => s.id === id)?.tipo === "serial" ? "/seriales" : "/cortos"));
   const { isFavorite, toggleFavorite } = useFavorites();
 
   const [saga, setSaga] = useState<Saga | undefined>(() =>
@@ -126,7 +127,7 @@ const SagaDetail = () => {
       <section className="py-12 lg:py-20">
         <div className="container mx-auto px-6 lg:px-12">
           <button
-            onClick={() => navigate(-1)}
+            onClick={goBack}
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />

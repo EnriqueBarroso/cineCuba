@@ -196,6 +196,7 @@ const ActorDetail = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <Link
             to={back.path}
+            onClick={back.onClick}
             className="inline-flex max-w-full items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12"
           >
             <ArrowLeft className="w-4 h-4 shrink-0" />
