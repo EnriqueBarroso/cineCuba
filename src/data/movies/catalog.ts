@@ -79,25 +79,28 @@ const movies1960s: Movie[] = [
     poster: poster12Sillas,
     duration: "97 min",
     genre: ["Comedia"],
-    synopsis: "Un aristócrata venido a menos y su antiguo chófer buscan desesperadamente unos diamantes que fueron escondidos en una de las doce sillas de un juego de comedor antes de ser expropiadas.",
+    synopsis: "Cuba, comienzos de los sesenta. Antes de morir, una mujer de la antigua burguesía confiesa a su yerno, Hipólito Garrigó, que escondió las joyas de la familia en una de las doce sillas del comedor. El problema es que la Revolución confiscó el mobiliario y lo subastó por separado, y cada silla ha acabado en unas manos distintas. Hipólito, que apenas comprende el país que lo rodea, se alía con Óscar, antiguo chófer de la casa, y juntos recorren la isla tras el tesoro mientras compiten con un cura que también conoce el secreto. Adaptación de la novela de Ilf y Petrov, la comedia mezcla humor de cine mudo, slapstick, animación y retrato social.",
     videoUrl: 'https://archive.org/embed/las-12-sillas',
     trailerUrl: 'https://www.youtube.com/embed/T3vdlz6Qfz8',
     awards: [
       { name: "Festival de Karlovy Vary", year: 1963, category: "Mención Especial" }
     ],
     cast: [
-      { name: "Enrique Santiesteban", role: "Hipólito" },
+      { name: "Enrique Santiesteban", role: "Hipólito Garrigó" },
       { name: "Reinaldo Miravalles", role: "Óscar" },
       { name: "René Sánchez", role: "Padre Cirilo" },
       { name: "Pilín Vallejo", role: "La viuda" },
-      { name: "Idalberto Delgado", role: "" },
+      { name: "Idalberto Delgado", role: "Ernesto" },
       { name: "Ana Viña", role: "" },
       { name: "Manuel Pereiro", role: "" },
       { name: "Max Beltán", role: "" },
       { name: "María Pardo", role: "" },
       { name: "Raúl Xiqués", role: "" },
-      { name: "Gilda Hernández", role: "" }
-    ]
+      { name: "Gilda Hernández", role: "" },
+      { name: "Pedro Martín Planas", role: "" },
+      { name: "Silvia Planas", role: "" }
+    ],
+    notes: "Adaptación de la novela Las doce sillas (1928) de Ilf y Petrov. Producción: ICAIC (Margarita Alexandre). Fotografía: Ramón F. Suárez. Música: Juan Blanco. Participó en el 3.º Festival Internacional de Cine de Moscú."
   },
   {
     id: 'soy-cuba',
