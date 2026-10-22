@@ -76,6 +76,7 @@ export { default as poster90Millas } from './90-millas.jpg';
 export { default as posterBarrioCuba } from './barrio-cuba.jpg';
 export { default as posterElBenny } from './el-benny.jpg';
 export { default as posterPaginasMauricio } from './paginas-diario-mauricio.jpg';
+export { default as posterPersonalBelongings } from './personal-belongings.jpg';
 export { default as posterElEdenPerdido } from './el-eden-perdido.jpg';
 export { default as posterCaminoEden } from './camino-al-eden.jpg';
 export { default as posterCercania } from './cercania.jpg';

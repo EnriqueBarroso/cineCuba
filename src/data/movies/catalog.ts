@@ -17,7 +17,7 @@ import {
   // 90s
   posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
-  posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
+  posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
   posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
   posterJuliette,
@@ -1846,7 +1846,7 @@ const movies2000s: Movie[] = [
     title: "Personal Belongings",
     year: 2006,
     director: "Alejandro Brugués",
-    poster: "",
+    poster: posterPersonalBelongings,
     duration: "N/D",
     genre: ["Drama"],
     synopsis: "Ana es una joven médica que se queda en Cuba cuando su familia se marcha hacia Estados Unidos en una balsa. Ernesto lleva años intentando salir del país con sus pocas pertenencias, de embajada en embajada. Se conocen cuando él acude a la clínica donde ella trabaja. Cada uno ve en el otro lo que le falta, pero los caminos que han elegido los mantienen separados, y aun así se enamoran. La película aborda la emigración y el dolor que provoca, un tema recurrente en el arte y la literatura cubanos.",
