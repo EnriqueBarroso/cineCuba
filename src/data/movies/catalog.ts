@@ -49,6 +49,7 @@ import {
   posterFatima,
   posterLaParedDeLasPalabras,
   posterOmega3,
+  posterVestidoDeNovia,
   posterElAcompanante,
   posterRegresoAItaca,
   posterViva,
@@ -2500,6 +2501,30 @@ const movies2010s: Movie[] = [
     { name: "Carlos Gonzalvo", role: "Oficial" },
     { name: "Dailenys Fuentes", role: "Soldado" }
   ]
+},
+{
+  id: "vestido-de-novia",
+  title: "Vestido de novia",
+  year: 2014,
+  director: "Marilyn Solaya",
+  poster: posterVestidoDeNovia,
+  duration: "103 min",
+  genre: ["Drama"],
+  synopsis: "La Habana, 1994. Rosa Elena, auxiliar de enfermería, y Ernesto, jefe de obra en una construcción vinculada al turismo, se enamoran y se casan. Pero un secreto del pasado de ella irrumpe en la pareja y los expone a la violencia, los prejuicios y los estereotipos de una sociedad patriarcal. Inspirada en hechos reales y en la experiencia de las mujeres trans en Cuba, la ópera prima de Marilyn Solaya aborda la intolerancia y el machismo.",
+  awards: [
+    { name: "Festival de La Habana", year: 2014, category: "Premio del Público (Coral)" }
+  ],
+  videoUrl: "https://archive.org/embed/vestido-de-novia-2014",
+  trailerUrl: "",
+  cast: [
+    { name: "Laura de la Uz", role: "" },
+    { name: "Luis Alberto García", role: "" },
+    { name: "Alina Rodríguez", role: "" },
+    { name: "Jorge Perugorría", role: "" },
+    { name: "Mario Guerra", role: "" },
+    { name: "Isabel Santos", role: "" }
+  ],
+  notes: "Primer largometraje de ficción de Marilyn Solaya, directora del documental En el cuerpo equivocado. Inspirada en hechos reales. El título procede de un poema de Norge Espinosa."
 },
 {
   id: "si-vas-a-comer-espera-por-virgilio",
