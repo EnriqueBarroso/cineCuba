@@ -224,7 +224,7 @@ const movies1960s: Movie[] = [
     poster: posterMemoriasSub,
     duration: "97 min",
     genre: ["Drama"],
-    synopsis: "Un intelectual burgués decide quedarse en Cuba tras la Revolución mientras su familia huye al exilio. Atrapado entre dos mundos, observa los cambios de la sociedad cubana mientras cuestiona su propia identidad y lugar en el nuevo orden.",
+    synopsis: "La Habana, 1961-1962. Sergio, un intelectual burgués y aspirante a escritor que vive de las rentas de sus propiedades nacionalizadas, se queda en Cuba cuando su mujer y sus padres se marchan a Miami. Desde su ático, entre la desgana y la lucidez, observa cómo se derrumba el mundo en el que creció, intenta comprender un país que no se parece al suyo y se enreda con Elena, una joven que sueña con ser actriz, y con otras mujeres, mientras la ciudad se prepara para la Crisis de Octubre. La película, adaptación de la novela de Edmundo Desnoes, entrelaza la ficción con imágenes documentales de la época, discursos de Kennedy y de Fidel Castro, milicianos y baterías antiaéreas, en un montaje de collage que Gutiérrez Alea relacionó con Eisenstein, el neorrealismo italiano y el cinéma vérité. Está considerada por buena parte de la crítica como la película más importante del cine cubano.",
     videoUrl: "https://www.youtube.com/embed/NhXR16xOhw8",
     trailerUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
@@ -232,16 +232,17 @@ const movies1960s: Movie[] = [
       { name: "Revista Sight & Sound", year: 1999, category: "Una de las mejores películas del siglo XX" }
     ],
     cast: [
-      { name: "Sergio Corrieri", role: "Sergio" },
+      { name: "Sergio Corrieri", role: "Sergio Carmona" },
       { name: "Daisy Granados", role: "Elena" },
       { name: "Eslinda Núñez", role: "Noemí" },
       { name: "Omar Valdés", role: "Pablo" },
       { name: "Beatriz Ponchova", role: "" },
       { name: "Gilda Hernández", role: "" },
-      { name: "Yolanda Farr", role: "" },
-      { name: "René de la Cruz", role: "" }
+      { name: "Yolanda Farr", role: "Laura" },
+      { name: "René de la Cruz", role: "El hermano de Elena" },
+      { name: "Ofelia González", role: "Hanna" }
     ],
-    notes: "Basada en la novela de Edmundo Desnoes. Considerada una de las obras maestras del cine latinoamericano.",
+    notes: "Basada en la novela homónima de Edmundo Desnoes (1965); guion de Tomás Gutiérrez Alea y Edmundo Desnoes. Producción: ICAIC (Miguel Mendoza). Fotografía: Ramón F. Suárez. Montaje: Nelson Rodríguez. Música: Leo Brouwer. El apartamento de Sergio se rodó en el edificio FOCSA. Copia restaurada presentada en Cannes Classics en 2016. Figura en la lista de mejores películas de la historia de Sight & Sound (2022). Considerada una de las obras maestras del cine latinoamericano.",
     backdrop: heroMemorias,
   },
 ];
