@@ -9,7 +9,7 @@ import type { Movie } from './types';
 // Gracias al archivo index.ts, ahora importamos todo de una sola vez.
 import {
   // 60s
-  posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba,
+  posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba, posterHistoriasRevolucion,
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
@@ -72,6 +72,37 @@ import { shareDirector } from "@/lib/directors";
 // ══════════════════════════════════════
 
 const movies1960s: Movie[] = [
+  {
+    id: "historias-de-la-revolucion",
+    title: "Historias de la Revolución",
+    year: 1960,
+    director: "Tomás Gutiérrez Alea",
+    poster: posterHistoriasRevolucion,
+    duration: "81 min",
+    genre: ["Drama", "Histórico", "Bélico"],
+    synopsis: "Largometraje en tres episodios sobre la lucha contra la dictadura de Fulgencio Batista: la resistencia clandestina en La Habana («El herido»), la guerrilla en la Sierra Maestra («Rebeldes») y la toma de Santa Clara por el Ejército Rebelde («La batalla de Santa Clara»). Primer largometraje de ficción del ICAIC y primer largo de Tomás Gutiérrez Alea, retrata los episodios más recientes de la insurrección que precedió al triunfo de enero de 1959.",
+    videoUrl: "https://archive.org/embed/historias-de-la-revolucion-1960",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Moscú", year: 1961, category: "Premio de la Unión de Escritores de la URSS" },
+      { name: "Festival de Melbourne", year: 1962, category: "Premio especial" }
+    ],
+    cast: [
+      { name: "Lilian Llerena", role: "" },
+      { name: "Miriam Gómez", role: "" },
+      { name: "Calixto Marrero", role: "" },
+      { name: "Pascual Zamora", role: "" },
+      { name: "Tomás Rodríguez", role: "" },
+      { name: "Encarnita Rojas", role: "" },
+      { name: "Enrique Fong", role: "" },
+      { name: "Blas Mora", role: "" },
+      { name: "Francisco Lago", role: "" },
+      { name: "Eduardo Moure", role: "" },
+      { name: "Reinaldo Miravalles", role: "" },
+      { name: "Bertina Acevedo", role: "" }
+    ],
+    notes: "Primer largometraje de ficción del ICAIC. Guion: Tomás Gutiérrez Alea, Humberto Arenal y José Hernández. Fotografía: Otello Martelli y Sergio Véjar. Música: Carlos Fariñas, Harold Gramatges y Leo Brouwer. Producción general: Saúl Yelín. Copia alojada en archive.org con autorización de los titulares de los derechos."
+  },
   {
     id: "doce-sillas",
     title: "Las doce sillas",
