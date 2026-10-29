@@ -8,7 +8,8 @@
     "build": "tsx scripts/generate-sitemap.ts && vite-react-ssg build",
     "build:dev": "vite-react-ssg build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "export:catalog": "tsx scripts/export-catalog.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
