@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { SUPPORT_URL } from "@/lib/links";
+import { SUPPORT_URL, CONTACT_EMAIL, INSTAGRAM_URL } from "@/lib/links";
 import { Heart, Mail, Github, Twitter, Instagram, Coffee } from "lucide-react";
 
 export const Footer = () => {
@@ -49,8 +49,19 @@ export const Footer = () => {
               {/* 🟢 CORREGIDO: Eliminado enlace roto a Privacidad */}
               <li><Link to="/terminos" className="hover:underline text-sm">Términos y Condiciones</Link></li>
               <li>
-                <a href="mailto:cinecuba537@gmail.com" className="hover:text-gold transition-colors flex items-center gap-2">
+                <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-gold transition-colors flex items-center gap-2">
                   <Mail className="w-4 h-4" /> Contactar
+                </a>
+              </li>
+              <li>
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="CineCuba en Instagram"
+                  className="hover:text-gold transition-colors flex items-center gap-2"
+                >
+                  <Instagram className="w-4 h-4" /> Instagram
                 </a>
               </li>
             </ul>
