@@ -1435,15 +1435,21 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Javier Bardem", role: "Reinaldo Arenas" },
       { name: "Johnny Depp", role: "Bon Bon / Teniente Víctor" },
-      { name: "Olivier Martinez", role: "Lázaro Gómez Carilles" },
+      { name: "Olivier Martinez", role: "Lázaro Gómez Carriles" },
       { name: "Sean Penn", role: "Cuco Sánchez" },
-      { name: "Michael Wincott", role: "Heberto Zorrilla Ochoa" },
+      { name: "Michael Wincott", role: "Herberto Zorilla Ochoa" },
       { name: "Andrea Di Stefano", role: "Pepe Malas" },
-      { name: "Maurice Compte", role: "José Lezama Lima" },
+      { name: "Maurice Compte", role: "Nicolás Abreu" },
       { name: "Olatz López Garmendia", role: "La madre de Reinaldo" },
-      { name: "Francisco Gattorno", role: "Amigo francés" },
+      { name: "Francisco Gattorno", role: "Jorge Camacho" },
       { name: "Diego Luna", role: "Carlos" },
-      { name: "Najwa Nimri", role: "" }
+      { name: "Najwa Nimri", role: "Fina Zorilla Ochoa" },
+      { name: "Héctor Babenco", role: "Virgilio Piñera" },
+      { name: "Santiago Magill", role: "Tomás Diego" },
+      { name: "John Ortiz", role: "Juan Abreu" },
+      { name: "Manuel González", role: "José Lezama Lima" },
+      { name: "Marisol Padilla Sánchez", role: "Margarita Camacho" },
+      { name: "Pedro Armendáriz Jr.", role: "El abuelo de Reinaldo" }
     ]
   },
   {
@@ -1583,7 +1589,10 @@ const movies2000s: Movie[] = [
       { name: "Tito Junco", role: "" },
       { name: "Klara Badiola", role: "" },
       { name: "Renny Arozarena", role: "" },
-      { name: "Raúl Pomares", role: "" }
+      { name: "Raúl Pomares", role: "" },
+      { name: "Mario Balmaseda", role: "" },
+      { name: "Amelita Pita", role: "" },
+      { name: "Yaima Torres", role: "" }
     ],
   },
   {
