@@ -802,7 +802,7 @@ const movies1980s: Movie[] = [
     duration: "69 min",
     genre: ["Animación", "Comedia"],
     synopsis: "Cuba, años treinta. Joseph Amadeus von Drácula, «Pepito», vive en La Habana junto a su tío Werner, un científico que ha creado una fórmula que protege a los vampiros de la luz del sol. Las dos grandes organizaciones vampíricas del mundo, la mafia de Chicago de Johnny Terrori y el Grupo Vampiro europeo, se lanzan a por ella: unos quieren comercializarla como «Vampisol», otros destruirla para proteger su negocio. Con el tío asesinado, Pepito huye de gánsteres, vampiros europeos y policías del régimen de Machado hasta que encuentra la forma de que la fórmula deje de ser negocio de nadie. Es una comedia de animación para adultos con carga política.",
-    videoUrl: 'https://www.youtube.com/embed/0_dBIkKe-9s',
+    videoUrl: "https://archive.org/embed/vampiros-en-la-habana-4-k-high-definition-j-8iq-ucmp-dko",
     trailerUrl: 'https://www.youtube.com/embed/g5AQB02LdVw',
     awards: [
       { name: "Encuesta Noticine.com", year: 2009, category: "Top 100 Mejores Películas Iberoamericanas" },
@@ -822,7 +822,7 @@ const movies1980s: Movie[] = [
       { name: "Krikor Melikyan", role: "" },
       { name: "Christine Schnell", role: "" }
     ],
-    notes: "Segundo largometraje animado de Juan Padrón, creador de Elpidio Valdés. Guion: Juan Padrón y Ernesto Padrón. Música: Arturo Sandoval (trompeta). Fotografía: Julio Simoneau. Montaje: Rosa María Carreras. Coproducción del ICAIC, Radio Televisión Española y Durniock. En 2009, Noticine la situó en el puesto 50 de su lista de los 100 mejores títulos del cine iberoamericano, única película animada de la lista. Tuvo una secuela: Más vampiros en La Habana (2003).",
+    notes: "Segundo largometraje animado de Juan Padrón, creador de Elpidio Valdés. Guion: Juan Padrón y Ernesto Padrón. Música: Arturo Sandoval (trompeta). Fotografía: Julio Simoneau. Montaje: Rosa María Carreras. Coproducción del ICAIC, Radio Televisión Española y Durniock. En 2009, Noticine la situó en el puesto 50 de su lista de los 100 mejores títulos del cine iberoamericano, única película animada de la lista. Tuvo una secuela: Más vampiros en La Habana (2003). Copia alojada en archive.org con autorización de los titulares de los derechos.",
     backdrop: heroVampiros,
   },
   {
