@@ -225,7 +225,7 @@ const movies1960s: Movie[] = [
     duration: "97 min",
     genre: ["Drama"],
     synopsis: "La Habana, 1961-1962. Sergio, un intelectual burgués y aspirante a escritor que vive de las rentas de sus propiedades nacionalizadas, se queda en Cuba cuando su mujer y sus padres se marchan a Miami. Desde su ático, entre la desgana y la lucidez, observa cómo se derrumba el mundo en el que creció, intenta comprender un país que no se parece al suyo y se enreda con Elena, una joven que sueña con ser actriz, y con otras mujeres, mientras la ciudad se prepara para la Crisis de Octubre. La película, adaptación de la novela de Edmundo Desnoes, entrelaza la ficción con imágenes documentales de la época, discursos de Kennedy y de Fidel Castro, milicianos y baterías antiaéreas, en un montaje de collage que Gutiérrez Alea relacionó con Eisenstein, el neorrealismo italiano y el cinéma vérité. Está considerada por buena parte de la crítica como la película más importante del cine cubano.",
-    videoUrl: "https://www.youtube.com/embed/NhXR16xOhw8",
+    videoUrl: "https://archive.org/embed/memorias-del-subdesarrollo_202610",
     trailerUrl: "https://www.youtube.com/embed/yFXqq4KuJ3w",
     awards: [
       { name: "Festival de Karlovy Vary", year: 1968, category: "Premio FIPRESCI" },
@@ -242,7 +242,7 @@ const movies1960s: Movie[] = [
       { name: "René de la Cruz", role: "El hermano de Elena" },
       { name: "Ofelia González", role: "Hanna" }
     ],
-    notes: "Basada en la novela homónima de Edmundo Desnoes (1965); guion de Tomás Gutiérrez Alea y Edmundo Desnoes. Producción: ICAIC (Miguel Mendoza). Fotografía: Ramón F. Suárez. Montaje: Nelson Rodríguez. Música: Leo Brouwer. El apartamento de Sergio se rodó en el edificio FOCSA. Copia restaurada presentada en Cannes Classics en 2016. Figura en la lista de mejores películas de la historia de Sight & Sound (2022). Considerada una de las obras maestras del cine latinoamericano.",
+    notes: "Basada en la novela homónima de Edmundo Desnoes (1965); guion de Tomás Gutiérrez Alea y Edmundo Desnoes. Producción: ICAIC (Miguel Mendoza). Fotografía: Ramón F. Suárez. Montaje: Nelson Rodríguez. Música: Leo Brouwer. El apartamento de Sergio se rodó en el edificio FOCSA. Copia restaurada presentada en Cannes Classics en 2016. Figura en la lista de mejores películas de la historia de Sight & Sound (2022). Considerada una de las obras maestras del cine latinoamericano. Copia alojada en archive.org con autorización de los titulares de los derechos.",
     backdrop: heroMemorias,
   },
 ];
