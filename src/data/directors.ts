@@ -68,11 +68,11 @@ export interface Director {
   id: string;
   name: string;
   photo?: string;
-  birthYear: number;
+  birthYear?: number;
   deathYear?: number;
   nationality: string;
   biography: string;
-  activeYears: string;
+  activeYears?: string;
   awards: string[];
 }
 
@@ -131,6 +131,20 @@ export const directors: Director[] = [
     awards: [
       "Premio FIPRESCI — Festival Internacional de Cine de Moscú, por Los días del agua (1971)"
     ]
+  },
+  {
+    id: "teodoro-rios",
+    name: "Teodoro Ríos",
+    nationality: "Español (Canarias)",
+    biography: "Cineasta canario nacido en Tenerife. Pasó unos diez años de su infancia en La Habana, donde aprendió la historia de Cuba, y comparte con su hermano Santiago una obra de más de veinte años dedicada a recuperar la memoria histórica de Canarias. Juntos firmaron la trilogía sobre la emigración canaria a América —Guarapo (1988), Mambí (1998) y El vuelo del guirre (2007)—, que recorre tres etapas: asentarse, emigrar y regresar. Mambí, coproducción con el ICAIC, se rodó en parte con torcedores en la fábrica Partagás de La Habana. Hoy, jubilado, desarrolla la serie Atlantes sobre la conquista de Canarias desde el punto de vista de los vencidos.",
+    awards: []
+  },
+  {
+    id: "santiago-rios",
+    name: "Santiago Ríos",
+    nationality: "Español (Canarias)",
+    biography: "Cineasta canario nacido en Tenerife. Pasó unos diez años de su infancia en La Habana, donde aprendió la historia de Cuba, y comparte con su hermano Teodoro una obra de más de veinte años dedicada a recuperar la memoria histórica de Canarias. Juntos firmaron la trilogía sobre la emigración canaria a América —Guarapo (1988), Mambí (1998) y El vuelo del guirre (2007)—, que recorre tres etapas: asentarse, emigrar y regresar. Mambí, coproducción con el ICAIC, se rodó en parte con torcedores en la fábrica Partagás de La Habana. Ha vuelto al cine con el cortometraje WC Story, rodado en un cine art déco de La Rampa, en La Habana.",
+    awards: []
   },
   {
     id: "juan-carlos-tabio",

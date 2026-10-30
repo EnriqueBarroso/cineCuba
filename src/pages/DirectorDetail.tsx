@@ -141,15 +141,17 @@ const DirectorDetail = () => {
     );
   }
 
-  const lifeYears = director.deathYear 
-    ? `${director.birthYear} - ${director.deathYear}`
-    : `${director.birthYear} - presente`;
+  const lifeYears = director.birthYear
+    ? director.deathYear
+      ? `${director.birthYear} - ${director.deathYear}`
+      : `${director.birthYear} - presente`
+    : undefined;
 
   return (
     <div className="min-h-screen bg-background">
       <SEO
         title={director.name}
-        description={`Biografía y filmografía de ${director.name}. Director cubano activo ${director.activeYears}. ${director.biography.slice(0, 120)}...`}
+        description={`Biografía y filmografía de ${director.name}. ${director.activeYears ? `Director cubano activo ${director.activeYears}. ` : ""}${director.biography.slice(0, 120)}...`}
         image={director.photo}
         url={`https://cine-cubano.com/director/${director.id}`}
       />
@@ -193,20 +195,28 @@ const DirectorDetail = () => {
                 </h1>
 
                 <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>{lifeYears}</span>
-                  </div>
-                  <span className="text-hairline">•</span>
+                  {lifeYears && (
+                    <>
+                      <div className="flex items-center gap-2">
+                        <Calendar className="w-4 h-4" />
+                        <span>{lifeYears}</span>
+                      </div>
+                      <span className="text-hairline">•</span>
+                    </>
+                  )}
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
                     <span>{director.nationality}</span>
                   </div>
-                  <span className="text-hairline">•</span>
-                  <div className="flex items-center gap-2">
-                    <Film className="w-4 h-4" />
-                    <span>{director.activeYears}</span>
-                  </div>
+                  {director.activeYears && (
+                    <>
+                      <span className="text-hairline">•</span>
+                      <div className="flex items-center gap-2">
+                        <Film className="w-4 h-4" />
+                        <span>{director.activeYears}</span>
+                      </div>
+                    </>
+                  )}
                   {directorSagas.length > 0 && (
                     <>
                       <span className="text-hairline">•</span>
