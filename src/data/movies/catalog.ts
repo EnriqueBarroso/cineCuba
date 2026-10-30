@@ -15,7 +15,7 @@ import {
   // 80s
   posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego,
   // 90s
-  posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
+  posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
@@ -1065,6 +1065,31 @@ const movies1980s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1990s: Movie[] = [
+  {
+    id: "mambi",
+    title: "Mambí",
+    year: 1998,
+    director: ["Santiago Ríos", "Teodoro Ríos"],
+    poster: posterMambi,
+    duration: "102 min",
+    genre: ["Bélico", "Drama", "Histórico"],
+    synopsis: "Cuba, Guerra de Independencia (1895-1898). Goyo, un joven canario, es reclutado por el ejército español para combatir a los mambises. En la isla visita a sus tíos, que en secreto apoyan a la insurgencia, y se enamora de Ofelia, quien sin que él lo sepa lo utiliza para hacer llegar mensajes a los rebeldes. Goyo deserta y se une a los guerrilleros cubanos, que aprovechan su oficio de cabuquero.",
+    videoUrl: "https://archive.org/embed/mambi-cine-cubano",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Carlos Fuentes", role: "" },
+      { name: "Gretel Pequeño", role: "" },
+      { name: "Álvaro de Luna", role: "" },
+      { name: "Rubén Breñas", role: "" },
+      { name: "José Raúl Cruz", role: "" },
+      { name: "Luis Alberto García", role: "" },
+      { name: "Aramis Delgado", role: "" },
+      { name: "René de la Cruz", role: "" },
+      { name: "Miriam Learra", role: "" }
+    ],
+    notes: "País: coproducción España–Cuba. Estreno: 22 de mayo de 1998. Guion: Rolando Díaz, Ambrosio Fornet, Víctor Mato y Pedro Molina. Fotografía: Adriano Moreno. Música: Mario de Benito."
+  },
   {
     id: "caravana",
     title: "Caravana",
