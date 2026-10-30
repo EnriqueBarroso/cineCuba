@@ -139,3 +139,4 @@ export { default as posterElAcompanante } from './el-acompanante.jpg';
 export { default as posterRegresoAItaca } from './regreso-a-itaca.jpg';
 export { default as posterViva } from './viva.jpg';
 export { default as posterCubaLibre } from './cuba-libre.jpg';
+export { default as posterPatakin } from './patakin.jpg';

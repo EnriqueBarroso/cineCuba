@@ -34,6 +34,7 @@ export const movieIds: string[] = [
   "el-brigadista",
   "elpidio-valdes-film",
   "cecilia",
+  "patakin",
   "amada",
   "un-hombre-de-exito",
   "pajaros-escopeta",

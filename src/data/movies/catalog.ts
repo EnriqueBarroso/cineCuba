@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin,
   // 90s
   posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
@@ -692,6 +692,25 @@ const movies1970s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1980s: Movie[] = [
+  {
+    id: "patakin",
+    title: "¡Patakín! quiere decir ¡fábula!",
+    year: 1982, // año por verificar: fuentes dan 1981-1985
+    director: "Manuel Octavio Gómez",
+    poster: posterPatakin,
+    duration: "94 min",
+    genre: ["Comedia", "Musical", "Fantasía"],
+    synopsis: "Fábula musical que traslada a la Cuba socialista contemporánea a los dioses del panteón yoruba. Shangó, seductor y holgazán encantador, vive con Candelaria pero desea a Caridad, la novia de Oggún, un tractorista ejemplar de una granja colectiva. Basada en los patakines —las fábulas de la tradición yoruba—, la película mezcla el musical hollywoodense de los años cincuenta, la herencia del teatro bufo cubano y una música de aire cercano a la bossa nova, con una mirada crítica y humorística sobre el machismo cubano.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-patakin",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Miguel Benavides", role: "" },
+      { name: "Asenneh Rodríguez", role: "" },
+      { name: "Enrique Arredondo", role: "" }
+    ],
+    notes: "País: Cuba. Producción: ICAIC. Guion de Manuel Octavio Gómez, a partir de la obra teatral de Eugenio Hernández Espinosa. Considerada por la crítica como el primer musical cubano (J. Hoberman, Village Voice)."
+  },
   {
     id: "cecilia",
     title: "Cecilia",
