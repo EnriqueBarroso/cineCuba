@@ -3,6 +3,7 @@ import { useState, useEffect, FormEvent } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { SUPPORT_URL } from "@/lib/links";
+import { movies } from "@/data/movies";
 import { AuthModal } from "@/components/AuthModal";
 import { toast } from "sonner";
 import {
@@ -23,6 +24,10 @@ const navLinks = [
   { label: "Seriales", href: "/seriales" },
   { label: "Cortos", href: "/cortos" },
 ];
+
+// Total de películas del catálogo (ids únicos), calculado de los datos.
+const movieCount = new Set(movies.map((m) => m.id)).size;
+const movieCountLabel = `${movieCount} ${movieCount === 1 ? "película" : "películas"}`;
 
 const UserAvatar = ({ avatarUrl, name }: { avatarUrl?: string; name?: string }) => {
   const initials = name
@@ -108,6 +113,9 @@ export const Navbar = () => {
             </span>
             <span className="text-xl font-serif font-bold text-white tracking-tight sm:hidden">
               <span className="text-gold">CC</span>
+            </span>
+            <span className="hidden lg:inline-block ml-1 px-2 py-0.5 rounded-full border border-white/10 text-[11px] font-medium text-muted-foreground whitespace-nowrap">
+              {movieCountLabel}
             </span>
           </Link>
 
@@ -321,11 +329,13 @@ export const Navbar = () => {
               )
             )}
 
+            <p className="mt-6 text-center text-xs text-muted-foreground">{movieCountLabel} en el catálogo</p>
+
             <a
               href={SUPPORT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 py-3 px-4 flex items-center justify-center gap-2 bg-gold/10 text-gold rounded-lg font-bold border border-gold/20 hover:bg-gold/20 transition-colors"
+              className="mt-3 py-3 px-4 flex items-center justify-center gap-2 bg-gold/10 text-gold rounded-lg font-bold border border-gold/20 hover:bg-gold/20 transition-colors"
             >
               <Coffee className="w-5 h-5" />
               Invítanos a un café
