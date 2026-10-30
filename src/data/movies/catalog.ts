@@ -422,7 +422,7 @@ const movies1970s: Movie[] = [
     duration: "120 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Un conde hacendado del siglo XVIII decide recrear la Última Cena con doce de sus esclavos, ofreciéndoles libertad. Sin embargo, cuando su promesa no se cumple, estalla una rebelión que tendrá consecuencias trágicas.",
-    videoUrl: 'https://archive.org/embed/la-ultima-cena',
+    videoUrl: 'https://archive.org/embed/a-ultima-ceia-1976',
     trailerUrl: 'https://www.youtube.com/embed/lfluvDZsqms',
     awards: [
       { name: "Festival de Taormina", year: 1977, category: "Mejor Película" },
