@@ -62,6 +62,7 @@ import eduardoMoyanoPhoto from "@/assets/directors/eduardo-moyano.jpg";
 import eduardoDelLlanoPhoto from "@/assets/directors/eduardo-del-llano.jpg";
 import tomasPiardPhoto from "@/assets/directors/tomas-piard.jpg";
 import manuelOctavioGomezPhoto from "@/assets/directors/manuel-octavio-gomez.jpg";
+import hermanosRiosPhoto from "@/assets/directors/hermanos-rios.jpg";
 
 
 export interface Director {
@@ -133,17 +134,11 @@ export const directors: Director[] = [
     ]
   },
   {
-    id: "teodoro-rios",
-    name: "Teodoro Ríos",
+    id: "hermanos-rios",
+    name: "Hermanos Ríos",
+    photo: hermanosRiosPhoto,
     nationality: "Español (Canarias)",
-    biography: "Cineasta canario nacido en Tenerife. Pasó unos diez años de su infancia en La Habana, donde aprendió la historia de Cuba, y comparte con su hermano Santiago una obra de más de veinte años dedicada a recuperar la memoria histórica de Canarias. Juntos firmaron la trilogía sobre la emigración canaria a América —Guarapo (1988), Mambí (1998) y El vuelo del guirre (2007)—, que recorre tres etapas: asentarse, emigrar y regresar. Mambí, coproducción con el ICAIC, se rodó en parte con torcedores en la fábrica Partagás de La Habana. Hoy, jubilado, desarrolla la serie Atlantes sobre la conquista de Canarias desde el punto de vista de los vencidos.",
-    awards: []
-  },
-  {
-    id: "santiago-rios",
-    name: "Santiago Ríos",
-    nationality: "Español (Canarias)",
-    biography: "Cineasta canario nacido en Tenerife. Pasó unos diez años de su infancia en La Habana, donde aprendió la historia de Cuba, y comparte con su hermano Teodoro una obra de más de veinte años dedicada a recuperar la memoria histórica de Canarias. Juntos firmaron la trilogía sobre la emigración canaria a América —Guarapo (1988), Mambí (1998) y El vuelo del guirre (2007)—, que recorre tres etapas: asentarse, emigrar y regresar. Mambí, coproducción con el ICAIC, se rodó en parte con torcedores en la fábrica Partagás de La Habana. Ha vuelto al cine con el cortometraje WC Story, rodado en un cine art déco de La Rampa, en La Habana.",
+    biography: "Teodoro y Santiago Ríos son dos cineastas canarios nacidos en Tenerife. Pasaron unos diez años de su infancia en La Habana, donde aprendieron la historia de Cuba, y llevan más de veinte años haciendo un cine dedicado a recuperar la memoria histórica de Canarias. Su trilogía sobre la emigración canaria a América —Guarapo (1988), Mambí (1998) y El vuelo del guirre (2007)— recorre tres etapas: asentarse, emigrar y regresar. Mambí, coproducción con el ICAIC, se rodó en parte con torcedores en la fábrica Partagás de La Habana. Hoy, jubilados, Teodoro desarrolla la serie Atlantes sobre la conquista de Canarias desde el punto de vista de los vencidos, y Santiago ha vuelto al cine con el cortometraje WC Story, rodado en un cine art déco de La Rampa, en La Habana.",
     awards: []
   },
   {

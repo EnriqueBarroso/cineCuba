@@ -1069,7 +1069,7 @@ const movies1990s: Movie[] = [
     id: "mambi",
     title: "Mambí",
     year: 1998,
-    director: ["Santiago Ríos", "Teodoro Ríos"],
+    director: "Hermanos Ríos",
     poster: posterMambi,
     duration: "102 min",
     genre: ["Bélico", "Drama", "Histórico"],
