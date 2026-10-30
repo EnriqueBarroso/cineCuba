@@ -27,7 +27,8 @@ const navLinks = [
 
 // Total de películas del catálogo (ids únicos), calculado de los datos.
 const movieCount = new Set(movies.map((m) => m.id)).size;
-const movieCountLabel = `${movieCount} ${movieCount === 1 ? "película" : "películas"}`;
+const movieCountWord = movieCount === 1 ? "película" : "películas";
+const movieCountLabel = `${movieCount} ${movieCountWord}`;
 
 const UserAvatar = ({ avatarUrl, name }: { avatarUrl?: string; name?: string }) => {
   const initials = name
@@ -114,8 +115,12 @@ export const Navbar = () => {
             <span className="text-xl font-serif font-bold text-white tracking-tight sm:hidden">
               <span className="text-gold">CC</span>
             </span>
-            <span className="hidden lg:inline-block ml-1 px-2 py-0.5 rounded-full border border-white/10 text-[11px] font-medium text-muted-foreground whitespace-nowrap">
-              {movieCountLabel}
+            <span
+              className="ml-1 inline-flex items-baseline gap-1 px-2.5 xl:px-3 py-1 rounded-full border border-white/15 text-sm whitespace-nowrap"
+              aria-label={movieCountLabel}
+            >
+              <span className="font-bold text-gold">{movieCount}</span>
+              <span className="hidden xl:inline text-white/80">{movieCountWord}</span>
             </span>
           </Link>
 
