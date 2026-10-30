@@ -134,6 +134,7 @@ export const movieIds: string[] = [
 export const directorIds: string[] = [
   "humberto-solas",
   "tomas-gutierrez-alea",
+  "manuel-octavio-gomez",
   "juan-carlos-tabio",
   "fernando-perez",
   "ernesto-daranas",

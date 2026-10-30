@@ -119,6 +119,18 @@ export const directors: Director[] = [
     ]
   },
   {
+    id: "manuel-octavio-gomez",
+    name: "Manuel Octavio Gómez",
+    birthYear: 1934,
+    deathYear: 1988,
+    nationality: "Cubano",
+    biography: "Manuel Octavio Gómez (1934-1988) fue un director y guionista cubano. Comenzó en el documental durante los primeros años del ICAIC y fue desplazándose hacia la ficción, con un interés creciente por los temas históricos y por la relación entre la experiencia individual y el cambio social. Su cine combina a menudo las convenciones del documental con la ficción puesta en escena. En La primera carga al machete (1969) reconstruyó un episodio de la Guerra de los Diez Años con técnicas de cinéma vérité, con Jorge Herrera en la cámara, y Los días del agua (1971), centrada en la campesina Antoñica Izquierdo, obtuvo el Premio FIPRESCI en el Festival de Moscú. La primera carga al machete es considerada una obra clave del cine revolucionario cubano y Los días del agua se ha vinculado con el llamado «cine imperfecto».",
+    activeYears: "1962-1988",
+    awards: [
+      "Premio FIPRESCI — Festival Internacional de Cine de Moscú, por Los días del agua (1971)"
+    ]
+  },
+  {
     id: "juan-carlos-tabio",
     name: "Juan Carlos Tabío",
     photo: juanCarlosTabioPhoto,
