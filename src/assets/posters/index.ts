@@ -140,3 +140,4 @@ export { default as posterRegresoAItaca } from './regreso-a-itaca.jpg';
 export { default as posterViva } from './viva.jpg';
 export { default as posterCubaLibre } from './cuba-libre.jpg';
 export { default as posterPatakin } from './patakin.jpg';
+export { default as posterGallego } from './gallego.jpg';

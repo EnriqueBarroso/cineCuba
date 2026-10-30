@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego,
   // 90s
   posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
@@ -692,6 +692,35 @@ const movies1970s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1980s: Movie[] = [
+  {
+    id: "gallego",
+    title: "Gallego",
+    year: 1988,
+    director: "Manuel Octavio Gómez",
+    poster: posterGallego,
+    duration: "129 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "En 1916, Manuel, un adolescente gallego, emigra de su aldea a Cuba en busca de una vida mejor. La película sigue su trayectoria hasta los años sesenta y, a través de él, retrata a los miles de españoles que cruzaron el Atlántico y contribuyeron a dar forma a la isla, que acaba convirtiéndose en su segunda patria.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-gallego",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Sancho Gracia", role: "" },
+      { name: "Jorge Sanz", role: "" },
+      { name: "Francisco Rabal", role: "" },
+      { name: "Manuel Galiana", role: "" },
+      { name: "Fiorella Faltoyano", role: "" },
+      { name: "Linda Mirabal", role: "" },
+      { name: "Alberto Pedro", role: "" },
+      { name: "Leticia Herrera", role: "" },
+      { name: "Antonio Ferrandis", role: "" },
+      { name: "Álvaro de Luna", role: "" },
+      { name: "Rosalía Dans", role: "" },
+      { name: "César Diéguez", role: "" },
+      { name: "Lorenzo Castillo", role: "" }
+    ],
+    notes: "País: coproducción Cuba–España. También conocida como El Gallego. Último largometraje de Manuel Octavio Gómez."
+  },
   {
     id: "patakin",
     title: "¡Patakín! quiere decir ¡fábula!",
