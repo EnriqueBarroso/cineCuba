@@ -11,6 +11,7 @@ export { default as posterJuanQuinQuin } from './aventuras-de-juan-quin-quin.jpg
 export { default as posterMemoriasSub } from './poster-Memoria.jpg'; // Reutilizado o subir específico
 export { default as posterSoyCuba } from './soy-cuba.jpg';
 export { default as posterHistoriasRevolucion } from './historias-de-la-revolucion.jpg';
+export { default as posterPrimeraCargaMachete } from './la-primera-carga-al-machete.jpg';
 
 export { default as posterMaisinicu } from './el-hombre-de-maisinicu.jpg';
 export { default as posterDeCiertaManera } from './de-cierta-manera.jpg';

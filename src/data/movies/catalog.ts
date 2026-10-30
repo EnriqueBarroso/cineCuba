@@ -9,7 +9,7 @@ import type { Movie } from './types';
 // Gracias al archivo index.ts, ahora importamos todo de una sola vez.
 import {
   // 60s
-  posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba, posterHistoriasRevolucion,
+  posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba, posterHistoriasRevolucion, posterPrimeraCargaMachete,
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
@@ -275,6 +275,26 @@ const movies1960s: Movie[] = [
     ],
     notes: "Basada en la novela homónima de Edmundo Desnoes (1965); guion de Tomás Gutiérrez Alea y Edmundo Desnoes. Producción: ICAIC (Miguel Mendoza). Fotografía: Ramón F. Suárez. Montaje: Nelson Rodríguez. Música: Leo Brouwer. El apartamento de Sergio se rodó en el edificio FOCSA. Copia restaurada presentada en Cannes Classics en 2016. Figura en la lista de mejores películas de la historia de Sight & Sound (2022). Considerada una de las obras maestras del cine latinoamericano. Copia alojada en archive.org con autorización de los titulares de los derechos.",
     backdrop: heroMemorias,
+  },
+  {
+    id: "primera-carga-al-machete",
+    title: "La primera carga al machete",
+    year: 1969,
+    director: "Manuel Octavio Gómez",
+    poster: posterPrimeraCargaMachete,
+    duration: "84 min",
+    genre: ["Drama", "Histórico", "Bélico"],
+    synopsis: "1868, comienzo de la Guerra de los Diez Años. Como si un equipo de reporteros hubiera estado allí hace cien años, la cámara recorre la Cuba del levantamiento contra el dominio colonial español e interroga a soldados de los dos ejércitos y a gente corriente sobre si los cubanos pueden vencer con machetes a un ejército armado. Con un lenguaje de noticiario en blanco y negro de alto contraste y cámara en mano, y con diálogos tomados de documentos, discursos y cartas de la época, la película convierte en protagonista al machete, una herramienta de trabajo que se hizo arma de rebelión. Hecha con motivo del centenario de la guerra, es una de las películas más singulares del cine cubano de los sesenta.",
+    videoUrl: "https://archive.org/embed/la-primera-carga-al-machete-1969",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Idalia Anreus", role: "" },
+      { name: "Eslinda Núñez", role: "" },
+      { name: "Ana Viña", role: "" }
+    ],
+    notes: "Producida por el ICAIC, en blanco y negro y 35 mm, con motivo del centenario de la Guerra de los Diez Años (1868). Guion: Manuel Octavio Gómez, Alfredo L. del Cueto, Jorge Herrera y Julio García Espinosa. Cámara en mano: Jorge Herrera. Música: Leo Brouwer; canciones de Pablo Milanés. Montaje: Nelson Rodríguez. Vestuario: María Elena Molinet. Su estilo, a medio camino entre el noticiario y la cámara en mano, se ha vinculado al Tercer Cine."
   },
 ];
 

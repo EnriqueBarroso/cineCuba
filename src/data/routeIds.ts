@@ -19,6 +19,7 @@ export const movieIds: string[] = [
   "muerte-burocrata",
   "lucia-1968",
   "memorias-subdesarrollo",
+  "primera-carga-al-machete",
   "soy-cuba",
   "hombre-maisinicu",
   "de-cierta-manera",
