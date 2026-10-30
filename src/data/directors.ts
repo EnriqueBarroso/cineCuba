@@ -61,6 +61,7 @@ import jorgeMolinaPhoto from "@/assets/directors/jorge-molina.jpg";
 import eduardoMoyanoPhoto from "@/assets/directors/eduardo-moyano.jpg";
 import eduardoDelLlanoPhoto from "@/assets/directors/eduardo-del-llano.jpg";
 import tomasPiardPhoto from "@/assets/directors/tomas-piard.jpg";
+import manuelOctavioGomezPhoto from "@/assets/directors/manuel-octavio-gomez.jpg";
 
 
 export interface Director {
@@ -121,6 +122,7 @@ export const directors: Director[] = [
   {
     id: "manuel-octavio-gomez",
     name: "Manuel Octavio Gómez",
+    photo: manuelOctavioGomezPhoto,
     birthYear: 1934,
     deathYear: 1988,
     nationality: "Cubano",
