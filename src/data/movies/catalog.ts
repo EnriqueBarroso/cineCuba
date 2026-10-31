@@ -15,7 +15,7 @@ import {
   // 80s
   posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego,
   // 90s
-  posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
+  posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
@@ -1065,6 +1065,30 @@ const movies1980s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1990s: Movie[] = [
+  {
+    id: "reina-y-rey",
+    title: "Reina y Rey",
+    year: 1994,
+    director: "Julio García Espinosa",
+    poster: posterReinaYRey,
+    duration: "95 min",
+    genre: ["Drama", "Comedia"],
+    synopsis: "Reina es una viuda anciana que vive sola con su único compañero, un perrito negro llamado Rey. Cuando el perro desaparece, empieza a cuestionarse su propia existencia. Sus antiguos patrones, que dejaron Cuba veinte años atrás, vuelven una semana a Miami y tratan de convencerla de irse con ellos. Tras pasar un tiempo a su lado, Reina concluye que su vida tranquila y más solitaria es mejor y decide quedarse en Cuba.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-reina-y-rey",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Consuelo Vidal", role: "Reina" },
+      { name: "Coralia Veloz", role: "" },
+      { name: "Rogelio Blaín", role: "" },
+      { name: "Miriam Socarrás", role: "" },
+      { name: "Celia García", role: "" },
+      { name: "Orlando Fundichely", role: "" },
+      { name: "Amarilis Pumeda", role: "" },
+      { name: "Tony Salup", role: "" }
+    ],
+    notes: "País: Cuba (coproducción con México y España). Guion y dirección de Julio García Espinosa. Estreno: 1 de noviembre de 1994."
+  },
   {
     id: "mambi",
     title: "Mambí",

@@ -51,6 +51,7 @@ export const movieIds: string[] = [
   "maria-antonia",
   "caravana",
   "mambi",
+  "reina-y-rey",
   "alicia-en-el-pueblo-de-maravillas",
   "fresa-chocolate-1993",
   "madagascar",
