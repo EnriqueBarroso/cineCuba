@@ -145,3 +145,4 @@ export { default as posterMambi } from './mambi.jpg';
 export { default as posterVuelosProhibidos } from './vuelos-prohibidos.jpg';
 export { default as posterReinaYRey } from './reina-y-rey.jpg';
 export { default as posterDerechoDeAsilo } from './derecho-de-asilo.jpg';
+export { default as posterElHuesped } from './el-huesped.jpg';

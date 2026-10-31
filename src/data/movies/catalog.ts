@@ -9,7 +9,7 @@ import type { Movie } from './types';
 // Gracias al archivo index.ts, ahora importamos todo de una sola vez.
 import {
   // 60s
-  posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba, posterHistoriasRevolucion, posterPrimeraCargaMachete,
+  posterLucia, posterBurocrata, poster12Sillas, posterJuanQuinQuin, posterMemoriasSub, posterSoyCuba, posterHistoriasRevolucion, posterPrimeraCargaMachete, posterElHuesped,
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
@@ -72,6 +72,25 @@ import { shareDirector } from "@/lib/directors";
 // ══════════════════════════════════════
 
 const movies1960s: Movie[] = [
+  {
+    id: "el-huesped",
+    title: "El huésped",
+    year: 1966, // Wikipedia/ENDAC la sitúan en 1967
+    director: "Eduardo Manet",
+    poster: posterElHuesped,
+    duration: "68 min",
+    genre: ["Drama"],
+    synopsis: "Melodrama sobre una familia acomodada de provincias en los primeros años de la Revolución. La hija se enamora de un hombre que en realidad busca su dinero para poder salir de la isla. La película retrata, de paso, la incertidumbre de la aristocracia local en aquel momento.",
+    videoUrl: "https://archive.org/embed/el-huesped-pelicula-193-ano-1966.-raquel-revuelta-enrique-almirante-luisa-maria-guell",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Raquel Revuelta", role: "" },
+      { name: "Enrique Almirante", role: "" },
+      { name: "Luisa María Güell", role: "" }
+    ],
+    notes: "País: Cuba. Rodada en Gibara. Dirección de Eduardo Manet. Fue prohibida en Cuba por 'carecer de mensaje revolucionario'; se proyectó en Miami en 2015 y, según El Nuevo Herald, se emitió en la televisión cubana en 2013."
+  },
   {
     id: "historias-de-la-revolucion",
     title: "Historias de la Revolución",
