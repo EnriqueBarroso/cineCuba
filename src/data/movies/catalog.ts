@@ -768,7 +768,7 @@ const movies1980s: Movie[] = [
     duration: "94 min",
     genre: ["Comedia", "Musical", "Fantasía"],
     synopsis: "Fábula musical que traslada a la Cuba socialista contemporánea a los dioses del panteón yoruba. Shangó, seductor y holgazán encantador, vive con Candelaria pero desea a Caridad, la novia de Oggún, un tractorista ejemplar de una granja colectiva. Basada en los patakines —las fábulas de la tradición yoruba—, la película mezcla el musical hollywoodense de los años cincuenta, la herencia del teatro bufo cubano y una música de aire cercano a la bossa nova, con una mirada crítica y humorística sobre el machismo cubano.",
-    videoUrl: "https://archive.org/embed/pelicula-cubana-patakin",
+    videoUrl: "", // vídeo retirado: copia doblada al inglés, pendiente de subir copia en versión original
     trailerUrl: "",
     awards: [],
     cast: [
@@ -2564,7 +2564,7 @@ const movies2010s: Movie[] = [
   duration: "105 min",
   synopsis: "En un pueblo ficticio durante la Crisis de los Misiles (1962), tres hombres (dos cubanos y un soldado soviético) se disputan el amor de Lisanka, la muchacha más bella del lugar, mientras el mundo está al borde de la guerra nuclear.",
   poster: posterLisanka,
-  videoUrl: "https://archive.org/embed/Lisanka",
+  videoUrl: "https://archive.org/embed/Lisanka/Lisanka.mpg",
   cast: [
     { name: "Miriel Cejas", role: "Lisanka" },
     { name: "Carlos Enrique Almirante", role: "Pretendiente" }
@@ -2862,7 +2862,7 @@ const movies2010s: Movie[] = [
     duration: "92 min",
     genre: ["Comedia", "Terror"],
     synopsis: "Zombis invaden La Habana. Juan decide hacer negocio matando a los seres queridos de la gente.",
-    videoUrl: "https://archive.org/embed/juan-de-los-muertos", 
+    videoUrl: "https://archive.org/embed/juan-de-los-muertos/Juan%20De%20Los%20Muertos.mp4",
     trailerUrl: "https://www.youtube.com/embed/mhcIBEqczpg",
     awards: [
       { name: "Premios Goya", year: 2013, category: "Mejor Película Iberoamericana" },
