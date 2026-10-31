@@ -7,6 +7,7 @@ export const sagaIds: string[] = sagas.map((s) => s.id);
 export const actorIds: string[] = actors.map((a) => a.id);
 
 export const movieIds: string[] = [
+  "inutil-muerte-socio-manolo",
   "el-huesped",
   "dias-del-agua",
   "pelea-cubana-contra-demonios",

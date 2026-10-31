@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
@@ -711,6 +711,25 @@ const movies1970s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1980s: Movie[] = [
+  {
+    id: "inutil-muerte-socio-manolo",
+    title: "La inútil muerte de mi socio Manolo",
+    year: 1989,
+    director: "Julio García Espinosa",
+    poster: posterInutilMuerteSocioManolo,
+    duration: "80 min",
+    genre: ["Drama"],
+    synopsis: "Cheo se reencuentra con Manolo, un viejo amigo al que hacía mucho que no veía. Entre copas lo celebran, recuerdan su pasado juntos y repasan lo que ha sido la Revolución, mientras ambos hacen balance de sus vidas.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-la-inutil-muerte-de-mi-socio-manolo",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Mario Balmaseda", role: "Manolo" },
+      { name: "Pedro Rentería", role: "Cheo Malanga" },
+      { name: "Ikay Romay", role: "El Sueño" }
+    ],
+    notes: "País: Cuba. Dirección y guion de Julio García Espinosa. Estreno: 5 de diciembre de 1989."
+  },
   {
     id: "gallego",
     title: "Gallego",

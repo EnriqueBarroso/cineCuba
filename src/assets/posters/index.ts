@@ -146,3 +146,4 @@ export { default as posterVuelosProhibidos } from './vuelos-prohibidos.jpg';
 export { default as posterReinaYRey } from './reina-y-rey.jpg';
 export { default as posterDerechoDeAsilo } from './derecho-de-asilo.jpg';
 export { default as posterElHuesped } from './el-huesped.jpg';
+export { default as posterInutilMuerteSocioManolo } from './la-inutil-muerte-de-mi-socio-manolo.jpg';
