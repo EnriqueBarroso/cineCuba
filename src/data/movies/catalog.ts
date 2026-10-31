@@ -15,7 +15,7 @@ import {
   // 80s
   posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego,
   // 90s
-  posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
+  posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
@@ -1065,6 +1065,32 @@ const movies1980s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1990s: Movie[] = [
+  {
+    id: "derecho-de-asilo",
+    title: "Derecho de asilo",
+    year: 1993, // Wikipedia da 1994; IMDb/FilmAffinity/TheTVDB dan 1993
+    director: "Octavio Cortázar",
+    poster: posterDerechoDeAsilo,
+    duration: "102 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Un hombre se refugia en la embajada de un país latinoamericano imaginario para pedir asilo. Dentro de ese espacio cerrado, entre la astucia, la pasión y la intriga, sus actos van marcando su destino.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-derecho-de-asilo",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Jorge Perugorría", role: "Felipe" },
+      { name: "Luis Alarcón", role: "" },
+      { name: "Jorge Cao", role: "" },
+      { name: "Sonia Caridad", role: "" },
+      { name: "Reina Cueto", role: "" },
+      { name: "Raúl Eguren", role: "" },
+      { name: "Pedro Fernández", role: "" },
+      { name: "Serafín García", role: "" },
+      { name: "Adela Legrá", role: "" },
+      { name: "Xavier Meli", role: "" }
+    ],
+    notes: "País: coproducción Cuba–México. Guion de Walter Rojas. Dirección de Octavio Cortázar. Inspirada en un relato de Alejo Carpentier (por verificar en los créditos)."
+  },
   {
     id: "reina-y-rey",
     title: "Reina y Rey",

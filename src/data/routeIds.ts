@@ -52,6 +52,7 @@ export const movieIds: string[] = [
   "caravana",
   "mambi",
   "reina-y-rey",
+  "derecho-de-asilo",
   "alicia-en-el-pueblo-de-maravillas",
   "fresa-chocolate-1993",
   "madagascar",
