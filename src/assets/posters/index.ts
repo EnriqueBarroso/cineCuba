@@ -142,3 +142,4 @@ export { default as posterCubaLibre } from './cuba-libre.jpg';
 export { default as posterPatakin } from './patakin.jpg';
 export { default as posterGallego } from './gallego.jpg';
 export { default as posterMambi } from './mambi.jpg';
+export { default as posterVuelosProhibidos } from './vuelos-prohibidos.jpg';

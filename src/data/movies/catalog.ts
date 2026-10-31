@@ -19,7 +19,7 @@ import {
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
-  posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
+  posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
   posterJuliette,
   posterRosaLaChina,
   posterEnfinElMar,
@@ -2284,6 +2284,31 @@ const movies2000s: Movie[] = [
 // ============================================================================
 
 const movies2010s: Movie[] = [
+  {
+    id: "vuelos-prohibidos",
+    title: "Vuelos prohibidos",
+    year: 2015,
+    director: "Rigoberto López",
+    poster: posterVuelosProhibidos,
+    duration: "83 min",
+    genre: ["Drama", "Romance"],
+    synopsis: "Historia de amor entre París y La Habana. Un fotorreportero cubano que realiza documentales para cine y televisión coincide con Monique, una joven francesa, y su relación sirve de hilo para mirar la Cuba actual desde dos orillas.",
+    videoUrl: "https://archive.org/embed/vuelos-prohibidos-2015-paulo-fg",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Paulo FG", role: "" },
+      { name: "Sanaa Alaoui", role: "" },
+      { name: "Daisy Granados", role: "" },
+      { name: "Mario Balmaseda", role: "" },
+      { name: "Marianne Borgo", role: "" },
+      { name: "Marc Larnaudie", role: "" },
+      { name: "Ray Reboul", role: "" },
+      { name: "Karim Liazid", role: "" },
+      { name: "Manuel Porto", role: "" }
+    ],
+    notes: "País: Cuba. Rodada en París y La Habana, con escenas en el Castillo de la Punta, el Malecón y el Hotel Meliá Cohíba. Primer largometraje como actor del cantante Paulo FG. Duración de la copia: 83 min."
+  },
   {
     id: "se-vende",
     title: "Se vende",

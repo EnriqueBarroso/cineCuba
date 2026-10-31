@@ -132,6 +132,7 @@ export const movieIds: string[] = [
   "che-el-argentino",
   "che-la-guerrilla",
   "cuba-libre-2015",
+  "vuelos-prohibidos",
 ];
 
 export const directorIds: string[] = [
