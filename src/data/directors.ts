@@ -63,6 +63,7 @@ import eduardoDelLlanoPhoto from "@/assets/directors/eduardo-del-llano.jpg";
 import tomasPiardPhoto from "@/assets/directors/tomas-piard.jpg";
 import manuelOctavioGomezPhoto from "@/assets/directors/manuel-octavio-gomez.jpg";
 import hermanosRiosPhoto from "@/assets/directors/hermanos-rios.jpg";
+import rigobertoLopezPhoto from "@/assets/directors/rigoberto-lopez.jpg";
 
 
 export interface Director {
@@ -140,6 +141,21 @@ export const directors: Director[] = [
     nationality: "Español (Canarias)",
     biography: "Teodoro y Santiago Ríos son dos cineastas canarios nacidos en Tenerife. Pasaron unos diez años de su infancia en La Habana, donde aprendieron la historia de Cuba, y llevan más de veinte años haciendo un cine dedicado a recuperar la memoria histórica de Canarias. Su trilogía sobre la emigración canaria a América —Guarapo (1988), Mambí (1998) y El vuelo del guirre (2007)— recorre tres etapas: asentarse, emigrar y regresar. Mambí, coproducción con el ICAIC, se rodó en parte con torcedores en la fábrica Partagás de La Habana. Hoy, jubilados, Teodoro desarrolla la serie Atlantes sobre la conquista de Canarias desde el punto de vista de los vencidos, y Santiago ha vuelto al cine con el cortometraje WC Story, rodado en un cine art déco de La Rampa, en La Habana.",
     awards: []
+  },
+  {
+    id: "rigoberto-lopez",
+    name: "Rigoberto López",
+    photo: rigobertoLopezPhoto,
+    birthYear: 1947,
+    deathYear: 2019,
+    nationality: "Cubano",
+    biography: "Cineasta cubano licenciado en Ciencias Políticas por la Universidad de La Habana. Trabajó en el departamento de cine de la Televisión Cubana y, desde 1971, en el ICAIC. Autor de más de treinta obras audiovisuales, entre ellas el documental Yo soy, del son a la salsa (1996), multipremiado, y las ficciones Roble de olor (2002), su primera película de ficción, y Vuelos prohibidos (2015). Presidió la Muestra Itinerante de Cine del Caribe, un festival ambulante que recorrió quince países, e impartió talleres y conferencias en universidades de varios países. Murió en 2019 cuando ultimaba El Mayor, una película sobre Ignacio Agramonte.",
+    awards: [
+      "Primer premio — Festival de La Habana (1996), por Yo soy, del son a la salsa",
+      "Premio Especial del Jurado — Festival de Gramado (1997), por Yo soy, del son a la salsa",
+      "Premio Vigía y Premio de Cinematografía Educativa — Festival de La Habana (2003), por Roble de olor",
+      "Distinción por la Cultura Nacional"
+    ]
   },
   {
     id: "juan-carlos-tabio",

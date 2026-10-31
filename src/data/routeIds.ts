@@ -140,6 +140,7 @@ export const directorIds: string[] = [
   "tomas-gutierrez-alea",
   "manuel-octavio-gomez",
   "hermanos-rios",
+  "rigoberto-lopez",
   "juan-carlos-tabio",
   "fernando-perez",
   "ernesto-daranas",
