@@ -238,11 +238,11 @@ export const directors: Director[] = [
     birthYear: 1926,
     deathYear: 2016,
     nationality: "Cubano",
-    biography: "Fundador del ICAIC y teórico famoso por 'Por un cine imperfecto'. Dirigió clásicos como 'Las aventuras de Juan Quin Quín' (1967). Su legado como pensador y gestor cultural fue crucial para el cine latinoamericano.",
+    biography: "Cineasta, guionista y teórico cubano, una de las figuras clave del Nuevo Cine Latinoamericano. Fue actor y director de teatro antes de estudiar cine en el Centro Sperimentale di Cinematografia de Roma, a comienzos de los años cincuenta, donde coincidió con Tomás Gutiérrez Alea, Fernando Birri y Gabriel García Márquez. Codirigió con Gutiérrez Alea el corto El Mégano (1955), prohibido por la dictadura de Batista y considerado un precursor del Nuevo Cine Cubano. Tras el triunfo de la Revolución fue cofundador del ICAIC, donde ocupó varios cargos, incluida la presidencia, hasta 1991. Presidió el Festival Internacional del Nuevo Cine Latinoamericano de La Habana en los años ochenta, impulsó la Fundación del Nuevo Cine Latinoamericano y la Escuela Internacional de Cine y Televisión de San Antonio de los Baños, que dirigió en la primera década de los 2000. En 1969 escribió el manifiesto Por un cine imperfecto, uno de los textos fundamentales del cine latinoamericano: defiende un cine que invite al espectador a participar frente a la perfección técnica que lo condena a la contemplación pasiva. Como director firmó, entre otras, Las aventuras de Juan Quinquín (1967), su obra más conocida; Son… o no son (1980), La inútil muerte de mi socio Manolo (1989) y Reina y Rey (1994). Como guionista participó en Lucía (Humberto Solás, 1968), La primera carga al machete (Manuel Octavio Gómez, 1969) y Los días del agua (Gómez, 1971).",
     activeYears: "1955-2000",
     awards: [
       "Premio Nacional de Cine de Cuba (2004)",
-      "Premio Coral de Honor del Festival de La Habana"
+      "Doctorado honoris causa — Universidad Concordia de Montreal"
     ]
   },
   {
