@@ -152,7 +152,7 @@ export const eras: Era[] = [
       "Fernando Pérez",
       "Alejandro Brugués"
     ],
-    representativeMovieIds: ["conducta-2014", "memoria-2022"]
+    representativeMovieIds: ["conducta-2014"]
   }
 ];
 
