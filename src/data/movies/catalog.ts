@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
@@ -711,6 +711,28 @@ const movies1970s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1980s: Movie[] = [
+  {
+    id: "una-casa-colonial",
+    title: "Una casa colonial",
+    year: 1984,
+    director: "Miguel Torres",
+    poster: posterUnaCasaColonial,
+    duration: "82 min",
+    genre: ["Comedia", "Romance"],
+    synopsis: "Versión cinematográfica de la obra teatral homónima de Nicolás Dorr, concebida por su director como una comedia sentimental que busca más la sonrisa que la risa.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-una-casa-colonial",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "María de los Ángeles Santana", role: "" },
+      { name: "Parmenia Silva", role: "" },
+      { name: "Juan Carlos Romero", role: "" },
+      { name: "Alberto Pujol", role: "" },
+      { name: "Lili Rentería", role: "" },
+      { name: "Annia Linares", role: "" }
+    ],
+    notes: "País: Cuba. Dirección de Miguel Torres, a partir de la obra teatral de Nicolás Dorr, quien participó en el guion. Producción de los Estudios Fílmicos de la Televisión Cubana, filmada en 16 mm."
+  },
   {
     id: "cartas-del-parque",
     title: "Cartas del parque",

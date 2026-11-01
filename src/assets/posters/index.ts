@@ -148,3 +148,4 @@ export { default as posterDerechoDeAsilo } from './derecho-de-asilo.jpg';
 export { default as posterElHuesped } from './el-huesped.jpg';
 export { default as posterInutilMuerteSocioManolo } from './la-inutil-muerte-de-mi-socio-manolo.jpg';
 export { default as posterCartasDelParque } from './cartas-del-parque.jpg';
+export { default as posterUnaCasaColonial } from './una-casa-colonial.jpg';
