@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Info, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getMovieById } from "@/data/movies";
 import { getSagaById } from "@/data/sagas";
+import { MovieInfoModal, movieToInfo, sagaToInfo, type MovieInfo } from "@/components/MovieInfoModal";
 import {
   heroMemorias,
   heroLucia,
@@ -112,13 +113,19 @@ const HERO_MOVIES: HeroEntry[] = [
 
 export const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  // "Más Info": el modal guarda su propia copia de la película activa al abrirse,
+  // así que sigue mostrando la misma aunque el carrusel avance.
+  const [infoOpen, setInfoOpen] = useState(false);
+  const [info, setInfo] = useState<MovieInfo | null>(null);
+  const infoButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    if (infoOpen) return; // autoplay en pausa mientras el modal está abierto
     const timer = setInterval(() => {
       handleNext();
     }, 8000);
     return () => clearInterval(timer);
-  }, [currentIndex]);
+  }, [currentIndex, infoOpen]);
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % HERO_MOVIES.length);
@@ -134,6 +141,18 @@ export const HeroSection = () => {
   const linkTo = isSaga ? `/saga/${movie.id}` : `/pelicula/${movie.id}`;
   const fallbackPoster = saga?.poster || getMovieById(movie.id)?.poster;
   const visual = movie.image || fallbackPoster;
+
+  const openInfo = () => {
+    const movieData = getMovieById(movie.id);
+    setInfo(
+      saga
+        ? sagaToInfo(saga)
+        : movieData
+          ? movieToInfo(movieData)
+          : { id: movie.id, title: movie.title, year: movie.year, href: linkTo, synopsis: movie.description, director: movie.director }
+    );
+    setInfoOpen(true);
+  };
 
   return (
     <div className="relative w-full overflow-hidden bg-background text-white lg:min-h-screen">
@@ -202,11 +221,15 @@ export const HeroSection = () => {
                     <Play className="w-5 h-5 fill-black" /> Ver Ahora
                   </Button>
                 </Link>
-                <Link to={linkTo}>
-                  <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 h-12 px-8 gap-2 text-base">
-                    <Info className="w-5 h-5" /> Más Info
-                  </Button>
-                </Link>
+                <Button
+                  ref={infoButtonRef}
+                  onClick={openInfo}
+                  variant="outline"
+                  size="lg"
+                  className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 h-12 px-8 gap-2 text-base"
+                >
+                  <Info className="w-5 h-5" /> Más Info
+                </Button>
               </div>
             </motion.div>
 
@@ -267,6 +290,8 @@ export const HeroSection = () => {
         ))}
       </div>
       </div>
+
+      <MovieInfoModal open={infoOpen} onOpenChange={setInfoOpen} info={info} returnFocusRef={infoButtonRef} />
     </div>
   );
 };
