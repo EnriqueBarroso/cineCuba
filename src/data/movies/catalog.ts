@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
@@ -711,6 +711,29 @@ const movies1970s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1980s: Movie[] = [
+  {
+    id: "cartas-del-parque",
+    title: "Cartas del parque",
+    year: 1988,
+    director: "Tomás Gutiérrez Alea",
+    poster: posterCartasDelParque,
+    duration: "92 min",
+    genre: ["Drama", "Romance"],
+    synopsis: "Cuba, 1913. Dos jóvenes tímidos que se gustan contratan a un poeta para que escriba las cartas de amor que ellos no se atreven a escribir. El poeta, como Cyrano, acaba atrapado en un triángulo amoroso. Basada en un relato original de Gabriel García Márquez.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-cartas-del-parque",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Víctor Laplace", role: "" },
+      { name: "Ivonne López Arenal", role: "" },
+      { name: "Miguel Paneque", role: "" },
+      { name: "Mirta Ibarra", role: "" },
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Elio Mesa", role: "" },
+      { name: "Paula Ali", role: "" }
+    ],
+    notes: "País: Cuba. Dirección de Tomás Gutiérrez Alea; guion de Gutiérrez Alea y Gabriel García Márquez. Fotografía: Mario García Joya. Candidata de Cuba al Óscar a mejor película de habla no inglesa (61.ª edición), sin llegar a ser nominada."
+  },
   {
     id: "inutil-muerte-socio-manolo",
     title: "La inútil muerte de mi socio Manolo",
