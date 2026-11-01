@@ -178,9 +178,34 @@ const MovieGrid = () => {
     }, { replace: true });
   }, [totalPages, currentPage, rawPage, setSearchParams]);
 
-  const scrollToGrid = () => {
-    document.getElementById("cartelera")?.scrollIntoView({ behavior: "smooth" });
-  };
+  // Encuadre del grid: solo se recoloca la vista cuando el usuario cambia de página o de tamaño,
+  // de forma instantánea (el scroll suave era lo que daba sensación de salto).
+  const gridRef = useRef<HTMLDivElement>(null);
+  const userNavigatedRef = useRef(false);
+  const lastPositionRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    const position = `${currentPage}|${perPage}`;
+    const isFirstRender = lastPositionRef.current === null;
+    lastPositionRef.current = position;
+    if (isFirstRender || !userNavigatedRef.current) return;
+    userNavigatedRef.current = false;
+    gridRef.current?.scrollIntoView({ block: "start", behavior: "auto" });
+  }, [currentPage, perPage]);
+
+  // Altura de una página completa: se reserva en la última página (con menos películas)
+  // para que el grid no cambie de sitio ni la paginación inferior suba.
+  const [fullGridHeight, setFullGridHeight] = useState(0);
+
+  useEffect(() => {
+    const onResize = () => setFullGridHeight(0);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  useEffect(() => {
+    setFullGridHeight(0);
+  }, [perPage]);
 
   // 3. ACTUALIZAR URL AL CAMBIAR DE PÁGINA (sin perder search ni otros params)
   const handlePageChange = (page: number) => {
@@ -193,7 +218,7 @@ const MovieGrid = () => {
       return newParams;
     });
 
-    scrollToGrid();
+    userNavigatedRef.current = true;
     setTimeout(() => setIsFiltering(false), 300);
   };
 
@@ -208,7 +233,7 @@ const MovieGrid = () => {
       return newParams;
     });
 
-    scrollToGrid();
+    userNavigatedRef.current = true;
     setTimeout(() => setIsFiltering(false), 300);
   };
 
@@ -218,6 +243,15 @@ const MovieGrid = () => {
     const startIndex = (currentPage - 1) * perPage;
     return filteredMovies.slice(startIndex, startIndex + perPage);
   }, [filteredMovies, currentPage, perPage]);
+
+  // Medimos el bloque del grid cuando la página está completa
+  useEffect(() => {
+    if (!isLoading && paginatedMovies.length === perPage && gridRef.current && fullGridHeight === 0) {
+      setFullGridHeight(gridRef.current.offsetHeight);
+    }
+  }, [isLoading, paginatedMovies.length, perPage, currentPage, fullGridHeight]);
+
+  const isPartialPage = !isLoading && paginatedMovies.length > 0 && paginatedMovies.length < perPage;
 
   const paginationProps = {
     page: currentPage,
@@ -258,6 +292,11 @@ const MovieGrid = () => {
           </div>
         )}
 
+        <div
+          ref={gridRef}
+          className="scroll-mt-24"
+          style={isPartialPage && fullGridHeight ? { minHeight: fullGridHeight } : undefined}
+        >
         {filteredMovies.length > PER_PAGE_OPTIONS[0] && (
           <CatalogPagination variant="compact" className="mb-6" {...paginationProps} />
         )}
@@ -301,6 +340,7 @@ const MovieGrid = () => {
             )}
           </div>
         )}
+        </div>
 
         {totalPages > 1 && (
           <CatalogPagination variant="full" className="mt-12" {...paginationProps} />
