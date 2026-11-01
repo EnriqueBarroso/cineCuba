@@ -832,7 +832,7 @@ const movies1980s: Movie[] = [
     duration: "94 min",
     genre: ["Comedia", "Musical", "Fantasía"],
     synopsis: "Fábula musical que traslada a la Cuba socialista contemporánea a los dioses del panteón yoruba. Shangó, seductor y holgazán encantador, vive con Candelaria pero desea a Caridad, la novia de Oggún, un tractorista ejemplar de una granja colectiva. Basada en los patakines —las fábulas de la tradición yoruba—, la película mezcla el musical hollywoodense de los años cincuenta, la herencia del teatro bufo cubano y una música de aire cercano a la bossa nova, con una mirada crítica y humorística sobre el machismo cubano.",
-    videoUrl: "", // vídeo retirado: copia doblada al inglés, pendiente de subir copia en versión original
+    videoUrl: "https://archive.org/embed/pelicula-cubana-patakin_202611",
     trailerUrl: "",
     awards: [],
     cast: [
