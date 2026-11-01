@@ -127,7 +127,7 @@ export const eras: Era[] = [
       "Pavel Giroud",
       "Esteban Insausti"
     ],
-    representativeMovieIds: ["suite-habana-2003", "marti-2010"]
+    representativeMovieIds: ["suite-habana-2003", "marti-2011"]
   },
   {
     id: "contemporaneo",

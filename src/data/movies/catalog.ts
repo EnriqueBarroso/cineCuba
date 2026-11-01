@@ -1625,7 +1625,7 @@ const movies2000s: Movie[] = [
     id: "el-sonador",
     title: "El soñador",
     year: 2004,
-    director: "Angelo Rizzo",
+    director: "Angelo Rizzi",
     poster: posterElSonador,
     duration: "N/D",
     genre: ["Drama"],
@@ -2305,7 +2305,7 @@ const movies2000s: Movie[] = [
     poster: posterCheArgentino,
     duration: "134 min",
     genre: ["Biopic", "Bélico", "Drama"],
-    synopsis: "La épica historia de Ernesto 'Che' Guevara, centrada en su papel fundamental durante la Revolución Cubana y su posterior campaña en Bolivia.",
+    synopsis: "Desde el encuentro de Ernesto 'Che' Guevara con Fidel Castro en México, en 1955, hasta la toma de Santa Clara y el triunfo de la Revolución en 1959, la película sigue la campaña guerrillera cubana, alternada con su viaje a Nueva York en 1964 para hablar ante la ONU.",
     videoUrl: "https://archive.org/embed/el-argentino/El%20argentino.avi",
     trailerUrl: "",
     awards: [
@@ -2324,7 +2324,7 @@ const movies2000s: Movie[] = [
     poster: posterChe,
     duration: "134 min",
     genre: ["Biopic", "Bélico", "Drama"],
-    synopsis: "La épica historia de Ernesto 'Che' Guevara, centrada en su papel fundamental durante la Revolución Cubana y su posterior campaña en Bolivia.",
+    synopsis: "Tras dejar Cuba, Ernesto 'Che' Guevara organiza en 1966 la guerrilla en Bolivia. La película sigue la campaña desde su llegada al país hasta su captura y muerte, en octubre de 1967.",
     videoUrl: "https://archive.org/embed/el-argentino/Guerrilla.avi",
     trailerUrl: "",
     awards: [
