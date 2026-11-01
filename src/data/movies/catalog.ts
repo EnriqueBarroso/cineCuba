@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
   // 2000s
@@ -711,6 +711,25 @@ const movies1970s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1980s: Movie[] = [
+  {
+    id: "la-vida-en-rosa",
+    title: "La vida en rosa",
+    year: 1989,
+    director: "Rolando Díaz",
+    poster: posterLaVidaEnRosa,
+    duration: "80 min",
+    genre: ["Drama"], // género por verificar
+    synopsis: "Película cubana dirigida por Rolando Díaz y estrenada en 1989, protagonizada por Tony Cortés, María de los Ángeles Santana y Lavinia Castro.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-la-vida-en-rosa",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Tony Cortés", role: "" },
+      { name: "María de los Ángeles Santana", role: "" },
+      { name: "Lavinia Castro", role: "" }
+    ],
+    notes: "País: Cuba (coproducción cubano-francesa, según la copia). Título en francés: La Vie en rose. Dirección de Rolando Díaz."
+  },
   {
     id: "una-casa-colonial",
     title: "Una casa colonial",
