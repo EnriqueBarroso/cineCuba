@@ -7,12 +7,14 @@
  * Genera, en exports/ (raíz del repo):
  *   - catalogo.csv              UTF-8 con BOM, separador ";" (se abre con doble clic en Excel en español)
  *   - catalogo-busqueda.html    un solo archivo autocontenido, sin dependencias ni peticiones de red
+ *   - catalogo-identidad.json   instantánea de identidad (tipo, id, título, año, directores, título
+ *                               normalizado) que usa CineCubaDownloader para detectar duplicados
  *
  * Los datos reales (catalog.ts, sagas.ts, serials.ts, shorts.ts) importan pósters .jpg que tsx no sabe
  * cargar, así que se empaquetan en memoria con esbuild (ya instalado como dependencia de Vite),
  * sustituyendo cada imagen por su ruta de archivo.
  */
-import { mkdirSync, writeFileSync } from "fs";
+import { mkdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from "fs";
 import { resolve, dirname, relative } from "path";
 import { fileURLToPath } from "url";
 import { build, type Plugin } from "esbuild";
@@ -21,6 +23,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const OUT_DIR = resolve(ROOT, "exports");
 const BASE_URL = "https://cine-cubano.com";
+const IDENTITY_TYPES = ["pelicula", "serial", "corto", "saga"] as const;
 
 // ---------------------------------------------------------------------------
 // 1) Carga de los datos reales
@@ -60,6 +63,24 @@ interface CatalogData {
   serials: MovieLike[];
   shorts: MovieLike[];
   sagas: SagaLike[];
+}
+
+type IdentityType = (typeof IDENTITY_TYPES)[number];
+interface IdentityEntry {
+  tipo: IdentityType;
+  id: string;
+  titulo: string;
+  anio: number;
+  directores: string[];
+  tituloNormalizado: string;
+  subtipo?: "serial" | "corto";
+}
+interface IdentitySnapshot {
+  schemaVersion: 1;
+  generatedAt: string;
+  source: "cine-cubano.com";
+  count: number;
+  entries: IdentityEntry[];
 }
 
 /** Los imports de imágenes (pósters) pasan a ser la ruta del archivo: solo importa que no estén vacíos. */
@@ -202,6 +223,78 @@ function buildRows(data: CatalogData): Row[] {
     ...data.sagas.map(fromSaga),
   ];
   return rows.sort((a, b) => a.anio - b.anio || a.titulo.localeCompare(b.titulo, "es"));
+}
+
+// Mirrors the searcher's title normalization (NFD, no diacritics, lowercase,
+// parenthesized year removed, punctuation collapsed) while preserving articles.
+function normalizeIdentityTitle(title: string): string {
+  return title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+    .replace(/\(\s*\d{4}\s*\)/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function buildIdentityEntries(data: CatalogData): IdentityEntry[] {
+  const entries: IdentityEntry[] = [
+    ...data.movies.map((m): IdentityEntry => ({ tipo: "pelicula", id: m.id, titulo: m.title, anio: m.year,
+      directores: Array.isArray(m.director) ? m.director : [m.director], tituloNormalizado: normalizeIdentityTitle(m.title) })),
+    ...data.serials.map((m): IdentityEntry => ({ tipo: "serial", id: m.id, titulo: m.title, anio: m.year,
+      directores: Array.isArray(m.director) ? m.director : [m.director], tituloNormalizado: normalizeIdentityTitle(m.title) })),
+    ...data.shorts.map((m): IdentityEntry => ({ tipo: "corto", id: m.id, titulo: m.title, anio: m.year,
+      directores: Array.isArray(m.director) ? m.director : [m.director], tituloNormalizado: normalizeIdentityTitle(m.title) })),
+    ...data.sagas.map((s): IdentityEntry => ({ tipo: "saga", id: s.id, titulo: s.title, anio: s.anioInicio,
+      directores: [s.director], tituloNormalizado: normalizeIdentityTitle(s.title), ...(s.tipo ? { subtipo: s.tipo } : {}) })),
+  ];
+  const seen = new Set<string>();
+  const duplicates = new Set<string>();
+  for (const entry of entries) {
+    const key = `${entry.tipo}\0${entry.id}`;
+    if (seen.has(key)) duplicates.add(`${entry.tipo}/${entry.id}`);
+    seen.add(key);
+  }
+  if (duplicates.size) throw new Error(`IDs duplicados dentro del mismo tipo: ${[...duplicates].join(", ")}`);
+  return entries.sort((a, b) => a.tipo < b.tipo ? -1 : a.tipo > b.tipo ? 1 : a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+}
+
+function validateIdentitySnapshot(value: unknown): asserts value is IdentitySnapshot {
+  if (!value || typeof value !== "object") throw new Error("El snapshot JSON no contiene un objeto raíz");
+  const snapshot = value as Partial<IdentitySnapshot>;
+  if (snapshot.schemaVersion !== 1 || snapshot.source !== "cine-cubano.com" ||
+      typeof snapshot.generatedAt !== "string" || !Number.isFinite(Date.parse(snapshot.generatedAt)) ||
+      !Array.isArray(snapshot.entries) || snapshot.count !== snapshot.entries.length) {
+    throw new Error("El snapshot JSON no cumple el esquema de identidad esperado");
+  }
+  const seen = new Set<string>();
+  for (const raw of snapshot.entries) {
+    const entry = raw as IdentityEntry;
+    if (!entry || !IDENTITY_TYPES.includes(entry.tipo) || typeof entry.id !== "string" ||
+        typeof entry.titulo !== "string" || !Number.isInteger(entry.anio) ||
+        !Array.isArray(entry.directores) || !entry.directores.every((d) => typeof d === "string") ||
+        typeof entry.tituloNormalizado !== "string" ||
+        (entry.tipo === "saga" && entry.subtipo !== undefined && entry.subtipo !== "serial" && entry.subtipo !== "corto") ||
+        (entry.tipo !== "saga" && entry.subtipo !== undefined)) {
+      throw new Error("Una entrada del snapshot JSON no cumple el esquema de identidad esperado");
+    }
+    const key = `${entry.tipo}\0${entry.id}`;
+    if (seen.has(key)) throw new Error(`ID duplicado en snapshot: ${entry.tipo}/${entry.id}`);
+    seen.add(key);
+  }
+  const sorted = [...snapshot.entries].sort((a, b) => a.tipo < b.tipo ? -1 : a.tipo > b.tipo ? 1 : a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+  if (snapshot.entries.some((entry, index) => entry.tipo !== sorted[index].tipo || entry.id !== sorted[index].id)) {
+    throw new Error("Las entradas del snapshot no están ordenadas por tipo e ID");
+  }
+}
+
+function writeIdentitySnapshot(path: string, entries: IdentityEntry[]): void {
+  const snapshot: IdentitySnapshot = { schemaVersion: 1, generatedAt: new Date().toISOString(), source: "cine-cubano.com", count: entries.length, entries };
+  const tempPath = `${path}.${process.pid}.${Date.now()}.tmp`;
+  try {
+    writeFileSync(tempPath, `${JSON.stringify(snapshot, null, 2)}\n`, "utf-8");
+    const parsed: unknown = JSON.parse(readFileSync(tempPath, "utf-8"));
+    validateIdentitySnapshot(parsed);
+    renameSync(tempPath, path);
+  } catch (error) {
+    try { unlinkSync(tempPath); } catch { /* the temporary file may not exist */ }
+    throw error;
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -487,22 +580,29 @@ function toHtml(rows: Row[]): string {
 async function main() {
   const data = await loadCatalog();
   const rows = buildRows(data);
+  const identityEntries = buildIdentityEntries(data);
 
   mkdirSync(OUT_DIR, { recursive: true });
   const csvPath = resolve(OUT_DIR, "catalogo.csv");
   const htmlPath = resolve(OUT_DIR, "catalogo-busqueda.html");
+  const identityPath = resolve(OUT_DIR, "catalogo-identidad.json");
   writeFileSync(csvPath, toCsv(rows), "utf-8");
   writeFileSync(htmlPath, toHtml(rows), "utf-8");
+  writeIdentitySnapshot(identityPath, identityEntries);
 
   const porTipo: Record<string, number> = {};
   rows.forEach((r) => (porTipo[r.tipo] = (porTipo[r.tipo] ?? 0) + 1));
-  console.log(`✓ ${rows.length} filas exportadas`);
+  console.log(`✓ ${rows.length} filas exportadas a CSV y HTML; ${identityEntries.length} identidades JSON`);
   Object.entries(porTipo).forEach(([t, n]) => console.log(`   ${t.padEnd(14)} ${n}`));
   console.log(`   CSV:  ${csvPath}`);
   console.log(`   HTML: ${htmlPath}`);
+  const identityByType: Record<string, number> = {};
+  identityEntries.forEach((entry) => (identityByType[entry.tipo] = (identityByType[entry.tipo] ?? 0) + 1));
+  IDENTITY_TYPES.forEach((t) => console.log(`   JSON ${t.padEnd(10)} ${identityByType[t] ?? 0}`));
+  console.log(`   JSON: ${identityPath}`);
 }
 
 main().catch((e) => {
-  console.error("✗ Error al exportar el catálogo:", e);
+  console.error("✗ Error al exportar CSV, HTML o snapshot de identidad:", e);
   process.exit(1);
 });
