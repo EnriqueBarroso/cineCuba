@@ -151,7 +151,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <div className="container mx-auto px-6 pt-28 pb-24 lg:pt-32 lg:pb-24 lg:min-h-screen flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10">
+          <div className="container mx-auto px-6 pt-28 pb-6 md:pb-24 lg:pt-32 lg:pb-24 lg:min-h-screen flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10">
             {/* IMAGEN MÓVIL */}
             <div className="lg:hidden relative -mx-6 h-[250px] overflow-hidden">
               {visual && (
@@ -241,18 +241,21 @@ export const HeroSection = () => {
         </motion.div>
       </AnimatePresence>
 
-      {/* Controles */}
-      <div className="absolute bottom-8 right-8 flex gap-2 z-20">
-        <button onClick={handlePrev} className="p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/10 transition-all active:scale-95">
+      {/* Controles: en móvil van en el flujo, bajo los botones (puntos a la izquierda, flechas a la derecha);
+          desde md: el envoltorio desaparece (contents) y cada grupo se posiciona sobre el hero como siempre. */}
+      <div className="relative z-20 container mx-auto px-6 pb-8 flex items-center justify-between md:contents">
+      {/* Flechas */}
+      <div className="order-2 flex gap-2 z-20 md:order-none md:absolute md:bottom-8 md:right-8">
+        <button onClick={handlePrev} aria-label="Anterior" className="h-10 w-10 p-0 flex items-center justify-center md:h-auto md:w-auto md:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/10 transition-all active:scale-95">
           <ChevronLeft className="w-6 h-6 text-white" />
         </button>
-        <button onClick={handleNext} className="p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/10 transition-all active:scale-95">
+        <button onClick={handleNext} aria-label="Siguiente" className="h-10 w-10 p-0 flex items-center justify-center md:h-auto md:w-auto md:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/10 transition-all active:scale-95">
           <ChevronRight className="w-6 h-6 text-white" />
         </button>
       </div>
 
       {/* Indicadores */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+      <div className="order-1 flex gap-3 z-20 md:order-none md:absolute md:bottom-8 md:left-1/2 md:-translate-x-1/2">
         {HERO_MOVIES.map((_, idx) => (
           <button
             key={idx}
@@ -262,6 +265,7 @@ export const HeroSection = () => {
             }`}
           />
         ))}
+      </div>
       </div>
     </div>
   );
