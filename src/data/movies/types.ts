@@ -1,3 +1,5 @@
+import type { Genre } from "./genres";
+
 export type ContentType = "pelicula" | "serial" | "corto";
 
 export interface Movie {
@@ -8,7 +10,7 @@ export interface Movie {
   poster: string;
   backdrop?: string;
   duration: string;
-  genre: string[];
+  genre: Genre[];
   synopsis: string;
   videoUrl?: string;
   trailerUrl?: string;
@@ -27,21 +29,8 @@ export interface Movie {
   disponible?: boolean;
 }
 
-/** Géneros disponibles para las películas */
-export type Genre =
-  | "Drama"
-  | "Comedia"
-  | "Histórico"
-  | "Documental"
-  | "Romance"
-  | "Thriller"
-  | "Animación"
-  | "Experimental"
-  | "Aventuras"    
-  | "Musical"      
-  | "Terror"    
-  | "Crimen"      
-  | "Road Movie"   
+/** Géneros disponibles: la fuente de verdad es ./genres.ts */
+export type { Genre } from "./genres";
 
 /** Estructura para premios */
 export interface Award {

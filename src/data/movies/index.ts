@@ -7,6 +7,7 @@
 
 // Re-exportar tipos
 export type { Movie, Genre, Award, CastMember } from "./types";
+export { GENRES, MAX_GENRES, getGenreCounts } from "./genres";
 
 // Re-exportar catálogo
 export { movies, moviesByDecade } from "./catalog";
@@ -15,6 +16,7 @@ export { movies, moviesByDecade } from "./catalog";
 export { 
   validateCatalog, 
   validateMovie, 
+  validateGenres,
   printValidationReport,
   getCatalogStats,
   type ValidationError 

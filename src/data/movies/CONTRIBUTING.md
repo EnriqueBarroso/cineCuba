@@ -35,7 +35,7 @@ Abre `src/data/movies/catalog.ts`:
   director: "Nombre del Director",
   poster: posterNuevaPelicula, // El import del poster
   duration: "95 min", // Formato: "XX min"
-  genre: ["Drama", "Comedia"], // Géneros válidos: Drama, Comedia, Documental, Histórico, Romance, Thriller, Musical, Animación, Experimental
+  genre: ["Drama", "Comedia"], // Solo géneros de GENRES (ver "Géneros" más abajo)
   synopsis: "Una descripción de la película de al menos 50 caracteres...",
   
   // Campos opcionales:
@@ -74,19 +74,20 @@ Ejemplos:
 - `fresa-chocolate-1993`
 - `suite-habana-2003`
 
-## Géneros Disponibles
+## Géneros
 
-| Género       | Descripción                           |
-|--------------|---------------------------------------|
-| Drama        | Películas dramáticas                  |
-| Comedia      | Películas cómicas                     |
-| Documental   | Documentales                          |
-| Histórico    | Películas basadas en hechos históricos|
-| Romance      | Películas románticas                  |
-| Thriller     | Películas de suspenso                 |
-| Musical      | Películas musicales                   |
-| Animación    | Películas animadas                    |
-| Experimental | Cine experimental o de autor          |
+La fuente de verdad es `src/data/movies/genres.ts` (`GENRES`). Solo se admiten estos 20 géneros, escritos exactamente así (el orden es el del desplegable de filtros):
+
+Drama, Comedia, Romance, Histórico, Bélico, Musical, Animación, Documental, Fantasía, Terror, Ciencia ficción, Thriller, Crimen, Aventuras, Biopic, Experimental, Infantil, Sátira, LGBT, Road Movie.
+
+Reglas (también para sagas y seriales):
+
+- De 1 a 3 géneros por título (`MAX_GENRES`).
+- El primero es el principal (lo usa el Hero de la portada).
+- Sin duplicados.
+- No uses "Drama" de relleno si hay un género más preciso.
+
+TypeScript rechaza un género fuera de la lista y `validateCatalog` lo marca como error. Para añadir un género nuevo, hay que añadirlo a `GENRES` y actualizar esta sección.
 
 ## Estructura de Archivos
 

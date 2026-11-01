@@ -1,3 +1,5 @@
+import type { Genre } from "./movies/genres";
+
 export interface Episodio {
   id: string;
   titulo: string;
@@ -14,7 +16,7 @@ export interface Saga {
   anioInicio: number;
   anioFin: number;
   poster: string;
-  genre: string[];
+  genre: Genre[];
   synopsis: string;
   estado: "completo" | "parcial";
   tipo?: "corto" | "serial"; // omitir = "corto"
@@ -228,7 +230,7 @@ export const sagas: Saga[] = [
     anioFin: 1990,
     poster: "/images/sagas/su-propia-guerra.jpg",
     tipo: "serial",
-    genre: ["Policíaco", "Drama", "Acción"],
+    genre: ["Crimen", "Drama", "Aventuras"],
     synopsis:
       "Miniserie policíaca perteneciente al espacio 'Día y Noche' de la televisión cubana, estrenada al inicio del Período Especial. Narra la historia de Octavio Sánchez Guzmán, conocido como 'El Tavo', un hombre de respeto en la delincuencia callejera habanera que, tras ser arrestado, es captado por el DTI (Departamento Técnico de Investigaciones) de la Policía Cubana. Se convierte en agente encubierto, infiltrado en los bajos fondos de La Habana mientras ayuda a neutralizar importantes grupos delictivos. Se convirtió en una de las series más populares y recordadas de la televisión cubana.",
     estado: "completo",
@@ -313,7 +315,7 @@ export const sagas: Saga[] = [
     anioFin: 1991,
     poster: "/images/sagas/su-propia-guerra-2.jpg",
     tipo: "serial",
-    genre: ["Policíaco", "Drama", "Acción"],
+    genre: ["Crimen", "Drama", "Aventuras"],
     synopsis:
       "Segunda temporada de la exitosa miniserie policíaca cubana. El Tavo, ya consolidado como agente encubierto del DTI, continúa infiltrado en el ambiente de la delincuencia callejera cubana, involucrándose en nuevos y turbulentos 'negocios' mientras libra su particular guerra entre dos mundos.",
     estado: "completo",

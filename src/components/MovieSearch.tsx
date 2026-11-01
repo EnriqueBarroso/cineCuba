@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/select";
 // IMPORTANTE: Solo importamos el tipo, NO los datos
 import type { Movie, Genre } from "@/data/movies";
+import { getGenreCounts } from "@/data/movies/genres";
 import { directorList, directorLabel } from "@/lib/directors";
 
 interface MovieSearchProps {
@@ -24,11 +25,8 @@ export const MovieSearch = ({ movies, onFilteredMovies }: MovieSearchProps) => {
   const [selectedYear, setSelectedYear] = useState<string>("all");
   const [selectedDirector, setSelectedDirector] = useState<string>("all");
 
-  // Calcular géneros únicos basados en las películas REALES (prop)
-  const genres = useMemo(() => {
-    const allGenres = movies.flatMap((movie) => movie.genre);
-    return [...new Set(allGenres)].sort();
-  }, [movies]);
+  // Géneros del vocabulario cerrado (genres.ts), en su orden, solo los que tienen películas, con recuento
+  const genres = useMemo(() => getGenreCounts(movies), [movies]);
 
   // Calcular años únicos
   const years = useMemo(() => {
@@ -115,13 +113,13 @@ export const MovieSearch = ({ movies, onFilteredMovies }: MovieSearchProps) => {
             <SelectItem value="all" className="text-foreground focus:bg-secondary focus:text-foreground">
               Todos los géneros
             </SelectItem>
-            {genres.map((genre) => (
+            {genres.map(({ genre, count }) => (
               <SelectItem 
                 key={genre} 
                 value={genre}
                 className="text-foreground focus:bg-secondary focus:text-foreground"
               >
-                {genre}
+                {genre} ({count})
               </SelectItem>
             ))}
           </SelectContent>
