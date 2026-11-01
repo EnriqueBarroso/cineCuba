@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo, useEffect, useRef } from "react";
-import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
+import { Heart } from "lucide-react";
 import { Link, useSearchParams } from "react-router-dom"; 
 import { useFavorites } from "@/hooks/useFavorites";
 import { movies as catalogMovies } from "@/data/movies/catalog";
@@ -8,8 +8,11 @@ import { MovieSearch } from "./MovieSearch";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { directorLabel } from "@/lib/directors";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { CatalogPagination, PER_PAGE_OPTIONS } from "@/components/CatalogPagination";
 
-const MOVIES_PER_PAGE = 12;
+const DEFAULT_PER_PAGE_DESKTOP = 24;
+const DEFAULT_PER_PAGE_MOBILE = 12;
 
 const MovieCardSkeleton = () => {
   return (
@@ -88,8 +91,13 @@ const MovieGrid = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const urlSearchQuery = searchParams.get("search");
 
-  // 2. LA PÁGINA ACTUAL VIENE DE LA URL (SI NO EXISTE, ES 1)
-  const currentPage = parseInt(searchParams.get("page") || "1");
+  // 2. PÁGINA Y TAMAÑO DE PÁGINA VIENEN DE LA URL (?page=3&perPage=24)
+  const isMobile = useIsMobile();
+  const defaultPerPage = isMobile ? DEFAULT_PER_PAGE_MOBILE : DEFAULT_PER_PAGE_DESKTOP;
+  const rawPage = searchParams.get("page");
+  const requestedPage = parseInt(rawPage || "1", 10);
+  const rawPerPage = Number(searchParams.get("perPage"));
+  const perPage = (PER_PAGE_OPTIONS as readonly number[]).includes(rawPerPage) ? rawPerPage : defaultPerPage;
 
   const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
   const [isFiltering, setIsFiltering] = useState(false);
@@ -153,27 +161,72 @@ const MovieGrid = () => {
     }
   }, [urlSearchQuery, setSearchParams]);
 
-  // 3. ACTUALIZAR URL AL CAMBIAR DE PÁGINA
-  const handlePageChange = (page: number) => {
-    setIsFiltering(true);
-    
+  const totalPages = Math.ceil(filteredMovies.length / perPage);
+  const currentPage = Number.isNaN(requestedPage)
+    ? 1
+    : Math.min(Math.max(requestedPage, 1), Math.max(totalPages, 1));
+
+  // Página fuera de rango o no numérica: reemplazamos por la última página válida
+  useEffect(() => {
+    if (totalPages === 0 || rawPage === null) return;
+    if (String(currentPage) === rawPage && currentPage > 0) return;
     setSearchParams(prev => {
       const newParams = new URLSearchParams(prev);
-      newParams.set("page", page.toString());
+      if (currentPage <= 1) newParams.delete("page");
+      else newParams.set("page", currentPage.toString());
+      return newParams;
+    }, { replace: true });
+  }, [totalPages, currentPage, rawPage, setSearchParams]);
+
+  const scrollToGrid = () => {
+    document.getElementById("cartelera")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // 3. ACTUALIZAR URL AL CAMBIAR DE PÁGINA (sin perder search ni otros params)
+  const handlePageChange = (page: number) => {
+    setIsFiltering(true);
+
+    setSearchParams(prev => {
+      const newParams = new URLSearchParams(prev);
+      if (page <= 1) newParams.delete("page");
+      else newParams.set("page", page.toString());
       return newParams;
     });
 
-    document.getElementById("cartelera")?.scrollIntoView({ behavior: "smooth" });
+    scrollToGrid();
+    setTimeout(() => setIsFiltering(false), 300);
+  };
+
+  const handlePerPageChange = (value: number) => {
+    setIsFiltering(true);
+
+    setSearchParams(prev => {
+      const newParams = new URLSearchParams(prev);
+      if (value === defaultPerPage) newParams.delete("perPage");
+      else newParams.set("perPage", value.toString());
+      newParams.delete("page");
+      return newParams;
+    });
+
+    scrollToGrid();
     setTimeout(() => setIsFiltering(false), 300);
   };
 
   const isLoading = loadingMovies || isFiltering;
-  const totalPages = Math.ceil(filteredMovies.length / MOVIES_PER_PAGE);
 
   const paginatedMovies = useMemo(() => {
-    const startIndex = (currentPage - 1) * MOVIES_PER_PAGE;
-    return filteredMovies.slice(startIndex, startIndex + MOVIES_PER_PAGE);
-  }, [filteredMovies, currentPage]);
+    const startIndex = (currentPage - 1) * perPage;
+    return filteredMovies.slice(startIndex, startIndex + perPage);
+  }, [filteredMovies, currentPage, perPage]);
+
+  const paginationProps = {
+    page: currentPage,
+    totalPages,
+    perPage,
+    onPageChange: handlePageChange,
+    onPerPageChange: handlePerPageChange,
+    disabled: isLoading,
+  };
 
   return (
     <section id="cartelera" className="py-20 lg:py-28 pt-24 border-t border-hairline scroll-mt-24">
@@ -205,9 +258,13 @@ const MovieGrid = () => {
           </div>
         )}
 
+        {filteredMovies.length > PER_PAGE_OPTIONS[0] && (
+          <CatalogPagination variant="compact" className="mb-6" {...paginationProps} />
+        )}
+
         {isLoading ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8">
-            {Array.from({ length: MOVIES_PER_PAGE }).map((_, index) => (
+            {Array.from({ length: perPage }).map((_, index) => (
               <MovieCardSkeleton key={index} />
             ))}
           </div>
@@ -246,45 +303,7 @@ const MovieGrid = () => {
         )}
 
         {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-2 mt-12">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1 || isLoading}
-              className="text-muted-foreground hover:text-foreground hover:bg-secondary disabled:opacity-30"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </Button>
-
-            <div className="flex items-center gap-1">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <Button
-                  key={page}
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => handlePageChange(page)}
-                  disabled={isLoading}
-                  className={`w-10 h-10 ${currentPage === page
-                      ? "bg-gold text-primary-foreground hover:bg-gold/90"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                    }`}
-                >
-                  {page}
-                </Button>
-              ))}
-            </div>
-
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages || isLoading}
-              className="text-muted-foreground hover:text-foreground hover:bg-secondary disabled:opacity-30"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </Button>
-          </div>
+          <CatalogPagination variant="full" className="mt-12" {...paginationProps} />
         )}
       </div>
     </section>
