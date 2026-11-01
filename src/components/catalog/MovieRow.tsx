@@ -29,7 +29,7 @@ export const MovieRow = ({ title, movies }: MovieRowProps) => {
   return (
     <section className="py-8 border-b border-white/5 last:border-0 animate-fade-in">
       {/* Cabecera de la Fila */}
-      <div className="container px-6 lg:px-12 mb-4 flex items-end justify-between">
+      <div className="container px-6 lg:px-12 mb-4 md:mb-6 flex items-end justify-between">
         <h2 className="font-serif text-2xl md:text-3xl text-white font-medium">
           {title}
           <span className="ml-3 text-sm font-sans text-gold/60 font-normal tracking-widest uppercase">

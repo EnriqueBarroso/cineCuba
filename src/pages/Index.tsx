@@ -17,9 +17,9 @@ const Index = () => {
         <HeroSection />
         
         {/* ZONA DE FILAS (CARROUSELES) */}
-        {/* Usamos -mt-16 o -mt-20 y z-10 para que la primera fila se monte 
-            un poquito encima del Hero, dando un efecto muy profesional */}
-        <div className="relative z-10 -mt-16 pb-20 space-y-2 md:space-y-6">
+        {/* La separación con el Hero va aquí (un único sitio): pt-6 / md:pt-10.
+            Sin margen negativo, para que las filas no tapen los controles del carrusel. */}
+        <div className="relative pt-6 md:pt-10 pb-20 space-y-2 md:space-y-6">
           
           {/* Década de los 60 */}
           {moviesByDecade['1960s'] && moviesByDecade['1960s'].length > 0 && (
