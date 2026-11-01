@@ -7,6 +7,9 @@ export const sagaIds: string[] = sagas.map((s) => s.id);
 export const actorIds: string[] = actors.map((a) => a.id);
 
 export const movieIds: string[] = [
+  "viva-2015",
+  "el-acompanante",
+  "regreso-a-itaca",
   "la-vida-en-rosa",
   "una-casa-colonial",
   "cartas-del-parque",
