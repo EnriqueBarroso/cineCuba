@@ -79,18 +79,16 @@ const chipClass = "inline-flex items-center rounded-full border px-3 py-1 text-x
 const closeIconClass =
   "absolute right-3 top-3 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold";
 
+const footerClass = "shrink-0 border-t border-white/10 bg-zinc-900";
+
 const InfoBody = ({
   info,
   Title,
   Description,
-  Close,
-  onNavigate,
 }: {
   info: MovieInfo;
   Title: typeof DialogTitle;
   Description: typeof DialogDescription;
-  Close: typeof DialogClose;
-  onNavigate: () => void;
 }) => (
   <div className="flex flex-col gap-6 md:flex-row md:gap-8">
     {info.poster && (
@@ -137,23 +135,38 @@ const InfoBody = ({
       {info.synopsis?.trim() && (
         <Description className="text-base font-light leading-relaxed text-gray-200">{info.synopsis}</Description>
       )}
+    </div>
+  </div>
+);
 
-      <div className="flex flex-wrap gap-3 pt-2">
-        <Button asChild size="lg" className="h-11 gap-2 bg-white px-8 text-base font-bold text-black hover:bg-gray-200">
-          <Link to={info.href} onClick={onNavigate}>
-            <Play className="h-5 w-5 fill-black" /> Ver Ahora
-          </Link>
+/** Pie fijo, fuera del área con scroll: las acciones siempre están a la vista. */
+const InfoFooter = ({
+  info,
+  Close,
+  onNavigate,
+  className,
+}: {
+  info: MovieInfo;
+  Close: typeof DialogClose;
+  onNavigate: () => void;
+  className: string;
+}) => (
+  <div className={`${footerClass} ${className}`}>
+    <div className="flex flex-wrap gap-3">
+      <Button asChild size="lg" className="h-11 gap-2 bg-white px-8 text-base font-bold text-black hover:bg-gray-200">
+        <Link to={info.href} onClick={onNavigate}>
+          <Play className="h-5 w-5 fill-black" /> Ver Ahora
+        </Link>
+      </Button>
+      <Close asChild>
+        <Button
+          variant="outline"
+          size="lg"
+          className="h-11 border-white/30 bg-white/10 px-8 text-base text-white hover:bg-white/20 hover:text-white"
+        >
+          Cerrar
         </Button>
-        <Close asChild>
-          <Button
-            variant="outline"
-            size="lg"
-            className="h-11 border-white/30 bg-white/10 px-8 text-base text-white hover:bg-white/20 hover:text-white"
-          >
-            Cerrar
-          </Button>
-        </Close>
-      </div>
+      </Close>
     </div>
   </div>
 );
@@ -179,16 +192,22 @@ export const MovieInfoModal = ({ open, onOpenChange, info, returnFocusRef }: Mov
           onCloseAutoFocus={returnFocus}
           className="max-h-[92vh] rounded-t-2xl border-white/10 bg-zinc-900 text-white"
         >
-          <div data-vaul-no-drag className="relative overflow-y-auto overscroll-contain p-5 pb-8">
+          <div className="relative flex min-h-0 flex-1 flex-col">
             <DrawerClose className={closeIconClass} aria-label="Cerrar">
               <X className="h-5 w-5" />
             </DrawerClose>
-            <InfoBody
+            <div data-vaul-no-drag className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-5">
+              <InfoBody
+                info={info}
+                Title={DrawerTitle as typeof DialogTitle}
+                Description={DrawerDescription as typeof DialogDescription}
+              />
+            </div>
+            <InfoFooter
               info={info}
-              Title={DrawerTitle as typeof DialogTitle}
-              Description={DrawerDescription as typeof DialogDescription}
               Close={DrawerClose as typeof DialogClose}
               onNavigate={close}
+              className="px-5 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))]"
             />
           </div>
         </DrawerContent>
@@ -205,11 +224,14 @@ export const MovieInfoModal = ({ open, onOpenChange, info, returnFocusRef }: Mov
           onCloseAutoFocus={returnFocus}
           className="fixed left-[50%] top-[50%] z-50 w-[calc(100%-2rem)] max-w-3xl translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 text-white shadow-2xl duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]"
         >
-          <div className="relative max-h-[85vh] overflow-y-auto overscroll-contain p-8">
+          <div className="relative flex max-h-[85vh] flex-col">
             <DialogClose className={closeIconClass} aria-label="Cerrar">
               <X className="h-5 w-5" />
             </DialogClose>
-            <InfoBody info={info} Title={DialogTitle} Description={DialogDescription} Close={DialogClose} onNavigate={close} />
+            <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-8">
+              <InfoBody info={info} Title={DialogTitle} Description={DialogDescription} />
+            </div>
+            <InfoFooter info={info} Close={DialogClose} onNavigate={close} className="px-8 py-4" />
           </div>
         </DialogPrimitive.Content>
       </DialogPortal>

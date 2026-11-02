@@ -139,11 +139,14 @@ export const HeroSection = () => {
   const saga = getSagaById(movie.id);
   const isSaga = Boolean(saga);
   const linkTo = isSaga ? `/saga/${movie.id}` : `/pelicula/${movie.id}`;
-  const fallbackPoster = saga?.poster || getMovieById(movie.id)?.poster;
+  const movieData = getMovieById(movie.id);
+  // El título sale de los datos para que hero, modal y ficha coincidan. Las sagas conservan el suyo:
+  // el del hero ("Los cuentos de Nicanor") es deliberadamente distinto del de la saga.
+  const title = !isSaga && movieData ? movieData.title : movie.title;
+  const fallbackPoster = saga?.poster || movieData?.poster;
   const visual = movie.image || fallbackPoster;
 
   const openInfo = () => {
-    const movieData = getMovieById(movie.id);
     setInfo(
       saga
         ? sagaToInfo(saga)
@@ -176,7 +179,7 @@ export const HeroSection = () => {
               {visual && (
                 <img
                   src={visual}
-                  alt={`Escena de ${movie.title} (${movie.year})`}
+                  alt={`Escena de ${title} (${movie.year})`}
                   loading={currentIndex === 0 ? "eager" : "lazy"}
                   fetchPriority="high"
                   style={{ filter: "brightness(0.9) contrast(1.1)" }}
@@ -208,7 +211,7 @@ export const HeroSection = () => {
               </div>
 
               <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight text-balance text-white drop-shadow-lg">
-                {movie.title}
+                {title}
               </h1>
 
               <p className="text-lg md:text-xl text-gray-200 line-clamp-3 md:line-clamp-none max-w-xl font-light leading-relaxed drop-shadow-md">
@@ -244,7 +247,7 @@ export const HeroSection = () => {
                 {visual && (
                   <img
                     src={visual}
-                    alt={`Escena de ${movie.title} (${movie.year})`}
+                    alt={`Escena de ${title} (${movie.year})`}
                     loading={currentIndex === 0 ? "eager" : "lazy"}
                     fetchPriority="high"
                     style={{ filter: "brightness(0.9) contrast(1.1)" }}
