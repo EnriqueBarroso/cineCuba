@@ -30,7 +30,7 @@ export interface Saga {
 export const sagas: Saga[] = [
   {
     id: "nicanor-odonnell",
-    title: "Nicanor O'Donnell",
+    title: "Los cuentos de Nicanor",
     director: "Eduardo del Llano",
     anioInicio: 2004,
     anioFin: 2019,

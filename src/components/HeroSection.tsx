@@ -18,7 +18,6 @@ import {
 
 interface HeroEntry {
   id: string;
-  title: string;
   year: string;
   director: string;
   description: string;
@@ -30,7 +29,6 @@ interface HeroEntry {
 const HERO_MOVIES: HeroEntry[] = [
   {
     id: "memorias-subdesarrollo",
-    title: "Memorias del Subdesarrollo",
     year: "1968",
     director: "Tomás Gutiérrez Alea",
     image: heroMemorias,
@@ -39,7 +37,6 @@ const HERO_MOVIES: HeroEntry[] = [
   },
   {
     id: "lucia-1968",
-    title: "Lucía",
     year: "1968",
     director: "Humberto Solás",
     image: heroLucia,
@@ -48,7 +45,6 @@ const HERO_MOVIES: HeroEntry[] = [
   },
   {
     id: "vampiros-habana",
-    title: "¡Vampiros en La Habana!",
     year: "1985",
     director: "Juan Padrón",
     image: heroVampiros,
@@ -57,7 +53,6 @@ const HERO_MOVIES: HeroEntry[] = [
   },
   {
     id: "fresa-chocolate-1993",
-    title: "Fresa y Chocolate",
     year: "1993",
     director: "T. G. Alea & J. C. Tabío",
     image: heroFresa,
@@ -66,7 +61,6 @@ const HERO_MOVIES: HeroEntry[] = [
   },
   {
     id: "habana-blues",
-    title: "Habana Blues",
     year: "2005",
     director: "Benito Zambrano",
     image: heroHabana,
@@ -75,7 +69,6 @@ const HERO_MOVIES: HeroEntry[] = [
   },
   {
     id: "conducta-2014",
-    title: "Conducta",
     year: "2014",
     director: "Ernesto Daranas",
     image: heroConducta,
@@ -84,7 +77,6 @@ const HERO_MOVIES: HeroEntry[] = [
   },
   {
     id: "juan-de-los-muertos",
-    title: "Juan de los Muertos",
     year: "2011",
     director: "Alejandro Brugués",
     image: heroJuanDeLosMuertosEscena,
@@ -93,7 +85,6 @@ const HERO_MOVIES: HeroEntry[] = [
   },
   {
     id: "algo-mas-que-sonar",
-    title: "Algo más que soñar",
     year: "1985",
     director: "Eduardo Moya",
     // Sin imagen de escena todavía — se usa el poster de la saga como fallback (ver getSagaById).
@@ -102,7 +93,6 @@ const HERO_MOVIES: HeroEntry[] = [
   },
   {
     id: "nicanor-odonnell",
-    title: "Los cuentos de Nicanor",
     year: "2004 — 2019",
     director: "Eduardo del Llano",
     // Sin imagen de escena todavía — se usa el poster de la saga como fallback (ver getSagaById).
@@ -140,9 +130,8 @@ export const HeroSection = () => {
   const isSaga = Boolean(saga);
   const linkTo = isSaga ? `/saga/${movie.id}` : `/pelicula/${movie.id}`;
   const movieData = getMovieById(movie.id);
-  // El título sale de los datos para que hero, modal y ficha coincidan. Las sagas conservan el suyo:
-  // el del hero ("Los cuentos de Nicanor") es deliberadamente distinto del de la saga.
-  const title = !isSaga && movieData ? movieData.title : movie.title;
+  // El título sale siempre de los datos (película o saga): una única fuente de verdad.
+  const title = saga?.title ?? movieData?.title ?? "";
   const fallbackPoster = saga?.poster || movieData?.poster;
   const visual = movie.image || fallbackPoster;
 
@@ -152,7 +141,7 @@ export const HeroSection = () => {
         ? sagaToInfo(saga)
         : movieData
           ? movieToInfo(movieData)
-          : { id: movie.id, title: movie.title, year: movie.year, href: linkTo, synopsis: movie.description, director: movie.director }
+          : { id: movie.id, title, year: movie.year, href: linkTo, synopsis: movie.description, director: movie.director }
     );
     setInfoOpen(true);
   };
