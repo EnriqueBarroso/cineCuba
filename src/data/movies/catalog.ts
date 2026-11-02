@@ -15,7 +15,7 @@ import {
   // 80s
   posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa,
   // 90s
-  posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas,
+  posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas, posterQuieremeYVeras,
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
@@ -1167,6 +1167,28 @@ const movies1980s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1990s: Movie[] = [
+  {
+    id: "quiereme-y-veras-1994",
+    title: "Quiéreme y verás",
+    year: 1994,
+    director: "Daniel Díaz Torres",
+    poster: posterQuieremeYVeras,
+    duration: "53 min",
+    genre: ["Comedia", "Fantasía", "Drama"],
+    synopsis: "Juventino y dos amigos están atracando un banco cuando estalla la Revolución. Treinta y cinco años después recibe un bolso de una mujer que se parece a su primer amor. Dentro hay dinero, y él la busca sin descanso hasta acabar consultando a una vidente. Una historia que mezcla fantasía y realidad.",
+    videoUrl: "https://archive.org/embed/quiereme-y-veras-pelicula-258-ano-1995.-reynaldo-miravalles-rosita-fornes-raul-pomares",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Reinaldo Miravalles", role: "Juventino" },
+      { name: "Rosita Fornés", role: "Dora" },
+      { name: "Raúl Pomares", role: "Nato" },
+      { name: "Litico Rodríguez", role: "Berto" },
+      { name: "Marta Farré", role: "Dulce Azucena / María" },
+      { name: "Sally Ramos", role: "Lérida" }
+    ],
+    notes: "País: Cuba. Título internacional: Love Me and You'll See. Proyectada en el Festival de Sundance de 1996. Mediometraje. Año: 1994 según Trigon-Film y Sundance; el item de archive.org indica 1995."
+  },
   {
     id: "derecho-de-asilo",
     title: "Derecho de asilo",

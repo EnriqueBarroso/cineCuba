@@ -7,6 +7,7 @@ export const sagaIds: string[] = sagas.map((s) => s.id);
 export const actorIds: string[] = actors.map((a) => a.id);
 
 export const movieIds: string[] = [
+  "quiereme-y-veras-1994",
   "viva-2015",
   "el-acompanante",
   "regreso-a-itaca",
