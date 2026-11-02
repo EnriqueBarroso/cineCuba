@@ -151,3 +151,4 @@ export { default as posterCartasDelParque } from './cartas-del-parque.jpg';
 export { default as posterUnaCasaColonial } from './una-casa-colonial.jpg';
 export { default as posterLaVidaEnRosa } from './la-vida-en-rosa.jpg';
 export { default as posterQuieremeYVeras } from './quiereme-y-veras.jpg';
+export { default as posterGuardafronteras } from './guardafronteras.jpg';

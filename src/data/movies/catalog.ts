@@ -15,7 +15,7 @@ import {
   // 80s
   posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa,
   // 90s
-  posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas, posterQuieremeYVeras,
+  posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras,
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
@@ -711,6 +711,24 @@ const movies1970s: Movie[] = [
 // ══════════════════════════════════════
 
 const movies1980s: Movie[] = [
+  {
+    id: "guardafronteras-1980",
+    title: "Guardafronteras",
+    year: 1980, // provisional: TMDB, IMDb y la Filmoteca checa dan 1980; Wikipedia y AllMovie dan 1981
+    director: "Octavio Cortázar",
+    poster: posterGuardafronteras,
+    duration: "120 min",
+    genre: ["Drama", "Bélico"],
+    synopsis: "Un grupo de jóvenes reclutas de las fuerzas armadas cubanas es destinado a defender una posición estratégica en el norte de la isla. Su relación tensa con el sargento cambia cuando descubren su lado humano durante el entrenamiento y aprenden la disciplina en las duras condiciones del puesto.",
+    videoUrl: "https://archive.org/embed/guardafronteras-1980-pelicula-cubana",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Tito Junco", role: "" },
+      { name: "Javier González", role: "" }
+    ],
+    notes: "País: Cuba. Dirección de Octavio Cortázar. Tito Junco obtuvo el premio al mejor actor en el 12.º Festival Internacional de Cine de Moscú (1981). Año provisional: 1980 según TMDB, IMDb y la Filmoteca checa; 1981 según Wikipedia y AllMovie."
+  },
   {
     id: "la-vida-en-rosa",
     title: "La vida en rosa",
