@@ -15,7 +15,7 @@ import {
   // 80s
   posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa,
   // 90s
-  posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras,
+  posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
@@ -72,6 +72,25 @@ import { shareDirector } from "@/lib/directors";
 // ══════════════════════════════════════
 
 const movies1960s: Movie[] = [
+  {
+    id: "el-bautizo-1968",
+    title: "El bautizo",
+    year: 1968,
+    director: "Roberto Fandiño",
+    poster: posterElBautizo,
+    duration: "101 min",
+    genre: ["Comedia"],
+    synopsis: "Una familia de un pueblo cubano prepara el bautizo de un bebé e invita a parientes, amigos y vecinos. La celebración se convierte en el escenario de una serie de situaciones enredadas.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-el-bautizo",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Enrique Almirante", role: "" },
+      { name: "Tete Blanco", role: "" },
+      { name: "Manela Bustamante", role: "Cuca" }
+    ],
+    notes: "País: Cuba. Dirección de Roberto Fandiño. Año: 1968 según TMDB (estreno el 16 de agosto de 1968); datos de producción por verificar."
+  },
   {
     id: "el-huesped",
     title: "El huésped",
