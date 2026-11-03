@@ -2963,10 +2963,10 @@ const movies2010s: Movie[] = [
     year: 2011,
     director: "Alejandro Brugués",
     poster: posterJuanDeLosMuertos,
-    duration: "92 min",
+    duration: "96 min",
     genre: ["Comedia", "Terror"],
     synopsis: "Zombis invaden La Habana. Juan decide hacer negocio matando a los seres queridos de la gente.",
-    videoUrl: "https://archive.org/embed/juan-de-los-muertos/Juan%20De%20Los%20Muertos.mp4",
+    videoUrl: "https://archive.org/embed/juan-de-los-muertos-comedia-de-terror-cubana",
     trailerUrl: "https://www.youtube.com/embed/mhcIBEqczpg",
     awards: [
       { name: "Premios Goya", year: 2013, category: "Mejor Película Iberoamericana" },
