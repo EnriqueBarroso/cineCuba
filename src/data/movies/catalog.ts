@@ -547,11 +547,11 @@ const movies1970s: Movie[] = [
     year: 1979,
     director: "Pastor Vega",
     poster: posterRetratoTeresa,
-    duration: "103 min",
+    duration: "94 min",
     genre: ["Drama"],
     synopsis: "Teresa es una trabajadora textil, esposa y madre que participa activamente en actividades culturales. Cuando su marido exige que abandone sus actividades para dedicarse exclusivamente al hogar, ella se niega, desencadenando un conflicto sobre los roles de género en la Cuba revolucionaria.",
     trailerUrl: 'https://www.youtube.com/embed/ff5SpRmTrng',
-    videoUrl: "https://www.youtube.com/embed/H9chq3TSKbE",
+    videoUrl: "https://archive.org/embed/retrato-de-teresa-pelicula-140-ano-1979.-daisy-granados-adolfo-llaurado-idalia-anreus-elsa-gay",
     awards: [
       { name: "Festival de La Habana", year: 1979, category: "Gran Premio Coral" },
       { name: "Festival de Karlovy Vary", year: 1980, category: "Premio del Público" }
