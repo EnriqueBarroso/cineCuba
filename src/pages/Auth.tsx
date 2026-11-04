@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
 import { z } from 'zod';
 import { ArrowLeft } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const authSchema = z.object({
   email: z.string().email('Correo electrónico inválido'),
@@ -100,6 +101,12 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-6">
+      <SEO
+        title="Entrar | cine-cubano.com"
+        exactTitle
+        noindex
+        description="Inicia sesión o crea tu cuenta en CineCuba."
+      />
       {/* Back Button */}
       <Link 
         to="/" 

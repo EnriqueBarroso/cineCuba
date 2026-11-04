@@ -8,7 +8,7 @@ const Movies = () => {
       <SEO
         title="Catálogo de películas cubanas: lista completa | cine-cubano.com"
         exactTitle
-        description="Explora el catálogo completo del cine cubano. Filtra por género, año o director y descubre más de cien películas de la cinematografía de Cuba."
+        description="Lista completa de películas cubanas para ver online gratis: filtra por género, año o director y descubre clásicos del cine cubano de los 60 a hoy."
         url="https://cine-cubano.com/peliculas"
       />
       <main className="pt-24 pb-20">

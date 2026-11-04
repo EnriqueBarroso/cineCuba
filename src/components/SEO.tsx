@@ -9,9 +9,11 @@ interface SEOProps {
   type?: string;
   /** Si es true, `title` se usa tal cual como <title> (sin añadir el sufijo "| CineCuba"). */
   exactTitle?: boolean;
+  /** Añade robots noindex y omite el canonical (páginas que no deben aparecer en buscadores). */
+  noindex?: boolean;
 }
 
-export const SEO = ({ title, description, image, url, type = 'website', exactTitle = false }: SEOProps) => {
+export const SEO = ({ title, description, image, url, type = 'website', exactTitle = false, noindex = false }: SEOProps) => {
   const siteTitle = "CineCuba | Archivo del Cine Cubano";
   const fullTitle = exactTitle ? title : title === "Inicio" ? siteTitle : `${title} | CineCuba`;
   // Usamos la imagen del repositorio como fallback
@@ -25,7 +27,7 @@ export const SEO = ({ title, description, image, url, type = 'website', exactTit
       {/* Estándar */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonicalUrl} />
+      {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalUrl} />}
 
       {/* Facebook / Open Graph */}
       <meta property="og:type" content={type} />

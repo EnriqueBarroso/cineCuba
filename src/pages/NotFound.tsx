@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import { Film, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/SEO";
 
 const NotFound = () => {
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-center p-4 text-center">
+      <SEO
+        title="Página no encontrada | cine-cubano.com"
+        exactTitle
+        noindex
+        description="La página que buscas no existe en el archivo de CineCuba."
+      />
       <div className="mb-8 relative">
         {/* Efecto de luz de proyector */}
         <div className="absolute -top-20 -left-20 w-64 h-64 bg-gold/20 blur-[100px] rounded-full" />
