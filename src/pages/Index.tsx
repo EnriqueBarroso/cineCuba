@@ -2,19 +2,39 @@ import { HeroSection } from "@/components/HeroSection";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { MovieRow } from "@/components/catalog/MovieRow"; // Importamos el nuevo componente
-import { moviesByDecade } from "@/data/movies"; // Importamos los datos ya organizados
+import { Link } from "react-router-dom";
+import { movies, moviesByDecade } from "@/data/movies"; // Importamos los datos ya organizados
+
+// Nº real de películas (ids únicos); entra en la meta description de la home.
+const movieCount = new Set(movies.map((m) => m.id)).size;
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Inicio"
-        description="Catálogo digital y gratuito del cine cubano. Explora películas, directores y la historia de nuestra cinematografía."
+        title="Películas cubanas online gratis | cine-cubano.com"
+        exactTitle
+        description={`${movieCount} películas cubanas para ver online gratis: clásicos, comedias y dramas, con fichas de directores y actores. Del cine de los 60 a hoy.`}
         url="https://cine-cubano.com/"
       />
       <main>
         {/* El Hero Principal (Slider grande) */}
         <HeroSection />
+
+        <section className="container mx-auto px-6 lg:px-12 pt-10 md:pt-14 max-w-4xl">
+          <h1 className="font-serif text-3xl md:text-4xl font-medium text-white mb-4">
+            Películas cubanas online y gratis
+          </h1>
+          <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+            CineCuba es un archivo gratuito de cine cubano con películas, series y cortos, acompañados de fichas de sus
+            directores y actores. Recorre el{" "}
+            <Link to="/peliculas" className="text-gold hover:underline">catálogo de películas</Link>, conoce a los{" "}
+            <Link to="/directores" className="text-gold hover:underline">directores</Link> y los{" "}
+            <Link to="/actores" className="text-gold hover:underline">actores</Link>, o sigue los{" "}
+            <Link to="/seriales" className="text-gold hover:underline">seriales</Link> y los{" "}
+            <Link to="/cortos" className="text-gold hover:underline">cortos</Link>.
+          </p>
+        </section>
         
         {/* ZONA DE FILAS (CARROUSELES) */}
         {/* La separación con el Hero va aquí (un único sitio): pt-6 / md:pt-10.

@@ -1,20 +1,23 @@
 import { Head } from 'vite-react-ssg';
-import { absoluteUrl } from '@/lib/seo';
+import { absoluteUrl, SITE_URL } from '@/lib/seo';
 
 interface SEOProps {
   title: string;
   description: string;
   image?: string;
   url?: string;
-  type?: string; // <--- ¡ESTA ES LA LÍNEA QUE FALTABA PARA CORREGIR EL ERROR!
+  type?: string;
+  /** Si es true, `title` se usa tal cual como <title> (sin añadir el sufijo "| CineCuba"). */
+  exactTitle?: boolean;
 }
 
-export const SEO = ({ title, description, image, url, type = 'website' }: SEOProps) => {
+export const SEO = ({ title, description, image, url, type = 'website', exactTitle = false }: SEOProps) => {
   const siteTitle = "CineCuba | Archivo del Cine Cubano";
-  const fullTitle = title === "Inicio" ? siteTitle : `${title} | CineCuba`;
+  const fullTitle = exactTitle ? title : title === "Inicio" ? siteTitle : `${title} | CineCuba`;
   // Usamos la imagen del repositorio como fallback
   const defaultImage = "https://cine-cubano.com/og-image.jpg";
-  const siteUrl = "https://cine-cubano.com";
+  const siteUrl = SITE_URL;
+  const canonicalUrl = url || siteUrl;
   const ogImage = absoluteUrl(image) || defaultImage;
 
   return (
@@ -22,10 +25,11 @@ export const SEO = ({ title, description, image, url, type = 'website' }: SEOPro
       {/* Estándar */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={canonicalUrl} />
 
       {/* Facebook / Open Graph */}
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url || siteUrl} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />

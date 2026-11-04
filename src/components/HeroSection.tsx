@@ -199,9 +199,9 @@ export const HeroSection = () => {
                 </span>
               </div>
 
-              <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight text-balance text-white drop-shadow-lg">
+              <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight text-balance text-white drop-shadow-lg">
                 {title}
-              </h1>
+              </h2>
 
               <p className="text-lg md:text-xl text-gray-200 line-clamp-3 md:line-clamp-none max-w-xl font-light leading-relaxed drop-shadow-md">
                 {movie.description}

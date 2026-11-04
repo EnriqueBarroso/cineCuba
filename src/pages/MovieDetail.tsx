@@ -126,8 +126,9 @@ const MovieDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title={movie.title}
-        description={movie.synopsis}
+        title={movie.videoUrl ? `${movie.title} (${movie.year}) – Ver película completa online | cine-cubano.com` : movie.title}
+        exactTitle={!!movie.videoUrl}
+        description={movie.videoUrl ? `Ver ${movie.title} online gratis. ${movie.synopsis}` : movie.synopsis}
         image={movie.poster}
         url={`https://cine-cubano.com/pelicula/${movie.id}`}
         type="video.movie"

@@ -36,6 +36,10 @@ export const Footer = () => {
             <ul className="space-y-3 text-gray-400">
               <li><Link to="/peliculas" className="hover:text-gold transition-colors">Catálogo Completo</Link></li>
               <li><Link to="/directores" className="hover:text-gold transition-colors">Directores</Link></li>
+              <li><Link to="/actores" className="hover:text-gold transition-colors">Actores</Link></li>
+              <li><Link to="/epocas" className="hover:text-gold transition-colors">Épocas</Link></li>
+              <li><Link to="/seriales" className="hover:text-gold transition-colors">Seriales</Link></li>
+              <li><Link to="/cortos" className="hover:text-gold transition-colors">Cortos</Link></li>
               {/* Nota: Asegúrate de que en tu Home tengas un id="catalogo" o cambia esto */}
               <li><Link to="/#catalogo" className="hover:text-gold transition-colors">Por Décadas</Link></li>
             </ul>
