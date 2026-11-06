@@ -183,9 +183,13 @@ export const actors: Actor[] = [
   {
     id: 'ana-vina',
     name: 'Ana Viña',
+    birthYear: 1941,
+    birthPlace: 'Pinar del Río, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    biography: "Ana Viña Quintana (Pinar del Río, 12 de diciembre de 1941) es una actriz cubana de cine, teatro y televisión. Empezó en la televisión en 1957 como modelo en anuncios publicitarios y debutó en el cine con Las doce sillas (1962), de Tomás Gutiérrez Alea. En 1965 participó en la película soviética Las mil ventanas. Su filmografía incluye Los sobrevivientes (1979), Techo de vidrio (1981), Hasta cierto punto (1983), Una novia para David (1985) y Vals de La Habana Vieja (1988), por la que recibió el Catalina de Oro a la mejor actuación femenina en el Festival de Cartagena de Indias, en Colombia, en 1989. Durante cinco años dio clases de actuación en el Instituto Superior de Arte. Actualmente reside en Estados Unidos.",
+    awards: [
+      "Catalina de Oro a la Mejor Actuación Femenina — Festival Internacional de Cine de Cartagena, por Vals de La Habana Vieja (1989)",
+    ],
   },
   {
     id: 'andy-fornaris',
@@ -295,9 +299,16 @@ export const actors: Actor[] = [
   {
     id: 'carlos-cruz',
     name: 'Carlos Cruz',
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Carlos Cruz es un actor cubano de cine, teatro y televisión, natural de La Habana. Se formó en las escuelas de arte del país y fue durante años pieza del grupo teatral Rita Montaner, con el que recorrió la isla y actuó en unas sesenta obras; en 1984 recibió un premio como mejor actor joven de teatro en Cuba. Actor de carácter por vocación, destacó en algunas de las películas más importantes del cine cubano de los 80 y los 90, como Un hombre de éxito (1986) y La bella del Alhambra (1989). Su papel más conocido es el del burócrata pomposo Adolfo en Guantanamera (1995), de Tomás Gutiérrez Alea y Juan Carlos Tabío, que le valió el premio al mejor actor en el Festival de Gramado, en Brasil. Ha actuado en teatro en Uruguay, Argentina, Perú, Bolivia, Venezuela, México, la Unión Soviética y España. Según ha contado, Guantanamera marcó el final de su carrera en Cuba, y se estableció en Miami.",
+    awards: [
+      "Premio al Mejor Actor — Festival de Cine de Gramado (Brasil), por Guantanamera",
+      "Premio al mejor actor joven de teatro en Cuba (1984)",
+      "Premio del Primer Festival de Teatro Cubano",
+      "Premio de la revista Caimán Barbudo",
+      "Premio de la Asociación de Jóvenes Artistas",
+    ],
   },
   {
     id: 'carlos-enrique-almirante',
@@ -507,8 +518,11 @@ export const actors: Actor[] = [
   {
     id: 'enrique-santiesteban',
     name: 'Enrique Santiesteban',
+    birthYear: 1910,
+    birthPlace: 'Manzanillo, Cuba',
+    deathYear: 1983,
     nationality: 'Cubano',
-    biography: '',
+    biography: "Enrique Santiesteban Xiqués (Manzanillo, 1910 — La Habana, 1983) fue un destacado actor cubano de radio, teatro, cine y televisión. Trabajó en el cine desde antes de la Revolución, con títulos como Yo soy el héroe y La canción del regreso (1940), Los que no deben nacer (1953) o Más fuerte que el amor (1955). Tras 1959 se convirtió en una de las caras de los clásicos del cine cubano: en Las doce sillas (1962) interpretó a Hipólito Garrigó, el hombre que busca unos diamantes escondidos en unas sillas confiscadas; también participó en Las aventuras de Juan Quin Quín (1967) y en Los sobrevivientes (1979), de Tomás Gutiérrez Alea. En la televisión se le recuerda sobre todo por su personaje del alcalde Plutarco Tuero en San Nicolás del Peladero, uno de los programas emblemáticos de la televisión cubana.",
     awards: [],
   },
   {
@@ -805,8 +819,11 @@ export const actors: Actor[] = [
   {
     id: 'jose-antonio-rodriguez',
     name: 'José Antonio Rodríguez',
+    birthYear: 1935,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 2016,
     nationality: 'Cubano',
-    biography: '',
+    biography: "José Antonio Rodríguez (La Habana, 1935 — La Habana, 7 de septiembre de 2016) fue un actor cubano de cine y teatro al que se recordó a su muerte como un actor de mil personajes. Su carrera en el cine abarcó cuatro décadas, de 1962 a 2002, e incluye Cuba '58 (1962), El otro Cristóbal (1963), La pandilla (1965), Tulipa (1967), La última cena (1976) de Tomás Gutiérrez Alea, Polvo rojo (1982) y Cecilia (1982), de Humberto Solás, donde interpretó a Uribe. Murió en La Habana tras padecer una enfermedad degenerativa.",
     awards: [],
   },
   {
@@ -981,9 +998,16 @@ export const actors: Actor[] = [
   {
     id: 'mario-limonta',
     name: 'Mario Limonta',
+    birthYear: 1936,
+    birthPlace: 'Guantánamo, Cuba',
+    deathYear: 2025,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Mario Limonta (Guantánamo, 19 de enero de 1936 — La Habana, 18 de enero de 2025) fue un actor de cine, televisión, radio y teatro, muy querido por el público cubano. Empezó como declamador en la radio de su provincia y en 1955 se trasladó a La Habana para estudiar Derecho, carrera que abandonó pronto. Se dio a conocer en el programa de aficionados La Corte Suprema del Arte, trabajó como voz de radioteatro en el Circuito Nacional Cubano (hoy Radio Rebelde) y hasta 1965 integró el grupo teatral Guernica, del Teatro Nacional, donde protagonizó Bodas de sangre, Las impuras y Las vacas gordas. Debutó en el cine en 1964 con La decisión, de José Massip, y después participó en De cierta manera (1974), El Brigadista (1977), Retrato de Teresa (1979), Miel para Oshún (2001) y El cuerno de la abundancia. En la televisión es inolvidable como el sargento Arencibia del programa humorístico San Nicolás del Peladero. En La Corte Suprema del Arte conoció a Aurora Basnuevo, con quien se casó en 1960; interpretaron juntos numerosos papeles como pareja, sobre todo en comedias, hasta la muerte de ella en 2022.",
+    awards: [
+      "Premio Nacional de Televisión (2009)",
+      "Premio Nacional del Humor (2016)",
+      "Sello 65 Aniversario del ICAIC por la obra de toda la vida (2024)",
+    ],
   },
   {
     id: 'mayte-vilan',
@@ -1338,8 +1362,11 @@ export const actors: Actor[] = [
   {
     id: 'samuel-claxton',
     name: 'Samuel Claxton',
+    birthYear: 1943,
+    birthPlace: 'Camagüey, Cuba',
+    deathYear: 2025,
     nationality: 'Cubano',
-    biography: '',
+    biography: "Samuel Claxton (Camagüey, 1943 — La Habana, 17 de mayo de 2025) fue uno de los rostros más familiares del cine, el teatro y la televisión cubanos durante más de seis décadas. Empezó en el Grupo Taller Dramático con la obra María Antonia y se consolidó como un actor versátil en montajes como Divinas palabras, Lumumba y Santa Camila de La Habana Vieja. Participó en más de sesenta producciones de cine y teatro, entre ellas La última cena (1976) de Tomás Gutiérrez Alea, Retrato de Teresa y Caravana. En la televisión se le recuerda sobre todo como Mantilla, en la serie Su propia guerra. Murió en La Habana a los 82 años, y el gremio actoral lo despidió como uno de sus grandes protagonistas de los últimos sesenta años.",
     awards: [],
   },
   {
