@@ -624,9 +624,15 @@ export const actors: Actor[] = [
   {
     id: 'idalia-anreus',
     name: 'Idalia Anreus',
+    birthYear: 1932,
+    birthPlace: 'Sagua la Grande, Villa Clara, Cuba',
+    deathYear: 1998,
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/idalia-anreus.jpg',
+    biography: "Idalia Anreus (Sagua la Grande, 1932 — Elizabeth, Nueva Jersey, 3 de enero de 1998) fue una de las grandes actrices del cine cubano de los años 60 y 70. Autodidacta, llegó a la actuación a través del teatro infantil de la mano de su hermana menor, la actriz Gladys Anreus, y más tarde formó parte de Teatro Estudio y del Teatro Político Bertolt Brecht. Su primera película fue La salación (1966), dirigida por Manuel Octavio Gómez, con quien se casó en 1968 y con quien filmaría muchos de sus papeles principales. Apareció en Lucía (1968) de Humberto Solás, La primera carga al machete (1969), Los días del agua (1971), Retrato de Teresa (1979) y Guardafronteras, entre otras: once películas entre 1966 y 1983. Por su papel de Antonica en Los días del agua ganó el premio a la mejor actriz en el Festival de Moscú de 1971. Una enfermedad la obligó a retirarse a mediados de los años 80. Murió en Estados Unidos, mientras visitaba a sus hermanas.",
+    awards: [
+      "Premio a la Mejor Actriz — VII Festival Internacional de Cine de Moscú, por Los días del agua (1971)",
+    ],
   },
   {
     id: 'imanol-arias',
@@ -744,8 +750,12 @@ export const actors: Actor[] = [
     id: 'jorge-martinez',
     name: 'Jorge Martínez',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/jorge-martinez.jpg',
+    biography: "Jorge Martínez Castillo es uno de los pilares de la escena artística cubana: actor de teatro, cine, radio y televisión, graduado de la Escuela Nacional de Arte. Empezó como músico, aunque soñaba con ganarse la vida como marinero mercante, y acabó convertido en uno de los rostros más conocidos de la isla. En el cine participó en La bella del Alhambra (1989) de Enrique Pineda Barnet y en Alicia en el pueblo de Maravillas (1991), y protagonizó Últimos días en La Habana, de Fernando Pérez, que le valió el premio a la mejor actuación masculina en el Festival Internacional de Cine Pobre de Gibara. En el teatro intervino en obras como El hombre más codiciado del mundo, de Nicolás Dorr, y Santa Camila de La Habana Vieja. En la televisión ha sido actor de series y telenovelas y también conductor de programas como A moverse, El Expreso y Sonando en Cuba. Recibió el Premio Enrique Almirante.",
+    awards: [
+      "Premio a la Mejor Actuación Masculina — Festival Internacional de Cine Pobre de Gibara, por Últimos días en La Habana (2017, compartido con Patricio Wood en la categoría de actuación)",
+      "Premio Enrique Almirante",
+    ],
   },
   {
     id: 'jorge-molina',
@@ -922,9 +932,18 @@ export const actors: Actor[] = [
   {
     id: 'manuel-porto',
     name: 'Manuel Porto',
+    birthYear: 1945,
+    birthPlace: 'Pogolotti, Marianao, La Habana, Cuba',
+    deathYear: 2021,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/manuel-porto.jpg',
+    biography: "Eleodoro Manuel Porto Sánchez (Pogolotti, Marianao, La Habana, 28 de septiembre de 1945 — La Habana, 28 de septiembre de 2021) fue una de las figuras históricas de la actuación cubana en teatro, cine, televisión y radio. Contó que no llegó a la actuación por vocación, sino por la oportunidad de conseguir más pases durante el Servicio Militar Obligatorio, cuando formaba parte de un grupo de aficionados. En 1968 fue uno de los seis actores seleccionados en una convocatoria nacional del ICRT y empezó con pequeños papeles y de extra, con la ayuda de Raquel Revuelta, Verónica Lynn y Reinaldo Miravalles. En el cine intervino en cerca de veinte películas entre 1976 y 2010, entre ellas La tierra y el cielo, Se permuta, La vida en rosa, Caravana y Habana, Havana, por la que fue premiado en el Festival de Cine Latinoamericano de Trieste. En 1992 fundó el Conjunto Artístico Comunitario Korimacao, en la Ciénaga de Zapata (Matanzas), que dirigió durante años y que le valió el Premio Nacional de la Cultura Comunitaria. Murió en La Habana el día en que cumplía 76 años, por complicaciones de la COVID-19, cuando protagonizaba la telenovela Vuelve a mirar. En 2021 recibió el Premio Nacional de Radio y Televisión a título póstumo.",
+    awards: [
+      "Premio Nacional de Radio y Televisión (2021, a título póstumo)",
+      "Premio Nacional de la Cultura Comunitaria — por el proyecto Korimacao",
+      "Premio de actuación — Festival de Cine Latinoamericano de Trieste, por Habana, Havana",
+      "Actor de Mérito de la Televisión Cubana",
+    ],
   },
   {
     id: 'margarita-aguero',
@@ -1249,9 +1268,15 @@ export const actors: Actor[] = [
   {
     id: 'rogelio-blain',
     name: 'Rogelio Blaín',
+    birthYear: 1944,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 2018,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    photo: '/images/actors/rogelio-blain.jpg',
+    biography: "Rogelio Juan Blaín Blaín (La Habana, 24 de agosto de 1944 — 13 de mayo de 2018) fue uno de los actores más queridos de la radio, el cine y la televisión cubanas. Empezó como aficionado y en 1966 Humberto Solás lo eligió para Lucía (1968), donde interpretó a Antonio en la segunda historia. Desde entonces trabajó con directores como Manuel Octavio Gómez, Manuel Pérez, Rogelio París, Jorge Fraga y Jesús Díaz, y participó en películas como El hombre de Maisinicú, Patty Candela, Hasta cierto punto (donde fue Diego), Reina y Rey y Hacerse el sueco. Aunque siempre dijo preferir el cine, la televisión lo hizo enormemente popular: fue el villano Lucio Contreras en la telenovela Tierra Brava, participó en la serie Enrique de Lagardère, que lo llevó a la cima de su popularidad, y fue el oficial del Ministerio del Interior de Móvil Ocho. Compartió escenario con Enrique Molina y Enrique Almirante. Recibió el título de Artista Loable de la Radio y la Televisión Cubanas. Falleció en La Habana a los 73 años, víctima de un cáncer.",
+    awards: [
+      "Artista Loable de la Radio y la Televisión Cubanas",
+    ],
   },
   {
     id: 'rolando-brito',
@@ -1353,8 +1378,12 @@ export const actors: Actor[] = [
   {
     id: 'silvia-planas',
     name: 'Silvia Planas',
+    birthYear: 1901,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 1998,
     nationality: 'Cubana',
-    biography: '',
+    photo: '/images/actors/silvia-planas.jpg',
+    biography: "Silvia Planas (La Habana, 2 de noviembre de 1901 — La Habana, 22 de marzo de 1998) fue una destacada actriz cubana de teatro, cine y televisión, y madre de Raquel y Vicente Revuelta, dos de las grandes figuras de la escena cubana. En el cine trabajó con Tomás Gutiérrez Alea en Las doce sillas (1962) y La muerte de un burócrata (1966), y con Humberto Solás en Lucía (1968) y Un día de noviembre. En el teatro participó, entre otras obras, en Contigo pan y cebolla y La vieja dama muestra sus medallas. La película Menos tiempo en la mirada (1987) toma el cuento Francisca y la muerte, de Onelio Jorge Cardoso, y lo traslada a la vida de la propia actriz. Adorables mentiras (1991), de Gerardo Chijona, fue su última película.",
     awards: [],
   },
   {
