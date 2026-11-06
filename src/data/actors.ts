@@ -335,8 +335,10 @@ export const actors: Actor[] = [
   {
     id: 'carlos-gonzalvo',
     name: 'Carlos Gonzalvo',
+    birthYear: 1970,
+    birthPlace: 'Isla de la Juventud, Cuba',
     nationality: 'Cubano',
-    biography: '',
+    biography: "Carlos Gonzalvo Rodríguez (Isla de la Juventud, 4 de septiembre de 1970) es un actor y humorista cubano, muy popular gracias a su personaje del Profesor Mentepollo, un personaje múltiple que comenta con humor reflexivo, agudo y crítico todos los rincones de la realidad nacional. De niño no sentía inclinación alguna por la actuación —le gustaban la mecánica, manejar y los carros—, pero acabó entrando en el mundo del teatro y ha construido una carrera de más de 35 años en la que combina la comedia con los papeles dramáticos. En el cine y la televisión ha participado en Entrega, Lucha contra bandidos, El premio flaco, Vinci y Omega 3 (2014), de Eduardo del Llano, además de ser uno de los actores de la saga de cortos Los cuentos de Nicanor O'Donnell, y más recientemente en la telenovela El derecho de soñar y en La fiesta, de Gerardo Chijona. Celebró sus 35 años de vida artística con el espectáculo ¿Quién llegó primero al mundo?, en el Teatro Astral.",
     awards: [],
   },
   {
@@ -528,8 +530,11 @@ export const actors: Actor[] = [
   {
     id: 'erdwin-fernandez',
     name: 'Erdwin Fernández',
+    birthYear: 1928,
+    birthPlace: 'Camagüey, Cuba',
+    deathYear: 1997,
     nationality: 'Cubano',
-    biography: '',
+    biography: "Erdwin Juventino Fernández Sánchez (Camagüey, 29 de enero de 1928 — La Habana, 23 de octubre de 1997) fue un actor cubano de radio, televisión, cine y circo, inmortalizado por el payaso Trompoloco. Escribió, dirigió y protagonizó numerosos programas infantiles. Dio sus primeros pasos en el teatro bajo la dirección de Luis Martínez Casado y en 1951 empezó en la televisión con pequeños papeles en espacios como Televisión General Electric, donde hacía de gángster junto al joven Enrique Almirante. En el teatro se recuerdan Los cuentos del Decamerón y La última carta de la baraja, ambas dirigidas por Raquel Revuelta. A partir de 1977 formó parte del elenco de Alegrías de sobremesa, uno de los programas más populares de la radio cubana, de Radio Progreso. En el cine participó en Las aventuras de Juan Quin Quín (1967), de Julio García Espinosa. Es el padre del también actor Erdwin Fernández Collado.",
     awards: [],
   },
   {
@@ -586,9 +591,15 @@ export const actors: Actor[] = [
   {
     id: 'frank-gonzalez',
     name: 'Frank González',
+    birthYear: 1946,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 2021,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Francisco González López, conocido como Frank González (La Habana, 7 de octubre de 1946 — La Habana, 9 de abril de 2021), fue un actor cubano de radio, cine y televisión y uno de los grandes actores de voz y doblaje del país. Empezó como aficionado en grupos de teatro y conjuntos musicales y, a finales de los años 60, comenzó a trabajar en el Instituto Cubano de Radio y Televisión como diseñador de vestuario y decorador. Se hizo inmortal como la voz de Elpidio Valdés, el mambí creado por Juan Padrón, y de su célebre '¡Hasta la vista, compay!'. Fue uno de los colaboradores más cercanos de Padrón: puso voz a varios personajes en Elpidio Valdés contra dólar y cañón (1983), a Pepito, Smiley y Al Tapone en ¡Vampiros en La Habana! (1985) y también participó en Más vampiros en La Habana. Por la facilidad con que daba vida a personajes muy distintos lo llamaron 'el hombre de las mil voces'. En el cine actuó en películas como Jíbaro, En tres y dos (1985) y la coproducción cubano-peruana Tupac Amaru. Recibió el Premio ACTUAR por la Obra de la Vida (2016) y el Premio Nacional de Televisión 2019, que se le entregó en octubre de 2020. Murió en La Habana a los 74 años.",
+    awards: [
+      "Premio ACTUAR por la Obra de la Vida (2016)",
+      "Premio Nacional de Televisión (2019)",
+    ],
   },
   {
     id: 'gabino-diego',
@@ -1320,9 +1331,13 @@ export const actors: Actor[] = [
   {
     id: 'rolando-brito',
     name: 'Rolando Brito',
+    birthYear: 1957,
+    birthPlace: 'Camagüey, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Rolando Brito Rodríguez (Camagüey, 15 de mayo de 1957) es un actor cubano de teatro, cine y televisión, graduado de la Escuela Nacional de Arte Dramático de La Habana en 1983. En la televisión cubana participó en novelas y teleseries muy queridas por el público, como La semilla escondida, Hermanos, Los papaloteros, De tu sueño a mi sueño, Pasión y prejuicio y, sobre todo, Algo más que soñar (1985), donde dio vida a Ignacio, uno de los jóvenes cadetes protagonistas. En el cine trabajó con Fernando Pérez y Manuel Pérez Paredes, y participó en Páginas del diario de Mauricio (2006). Es padre de la actriz Livia Brito. Desde hace más de veinte años vive en México, donde ha continuado su carrera en la televisión con títulos como De que te quiero, te quiero (2013) y La vecina (2015). Tiene la Distinción por la Cultura Nacional.",
+    awards: [
+      "Distinción por la Cultura Nacional",
+    ],
   },
   {
     id: 'ron-blair',
