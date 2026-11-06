@@ -567,9 +567,14 @@ export const actors: Actor[] = [
   {
     id: 'fernando-hechavarria',
     name: 'Fernando Hechavarría',
+    birthYear: 1955,
+    birthPlace: 'Holguín, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Fernando Rogelio Hechavarría Gibert (Holguín, 16 de septiembre de 1955) es un actor cubano de teatro, cine y televisión. Estudió primero diseño, pintura y escultura en la Escuela Provincial de Artes Plásticas de Holguín y se graduó de actuación en la Escuela Nacional de Arte en 1976. Entre 1978 y 1994 trabajó repetidamente con la compañía Teatro Escambray, una experiencia pionera de teatro comunitario en las montañas cubanas, y desde 1995 intensificó su trabajo con El Público, dirigido por Carlos Díaz. En el cine debutó en La tierra y el cielo, de Manuel Octavio Gómez, y ha participado en Plácido (1986), Amor vertical (1997), Pata Negra (2001), Ciudad en rojo y Regreso a Ítaca (2014), entre otras. En la televisión es muy recordado como Nacho Capitán en la telenovela Tierra Brava. Ha llevado su trabajo a 26 festivales internacionales de teatro y cine, de España a Finlandia, y ha recibido reconocimientos como el de mejor actuación masculina en cine por Pon tu pensamiento en mí.",
+    awards: [
+      "Mejor actuación masculina en cine — por Pon tu pensamiento en mí",
+      "Mejor actor de reparto en televisión — por Aire frío",
+    ],
   },
   {
     id: 'francisquito',
@@ -1019,9 +1024,13 @@ export const actors: Actor[] = [
   {
     id: 'mijail-mulkay',
     name: 'Mijail Mulkay',
+    birthYear: 1974,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Mijail Mulkay Bordón Perdomo (La Habana, 20 de abril de 1974) es un actor y director teatral cubano, hijo del también actor Iván Mulkay. Graduado como actor y director de teatro en el Instituto Superior de Arte, formó parte de compañías importantes de la escena cubana como Teatro Estudio, Grupo Irrumpe y El Público. Debutó en la televisión en 1996 con la serie Entre mamparas y en 1997 recibió el premio al mejor actor secundario en televisión de la UNEAC. En el cine ha participado en Lista de espera, Hacerse el sueco, Entre ciclones y Aunque estés lejos, y en la televisión cubana es muy recordado como Lungo en la telenovela Tierra Brava. En 2004 empezó a trabajar en Colombia, donde consolidó su carrera en la televisión, y también ha actuado en Estados Unidos, donde interpretó a Tico Fuentes en la serie Celia (2015).",
+    awards: [
+      "Mejor Actor Secundario en Televisión — UNEAC (1997)",
+    ],
   },
   {
     id: 'miriel-cejas',
@@ -1119,9 +1128,15 @@ export const actors: Actor[] = [
   {
     id: 'pancho-garcia',
     name: 'Pancho García',
+    birthYear: 1943,
+    birthPlace: 'Cienfuegos, Cuba',
+    deathYear: 2021,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Francisco Wilfredo García Castellanos, conocido como Pancho García (Cienfuegos, 4 de octubre de 1943 — La Habana, 16 de diciembre de 2021), fue uno de los actores más importantes del teatro cubano, además de director y autor teatral. Empezó en 1961 en el Grupo Experimental de Aficionados de La Habana y participó en más de cien puestas en escena, más de ochenta de ellas como protagonista, entre ellas Un tranvía llamado deseo, La muerte de un viajante (Willy Loman), El caballero de Olmedo y En el túnel un pájaro, de Paloma Pedrero. Entre 1995 y 2003 formó parte de la Compañía Teatral Hubert de Blanck, y sus actuaciones en Argos Teatro, la compañía de Carlos Celdrán, se recuerdan como legendarias. Escribió y dirigió piezas propias como El primo de La Habana y firmó monólogos como La Legionaria y El Caballero de París. En el cine apareció en Una pelea cubana contra los demonios (1971), de Tomás Gutiérrez Alea, José Martí: el ojo del canario, Vestido de novia y Chamaco, y trabajó también en telenovelas, cuentos y series policiacas de la televisión cubana. Recibió el Premio Nacional de Teatro en 2012 y el Premio Maestro de Juventudes en 2019. Murió en La Habana a los 78 años.",
+    awards: [
+      "Premio Nacional de Teatro (2012)",
+      "Premio Maestro de Juventudes (2019)",
+    ],
   },
   {
     id: 'patricio-wood',
@@ -1398,9 +1413,19 @@ export const actors: Actor[] = [
   {
     id: 'silvia-aguila',
     name: 'Silvia Águila',
+    birthYear: 1971,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    biography: "Silvia Águila Pérez (La Habana, 25 de marzo de 1971) es una actriz cubana de cine, radio y televisión. Su carrera comenzó en la infancia: desde 1975, con solo cuatro años, actuó en la televisión en cuentos, teleteatros, series y novelas como Cumbres borrascosas, y en 1990, ya como actriz profesional, protagonizó novelas radiales como El callejón de la esperanza e Intolerancia. Con el tiempo se consolidó en la televisión con títulos como Pasión y prejuicio, Las huérfanas de la Obra Pía y Lo que me queda por vivir. Su debut en el cine fue Amor vertical (1997), de Arturo Sotto, junto a Jorge Perugorría, que le valió el Catalina de Oro a la mejor actuación femenina en el Festival de Cartagena de Indias de 1998. Después participó en Malhabana, Los dioses rotos (2008) y Conducta (2014). Ha ganado en varias ocasiones el Premio Caricato de la UNEAC.",
+    awards: [
+      "Catalina de Oro a la Mejor Actuación Femenina — Festival Internacional de Cine de Cartagena, por Amor vertical (1998)",
+      "Premio Caricato a la Mejor Actriz — UNEAC, por ¿La vida en rosa? (2004)",
+      "Premio a la Mejor Actriz Secundaria — Primer Festival Nacional de la Televisión Cubana (2004)",
+      "Premio Caricato a la Mejor Actriz — UNEAC, por Puertas (2005)",
+      "Premio a la Mejor Actriz — Segundo Festival Nacional de la Televisión Cubana (2005)",
+      "Premio Caricato a la Mejor Actriz — UNEAC, por La noche de los inocentes (2008)",
+      "Premio Caricato a la Mejor Actriz — UNEAC, por Yo solo vine a llamar por teléfono (2009)",
+    ],
   },
   {
     id: 'silvia-planas',
@@ -1423,8 +1448,10 @@ export const actors: Actor[] = [
   {
     id: 'susana-perez',
     name: 'Susana Pérez',
+    birthYear: 1952,
+    birthPlace: 'Marianao, La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
+    biography: "Susana Pérez López (Marianao, La Habana, 25 de mayo de 1952) es una de las actrices más reconocidas de la televisión cubana, donde trabajó durante más de dos décadas. Se graduó de la Escuela de Formación de Actores del Instituto Cubano de Radiodifusión en 1971 y empezó en la pantalla en 1972 como locutora y actriz sustituta. Dejó huella en la televisión, el teatro, la radio, los programas infantiles y juveniles, y como conductora. En el cine destacó en Clandestinos (1987), de Fernando Pérez, y en Aunque estés lejos (2003), de Juan Carlos Tabío, y participó también en El otro Francisco y en Perfecto amor equivocado (2004). Vive en Miami desde 2007. En 2016 volvió a La Habana para actuar en el Festival de Teatro con Volver a La Habana, de Raquel Carrió.",
     awards: [],
   },
   {
@@ -1570,9 +1597,15 @@ export const actors: Actor[] = [
   {
     id: 'yuliet-cruz',
     name: 'Yuliet Cruz',
+    birthYear: 1980,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    biography: "Yuliet Cruz Delgado (La Habana, 1 de octubre de 1980) es una actriz y presentadora cubana de cine, teatro y televisión. Se graduó en el Instituto Superior de Arte y debutó en 1998 en el teatro con Contigo pan y cebolla. Ha trabajado con grandes nombres de la dramaturgia cubana y ha protagonizado obras como Aire frío, dirigida por Carlos Celdrán, y Fíchenla si pueden. En el cine ha intervenido en Habana Blues (2005), Habana Eva (2010), Melaza (2012), Se vende (2012), La película de Ana (2012), por la que recibió el Premio de la Crítica ACE del Festival Latino de Cine de Nueva York como mejor actriz de reparto, Conducta (2014) y Sergio y Serguéi (2017), en casi una veintena de películas. En la televisión fue presentadora del programa Piso 6. Radicada en Miami, protagonizó Plantadas (2023), de Lilo Vilaplana, y fue elegida para protagonizar Adiós Cuba, de Rolando Díaz.",
+    awards: [
+      "Premio de la Crítica ACE a la Mejor Actriz de Reparto — Festival Latino de Cine de Nueva York, por La película de Ana (2014)",
+      "Premio Caricato a la Mejor Actuación Femenina en Teatro — por Fíchenla si pueden (2013)",
+      "Premio a la Mejor Actuación Femenina en Teatro — por Mecánica (2015)",
+    ],
   },
   {
     id: 'yuliet-ortega',
