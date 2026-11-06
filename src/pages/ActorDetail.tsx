@@ -11,6 +11,7 @@ import { sagas, Saga } from "@/data/sagas";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { directorLabel } from "@/lib/directors";
+import { hasThinBio } from "@/lib/seo";
 
 const ActorInitials = ({ name }: { name: string }) => {
   const initials = name
@@ -173,6 +174,7 @@ const ActorDetail = () => {
         description={`Ficha y filmografía de ${actor.name}. ${actorMovies.length} ${actorMovies.length === 1 ? "película" : "películas"} en el catálogo de CineCuba.${actor.biography ? " " + actor.biography.slice(0, 100) + "..." : ""}`}
         image={actor.photo}
         url={`https://cine-cubano.com/actor/${actor.id}`}
+        robots={hasThinBio(actor.biography) ? "noindex, follow" : undefined}
       />
 
       {/* Schema.org Person */}

@@ -24,6 +24,8 @@ const assetPathPlugin: Plugin = {
   },
 };
 
+let thinActorIds = new Set<string>();
+
 async function checkRouteIds(): Promise<void> {
   // El catálogo y los directores importan imágenes que tsx no sabe cargar: se empaquetan con esbuild.
   const result = await build({
@@ -35,6 +37,7 @@ async function checkRouteIds(): Promise<void> {
         'export { sagas } from "@/data/sagas";',
         'export { serials } from "@/data/serials";',
         'export { eras } from "@/data/eras";',
+        'export { hasThinBio } from "@/lib/seo";',
       ].join("\n"),
       resolveDir: ROOT,
       loader: "ts",
@@ -47,9 +50,13 @@ async function checkRouteIds(): Promise<void> {
     plugins: [assetPathPlugin],
     logLevel: "error",
   });
-  const mod = { exports: {} as Record<string, { id: string }[]> };
+  const mod = { exports: {} as Record<string, any> };
   new Function("module", "exports", result.outputFiles[0].text)(mod, mod.exports);
-  const data = mod.exports;
+  const data = mod.exports as Record<string, { id: string; biography?: string }[]> & {
+    hasThinBio: (biography?: string) => boolean;
+  };
+  // Fichas de actor sin biografía real: siguen prerenderizadas (noindex en ActorDetail) pero no van al sitemap.
+  thinActorIds = new Set(data.actors.filter((a) => data.hasThinBio(a.biography)).map((a) => a.id));
 
   const checks: [string, { id: string }[], string[]][] = [
     ["películas (movieIds)", data.movies, movieIds],
@@ -120,7 +127,7 @@ const dynamicRoutes: SitemapEntry[] = [
     priority:    "0.7",
     changefreq:  "monthly",
   })),
-  ...actorIds.map((id) => ({
+  ...actorIds.filter((id) => !thinActorIds.has(id)).map((id) => ({
     path:        `/actor/${id}`,
     priority:    "0.6",
     changefreq:  "monthly",
@@ -146,4 +153,4 @@ ${allRoutes
 
 const outputPath = resolve(__dirname, "../public/sitemap.xml");
 writeFileSync(outputPath, xml, "utf-8");
-console.log(`✓ sitemap.xml generado: ${allRoutes.length} URLs → ${outputPath}`);
+console.log(`✓ sitemap.xml generado: ${allRoutes.length} URLs → ${outputPath} (fichas de actor sin biografía excluidas: ${thinActorIds.size})`);

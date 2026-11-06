@@ -9,17 +9,20 @@ interface SEOProps {
   type?: string;
   /** Si es true, `title` se usa tal cual como <title> (sin añadir el sufijo "| CineCuba"). */
   exactTitle?: boolean;
-  /** Añade robots noindex y omite el canonical (páginas que no deben aparecer en buscadores). */
+  /** Valor de la meta robots (p. ej. "noindex, follow"). Si se informa, se omite el canonical. */
+  robots?: string;
+  /** Atajo de robots="noindex". */
   noindex?: boolean;
 }
 
-export const SEO = ({ title, description, image, url, type = 'website', exactTitle = false, noindex = false }: SEOProps) => {
+export const SEO = ({ title, description, image, url, type = 'website', exactTitle = false, robots, noindex = false }: SEOProps) => {
   const siteTitle = "CineCuba | Archivo del Cine Cubano";
   const fullTitle = exactTitle ? title : title === "Inicio" ? siteTitle : `${title} | CineCuba`;
   // Usamos la imagen del repositorio como fallback
   const defaultImage = "https://cine-cubano.com/og-image.jpg";
   const siteUrl = SITE_URL;
   const canonicalUrl = url || siteUrl;
+  const robotsValue = robots ?? (noindex ? "noindex" : undefined);
   const ogImage = absoluteUrl(image) || defaultImage;
 
   return (
@@ -27,7 +30,7 @@ export const SEO = ({ title, description, image, url, type = 'website', exactTit
       {/* Estándar */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalUrl} />}
+      {robotsValue ? <meta name="robots" content={robotsValue} /> : <link rel="canonical" href={canonicalUrl} />}
 
       {/* Facebook / Open Graph */}
       <meta property="og:type" content={type} />
