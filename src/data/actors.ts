@@ -75,9 +75,14 @@ export const actors: Actor[] = [
   {
     id: 'alex-gonzalez',
     name: 'Álex González',
-    nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    birthYear: 1980,
+    birthPlace: 'Madrid, España',
+    nationality: 'Español',
+    biography: "Augusto Alejandro José González, conocido como Álex González (Madrid, 13 de agosto de 1980), es un actor español. Empezó en la televisión con pequeños papeles y se hizo conocido en series como Los Serrano y Cuenta atrás. En el cine debutó con Segundo asalto (2005), que le valió una nominación al Goya al mejor actor revelación y el premio Cartelera Turia al mejor actor revelación, y siguió con Una rosa de Francia (2006), de Manuel Gutiérrez Aragón, Luz de domingo (2007), de José Luis Garci, y El libro de las aguas (2008). Estando en el Reino Unido para perfeccionar su inglés, se presentó casi sin expectativas a un casting y lo eligieron para interpretar al villano Riptide en X-Men: Primera generación (2011), su primera película en Hollywood. Después ha trabajado en series como El Príncipe y Vivir sin permiso.",
+    awards: [
+      "Premio Cartelera Turia al Mejor Actor Revelación — por Segundo asalto (2006)",
+      "Nominación Goya al Mejor Actor Revelación — por Segundo asalto (2006)",
+    ],
   },
   {
     id: 'alexis-diaz-de-villegas',
@@ -415,9 +420,17 @@ export const actors: Actor[] = [
   {
     id: 'cuca-escribano',
     name: 'Cuca Escribano',
+    birthYear: 1973,
+    birthPlace: 'Madrid, España',
     nationality: 'Española',
-    biography: '',
-    awards: [],
+    biography: "Antonia Escribano García-Conde, conocida como Cuca Escribano (Madrid, 1973), es una actriz española. De madre asturiana y padre sevillano, nació en Madrid pero su infancia y adolescencia transcurrieron en Andalucía, sobre todo en Utrera y Sevilla. En 1998 protagonizó en televisión las series Plaza Alta y Arrayán, con las que grabó más de mil capítulos. En el cine su papel más celebrado es Poniente (2002), de Chus Gutiérrez, que le valió los premios Asecan y Cartelera Turia a la mejor actriz; también ha intervenido en Los aires difíciles, El camino de los ingleses, de Antonio Banderas, 14 Fabian Road, Asunto Reiner y, en el cine con vínculos cubanos, Afinidades, dirigida por Jorge Perugorría y Vladimir Cruz. En la televisión ha trabajado además en Sin tetas no hay paraíso, El secreto de Puente Viejo, Acacias 38 y Malaka.",
+    awards: [
+      "Premio Asecan a la Mejor Actriz — por Poniente (2003)",
+      "Premio Cartelera Turia a la Mejor Actriz — por Poniente (2003)",
+      "Mejor Actriz — Festival de Alicante, por Asunto Reiner (2010)",
+      "Mejor Interpretación Femenina — Plataforma Nuevos Realizadores, Festival de Cortometrajes de Madrid, por El pan nuestro (2007)",
+      "Nominación Actriz Revelación — Medallas del Círculo de Escritores Cinematográficos, por Poniente (2003)",
+    ],
   },
   {
     id: 'dailenys-fuentes',
@@ -802,9 +815,16 @@ export const actors: Actor[] = [
   {
     id: 'joel-joan',
     name: 'Joel Joan',
+    birthYear: 1970,
+    birthPlace: 'Barcelona, España',
     nationality: 'Español',
-    biography: '',
-    awards: [],
+    biography: "Joel Joan i Juvé (Barcelona, 2 de noviembre de 1970) es un actor, guionista, director y productor catalán. Estudió arte dramático en el Institut del Teatre de Barcelona y debutó en el cine con Monturiol, el senyor del mar, de Francesc Bellmunt. En la televisión catalana se hizo muy popular con Plats bruts, de la que fue actor, director y guionista, y con Porca misèria, que le valió el Premio Barcelona de Cine a la mejor serie de ficción de 2006; también ha estado en El crac. En el cine ha trabajado en La buena vida, de David Trueba, Las razones de mis amigos, Tortilla Soup, Salvador (Puig Antich) y, en el cine con vínculos cubanos, En fin, el mar (Al fin, el mar). Como director firmó Excuses! (2003) y Fènix 11·23 (2012), y fue presidente de la Academia del Cine Catalán. Ha recibido el premio Montserrat Carulla del Festival Internacional de Cine en Catalán, que reconoce su trayectoria.",
+    awards: [
+      "Premio Montserrat Carulla — Festival Internacional de Cine en Catalán (FIC-CAT)",
+      "Premio Barcelona de Cine a la Mejor Serie de Ficción — por Porca misèria (2006)",
+      "Nominación Fotogramas de Plata al Mejor Actor de Televisión — por Periodistas y Plats bruts (1999)",
+      "Nominación Premio Butaca al Mejor Actor Catalán de Cine — por Las razones de mis amigos (2001)",
+    ],
   },
   {
     id: 'jorge-luis-alvarez',
@@ -1276,9 +1296,13 @@ export const actors: Actor[] = [
   {
     id: 'raul-paz',
     name: 'Raúl Paz',
+    birthYear: 1969,
+    birthPlace: 'San Luis, Pinar del Río, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Raúl Paz (San Luis, Pinar del Río, 1969) es un cantautor, compositor y actor cubano, conocido como 'el cubano francés'. Creció escuchando guajira, la música campesina cubana, y estudió música durante más de diez años: violín, teoría musical, instrumentos de viento y dirección. En La Habana trabajó también como actor y protagonizó varias películas, entre ellas Hello Hemingway (1990), de Fernando Pérez. A mediados de los años 90 salió de Cuba, pasó por Sudamérica y se instaló en París, donde estudió en la Schola Cantorum. En 1998 el productor Ralph Mercado lo lanzó en Estados Unidos con el disco Imagínate, que le valió el premio al mejor nuevo cantante masculino de la prensa musical de Nueva York. Desde entonces ha grabado discos como Mulata, En vivo, Havanization (2010), Ven Ven, La otra esquina, Vidas y Guajiro Chic, y ha sido Embajador de Buena Voluntad de la UNESCO. Desde 2009 vive con su familia en una finca del valle de Viñales.",
+    awards: [
+      "Mejor Nuevo Cantante Masculino — prensa musical de Nueva York, por Imagínate (1998)",
+    ],
   },
   {
     id: 'raul-pomares',
@@ -1565,8 +1589,10 @@ export const actors: Actor[] = [
   {
     id: 'valeria-marini',
     name: 'Valeria Marini',
+    birthYear: 1967,
+    birthPlace: 'Roma, Italia',
     nationality: 'Italiana',
-    biography: '',
+    biography: "Valeria Marini (Roma, 14 de mayo de 1967) es una actriz, showgirl, modelo, diseñadora de moda y empresaria italiana. Nació en Roma, de madre sarda y padre romano, y creció en Cagliari. Empezó en el teatro con The Sunshine Boys, dirigida por Mario Scaccia, y se hizo famosa en la televisión como estrella del espectáculo Bagaglino. Su primera aparición en el cine fue en 1987, en Cronaca nera, y en 1996 el director catalán Bigas Luna la eligió para protagonizar Bámbola, un melodrama erótico que la dio a conocer también en España junto a Jorge Perugorría; la película fue polémica, porque la actriz denunció que incluía escenas eróticas sin su autorización. Después trabajó con Alberto Sordi en Incontri proibiti, presentó el Festival de San Remo en 1997 y ha participado en realities en Italia y en España. También ha publicado varios sencillos.",
     awards: [],
   },
   {
@@ -1599,9 +1625,14 @@ export const actors: Actor[] = [
   {
     id: 'vicente-revuelta',
     name: 'Vicente Revuelta',
+    birthYear: 1929,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 2012,
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Vicente Francisco Revuelta Planas (La Habana, 5 de junio de 1929 — La Habana, 10 de enero de 2012) fue actor, director y maestro de teatro, una de las grandes figuras del teatro de las Américas y el renovador por excelencia de la escena cubana. Hijo de la actriz Silvia Planas y hermano de la también actriz Raquel Revuelta, fundó en 1958 el grupo Teatro Estudio junto a ella, Sergio Corrieri y otros artistas. Tras el triunfo de la Revolución estrenó en 1959 El alma buena de Se Chuán, el primer texto de Brecht que subió a un escenario cubano, y dirigió y actuó en montajes como Madre Coraje y sus hijos, Fuenteovejuna, El cuento del zoológico, El perro del hortelano y La duodécima noche; su Galileo Galilei, de Brecht, se convirtió en su imagen para muchos. En 1968, tras una crisis interna de Teatro Estudio, dejó el grupo y fundó Los Doce, desde donde introdujo métodos innovadores de técnica y dramaturgia. Recibió el Premio Nacional de Teatro en 1999. En el cine participó en Los sobrevivientes (1979), de Tomás Gutiérrez Alea. Murió en La Habana a los 82 años.",
+    awards: [
+      "Premio Nacional de Teatro de Cuba (1999)",
+    ],
   },
   {
     id: 'vladimir-cruz',

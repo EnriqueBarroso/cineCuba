@@ -1291,6 +1291,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://cine-cubano.com/actor/alex-gonzalez</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://cine-cubano.com/actor/alexis-diaz-de-villegas</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1381,6 +1387,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://cine-cubano.com/actor/cuca-escribano</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://cine-cubano.com/actor/daisy-granados</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1466,6 +1478,12 @@
   </url>
   <url>
     <loc>https://cine-cubano.com/actor/javier-bardem</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/joel-joan</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1579,6 +1597,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://cine-cubano.com/actor/raul-paz</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://cine-cubano.com/actor/raul-pomares</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1669,7 +1693,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://cine-cubano.com/actor/valeria-marini</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://cine-cubano.com/actor/veronica-lynn</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cine-cubano.com/actor/vicente-revuelta</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
