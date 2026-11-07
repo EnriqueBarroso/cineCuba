@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Movie, getMovieById, getRelatedMovies } from "@/data/movies";
 import { getDirectorByName } from "@/data/directors";
-import { getActorByName } from "@/data/actors";
+import { getActorProfileByName } from "@/data/actors";
 import { SEO } from "@/components/SEO";
 import { useGoBack } from "@/hooks/useBackLink";
 import { VideoJsonLd } from "@/components/VideoJsonLd";
@@ -304,7 +304,7 @@ const MovieDetail = () => {
                   </div>
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     {movie.cast.map((member, index) => {
-                      const actorObj = getActorByName(member.name);
+                      const actorObj = getActorProfileByName(member.name);
                       const inner = (
                         <>
                           <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center shrink-0 text-gold font-serif font-bold">

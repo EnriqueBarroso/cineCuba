@@ -13,7 +13,7 @@ import { isDirectVideoFile } from "@/lib/video";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { getDirectorByName } from "@/data/directors";
-import { getActorByName } from "@/data/actors";
+import { getActorProfileByName } from "@/data/actors";
 import { sagas } from "@/data/sagas";
 import type { Saga, Episodio } from "@/data/sagas";
 
@@ -404,7 +404,7 @@ const SagaDetail = () => {
                   </div>
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     {saga.cast.map((member, i) => {
-                      const actorObj = getActorByName(member.name);
+                      const actorObj = getActorProfileByName(member.name);
                       const inner = (
                         <>
                           <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center shrink-0 text-gold font-serif font-bold">

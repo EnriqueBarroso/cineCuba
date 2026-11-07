@@ -154,13 +154,6 @@ export const actors: Actor[] = [
     awards: [],
   },
   {
-    id: 'amanda',
-    name: 'Amanda',
-    nationality: 'Cubana',
-    biography: '',
-    awards: [],
-  },
-  {
     id: 'ana-de-armas',
     name: 'Ana de Armas',
     birthYear: 1988,
@@ -629,13 +622,6 @@ export const actors: Actor[] = [
     ],
   },
   {
-    id: 'francisquito',
-    name: 'Francisquito',
-    nationality: 'Cubano',
-    biography: '',
-    awards: [],
-  },
-  {
     id: 'frank-gonzalez',
     name: 'Frank González',
     birthYear: 1946,
@@ -967,13 +953,6 @@ export const actors: Actor[] = [
     awards: [],
   },
   {
-    id: 'laura-ramos',
-    name: 'Laura Ramos',
-    nationality: 'Cubana',
-    biography: '',
-    awards: [],
-  },
-  {
     id: 'leonor-arocha',
     name: 'Leonor Arocha',
     nationality: 'Cubana',
@@ -1143,20 +1122,6 @@ export const actors: Actor[] = [
       'Premio ACTUAR por la Obra de la Vida (2019)',
       'Premio Nacional de Cine de Cuba (2025)',
     ],
-  },
-  {
-    id: 'nacha-guevara',
-    name: 'Nacha Guevara',
-    nationality: 'Argentina',
-    biography: '',
-    awards: [],
-  },
-  {
-    id: 'nancho-novo',
-    name: 'Nancho Novo',
-    nationality: 'Español',
-    biography: '',
-    awards: [],
   },
   {
     id: 'nelson-villagra',
@@ -1730,6 +1695,14 @@ export const actors: Actor[] = [
   },
 ];
 
+/** Una ficha pública exige una biografía de al menos este número de caracteres. */
+export const MIN_BIO_LENGTH = 50;
+
+/** Única fuente de verdad: solo los actores con ficha tienen página, sitemap, enlaces y entrada en /actores. */
+export const hasActorProfile = (actor: Actor): boolean => actor.biography.trim().length >= MIN_BIO_LENGTH;
+
+export const actorsWithProfile: Actor[] = actors.filter(hasActorProfile);
+
 export const getActorById = (id: string): Actor | undefined =>
   actors.find((a) => a.id === id);
 
@@ -1739,4 +1712,10 @@ export const getActorByName = (name: string): Actor | undefined => {
   const canonical = NAME_VARIANTS[name] ?? name;
   const normalized = canonical.toLowerCase().trim();
   return actors.find((a) => a.name.toLowerCase() === normalized);
+};
+
+/** Como getActorByName, pero solo devuelve actores con ficha: es lo que debe usarse para enlazar a /actor/:id. */
+export const getActorProfileByName = (name: string): Actor | undefined => {
+  const actor = getActorByName(name);
+  return actor && hasActorProfile(actor) ? actor : undefined;
 };

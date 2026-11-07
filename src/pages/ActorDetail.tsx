@@ -5,13 +5,13 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { useBackLink } from "@/hooks/useBackLink";
 import { absoluteUrl } from "@/lib/seo";
-import { getActorById, getActorByName } from "@/data/actors";
+import { getActorById, getActorByName, hasActorProfile } from "@/data/actors";
 import { movies, Movie } from "@/data/movies";
 import { sagas, Saga } from "@/data/sagas";
 import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { directorLabel } from "@/lib/directors";
-import { hasThinBio } from "@/lib/seo";
+import NotFound from "@/pages/NotFound";
 
 const ActorInitials = ({ name }: { name: string }) => {
   const initials = name
@@ -121,7 +121,9 @@ const ActorDetail = () => {
     setPhotoError(false);
   }, [id]);
 
-  const actor = id ? getActorById(id) : undefined;
+  const found = id ? getActorById(id) : undefined;
+  // Solo los actores con ficha tienen página: el resto se trata como inexistente.
+  const actor = found && hasActorProfile(found) ? found : undefined;
 
   const lifeYears = actor?.birthYear
     ? actor.deathYear
@@ -153,19 +155,7 @@ const ActorDetail = () => {
         .sort((a, b) => a.saga.anioInicio - b.saga.anioInicio)
     : [];
 
-  if (!actor) {
-    return (
-      <div className="min-h-screen bg-background">
-        <div className="container mx-auto px-6 lg:px-12 py-32 text-center">
-          <h1 className="font-serif text-3xl mb-4">Actor no encontrado</h1>
-          <Link to="/actores" className="text-gold hover:underline">
-            Volver a actores
-          </Link>
-        </div>
-        <Footer />
-      </div>
-    );
-  }
+  if (!actor) return <NotFound />;
 
   return (
     <div className="min-h-screen bg-background">
@@ -174,7 +164,6 @@ const ActorDetail = () => {
         description={`Ficha y filmografía de ${actor.name}. ${actorMovies.length} ${actorMovies.length === 1 ? "película" : "películas"} en el catálogo de CineCuba.${actor.biography ? " " + actor.biography.slice(0, 100) + "..." : ""}`}
         image={actor.photo}
         url={`https://cine-cubano.com/actor/${actor.id}`}
-        robots={hasThinBio(actor.biography) ? "noindex, follow" : undefined}
       />
 
       {/* Schema.org Person */}

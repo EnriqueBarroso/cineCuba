@@ -4,7 +4,7 @@ import { Search, X } from "lucide-react";
 import { Footer } from "@/components/Footer";
 import { Input } from "@/components/ui/input";
 import { SEO } from "@/components/SEO";
-import { actors, getActorByName, type Actor } from "@/data/actors";
+import { actorsWithProfile, getActorByName, type Actor } from "@/data/actors";
 import { movies } from "@/data/movies";
 import { cn } from "@/lib/utils";
 
@@ -16,12 +16,12 @@ const stripAccents = (value: string) =>
 const getLetter = (name: string) => stripAccents(name).charAt(0).toUpperCase();
 
 // Datos estáticos: se calculan una sola vez cruzando actors.ts con catalog.ts
-const sortedActors = [...actors].sort((a, b) =>
+const sortedActors = [...actorsWithProfile].sort((a, b) =>
   stripAccents(a.name).localeCompare(stripAccents(b.name))
 );
 
 const movieCounts = new Map<string, number>(
-  actors.map((actor) => {
+  actorsWithProfile.map((actor) => {
     const count = movies.filter((m) =>
       m.cast?.some((c) => getActorByName(c.name)?.id === actor.id)
     ).length;
