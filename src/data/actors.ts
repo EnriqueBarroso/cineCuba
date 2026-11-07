@@ -859,8 +859,10 @@ export const actors: Actor[] = [
   {
     id: 'jorge-molina',
     name: 'Jorge Molina',
+    birthYear: 1966,
+    birthPlace: 'Palma Soriano, Santiago de Cuba, Cuba',
     nationality: 'Cubano',
-    biography: '',
+    biography: "Jorge Molina Enríquez (Palma Soriano, Santiago de Cuba, 5 de febrero de 1966) es un actor y cineasta cubano de culto. Como actor ha aparecido en cerca de ochenta películas, entre largometrajes, trabajos de estudiantes y cortos, sobre todo en papeles secundarios del cine de Fernando Pérez, como Madagascar, La vida es silbar y Madrigal. Su papel más conocido es Lázaro, uno de los coprotagonistas de Juan de los muertos (2011); The Guardian destacó su interpretación como parte del núcleo cómico y satírico de la película. También participó en El acompañante (2015), en series de televisión y en decenas de cortometrajes de directores cubanos y extranjeros. Compagina su trabajo ante la cámara con la dirección, es el autor de Molina's Ferozz, y con la enseñanza: es enlace cultural en la EICTV y profesor de dirección en el Instituto Superior de Arte.",
     awards: [],
   },
   {

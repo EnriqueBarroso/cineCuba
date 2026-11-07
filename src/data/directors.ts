@@ -784,9 +784,9 @@ export const directors: Director[] = [
     photo: jorgeMolinaPhoto,
     birthYear: 1966,
     nationality: "Cubano",
-    biography: "El 'enfant terrible' del cine cubano. Sus obras transitan por el terror, el gore y el erotismo explícito, rompiendo todos los esquemas del cine institucional. 'Molina's Ferozz' es su visión gótica del campo cubano.",
+    biography: "Jorge Molina Enríquez (Palma Soriano, Santiago de Cuba, 5 de febrero de 1966) es uno de los cineastas más atípicos y de culto del cine cubano, además de actor. Estudió cine en la Unión Soviética y se graduó en la Escuela Internacional de Cine y Televisión de San Antonio de los Baños (EICTV), donde su película de tesis, Molina's Culpa, ganó un Premio Coral y fue a la vez denunciada por una organización católica por su supuesto contenido antirreligioso. Su cine, siempre de bajo presupuesto, irreverente y provocador, mezcla horror, sexo y violencia con un ecléctico universo de referencias que va de Juan Orol y Jesús Franco a Billy Wilder y Orson Welles. Debutó en el largometraje con Molina's Ferozz (2010), una versión sangrienta de Caperucita Roja que concursó en la categoría de ópera prima del 32.º Festival de La Habana y se reestrenó en 2024 en la Cineteca de Madrid. Entre sus cortos están Molina's Test, Molina's Mofo, Molina's Borealis (2013), Molina's Rebecca (2016) y Molina's Margarita (2018). Enseña dirección en el Instituto Superior de Arte.",
     activeYears: "1990-presente",
-    awards: ["Mención Especial en festivales de cine fantástico"]
+    awards: ["Premio Coral — por Molina's Culpa (película de tesis, EICTV)"]
   },
   {
     id: "eduardo-moyano",
