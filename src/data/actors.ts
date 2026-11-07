@@ -244,9 +244,16 @@ export const actors: Actor[] = [
   {
     id: 'armando-valdes-freire',
     name: 'Armando Valdés Freire',
+    birthYear: 2000,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Armando Valdés Freire (La Habana, 3 de enero de 2000) es un actor cubano. Se dio a conocer siendo un niño con Conducta (2014), de Ernesto Daranas, donde dio vida a Chala, un niño habanero de once años que vive en un entorno de marginalidad y mantiene un vínculo muy fuerte con su maestra, Carmela. Fue elegido en un casting multitudinario: llegó el último día, fue rechazado al principio y el director le pidió que volviera. Era su primera experiencia como actor, y su interpretación fue una de las más celebradas de la película: ganó el Premio Coral a la mejor actuación masculina del 36.º Festival de Cine de La Habana, el premio al mejor actor del Festival Internacional de Cine de Brasilia y el del Festival Fine Arts Miramar, en República Dominicana, y recibió una mención especial en el Festival de Málaga. Después continuó su formación actoral en la Escuela Nacional de Arte.",
+    awards: [
+      "Premio Coral a la Mejor Actuación Masculina — 36.º Festival Internacional del Nuevo Cine Latinoamericano de La Habana, por Conducta (2014)",
+      "Premio a la Mejor Actuación Masculina — Festival Internacional de Cine de Brasilia, por Conducta (2014)",
+      "Premio al Mejor Actor — Festival Internacional de Cine Fine Arts Miramar (República Dominicana), por Conducta",
+      "Mención Especial a la mejor actuación masculina — Festival de Cine de Málaga, por Conducta (2014)",
+    ],
   },
   {
     id: 'audry-gutierrez-alea',
@@ -345,7 +352,7 @@ export const actors: Actor[] = [
     id: 'carlos-ever-fonseca',
     name: 'Carlos Ever Fonseca',
     nationality: 'Cubano',
-    biography: '',
+    biography: "Carlos Ever Fonseca es un actor cubano, graduado de la Escuela Nacional de Arte y del Instituto Superior de Arte en la especialidad de actuación. Es hijo del artista plástico Ever Fonseca, Premio Nacional de Artes Plásticas 2012, y ha sabido combinar en su vida las artes plásticas y la actuación. Fue uno de los rostros jóvenes más habituales de la televisión cubana y se abrió camino en el cine con El Benny (2006) y, sobre todo, con Los dioses rotos (2008), de Ernesto Daranas, donde interpretó a Alberto, la versión actual del célebre proxeneta habanero Alberto Yarini; su papel fue elogiado por la gracia y la vehemencia que dio al personaje. Se estableció en Colombia, donde ha actuado en casi diez telenovelas, como Mujeres al límite, La madame y La viuda negra, y se ha dedicado también a la creación digital con su empresa Hologram Colombia.",
     awards: [],
   },
   {
@@ -808,9 +815,14 @@ export const actors: Actor[] = [
   {
     id: 'jazz-vila',
     name: 'Jazz Vilá',
+    birthYear: 1984,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Luis Yasser Vilá Cabrera, conocido como Jazz Vilá (La Habana, 21 de agosto de 1984), es un actor, director, presentador, productor y dramaturgo cubano. Se graduó de la Escuela Nacional de Arte, debutó en la telenovela Las huérfanas de la Obra Pía (2000) y se formó en el teatro con El Público, bajo la dirección de Carlos Díaz, en obras como Ícaros y La loca de Chaillot. Su primera película fue Personal Belongings (2006), de Alejandro Brugués, y su carrera dio un giro con Juan de los muertos (2011), coproducción cubano-española que ganó el Goya, y con El acompañante (2015), de Pavel Giroud, donde hace del antagonista Boris. También ha participado en Fátima o el Parque de la Fraternidad, El rey de La Habana, Hotel Coppelia y la serie Paquita Salas. Es fundador y director de la compañía Jazz Vilá Projects, cuyo montaje Farándula superó las 80 funciones con el teatro lleno; en 2017 presentó Eclipse en Estados Unidos, el primer montaje dirigido por un cubano con elenco de la isla y en inglés, y ha estrenado Candela y Farándula en Nueva York. Con su fundación Jazz Vilá PorDentro apoya a nuevos talentos.",
+    awards: [
+      "Premio Goya a la Mejor Película Iberoamericana — por Juan de los muertos (2013, compartido con el equipo)",
+      "Nominación a Mejor Actor Principal — Asociación de Cineastas de la República Dominicana (ADOCINE), por Hotel Coppelia",
+    ],
   },
   {
     id: 'joel-joan',
