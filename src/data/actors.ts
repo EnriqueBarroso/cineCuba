@@ -208,9 +208,20 @@ export const actors: Actor[] = [
   {
     id: 'ariadna-gil',
     name: 'Ariadna Gil',
+    birthYear: 1969,
+    birthPlace: 'Barcelona, España',
     nationality: 'Española',
-    biography: '',
-    awards: [],
+    biography: "Ariadna Gil Giner (Barcelona, 23 de enero de 1969) es una actriz catalana, hija del activista político August Gil Matamala. Estudió arte dramático en el Institut del Teatre de Barcelona y debutó muy joven en Lola, de Bigas Luna, el director que la descubrió. Su gran éxito llegó con Belle Époque (1992), de Fernando Trueba, que ganó el Oscar a la mejor película de habla no inglesa y le dio el Premio Goya a la mejor actriz protagonista. Desde entonces ha dosificado sus apariciones y ha elegido con cuidado sus guiones: Hormigas en la boca, de Mariano Barroso; Alatriste y El laberinto del fauno (2006); Appaloosa (2008), de Ed Harris; Sólo quiero caminar (2008), que le valió nominaciones al Goya y al Ariel; y El baile de la Victoria (2009). Ha trabajado en más de cuarenta películas.",
+    awards: [
+      "Premio Goya a la Mejor Actriz Protagonista — por Belle Époque (1993)",
+      "Fotogramas de Plata a la Mejor Actriz de Cine — por Belle Époque",
+      "Premio a la Mejor Actriz — Festival de Comedia de Peñíscola, por Amo tu cama rica (1992)",
+      "Premio Cóndor de Plata a la Mejor Actriz Protagonista (Argentina) — por Nueces para el amor (2001)",
+      "Premio a la Mejor Actriz — Fantasporto, por Ausentes (2007)",
+      "Nominación Goya a la Mejor Actriz de Reparto — por Alatriste (2007)",
+      "Nominación Goya a la Mejor Actriz Protagonista — por Sólo quiero caminar (2009)",
+      "Nominación Premio Ariel a la Mejor Actriz — por Sólo quiero caminar (2009)",
+    ],
   },
   {
     id: 'armando-miguel-gomez',
@@ -351,9 +362,15 @@ export const actors: Actor[] = [
   {
     id: 'carmen-salinas',
     name: 'Carmen Salinas',
-    nationality: 'Cubana',
-    biography: '',
-    awards: [],
+    birthYear: 1939,
+    birthPlace: 'Torreón, Coahuila, México',
+    deathYear: 2021,
+    nationality: 'Mexicana',
+    biography: "Carmen Salinas Lozano (Torreón, Coahuila, 5 de octubre de 1939 — 9 de diciembre de 2021) fue una de las actrices más queridas del cine, la televisión y el teatro de México, con más de sesenta años de trayectoria. Empezó cantando en emisoras de radio del norte del país antes de cumplir los veinte años y debutó en la televisión en 1964, en la telenovela La vecindad, bajo la dirección de Ernesto Alonso. Participó en una veintena de telenovelas, una docena de series y 114 películas, y fue una de las grandes figuras del cine de ficheras, con títulos como Tívoli, Las noches de Blanquita, El rey de los albures y La pulquería, y con su personaje de La Corcholata. También fue empresaria teatral —produjo el espectáculo Aventurera— y diputada. En la televisión se la recuerda en La vecindad, María la del barrio y, más recientemente, en series como Hasta en las mejores familias. En el cine cubano participó en Un rey en La Habana (2005), de Alexis Valdés. Murió a los 82 años.",
+    awards: [
+      "Diosa de Plata (2008) — por La misma luna",
+      "Varios premios TVyNovelas",
+    ],
   },
   {
     id: 'cesar-evora',
@@ -478,9 +495,19 @@ export const actors: Actor[] = [
   {
     id: 'eduard-fernandez',
     name: 'Eduard Fernández',
+    birthYear: 1964,
+    birthPlace: 'Barcelona, España',
     nationality: 'Español',
-    biography: '',
-    awards: [],
+    biography: "Eduard Fernández Serrano (Barcelona, 25 de agosto de 1964) es uno de los grandes actores del cine y el teatro español. Empezó estudiando mimo en el Institut del Teatre y actuando en locales de Barcelona como el Cabaret Llantiol, inició su carrera con la compañía Els Joglars y trabajó en el Teatre Lliure con Calixto Bieito y Lluís Pasqual. Debutó en la televisión en 1987 con la serie catalana Planeta imaginari. Fue candidato por primera vez al Goya por Los lobos de Washington (1999), de Mariano Barroso, y ha ganado cuatro Premios Goya: como protagonista por Fausto 5.0 (2001) y Marco (2024), y como secundario por En la ciudad (2003) y Mientras dure la guerra (2019), lo que, según la prensa, lo convierte en el segundo actor más premiado en la historia de estos galardones, por detrás de Javier Bardem. Ha ganado también la Concha de Plata al mejor actor en San Sebastián (2016) y cinco premios Gaudí, y ha trabajado en títulos como El método, Biutiful, Smoking Room, Pa negre, El 47 y, en el cine con vínculos cubanos, Hormigas en la boca. En 2025 recibió el Premio Nacional de Cinematografía. Debutó como director con el cortometraje El otro.",
+    awards: [
+      "Premio Goya al Mejor Actor Protagonista — por Fausto 5.0 (2001)",
+      "Premio Goya al Mejor Actor de Reparto — por En la ciudad (2003)",
+      "Premio Goya al Mejor Actor de Reparto — por Mientras dure la guerra (2019)",
+      "Premio Goya al Mejor Actor Protagonista — por Marco (2024)",
+      "Concha de Plata al Mejor Actor — Festival de San Sebastián (2016)",
+      "Cinco premios Gaudí",
+      "Premio Nacional de Cinematografía (2025)",
+    ],
   },
   {
     id: 'eduardo-moure',
@@ -534,7 +561,7 @@ export const actors: Actor[] = [
     birthPlace: 'Camagüey, Cuba',
     deathYear: 1997,
     nationality: 'Cubano',
-    biography: "Erdwin Juventino Fernández Sánchez (Camagüey, 29 de enero de 1928 — La Habana, 23 de octubre de 1997) fue un actor cubano de radio, televisión, cine y circo, inmortalizado por el payaso Trompoloco. Escribió, dirigió y protagonizó numerosos programas infantiles. Dio sus primeros pasos en el teatro bajo la dirección de Luis Martínez Casado y en 1951 empezó en la televisión con pequeños papeles en espacios como Televisión General Electric, donde hacía de gángster junto al joven Enrique Almirante. En el teatro se recuerdan Los cuentos del Decamerón y La última carta de la baraja, ambas dirigidas por Raquel Revuelta. A partir de 1977 formó parte del elenco de Alegrías de sobremesa, uno de los programas más populares de la radio cubana, de Radio Progreso. En el cine participó en Las aventuras de Juan Quin Quín (1967), de Julio García Espinosa. Es el padre del también actor Erdwin Fernández Collado.",
+    biography: "Erdwin Juventino Fernández Sánchez (Camagüey, 29 de enero de 1928 — La Habana, 23 de octubre de 1997) fue un actor cubano de radio, televisión, cine y circo, inmortalizado por el payaso Trompoloco. Escribió, dirigió y protagonizó numerosos programas infantiles. Dio sus primeros pasos en el teatro bajo la dirección de Luis Martínez Casado y en 1951 empezó en la televisión con pequeños papeles en espacios como Televisión General Electric, donde hacía de gángster junto al joven Enrique Almirante. En el teatro se recuerdan Los cuentos del Decamerón y La última carta de la baraja, ambas dirigidas por Raquel Revuelta. A partir de 1977 formó parte del elenco de Alegrías de sobremesa, uno de los programas más populares de la radio cubana, de Radio Progreso. En el cine participó en Las aventuras de Juan Quin Quín (1967), de Julio García Espinosa. Es el padre del también actor Erdwin Fernández Collado. También figura entre las voces del largometraje animado Elpidio Valdés (1979), según sus créditos de doblaje.",
     awards: [],
   },
   {
@@ -604,9 +631,19 @@ export const actors: Actor[] = [
   {
     id: 'gabino-diego',
     name: 'Gabino Diego',
+    birthYear: 1966,
+    birthPlace: 'Madrid, España',
     nationality: 'Español',
-    biography: '',
-    awards: [],
+    biography: "Gabino Diego Solís (Madrid, 18 de septiembre de 1966) es un actor español, uno de los grandes rostros de la comedia del cine español de los años 90. Hijo de padres cubanos, a quienes la Revolución les expropió las tiendas y negocios que tenían, estudió en el Runnymede College y debutó en el cine a los diecisiete años, casi por casualidad, al presentarse a las pruebas de Las bicicletas son para el verano (1984). Títulos como El viaje a ninguna parte —por la que ganó el Premio Luis Buñuel—, ¡Ay, Carmela!, que le valió el Goya al mejor actor de reparto, y El rey pasmado lo convirtieron en una figura del cine español; recibió además nominaciones al Goya por Belle Époque, Los peores años de nuestra vida y La hora de los valientes. Más adelante apareció en Torrente 2: Misión en Marbella, La balsa de piedra, Pata negra (2001) y la serie Águila Roja, y en 2018 estrenó Tiempo después, de José Luis Cuerda.",
+    awards: [
+      "Premio Goya al Mejor Actor de Reparto — por ¡Ay, Carmela! (1991)",
+      "Premio Luis Buñuel — por El viaje a ninguna parte",
+      "Premio del Jurado al Mejor Reparto — Premios del Cine Europeo, por La balsa de piedra (2002, compartido)",
+      "Nominación Goya al Mejor Actor — por El rey pasmado (1992)",
+      "Nominación Goya al Mejor Actor de Reparto — por Belle Époque (1993)",
+      "Nominación Goya al Mejor Actor — por Los peores años de nuestra vida (1995)",
+      "Nominación Goya al Mejor Actor — por La hora de los valientes (1999)",
+    ],
   },
   {
     id: 'gaspar-de-santelices',
@@ -1118,9 +1155,13 @@ export const actors: Actor[] = [
   {
     id: 'olivier-martinez',
     name: 'Olivier Martinez',
+    birthYear: 1966,
+    birthPlace: 'París, Francia',
     nationality: 'Francés',
-    biography: '',
-    awards: [],
+    biography: "Olivier Martinez (París, 12 de enero de 1966) es un actor francés. De familia trabajadora, se formó como boxeador y soñaba con ser profesional, pero decidió dedicarse a la actuación tras un traumatismo y estudió en el Conservatorio Nacional Superior de Arte Dramático. Debutó en el cine en 1990 con Plein fer y se dio a conocer con Un, deux, trois, soleil (1993), de Bertrand Blier, que le valió el César al actor más prometedor. Su carrera continuó en Europa con La camarera del Titanic (1997) y La ciudad de los prodigios (1999), y dio el salto internacional con Antes que anochezca (2000), de Julian Schnabel, donde compartió reparto con Javier Bardem, y con Infiel (2002), de Adrian Lyne, S.W.A.T. (2003) y Vidas ajenas (2004).",
+    awards: [
+      "Premio César al Actor más Prometedor — por Un, deux, trois, soleil (1994)",
+    ],
   },
   {
     id: 'omar-franco',
@@ -1180,9 +1221,15 @@ export const actors: Actor[] = [
   {
     id: 'peter-lohmeyer',
     name: 'Peter Lohmeyer',
+    birthYear: 1962,
+    birthPlace: 'Niedermarsberg (hoy Marsberg), Alemania',
     nationality: 'Alemán',
-    biography: '',
-    awards: [],
+    biography: "Peter Lohmeyer (Niedermarsberg, hoy Marsberg, 22 de enero de 1962) es un actor alemán, uno de los rostros más habituales del cine y la televisión de su país, con más de cien títulos desde 1980. Hijo de un pastor protestante, creció en Hagen, Stuttgart y Dortmund, jugó al fútbol en las categorías juveniles del VfB Stuttgart y actuó en el teatro infantil y juvenil de Dortmund. Estudió interpretación en la Escuela de Arte Dramático de Westfalia, en Bochum, y se estrenó como profesional en el teatro de esa ciudad en 1984; su debut en el cine fue Tiger, Löwe, Panther (1988), de Dominik Graf. Ganó el Premio del Cine Alemán en oro por Trains'n'Roses (1998), el Premio del Público al mejor actor del año en 2004 por El milagro de Berna, y de 2013 a 2020 interpretó a la Muerte en el Jedermann del Festival de Salzburgo. En el cine cubano trabajó en Kleines Tropicana y Hacerse el sueco, de Daniel Díaz Torres.",
+    awards: [
+      "Premio del Cine Alemán en Oro al Mejor Actor de Reparto — por Trains'n'Roses (1998)",
+      "Premio del Público al Mejor Actor del Año — Premios del Cine Alemán, por El milagro de Berna (2004)",
+      "Premio de Televisión de Baviera — por Der Elefant in meinem Bett (2000)",
+    ],
   },
   {
     id: 'pilin-vallejo',
