@@ -48,6 +48,12 @@ export const routes: RouteObject[] = [
         })),
       },
       {
+        path: "decadas",
+        lazy: () => import("./pages/Decadas").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
+      },
+      {
         path: "epocas",
         lazy: () => import("./pages/Eras").then((m) => ({
           Component: () => <PageTransition><m.default /></PageTransition>,

@@ -28,7 +28,7 @@ const MovieCardSkeleton = () => {
   );
 };
 
-const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
+export const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
   movie: Movie;
   isFavorite: boolean;
   onToggleFavorite: () => void;

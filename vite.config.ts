@@ -28,6 +28,7 @@ export default defineConfig(({ mode }) => ({
       "/peliculas",
       "/directores",
       "/epocas",
+      "/decadas",
       "/acerca",
       "/terminos",
       "/seriales",

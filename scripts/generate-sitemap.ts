@@ -87,6 +87,7 @@ const staticRoutes: SitemapEntry[] = [
   { path: "/peliculas",   priority: "0.9", changefreq: "weekly"  },
   { path: "/directores",  priority: "0.9", changefreq: "weekly"  },
   { path: "/epocas",      priority: "0.8", changefreq: "monthly" },
+  { path: "/decadas",     priority: "0.8", changefreq: "monthly" },
   { path: "/seriales",    priority: "0.8", changefreq: "monthly" },
   { path: "/cortos",      priority: "0.8", changefreq: "monthly" },
   { path: "/actores",     priority: "0.8", changefreq: "monthly" },
