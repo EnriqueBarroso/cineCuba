@@ -38,7 +38,7 @@ export const MovieCard = ({ movie, isFavorite, onToggleFavorite }: {
       <article>
         <div className="relative aspect-[2/3] rounded-xl overflow-hidden bg-zinc-800 shadow-lg shadow-black/40 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-black/60">
           <img
-            src={movie.poster}
+            src={movie.poster} loading="lazy" decoding="async" width={400} height={600}
             alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />

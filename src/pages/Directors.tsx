@@ -51,7 +51,7 @@ const Directors = () => {
                   <div className="aspect-[3/4] overflow-hidden bg-secondary border border-hairline relative">
                     {director.photo ? (
                       <img
-                        src={director.photo}
+                        src={director.photo} loading="lazy" decoding="async" width={450} height={600}
                         alt={`${director.name} - Director de cine cubano`}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />

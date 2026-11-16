@@ -49,7 +49,7 @@ const ActorCard = ({ actor }: { actor: Actor }) => {
         <div className="aspect-[3/4] overflow-hidden bg-secondary border border-hairline relative">
           {actor.photo && !photoError ? (
             <img
-              src={actor.photo}
+              src={actor.photo} loading="lazy" decoding="async" width={450} height={600}
               alt={`${actor.name} - Actor cubano`}
               onError={() => setPhotoError(true)}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

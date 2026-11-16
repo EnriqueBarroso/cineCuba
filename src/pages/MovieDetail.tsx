@@ -27,7 +27,7 @@ const RelatedMovieCard = ({
       <article>
         <div className="relative aspect-[2/3] overflow-hidden bg-secondary">
           <img
-            src={movie.poster}
+            src={movie.poster} loading="lazy" decoding="async" width={400} height={600}
             alt={`Poster de ${movie.title} (${movie.year}) - Dir. ${directorLabel(movie.director)}`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
