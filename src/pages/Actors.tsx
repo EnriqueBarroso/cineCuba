@@ -7,6 +7,7 @@ import { SEO } from "@/components/SEO";
 import { actorsWithProfile, getActorByName, type Actor } from "@/data/actors";
 import { movies } from "@/data/movies";
 import { cn } from "@/lib/utils";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
 
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
@@ -82,6 +83,8 @@ const ActorCard = ({ actor }: { actor: Actor }) => {
 };
 
 const Actors = () => {
+  // /actores#letra-m lleva a la sección de esa letra (los botones A-Z siguen haciendo scroll suave sin tocar la URL).
+  useScrollToHash();
   const [searchQuery, setSearchQuery] = useState("");
   const [activeLetter, setActiveLetter] = useState(availableLetters[0] ?? "");
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
@@ -208,6 +211,7 @@ const Actors = () => {
                 <section
                   key={letter}
                   ref={(el) => (sectionRefs.current[letter] = el)}
+                  id={`letra-${letter.toLowerCase()}`}
                   data-letter={letter}
                   className="scroll-mt-36"
                 >

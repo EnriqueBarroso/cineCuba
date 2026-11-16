@@ -1,12 +1,10 @@
-import { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { MovieCard } from "@/components/MovieGrid";
 import { useFavorites } from "@/hooks/useFavorites";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
 import { getDecadeGroups } from "@/lib/decades";
-
-const PAGE_TRANSITION_MS = 500; // duración de PageTransition
 
 // Datos estáticos: se calculan una sola vez.
 const groups = getDecadeGroups();
@@ -14,19 +12,9 @@ const totalMovies = groups.reduce((sum, g) => sum + g.movies.length, 0);
 
 const Decadas = () => {
   const { isFavorite, toggleFavorite } = useFavorites();
-  const { hash } = useLocation();
 
-  // ScrollToTop sube al inicio en cada carga: si la URL trae #anos-80, volvemos a su bloque.
-  // Se espera a que acabe la transición de página (0,5 s, con un scale que desplaza el contenido) y el salto es
-  // instantáneo: el CSS global scroll-behavior: smooth lo animaría.
-  useEffect(() => {
-    if (!hash) return;
-    const id = decodeURIComponent(hash.slice(1));
-    const timer = window.setTimeout(() => {
-      document.getElementById(id)?.scrollIntoView({ block: "start", behavior: "instant" });
-    }, PAGE_TRANSITION_MS + 100);
-    return () => window.clearTimeout(timer);
-  }, [hash]);
+  // Si la URL trae #anos-80, vuelve a su bloque tras el scroll al inicio de ScrollToTop.
+  useScrollToHash();
 
   const scrollToDecade = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });

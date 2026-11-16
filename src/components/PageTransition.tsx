@@ -29,10 +29,13 @@ const pageVariants = {
   },
 };
 
+/** Duración (ms) de la transición de página; useScrollToHash espera a que termine en las navegaciones internas. */
+export const PAGE_TRANSITION_MS = 500;
+
 const pageTransition: Transition = {
   type: "tween",
   ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
-  duration: 0.5,
+  duration: PAGE_TRANSITION_MS / 1000,
 };
 
 /** true mientras se renderiza la primera página (prerender y primer render del cliente). Léelo durante el render, no en efectos. */
