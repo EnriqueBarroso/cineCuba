@@ -184,6 +184,7 @@ export const actors: Actor[] = [
     birthYear: 1941,
     birthPlace: 'Pinar del Río, Cuba',
     nationality: 'Cubana',
+    photo: '/images/actors/ana-vina.jpg',
     biography: "Ana Viña Quintana (Pinar del Río, 12 de diciembre de 1941) es una actriz cubana de cine, teatro y televisión. Empezó en la televisión en 1957 como modelo en anuncios publicitarios y debutó en el cine con Las doce sillas (1962), de Tomás Gutiérrez Alea. En 1965 participó en la película soviética Las mil ventanas. Su filmografía incluye Los sobrevivientes (1979), Techo de vidrio (1981), Hasta cierto punto (1983), Una novia para David (1985) y Vals de La Habana Vieja (1988), por la que recibió el Catalina de Oro a la mejor actuación femenina en el Festival de Cartagena de Indias, en Colombia, en 1989. Durante cinco años dio clases de actuación en el Instituto Superior de Arte. Actualmente reside en Estados Unidos.",
     awards: [
       "Catalina de Oro a la Mejor Actuación Femenina — Festival Internacional de Cine de Cartagena, por Vals de La Habana Vieja (1989)",
@@ -317,6 +318,7 @@ export const actors: Actor[] = [
     name: 'Carlos Cruz',
     birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
+    photo: '/images/actors/carlos-cruz.jpg',
     biography: "Carlos Cruz es un actor cubano de cine, teatro y televisión, natural de La Habana. Se formó en las escuelas de arte del país y fue durante años pieza del grupo teatral Rita Montaner, con el que recorrió la isla y actuó en unas sesenta obras; en 1984 recibió un premio como mejor actor joven de teatro en Cuba. Actor de carácter por vocación, destacó en algunas de las películas más importantes del cine cubano de los 80 y los 90, como Un hombre de éxito (1986) y La bella del Alhambra (1989). Su papel más conocido es el del burócrata pomposo Adolfo en Guantanamera (1995), de Tomás Gutiérrez Alea y Juan Carlos Tabío, que le valió el premio al mejor actor en el Festival de Gramado, en Brasil. Ha actuado en teatro en Uruguay, Argentina, Perú, Bolivia, Venezuela, México, la Unión Soviética y España. Según ha contado, Guantanamera marcó el final de su carrera en Cuba, y se estableció en Miami.",
     awards: [
       "Premio al Mejor Actor — Festival de Cine de Gramado (Brasil), por Guantanamera",
@@ -564,6 +566,7 @@ export const actors: Actor[] = [
     birthPlace: 'Manzanillo, Cuba',
     deathYear: 1983,
     nationality: 'Cubano',
+    photo: '/images/actors/enrique-santiesteban.jpg',
     biography: "Enrique Santiesteban Xiqués (Manzanillo, 1910 — La Habana, 1983) fue un destacado actor cubano de radio, teatro, cine y televisión. Trabajó en el cine desde antes de la Revolución, con títulos como Yo soy el héroe y La canción del regreso (1940), Los que no deben nacer (1953) o Más fuerte que el amor (1955). Tras 1959 se convirtió en una de las caras de los clásicos del cine cubano: en Las doce sillas (1962) interpretó a Hipólito Garrigó, el hombre que busca unos diamantes escondidos en unas sillas confiscadas; también participó en Las aventuras de Juan Quin Quín (1967) y en Los sobrevivientes (1979), de Tomás Gutiérrez Alea. En la televisión se le recuerda sobre todo por su personaje del alcalde Plutarco Tuero en San Nicolás del Peladero, uno de los programas emblemáticos de la televisión cubana.",
     awards: [],
   },
@@ -615,6 +618,7 @@ export const actors: Actor[] = [
     birthYear: 1955,
     birthPlace: 'Holguín, Cuba',
     nationality: 'Cubano',
+    photo: '/images/actors/fernando-hechavarria.jpg',
     biography: "Fernando Rogelio Hechavarría Gibert (Holguín, 16 de septiembre de 1955) es un actor cubano de teatro, cine y televisión. Estudió primero diseño, pintura y escultura en la Escuela Provincial de Artes Plásticas de Holguín y se graduó de actuación en la Escuela Nacional de Arte en 1976. Entre 1978 y 1994 trabajó repetidamente con la compañía Teatro Escambray, una experiencia pionera de teatro comunitario en las montañas cubanas, y desde 1995 intensificó su trabajo con El Público, dirigido por Carlos Díaz. En el cine debutó en La tierra y el cielo, de Manuel Octavio Gómez, y ha participado en Plácido (1986), Amor vertical (1997), Pata Negra (2001), Ciudad en rojo y Regreso a Ítaca (2014), entre otras. En la televisión es muy recordado como Nacho Capitán en la telenovela Tierra Brava. Ha llevado su trabajo a 26 festivales internacionales de teatro y cine, de España a Finlandia, y ha recibido reconocimientos como el de mejor actuación masculina en cine por Pon tu pensamiento en mí.",
     awards: [
       "Mejor actuación masculina en cine — por Pon tu pensamiento en mí",
@@ -846,6 +850,7 @@ export const actors: Actor[] = [
     birthYear: 1966,
     birthPlace: 'Palma Soriano, Santiago de Cuba, Cuba',
     nationality: 'Cubano',
+    photo: '/images/actors/jorge-molina.jpg',
     biography: "Jorge Molina Enríquez (Palma Soriano, Santiago de Cuba, 5 de febrero de 1966) es un actor y cineasta cubano de culto. Como actor ha aparecido en cerca de ochenta películas, entre largometrajes, trabajos de estudiantes y cortos, sobre todo en papeles secundarios del cine de Fernando Pérez, como Madagascar, La vida es silbar y Madrigal. Su papel más conocido es Lázaro, uno de los coprotagonistas de Juan de los muertos (2011); The Guardian destacó su interpretación como parte del núcleo cómico y satírico de la película. También participó en El acompañante (2015), en series de televisión y en decenas de cortometrajes de directores cubanos y extranjeros. Compagina su trabajo ante la cámara con la dirección, es el autor de Molina's Ferozz, y con la enseñanza: es enlace cultural en la EICTV y profesor de dirección en el Instituto Superior de Arte.",
     awards: [],
   },
@@ -1065,6 +1070,7 @@ export const actors: Actor[] = [
     birthPlace: 'Guantánamo, Cuba',
     deathYear: 2025,
     nationality: 'Cubano',
+    photo: '/images/actors/mario-limonta.jpg',
     biography: "Mario Limonta (Guantánamo, 19 de enero de 1936 — La Habana, 18 de enero de 2025) fue un actor de cine, televisión, radio y teatro, muy querido por el público cubano. Empezó como declamador en la radio de su provincia y en 1955 se trasladó a La Habana para estudiar Derecho, carrera que abandonó pronto. Se dio a conocer en el programa de aficionados La Corte Suprema del Arte, trabajó como voz de radioteatro en el Circuito Nacional Cubano (hoy Radio Rebelde) y hasta 1965 integró el grupo teatral Guernica, del Teatro Nacional, donde protagonizó Bodas de sangre, Las impuras y Las vacas gordas. Debutó en el cine en 1964 con La decisión, de José Massip, y después participó en De cierta manera (1974), El Brigadista (1977), Retrato de Teresa (1979), Miel para Oshún (2001) y El cuerno de la abundancia. En la televisión es inolvidable como el sargento Arencibia del programa humorístico San Nicolás del Peladero. En La Corte Suprema del Arte conoció a Aurora Basnuevo, con quien se casó en 1960; interpretaron juntos numerosos papeles como pareja, sobre todo en comedias, hasta la muerte de ella en 2022.",
     awards: [
       "Premio Nacional de Televisión (2009)",
@@ -1442,6 +1448,7 @@ export const actors: Actor[] = [
     birthPlace: 'Camagüey, Cuba',
     deathYear: 2025,
     nationality: 'Cubano',
+    photo: '/images/actors/samuel-claxton.jpg',
     biography: "Samuel Claxton (Camagüey, 1943 — La Habana, 17 de mayo de 2025) fue uno de los rostros más familiares del cine, el teatro y la televisión cubanos durante más de seis décadas. Empezó en el Grupo Taller Dramático con la obra María Antonia y se consolidó como un actor versátil en montajes como Divinas palabras, Lumumba y Santa Camila de La Habana Vieja. Participó en más de sesenta producciones de cine y teatro, entre ellas La última cena (1976) de Tomás Gutiérrez Alea, Retrato de Teresa y Caravana. En la televisión se le recuerda sobre todo como Mantilla, en la serie Su propia guerra. Murió en La Habana a los 82 años, y el gremio actoral lo despidió como uno de sus grandes protagonistas de los últimos sesenta años.",
     awards: [],
   },
