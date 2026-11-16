@@ -85,7 +85,16 @@ const Suggest = () => {
     setSubmitted(false);
   };
 
-  if (loading || !user) return null;
+  // Sin sesión no se pinta el formulario, pero el <head> (noindex) debe salir también en el prerender.
+  if (loading || !user)
+    return (
+      <SEO
+        title="Sugerir Título"
+        description="Sugiere una película, serial o cortometraje cubano para añadir al catálogo de CineCuba."
+        url="https://cine-cubano.com/sugerir"
+        noindex
+      />
+    );
 
   return (
     <div className="min-h-screen bg-background">
@@ -93,6 +102,7 @@ const Suggest = () => {
         title="Sugerir Título"
         description="Sugiere una película, serial o cortometraje cubano para añadir al catálogo de CineCuba."
         url="https://cine-cubano.com/sugerir"
+        noindex
       />
 
       <main className="pt-32 pb-20">

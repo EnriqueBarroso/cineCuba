@@ -34,6 +34,10 @@ export default defineConfig(({ mode }) => ({
       "/seriales",
       "/cortos",
       "/actores",
+      "/favoritos",
+      "/sugerir",
+      "/admin",
+      "/404", // casa con la ruta "*": genera dist/404.html con NotFound, que Vercel sirve en URLs inexistentes
       ...movieIds.map((id) => `/pelicula/${id}`),
       ...directorIds.map((id) => `/director/${id}`),
       ...eraIds.map((id) => `/epoca/${id}`),

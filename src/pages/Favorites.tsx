@@ -67,6 +67,7 @@ const Favorites = () => {
         title="Mis Favoritos"
         description="Tu colección personal de películas del cine cubano."
         url="https://cine-cubano.com/favoritos"
+        noindex
       />
 
       <main className="pt-32 pb-20">

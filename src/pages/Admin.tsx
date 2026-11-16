@@ -104,11 +104,12 @@ const Admin = () => {
     todas: sugerencias.length,
   };
 
-  if (loading || !user) return null;
+  // Sin sesión no se pinta el panel, pero el <head> (noindex) debe salir también en el prerender.
+  if (loading || !user) return <SEO title="Admin — Sugerencias" description="" url="https://cine-cubano.com/admin" noindex />;
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO title="Admin — Sugerencias" description="" url="https://cine-cubano.com/admin" />
+      <SEO title="Admin — Sugerencias" description="" url="https://cine-cubano.com/admin" noindex />
 
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-6 lg:px-12">

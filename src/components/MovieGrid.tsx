@@ -89,20 +89,26 @@ const MovieGrid = () => {
   
   // 1. OBTENEMOS LOS PARÁMETROS Y LA FUNCIÓN PARA ACTUALIZARLOS
   const [searchParams, setSearchParams] = useSearchParams();
-  const urlSearchQuery = searchParams.get("search");
+  // El prerender no ve la query string: hasta montar se usan los valores por defecto (página 1, 24 por página, sin
+  // búsqueda) para que el primer render del cliente coincida con el HTML estático y no haya error de hidratación.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const urlSearchQuery = mounted ? searchParams.get("search") : null;
 
   // 2. PÁGINA Y TAMAÑO DE PÁGINA VIENEN DE LA URL (?page=3&perPage=24)
   const isMobile = useIsMobile();
   const defaultPerPage = isMobile ? DEFAULT_PER_PAGE_MOBILE : DEFAULT_PER_PAGE_DESKTOP;
-  const rawPage = searchParams.get("page");
+  const rawPage = mounted ? searchParams.get("page") : null;
   const requestedPage = parseInt(rawPage || "1", 10);
-  const rawPerPage = Number(searchParams.get("perPage"));
+  const rawPerPage = Number(mounted ? searchParams.get("perPage") : null);
   const perPage = (PER_PAGE_OPTIONS as readonly number[]).includes(rawPerPage) ? rawPerPage : defaultPerPage;
 
-  const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
+  // Arranca con el catálogo completo: así el prerender (donde no corren los efectos) ya pinta la primera página.
+  const [filteredMovies, setFilteredMovies] = useState<Movie[]>(catalogMovies);
   const [isFiltering, setIsFiltering] = useState(false);
 
-  const lastFilterSignature = useRef("");
+  // Firma inicial = catálogo completo: la primera emisión de MovieSearch (sin filtros) se ignora y no aparecen esqueletos al hidratar.
+  const lastFilterSignature = useRef(catalogMovies.map(m => m.id).join(','));
 
   // === LÓGICA DE FILTRADO ===
   useEffect(() => {
