@@ -8,14 +8,11 @@ export const AnalyticsTracker = () => {
   const location = useLocation();
   const [initialized, setInitialized] = useState(false);
 
-  // 1. Inicializar GA una sola vez al cargar la web
+  // 1. Inicializar GA una sola vez al cargar la web (en local no se rastrea, para no ensuciar los datos)
   useEffect(() => {
     if (!window.location.href.includes("localhost")) {
       ReactGA.initialize(TRACKING_ID);
       setInitialized(true);
-      console.log("GA Inicializado");
-    } else {
-      console.log("GA: Modo Local (No rastreando para no ensuciar datos)");
     }
   }, []);
 
