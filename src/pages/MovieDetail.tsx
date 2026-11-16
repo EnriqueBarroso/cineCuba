@@ -33,6 +33,8 @@ const RelatedMovieCard = ({
           />
           <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
           <button
+            aria-label={isFavorite ? `Quitar «${movie.title}» de favoritos` : `Añadir «${movie.title}» a favoritos`}
+            aria-pressed={isFavorite}
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -242,7 +244,7 @@ const MovieDetail = () => {
                     <Film className="w-5 h-5" /> Próximamente
                   </Button>
                 )}
-                <Button variant="outline" size="lg" className={`h-12 px-4 gap-2 text-base border-white/20 hover:bg-white/10 ${favorite ? 'text-gold border-gold/50 bg-gold/10' : 'text-white'}`} onClick={() => toggleFavorite(movie.id)}>
+                <Button variant="outline" size="lg" className={`h-12 px-4 gap-2 text-base border-white/20 hover:bg-white/10 ${favorite ? 'text-gold border-gold/50 bg-gold/10' : 'text-white'}`} aria-label={favorite ? `Quitar «${movie.title}» de favoritos` : `Añadir «${movie.title}» a favoritos`} onClick={() => toggleFavorite(movie.id)}>
                   <Heart className={`w-5 h-5 ${favorite ? 'fill-gold' : ''}`} />
                 </Button>
               </div>

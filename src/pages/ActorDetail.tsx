@@ -49,6 +49,8 @@ const ActorFilmCard = ({
         <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
 
         <button
+          aria-label={isFavorite ? `Quitar «${movie.title}» de favoritos` : `Añadir «${movie.title}» a favoritos`}
+          aria-pressed={isFavorite}
           onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();

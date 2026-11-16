@@ -156,6 +156,7 @@ const SerialDetail = () => {
                   variant="outline"
                   size="lg"
                   className={`h-12 px-4 gap-2 text-base border-white/20 hover:bg-white/10 ${favorite ? 'text-gold border-gold/50 bg-gold/10' : 'text-white'}`}
+                  aria-label={favorite ? `Quitar «${serial.title}» de favoritos` : `Añadir «${serial.title}» a favoritos`}
                   onClick={() => toggleFavorite(serial.id)}
                 >
                   <Heart className={`w-5 h-5 ${favorite ? 'fill-gold' : ''}`} />
