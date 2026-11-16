@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Info, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { isFirstPageLoad } from "@/components/PageTransition";
 import { getMovieById } from "@/data/movies";
 import { getSagaById } from "@/data/sagas";
 import { MovieInfoModal, movieToInfo, sagaToInfo, type MovieInfo } from "@/components/MovieInfoModal";
@@ -103,6 +104,7 @@ const HERO_MOVIES: HeroEntry[] = [
 
 export const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [skipFirstEntrance] = useState(isFirstPageLoad);
   // "Más Info": el modal guarda su propia copia de la película activa al abrirse,
   // así que sigue mostrando la misma aunque el carrusel avance.
   const [infoOpen, setInfoOpen] = useState(false);
@@ -153,7 +155,9 @@ export const HeroSection = () => {
         <div className="absolute top-1/2 left-0 -translate-x-1/3 -translate-y-1/2 w-[700px] h-[700px] bg-gold/10 blur-[150px] rounded-full" />
       </div>
 
-      <AnimatePresence mode="wait">
+      {/* En la primera carga la diapositiva 0 nace en su estado final (visible en el prerender y sin error de hidratación);
+          las siguientes diapositivas y las visitas posteriores a la portada animan como siempre. */}
+      <AnimatePresence mode="wait" initial={skipFirstEntrance ? false : undefined}>
         <motion.div
           key={currentIndex}
           initial={{ opacity: 0 }}

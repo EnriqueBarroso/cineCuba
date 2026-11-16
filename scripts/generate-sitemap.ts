@@ -64,6 +64,19 @@ async function checkRouteIds(): Promise<void> {
     const missing = items.map((item) => item.id).filter((id) => !ids.includes(id));
     return missing.length ? [`  - ${label}: ${missing.join(", ")}`] : [];
   });
+  // Comprobación inversa (solo películas): un id en movieIds que no existe en el catálogo generaría una página
+  // /pelicula/<id> vacía en el prerender y una URL rota en el sitemap.
+  const catalogMovieIds = new Set(data.movies.map((m) => m.id));
+  const extraMovieIds = movieIds.filter((id) => !catalogMovieIds.has(id));
+  if (extraMovieIds.length) {
+    console.error(
+      "✗ Sobran ids en movieIds (src/data/routeIds.ts): no existen en el catálogo de películas.\n" +
+        `  - ${extraMovieIds.join(", ")}\n` +
+        "  Quítalos de movieIds o añade la película al catálogo, y vuelve a ejecutar el build."
+    );
+    process.exit(1);
+  }
+
   if (problems.length) {
     console.error(
       "✗ Faltan ids en src/data/routeIds.ts: sin ellos la página no se prerenderiza ni entra en el sitemap.\n" +

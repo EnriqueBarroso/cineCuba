@@ -35,6 +35,9 @@ const pageTransition: Transition = {
   duration: 0.5,
 };
 
+/** true mientras se renderiza la primera página (prerender y primer render del cliente). Léelo durante el render, no en efectos. */
+export const isFirstPageLoad = () => firstPage.current;
+
 export const PageTransition = ({ children }: PageTransitionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [skipEntrance] = useState(() => firstPage.current);
