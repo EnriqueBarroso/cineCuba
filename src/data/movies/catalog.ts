@@ -3187,16 +3187,28 @@ export const movies = sortByYear([
   ...movies2020s,
 ]);
 
-// 3. EXPORTACIÓN POR DÉCADAS
-export const moviesByDecade = {
-  '1960s': sortByYear(movies1960s),
-  '1970s': sortByYear(movies1970s),
-  '1980s': sortByYear(movies1980s),
-  '1990s': sortByYear(movies1990s),
-  '2000s': sortByYear(movies2000s),
-  '2010s': sortByYear(movies2010s),
-  '2020s': sortByYear(movies2020s),
+// 3. EXPORTACIÓN POR DÉCADAS (calculada a partir de `movies`: una película nueva cae sola en su década)
+const groupByDecade = (list: Movie[]): Record<string, Movie[]> => {
+  const groups: Record<string, Movie[]> = {};
+  for (const movie of list) {
+    if (typeof movie.year !== 'number' || !Number.isFinite(movie.year)) {
+      if (import.meta.env?.DEV) {
+        console.warn(`[catalog] "${movie.id}" no tiene un año numérico: se excluye de moviesByDecade.`);
+      }
+      continue;
+    }
+    const key = `${Math.floor(movie.year / 10) * 10}s`;
+    (groups[key] ??= []).push(movie);
+  }
+  // Décadas en orden cronológico; dentro de cada una, sortByYear (año y, a igual año, título).
+  return Object.fromEntries(
+    Object.keys(groups)
+      .sort()
+      .map((key) => [key, sortByYear(groups[key])]),
+  );
 };
+
+export const moviesByDecade = groupByDecade(movies);
 
 // 4. FUNCIONES AUXILIARES (Para Detalles y Buscador)
 export const getMovieById = (id: string | undefined): Movie | undefined => {
