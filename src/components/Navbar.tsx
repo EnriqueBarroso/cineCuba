@@ -3,7 +3,6 @@ import { useState, useEffect, FormEvent } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { SUPPORT_URL } from "@/lib/links";
-import { movies } from "@/data/movies";
 import { AuthModal } from "@/components/AuthModal";
 import { toast } from "sonner";
 import {
@@ -25,8 +24,8 @@ const navLinks = [
   { label: "Cortos", href: "/cortos" },
 ];
 
-// Total de películas del catálogo (ids únicos), calculado de los datos.
-const movieCount = new Set(movies.map((m) => m.id)).size;
+// Total de películas del catálogo: constante inyectada en build desde vite.config.ts (no se importa el catálogo en el bundle principal).
+const movieCount = __MOVIE_COUNT__;
 const movieCountWord = movieCount === 1 ? "película" : "películas";
 const movieCountLabel = `${movieCount} ${movieCountWord}`;
 

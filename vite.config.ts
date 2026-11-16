@@ -10,6 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // Nº de películas para el contador del navbar; el build comprueba que movieIds coincide con el catálogo.
+  define: { __MOVIE_COUNT__: JSON.stringify(new Set(movieIds).size) },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     dedupe: ["react-helmet-async", "react", "react-dom", "react-router-dom"],

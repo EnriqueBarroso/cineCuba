@@ -1,5 +1,10 @@
 import { motion, type Transition } from "framer-motion";
-import { ReactNode, useRef } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
+
+// La primera página que se monta en el navegador no anima su entrada: el HTML prerenderizado debe verse
+// sin JavaScript y coincidir con el primer render del cliente. Solo cambia a false en el cliente (useEffect),
+// así que durante el prerender vale true para todas las rutas.
+const firstPage = { current: true };
 
 interface PageTransitionProps {
   children: ReactNode;
@@ -32,11 +37,16 @@ const pageTransition: Transition = {
 
 export const PageTransition = ({ children }: PageTransitionProps) => {
   const ref = useRef<HTMLDivElement>(null);
+  const [skipEntrance] = useState(() => firstPage.current);
+
+  useEffect(() => {
+    firstPage.current = false;
+  }, []);
 
   return (
     <motion.div
       ref={ref}
-      initial="initial"
+      initial={skipEntrance ? false : "initial"}
       animate="animate"
       exit="exit"
       variants={pageVariants}
