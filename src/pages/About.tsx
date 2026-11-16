@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Film, Heart, Globe, Users, BookOpen, Award, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { CONTACT_EMAIL } from "@/lib/links";
 
 const About = () => {
   return (
@@ -257,7 +258,7 @@ const About = () => {
                 nos encantaría escucharte.
               </p>
               <a 
-                href="mailto:contacto@cinecuba.org"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="inline-flex items-center gap-2 bg-gold text-background px-8 py-3 rounded-lg font-medium hover:bg-gold/90 transition-colors"
               >
                 <Mail className="w-4 h-4" />
