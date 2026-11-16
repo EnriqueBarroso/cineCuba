@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
-import { supabase } from "@/integrations/supabase/client";
+import { supabaseUntyped } from "@/lib/supabaseTables";
 import { toast } from "sonner";
 
 const ADMIN_EMAIL = "enrique.barroso84@gmail.com";
@@ -60,7 +60,7 @@ const Admin = () => {
 
   const fetchSugerencias = useCallback(async () => {
     setFetching(true);
-    const { data, error } = await (supabase as any)
+    const { data, error } = await supabaseUntyped
       .from("sugerencias")
       .select("*")
       .order("created_at", { ascending: false });
@@ -75,7 +75,7 @@ const Admin = () => {
 
   const updateEstado = async (id: string, nuevoEstado: Estado) => {
     setUpdating(id);
-    const { error } = await (supabase as any)
+    const { error } = await supabaseUntyped
       .from("sugerencias")
       .update({ estado: nuevoEstado })
       .eq("id", id);

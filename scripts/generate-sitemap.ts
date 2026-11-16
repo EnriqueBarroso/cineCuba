@@ -47,7 +47,7 @@ async function checkRouteIds(): Promise<void> {
     plugins: [assetPathPlugin],
     logLevel: "error",
   });
-  const mod = { exports: {} as Record<string, any> };
+  const mod = { exports: {} as Record<string, unknown> };
   new Function("module", "exports", result.outputFiles[0].text)(mod, mod.exports);
   const data = mod.exports as Record<string, { id: string }[]>;
 

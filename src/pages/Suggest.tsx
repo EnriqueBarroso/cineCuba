@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
-import { supabase } from "@/integrations/supabase/client";
+import { supabaseUntyped, type SugerenciaInsert } from "@/lib/supabaseTables";
 import { toast } from "sonner";
 
 type TipoContenido = "pelicula" | "serial" | "corto";
@@ -50,17 +50,18 @@ const Suggest = () => {
     }
 
     setSubmitting(true);
-    const { error } = await (supabase as any)
+    const nueva: SugerenciaInsert = {
+      user_id: user.id,
+      titulo: titulo.trim(),
+      anio: anio ? parseInt(anio) : null,
+      tipo,
+      director: director.trim() || null,
+      enlace_referencia: enlace.trim() || null,
+      notas: notas.trim() || null,
+    };
+    const { error } = await supabaseUntyped
       .from("sugerencias")
-      .insert({
-        user_id: user.id,
-        titulo: titulo.trim(),
-        anio: anio ? parseInt(anio) : null,
-        tipo,
-        director: director.trim() || null,
-        enlace_referencia: enlace.trim() || null,
-        notas: notas.trim() || null,
-      });
+      .insert(nueva);
 
     setSubmitting(false);
 

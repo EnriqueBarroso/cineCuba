@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/hooks/useAuth';
-import { supabase } from '@/integrations/supabase/client';
+import { supabaseUntyped, type UserFavoriteRow } from '@/lib/supabaseTables';
 import { toast } from 'sonner';
 
 const LOCAL_KEY = 'cinecuba_favorites';
@@ -36,8 +36,8 @@ export const useFavorites = () => {
     const sync = async () => {
       setSyncing(true);
 
-      const { data, error } = await supabase
-        .from('user_favorites' as any)
+      const { data, error } = await supabaseUntyped
+        .from('user_favorites')
         .select('movie_id')
         .eq('user_id', user.id);
 
@@ -47,13 +47,13 @@ export const useFavorites = () => {
         return;
       }
 
-      const remote: string[] = (data ?? []).map((r: any) => r.movie_id);
+      const remote: string[] = (data ?? []).map((r: UserFavoriteRow) => r.movie_id);
       const local = readLocal();
       const toInsert = local.filter(id => !remote.includes(id));
 
       if (toInsert.length > 0) {
-        await supabase
-          .from('user_favorites' as any)
+        await supabaseUntyped
+          .from('user_favorites')
           .insert(toInsert.map((movie_id: string) => ({ user_id: user.id, movie_id })));
       }
 
@@ -89,8 +89,8 @@ export const useFavorites = () => {
     );
 
     if (isCurrentlyFavorite) {
-      const { error } = await supabase
-        .from('user_favorites' as any)
+      const { error } = await supabaseUntyped
+        .from('user_favorites')
         .delete()
         .eq('user_id', user.id)
         .eq('movie_id', movieId);
@@ -100,8 +100,8 @@ export const useFavorites = () => {
         toast.error('Error al eliminar el favorito');
       }
     } else {
-      const { error } = await supabase
-        .from('user_favorites' as any)
+      const { error } = await supabaseUntyped
+        .from('user_favorites')
         .insert({ user_id: user.id, movie_id: movieId });
 
       if (error) {
