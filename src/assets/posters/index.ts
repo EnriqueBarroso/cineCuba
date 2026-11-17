@@ -154,3 +154,4 @@ export { default as posterQuieremeYVeras } from './quiereme-y-veras.jpg';
 export { default as posterGuardafronteras } from './guardafronteras.jpg';
 export { default as posterElBautizo } from './el-bautizo.jpg';
 export { default as posterHabanera } from './habanera.jpg';
+export { default as posterCapablanca } from './capablanca.jpg';

@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -1218,6 +1218,30 @@ const movies1980s: Movie[] = [
       { name: "Miguel Benavides", role: "el doctor" } // TODO: crear ficha de Miguel Benavides en actors.ts (y confirmar la grafía con los créditos)
     ],
     notes: "País: Cuba. Dirección de Pastor Vega. Año: 1984 según AllMovie y TV Guide y el título del item de archive.org."
+  },
+  {
+    id: "capablanca-1986",
+    title: "Capablanca",
+    year: 1986, // provisional: AllMovie y el item de archive.org dan 1986; TMDB y Liberfilm dan 1987 (probablemente el estreno)
+    director: "Manuel Herrera",
+    poster: posterCapablanca,
+    duration: "85 min",
+    genre: ["Biopic", "Drama", "Romance"],
+    synopsis: "En 1925, el campeón cubano de ajedrez José Raúl Capablanca viaja a Moscú para disputar un torneo, en plena dictadura de Machado. La película sigue sus rivalidades con Lasker, Tartakower y Bogoliúbov, su amor imposible con la bailarina del Bolshói Sasha Mozhaeva y su derrota ante un jovencísimo Mijaíl Botvinnik en una partida simultánea.",
+    videoUrl: "https://archive.org/embed/capablanca-pelicula-cubana-1986",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "César Évora", role: "Capablanca" },
+      { name: "Galina Belyayeva", role: "Sasha Mozhaeva" },
+      { name: "Eslinda Núñez", role: "" },
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Boris Nevzorov", role: "" },
+      { name: "Javier Ávila", role: "" },
+      { name: "Marina Yakovleva", role: "" },
+      { name: "Beatriz Valdés", role: "" }
+    ],
+    notes: "País: Cuba (coproducción cubano-soviética). Dirección de Manuel Herrera. Año provisional: 1986 según AllMovie y el item de archive.org; 1987 según TMDB y Liberfilm."
   },
 ];
 
