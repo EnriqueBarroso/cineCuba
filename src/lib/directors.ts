@@ -15,3 +15,16 @@ export const shareDirector = (a: DirectorField, b: DirectorField): boolean => {
   const other = directorList(b);
   return directorList(a).some((n) => other.includes(n));
 };
+
+/** Películas (no sagas ni seriales) de una lista cuyo campo `director` incluye a `name`. La usan la ficha y el listado de directores. */
+export const moviesOfDirector = <T extends { director: DirectorField }>(list: T[], name: string): T[] =>
+  list.filter((m) => hasDirector(m.director, name));
+
+/** Directores con su nº de películas, de más a menos; empate (y 0 películas) por nombre, con tildes ('es'). */
+export const sortByMovieCount = <D extends { name: string }>(
+  people: D[],
+  list: { director: DirectorField }[]
+): { director: D; movieCount: number }[] =>
+  people
+    .map((director) => ({ director, movieCount: moviesOfDirector(list, director.name).length }))
+    .sort((a, b) => b.movieCount - a.movieCount || a.director.name.localeCompare(b.director.name, "es"));

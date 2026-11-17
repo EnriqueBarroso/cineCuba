@@ -9,7 +9,7 @@ import { SagaPosterPlaceholder } from "@/components/SagaPosterPlaceholder";
 import { useFavorites } from "@/hooks/useFavorites";
 import { SEO } from "@/components/SEO";
 import { useBackLink } from "@/hooks/useBackLink";
-import { directorLabel, hasDirector } from "@/lib/directors";
+import { directorLabel, moviesOfDirector } from "@/lib/directors";
 
 const DirectorInitials = ({ name }: { name: string }) => {
   const initials = name
@@ -121,7 +121,7 @@ const DirectorDetail = () => {
   const director = id ? getDirectorById(id) : undefined;
   
   const directorMovies = director
-    ? movies.filter((m) => hasDirector(m.director, director.name))
+    ? moviesOfDirector(movies, director.name)
     : [];
 
   const directorSagas = director

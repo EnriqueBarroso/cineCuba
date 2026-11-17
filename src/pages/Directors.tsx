@@ -6,12 +6,15 @@ import { Input } from "@/components/ui/input";
 import { directors } from "@/data/directors";
 import { movies } from "@/data/movies";
 import { SEO } from "@/components/SEO";
-import { hasDirector } from "@/lib/directors";
+import { sortByMovieCount } from "@/lib/directors";
+
+// Se calcula una vez con los datos (también en el prerender): más películas primero, desempate alfabético.
+const rankedDirectors = sortByMovieCount(directors, movies);
 
 const Directors = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredDirectors = directors.filter((director) =>
+  const filteredDirectors = rankedDirectors.filter(({ director }) =>
     director.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -39,12 +42,8 @@ const Directors = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
-          {filteredDirectors.map((director) => {
-            
-            // === LÓGICA DE CONTEO AUTOMÁTICO ===
-            // Contamos cuántas películas en el catálogo tienen el nombre de este director
-            const movieCount = movies.filter(m => hasDirector(m.director, director.name)).length;
-
+          {filteredDirectors.map(({ director, movieCount }) => {
+            // movieCount: películas del catálogo de este director (misma lógica que su ficha)
             return (
               <Link key={director.id} to={`/director/${director.id}`} className="group block">
                 <article className="space-y-4">
