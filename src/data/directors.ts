@@ -818,8 +818,26 @@ export const directors: Director[] = [
     biography: "Cineasta prolífico, experimental y de culto. Su obra se distingue por una búsqueda estética constante, referencias literarias profundas y temas históricos, como en su homenaje 'Si vas a comer espera por Virgilio'.",
     activeYears: "1970-2019",
     awards: ["Premio Nacional de Cine (nominado)", "Premios Caracol"]
+  },
+  {
+    id: "roberto-fandino",
+    name: "Roberto Fandiño",
+    birthYear: 1929,
+    deathYear: 2009,
+    nationality: "Cubano",
+    biography: "Cineasta cubano nacido en Matanzas el 28 de septiembre de 1929. Se licenció en Filosofía y Letras por la Universidad de La Habana, fue profesor de Arte Dramático y Escenografía y empezó en el cine como ilustrador de animación comercial. A partir de 1960 trabajó como coordinador de producción y como director de documentales, entre ellos Ganaremos la paz (1961), Primero de Mayo socialista (1962), Tiempos de pioneros (1962), Gente de Moscú (1963) y María Cervantes (1968), además del cortometraje Alfredo va a la playa (1963). Su primer largometraje de ficción fue la comedia El bautizo, rodada en 1967 y estrenada en 1968. Después trabajó en España, donde dirigió para televisión y cine títulos como La mentira (1975), La espuela (1976), María, la santa (1977) y La antorcha (1979), y firmó el montaje de varias películas, entre ellas Manuela (1976), El buscón (1979) y Mi amigo el vagabundo (1984). Murió en Miami (Estados Unidos) el 26 de julio de 2009.",
+    activeYears: "1960-1986",
+    awards: []
+  },
+  {
+    id: "eduardo-manet",
+    name: "Eduardo Manet",
+    birthYear: 1930,
+    nationality: "Cubano (residente en Francia)",
+    biography: "Escritor, dramaturgo y cineasta cubano nacido en Santiago de Cuba el 19 de junio de 1930. Vivió en París e Italia en los años cincuenta y en 1960 regresó a Cuba, donde dirigió el Conjunto Dramático Nacional del Teatro Nacional. Dirigió El huésped (1966). Se instaló en París en 1968 y desde entonces escribe sobre todo en francés. Es autor de novelas y obras de teatro traducidas a más de veinte idiomas, como Les Nonnes (1969), L'île du lézard vert (1992), Rhapsodie cubaine (1996), D'amour et d'exil (1999) y Mes années Cuba (2004).",
+    activeYears: "1960-presente",
+    awards: ["Premio Goncourt des lycéens (1992)"]
   }
-  
 ];
 
 // === FUNCIONES DE BÚSQUEDA ===
