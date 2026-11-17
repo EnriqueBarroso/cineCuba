@@ -3086,10 +3086,10 @@ const movies2010s: Movie[] = [
     year: 2018,
     director: "Alejandro Gil",
     poster: posterInocencia,
-    duration: "81 min",
+    duration: "122 min",
     genre: ["Drama", "Histórico"],
     synopsis: "Ocho estudiantes de medicina son injustamente condenados a muerte en 1871. Años después se busca demostrar su inocencia.",
-    videoUrl: "https://www.youtube.com/embed/Hh_gdv4yb6A",
+    videoUrl: "https://archive.org/embed/inocencia-2018-alejandro-gil-alvarez-pelicula-cubana-completa",
     trailerUrl: "",
     awards: [
       { name: "Festival de La Habana", year: 2018, category: "Premio Especial del Jurado" },
