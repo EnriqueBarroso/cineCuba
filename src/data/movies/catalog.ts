@@ -1392,7 +1392,7 @@ const movies1990s: Movie[] = [
   },
   {
     id: "hello-heminguey",
-    title: "Hello Hemingüey",
+    title: "Hello Hemingway",
     year: 1990,
     director: "Fernando Pérez",
     poster: posterHelloHeminguey,
