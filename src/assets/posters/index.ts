@@ -155,3 +155,4 @@ export { default as posterGuardafronteras } from './guardafronteras.jpg';
 export { default as posterElBautizo } from './el-bautizo.jpg';
 export { default as posterHabanera } from './habanera.jpg';
 export { default as posterCapablanca } from './capablanca.jpg';
+export { default as posterHastaCiertoPunto } from './hasta-cierto-punto.jpg';

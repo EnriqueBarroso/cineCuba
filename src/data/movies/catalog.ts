@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -1242,6 +1242,28 @@ const movies1980s: Movie[] = [
       { name: "Beatriz Valdés", role: "" }
     ],
     notes: "País: Cuba (coproducción cubano-soviética). Dirección de Manuel Herrera. Año provisional: 1986 según AllMovie y el item de archive.org; 1987 según TMDB y Liberfilm."
+  },
+  {
+    id: "hasta-cierto-punto-1983",
+    title: "Hasta cierto punto",
+    year: 1983,
+    director: "Tomás Gutiérrez Alea",
+    poster: posterHastaCiertoPunto,
+    duration: "112 min",
+    genre: ["Drama", "Romance"],
+    synopsis: "Un director de teatro comienza una relación con una trabajadora del puerto, pero su machismo complica la historia. La película explora los roles de género en Cuba y el choque entre el machismo y la imagen idealizada de la mujer liberada por la Revolución.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-completa-hasta-cierto-punto",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Óscar Álvarez", role: "" },
+      { name: "Mirta Ibarra", role: "" },
+      { name: "Omar Valdés", role: "" },
+      { name: "Coralia Veloz", role: "" },
+      { name: "Rogelio Blaín", role: "" },
+      { name: "Ana Viña", role: "" }
+    ],
+    notes: "País: Cuba. Dirección de Tomás Gutiérrez Alea. Guion de Tomás Gutiérrez Alea, Serafín Quiñones y Juan Carlos Tabío. Estreno en EE. UU.: 13 de marzo de 1985."
   },
 ];
 

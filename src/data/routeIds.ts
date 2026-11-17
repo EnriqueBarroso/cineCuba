@@ -11,6 +11,7 @@ export const movieIds: string[] = [
   "guardafronteras-1980",
   "habanera-1984",
   "capablanca-1986",
+  "hasta-cierto-punto-1983",
   "quiereme-y-veras-1994",
   "viva-2015",
   "el-acompanante",
