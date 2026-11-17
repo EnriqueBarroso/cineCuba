@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHeminguey, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -1196,6 +1196,26 @@ const movies1980s: Movie[] = [
       { name: "Miriam Socarrás", role: "" }
     ],
     notes: "Una de las películas cubanas más importantes sobre el mundo teatral."
+  },
+  {
+    id: "habanera-1984",
+    title: "Habanera",
+    year: 1984,
+    director: "Pastor Vega",
+    poster: posterHabanera,
+    duration: "103 min",
+    genre: ["Drama"],
+    synopsis: "Laura Durán es psiquiatra y confía en su trabajo y en sus papeles de esposa y madre. Su estabilidad se resquebraja cuando descubre que una joven paciente mantiene una relación con su marido, lo que afecta a su vida personal y profesional: su trato con colegas, pacientes y familia.",
+    videoUrl: "https://archive.org/embed/habanera-pelicula-cubana-1984-c-daisy-granados-y-dirigida-p-pastor-vega",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Daisy Granados", role: "Laura Durán" },
+      { name: "Adolfo Llauradó", role: "Carlos" },
+      { name: "Marcia Barreto", role: "Leonor" },
+      { name: "Ely Menz", role: "profesora" }
+    ],
+    notes: "País: Cuba. Dirección de Pastor Vega. Año: 1984 según AllMovie y TV Guide y el título del item de archive.org."
   },
 ];
 

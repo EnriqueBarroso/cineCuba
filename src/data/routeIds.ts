@@ -9,6 +9,7 @@ export const actorIds: string[] = actorsWithProfile.map((a) => a.id);
 export const movieIds: string[] = [
   "el-bautizo-1968",
   "guardafronteras-1980",
+  "habanera-1984",
   "quiereme-y-veras-1994",
   "viva-2015",
   "el-acompanante",
