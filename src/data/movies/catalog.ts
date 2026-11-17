@@ -1213,7 +1213,9 @@ const movies1980s: Movie[] = [
       { name: "Daisy Granados", role: "Laura Durán" },
       { name: "Adolfo Llauradó", role: "Carlos" },
       { name: "Marcia Barreto", role: "Leonor" },
-      { name: "Ely Menz", role: "profesora" }
+      { name: "Ely Menz", role: "profesora" },
+      { name: "César Évora", role: "José Luis" },
+      { name: "Miguel Benavides", role: "el doctor" } // TODO: crear ficha de Miguel Benavides en actors.ts (y confirmar la grafía con los créditos)
     ],
     notes: "País: Cuba. Dirección de Pastor Vega. Año: 1984 según AllMovie y TV Guide y el título del item de archive.org."
   },
