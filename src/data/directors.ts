@@ -61,6 +61,8 @@ import jorgeMolinaPhoto from "@/assets/directors/jorge-molina.jpg";
 import eduardoMoyanoPhoto from "@/assets/directors/eduardo-moyano.jpg";
 import eduardoDelLlanoPhoto from "@/assets/directors/eduardo-del-llano.jpg";
 import tomasPiardPhoto from "@/assets/directors/tomas-piard.jpg";
+import robertoFandinoPhoto from "@/assets/directors/roberto-fandino.jpg";
+import eduardoManetPhoto from "@/assets/directors/eduardo-manet.jpg";
 import manuelOctavioGomezPhoto from "@/assets/directors/manuel-octavio-gomez.jpg";
 import hermanosRiosPhoto from "@/assets/directors/hermanos-rios.jpg";
 import rigobertoLopezPhoto from "@/assets/directors/rigoberto-lopez.jpg";
@@ -822,6 +824,7 @@ export const directors: Director[] = [
   {
     id: "roberto-fandino",
     name: "Roberto Fandiño",
+    photo: robertoFandinoPhoto,
     birthYear: 1929,
     deathYear: 2009,
     nationality: "Cubano",
@@ -832,6 +835,7 @@ export const directors: Director[] = [
   {
     id: "eduardo-manet",
     name: "Eduardo Manet",
+    photo: eduardoManetPhoto,
     birthYear: 1930,
     nationality: "Cubano (residente en Francia)",
     biography: "Escritor, dramaturgo y cineasta cubano nacido en Santiago de Cuba el 19 de junio de 1930. Vivió en París e Italia en los años cincuenta y en 1960 regresó a Cuba, donde dirigió el Conjunto Dramático Nacional del Teatro Nacional. Dirigió El huésped (1966). Se instaló en París en 1968 y desde entonces escribe sobre todo en francés. Es autor de novelas y obras de teatro traducidas a más de veinte idiomas, como Les Nonnes (1969), L'île du lézard vert (1992), Rhapsodie cubaine (1996), D'amour et d'exil (1999) y Mes années Cuba (2004).",
