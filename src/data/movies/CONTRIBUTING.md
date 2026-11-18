@@ -76,9 +76,9 @@ Ejemplos:
 
 ## Géneros
 
-La fuente de verdad es `src/data/movies/genres.ts` (`GENRES`). Solo se admiten estos 20 géneros, escritos exactamente así (el orden es el del desplegable de filtros):
+La fuente de verdad es `src/data/movies/genres.ts` (`GENRES`). Solo se admiten estos 21 géneros, escritos exactamente así (el orden es el del desplegable de filtros):
 
-Drama, Comedia, Romance, Histórico, Bélico, Musical, Animación, Documental, Fantasía, Terror, Ciencia ficción, Thriller, Crimen, Aventuras, Biopic, Experimental, Infantil, Sátira, LGBT, Road Movie.
+Drama, Comedia, Romance, Histórico, Bélico, Musical, Animación, Documental, Fantasía, Terror, Ciencia ficción, Thriller, Crimen, Aventuras, Deportivo, Biopic, Experimental, Infantil, Sátira, LGBT, Road Movie.
 
 Reglas (también para sagas y seriales):
 
@@ -86,6 +86,7 @@ Reglas (también para sagas y seriales):
 - El primero es el principal (lo usa el Hero de la portada).
 - Sin duplicados.
 - No uses "Drama" de relleno si hay un género más preciso.
+- Deportivo: películas cuyo argumento gira en torno a una práctica deportiva competitiva (béisbol, boxeo...). Va como segundo o tercer género; el principal sigue siendo el tono (Drama, Comedia...).
 
 TypeScript rechaza un género fuera de la lista y `validateCatalog` lo marca como error. Para añadir un género nuevo, hay que añadirlo a `GENRES` y actualizar esta sección.
 

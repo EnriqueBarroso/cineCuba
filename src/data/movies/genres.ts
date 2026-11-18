@@ -6,6 +6,8 @@
  * - El primero es el principal (lo usa el Hero).
  * - Sin duplicados.
  * - No usar "Drama" de relleno si hay un género más preciso.
+ * - "Deportivo" va como segundo o tercer género (argumento en torno a una práctica deportiva competitiva);
+ *   el principal sigue siendo el tono (Drama, Comedia...).
  *
  * El orden de GENRES es el del desplegable de filtros. Para añadir un género nuevo:
  * añádelo aquí y documéntalo en CONTRIBUTING.md; el tipo, la validación y los filtros lo recogen solos.
@@ -25,6 +27,7 @@ export const GENRES = [
   "Thriller",
   "Crimen",
   "Aventuras",
+  "Deportivo",
   "Biopic",
   "Experimental",
   "Infantil",
@@ -67,5 +70,27 @@ export const genreFromSlug = (slug: string): Genre | undefined => GENRES.find((g
 /** Slugs de todos los géneros del vocabulario (los 20), en el orden de GENRES. */
 export const GENRE_SLUGS: readonly string[] = GENRES.map(genreSlug);
 
-/** Nombre del género para frases ("de comedia", "de ciencia ficción"); las siglas se respetan ("de LGBT"). */
-export const genreInSentence = (genre: Genre): string => (genre === "LGBT" ? genre : genre.toLowerCase());
+/**
+ * Textos de la página /genero/<slug>: título (también el h1) y descripción, con el recuento ya aplicado.
+ * Regla general: "Películas cubanas de comedia". Excepciones para que se lea bien en español:
+ * Deportivo → "Películas cubanas deportivas"; LGBT → "Cine cubano LGBT".
+ */
+export const genrePageTexts = (genre: Genre, count: number): { title: string; description: string } => {
+  const one = count === 1;
+  const films = one ? "película" : "películas";
+  const tail = one ? "ficha y vídeo para ver online gratis" : "fichas y vídeos para ver online gratis";
+  const archive = "en el archivo de cine cubano de CineCuba.";
+  let title: string;
+  let subject: string;
+  if (genre === "Deportivo") {
+    title = "Películas cubanas deportivas";
+    subject = one ? "película cubana deportiva" : "películas cubanas deportivas";
+  } else if (genre === "LGBT") {
+    title = "Cine cubano LGBT";
+    subject = `${films} de cine cubano LGBT`;
+  } else {
+    title = `Películas cubanas de ${genre.toLowerCase()}`;
+    subject = `${one ? "película cubana" : "películas cubanas"} de ${genre.toLowerCase()}`;
+  }
+  return { title, description: `${count} ${subject}: ${tail} ${archive}` };
+};

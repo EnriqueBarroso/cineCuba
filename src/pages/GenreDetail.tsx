@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { MovieCard } from "@/components/MovieGrid";
 import { useFavorites } from "@/hooks/useFavorites";
-import { genreFromSlug, genreInSentence } from "@/data/movies/genres";
+import { genreFromSlug, genrePageTexts } from "@/data/movies/genres";
 import { getMoviesOfGenre } from "@/lib/genres";
 import NotFound from "./NotFound";
 
@@ -17,14 +17,14 @@ const GenreDetail = () => {
   const movies = genre ? getMoviesOfGenre(genre) : [];
   if (!genre || movies.length === 0) return <NotFound />;
 
-  const name = genreInSentence(genre);
   const count = movies.length;
+  const { title, description } = genrePageTexts(genre, count);
 
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`Películas cubanas de ${name}`}
-        description={`${count} ${count === 1 ? "película cubana" : "películas cubanas"} de ${name}: ${count === 1 ? "ficha y vídeo" : "fichas y vídeos"} para ver online gratis en el archivo de cine cubano de CineCuba.`}
+        title={title}
+        description={description}
         url={`https://cine-cubano.com/genero/${id}`}
       />
 
@@ -37,7 +37,7 @@ const GenreDetail = () => {
             <ArrowLeft className="w-4 h-4" />
             Volver a Géneros
           </Link>
-          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-4">Películas cubanas de {name}</h1>
+          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-4">{title}</h1>
           <p className="text-muted-foreground text-lg">
             {count} {count === 1 ? "película" : "películas"}
           </p>
