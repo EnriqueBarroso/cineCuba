@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/pelicula/hello-heminguey",
+      "destination": "/pelicula/hello-hemingway",
+      "statusCode": 301
+    }
+  ]
 }

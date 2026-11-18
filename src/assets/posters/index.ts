@@ -60,7 +60,7 @@ export { default as posterAmanda } from './las-profecias-de-amanda.jpg';
 export { default as posterKleinesTropicana } from './kleines-tropicana.jpg';
 export { default as posterListaEspera } from './lista-de-espera.jpg';
 export { default as posterLaVidaEsSilbar } from './la-vida-es-silbar.jpg';
-export { default as posterHelloHeminguey } from './hello-hemingway.jpg';
+export { default as posterHelloHemingway } from './hello-hemingway.jpg';
 export { default as posterParaisoEstrellas } from './un-paraiso-bajo-estrellas.jpg';
 
 // === NUEVAS INCORPORACIONES (Para que catalog.ts quede limpio) ===

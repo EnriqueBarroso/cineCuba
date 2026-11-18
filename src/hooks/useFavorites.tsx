@@ -2,13 +2,15 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import { supabaseUntyped, type UserFavoriteRow } from '@/lib/supabaseTables';
 import { toast } from 'sonner';
+import { migrateMovieIds, storedIdsOf } from '@/data/legacyIds';
 
 const LOCAL_KEY = 'cinecuba_favorites';
 
 const readLocal = (): string[] => {
   if (typeof window === 'undefined') return [];
   try {
-    return JSON.parse(localStorage.getItem(LOCAL_KEY) ?? '[]');
+    // Ids antiguos (renombrados) → actuales y sin duplicados; no se reescribe el almacenamiento hasta el siguiente guardado.
+    return migrateMovieIds(JSON.parse(localStorage.getItem(LOCAL_KEY) ?? '[]'));
   } catch {
     return [];
   }
@@ -47,7 +49,8 @@ export const useFavorites = () => {
         return;
       }
 
-      const remote: string[] = (data ?? []).map((r: UserFavoriteRow) => r.movie_id);
+      // Mismo mapa de ids antiguos que en local; no se modifica la base de datos.
+      const remote: string[] = migrateMovieIds((data ?? []).map((r: UserFavoriteRow) => r.movie_id));
       const local = readLocal();
       const toInsert = local.filter(id => !remote.includes(id));
 
@@ -93,7 +96,8 @@ export const useFavorites = () => {
         .from('user_favorites')
         .delete()
         .eq('user_id', user.id)
-        .eq('movie_id', movieId);
+        // Borra también la fila si quedó guardada con un id antiguo de esta película.
+        .in('movie_id', storedIdsOf(movieId));
 
       if (error) {
         setFavorites(prev => [...prev, movieId]);

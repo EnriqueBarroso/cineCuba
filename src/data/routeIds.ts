@@ -83,7 +83,7 @@ export const movieIds: string[] = [
   "las-profecias-de-amanda",
   "kleines-tropicana",
   "un-paraiso-bajo-estrellas",
-  "hello-heminguey",
+  "hello-hemingway",
   "lista-espera",
   "antes-que-anochezca",
   "pata-negra",
