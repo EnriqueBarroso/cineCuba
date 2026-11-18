@@ -211,6 +211,7 @@ export const directorIds: string[] = [
   "tomas-piard",
   "roberto-fandino",
   "eduardo-manet",
+  "marilyn-solaya",
 ];
 
 export const eraIds: string[] = [

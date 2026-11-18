@@ -63,6 +63,7 @@ import eduardoDelLlanoPhoto from "@/assets/directors/eduardo-del-llano.jpg";
 import tomasPiardPhoto from "@/assets/directors/tomas-piard.jpg";
 import robertoFandinoPhoto from "@/assets/directors/roberto-fandino.jpg";
 import eduardoManetPhoto from "@/assets/directors/eduardo-manet.jpg";
+import marilynSolayaPhoto from "@/assets/directors/marilyn-solaya.jpg";
 import manuelOctavioGomezPhoto from "@/assets/directors/manuel-octavio-gomez.jpg";
 import hermanosRiosPhoto from "@/assets/directors/hermanos-rios.jpg";
 import rigobertoLopezPhoto from "@/assets/directors/rigoberto-lopez.jpg";
@@ -841,6 +842,16 @@ export const directors: Director[] = [
     biography: "Escritor, dramaturgo y cineasta cubano nacido en Santiago de Cuba el 19 de junio de 1930. Vivió en París e Italia en los años cincuenta y en 1960 regresó a Cuba, donde dirigió el Conjunto Dramático Nacional del Teatro Nacional. Dirigió El huésped (1966). Se instaló en París en 1968 y desde entonces escribe sobre todo en francés. Es autor de novelas y obras de teatro traducidas a más de veinte idiomas, como Les Nonnes (1969), L'île du lézard vert (1992), Rhapsodie cubaine (1996), D'amour et d'exil (1999) y Mes années Cuba (2004).",
     activeYears: "1960-presente",
     awards: ["Premio Goncourt des lycéens (1992)"]
+  },
+  {
+    id: "marilyn-solaya",
+    name: "Marilyn Solaya",
+    photo: marilynSolayaPhoto,
+    birthYear: 1970,
+    nationality: "Cubana",
+    biography: "Directora, actriz, guionista y productora cubana, nacida en 1970. Debutó como actriz en 1993 en Fresa y chocolate, película que, según ha contado, marcó su vida. Dirigió Show Room (1996), Alegrías (1999), Hasta que la muerte nos separe (2001), Mírame mi amor (2002) y Retamar (2004), y el documental En el cuerpo equivocado (2010), premiado y polémico, sobre la diversidad de género. Su primer largometraje de ficción, Vestido de novia (2014), tardó cerca de diez años en llegar a la pantalla: cuenta la historia de dos mujeres trans en la Cuba de 1994 y de un matrimonio que debe afrontar la identidad de ella. Fue un éxito en Cuba, ganó el Premio Popularidad del Festival de La Habana de 2014 y Naciones Unidas en Cuba concedió a su directora el Premio Únete por su compromiso con la igualdad y la no violencia de género. En 2019 dirigió En busca de un espacio.",
+    activeYears: "1993-presente",
+    awards: ["Premio Únete del Sistema de las Naciones Unidas en Cuba (2015)", "Premio Popularidad del Festival de La Habana por Vestido de novia (2014)"]
   }
 ];
 
