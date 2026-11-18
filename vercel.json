@@ -11,6 +11,11 @@
       "source": "/director/eduardo-moyano",
       "destination": "/director/eduardo-moya",
       "statusCode": 301
+    },
+    {
+      "source": "/serial/en-silencio-ha-tenido-que-ser",
+      "destination": "/saga/en-silencio-ha-tenido-que-ser",
+      "statusCode": 301
     }
   ]
 }
