@@ -1,10 +1,13 @@
 import { serials } from "./serials";
 import { sagas } from "./sagas";
 import { actorsWithProfile } from "./actors";
+import { GENRE_SLUGS } from "./movies/genres";
 
 export const serialIds: string[] = serials.map((s) => s.id);
 export const sagaIds: string[] = sagas.map((s) => s.id);
 export const actorIds: string[] = actorsWithProfile.map((a) => a.id);
+/** Slugs de todo el vocabulario de géneros (genres.ts, módulo puro). Prerender y sitemap usan solo los que tienen películas. */
+export const genreIds: string[] = [...GENRE_SLUGS];
 
 export const movieIds: string[] = [
   "el-bautizo-1968",

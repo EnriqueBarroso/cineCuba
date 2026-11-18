@@ -47,3 +47,25 @@ export function getGenreCounts(items: ReadonlyArray<{ genre: readonly Genre[] }>
     count: items.filter((item) => item.genre.includes(genre)).length,
   })).filter(({ count }) => count > 0);
 }
+
+/**
+ * Slug de URL de un género: minúsculas, sin tildes y con guiones ("Ciencia ficción" → "ciencia-ficcion").
+ * Función pura y única: la usan las rutas /genero/<slug>, el prerender y el sitemap.
+ */
+export const genreSlug = (genre: string): string =>
+  genre
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+/** Inversa de genreSlug: devuelve el género del vocabulario o undefined si el slug no existe. */
+export const genreFromSlug = (slug: string): Genre | undefined => GENRES.find((genre) => genreSlug(genre) === slug);
+
+/** Slugs de todos los géneros del vocabulario (los 20), en el orden de GENRES. */
+export const GENRE_SLUGS: readonly string[] = GENRES.map(genreSlug);
+
+/** Nombre del género para frases ("de comedia", "de ciencia ficción"); las siglas se respetan ("de LGBT"). */
+export const genreInSentence = (genre: Genre): string => (genre === "LGBT" ? genre : genre.toLowerCase());

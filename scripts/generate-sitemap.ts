@@ -3,6 +3,7 @@ import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import { build, type Plugin } from "esbuild";
 import { movieIds, directorIds, eraIds, serialIds, sagaIds, actorIds } from "../src/data/routeIds";
+import { getPopulatedGenreIds } from "./lib/genreRoutes";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -101,12 +102,15 @@ const staticRoutes: SitemapEntry[] = [
   { path: "/directores",  priority: "0.9", changefreq: "weekly"  },
   { path: "/epocas",      priority: "0.8", changefreq: "monthly" },
   { path: "/decadas",     priority: "0.8", changefreq: "monthly" },
+  { path: "/generos",     priority: "0.8", changefreq: "monthly" },
   { path: "/seriales",    priority: "0.8", changefreq: "monthly" },
   { path: "/cortos",      priority: "0.8", changefreq: "monthly" },
   { path: "/actores",     priority: "0.8", changefreq: "monthly" },
   { path: "/acerca",      priority: "0.4", changefreq: "yearly"  },
   { path: "/terminos",    priority: "0.3", changefreq: "yearly"  },
 ];
+
+const genreRouteIds = await getPopulatedGenreIds();
 
 const dynamicRoutes: SitemapEntry[] = [
   ...movieIds.map((id) => ({
@@ -121,6 +125,11 @@ const dynamicRoutes: SitemapEntry[] = [
   })),
   ...eraIds.map((id) => ({
     path:        `/epoca/${id}`,
+    priority:    "0.7",
+    changefreq:  "monthly",
+  })),
+  ...genreRouteIds.map((slug) => ({
+    path:        `/genero/${slug}`,
     priority:    "0.7",
     changefreq:  "monthly",
   })),

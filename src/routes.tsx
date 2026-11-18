@@ -54,6 +54,18 @@ export const routes: RouteObject[] = [
         })),
       },
       {
+        path: "generos",
+        lazy: () => import("./pages/Generos").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
+      },
+      {
+        path: "genero/:id",
+        lazy: () => import("./pages/GenreDetail").then((m) => ({
+          Component: () => <PageTransition><m.default /></PageTransition>,
+        })),
+      },
+      {
         path: "epocas",
         lazy: () => import("./pages/Eras").then((m) => ({
           Component: () => <PageTransition><m.default /></PageTransition>,

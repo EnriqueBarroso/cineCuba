@@ -41,6 +41,7 @@ export const Footer = () => {
               <li><Link to="/seriales" className="hover:text-gold transition-colors">Seriales</Link></li>
               <li><Link to="/cortos" className="hover:text-gold transition-colors">Cortos</Link></li>
               <li><Link to="/decadas" className="hover:text-gold transition-colors">Por Décadas</Link></li>
+              <li><Link to="/generos" className="hover:text-gold transition-colors">Por géneros</Link></li>
             </ul>
           </div>
 
