@@ -212,6 +212,8 @@ export const directorIds: string[] = [
   "roberto-fandino",
   "eduardo-manet",
   "marilyn-solaya",
+  "steven-soderbergh",
+  "laurent-cantet",
 ];
 
 export const eraIds: string[] = [

@@ -64,6 +64,8 @@ import tomasPiardPhoto from "@/assets/directors/tomas-piard.jpg";
 import robertoFandinoPhoto from "@/assets/directors/roberto-fandino.jpg";
 import eduardoManetPhoto from "@/assets/directors/eduardo-manet.jpg";
 import marilynSolayaPhoto from "@/assets/directors/marilyn-solaya.jpg";
+import stevenSoderberghPhoto from "@/assets/directors/steven-soderbergh.jpg";
+import laurentCantetPhoto from "@/assets/directors/laurent-cantet.jpg";
 import manuelOctavioGomezPhoto from "@/assets/directors/manuel-octavio-gomez.jpg";
 import hermanosRiosPhoto from "@/assets/directors/hermanos-rios.jpg";
 import rigobertoLopezPhoto from "@/assets/directors/rigoberto-lopez.jpg";
@@ -852,6 +854,27 @@ export const directors: Director[] = [
     biography: "Directora, actriz, guionista y productora cubana, nacida en 1970. Debutó como actriz en 1993 en Fresa y chocolate, película que, según ha contado, marcó su vida. Dirigió Show Room (1996), Alegrías (1999), Hasta que la muerte nos separe (2001), Mírame mi amor (2002) y Retamar (2004), y el documental En el cuerpo equivocado (2010), premiado y polémico, sobre la diversidad de género. Su primer largometraje de ficción, Vestido de novia (2014), tardó cerca de diez años en llegar a la pantalla: cuenta la historia de dos mujeres trans en la Cuba de 1994 y de un matrimonio que debe afrontar la identidad de ella. Fue un éxito en Cuba, ganó el Premio Popularidad del Festival de La Habana de 2014 y Naciones Unidas en Cuba concedió a su directora el Premio Únete por su compromiso con la igualdad y la no violencia de género. En 2019 dirigió En busca de un espacio.",
     activeYears: "1993-presente",
     awards: ["Premio Únete del Sistema de las Naciones Unidas en Cuba (2015)", "Premio Popularidad del Festival de La Habana por Vestido de novia (2014)"]
+  },
+  {
+    id: "steven-soderbergh",
+    name: "Steven Soderbergh",
+    photo: stevenSoderberghPhoto,
+    birthYear: 1963,
+    nationality: "Estadounidense",
+    biography: "Director, guionista, productor y director de fotografía estadounidense, nacido en Atlanta en 1963. Con Sexo, mentiras y cintas de vídeo (1989) ganó la Palma de Oro de Cannes siendo muy joven y se convirtió en una figura central del cine independiente estadounidense. Después alternó proyectos de gran estudio, como la trilogía de Ocean's, con películas más personales y experimentales. Ganó el Óscar a la mejor dirección por Traffic (2000). Che, estrenada en 2008 en dos partes, El argentino y La guerrilla, es su retrato del Che Guevara, con Benicio del Toro en el papel protagonista, que obtuvo por él el premio a la mejor interpretación masculina en Cannes; rodada en español, repasa la campaña de la Revolución Cubana y la aventura boliviana. En el catálogo de CineCuba figuran las dos partes.",
+    activeYears: "1989-presente",
+    awards: ["Palma de Oro del Festival de Cannes por Sexo, mentiras y cintas de vídeo (1989)", "Óscar a la mejor dirección por Traffic (2000)"]
+  },
+  {
+    id: "laurent-cantet",
+    name: "Laurent Cantet",
+    photo: laurentCantetPhoto,
+    birthYear: 1961,
+    deathYear: 2024,
+    nationality: "Francesa",
+    biography: "Director y guionista francés, nacido en Melle en 1961 y fallecido en París en 2024. Su cine, de mirada social y humanista, ganó la Palma de Oro de Cannes en 2008 con Entre los muros (La clase). Ambientó en Cuba dos de sus trabajos: dirigió el episodio La fuente del colectivo 7 días en La Habana (2012) y Regreso a Ítaca (2014), con guion suyo y de Leonardo Padura a partir de un episodio de la novela La novela de mi vida, en la que cinco amigos se reúnen en una azotea de La Habana tras años de exilio y desencanto. En CineCuba figuran estas dos obras.",
+    activeYears: "1994-2021",
+    awards: ["Palma de Oro del Festival de Cannes por Entre los muros (2008)", "Premio Venice Days del Festival de Venecia por Regreso a Ítaca (2014)"]
   }
 ];
 
