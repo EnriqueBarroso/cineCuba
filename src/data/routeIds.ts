@@ -206,7 +206,7 @@ export const directorIds: string[] = [
   "vladimir-cruz",
   "jorge-perugorria",
   "jorge-molina",
-  "eduardo-moyano",
+  "eduardo-moya",
   "eduardo-del-llano",
   "tomas-piard",
   "roberto-fandino",

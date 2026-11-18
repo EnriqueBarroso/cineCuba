@@ -6,6 +6,11 @@
       "source": "/pelicula/hello-heminguey",
       "destination": "/pelicula/hello-hemingway",
       "statusCode": 301
+    },
+    {
+      "source": "/director/eduardo-moyano",
+      "destination": "/director/eduardo-moya",
+      "statusCode": 301
     }
   ]
 }

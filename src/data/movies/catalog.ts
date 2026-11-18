@@ -787,7 +787,7 @@ const movies1980s: Movie[] = [
       { name: "Lili Rentería", role: "" },
       { name: "Annia Linares", role: "" }
     ],
-    notes: "País: Cuba. Dirección de Miguel Torres, a partir de la obra teatral de Nicolás Dorr, quien participó en el guion. Producción de los Estudios Fílmicos de la Televisión Cubana, filmada en 16 mm."
+    notes: "País: Cuba. Dirección de Miguel Torres, versión de la obra teatral de Nicolás Dorr. Producción de los Estudios Cinematográficos del Instituto Cubano de Radio y Televisión, filmada en 16 mm."
   },
   {
     id: "cartas-del-parque",
@@ -1863,7 +1863,7 @@ const movies2000s: Movie[] = [
     poster: posterPataNegra,
     duration: "112 min",
     genre: ["Comedia", "Thriller"],
-    synopsis: "Un joven español viaja a Cuba para hacerse cargo de la herencia de su padre, pero se ve envuelto en una trama de enredos y santería.",
+    synopsis: "Un joven español, enviado por una multinacional al Caribe para montar una granja de cerdos de pata negra, se ve arrastrado a un mundo de violencia en el que se cruzan narcotraficantes, guerrilleros y militares.",
     videoUrl: "https://archive.org/embed/pata-negra",
     trailerUrl: "",
     awards: [],
@@ -2293,7 +2293,7 @@ const movies2000s: Movie[] = [
     poster: posterElEdenPerdido,
     duration: "96 min",
     genre: ["Drama", "Histórico", "Romance"],
-    synopsis: "Película ambientada en 1895, durante la guerra de independencia. Una joven cubana se debate entre la lealtad a España y el amor por un insurrecto mambí.",
+    synopsis: "Un hombre vive marcado por la memoria de su madre, una heroína mambisa de la guerra de 1895. Tras su muerte se marcha a España y en 1931 regresa a Cuba para reclamar los bienes de la familia, donde se enfrenta al amor y la muerte, la sinceridad y la falsedad, el dolor y el rencor.",
     videoUrl: "https://archive.org/embed/el-benny/El%20Ed%C3%A9n%20Perdido.mp4",
     trailerUrl: "",
     awards: [],
@@ -2794,7 +2794,7 @@ const movies2010s: Movie[] = [
 {
   id: "sumbe",
   title: "Sumbe",
-  director: "Eduardo Moyano",
+  director: "Eduardo Moya",
   year: 2011,
   genre: ["Bélico", "Drama", "Histórico"],
   duration: "85 min",

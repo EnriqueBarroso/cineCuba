@@ -58,7 +58,7 @@ import angeloRizziPhoto from "@/assets/directors/angelo-rizzi.jpg";
 import vladimirCruzPhoto from "@/assets/directors/vladimir-cruz.jpg";
 import jorgePerugorriaPhoto from "@/assets/directors/jorge-perugorria.jpg";
 import jorgeMolinaPhoto from "@/assets/directors/jorge-molina.jpg";
-import eduardoMoyanoPhoto from "@/assets/directors/eduardo-moyano.jpg";
+import eduardoMoyaPhoto from "@/assets/directors/eduardo-moya.jpg";
 import eduardoDelLlanoPhoto from "@/assets/directors/eduardo-del-llano.jpg";
 import tomasPiardPhoto from "@/assets/directors/tomas-piard.jpg";
 import robertoFandinoPhoto from "@/assets/directors/roberto-fandino.jpg";
@@ -794,13 +794,12 @@ export const directors: Director[] = [
     awards: ["Premio Coral — por Molina's Culpa (película de tesis, EICTV)", "Mención Especial en festivales de cine fantástico"]
   },
   {
-    id: "eduardo-moyano",
-    name: "Eduardo Moyano",
-    photo: eduardoMoyanoPhoto,
-    birthYear: 1950, 
-    nationality: "Español", // Aunque rodó Sumbe, es una coproducción
-    biography: "Director que abordó la épica internacionalista cubana en 'Sumbe', narrando la resistencia de los trabajadores civiles cubanos en Angola. Su cine busca rescatar la memoria histórica reciente.",
-    activeYears: "1980-presente",
+    id: "eduardo-moya",
+    name: "Eduardo Moya",
+    photo: eduardoMoyaPhoto,
+    nationality: "Cubano",
+    biography: "Director cubano. Dirigió la serie de televisión Algo más que soñar (1985), de nueve capítulos, producida por los Estudios de Cine y Televisión de las Fuerzas Armadas Revolucionarias (MINFAR), y la película Sumbe, producida por Audiovisuales ICAIC, que narra la defensa de la ciudad angolana de Sumbe por un grupo de colaboradores civiles cubanos.",
+    activeYears: "1985-2011",
     awards: []
   },
   {
