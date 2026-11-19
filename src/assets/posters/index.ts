@@ -156,3 +156,4 @@ export { default as posterElBautizo } from './el-bautizo.jpg';
 export { default as posterHabanera } from './habanera.jpg';
 export { default as posterCapablanca } from './capablanca.jpg';
 export { default as posterHastaCiertoPunto } from './hasta-cierto-punto.jpg';
+export { default as posterUltimosDias } from './ultimos-dias-en-la-habana.jpg';

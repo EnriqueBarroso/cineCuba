@@ -19,7 +19,7 @@ import {
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
-  posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
+  posterUltimosDias, posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
   posterJuliette,
   posterRosaLaChina,
   posterEnfinElMar,
@@ -3219,6 +3219,30 @@ const movies2010s: Movie[] = [
       { name: "Otto Bucholz", role: "Lucilo" },
       { name: "Malú Tarrau", role: "Fela" }
     ]
+  },
+  {
+    id: "ultimos-dias-en-la-habana-2016",
+    title: "Últimos días en La Habana",
+    year: 2016,
+    director: "Fernando Pérez",
+    poster: posterUltimosDias,
+    duration: "93 min",
+    genre: ["Drama"],
+    synopsis: "Diego y Miguel, dos hombres de unos cuarenta y cinco años, comparten un piso ruinoso en el centro de La Habana. Miguel trabaja lavando platos en un restaurante privado y cuida de Diego, que está enfermo en cama. Solo ellos saben que Miguel espera un visado para emigrar a Estados Unidos. Cuando Diego ingresa en el hospital y su sobrina Yusi ocupa su cuarto, llega el visado y ambos deben tomar decisiones inesperadas. Una declaración de amor a La Habana y a sus habitantes.",
+    videoUrl: "https://archive.org/embed/ultimos-dias-en-al-habana",
+    trailerUrl: "",
+    awards: [
+      { name: "Premio Havana Star a la mejor película de ficción", category: "Havana Film Festival Nueva York", year: 2017 }
+    ],
+    cast: [
+      { name: "Jorge Martínez", role: "Diego" },
+      { name: "Patricio Wood", role: "Miguel" },
+      { name: "Gabriela Ramos", role: "Yusi" },
+      { name: "Coralia Veloz", role: "Clara" },
+      { name: "Carmen Solar", role: "Fefa" },
+      { name: "Yailene Sierra", role: "Miriam" }
+    ],
+    notes: "País: Cuba y España (coproducción ICAIC–Wanda Vision). Guion: Fernando Pérez y Abel Rodríguez. 93 min, color, en español. Presentada en la Berlinale Special 2017. Siete nominaciones a los Premios Platino 2018."
   },
 ];
 

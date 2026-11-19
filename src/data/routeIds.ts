@@ -152,6 +152,7 @@ export const movieIds: string[] = [
   "che-la-guerrilla",
   "cuba-libre-2015",
   "vuelos-prohibidos",
+  "ultimos-dias-en-la-habana-2016",
 ];
 
 export const directorIds: string[] = [
