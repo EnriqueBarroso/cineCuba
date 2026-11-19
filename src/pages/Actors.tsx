@@ -7,6 +7,7 @@ import { SEO } from "@/components/SEO";
 import { actorsWithProfile, getActorByName, type Actor } from "@/data/actors";
 import { movies } from "@/data/movies";
 import { cn } from "@/lib/utils";
+import { normalizeText } from "@/lib/text";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
 
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -89,12 +90,12 @@ const Actors = () => {
   const [activeLetter, setActiveLetter] = useState(availableLetters[0] ?? "");
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
-  const query = searchQuery.trim().toLowerCase();
+  const query = normalizeText(searchQuery);
   const isSearching = query.length > 0;
 
   const searchResults = useMemo(() => {
     if (!isSearching) return [];
-    return sortedActors.filter((actor) => actor.name.toLowerCase().includes(query));
+    return sortedActors.filter((actor) => normalizeText(actor.name).includes(query));
   }, [isSearching, query]);
 
   useEffect(() => {

@@ -7,6 +7,7 @@ import { directors } from "@/data/directors";
 import { movies } from "@/data/movies";
 import { SEO } from "@/components/SEO";
 import { sortByMovieCount } from "@/lib/directors";
+import { normalizeText } from "@/lib/text";
 
 // Se calcula una vez con los datos (también en el prerender): más películas primero, desempate alfabético.
 const rankedDirectors = sortByMovieCount(directors, movies);
@@ -15,7 +16,7 @@ const Directors = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredDirectors = rankedDirectors.filter(({ director }) =>
-    director.name.toLowerCase().includes(searchQuery.toLowerCase())
+    normalizeText(director.name).includes(normalizeText(searchQuery))
   );
 
   return (

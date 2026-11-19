@@ -5,6 +5,7 @@ import { useFavorites } from "@/hooks/useFavorites";
 import { movies as catalogMovies } from "@/data/movies/catalog";
 import { Movie } from "@/data/movies/types";
 import { MovieSearch } from "./MovieSearch";
+import { normalizeText } from "@/lib/text";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { directorLabel } from "@/lib/directors";
@@ -118,13 +119,13 @@ const MovieGrid = () => {
 
     if (urlSearchQuery) {
       setIsFiltering(true);
-      const query = urlSearchQuery.toLowerCase().trim();
+      const query = normalizeText(urlSearchQuery);
       
       const results = movies.filter(movie => 
-        movie.title.toLowerCase().includes(query) ||
-        directorLabel(movie.director).toLowerCase().includes(query) ||
+        normalizeText(movie.title).includes(query) ||
+        normalizeText(directorLabel(movie.director)).includes(query) ||
         movie.year.toString().includes(query) ||
-        movie.genre.some(g => g.toLowerCase().includes(query))
+        movie.genre.some(g => normalizeText(g).includes(query))
       );
       
       setFilteredMovies(results);

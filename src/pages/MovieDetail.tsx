@@ -12,6 +12,7 @@ import { useGoBack } from "@/hooks/useBackLink";
 import { VideoJsonLd } from "@/components/VideoJsonLd";
 import { MovieJsonLd } from "@/components/MovieJsonLd";
 import { directorLabel, directorList } from "@/lib/directors";
+import { genreSlug } from "@/data/movies/genres";
 
 const RelatedMovieCard = ({ 
   movie, 
@@ -203,9 +204,14 @@ const MovieDetail = () => {
               <div className="space-y-4">
                  <div className="flex flex-wrap gap-2">
                   {movie.genre.map((g) => (
-                    <span key={g} className="text-xs uppercase tracking-wider px-3 py-1 border border-white/10 text-muted-foreground rounded-full">
+                    <Link
+                      key={g}
+                      to={`/genero/${genreSlug(g)}`}
+                      aria-label={`Ver películas de ${g}`}
+                      className="text-xs uppercase tracking-wider px-3 py-1 border border-white/10 text-muted-foreground rounded-full transition-colors hover:text-gold hover:border-gold/50 focus-visible:outline-none focus-visible:text-gold focus-visible:border-gold"
+                    >
                       {g}
-                    </span>
+                    </Link>
                   ))}
                 </div>
                 <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-white">

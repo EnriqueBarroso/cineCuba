@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from "react";
 import { Search, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { normalizeText } from "@/lib/text";
 import {
   Select,
   SelectContent,
@@ -45,9 +46,9 @@ export const MovieSearch = ({ movies, onFilteredMovies }: MovieSearchProps) => {
     return movies.filter((movie) => {
       const matchesSearch =
         searchQuery === "" ||
-        movie.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        directorLabel(movie.director).toLowerCase().includes(searchQuery.toLowerCase()) ||
-        movie.synopsis.toLowerCase().includes(searchQuery.toLowerCase());
+        normalizeText(movie.title).includes(normalizeText(searchQuery)) ||
+        normalizeText(directorLabel(movie.director)).includes(normalizeText(searchQuery)) ||
+        normalizeText(movie.synopsis).includes(normalizeText(searchQuery));
 
       const matchesGenre =
         selectedGenre === "all" || movie.genre.includes(selectedGenre as Genre);
