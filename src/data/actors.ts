@@ -21,6 +21,7 @@ const NAME_VARIANTS: Record<string, string> = {
   'Mirtha Ibarra': 'Mirta Ibarra',
   'Veronica Lynn': 'Verónica Lynn',
   'Reynaldo Miravalles': 'Reinaldo Miravalles',
+  'Ana Viñas': 'Ana Viña',
 };
 
 export const actors: Actor[] = [
@@ -539,6 +540,16 @@ export const actors: Actor[] = [
     awards: [],
   },
   {
+    id: 'enrique-almirante',
+    name: 'Enrique Almirante',
+    birthYear: 1930,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 2007,
+    nationality: 'Cubano',
+    biography: "Ricardo Enrique Almirante Segredo, conocido como Enrique Almirante (La Habana, 7 de febrero de 1930 — La Habana, 30 de septiembre de 2007), fue uno de los actores más queridos y populares de Cuba, galán de la radio, la televisión, el teatro y el cine durante más de cincuenta años. Empezó en 1950 en la Cadena Oriental de Radio y en 1954 lo contrató el Canal 4, donde protagonizó Samarkán; marcaron su carrera Kazán, el cazador, que estuvo seis años en antena, y el Rodolfo de Los tres Villalobos. En el cine participó, entre otras, en Santo contra el cerebro diabólico (1961), Pata negra (2001), El misterio Galíndez (2003) y Una rosa de Francia. Fundó y dirigió la Agencia Artística Caricatos, que desde 2015 entrega en su honor el Premio Enrique Almirante por la obra de la vida. Murió mientras la televisión cubana emitía su último trabajo, el entrenador de boxeo Sabicú en la telenovela ¡Oh, La Habana! Es el padre del actor Carlos Enrique Almirante.",
+    awards: [],
+  },
+  {
     id: 'enrique-molina',
     name: 'Enrique Molina',
     birthYear: 1943,
@@ -694,9 +705,11 @@ export const actors: Actor[] = [
   {
     id: 'hector-noas',
     name: 'Héctor Noas',
+    birthYear: 1958,
+    birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
-    biography: '',
-    awards: [],
+    biography: "Héctor Eduardo Suárez Noas, conocido como Héctor Noas (La Habana, 8 de mayo de 1958), es un actor cubano de cine, teatro, radio y televisión. Se licenció en Actuación en el Instituto Superior de Arte con Medalla de Oro y Diploma de Honor. En el teatro trabajó con El Público, de Carlos Díaz, y con Argos Teatro, donde interpretó El tío Vania (2014). En el cine es uno de los rostros imprescindibles de los últimos años: Rosendo en Los dioses rotos (2008), de Ernesto Daranas, que le valió el Premio Caricato al mejor actor; Pablo en Conducta (2014); y papeles en Verde verde, Sergio y Serguéi, La anunciación y Extravíos. En 2023 volvió a ganar el Caricato como mejor actor de cine. Reside en España desde 1999 y ha trabajado también en producciones internacionales como la serie El grito de las mariposas, en la que interpreta a Petán Trujillo, hermano del dictador dominicano.",
+    awards: ["Premio Caricato al Mejor Actor — UNEAC, por Los dioses rotos (2009)", "Premio Caricato al Mejor Actor de Cine — UNEAC (2023)"],
   },
   {
     id: 'idalia-anreus',
@@ -1086,6 +1099,16 @@ export const actors: Actor[] = [
     awards: [],
   },
   {
+    id: 'miguel-benavides',
+    name: 'Miguel Benavides',
+    birthYear: 1939,
+    birthPlace: 'Manzanillo, Cuba',
+    deathYear: 2008,
+    nationality: 'Cubano',
+    biography: "Miguel Benavides (Manzanillo, 10 de septiembre de 1939 — Manzanillo, 14 de julio de 2008) fue un actor cubano de cine, teatro y televisión, con más de veinte películas entre 1964 y 2003. Debutó en el cine con Preludio 11 (1964) y trabajó en Un poco más de azul, Un día de noviembre (1972), de Humberto Solás, y El hombre de Maisinicú (1973), de Manuel Pérez. Su gran papel fue Francisco en El otro Francisco (1974), de Sergio Giral, que le valió el premio a la mejor actuación masculina del IX Festival Internacional de Cine de Moscú. Después participó en ¡Patakín! quiere decir ¡fábula! (1985), de Manuel Octavio Gómez, donde fue Shangó Valdés, Plácido (1986) y Habanece (2003), y en la televisión se le recuerda por la serie Hermanos.",
+    awards: ["Premio a la Mejor Actuación Masculina — IX Festival Internacional de Cine de Moscú, por El otro Francisco (1975)"],
+  },
+  {
     id: 'mijail-mulkay',
     name: 'Mijail Mulkay',
     birthYear: 1974,
@@ -1095,6 +1118,15 @@ export const actors: Actor[] = [
     awards: [
       "Mejor Actor Secundario en Televisión — UNEAC (1997)",
     ],
+  },
+  {
+    id: 'miriam-socarras',
+    name: 'Miriam Socarrás',
+    birthYear: 1941,
+    birthPlace: 'La Habana, Cuba',
+    nationality: 'Cubana',
+    biography: "Miriam Socarrás (La Habana, 1941) es una actriz y presentadora cubana, conocida como 'la emperatriz de los papeles secundarios' del cine cubano. Hacia 1959 dejó su trabajo de mecanógrafa para hacer teatro aficionado con Elio Mesa en Las Máscaras, pasó por el teatro musical y estuvo catorce años en el cabaret Tropicana. Ha participado en más de veinte películas del ICAIC, entre ellas Un día de noviembre (1972), Cecilia (1981), Plaff o demasiado miedo a la vida (1988), Papeles secundarios (1989), María Antonia (1990), Reina y Rey (1994), de Julio García Espinosa, Zafiros, locura azul (1997), Habanastation (2011) y Los Frikis (2024). En 2025 dejó atrás los papeles secundarios como Roberta en la brasileña O último azul, en competición en el Festival de Berlín. En televisión presentó Siete Días en los años 80, actuó en la telenovela Destino prohibido y conduce Ruta 10 en Cubavisión.",
+    awards: [],
   },
   {
     id: 'miriel-cejas',
@@ -1176,7 +1208,7 @@ export const actors: Actor[] = [
     id: 'omar-valdes',
     name: 'Omar Valdés',
     nationality: 'Cubano',
-    biography: '',
+    biography: "Omar Valdés es un actor cubano de teatro y cine, una presencia habitual en el cine del ICAIC entre finales de los años 60 y los 80. En el teatro formó parte del Grupo de Teatro Ocuje, junto a Mario Balmaseda y Tito Junco, y actuó en Doña Rosita la soltera y Mariana Pineda, de Lorca, y en Dos viejos pánicos, de Virgilio Piñera, en el papel de Tabo. En el cine trabajó dos veces con Tomás Gutiérrez Alea: en Memorias del subdesarrollo (1968), donde fue Pablo, el amigo que se marcha a Miami, y en Hasta cierto punto (1983). Participó además en Los días del agua (1971), de Manuel Octavio Gómez, El otro Francisco (1974), de Sergio Giral, Mella, la coproducción peruano-cubana Melgar, el poeta insurgente (1982) y La bella del Alhambra (1989), de Enrique Pineda Barnet.",
     awards: [],
   },
   {
@@ -1553,6 +1585,16 @@ export const actors: Actor[] = [
     ],
   },
   {
+    id: 'tito-junco',
+    name: 'Tito Junco',
+    birthYear: 1944,
+    birthPlace: 'La Habana, Cuba',
+    deathYear: 2003,
+    nationality: 'Cubano',
+    biography: "Tito Junco (La Habana, 4 de enero de 1944 — La Habana, 15 de agosto de 2003) fue un actor cubano de teatro, cine y televisión. Se formó en el Grupo de Teatro Ocuje, donde coincidió con Mario Balmaseda y Omar Valdés, y entre 1975 y 2003 participó en cerca de veinte películas y programas de televisión. Fue uno de los esclavos de La última cena (1976), de Tomás Gutiérrez Alea, y protagonizó Guardafronteras (1981), de Octavio Cortázar, por la que ganó el premio al mejor actor del XII Festival Internacional de Cine de Moscú. También trabajó en María Antonia (1990), de Sergio Giral. No debe confundirse con su homónimo, el actor mexicano Tito Junco (1915-1983).",
+    awards: ["Premio al Mejor Actor — XII Festival Internacional de Cine de Moscú, por Guardafronteras (1981)"],
+  },
+  {
     id: 'tomas-cao',
     name: 'Tomás Cao',
     birthYear: 1978,
@@ -1708,12 +1750,20 @@ export const actorsWithProfile: Actor[] = actors.filter(hasActorProfile);
 export const getActorById = (id: string): Actor | undefined =>
   actors.find((a) => a.id === id);
 
+/** Minúsculas y sin tildes: "Héctor Noas" y "Hector Noas" son el mismo nombre. */
+const normalizeName = (name: string): string =>
+  name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+
+const NORMALIZED_VARIANTS: Record<string, string> = Object.fromEntries(
+  Object.entries(NAME_VARIANTS).map(([variant, canonical]) => [normalizeName(variant), canonical]),
+);
+
 export const getActorByName = (name: string): Actor | undefined => {
   if (!name) return undefined;
+  const normalized = normalizeName(name);
   // Resolve known catalog typos to canonical name
-  const canonical = NAME_VARIANTS[name] ?? name;
-  const normalized = canonical.toLowerCase().trim();
-  return actors.find((a) => a.name.toLowerCase() === normalized);
+  const target = normalizeName(NORMALIZED_VARIANTS[normalized] ?? name);
+  return actors.find((a) => normalizeName(a.name) === target);
 };
 
 /** Como getActorByName, pero solo devuelve actores con ficha: es lo que debe usarse para enlazar a /actor/:id. */
