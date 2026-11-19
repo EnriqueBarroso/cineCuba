@@ -3250,7 +3250,32 @@ const movies2010s: Movie[] = [
 // ============================================================================
 // DÉCADA DE 2020
 // ============================================================================
-const movies2020s: Movie[] = [];
+const movies2020s: Movie[] = [
+  {
+    id: "el-mundo-de-nelsito-2022",
+    title: "El mundo de Nelsito",
+    year: 2022,
+    director: "Fernando Pérez",
+    poster: "/placeholder.svg",
+    duration: "102 min",
+    genre: ["Drama"],
+    synopsis: "Nelsito, un adolescente de 16 años con autismo, se escapa de casa. Su imaginación le muestra distintos escenarios que le conectan con las personas que encuentra, y cuando regresa no está claro cómo son realmente esos personajes ni hasta qué punto es acertada su percepción del mundo.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-el-mundo-de-nelsito",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "José Raúl Castro", role: "Nelsito" },
+      { name: "Isabel Santos", role: "Ana" },
+      { name: "Laura de la Uz", role: "Carmela" },
+      { name: "Carlos Enrique Almirante", role: "" },
+      { name: "Edith Massola", role: "" },
+      { name: "Armando Miguel Gómez", role: "" },
+      { name: "Paula Alí", role: "" },
+      { name: "Mario Guerra", role: "" }
+    ],
+    notes: "País: Cuba y España (coproducción ICAIC–Wanda Films). Guion de Fernando Pérez y Abel Rodríguez. 102 min. Título de producción: Riquimbili o El mundo de Nelsito. Año: 2022 según OnCuba, HFFNY y eCartelera (estreno en Cuba en el Festival de La Habana, diciembre de 2022); 2023 según Wikipedia y Trigon-Film. Estreno en cines de Cuba en agosto de 2023 y en España en julio de 2023. Sección oficial (fuera de concurso) del Festival de Málaga 2023 y Selección Oficial del Festival de Cine de Gibara 2023."
+  }
+];
 
 
 // ============================================================================
