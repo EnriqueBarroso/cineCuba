@@ -1680,7 +1680,19 @@ const movies1990s: Movie[] = [
       { name: "Festival de Sundance", year: 1999, category: "Premio a la Libertad de Expresión" },
       { name: "Premios Goya", year: 2000, category: "Mejor Película Extranjera de Habla Hispana" }
     ],
-    cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }, { name: "Isabel Santos", role: "" }]
+    cast: [
+      { name: "Luis Alberto García", role: "Elpidio" },
+      { name: "Coralia Veloz", role: "Julia" },
+      { name: "Isabel Santos", role: "" },
+      { name: "Claudia Rojas", role: "Mariana" },
+      { name: "Rolando Brito", role: "Dr. Fernando" },
+      { name: "Joan Manuel Reyes", role: "Ismael" },
+      { name: "Bebé Pérez", role: "Bebé" },
+      { name: "Jorge Molina", role: "" },
+      { name: "Mónica Guffanti", role: "" },
+      { name: "Luis Ubaldo Benítez", role: "Settimio" },
+      { name: "Miguel A. Daranas", role: "" }
+    ]
   },
   {
     id: "kleines-tropicana",
