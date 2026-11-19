@@ -1675,9 +1675,9 @@ const movies1990s: Movie[] = [
     trailerUrl: "",
     awards: [
       { name: "Festival de Sundance", year: 1999, category: "Premio a la Libertad de Expresión" },
-      { name: "Premios Goya", year: 1999, category: "Mejor Película Extranjera de Habla Hispana" }
+      { name: "Premios Goya", year: 2000, category: "Mejor Película Extranjera de Habla Hispana" }
     ],
-    cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }]
+    cast: [{ name: "Luis Alberto García", role: "Elpidio" }, { name: "Coralia Veloz", role: "Julia" }, { name: "Isabel Santos", role: "" }]
   },
   {
     id: "kleines-tropicana",
@@ -2010,7 +2010,7 @@ const movies2000s: Movie[] = [
     videoUrl: "https://archive.org/embed/suite-havana/Suite%20Havana.mp4",
     trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     awards: [
-      { name: "Festival de San Sebastián", year: 2003, category: "Premio FIPRESCI" },
+      { name: "Festival de San Sebastián", year: 2003, category: "Premio SIGNIS" },
       { name: "Festival de La Habana", year: 2003, category: "Gran Premio Coral" },
       { name: "Premios Goya", year: 2004, category: "Nominación Mejor Documental" }
     ],
