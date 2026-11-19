@@ -305,10 +305,10 @@ export const directors: Director[] = [
     birthYear: 1935,
     deathYear: 2008,
     nationality: "Cubano",
-    biography: "Documentalista destacado ('Por primera vez', 1967). Con 'El Brigadista' (1977) creó una película emblemática sobre la Campaña de Alfabetización. Cronista sensible de la realidad cubana.",
+    biography: "Documentalista destacado ('Por primera vez', 1967). Con 'El Brigadista' (1977) creó una película emblemática sobre la Campaña de Alfabetización, que obtuvo el Oso de Plata a la contribución artística destacada en el Festival de Berlín (1978). Cronista sensible de la realidad cubana.",
     activeYears: "1961-2008",
     awards: [
-      "Premio Especial del Festival de Moscú por 'El Brigadista'",
+      "Oso de Plata a la contribución artística destacada — Festival Internacional de Cine de Berlín, por El Brigadista (1978)",
       "Premio Nacional de Cine de Cuba"
     ]
   },

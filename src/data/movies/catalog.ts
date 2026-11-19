@@ -489,7 +489,7 @@ const movies1970s: Movie[] = [
     poster: posterBrigadista,
     duration: "113 min",
     genre: ["Drama", "Histórico"],
-    synopsis: "En los primeros años de la Revolución, un joven maestro de la ciudad viaja a una zona rural pobre para enseñar a leer y escribir a los campesinos. Debe ganarse la confianza de unos vecinos que desconfían de su juventud, adaptarse a un entorno desconocido y enfrentarse a bandas armadas que apoyan una invasión mercenaria.",
+    synopsis: "En 1961, durante la Campaña de Alfabetización, un joven brigadista de la ciudad viaja a una zona rural pobre para enseñar a leer y escribir a los campesinos. Debe ganarse la confianza de unos vecinos que desconfían de su juventud, adaptarse a un entorno desconocido y enfrentarse a bandas armadas que apoyan una invasión mercenaria.",
     videoUrl: "https://archive.org/embed/el-brigadista-1977",
     trailerUrl: 'https://www.youtube.com/embed/sM9WoGomm_E',
     awards: [
@@ -497,13 +497,16 @@ const movies1970s: Movie[] = [
     ],
     cast: [
       { name: "René de la Cruz", role: "" },
+      { name: "Salvador Wood", role: "" },
+      { name: "Patricio Wood", role: "" },
+      { name: "Jorge Villazón", role: "Eladio" },
+      { name: "Idalia Anreus", role: "Clarita" },
+      { name: "Raúl Pomares", role: "Ciro" },
+      { name: "Mario Limonta", role: "" },
+      { name: "Luis Rielo", role: "" },
       { name: "Javier González", role: "" },
       { name: "Adela Legrá", role: "" },
-      { name: "Luis Rielo", role: "" },
-      { name: "Maribel Rodríguez", role: "" },
-      { name: "Patricio Wood", role: "" },
-      { name: "Salvador Wood", role: "" },
-      { name: "Mario Balmaseda", role: "" }
+      { name: "Maribel Rodríguez", role: "" }
     ],
     notes: "País: Cuba. Producción: ICAIC. Guion de Luis Rogelio Nogueras y Octavio Cortázar. Fotografía de Pablo Martínez. Montaje de Roberto Bravo. 113 min. Año: 1977 según Wikipedia en inglés y el item de archive.org; las Wikipedias francesa e italiana la sitúan en 1978 (competición de la Berlinale, febrero de 1978)."
   },
