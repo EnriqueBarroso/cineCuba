@@ -487,27 +487,25 @@ const movies1970s: Movie[] = [
     year: 1977,
     director: "Octavio Cortázar",
     poster: posterBrigadista,
-    duration: "119 min",
+    duration: "113 min",
     genre: ["Drama", "Histórico"],
-    synopsis: "Durante la Campaña de Alfabetización de 1961, un joven habanero viaja a las montañas del Escambray para enseñar a leer y escribir a los campesinos, enfrentándose a bandidos contrarrevolucionarios.",
-    videoUrl: '',
+    synopsis: "En los primeros años de la Revolución, un joven maestro de la ciudad viaja a una zona rural pobre para enseñar a leer y escribir a los campesinos. Debe ganarse la confianza de unos vecinos que desconfían de su juventud, adaptarse a un entorno desconocido y enfrentarse a bandas armadas que apoyan una invasión mercenaria.",
+    videoUrl: "https://archive.org/embed/el-brigadista-1977",
     trailerUrl: 'https://www.youtube.com/embed/sM9WoGomm_E',
     awards: [
-      { name: "Festival de Moscú", year: 1978, category: "Premio Especial" }
+      { name: "Festival de Berlín", year: 1978, category: "Oso de Plata a la contribución artística destacada" }
     ],
     cast: [
-      { name: "Salvador Wood", role: "Mario" },
-      { name: "Patricio Wood", role: "" },
-      { name: "Jorge Villazón", role: "Eladio" },
-      { name: "Idalia Anreus", role: "Clarita" },
-      { name: "Raúl Pomares", role: "Ciro" },
-      { name: "Mario Balmaseda", role: "" },
-      { name: "Luis Rielo", role: "" },
+      { name: "René de la Cruz", role: "" },
       { name: "Javier González", role: "" },
       { name: "Adela Legrá", role: "" },
-      { name: "Maribel Rodríguez", role: "" }
+      { name: "Luis Rielo", role: "" },
+      { name: "Maribel Rodríguez", role: "" },
+      { name: "Patricio Wood", role: "" },
+      { name: "Salvador Wood", role: "" },
+      { name: "Mario Balmaseda", role: "" }
     ],
-    notes: "Película emblemática sobre la Campaña de Alfabetización cubana."
+    notes: "País: Cuba. Producción: ICAIC. Guion de Luis Rogelio Nogueras y Octavio Cortázar. Fotografía de Pablo Martínez. Montaje de Roberto Bravo. 113 min. Año: 1977 según Wikipedia en inglés y el item de archive.org; las Wikipedias francesa e italiana la sitúan en 1978 (competición de la Berlinale, febrero de 1978)."
   },
   {
     id: "elpidio-valdes-film",
