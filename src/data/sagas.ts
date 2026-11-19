@@ -508,14 +508,14 @@ export const sagas: Saga[] = [
         id: "en-silencio-ha-tenido-que-ser-e08",
         titulo: "Capítulo 8",
         anio: 1979,
-        duracionMinutos: 176,
+        duracionMinutos: 59,
         videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser-capitulo-7/En%20silencio%20ha%20tenido%20que%20ser%20-%20Capitulo%208.mp4",
       },
       {
         id: "en-silencio-ha-tenido-que-ser-e09",
         titulo: "Capítulo 9",
         anio: 1979,
-        duracionMinutos: 218,
+        duracionMinutos: 73,
         videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser-capitulo-7/En%20silencio%20ha%20tenido%20que%20ser%20-%20Capitulo%209.mp4",
       },
       {
