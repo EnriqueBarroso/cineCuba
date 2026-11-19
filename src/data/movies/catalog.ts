@@ -53,7 +53,9 @@ import {
   posterElAcompanante,
   posterRegresoAItaca,
   posterViva,
-  posterCubaLibre
+  posterCubaLibre,
+  // 2020s
+  posterElMundoDeNelsito
 } from '@/assets/posters';
 
 // === IMPORTS HERO (Backdrops) ===
@@ -3256,7 +3258,7 @@ const movies2020s: Movie[] = [
     title: "El mundo de Nelsito",
     year: 2022,
     director: "Fernando Pérez",
-    poster: "/placeholder.svg",
+    poster: posterElMundoDeNelsito,
     duration: "102 min",
     genre: ["Drama"],
     synopsis: "Nelsito, un adolescente de 16 años con autismo, se escapa de casa. Su imaginación le muestra distintos escenarios que le conectan con las personas que encuentra, y cuando regresa no está claro cómo son realmente esos personajes ni hasta qué punto es acertada su percepción del mundo.",
