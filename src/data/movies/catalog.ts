@@ -3333,6 +3333,25 @@ const movies2020s: Movie[] = [
       { name: "Mario Guerra", role: "" }
     ],
     notes: "País: Cuba y España (coproducción ICAIC–Wanda Films). Guion de Fernando Pérez y Abel Rodríguez. 102 min. Título de producción: Riquimbili o El mundo de Nelsito. Año: 2022 según OnCuba, HFFNY y eCartelera (estreno en Cuba en el Festival de La Habana, diciembre de 2022); 2023 según Wikipedia y Trigon-Film. Estreno en cines de Cuba en agosto de 2023 y en España en julio de 2023. Sección oficial (fuera de concurso) del Festival de Málaga 2023 y Selección Oficial del Festival de Cine de Gibara 2023."
+  },
+  {
+    id: "el-mayor-2020",
+    title: "El Mayor",
+    year: 2020,
+    director: "Rigoberto López",
+    poster: "/placeholder.svg", // provisional: falta el póster de El Mayor
+    duration: "116 min",
+    genre: ["Histórico", "Biopic", "Bélico"],
+    synopsis: "La película retrata la vida y el pensamiento emancipador de Ignacio Agramonte, el Mayor, héroe camagüeyano de la Guerra de los Diez Años, iniciada en 1868. Sigue su vínculo sentimental con Amalia Simoni y muestra la crudeza de la lucha insurreccional y la vida en los campamentos mambises.",
+    videoUrl: "https://archive.org/embed/el-mayor-radio-sancti-spiritus-cuba-vive-vamos-con-todo_20261123",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Daniel Romero Pildaín", role: "Ignacio Agramonte" },
+      { name: "Claudia Tomás", role: "Amalia Simoni" },
+      { name: "Rafael Lahera", role: "" }
+    ],
+    notes: "País: Cuba. Producida íntegramente por el ICAIC. Guion de Rigoberto López y Eugenio Hernández Espinosa. Música de José María Vitier. Rodada en Camagüey en 2018. Película póstuma de Rigoberto López, fallecido en enero de 2019 durante el proceso de la película, que se terminó con Ángel Alderete, director de fotografía. Duración: 116 min según el archivo de archive.org (copia de Radio Sancti Spíritus); 112 min según MUBI y el Festival de Cine de América Latina y España de Nueva Zelanda. Año: 2020 según OnCuba, MUBI y el festival neozelandés (estreno previsto el 24 de marzo de 2020 en el Cine Chaplin y suspendido por la pandemia; presentación especial en Camagüey en diciembre de 2020); The Diplomat in Spain la fecha en 2019. Presentada en el 42.º Festival Internacional del Nuevo Cine Latinoamericano de La Habana, en diciembre de 2021 (Prensa Latina)."
   }
 ];
 
