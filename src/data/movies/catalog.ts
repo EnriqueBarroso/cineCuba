@@ -19,7 +19,7 @@ import {
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
-  posterUltimosDias, posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
+  posterInsumisas, posterUltimosDias, posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
   posterJuliette,
   posterRosaLaChina,
   posterEnfinElMar,
@@ -3264,7 +3264,7 @@ const movies2010s: Movie[] = [
     title: "Insumisas",
     year: 2018,
     director: ["Laura Cazador", "Fernando Pérez"],
-    poster: "/placeholder.svg", // provisional: falta el póster de Insumisas
+    poster: posterInsumisas,
     duration: "92 min",
     genre: ["Drama", "Histórico", "Biopic"],
     synopsis: "En 1819, el cirujano suizo Enrique Faber llega a Cuba para encontrar a su hijo, secuestrado por una tía. Se instala en Baracoa, donde su éxito como médico y su matrimonio con Juana de León despiertan envidias y rumores. Cuando se descubre que en realidad es una mujer, comienza un escandaloso juicio que forma parte de la historia colonial de Cuba. Basada en la vida de Enriqueta Faber, considerada la primera mujer que ejerció la medicina en la isla.",
