@@ -8,6 +8,11 @@
       "statusCode": 301
     },
     {
+      "source": "/pelicula/ya-no-es-antes-2017",
+      "destination": "/pelicula/ya-no-es-antes-2016",
+      "statusCode": 301
+    },
+    {
       "source": "/director/eduardo-moyano",
       "destination": "/director/eduardo-moya",
       "statusCode": 301

@@ -11,6 +11,7 @@
  */
 export const LEGACY_MOVIE_IDS: Readonly<Record<string, string>> = {
   "hello-heminguey": "hello-hemingway",
+  "ya-no-es-antes-2017": "ya-no-es-antes-2016",
 };
 
 /** Id actual de una película (si el id es antiguo, su sustituto; si no, el mismo). */

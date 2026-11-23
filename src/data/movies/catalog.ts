@@ -3283,7 +3283,7 @@ const movies2010s: Movie[] = [
     notes: "Título internacional: Defiant Souls (en francés, Insoumises). País: Suiza y Cuba (coproducción de Bohemian Films e ICAIC). Dirección y guion de Laura Cazador y Fernando Pérez; debut como directora de Laura Cazador. Basada en la vida de Enriqueta Faber. Duración: 92 min según el archivo de archive.org; 94 min según Cinemanía y Cinefile. Año: 2018 según Cinefile, Cinemanía y EcuRed; presentada en la Sección Oficial a concurso del Festival de Málaga en marzo de 2019."
   },
   {
-    id: "ya-no-es-antes-2017",
+    id: "ya-no-es-antes-2016",
     title: "Ya no es antes",
     year: 2016,
     director: "Lester Hamlet",
