@@ -158,6 +158,7 @@ export { default as posterCapablanca } from './capablanca.jpg';
 export { default as posterHastaCiertoPunto } from './hasta-cierto-punto.jpg';
 export { default as posterUltimosDias } from './ultimos-dias-en-la-habana.jpg';
 export { default as posterInsumisas } from './insumisas.jpg';
+export { default as posterYaNoEsAntes } from './ya-no-es-antes.jpg';
 
 // === 2020s ===
 export { default as posterElMundoDeNelsito } from './el-mundo-de-nelsito.jpg';

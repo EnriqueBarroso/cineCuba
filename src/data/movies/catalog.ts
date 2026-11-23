@@ -19,7 +19,7 @@ import {
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
-  posterInsumisas, posterUltimosDias, posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
+  posterYaNoEsAntes, posterInsumisas, posterUltimosDias, posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
   posterJuliette,
   posterRosaLaChina,
   posterEnfinElMar,
@@ -3281,6 +3281,28 @@ const movies2010s: Movie[] = [
       { name: "Corina Mestre", role: "" }
     ],
     notes: "Título internacional: Defiant Souls (en francés, Insoumises). País: Suiza y Cuba (coproducción de Bohemian Films e ICAIC). Dirección y guion de Laura Cazador y Fernando Pérez; debut como directora de Laura Cazador. Basada en la vida de Enriqueta Faber. Duración: 92 min según el archivo de archive.org; 94 min según Cinemanía y Cinefile. Año: 2018 según Cinefile, Cinemanía y EcuRed; presentada en la Sección Oficial a concurso del Festival de Málaga en marzo de 2019."
+  },
+  {
+    id: "ya-no-es-antes-2017",
+    title: "Ya no es antes",
+    year: 2016,
+    director: "Lester Hamlet",
+    poster: posterYaNoEsAntes,
+    duration: "93 min",
+    genre: ["Drama", "Romance"],
+    synopsis: "Mayra y Esteban, una antigua pareja separada por la emigración, se reencuentran en Cuba cuarenta años después. Entre los dos repasan su historia, los sueños que no cumplieron y lo que dejaron atrás, en una película sostenida casi por completo en la interpretación de sus dos protagonistas.",
+    videoUrl: "https://archive.org/embed/ya-no-es-antes-2017",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de La Habana", year: 2016, category: "Premio Coral del Público" },
+      { name: "Festival de La Habana", year: 2016, category: "Premio Coral a la mejor actuación masculina (Luis Alberto García)" },
+      { name: "Havana Film Festival Nueva York", year: 2017, category: "Premio Havana Star a la mejor actriz (Isabel Santos)" }
+    ],
+    cast: [
+      { name: "Isabel Santos", role: "Mayra" },
+      { name: "Luis Alberto García", role: "Esteban" }
+    ],
+    notes: "País: Cuba. Guion de Lester Hamlet y Mijaíl Rodríguez, adaptación de la obra de teatro Weekend en Bahía, de Alberto Pedro. Banda sonora original de Harold López Nussa. Duración: 93 min según el archivo de archive.org; 92 min según Cuba50 y OnCuba. Año: 2016 según EcuRed (estreno en el Festival de La Habana, diciembre de 2016); el item de archive.org y el estreno comercial en Cuba (febrero-marzo de 2017) apuntan a 2017."
   }
 ];
 
