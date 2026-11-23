@@ -55,7 +55,8 @@ import {
   posterViva,
   posterCubaLibre,
   // 2020s
-  posterElMundoDeNelsito
+  posterElMundoDeNelsito,
+  posterElMayor
 } from '@/assets/posters';
 
 // === IMPORTS HERO (Backdrops) ===
@@ -3339,7 +3340,7 @@ const movies2020s: Movie[] = [
     title: "El Mayor",
     year: 2020,
     director: "Rigoberto López",
-    poster: "/placeholder.svg", // provisional: falta el póster de El Mayor
+    poster: posterElMayor,
     duration: "116 min",
     genre: ["Histórico", "Biopic", "Bélico"],
     synopsis: "La película retrata la vida y el pensamiento emancipador de Ignacio Agramonte, el Mayor, héroe camagüeyano de la Guerra de los Diez Años, iniciada en 1868. Sigue su vínculo sentimental con Amalia Simoni y muestra la crudeza de la lucha insurreccional y la vida en los campamentos mambises.",

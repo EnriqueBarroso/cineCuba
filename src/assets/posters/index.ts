@@ -162,3 +162,4 @@ export { default as posterYaNoEsAntes } from './ya-no-es-antes.jpg';
 
 // === 2020s ===
 export { default as posterElMundoDeNelsito } from './el-mundo-de-nelsito.jpg';
+export { default as posterElMayor } from './el-mayor.jpg';
