@@ -3259,6 +3259,29 @@ const movies2010s: Movie[] = [
     ],
     notes: "País: Cuba y España (coproducción ICAIC–Wanda Vision). Guion: Fernando Pérez y Abel Rodríguez. 93 min, color, en español. Presentada en la Berlinale Special 2017. Siete nominaciones a los Premios Platino 2018."
   },
+  {
+    id: "insumisas-2018",
+    title: "Insumisas",
+    year: 2018,
+    director: ["Laura Cazador", "Fernando Pérez"],
+    poster: "/placeholder.svg", // provisional: falta el póster de Insumisas
+    duration: "92 min",
+    genre: ["Drama", "Histórico", "Biopic"],
+    synopsis: "En 1819, el cirujano suizo Enrique Faber llega a Cuba para encontrar a su hijo, secuestrado por una tía. Se instala en Baracoa, donde su éxito como médico y su matrimonio con Juana de León despiertan envidias y rumores. Cuando se descubre que en realidad es una mujer, comienza un escandaloso juicio que forma parte de la historia colonial de Cuba. Basada en la vida de Enriqueta Faber, considerada la primera mujer que ejerció la medicina en la isla.",
+    videoUrl: "https://archive.org/embed/insumisas_202611",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Sylvie Testud", role: "Enrique / Enriqueta Faber" },
+      { name: "Yeni Soria", role: "" },
+      { name: "Antonio Buíl", role: "" },
+      { name: "Giselle González Alpízar", role: "" },
+      { name: "Héctor Noas", role: "" },
+      { name: "Mario Guerra", role: "" },
+      { name: "Corina Mestre", role: "" }
+    ],
+    notes: "Título internacional: Defiant Souls (en francés, Insoumises). País: Suiza y Cuba (coproducción de Bohemian Films e ICAIC). Dirección y guion de Laura Cazador y Fernando Pérez; debut como directora de Laura Cazador. Basada en la vida de Enriqueta Faber. Duración: 92 min según el archivo de archive.org; 94 min según Cinemanía y Cinefile. Año: 2018 según Cinefile, Cinemanía y EcuRed; presentada en la Sección Oficial a concurso del Festival de Málaga en marzo de 2019."
+  }
 ];
 
 // ============================================================================

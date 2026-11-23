@@ -153,6 +153,7 @@ export const movieIds: string[] = [
   "cuba-libre-2015",
   "vuelos-prohibidos",
   "ultimos-dias-en-la-habana-2016",
+  "insumisas-2018",
   "el-mundo-de-nelsito-2022",
 ];
 
