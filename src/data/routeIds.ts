@@ -93,6 +93,7 @@ export const movieIds: string[] = [
   "miel-para-oshun",
   "entre-ciclones",
   "suite-habana-2003",
+  "mas-vampiros-en-la-habana-2003",
   "aunque-estes-lejos",
   "tres-veces-dos",
   "perfecto-amor-equivocado",

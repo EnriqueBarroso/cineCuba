@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHemingway, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -2572,6 +2572,34 @@ const movies2000s: Movie[] = [
     { name: "Héctor Noas", role: "Hijo" }
   ]
 },
+  {
+    id: "mas-vampiros-en-la-habana-2003",
+    title: "¡Más vampiros en La Habana!",
+    year: 2003,
+    director: "Juan Padrón",
+    poster: posterMasVampiros,
+    duration: "83 min",
+    genre: ["Animación", "Comedia"],
+    synopsis: "Pepín, el hijo de Pepe el Vampiro, crea una bebida más potente que el Vampisol, la Vampiyaba. Mafiosos, vampiros y un comando nazi llegan a Cuba tras ella, y Pepe tendrá que salvar a su hijo, su matrimonio y su club. Es la continuación de ¡Vampiros en La Habana!",
+    videoUrl: "https://archive.org/embed/mas-vampiros-en-la-habana-2003-4k-espanol",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de La Habana", year: 2003, category: "Gran Coral, premio a la mejor animación" }
+    ],
+    cast: [
+      { name: "Manuel Marín", role: "" },
+      { name: "Frank González", role: "" },
+      { name: "Irela Bravo", role: "" },
+      { name: "Mirella Guillot", role: "" },
+      { name: "Carlos González", role: "" },
+      { name: "Jorge Perugorría", role: "" },
+      { name: "Luis Alberto García", role: "" },
+      { name: "Rigoberto Ferrera", role: "" },
+      { name: "Raúl Espinosa", role: "" },
+      { name: "Leonardo Pérez", role: "" }
+    ],
+    notes: "Secuela de ¡Vampiros en La Habana! (1985). País: Cuba, España y Alemania. Producción del ICAIC y TVE, con Durniock Producciones (versión alemana) y la colaboración del Programa Ibermedia y Canal Plus. Guion y dirección de Juan Padrón, con asesoría dramatúrgica de Senel Paz. Música de Robert Egues (Rembert Egües según EcuRed); fotografía de Armando Alba. Año: 2003 según Wikipedia, TMDB y el cartel; EcuRed habla de 2003-2004. Duración: 83 min según el archivo de archive.org; 80 min según Wikipedia y TMDB. La copia de archive.org tiene una resolución real de 256×144 aunque el título del item dice 4K. El reparto de voces procede de Wikipedia y EcuRed; no se asocian actores a personajes."
+  }
 ];
 
 // ============================================================================
