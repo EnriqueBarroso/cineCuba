@@ -315,6 +315,15 @@ export const actors: Actor[] = [
     awards: [],
   },
   {
+    id: 'carlos-acosta',
+    name: 'Carlos Acosta',
+    birthYear: 1973,
+    birthPlace: 'La Habana, Cuba',
+    nationality: 'Cubano',
+    biography: "Carlos Acosta (La Habana, 2 de junio de 1973) es un bailarín, coreógrafo y director de compañía cubano, uno de los grandes nombres de la danza clásica de su generación. Se formó en la Escuela Nacional de Ballet de Cuba y en 1990 obtuvo la Medalla de Oro del Prix de Lausanne. Bailó en el Ballet Nacional de Cuba y, desde 1993, en el Houston Ballet; en 1998 se incorporó al Royal Ballet de Londres, donde permaneció diecisiete años y fue también artista invitado principal. Se despidió de esa compañía en noviembre de 2015 con Carmen, una obra que él mismo coreografió y protagonizó, y actuó además como invitado en el American Ballet Theatre. Como coreógrafo ha creado Tocororo, un espectáculo inspirado en parte en su vida, y ha firmado versiones de Carmen y de Don Quijote. En 2016 fundó en La Habana su propia compañía, Acosta Danza, y desde enero de 2020 dirige el Birmingham Royal Ballet, como sucesor de David Bintley. Recibió el Prix Benois de la Danse en 2008 y fue nombrado CBE en 2014. Es autor de la autobiografía No Way Home (2007). En el cine apareció en New York, I Love You (2009) y Our Kind of Traitor (2016). En Yuli (2018), de Icíar Bollaín, película inspirada en su vida y en su autobiografía, se interpreta a sí mismo ya adulto.",
+    awards: ['Medalla de Oro — Prix de Lausanne (1990)', 'Prix Benois de la Danse (2008)', 'Comendador de la Orden del Imperio Británico (CBE) (2014)', 'Outstanding Contribution to British Theatre — UK Theatre Awards (2025)'],
+  },
+  {
     id: 'carlos-cruz',
     name: 'Carlos Cruz',
     birthPlace: 'La Habana, Cuba',
@@ -1540,6 +1549,15 @@ export const actors: Actor[] = [
     photo: '/images/actors/samuel-claxton.jpg',
     biography: "Samuel Claxton (Camagüey, 1943 — La Habana, 17 de mayo de 2025) fue uno de los rostros más familiares del cine, el teatro y la televisión cubanos durante más de seis décadas. Empezó en el Grupo Taller Dramático con la obra María Antonia y se consolidó como un actor versátil en montajes como Divinas palabras, Lumumba y Santa Camila de La Habana Vieja. Participó en más de sesenta producciones de cine y teatro, entre ellas La última cena (1976) de Tomás Gutiérrez Alea, Retrato de Teresa y Caravana. En la televisión se le recuerda sobre todo como Mantilla, en la serie Su propia guerra. Murió en La Habana a los 82 años, y el gremio actoral lo despidió como uno de sus grandes protagonistas de los últimos sesenta años.",
     awards: [],
+  },
+  {
+    id: 'santiago-alfonso',
+    name: 'Santiago Alfonso',
+    birthYear: 1939,
+    birthPlace: 'La Habana, Cuba',
+    nationality: 'Cubano',
+    biography: "Santiago Alfonso (La Habana, 1939) es un bailarín, coreógrafo y maestro de la danza cubano. Se formó con Ramiro Guerra y fue bailarín fundador, en 1959, de la compañía que hoy es Danza Contemporánea de Cuba. Su nombre está ligado sobre todo al cabaret Tropicana, donde trabajó como bailarín, coreógrafo, jefe de escena y director artístico del espectáculo durante más de cuarenta años. Se le reconoce además como intérprete del folclore afrocubano, el llamado «Changó de Cuba». En 2006 recibió el Premio Nacional de Danza. En 2024, coincidiendo con su 85.º cumpleaños, se estrenó en La Habana el documental Santiago, la gloria eres tú, dirigido por Pedro Maytín y producido por el Consejo Nacional de las Artes Escénicas. Como actor aparece en Un paraíso bajo las estrellas (1999), de Gerardo Chijona, y en Yuli (2018), de Icíar Bollaín, donde interpreta a Pedro, el padre del bailarín Carlos Acosta.",
+    awards: ['Premio Nacional de Danza — Cuba (2006)'],
   },
   {
     id: 'sergio-corrieri',
