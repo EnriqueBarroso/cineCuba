@@ -19,7 +19,7 @@ import {
   // 2000s
   posterListaEspera, posterAntesAnochezca, posterPataNegra, posterNada, posterVideoDeFamilia, posterHacerseSueco, posterMielOshun, posterEntreCiclones, posterSuite, posterAunqueEstesLejos, posterTresVecesDos, posterPerfectoAmor, posterBailandoCha, posterVivaCuba, posterBarrioCuba, poster90Millas, posterFrutas, posterReyHabana, posterHabanaBlues, posterElBenny, posterPaginasMauricio, posterPersonalBelongings, posterElEdenPerdido, posterCaminoEden, posterCuernoAbundancia, posterCercania, posterChe, posterCheArgentino, posterDiosesRotos,
   // 2010s
-  posterYaNoEsAntes, posterInsumisas, posterUltimosDias, posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
+  posterYuli, posterYaNoEsAntes, posterInsumisas, posterUltimosDias, posterVuelosProhibidos, posterMarti, posterMemoria, posterChala, posterJuanDeLosMuertos, posterHabanastation, posterSergioSerguei, posterInocencia,
   posterJuliette,
   posterRosaLaChina,
   posterEnfinElMar,
@@ -3304,6 +3304,34 @@ const movies2010s: Movie[] = [
       { name: "Luis Alberto García", role: "Esteban" }
     ],
     notes: "País: Cuba. Guion de Lester Hamlet y Mijaíl Rodríguez, adaptación de la obra de teatro Weekend en Bahía, de Alberto Pedro. Banda sonora original de Harold López Nussa. Duración: 93 min según el archivo de archive.org; 92 min según Cuba50 y OnCuba. Año: 2016 según EcuRed (estreno en el Festival de La Habana, diciembre de 2016); el item de archive.org y el estreno comercial en Cuba (febrero-marzo de 2017) apuntan a 2017."
+  },
+  {
+    id: "yuli-2018",
+    title: "Yuli",
+    year: 2018,
+    director: "Icíar Bollaín",
+    poster: posterYuli,
+    duration: "111 min",
+    genre: ["Biopic", "Drama", "Musical"],
+    synopsis: "La película sigue la vida del bailarín Carlos Acosta, «Yuli», desde su infancia en La Habana, donde su padre lo obliga a entrar en la escuela de ballet, hasta su carrera internacional. Alterna esa historia con el presente, en el que Acosta prepara un espectáculo en Cuba y revive su pasado, y con la mirada del propio bailarín.",
+    videoUrl: "https://archive.org/embed/yuli-2018-iciar-bollain-hd",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de San Sebastián", year: 2018, category: "Premio al mejor guion, ex aequo (Paul Laverty)" },
+      { name: "Premios Platino", year: 2019, category: "Mejor música original (Alberto Iglesias)" }
+    ],
+    cast: [
+      { name: "Carlos Acosta", role: "" },
+      { name: "Santiago Alfonso", role: "Pedro" },
+      { name: "Keyvin Martínez", role: "" },
+      { name: "Edilson Manuel Olbera Núñez", role: "" },
+      { name: "Laura de la Uz", role: "Maestra Chery" },
+      { name: "Andrea Doimeadiós", role: "Berta" },
+      { name: "Yailene Sierra", role: "Profesora 1" },
+      { name: "Héctor Noas", role: "Guía" },
+      { name: "Carlos Enrique Almirante", role: "Enrique" }
+    ],
+    notes: "Título internacional: Yuli: The Carlos Acosta Story. Coproducción internacional con dirección española, rodada en Cuba y con reparto cubano. País: España, Cuba, Reino Unido y Alemania según Wikipedia; eCartelera indica España y Reino Unido y MUBI España y Cuba. Entre las productoras figuran Morena Films y Potboiler Productions; ninguna fuente consultada menciona al ICAIC. Guion de Paul Laverty, basado en la autobiografía de Carlos Acosta No Way Home (Wikipedia y eCartelera añaden a Acosta como coguionista). Música de Alberto Iglesias; fotografía de Alex Catalán. Estreno mundial en la Sección Oficial a concurso del Festival de San Sebastián (septiembre de 2018) y estreno en cines de España el 14 de diciembre de 2018. Duración: 111 min según el archivo de archive.org; 115 min según Wikipedia, 110 según los Premios Goya, 109 según eCartelera y 107 según MUBI. Nominada en 2019 a cinco Premios Goya (actor revelación, guion adaptado, música original, fotografía y sonido), sin ganar ninguno."
   }
 ];
 
