@@ -1043,7 +1043,7 @@ export const actors: Actor[] = [
     id: 'manuel-marin',
     name: 'Manuel Marín',
     nationality: 'Cubano',
-    biography: '',
+    biography: "Manuel Marín es un actor cubano de televisión y de doblaje, vinculado a la animación del ICAIC. Figura entre las voces de ¡Vampiros en La Habana! (1985) y de su secuela ¡Más vampiros en La Habana! (2003), ambas de Juan Padrón, y la prensa cubana recuerda también su voz en la serie Elpidio Valdés. En la televisión participó en producciones como El corsario negro, Alegrías de sobremesa, Blanco y Negro No y El año que viene. Según la prensa, reside en Santiago de Chile, donde dirige una academia de artes marciales.",
     awards: [],
   },
   {
