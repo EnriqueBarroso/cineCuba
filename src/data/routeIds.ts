@@ -94,6 +94,7 @@ export const movieIds: string[] = [
   "entre-ciclones",
   "suite-habana-2003",
   "mas-vampiros-en-la-habana-2003",
+  "madrigal-2007",
   "aunque-estes-lejos",
   "tres-veces-dos",
   "perfecto-amor-equivocado",

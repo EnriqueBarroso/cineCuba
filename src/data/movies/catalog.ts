@@ -2599,6 +2599,34 @@ const movies2000s: Movie[] = [
       { name: "Leonardo Pérez", role: "" }
     ],
     notes: "Secuela de ¡Vampiros en La Habana! (1985). País: Cuba, España y Alemania. Producción del ICAIC y TVE, con Durniock Producciones (versión alemana) y la colaboración del Programa Ibermedia y Canal Plus. Guion y dirección de Juan Padrón, con asesoría dramatúrgica de Senel Paz. Música de Robert Egues (Rembert Egües según EcuRed); fotografía de Armando Alba. Año: 2003 según Wikipedia, TMDB y el cartel; EcuRed habla de 2003-2004. Duración: 83 min según el archivo de archive.org; 80 min según Wikipedia y TMDB. La copia de archive.org tiene una resolución real de 256×144 aunque el título del item dice 4K. El reparto de voces procede de Wikipedia y EcuRed; no se asocian actores a personajes."
+  },
+  {
+    id: "madrigal-2007",
+    title: "Madrigal",
+    year: 2007,
+    director: "Fernando Pérez",
+    // PROVISIONAL: sin cartel todavía; sustituir por posterMadrigal cuando haya un póster en src/assets/posters/.
+    poster: "/placeholder.svg",
+    duration: "112 min",
+    genre: ["Drama", "Romance"],
+    synopsis: "Javier, un joven actor dado a las fantasías, se enamora de Luisita, una mujer encerrada en sus complejos y en sus secretos. Su historia de amor crece sin que quede claro dónde termina la verdad y dónde empieza la mentira, y a ella se suma un relato futurista escrito por el propio Javier. Dedicada al cineasta francés René Clair, la película retoma el final alternativo de Les grandes manœuvres (1955) para trasladarlo a una historia de amor en La Habana actual.",
+    videoUrl: "https://archive.org/embed/peli-cuba-madrigal.-avi",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de Cine Latinoamericano de Utrecht", year: 2007, category: "Premio Ángel" },
+      { name: "Festival Internacional de Cine de Setúbal (Festroia)", year: 2007, category: "Delfín de Plata a la mejor fotografía (Raúl Pérez Ureta)" },
+      { name: "Festival de Cine Latino de Los Ángeles", year: 2007, category: "Mejor guion" }
+    ],
+    cast: [
+      { name: "Liety Chaviano", role: "" },
+      { name: "Carlos Enrique Almirante", role: "" },
+      { name: "Ana de Armas", role: "" },
+      { name: "Luis Alberto García", role: "" },
+      { name: "Carla Sánchez", role: "" },
+      { name: "Yailene Sierra", role: "" },
+      { name: "Armando Fernández Soler", role: "" }
+    ],
+    notes: "País: Cuba y España (coproducción; los créditos de la copia citan a ICAIC y Wanda Vision, la colaboración del Ministerio de Cultura de España, el apoyo del Programa Ibermedia y la financiación del ICO, con la mención «Una producción hispano-cubana»). Guion de Fernando Pérez y Eduardo del Llano. Música de Edesio Alejandro; fotografía de Raúl Pérez Ureta. Presentada en la sección Berlinale Special de la Berlinale de 2007 (función del 15 de febrero) y estrenada en España en marzo de 2007. Año: 2007 según Wikipedia, MUBI y el programa de la Berlinale; 2006 según Cineuropa, el Observatorio Europeo del Audiovisual y los créditos de la propia copia (© MMVI). Duración: 112 min según el archivo de archive.org, Wikipedia, MUBI y la Berlinale; 110 min según Cinemanía. Los premios proceden de Wikipedia y EcuRed. No se asocian actores a personajes: ninguna fuente consultada los atribuye con seguridad."
   }
 ];
 
