@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHemingway, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -2605,8 +2605,7 @@ const movies2000s: Movie[] = [
     title: "Madrigal",
     year: 2007,
     director: "Fernando Pérez",
-    // PROVISIONAL: sin cartel todavía; sustituir por posterMadrigal cuando haya un póster en src/assets/posters/.
-    poster: "/placeholder.svg",
+    poster: posterMadrigal,
     duration: "112 min",
     genre: ["Drama", "Romance"],
     synopsis: "Javier, un joven actor dado a las fantasías, se enamora de Luisita, una mujer encerrada en sus complejos y en sus secretos. Su historia de amor crece sin que quede claro dónde termina la verdad y dónde empieza la mentira, y a ella se suma un relato futurista escrito por el propio Javier. Dedicada al cineasta francés René Clair, la película retoma el final alternativo de Les grandes manœuvres (1955) para trasladarlo a una historia de amor en La Habana actual.",
