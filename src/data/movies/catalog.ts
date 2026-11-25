@@ -283,7 +283,7 @@ const movies1960s: Movie[] = [
       { name: "Idalia Anreus", role: "" },
       { name: "Silvia Planas", role: "" },
       { name: "Flora Lauten", role: "" },
-      { name: "Rogelio Blain", role: "" },
+      { name: "Rogelio Blaín", role: "" },
       { name: "Teté Vergara", role: "" }
     ],
     notes: "Considerada una de las obras maestras del cine latinoamericano."
@@ -664,7 +664,7 @@ const movies1970s: Movie[] = [
     videoUrl: "https://www.youtube.com/embed/zTgcMQK5kOs",
     trailerUrl: "",
     cast: [
-      { name: "Rogelio Blain", role: "" },
+      { name: "Rogelio Blaín", role: "" },
       { name: "Noel García", role: "" },
       { name: "Carlos Gili", role: "" },
       { name: "Raúl Pomares", role: "" },
@@ -2080,7 +2080,7 @@ const movies2000s: Movie[] = [
     ],
     cast: [
       { name: "Georbis Martínez", role: "Actor" },
-      { name: "Veronica Lynn", role: "Actriz" }
+      { name: "Verónica Lynn", role: "Actriz" }
     ]
   },
   {
