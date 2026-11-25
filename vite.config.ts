@@ -4,6 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { movieIds, directorIds, eraIds, serialIds, sagaIds, actorIds } from "./src/data/routeIds";
 import { getPopulatedGenreIds } from "./scripts/lib/genreRoutes";
+import { isoWeekKey } from "./src/lib/heroRotation";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -12,7 +13,14 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   // Nº de películas para el contador del navbar; el build comprueba que movieIds coincide con el catálogo.
-  define: { __MOVIE_COUNT__: JSON.stringify(new Set(movieIds).size) },
+  // __HERO_WEEK__: semana ISO (UTC) del build; fija la rotación semanal del hero (ver src/lib/heroRotation.ts).
+  // Servidor (prerender) y cliente comparten esta constante, así que no hay desajuste de hidratación.
+  // La rotación avanza con cada despliegue; sin despliegue, el hero mantiene la selección del último build.
+  // HERO_WEEK=AAAA-Www permite forzar una semana concreta para pruebas.
+  define: {
+    __MOVIE_COUNT__: JSON.stringify(new Set(movieIds).size),
+    __HERO_WEEK__: JSON.stringify(process.env.HERO_WEEK || isoWeekKey(new Date())),
+  },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     dedupe: ["react-helmet-async", "react", "react-dom", "react-router-dom"],

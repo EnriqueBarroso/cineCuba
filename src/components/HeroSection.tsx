@@ -7,100 +7,18 @@ import { isFirstPageLoad } from "@/components/PageTransition";
 import { getMovieById } from "@/data/movies";
 import { getSagaById } from "@/data/sagas";
 import { MovieInfoModal, movieToInfo, sagaToInfo, type MovieInfo } from "@/components/MovieInfoModal";
-import {
-  heroMemorias,
-  heroLucia,
-  heroVampiros,
-  heroFresa,
-  heroHabana,
-  heroConducta,
-  heroJuanDeLosMuertosEscena,
-} from "@/assets/hero";
+import { HERO_ELIGIBLE, HERO_CONFIG } from "@/data/heroPool";
+import { selectHeroEntries } from "@/lib/heroRotation";
 
-interface HeroEntry {
-  id: string;
-  year: string;
-  director: string;
-  description: string;
-  badge: string;
-  // Imagen de escena panorámica (opcional). Si no existe, se usa el poster como fallback.
-  image?: string;
-}
-
-const HERO_MOVIES: HeroEntry[] = [
-  {
-    id: "memorias-subdesarrollo",
-    year: "1968",
-    director: "Tomás Gutiérrez Alea",
-    image: heroMemorias,
-    description: "La obra maestra del cine cubano. Un intelectual burgués intenta encontrar su lugar en una sociedad en plena revolución.",
-    badge: "Clásico Imprescindible"
-  },
-  {
-    id: "lucia-1968",
-    year: "1968",
-    director: "Humberto Solás",
-    image: heroLucia,
-    description: "Tres mujeres, tres épocas, un mismo nombre. Una epopeya visual sobre la identidad femenina en la historia de Cuba.",
-    badge: "Drama Histórico"
-  },
-  {
-    id: "vampiros-habana",
-    year: "1985",
-    director: "Juan Padrón",
-    image: heroVampiros,
-    description: "Un científico vampiro ha creado una fórmula para resistir el sol. Mafias de Chicago y Europa luchan por el control en esta comedia de culto.",
-    badge: "Animación de Culto"
-  },
-  {
-    id: "fresa-chocolate-1993",
-    year: "1993",
-    director: "T. G. Alea & J. C. Tabío",
-    image: heroFresa,
-    description: "La amistad improbable entre un joven comunista y un artista homosexual que desafió los prejuicios de una época.",
-    badge: "Nominada al Oscar"
-  },
-  {
-    id: "habana-blues",
-    year: "2005",
-    director: "Benito Zambrano",
-    image: heroHabana,
-    description: "Música, dilemas y despedidas. Dos jóvenes músicos intentan triunfar sin perder su esencia en la Cuba de los 2000.",
-    badge: "Musical / Drama"
-  },
-  {
-    id: "conducta-2014",
-    year: "2014",
-    director: "Ernesto Daranas",
-    image: heroConducta,
-    description: "Chala, un niño de 11 años, y Carmela, su maestra, enfrentan juntos los desafíos de un sistema educativo rígido y una vida dura.",
-    badge: "Cine Contemporáneo"
-  },
-  {
-    id: "juan-de-los-muertos",
-    year: "2011",
-    director: "Alejandro Brugués",
-    image: heroJuanDeLosMuertosEscena,
-    description: "El primer zombie movie cubano. Juan y sus amigos sobreviven al apocalipsis de los no-muertos en La Habana con humor negro y mucha inventiva.",
-    badge: "Terror / Comedia"
-  },
-  {
-    id: "algo-mas-que-sonar",
-    year: "1985",
-    director: "Eduardo Moya",
-    // Sin imagen de escena todavía — se usa el poster de la saga como fallback (ver getSagaById).
-    description: "La serie que marcó a una generación. Cuatro jóvenes cadetes viven sus sueños, amores y la dura realidad de la guerra de Angola.",
-    badge: "Serie Clásica"
-  },
-  {
-    id: "nicanor-odonnell",
-    year: "2004 — 2019",
-    director: "Eduardo del Llano",
-    // Sin imagen de escena todavía — se usa el poster de la saga como fallback (ver getSagaById).
-    description: "15 cortometrajes sobre Nicanor O'Donnell, el intelectual habanero más irreverente del cine cubano independiente. Con Luis Alberto García.",
-    badge: "Saga de Cortos"
-  }
-];
+/**
+ * Destacadas de esta semana (rotación semanal determinista, ver src/lib/heroRotation.ts).
+ *
+ * IMPORTANTE: __HERO_WEEK__ lo fija vite.config.ts en el BUILD. El HTML prerenderizado y el JS
+ * del cliente salen del mismo build, así que la selección es idéntica en servidor y cliente
+ * (sin error de hidratación ni salto visual). Consecuencia: la rotación avanza con cada
+ * despliegue; si no se despliega en una semana, el hero mantiene la selección del último build.
+ */
+const HERO_MOVIES = selectHeroEntries(HERO_ELIGIBLE, __HERO_WEEK__, HERO_CONFIG);
 
 export const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -128,6 +46,7 @@ export const HeroSection = () => {
   };
 
   const movie = HERO_MOVIES[currentIndex];
+  if (!movie) return null; // pool vacío: no se pinta el hero (no debería ocurrir)
   const saga = getSagaById(movie.id);
   const isSaga = Boolean(saga);
   const linkTo = isSaga ? `/saga/${movie.id}` : `/pelicula/${movie.id}`;
