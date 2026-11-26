@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterElRegreso, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHemingway, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -3412,6 +3412,28 @@ const movies2010s: Movie[] = [
       { name: "Carlos Enrique Almirante", role: "Enrique" }
     ],
     notes: "Título internacional: Yuli: The Carlos Acosta Story. Coproducción internacional con dirección española, rodada en Cuba y con reparto cubano. País: España, Cuba, Reino Unido y Alemania según Wikipedia; eCartelera indica España y Reino Unido y MUBI España y Cuba. Entre las productoras figuran Morena Films y Potboiler Productions; ninguna fuente consultada menciona al ICAIC. Guion de Paul Laverty, basado en la autobiografía de Carlos Acosta No Way Home (Wikipedia y eCartelera añaden a Acosta como coguionista). Música de Alberto Iglesias; fotografía de Alex Catalán. Estreno mundial en la Sección Oficial a concurso del Festival de San Sebastián (septiembre de 2018) y estreno en cines de España el 14 de diciembre de 2018. Duración: 111 min según el archivo de archive.org; 115 min según Wikipedia, 110 según los Premios Goya, 109 según eCartelera y 107 según MUBI. Nominada en 2019 a cinco Premios Goya (actor revelación, guion adaptado, música original, fotografía y sonido), sin ganar ninguno."
+  },
+  {
+    id: "el-regreso-2018",
+    title: "El regreso",
+    year: 2018,
+    director: ["Blanca Rosa Blanco", "Alberto Luberta"],
+    poster: posterElRegreso,
+    duration: "105 min",
+    genre: ["Drama", "Crimen", "Thriller"],
+    synopsis: "Patricia, una detective, vuelve a su ciudad natal, Matanzas, para saldar una deuda del pasado. Allí se reencuentra con su gente y se cruza con víctimas y victimarios en una historia policíaca de ficción. Es la ópera prima como directora de la actriz Blanca Rosa Blanco, que además la protagoniza.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-el-regreso_202611",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Blanca Rosa Blanco", role: "Patricia" },
+      { name: "Yadier Fernández", role: "" },
+      { name: "Verónica Lynn", role: "" },
+      { name: "Felito Lahera", role: "" },
+      { name: "Yasmín Gómez", role: "" },
+      { name: "Carlos Enrique Almirante", role: "" }
+    ],
+    notes: "País: Cuba. Producción de RTV Comercial, el ICAIC y el Ministerio de Cultura, con participación del Instituto Cubano de la Música (OnCuba y créditos de la copia); producción de Carlos de la Huerta. Guion y dirección de Blanca Rosa Blanco y Alberto Luberta (Albertico Luberta en OnCuba). Fotografía de Alexander González; banda sonora de David Blanco. Rodada en Matanzas y La Habana (los créditos de la copia añaden Artemisa y Mayabeque). Ópera prima de Blanca Rosa Blanco como directora. Año: 2018 según Periódico Cubano, OnCuba (2023) y EcuRed, que la sitúan en el 40.º Festival del Nuevo Cine Latinoamericano de La Habana (diciembre de 2018); OnCuba (2019) la llama «película de 2019» presentada en 2018 y HFFNY data en 2017 el inicio del proyecto; el rodaje comenzó en 2017. Duración: 105 min según el archivo de archive.org; ninguna fuente consultada da la duración. La copia de archive.org tiene una resolución de 320×240 (4:3, con la imagen panorámica y bandas negras) y empieza con un logo de Tropix. El reparto procede de OnCuba (2017), del cartel y de IMDb; el personaje de Patricia, de OnCuba. No se asocian al resto de actores a personajes."
   }
 ];
 

@@ -41,6 +41,7 @@ export { default as posterVampirosHabana } from './vampiros-en-la-habana.jpg';
 export { default as posterMasVampiros } from './mas-vampiros-en-la-habana.jpg';
 export { default as posterMadrigal } from './madrigal.jpg';
 export { default as posterElSigloDeLasLuces } from './el-siglo-de-las-luces.jpg';
+export { default as posterElRegreso } from './el-regreso.jpg';
 export { default as posterEnTresYDos } from './en-tres-y-dos.jpg';
 export { default as posterNoviaDavid } from './una-novia-para-david.jpg';
 export { default as posterClandestinos } from './clandestinos.jpg';

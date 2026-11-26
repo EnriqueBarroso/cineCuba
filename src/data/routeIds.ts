@@ -159,6 +159,7 @@ export const movieIds: string[] = [
   "insumisas-2018",
   "ya-no-es-antes-2016",
   "yuli-2018",
+  "el-regreso-2018",
   "el-mundo-de-nelsito-2022",
   "el-mayor-2020",
 ];
