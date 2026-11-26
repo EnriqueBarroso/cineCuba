@@ -333,7 +333,8 @@ const movies1960s: Movie[] = [
       { name: "Adolfo Llauradó", role: "" },
       { name: "Idalia Anreus", role: "" },
       { name: "Eslinda Núñez", role: "" },
-      { name: "Ana Viña", role: "" }
+      { name: "Ana Viña", role: "" },
+      { name: "Raúl Pomares", role: "" }
     ],
     notes: "Producida por el ICAIC, en blanco y negro y 35 mm, con motivo del centenario de la Guerra de los Diez Años (1868). Guion: Manuel Octavio Gómez, Alfredo L. del Cueto, Jorge Herrera y Julio García Espinosa. Cámara en mano: Jorge Herrera. Música: Leo Brouwer; canciones de Pablo Milanés. Montaje: Nelson Rodríguez. Vestuario: María Elena Molinet. Su estilo, a medio camino entre el noticiario y la cámara en mano, se ha vinculado al Tercer Cine."
   },
@@ -748,7 +749,8 @@ const movies1980s: Movie[] = [
     awards: [],
     cast: [
       { name: "Tito Junco", role: "" },
-      { name: "Javier González", role: "" }
+      { name: "Javier González", role: "" },
+      { name: "Idalia Anreus", role: "" }
     ],
     notes: "País: Cuba. Dirección de Octavio Cortázar. Tito Junco obtuvo el premio al mejor actor en el 12.º Festival Internacional de Cine de Moscú (1981). Año provisional: 1980 según TMDB, IMDb y la Filmoteca checa; 1981 según Wikipedia y AllMovie."
   },
@@ -767,7 +769,8 @@ const movies1980s: Movie[] = [
     cast: [
       { name: "Tony Cortés", role: "" },
       { name: "María de los Ángeles Santana", role: "" },
-      { name: "Lavinia Castro", role: "" }
+      { name: "Lavinia Castro", role: "" },
+      { name: "Manuel Porto", role: "" }
     ],
     notes: "País: Cuba (coproducción cubano-francesa, según la copia). Título en francés: La Vie en rose. Dirección de Rolando Díaz."
   },
@@ -812,7 +815,8 @@ const movies1980s: Movie[] = [
       { name: "Mirta Ibarra", role: "" },
       { name: "Adolfo Llauradó", role: "" },
       { name: "Elio Mesa", role: "" },
-      { name: "Paula Ali", role: "" }
+      { name: "Paula Ali", role: "" },
+      { name: "Raúl Eguren", role: "" }
     ],
     notes: "País: Cuba. Dirección de Tomás Gutiérrez Alea; guion de Gutiérrez Alea y Gabriel García Márquez. Fotografía: Mario García Joya. Candidata de Cuba al Óscar a mejor película de habla no inglesa (61.ª edición), sin llegar a ser nominada."
   },
@@ -860,7 +864,8 @@ const movies1980s: Movie[] = [
       { name: "Álvaro de Luna", role: "" },
       { name: "Rosalía Dans", role: "" },
       { name: "César Diéguez", role: "" },
-      { name: "Lorenzo Castillo", role: "" }
+      { name: "Lorenzo Castillo", role: "" },
+      { name: "Raúl Eguren", role: "" }
     ],
     notes: "País: coproducción Cuba–España. También conocida como El Gallego. Último largometraje de Manuel Octavio Gómez."
   },
@@ -906,7 +911,9 @@ const movies1980s: Movie[] = [
       { name: "Eslinda Núñez", role: "" },
       { name: "José Antonio Rodríguez", role: "" },
       { name: "Gerardo Riverón", role: "" },
-      { name: "Omara Portuondo", role: "Mercedes (cameo musical)" }
+      { name: "Omara Portuondo", role: "Mercedes (cameo musical)" },
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Miriam Socarrás", role: "" }
     ],
     notes: "Basada en la novela clásica de Cirilo Villaverde."
   },
@@ -960,7 +967,8 @@ const movies1980s: Movie[] = [
       { name: "Silvia Planas", role: "" },
       { name: "Néstor Jiménez", role: "" },
       { name: "Filiberto Romero", role: "" },
-      { name: "Carlos Gómez", role: "" }
+      { name: "Carlos Gómez", role: "" },
+      { name: "Reinaldo Miravalles", role: "" }
     ],
     notes: "Una de las comedias cubanas más populares de la década."
   },
@@ -983,7 +991,7 @@ const movies1980s: Movie[] = [
       { name: "Isabel Santos", role: "Yolanda" },
       { name: "Luis Alberto García", role: "Eugenio" },
       { name: "Mario Balmaseda", role: "Personaje" },
-      { name: "Rine Cruz", role: "" },
+      { name: "Reynaldo Cruz", role: "" },
       { name: "Mirta Ibarra", role: "" },
       { name: "Manuel Porto", role: "" },
       { name: "Maritza Rodríguez", role: "" }
@@ -1010,7 +1018,8 @@ const movies1980s: Movie[] = [
       { name: "Luis Alberto García", role: "Jugador" },
       { name: "Luis Alberto García (hijo)", role: "" },
       { name: "Elvira Cervera", role: "" },
-      { name: "Enrique Molina", role: "" }
+      { name: "Enrique Molina", role: "" },
+      { name: "Frank González", role: "" }
     ],
     notes: "Una de las películas de béisbol más queridas del cine cubano."
   },
@@ -1032,7 +1041,9 @@ const movies1980s: Movie[] = [
       { name: "Jorge Luis Álvarez", role: "David" },
       { name: "María Isabel Díaz", role: "Ofelia" },
       { name: "Edith Massola", role: "Olga" },
-      { name: "Rolando Tarajano", role: "" }
+      { name: "Rolando Tarajano", role: "" },
+      { name: "Ana Viña", role: "" },
+      { name: "Thais Valdés", role: "" }
     ]
   },
   {
@@ -1146,7 +1157,8 @@ const movies1980s: Movie[] = [
       { name: "Luis Alberto García", role: "José Ramón" },
       { name: "Jorge Cao", role: "" },
       { name: "Miriam Socarrás", role: "" },
-      { name: "Jacqueline Arenal", role: "" }
+      { name: "Jacqueline Arenal", role: "" },
+      { name: "Raúl Pomares", role: "" }
     ],
     notes: "Título onomatopéyico que representa el sonido de los huevos al caer."
   },
@@ -1172,7 +1184,8 @@ const movies1980s: Movie[] = [
       { name: "Isabel Moreno", role: "" },
       { name: "Jorge Martínez", role: "" },
       { name: "Miguel Gutiérrez", role: "" },
-      { name: "Miguel Navarro", role: "" }
+      { name: "Miguel Navarro", role: "" },
+      { name: "Carlos Cruz", role: "" }
     ],
     notes: "Ganadora del primer Goya a Mejor Película Extranjera de Habla Hispana."
   },
@@ -1391,7 +1404,8 @@ const movies1990s: Movie[] = [
       { name: "Omar Moynello", role: "" },
       { name: "Enrique Molina", role: "" },
       { name: "Salvador Wood", role: "" },
-      { name: "Nancy González", role: "" }
+      { name: "Nancy González", role: "" },
+      { name: "Samuel Claxton", role: "" }
     ],
   },
   {
@@ -1437,7 +1451,8 @@ const movies1990s: Movie[] = [
       { name: "Assenech Rodríguez", role: "" },
       { name: "Elena Huerta", role: "" },
       { name: "Tito Junco", role: "" },
-      { name: "Daisy Granados", role: "Nena Capitolio (aparición especial)" }
+      { name: "Daisy Granados", role: "Nena Capitolio (aparición especial)" },
+      { name: "Miriam Socarrás", role: "" }
     ],
   },
   {
@@ -1573,7 +1588,8 @@ const movies1990s: Movie[] = [
     cast: [
       { name: "Carlos Cruz", role: "Adolfo" },
       { name: "Mirta Ibarra", role: "Gina" },
-      { name: "Jorge Perugorría", role: "Mariano" }
+      { name: "Jorge Perugorría", role: "Mariano" },
+      { name: "Raúl Eguren", role: "" }
     ],
     notes: "Última película de Tomás Gutiérrez Alea."
   },
@@ -1591,7 +1607,8 @@ const movies1990s: Movie[] = [
     awards: [],
     cast: [
       { name: "René Lavan", role: "Gustavo" },
-      { name: "Mayte Vilán", role: "Yolanda" }
+      { name: "Mayte Vilán", role: "Yolanda" },
+      { name: "Miguel Gutiérrez", role: "" }
     ]
   },
   {
@@ -1627,7 +1644,8 @@ const movies1990s: Movie[] = [
     ],
     cast: [
       { name: "Jorge Perugorría", role: "Ernesto" },
-      { name: "Silvia Águila", role: "Estela" }
+      { name: "Silvia Águila", role: "Estela" },
+      { name: "Fernando Hechavarría", role: "" }
     ]
   },
   {
@@ -1663,7 +1681,8 @@ const movies1990s: Movie[] = [
     cast: [
       { name: "Luis Alberto García", role: "Ignacio" },
       { name: "Sirio Soto", role: "Miguelito" },
-      { name: "Néstor Jiménez", role: "El Chino" }
+      { name: "Néstor Jiménez", role: "El Chino" },
+      { name: "Miriam Socarrás", role: "" }
     ]
   },
   {
@@ -1857,7 +1876,8 @@ const movies2000s: Movie[] = [
       { name: "Tahimí Alvariño", role: "Jacqueline" },
       { name: "Jorge Perugorría", role: "Roldán" },
       { name: "Alina Rodríguez", role: "" },
-      { name: "Saturnino García", role: "" }
+      { name: "Saturnino García", role: "" },
+      { name: "Mijail Mulkay", role: "" }
     ],
     notes: "Una de las comedias cubanas más queridas del nuevo milenio."
   },
@@ -1922,7 +1942,8 @@ const movies2000s: Movie[] = [
       { name: "Ulises Toirac", role: "" },
       { name: "Carlos Treto", role: "" },
       { name: "Zenia Marabal", role: "" },
-      { name: "Carlos Massola", role: "" }
+      { name: "Carlos Massola", role: "" },
+      { name: "Fernando Hechavarría", role: "" }
     ]
   },
   {
@@ -1990,7 +2011,8 @@ const movies2000s: Movie[] = [
       { name: "Peter Lohmeyer", role: "Bjorn (El Sueco)" },
       { name: "Mijail Mulkay", role: "" },
       { name: "Coralia Veloz", role: "" },
-      { name: "Raúl Pomares", role: "" }
+      { name: "Raúl Pomares", role: "" },
+      { name: "Rogelio Blaín", role: "" }
     ],
   },
   {
@@ -2086,7 +2108,9 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Mirta Ibarra", role: "Mercedes" },
       { name: "Antonio Valero", role: "Alberto" },
-      { name: "Laura de la Uz", role: "Ana" }
+      { name: "Laura de la Uz", role: "Ana" },
+      { name: "Mijail Mulkay", role: "" },
+      { name: "Susana Pérez", role: "" }
     ]
   },
   {
@@ -2222,6 +2246,7 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Jorge Perugorría", role: "El Pintor" },
       { name: "Mario Limonta", role: "El Político" },
+      { name: "Mario Guerra", role: "" },
     ],
   },
   {
@@ -2262,6 +2287,9 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Alberto Yoel", role: "Ruy" }, 
       { name: "Roberto Sanmartín", role: "Tito" },
+      { name: "Alexis Díaz de Villegas", role: "" },
+      { name: "Tomás Cao", role: "" },
+      { name: "Yuliet Cruz", role: "" },
     ],
     backdrop: heroHabana,
   },
@@ -2281,7 +2309,9 @@ const movies2000s: Movie[] = [
     ],
     cast: [
       { name: "Renny Arozarena", role: "Benny Moré" },
-      { name: "Enrique Molina", role: "Olimpio" }
+      { name: "Enrique Molina", role: "Olimpio" },
+      { name: "Carlos Ever Fonseca", role: "" },
+      { name: "Mario Guerra", role: "Monchy" }
     ]
   },
   {
@@ -2420,7 +2450,8 @@ const movies2000s: Movie[] = [
   cast: [
     { name: "Ana de Armas", role: "Marie" },
     { name: "Álex González", role: "Andrés" },
-    { name: "Jorge Perugorría", role: "Simón" }
+    { name: "Jorge Perugorría", role: "Simón" },
+    { name: "Enrique Almirante", role: "" }
   ]
 },
   {
@@ -2440,7 +2471,10 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Jorge Perugorría", role: "Bernardito" },
       { name: "Enrique Molina", role: "Personaje" },
-      { name: "Tahimí Alvariño", role: "" }
+      { name: "Tahimí Alvariño", role: "" },
+      { name: "Alexis Díaz de Villegas", role: "" },
+      { name: "Mario Limonta", role: "" },
+      { name: "Mirta Ibarra", role: "" }
     ],
     notes: "Una sátira sobre la ambición."
   },
@@ -2521,6 +2555,7 @@ const movies2000s: Movie[] = [
     cast: [
       { name: "Silvia Águila", role: "Laura" }, 
       { name: "Carlos Ever Fonseca", role: "Alberto" },
+      { name: "Héctor Noas", role: "Rosendo" },
     ],
   },
   {
@@ -2535,7 +2570,9 @@ const movies2000s: Movie[] = [
   videoUrl: "https://archive.org/embed/el-argentino/Ciudad%20En%20Rojo.mp4",
   cast: [
     { name: "Rafael Ernesto Hernández", role: "Protagonista" },
-    { name: "Eman Xor Oña", role: "Protagonista" }
+    { name: "Eman Xor Oña", role: "Protagonista" },
+    { name: "Fernando Hechavarría", role: "" },
+    { name: "Mario Guerra", role: "" }
   ]
 },
 {
@@ -2579,7 +2616,8 @@ const movies2000s: Movie[] = [
   videoUrl: "https://archive.org/embed/los-dioses-rotos_202601/EL%20PREMIO%20FLACO%20VCD.mpg",
   cast: [
     { name: "Rosa Vasconcelos", role: "Iluminada" },
-    { name: "Alina Rodríguez", role: "Vecina" }
+    { name: "Alina Rodríguez", role: "Vecina" },
+    { name: "Carlos Gonzalvo", role: "" }
   ]
 },
 {
@@ -2648,7 +2686,8 @@ const movies2000s: Movie[] = [
       { name: "Luis Alberto García", role: "" },
       { name: "Carla Sánchez", role: "" },
       { name: "Yailene Sierra", role: "" },
-      { name: "Armando Fernández Soler", role: "" }
+      { name: "Armando Fernández Soler", role: "" },
+      { name: "Jorge Molina", role: "" }
     ],
     notes: "País: Cuba y España (coproducción; los créditos de la copia citan a ICAIC y Wanda Vision, la colaboración del Ministerio de Cultura de España, el apoyo del Programa Ibermedia y la financiación del ICO, con la mención «Una producción hispano-cubana»). Guion de Fernando Pérez y Eduardo del Llano. Música de Edesio Alejandro; fotografía de Raúl Pérez Ureta. Presentada en la sección Berlinale Special de la Berlinale de 2007 (función del 15 de febrero) y estrenada en España en marzo de 2007. Año: 2007 según Wikipedia, MUBI y el programa de la Berlinale; 2006 según Cineuropa, el Observatorio Europeo del Audiovisual y los créditos de la propia copia (© MMVI). Duración: 112 min según el archivo de archive.org, Wikipedia, MUBI y la Berlinale; 110 min según Cinemanía. Los premios proceden de Wikipedia y EcuRed. No se asocian actores a personajes: ninguna fuente consultada los atribuye con seguridad."
   }
@@ -2839,7 +2878,8 @@ const movies2010s: Movie[] = [
   videoUrl: "https://archive.org/embed/Lisanka/Molina%20Feroz.mp4",
   cast: [
     { name: "Dayana Legrá", role: "Miranda" },
-    { name: "Roberto Perdomo", role: "Lobo" }
+    { name: "Roberto Perdomo", role: "Lobo" },
+    { name: "Pancho García", role: "" }
   ]
 },
 {
@@ -2965,7 +3005,8 @@ const movies2010s: Movie[] = [
   videoUrl: "https://archive.org/embed/fatima-cubana-2014/LA%20PELICULA%20DE%20ANA.mpg",
   cast: [
     { name: "Laura de la Uz", role: "Ana" },
-    { name: "Yuliet Cruz", role: "Amiga" }
+    { name: "Yuliet Cruz", role: "Amiga" },
+    { name: "Tomás Cao", role: "" }
   ]
 },
 {
@@ -3010,7 +3051,8 @@ const movies2010s: Movie[] = [
   videoUrl: "https://archive.org/embed/fatima-cubana-2014/Fatima%20%5BCubana%5D%20%5B2014%5D.mpg",
   cast: [
     { name: "Carlos Enrique Almirante", role: "Fátima" },
-    { name: "Tomás Cao", role: "Vaselina" }
+    { name: "Tomás Cao", role: "Vaselina" },
+    { name: "Jazz Vilá", role: "" }
   ]
 },
 {
@@ -3025,7 +3067,9 @@ const movies2010s: Movie[] = [
   videoUrl: "https://archive.org/embed/fatima-cubana-2014/LA%20PARED%20DE%20LAS%20PALABRAS.mp4",
   cast: [
     { name: "Jorge Perugorría", role: "Luis" },
-    { name: "Isabel Santos", role: "Madre" }
+    { name: "Isabel Santos", role: "Madre" },
+    { name: "Laura de la Uz", role: "" },
+    { name: "Carlos Enrique Almirante", role: "" }
   ]
 },
 {
@@ -3063,7 +3107,8 @@ const movies2010s: Movie[] = [
     { name: "Alina Rodríguez", role: "" },
     { name: "Jorge Perugorría", role: "" },
     { name: "Mario Guerra", role: "" },
-    { name: "Isabel Santos", role: "" }
+    { name: "Isabel Santos", role: "" },
+    { name: "Pancho García", role: "" }
   ],
   notes: "Primer largometraje de ficción de Marilyn Solaya, directora del documental En el cuerpo equivocado. Inspirada en hechos reales. El título procede de un poema de Norge Espinosa."
 },
@@ -3099,7 +3144,8 @@ const movies2010s: Movie[] = [
     ],
     cast: [
       { name: "Damián Rodríguez", role: "Pepe Martí (niño)" },
-      { name: "Daniel Romero", role: "José Martí (adolescente)" }
+      { name: "Daniel Romero", role: "José Martí (adolescente)" },
+      { name: "Pancho García", role: "" }
     ],
     notes: "Retrato humanista del héroe nacional cubano en su juventud."
   },
@@ -3136,7 +3182,12 @@ const movies2010s: Movie[] = [
     cast: [
       { name: "Armando Valdés Freire", role: "Chala" },
       { name: "Alina Rodríguez", role: "Carmela" },
-      { name: "Armando Miguel Gómez", role: "El marginal" }
+      { name: "Armando Miguel Gómez", role: "El marginal" },
+      { name: "Héctor Noas", role: "" },
+      { name: "Miriel Cejas", role: "" },
+      { name: "Silvia Águila", role: "" },
+      { name: "Tomás Cao", role: "" },
+      { name: "Yuliet Cruz", role: "" }
     ],
     notes: "La película cubana más taquillera de la historia en su país."
   },
@@ -3155,7 +3206,7 @@ const movies2010s: Movie[] = [
       { name: "Premios Goya", year: 2013, category: "Mejor Película Iberoamericana" },
       { name: "Festival de La Habana", year: 2011, category: "Premio de la Popularidad" }
     ],
-    cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }],
+    cast: [{ name: "Alexis Díaz de Villegas", role: "Juan" }, { name: "Jorge Molina", role: "Lázaro" }, { name: "Jazz Vilá", role: "" }],
     backdrop: heroJuan,
   },
   {
@@ -3175,7 +3226,8 @@ const movies2010s: Movie[] = [
     ],
     cast: [
       { name: "Andy Fornaris", role: "Mayito" }, 
-      { name: "Ernesto Escalona", role: "Carlos" }
+      { name: "Ernesto Escalona", role: "Carlos" },
+      { name: "Miriam Socarrás", role: "" }
     ]
   },
   {
@@ -3196,6 +3248,8 @@ const movies2010s: Movie[] = [
     cast: [
       { name: "Tomás Cao", role: "Sergio" }, 
       { name: "Héctor Noas", role: "Serguéi" },
+      { name: "Mario Guerra", role: "" },
+      { name: "Yuliet Cruz", role: "" },
     ]
   },
   {
