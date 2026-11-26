@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterElRegreso, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterElRegreso, posterElTecho, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHemingway, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -3494,8 +3494,7 @@ const movies2010s: Movie[] = [
     title: "El techo",
     year: 2016,
     director: "Patricia Ramos",
-    // PROVISIONAL: sin cartel todavía; sustituir por posterElTecho cuando haya un póster en src/assets/posters/.
-    poster: "/placeholder.svg",
+    poster: posterElTecho,
     duration: "75 min",
     genre: ["Drama", "Comedia"],
     synopsis: "Yasmani, Anita y Vito, tres jóvenes amigos, se reúnen a diario en la azotea de un edificio de Cayo Hueso, en Centro Habana, para hablar de sus sueños y de sus problemas. Decididos a salir adelante, montan allí una pequeña pizzería. Es la ópera prima de ficción de Patricia Ramos.",
