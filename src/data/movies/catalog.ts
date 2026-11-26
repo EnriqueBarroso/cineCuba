@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHemingway, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -1756,6 +1756,31 @@ const movies1990s: Movie[] = [
       { name: "Alicia Bustamante", role: "Josefa" },
       { name: "Luis Alberto García", role: "Maestro de ceremonias / policía" },
     ]
+  },
+  {
+    id: "el-siglo-de-las-luces-1992",
+    title: "El siglo de las luces",
+    year: 1992,
+    director: "Humberto Solás",
+    poster: posterElSigloDeLasLuces,
+    duration: "135 min",
+    genre: ["Drama", "Histórico"],
+    synopsis: "Adaptación de la novela homónima de Alejo Carpentier. A finales del siglo XVIII, tres jóvenes de una familia criolla de La Habana (Sofía, Carlos y Esteban) conocen al francés Víctor Hugues, que los acerca a las ideas de la Ilustración y a la Revolución francesa. La película sigue cómo los arrastra el torbellino revolucionario que sacude Europa y el Caribe.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-el-siglo-de-las-luces_202611",
+    trailerUrl: "",
+    awards: [
+      { name: "Cinemafest (San Juan, Puerto Rico)", year: 1993, category: "Premio Pitirre a la mejor película" }
+    ],
+    cast: [
+      { name: "Jacqueline Arenal", role: "Sofía" },
+      { name: "François Dunoyer", role: "Víctor Hugues" },
+      { name: "Rustam Urazaev", role: "Esteban" },
+      { name: "Frédéric Pierrot", role: "Carlos" },
+      { name: "Alexis Valdés", role: "Doctor Ogé" },
+      { name: "Miguel Gutiérrez", role: "" },
+      { name: "Mireya Chapman", role: "" }
+    ],
+    notes: "País: Cuba, Francia y España (coproducción de ICAIC, SFP, Televisión Española y Yalta Films, según EcuRed y los créditos de la copia, que llevan el © MCMXCII de ICAIC, TV Española y Yalta Film). EcuRed añade Rusia (en la ficha de la película) o Ucrania (en la de Solás); Wikipedia solo cita Cuba y TheTVDB solo Francia. Adaptación, guion y diálogos de Alba de Céspedes, Jean Cassies y Humberto Solás, a partir de la novela de Alejo Carpentier (1962). Fotografía de Livio Delgado; montaje de Nicole Dedieu y Jean Pierre Rogues. Concebida como serie de televisión y con versión para cine. Año: 1992 según las fichas de la película en Wikipedia y EcuRed y el © de la copia; 1991 según la filmografía de Solás en ambas; estreno en Francia en marzo de 1993 según TheTVDB. Duración: 135 min según el archivo de archive.org; 120 min según Wikipedia y EcuRed (versión de cine); 130 min según FilmAffinity; 247 min según TheTVDB (versión francesa). La copia de archive.org tiene una resolución de 490×360 (contenedor 4:3, con la imagen panorámica y bandas negras), con créditos en español; en ellos figuran voces de doblaje para Sofía (Anne Alvaro) y Esteban (Redjep Mitrovitsa). Los actores y sus personajes proceden de Wikipedia, EcuRed y TheTVDB; el premio Pitirre, de Wikipedia y EcuRed. Según Wikipedia y EcuRed, sin confirmar con una tercera fuente independiente: Festival de Gramado 1993, mejor fotografía (Livio Delgado) y mejor dirección artística."
   },
 ];
 
