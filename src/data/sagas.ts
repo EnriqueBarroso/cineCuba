@@ -540,6 +540,67 @@ export const sagas: Saga[] = [
         videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser-capitulo-7/En%20silencio%20ha%20tenido%20que%20ser%20-%20Capitulo%2012.mp4",
       },
     ],
+    relatedSeasons: [{ id: "en-silencio-ha-tenido-que-ser-2", label: "Temporada 2" }],
+  },
+  {
+    id: "en-silencio-ha-tenido-que-ser-2",
+    title: "En Silencio Ha Tenido que Ser (segunda temporada)",
+    director: "José Massip",
+    // PROVISIONAL: ninguna fuente consultada da el año de emisión de esta temporada; se usa 1979 como la primera.
+    anioInicio: 1979,
+    anioFin: 1979,
+    // Sin póster propio: el hero de la ficha usa el marcador de posición, como la primera temporada.
+    poster: "",
+    tipo: "serial",
+    genre: ["Drama", "Thriller"],
+    synopsis:
+      "Segunda temporada de la serie de espionaje que narra la infiltración de agentes cubanos en organizaciones contrarrevolucionarias. Seis capítulos; el último, según los créditos de la copia, cierra la serie.",
+    estado: "parcial",
+    episodios: [
+      {
+        id: "en-silencio-ha-tenido-que-ser-2-e01",
+        titulo: "Capítulo 1",
+        anio: 1979,
+        duracionMinutos: 80,
+        videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser.-capitulo-5.-segunda-temporada/En%20Silencio%20ha%20tenido%20que%20ser.%20Cap%C3%ADtulo%201.%20Segunda%20Temporada.mp4",
+      },
+      {
+        id: "en-silencio-ha-tenido-que-ser-2-e02",
+        titulo: "Capítulo 2",
+        anio: 1979,
+        duracionMinutos: 70,
+        videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser.-capitulo-5.-segunda-temporada/En%20Silencio%20ha%20tenido%20que%20ser.%20Cap%C3%ADtulo%202.%20Segunda%20Temporada.mp4",
+      },
+      {
+        id: "en-silencio-ha-tenido-que-ser-2-e03",
+        titulo: "Capítulo 3",
+        anio: 1979,
+        duracionMinutos: 60,
+        videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser.-capitulo-5.-segunda-temporada/En%20Silencio%20ha%20tenido%20que%20ser.%20Cap%C3%ADtulo%203.%20Segunda%20Temporada.mp4",
+      },
+      {
+        id: "en-silencio-ha-tenido-que-ser-2-e04",
+        titulo: "Capítulo 4",
+        anio: 1979,
+        duracionMinutos: 57,
+        videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser.-capitulo-5.-segunda-temporada/En%20Silencio%20ha%20tenido%20que%20ser.%20Cap%C3%ADtulo%204.%20Segunda%20Temporada.mp4",
+      },
+      {
+        id: "en-silencio-ha-tenido-que-ser-2-e05",
+        titulo: "Capítulo 5",
+        anio: 1979,
+        duracionMinutos: 84,
+        videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser.-capitulo-5.-segunda-temporada/En%20Silencio%20ha%20tenido%20que%20ser.%20Cap%C3%ADtulo%205.%20Segunda%20Temporada.mp4",
+      },
+      {
+        id: "en-silencio-ha-tenido-que-ser-2-e06",
+        titulo: "Capítulo 6 (final)",
+        anio: 1979,
+        duracionMinutos: 73,
+        videoUrl: "https://archive.org/embed/en-silencio-ha-tenido-que-ser.-capitulo-5.-segunda-temporada/En%20Silencio%20ha%20tenido%20que%20ser.%20Cap%C3%ADtulo%206%20%28FINAL%29%20Segunda%20Temporada.mp4",
+      },
+    ],
+    relatedSeasons: [{ id: "en-silencio-ha-tenido-que-ser", label: "Temporada 1" }],
   },
 ];
 
