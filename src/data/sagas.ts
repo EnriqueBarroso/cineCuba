@@ -448,7 +448,7 @@ export const sagas: Saga[] = [
     director: "José Massip",
     anioInicio: 1979,
     anioFin: 1979,
-    poster: "",
+    poster: "/images/sagas/en-silencio-ha-tenido-que-ser.jpg",
     tipo: "serial",
     genre: ["Drama", "Thriller"],
     synopsis:
