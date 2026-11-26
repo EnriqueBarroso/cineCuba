@@ -3488,6 +3488,31 @@ const movies2010s: Movie[] = [
       { name: "Carlos Enrique Almirante", role: "" }
     ],
     notes: "País: Cuba. Producción de RTV Comercial, el ICAIC y el Ministerio de Cultura, con participación del Instituto Cubano de la Música (OnCuba y créditos de la copia); producción de Carlos de la Huerta. Guion y dirección de Blanca Rosa Blanco y Alberto Luberta (Albertico Luberta en OnCuba). Fotografía de Alexander González; banda sonora de David Blanco. Rodada en Matanzas y La Habana (los créditos de la copia añaden Artemisa y Mayabeque). Ópera prima de Blanca Rosa Blanco como directora. Año: 2018 según Periódico Cubano, OnCuba (2023) y EcuRed, que la sitúan en el 40.º Festival del Nuevo Cine Latinoamericano de La Habana (diciembre de 2018); OnCuba (2019) la llama «película de 2019» presentada en 2018 y HFFNY data en 2017 el inicio del proyecto; el rodaje comenzó en 2017. Duración: 105 min según el archivo de archive.org; ninguna fuente consultada da la duración. La copia de archive.org tiene una resolución de 320×240 (4:3, con la imagen panorámica y bandas negras) y empieza con un logo de Tropix. El reparto procede de OnCuba (2017), del cartel y de IMDb; el personaje de Patricia, de OnCuba. No se asocian al resto de actores a personajes."
+  },
+  {
+    id: "el-techo-2016",
+    title: "El techo",
+    year: 2016,
+    director: "Patricia Ramos",
+    // PROVISIONAL: sin cartel todavía; sustituir por posterElTecho cuando haya un póster en src/assets/posters/.
+    poster: "/placeholder.svg",
+    duration: "75 min",
+    genre: ["Drama", "Comedia"],
+    synopsis: "Yasmani, Anita y Vito, tres jóvenes amigos, se reúnen a diario en la azotea de un edificio de Cayo Hueso, en Centro Habana, para hablar de sus sueños y de sus problemas. Decididos a salir adelante, montan allí una pequeña pizzería. Es la ópera prima de ficción de Patricia Ramos.",
+    videoUrl: "https://archive.org/embed/peli-cuba-el-techo.-mp-4",
+    trailerUrl: "",
+    awards: [
+      { name: "Festival de La Habana", year: 2016, category: "Sección oficial en competencia, Óperas Primas (Premio Coral)" },
+      { name: "Festival de La Habana", year: 2016, category: "Premio colateral de la Red de Mujeres Realizadoras Sara Gómez" },
+      { name: "Festival de La Habana", year: 2016, category: "Premio colateral del Círculo de Cultura de la Unión de Periodistas de Cuba" }
+    ],
+    cast: [
+      { name: "Enmanuel Galbán", role: "Yasmani" },
+      { name: "Andrea Doimeadiós", role: "Anita" },
+      { name: "Jonathan Navarro", role: "Vito" },
+      { name: "Noslén Sánchez", role: "" }
+    ],
+    notes: "País: Cuba y Nicaragua (coproducción según EcuRed y Cine Las Américas; otras fuentes solo citan Cuba). Cine independiente: producción de Mar y Cielo, S.A., de Humberto Jiménez Penha, con el apoyo del ICAIC, el Fondo Noruego para el Cine Cubano (embajada de Noruega en Cuba), Bread for the World (Servicio Protestante de Desarrollo, Alemania) y JenovaPRO, según los créditos de la copia y OnCuba. Guion de Patricia Ramos; fotografía de Alan González; montaje de Kenia Velázquez (Velásquez en Cuba50); diseño de sonido de Angie Hernández; música de Juan Antonio Leyva (José Antonio en Cuba50) y Magda Rosa Galbán. Rodada en una azotea de Cayo Hueso en 18 días según OnCuba (17 según Cuba50). Es el primer largometraje de ficción de Patricia Ramos. Año: 2016 según EcuRed, Cine Las Américas y OnCuba, por su estreno en el 38.º Festival de La Habana (diciembre de 2016, sección de óperas primas, sin ganar el Coral); se estrenó en cines de Cuba en el verano de 2017, y SensaCine la fecha en 2017. Proyectada en 2017 en los festivales de Miami y San Diego. Premios de Cine Las Américas: EcuRed dice mejor película de ficción (jurado) en 2017; SensaCine habla de dos premios; el festival no lo confirma, por lo que no se incluyen. Duración: 75 min según el archivo de archive.org, Cine Las Américas y Cuba50. La copia de archive.org tiene una resolución de 626×360 (16:9)."
   }
 ];
 
