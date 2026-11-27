@@ -1,5 +1,5 @@
 import { Head } from 'vite-react-ssg';
-import { absoluteUrl, SITE_URL } from '@/lib/seo';
+import { socialImage, SITE_URL } from '@/lib/seo';
 
 interface SEOProps {
   title: string;
@@ -18,12 +18,11 @@ interface SEOProps {
 export const SEO = ({ title, description, image, url, type = 'website', exactTitle = false, robots, noindex = false }: SEOProps) => {
   const siteTitle = "CineCuba | Archivo del Cine Cubano";
   const fullTitle = exactTitle ? title : title === "Inicio" ? siteTitle : `${title} | CineCuba`;
-  // Usamos la imagen del repositorio como fallback
-  const defaultImage = "https://cine-cubano.com/og-image.jpg";
   const siteUrl = SITE_URL;
   const canonicalUrl = url || siteUrl;
   const robotsValue = robots ?? (noindex ? "noindex" : undefined);
-  const ogImage = absoluteUrl(image) || defaultImage;
+  // Sin imagen, o con un SVG (p. ej. el placeholder), se usa og-image.jpg
+  const ogImage = socialImage(image);
 
   return (
     <Head>

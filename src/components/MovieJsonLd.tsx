@@ -1,4 +1,4 @@
-import { absoluteUrl, SITE_URL } from "@/lib/seo";
+import { socialImage, SITE_URL } from "@/lib/seo";
 import type { Movie } from "@/data/movies";
 
 export const MovieJsonLd = ({ movie }: { movie: Movie }) => (
@@ -11,7 +11,7 @@ export const MovieJsonLd = ({ movie }: { movie: Movie }) => (
         name: movie.title,
         description: movie.synopsis.slice(0, 300),
         dateCreated: movie.year.toString(),
-        image: absoluteUrl(movie.poster),
+        image: socialImage(movie.poster),
         genre: movie.genre,
         director: Array.isArray(movie.director)
           ? movie.director.map((name) => ({ "@type": "Person", name }))

@@ -1,4 +1,4 @@
-import { absoluteUrl } from "@/lib/seo";
+import { socialImage } from "@/lib/seo";
 import { isDirectVideoFile } from "@/lib/video";
 
 interface VideoJsonLdProps {
@@ -20,7 +20,7 @@ export const VideoJsonLd = ({ name, description, thumbnail, year, videoUrl, genr
         "@type": "VideoObject",
         name,
         description: description.slice(0, 300),
-        ...(thumbnail && { thumbnailUrl: absoluteUrl(thumbnail) }),
+        thumbnailUrl: socialImage(thumbnail),
         uploadDate: `${year}-01-01`,
         contentUrl: videoUrl,
         ...(!isDirectVideoFile(videoUrl) && { embedUrl: videoUrl }),
