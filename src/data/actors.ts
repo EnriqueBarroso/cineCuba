@@ -378,6 +378,7 @@ export const actors: Actor[] = [
     birthYear: 1970,
     birthPlace: 'Isla de la Juventud, Cuba',
     nationality: 'Cubano',
+    photo: '/images/actors/carlos-gonzalvo.jpg',
     biography: "Carlos Gonzalvo Rodríguez (Isla de la Juventud, 4 de septiembre de 1970) es un actor y humorista cubano, muy popular gracias a su personaje del Profesor Mentepollo, un personaje múltiple que comenta con humor reflexivo, agudo y crítico todos los rincones de la realidad nacional. De niño no sentía inclinación alguna por la actuación —le gustaban la mecánica, manejar y los carros—, pero acabó entrando en el mundo del teatro y ha construido una carrera de más de 35 años en la que combina la comedia con los papeles dramáticos. En el cine y la televisión ha participado en Entrega, Lucha contra bandidos, El premio flaco, Vinci y Omega 3 (2014), de Eduardo del Llano, además de ser uno de los actores de la saga de cortos Los cuentos de Nicanor O'Donnell, y más recientemente en la telenovela El derecho de soñar y en La fiesta, de Gerardo Chijona. Celebró sus 35 años de vida artística con el espectáculo ¿Quién llegó primero al mundo?, en el Teatro Astral.",
     awards: [],
   },
@@ -672,6 +673,7 @@ export const actors: Actor[] = [
     birthPlace: 'La Habana, Cuba',
     deathYear: 2021,
     nationality: 'Cubano',
+    photo: '/images/actors/frank-gonzalez.jpg',
     biography: "Francisco González López, conocido como Frank González (La Habana, 7 de octubre de 1946 — La Habana, 9 de abril de 2021), fue un actor cubano de radio, cine y televisión y uno de los grandes actores de voz y doblaje del país. Empezó como aficionado en grupos de teatro y conjuntos musicales y, a finales de los años 60, comenzó a trabajar en el Instituto Cubano de Radio y Televisión como diseñador de vestuario y decorador. Se hizo inmortal como la voz de Elpidio Valdés, el mambí creado por Juan Padrón, y de su célebre '¡Hasta la vista, compay!'. Fue uno de los colaboradores más cercanos de Padrón: puso voz a varios personajes en Elpidio Valdés contra dólar y cañón (1983), a Pepito, Smiley y Al Tapone en ¡Vampiros en La Habana! (1985) y también participó en Más vampiros en La Habana. Por la facilidad con que daba vida a personajes muy distintos lo llamaron 'el hombre de las mil voces'. En el cine actuó en películas como Jíbaro, En tres y dos (1985) y la coproducción cubano-peruana Tupac Amaru. Recibió el Premio ACTUAR por la Obra de la Vida (2016) y el Premio Nacional de Televisión 2019, que se le entregó en octubre de 2020. Murió en La Habana a los 74 años.",
     awards: [
       "Premio ACTUAR por la Obra de la Vida (2016)",
@@ -748,6 +750,7 @@ export const actors: Actor[] = [
     birthPlace: 'Sagua la Grande, Villa Clara, Cuba',
     deathYear: 1998,
     nationality: 'Cubana',
+    photo: '/images/actors/idalia-anreus.jpg',
     biography: "Idalia Anreus (Sagua la Grande, 1932 — Elizabeth, Nueva Jersey, 3 de enero de 1998) fue una de las grandes actrices del cine cubano de los años 60 y 70. Autodidacta, llegó a la actuación a través del teatro infantil de la mano de su hermana menor, la actriz Gladys Anreus, y más tarde formó parte de Teatro Estudio y del Teatro Político Bertolt Brecht. Su primera película fue La salación (1966), dirigida por Manuel Octavio Gómez, con quien se casó en 1968 y con quien filmaría muchos de sus papeles principales. Apareció en Lucía (1968) de Humberto Solás, La primera carga al machete (1969), Los días del agua (1971), Retrato de Teresa (1979) y Guardafronteras, entre otras: once películas entre 1966 y 1983. Por su papel de Antonica en Los días del agua ganó el premio a la mejor actriz en el Festival de Moscú de 1971. Una enfermedad la obligó a retirarse a mediados de los años 80. Murió en Estados Unidos, mientras visitaba a sus hermanas.",
     awards: [
       "Premio a la Mejor Actriz — VII Festival Internacional de Cine de Moscú, por Los días del agua (1971)",
@@ -859,6 +862,7 @@ export const actors: Actor[] = [
     birthYear: 1984,
     birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
+    photo: '/images/actors/jazz-vila.jpg',
     biography: "Luis Yasser Vilá Cabrera, conocido como Jazz Vilá (La Habana, 21 de agosto de 1984), es un actor, director, presentador, productor y dramaturgo cubano. Se graduó de la Escuela Nacional de Arte, debutó en la telenovela Las huérfanas de la Obra Pía (2000) y se formó en el teatro con El Público, bajo la dirección de Carlos Díaz, en obras como Ícaros y La loca de Chaillot. Su primera película fue Personal Belongings (2006), de Alejandro Brugués, y su carrera dio un giro con Juan de los muertos (2011), coproducción cubano-española que ganó el Goya, y con El acompañante (2015), de Pavel Giroud, donde hace del antagonista Boris. También ha participado en Fátima o el Parque de la Fraternidad, El rey de La Habana, Hotel Coppelia y la serie Paquita Salas. Es fundador y director de la compañía Jazz Vilá Projects, cuyo montaje Farándula superó las 80 funciones con el teatro lleno; en 2017 presentó Eclipse en Estados Unidos, el primer montaje dirigido por un cubano con elenco de la isla y en inglés, y ha estrenado Candela y Farándula en Nueva York. Con su fundación Jazz Vilá PorDentro apoya a nuevos talentos.",
     awards: [
       "Premio Goya a la Mejor Película Iberoamericana — por Juan de los muertos (2013, compartido con el equipo)",
@@ -890,6 +894,7 @@ export const actors: Actor[] = [
     id: 'jorge-martinez',
     name: 'Jorge Martínez',
     nationality: 'Cubano',
+    photo: '/images/actors/jorge-martinez.jpg',
     biography: "Jorge Martínez Castillo es uno de los pilares de la escena artística cubana: actor de teatro, cine, radio y televisión, graduado de la Escuela Nacional de Arte. Empezó como músico, aunque soñaba con ganarse la vida como marinero mercante, y acabó convertido en uno de los rostros más conocidos de la isla. En el cine participó en La bella del Alhambra (1989) de Enrique Pineda Barnet y en Alicia en el pueblo de Maravillas (1991), y protagonizó Últimos días en La Habana, de Fernando Pérez, que le valió el premio a la mejor actuación masculina en el Festival Internacional de Cine Pobre de Gibara. En el teatro intervino en obras como El hombre más codiciado del mundo, de Nicolás Dorr, y Santa Camila de La Habana Vieja. En la televisión ha sido actor de series y telenovelas y también conductor de programas como A moverse, El Expreso y Sonando en Cuba. Recibió el Premio Enrique Almirante.",
     awards: [
       "Premio a la Mejor Actuación Masculina — Festival Internacional de Cine Pobre de Gibara, por Últimos días en La Habana (2017, compartido con Patricio Wood en la categoría de actuación)",
@@ -951,6 +956,7 @@ export const actors: Actor[] = [
     birthPlace: 'La Habana, Cuba',
     deathYear: 2016,
     nationality: 'Cubano',
+    photo: '/images/actors/jose-antonio-rodriguez.jpg',
     biography: "José Antonio Rodríguez (La Habana, 1935 — La Habana, 7 de septiembre de 2016) fue un actor cubano de cine y teatro al que se recordó a su muerte como un actor de mil personajes. Su carrera en el cine abarcó cuatro décadas, de 1962 a 2002, e incluye Cuba '58 (1962), El otro Cristóbal (1963), La pandilla (1965), Tulipa (1967), La última cena (1976) de Tomás Gutiérrez Alea, Polvo rojo (1982) y Cecilia (1982), de Humberto Solás, donde interpretó a Uribe. Murió en La Habana tras padecer una enfermedad degenerativa.",
     awards: [],
   },
@@ -1074,6 +1080,7 @@ export const actors: Actor[] = [
     birthPlace: 'Pogolotti, Marianao, La Habana, Cuba',
     deathYear: 2021,
     nationality: 'Cubano',
+    photo: '/images/actors/manuel-porto.jpg',
     biography: "Eleodoro Manuel Porto Sánchez (Pogolotti, Marianao, La Habana, 28 de septiembre de 1945 — La Habana, 28 de septiembre de 2021) fue una de las figuras históricas de la actuación cubana en teatro, cine, televisión y radio. Contó que no llegó a la actuación por vocación, sino por la oportunidad de conseguir más pases durante el Servicio Militar Obligatorio, cuando formaba parte de un grupo de aficionados. En 1968 fue uno de los seis actores seleccionados en una convocatoria nacional del ICRT y empezó con pequeños papeles y de extra, con la ayuda de Raquel Revuelta, Verónica Lynn y Reinaldo Miravalles. En el cine intervino en cerca de veinte películas entre 1976 y 2010, entre ellas La tierra y el cielo, Se permuta, La vida en rosa, Caravana y Habana, Havana, por la que fue premiado en el Festival de Cine Latinoamericano de Trieste. En 1992 fundó el Conjunto Artístico Comunitario Korimacao, en la Ciénaga de Zapata (Matanzas), que dirigió durante años y que le valió el Premio Nacional de la Cultura Comunitaria. Murió en La Habana el día en que cumplía 76 años, por complicaciones de la COVID-19, cuando protagonizaba la telenovela Vuelve a mirar. En 2021 recibió el Premio Nacional de Radio y Televisión a título póstumo.",
     awards: [
       "Premio Nacional de Radio y Televisión (2021, a título póstumo)",
@@ -1121,6 +1128,7 @@ export const actors: Actor[] = [
     birthYear: 1960,
     birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
+    photo: '/images/actors/mario-guerra.jpg',
     biography: "Mario Guerra (La Habana, 5 de marzo de 1960) es un actor y director teatral cubano. Descubrió la actuación en 1980, durante el servicio militar en el sur de Angola; de vuelta en Cuba hizo teatro aficionado y se formó observando desde bambalinas el Teatro Político Bertolt Brecht de Mario Balmaseda. En 1997 fundó con Raúl Martín el grupo Teatro de la Luna, donde destacó en Delirio habanero. En el cine ha trabajado en Frutas en el café (2005), de Humberto Padrón, La pared y El Benny (2006), donde fue Monchy, Ciudad en rojo y El baile de la Victoria (2009), de Fernando Trueba, La obra del siglo, Vientos de La Habana (2016), Sergio y Serguéi (2017) y Fenómenos naturales (2024), y puso la voz a Ramón, el mejor amigo del protagonista, en la película de animación Chico y Rita (2010), de Fernando Trueba y Javier Mariscal, nominada al Óscar.",
     awards: [],
   },
@@ -1161,6 +1169,7 @@ export const actors: Actor[] = [
     id: 'miguel-gutierrez',
     name: 'Miguel Gutiérrez',
     nationality: 'Cubano',
+    photo: '/images/actors/miguel-gutierrez.jpg',
     biography: "Miguel Gutiérrez fue un actor y director cubano de teatro, cine y televisión, considerado uno de los grandes de su generación y maestro de actores más jóvenes como Luis Alberto García. Desde 1959 trabajó en el teatro, en el Conjunto Dramático Nacional y el Grupo Rita Montaner, y actuó en montajes como El círculo de tiza caucasiano, de Brecht. Toda una generación de televidentes lo recuerda por su Enrique de Lagardère. En el cine participó, entre otras, en Para quién baila La Habana (1963), El extraño caso de Rachel K (1973), Maluala (1979), Plácido (1986), Clandestinos (1987), de Fernando Pérez, donde fue Miralles, La bella del Alhambra (1989), Adorables mentiras (1991) y El siglo de las luces (1992). En 1991 se instaló en Miami, donde trabajó con León Ichaso en Azúcar amarga (1996) y Paraíso (2009). Murió en Miami Beach.",
     awards: [],
   },
@@ -1179,6 +1188,7 @@ export const actors: Actor[] = [
     birthYear: 1974,
     birthPlace: 'La Habana, Cuba',
     nationality: 'Cubano',
+    photo: '/images/actors/mijail-mulkay.jpg',
     biography: "Mijail Mulkay Bordón Perdomo (La Habana, 20 de abril de 1974) es un actor y director teatral cubano, hijo del también actor Iván Mulkay. Graduado como actor y director de teatro en el Instituto Superior de Arte, formó parte de compañías importantes de la escena cubana como Teatro Estudio, Grupo Irrumpe y El Público. Debutó en la televisión en 1996 con la serie Entre mamparas y en 1997 recibió el premio al mejor actor secundario en televisión de la UNEAC. En el cine ha participado en Lista de espera, Hacerse el sueco, Entre ciclones y Aunque estés lejos, y en la televisión cubana es muy recordado como Lungo en la telenovela Tierra Brava. En 2004 empezó a trabajar en Colombia, donde consolidó su carrera en la televisión, y también ha actuado en Estados Unidos, donde interpretó a Tico Fuentes en la serie Celia (2015).",
     awards: [
       "Mejor Actor Secundario en Televisión — UNEAC (1997)",
@@ -1442,6 +1452,7 @@ export const actors: Actor[] = [
     birthPlace: 'Sancti Spíritus, Cuba',
     deathYear: 2007,
     nationality: 'Cubano',
+    photo: '/images/actors/rene-de-la-cruz.jpg',
     biography: "René de la Cruz Solares (Sancti Spíritus, 3 de enero de 1931 — La Habana, 26 de junio de 2007) fue un actor cubano muy popular en el cine, la radio, la televisión y el teatro. Llegó a la actuación casi por casualidad, cuando lo invitaron a ver cómo se hacía un programa de radio. En el cine dejó huella en Nuestro hombre en La Habana (1959), Papeles son papeles, Asalto al tren central (1967), Memorias del subdesarrollo y La odisea del General José (1968), Mella (1975), de Enrique Pineda Barnet, El brigadista, Baraguá y Realengo 18, y en 1990 ganó el premio al mejor actor del Festival de Cine de Cartagena. En la televisión se convirtió en un personaje inolvidable como el agente Julito el pescador, de En silencio ha tenido que ser, papel para el que convivió con el verdadero Julito en Santa Cruz del Norte. Recibió la Distinción por la Cultura Nacional. Es el padre del también actor René de la Cruz Ortiz.",
     awards: ['Premio al Mejor Actor — Festival Internacional de Cine de Cartagena (1990)', 'Distinción por la Cultura Nacional'],
   },
@@ -1502,6 +1513,7 @@ export const actors: Actor[] = [
     birthPlace: 'La Habana, Cuba',
     deathYear: 2018,
     nationality: 'Cubano',
+    photo: '/images/actors/rogelio-blain.jpg',
     biography: "Rogelio Juan Blaín Blaín (La Habana, 24 de agosto de 1944 — 13 de mayo de 2018) fue uno de los actores más queridos de la radio, el cine y la televisión cubanas. Empezó como aficionado y en 1966 Humberto Solás lo eligió para Lucía (1968), donde interpretó a Antonio en la segunda historia. Desde entonces trabajó con directores como Manuel Octavio Gómez, Manuel Pérez, Rogelio París, Jorge Fraga y Jesús Díaz, y participó en películas como El hombre de Maisinicú, Patty Candela, Hasta cierto punto (donde fue Diego), Reina y Rey y Hacerse el sueco. Aunque siempre dijo preferir el cine, la televisión lo hizo enormemente popular: fue el villano Lucio Contreras en la telenovela Tierra Brava, participó en la serie Enrique de Lagardère, que lo llevó a la cima de su popularidad, y fue el oficial del Ministerio del Interior de Móvil Ocho. Compartió escenario con Enrique Molina y Enrique Almirante. Recibió el título de Artista Loable de la Radio y la Televisión Cubanas. Falleció en La Habana a los 73 años, víctima de un cáncer.",
     awards: [
       "Artista Loable de la Radio y la Televisión Cubanas",
@@ -1513,6 +1525,7 @@ export const actors: Actor[] = [
     birthYear: 1957,
     birthPlace: 'Camagüey, Cuba',
     nationality: 'Cubano',
+    photo: '/images/actors/rolando-brito.jpg',
     biography: "Rolando Brito Rodríguez (Camagüey, 15 de mayo de 1957) es un actor cubano de teatro, cine y televisión, graduado de la Escuela Nacional de Arte Dramático de La Habana en 1983. En la televisión cubana participó en novelas y teleseries muy queridas por el público, como La semilla escondida, Hermanos, Los papaloteros, De tu sueño a mi sueño, Pasión y prejuicio y, sobre todo, Algo más que soñar (1985), donde dio vida a Ignacio, uno de los jóvenes cadetes protagonistas. En el cine trabajó con Fernando Pérez y Manuel Pérez Paredes, y participó en Páginas del diario de Mauricio (2006). Es padre de la actriz Livia Brito. Desde hace más de veinte años vive en México, donde ha continuado su carrera en la televisión con títulos como De que te quiero, te quiero (2013) y La vecina (2015). Tiene la Distinción por la Cultura Nacional.",
     awards: [
       "Distinción por la Cultura Nacional",
@@ -1638,6 +1651,7 @@ export const actors: Actor[] = [
     birthPlace: 'La Habana, Cuba',
     deathYear: 1998,
     nationality: 'Cubana',
+    photo: '/images/actors/silvia-planas.jpg',
     biography: "Silvia Planas (La Habana, 2 de noviembre de 1901 — La Habana, 22 de marzo de 1998) fue una destacada actriz cubana de teatro, cine y televisión, y madre de Raquel y Vicente Revuelta, dos de las grandes figuras de la escena cubana. En el cine trabajó con Tomás Gutiérrez Alea en Las doce sillas (1962) y La muerte de un burócrata (1966), y con Humberto Solás en Lucía (1968) y Un día de noviembre. En el teatro participó, entre otras obras, en Contigo pan y cebolla y La vieja dama muestra sus medallas. La película Menos tiempo en la mirada (1987) toma el cuento Francisca y la muerte, de Onelio Jorge Cardoso, y lo traslada a la vida de la propia actriz. Adorables mentiras (1991), de Gerardo Chijona, fue su última película.",
     awards: [],
   },
@@ -1823,6 +1837,7 @@ export const actors: Actor[] = [
     birthYear: 1980,
     birthPlace: 'La Habana, Cuba',
     nationality: 'Cubana',
+    photo: '/images/actors/yuliet-cruz.jpg',
     biography: "Yuliet Cruz Delgado (La Habana, 1 de octubre de 1980) es una actriz y presentadora cubana de cine, teatro y televisión. Se graduó en el Instituto Superior de Arte y debutó en 1998 en el teatro con Contigo pan y cebolla. Ha trabajado con grandes nombres de la dramaturgia cubana y ha protagonizado obras como Aire frío, dirigida por Carlos Celdrán, y Fíchenla si pueden. En el cine ha intervenido en Habana Blues (2005), Habana Eva (2010), Melaza (2012), Se vende (2012), La película de Ana (2012), por la que recibió el Premio de la Crítica ACE del Festival Latino de Cine de Nueva York como mejor actriz de reparto, Conducta (2014) y Sergio y Serguéi (2017), en casi una veintena de películas. En la televisión fue presentadora del programa Piso 6. Radicada en Miami, protagonizó Plantadas (2023), de Lilo Vilaplana, y fue elegida para protagonizar Adiós Cuba, de Rolando Díaz.",
     awards: [
       "Premio de la Crítica ACE a la Mejor Actriz de Reparto — Festival Latino de Cine de Nueva York, por La película de Ana (2014)",
