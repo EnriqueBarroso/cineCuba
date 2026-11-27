@@ -2314,6 +2314,7 @@ const movies2000s: Movie[] = [
       { name: "Alexis Díaz de Villegas", role: "" },
       { name: "Tomás Cao", role: "" },
       { name: "Yuliet Cruz", role: "" },
+      { name: "Yailene Sierra", role: "" },
     ],
     backdrop: heroHabana,
   },

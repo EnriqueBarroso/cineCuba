@@ -22,6 +22,8 @@ const NAME_VARIANTS: Record<string, string> = {
   'Veronica Lynn': 'Verónica Lynn',
   'Reynaldo Miravalles': 'Reinaldo Miravalles',
   'Ana Viñas': 'Ana Viña',
+  'Reinaldo Cruz': 'Reynaldo Cruz',
+  'Rini Cruz': 'Reynaldo Cruz',
 };
 
 export const actors: Actor[] = [
@@ -190,6 +192,15 @@ export const actors: Actor[] = [
     awards: [
       "Catalina de Oro a la Mejor Actuación Femenina — Festival Internacional de Cine de Cartagena, por Vals de La Habana Vieja (1989)",
     ],
+  },
+  {
+    id: 'andrea-doimeadios',
+    name: 'Andrea Doimeadiós',
+    birthYear: 1994,
+    birthPlace: 'La Habana, Cuba',
+    nationality: 'Cubana',
+    biography: "Actriz cubana nacida en La Habana en 1994, hija del actor y humorista Osvaldo Doimeadiós. Combina el teatro, la televisión y el cine; en la pantalla grande ha participado en títulos como El techo (2016).",
+    awards: [],
   },
   {
     id: 'andy-fornaris',
@@ -764,6 +775,14 @@ export const actors: Actor[] = [
     nationality: 'Cubana',
     biography: '',
     awards: [],
+  },
+  {
+    id: 'irela-bravo',
+    name: 'Irela Bravo',
+    birthYear: 1953,
+    nationality: 'Cubana',
+    biography: "Actriz y locutora cubana nacida en 1953. Se formó desde 1971 en la Escuela de Formación de Actores del Instituto Cubano de Radiodifusión y ha desarrollado una larga carrera en radio, televisión, teatro y cine, con especial dedicación a la programación infantil. Es conocida por prestar su voz a María Silvia en Elpidio Valdés y por presentar el programa Entre tú y yo, de Cubavisión. Ha recibido, entre otros, el Premio Caricato de la UNEAC.",
+    awards: ['Premio Caricato — UNEAC'],
   },
   {
     id: 'isabel-santos',
@@ -1453,6 +1472,13 @@ export const actors: Actor[] = [
     ],
   },
   {
+    id: 'reynaldo-cruz',
+    name: 'Reynaldo Cruz',
+    nationality: 'Cubana',
+    biography: "Actor cubano conocido artísticamente como Rini Cruz. Debutó en la televisión cubana, donde se le recuerda por Pasión y prejuicio y se le asocia con la serie Hermanos. Tras trabajar en Angola como asesor de la televisión pública y formador de actores, se estableció en Estados Unidos, donde participó en telenovelas como Secreto de amor y Amor comprado. Trabaja junto a su esposa, Anabel Leal, en la productora audiovisual Imago Studio.",
+    awards: [],
+  },
+  {
     id: 'roberto-perdomo',
     name: 'Roberto Perdomo',
     nationality: 'Cubano',
@@ -1753,8 +1779,9 @@ export const actors: Actor[] = [
   {
     id: 'yailene-sierra',
     name: 'Yailene Sierra',
+    birthYear: 1974,
     nationality: 'Cubana',
-    biography: '',
+    biography: "Actriz cubana nacida en 1974 y graduada en 1995 en la Escuela Nacional de Teatro de La Habana. Ha trabajado en teatro y cine, con títulos como Habana Blues (2005), Madrigal (2007) y Últimos días en La Habana (2016), y ha desarrollado también parte de su carrera en España, donde participó en Sin instrucciones (2024).",
     awards: [],
   },
   {
