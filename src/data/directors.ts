@@ -873,6 +873,16 @@ export const directors: Director[] = [
     biography: "Director y guionista francés, nacido en Melle en 1961 y fallecido en París en 2024. Su cine, de mirada social y humanista, ganó la Palma de Oro de Cannes en 2008 con Entre los muros (La clase). Ambientó en Cuba dos de sus trabajos: dirigió el episodio La fuente del colectivo 7 días en La Habana (2012) y Regreso a Ítaca (2014), con guion suyo y de Leonardo Padura a partir de un episodio de la novela La novela de mi vida, en la que cinco amigos se reúnen en una azotea de La Habana tras años de exilio y desencanto. En CineCuba figuran estas dos obras.",
     activeYears: "1994-2021",
     awards: ["Palma de Oro del Festival de Cannes por Entre los muros (2008)", "Premio Venice Days del Festival de Venecia por Regreso a Ítaca (2014)"]
+  },
+  {
+    id: "jesus-diaz",
+    name: "Jesús Díaz",
+    birthYear: 1941,
+    deathYear: 2002,
+    nationality: "Cubano",
+    biography: "Jesús Díaz (La Habana, 1941 — Madrid, 2 de mayo de 2002) fue un escritor y cineasta cubano. Su primer libro, Los años duros (1966), obtuvo el Premio Casa de las Américas. En el cine trabajó en el ICAIC como documentalista y guionista: entre sus documentales figuran La sexta parte del mundo (1977, en codirección), Cincuenta y cinco hermanos (1978) y En tierra de Sandino (1978), y fue autor del guion de Clandestinos (1987), la ópera prima de Fernando Pérez. Dirigió dos largometrajes de ficción: Polvo rojo (1982), ambientada en la planta de níquel de Moa, y Lejanía (1985). Como narrador publicó, entre otras obras, Las iniciales de la tierra (1987), Las palabras perdidas (1992) y La piel y la máscara (1996). En los años noventa dejó Cuba y se instaló en España, donde en 1996 fundó la revista Encuentro de la cultura cubana, que publicó textos de autores cubanos del exilio.",
+    activeYears: "1966-2002",
+    awards: ["Premio Casa de las Américas por Los años duros (1966)"]
   }
 ];
 
