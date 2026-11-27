@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterElRegreso, posterElTecho, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterElRegreso, posterElTecho, posterPolvoRojo, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHemingway, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -1281,6 +1281,30 @@ const movies1980s: Movie[] = [
       { name: "Ana Viña", role: "" }
     ],
     notes: "País: Cuba. Dirección de Tomás Gutiérrez Alea. Guion de Tomás Gutiérrez Alea, Serafín Quiñones y Juan Carlos Tabío. Estreno en EE. UU.: 13 de marzo de 1985."
+  },
+  {
+    id: "polvo-rojo-1982",
+    title: "Polvo rojo",
+    year: 1982,
+    director: "Jesús Díaz",
+    poster: posterPolvoRojo,
+    duration: "107 min",
+    genre: ["Drama"],
+    synopsis: "En los primeros años de la Revolución, en el pueblo minero de Moa, en el oriente de Cuba, la planta de níquel levantada por los estadounidenses queda inactiva tras su nacionalización y muchos técnicos cubanos abandonan el país. Un ingeniero logra ponerla en marcha. Entre trabajadores e ingenieros, la película retrata los conflictos individuales y la lucha de clases de aquellos años.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-polvo-rojo-revolucion-y-conflicto-en-moa",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "René de la Cruz", role: "" },
+      { name: "José Antonio Rodríguez", role: "" },
+      { name: "Cristina Obín", role: "" },
+      { name: "Tito Junco", role: "" },
+      { name: "Rogelio Blaín", role: "" },
+      { name: "Miguel Gutiérrez", role: "" },
+      { name: "Carlos Moctezuma", role: "" }
+    ],
+    notes: "País: Cuba. Producción del ICAIC; producción general de Ricardo Ávila. Guion y dirección de Jesús Díaz; fotografía de Raúl Rodríguez; montaje de Justo Vega; música de José María Vitier. Presentada en la sección Nuevos Directores (fuera de competencia) del Festival de San Sebastián de 1982. Año: 1982 según San Sebastián, IMDb, WatchWhatWhere y el cartel (A/82), y estreno en Cuba en marzo de 1982; EcuRed y el Archivo Nacional del Cine checo la fechan en 1981. Duración: 107 min según el archivo de archive.org; 112 min según EcuRed y San Sebastián; 105 min según WatchWhatWhere. La copia de archive.org tiene una resolución de 1280×720 (imagen en 4:3 con bandas negras laterales). El reparto procede de EcuRed, San Sebastián, el cartel, IMDb y WatchWhatWhere; no se asocian actores a personajes."
   },
 ];
 
