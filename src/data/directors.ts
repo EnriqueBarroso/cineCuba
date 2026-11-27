@@ -69,6 +69,7 @@ import laurentCantetPhoto from "@/assets/directors/laurent-cantet.jpg";
 import manuelOctavioGomezPhoto from "@/assets/directors/manuel-octavio-gomez.jpg";
 import hermanosRiosPhoto from "@/assets/directors/hermanos-rios.jpg";
 import rigobertoLopezPhoto from "@/assets/directors/rigoberto-lopez.jpg";
+import jesusDiazPhoto from "@/assets/directors/jesus-diaz.jpg";
 
 
 export interface Director {
@@ -877,6 +878,7 @@ export const directors: Director[] = [
   {
     id: "jesus-diaz",
     name: "Jesús Díaz",
+    photo: jesusDiazPhoto,
     birthYear: 1941,
     deathYear: 2002,
     nationality: "Cubano",
