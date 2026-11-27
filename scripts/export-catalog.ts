@@ -10,6 +10,9 @@
  *   - catalogo-identidad.json   instantánea de identidad (tipo, id, título, año, directores, título
  *                               normalizado) que usa CineCubaDownloader para detectar duplicados
  *
+ * El HTML incluye además las pestañas "Actores" y "Directores" (quién tiene ficha, foto y en qué obras
+ * aparece). Esos listados solo van en el HTML: el CSV y el JSON de identidad no los incluyen.
+ *
  * Los datos reales (catalog.ts, sagas.ts, serials.ts, shorts.ts) importan pósters .jpg que tsx no sabe
  * cargar, así que se empaquetan en memoria con esbuild (ya instalado como dependencia de Vite),
  * sustituyendo cada imagen por su ruta de archivo.
@@ -58,11 +61,30 @@ interface SagaLike {
   awards?: { name: string; year: number; category?: string }[];
 }
 
+interface ActorLike {
+  id: string;
+  name: string;
+  biography: string;
+  photo?: string;
+}
+
+interface DirectorLike {
+  id: string;
+  name: string;
+  photo?: string;
+}
+
 interface CatalogData {
   movies: MovieLike[];
   serials: MovieLike[];
   shorts: MovieLike[];
   sagas: SagaLike[];
+  actors: ActorLike[];
+  directors: DirectorLike[];
+  hasActorProfile: (actor: ActorLike) => boolean;
+  getActorByName: (name: string) => ActorLike | undefined;
+  directorList: (director: string | string[]) => string[];
+  hasDirector: (director: string | string[], name: string) => boolean;
 }
 
 type IdentityType = (typeof IDENTITY_TYPES)[number];
@@ -102,6 +124,9 @@ async function loadCatalog(): Promise<CatalogData> {
         'export { serials } from "@/data/serials";',
         'export { shorts } from "@/data/shorts";',
         'export { sagas } from "@/data/sagas";',
+        'export { actors, hasActorProfile, getActorByName } from "@/data/actors";',
+        'export { directors } from "@/data/directors";',
+        'export { directorList, hasDirector } from "@/lib/directors";',
       ].join("\n"),
       resolveDir: ROOT,
       loader: "ts",
@@ -336,7 +361,7 @@ const HTML_TEMPLATE = String.raw`<!doctype html>
   h1 { margin:0 0 4px; font:700 20px Georgia, "Times New Roman", serif; }
   h1 span { color:var(--gold); }
   .meta { color:var(--muted); font-size:13px; }
-  .tabs { display:flex; gap:8px; margin-top:12px; }
+  .tabs { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
   .tab { background:transparent; color:var(--muted); border:1px solid var(--line); border-radius:8px; padding:6px 12px; cursor:pointer; font:inherit; }
   .tab[aria-selected="true"] { color:#000; background:var(--gold); border-color:var(--gold); font-weight:600; }
   main { padding:16px 20px 40px; max-width:1200px; margin:0 auto; }
@@ -357,6 +382,10 @@ const HTML_TEMPLATE = String.raw`<!doctype html>
   a:hover { text-decoration:underline; }
   .tag { display:inline-block; padding:1px 7px; border-radius:999px; border:1px solid var(--line); color:var(--muted); font-size:12px; white-space:nowrap; }
   .tag.none { color:var(--bad); border-color:#5b2a2a; }
+  .tag.yes { color:var(--ok); border-color:#244b32; }
+  table.people { min-width:0; }
+  td.titles { color:var(--muted); font-size:13px; }
+  .sub { display:none; color:var(--muted); font-size:12px; font-weight:400; margin-top:2px; }
   .empty { padding:24px; color:var(--muted); text-align:center; }
   textarea { width:100%; min-height:170px; background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:10px; padding:12px; font:inherit; resize:vertical; }
   button.act { background:var(--gold); color:#000; border:0; border-radius:8px; padding:9px 14px; font:inherit; font-weight:600; cursor:pointer; }
@@ -368,7 +397,7 @@ const HTML_TEMPLATE = String.raw`<!doctype html>
   .src { color:var(--muted); }
   .summary { margin:12px 0; color:var(--muted); }
   [hidden] { display:none !important; }
-  @media (max-width: 700px) { .hide-sm { display:none; } header, main { padding-left:12px; padding-right:12px; } }
+  @media (max-width: 700px) { .hide-sm { display:none; } .sub { display:block; } header, main { padding-left:12px; padding-right:12px; } }
 </style>
 </head>
 <body>
@@ -378,6 +407,8 @@ const HTML_TEMPLATE = String.raw`<!doctype html>
   <div class="tabs" role="tablist">
     <button class="tab" role="tab" id="tab-buscar" aria-selected="true">Buscar</button>
     <button class="tab" role="tab" id="tab-lista" aria-selected="false">Comprobar lista</button>
+    <button class="tab" role="tab" id="tab-actores" aria-selected="false">Actores</button>
+    <button class="tab" role="tab" id="tab-directores" aria-selected="false">Directores</button>
   </div>
 </header>
 <main>
@@ -416,9 +447,48 @@ const HTML_TEMPLATE = String.raw`<!doctype html>
     <div class="summary" id="resumen"></div>
     <div class="res" id="resultado"></div>
   </section>
+  <section id="vista-actores" hidden>
+    <div class="bar">
+      <input type="search" id="q-actores" placeholder="Buscar actor o título…" autocomplete="off" aria-label="Buscar actor">
+    </div>
+    <div class="bar">
+      <select id="f-actores" aria-label="Ficha"></select>
+      <select id="m-actores" aria-label="Número de películas"></select>
+    </div>
+    <div class="count" id="count-actores" aria-live="polite"></div>
+    <div class="wrap">
+      <table class="people">
+        <thead><tr>
+          <th data-p="n">Nombre</th><th data-p="f">Ficha</th><th data-p="p">Foto</th><th data-p="c">Películas</th><th class="hide-sm">Títulos</th>
+        </tr></thead>
+        <tbody id="tbody-actores"></tbody>
+      </table>
+      <div class="empty" id="empty-actores" hidden>Sin resultados.</div>
+    </div>
+  </section>
+  <section id="vista-directores" hidden>
+    <div class="bar">
+      <input type="search" id="q-directores" placeholder="Buscar director o título…" autocomplete="off" aria-label="Buscar director">
+    </div>
+    <div class="bar">
+      <select id="f-directores" aria-label="Ficha"></select>
+    </div>
+    <div class="count" id="count-directores" aria-live="polite"></div>
+    <div class="wrap">
+      <table class="people">
+        <thead><tr>
+          <th data-p="n">Nombre</th><th data-p="f">Ficha</th><th data-p="p">Foto</th><th data-p="c">Películas</th><th class="hide-sm">Títulos</th>
+        </tr></thead>
+        <tbody id="tbody-directores"></tbody>
+      </table>
+      <div class="empty" id="empty-directores" hidden>Sin resultados.</div>
+    </div>
+  </section>
 </main>
 <script>
 var DATA = __DATA__;
+var ACTORES = __ACTORES__;
+var DIRECTORES = __DIRECTORES__;
 var GENERADO = "__GENERADO__";
 
 function norm(s) {
@@ -497,16 +567,18 @@ Array.prototype.forEach.call(document.querySelectorAll("th[data-k]"), function (
 });
 
 // Pestañas
+var VISTAS = ["buscar", "lista", "actores", "directores"];
+var FOCO = { buscar: "q", lista: "lista", actores: "q-actores", directores: "q-directores" };
 function showTab(which) {
-  var lista = which === "lista";
-  $("vista-buscar").hidden = lista;
-  $("vista-lista").hidden = !lista;
-  $("tab-buscar").setAttribute("aria-selected", String(!lista));
-  $("tab-lista").setAttribute("aria-selected", String(lista));
-  (lista ? $("lista") : $("q")).focus();
+  VISTAS.forEach(function (v) {
+    $("vista-" + v).hidden = v !== which;
+    $("tab-" + v).setAttribute("aria-selected", String(v === which));
+  });
+  $(FOCO[which]).focus();
 }
-$("tab-buscar").addEventListener("click", function () { showTab("buscar"); });
-$("tab-lista").addEventListener("click", function () { showTab("lista"); });
+VISTAS.forEach(function (v) {
+  $("tab-" + v).addEventListener("click", function () { showTab(v); });
+});
 
 // Comprobar lista
 function buscarTitulo(linea) {
@@ -556,6 +628,113 @@ function copiarAlternativo(texto) {
   document.body.removeChild(ta);
 }
 
+// Actores y Directores: una fila por persona; "o" son índices de DATA.
+function titulosDe(o) {
+  return o.map(function (i) { return DATA[i].titulo + " (" + DATA[i].anio + ")"; });
+}
+function prepararPersonas(list) {
+  list.forEach(function (p) {
+    p.c = p.o.length;
+    p._t = titulosDe(p.o).join(" · ");
+    p._s = norm(p.n + " " + p._t);
+  });
+}
+function sino(v) { return v ? '<span class="tag yes">sí</span>' : '<span class="tag none">no</span>'; }
+function contar(list, fn) { return list.filter(fn).length; }
+
+function vistaPersonas(cfg) {
+  var sortKey = "c", sortDir = -1;
+  var tbody = $("tbody-" + cfg.id);
+  function render() {
+    var tokens = norm($("q-" + cfg.id).value).split(/\s+/).filter(Boolean);
+    var rows = cfg.list.filter(function (p) {
+      if (!cfg.filtro(p)) return false;
+      for (var i = 0; i < tokens.length; i++) { if (p._s.indexOf(tokens[i]) < 0) return false; }
+      return true;
+    });
+    rows = rows.slice().sort(function (a, b) {
+      var x = a[sortKey], y = b[sortKey];
+      var r = typeof x === "number" && typeof y === "number" ? x - y : String(x).localeCompare(String(y), "es");
+      return r !== 0 ? r * sortDir : a.n.localeCompare(b.n, "es");
+    });
+    $("count-" + cfg.id).textContent = rows.length + (rows.length === 1 ? " resultado" : " resultados") + " de " + cfg.list.length;
+    $("empty-" + cfg.id).hidden = rows.length !== 0;
+    tbody.innerHTML = rows.map(function (p) {
+      var foto = p.f ? sino(p.p) : '<span class="meta">—</span>';
+      var tit = p._t ? esc(p._t) : '<span class="meta">sin obras</span>';
+      return '<tr><td class="t">' + esc(p.n) + '<div class="sub">' + tit + "</div></td><td>" + sino(p.f) + "</td><td>" + foto +
+        '</td><td class="n">' + p.c + '</td><td class="titles hide-sm">' + tit + "</td></tr>";
+    }).join("");
+  }
+  prepararPersonas(cfg.list);
+  cfg.selects.forEach(function (s) {
+    var el = $(s.id);
+    s.opciones.forEach(function (o) {
+      var op = document.createElement("option");
+      op.value = o.v; op.textContent = o.t + (o.n === undefined ? "" : " (" + o.n + ")");
+      el.appendChild(op);
+    });
+    el.addEventListener("change", render);
+  });
+  $("q-" + cfg.id).addEventListener("input", render);
+  Array.prototype.forEach.call(document.querySelectorAll("#vista-" + cfg.id + " th[data-p]"), function (th) {
+    th.addEventListener("click", function () {
+      var k = th.getAttribute("data-p");
+      if (sortKey === k) sortDir = -sortDir; else { sortKey = k; sortDir = k === "n" ? 1 : -1; }
+      render();
+    });
+  });
+  render();
+}
+
+(function () {
+  prepararPersonas(ACTORES);
+  var fa = $("f-actores"), ma = $("m-actores");
+  vistaPersonas({
+    id: "actores", list: ACTORES,
+    selects: [
+      { id: "f-actores", opciones: [
+        { v: "", t: "Todos", n: ACTORES.length },
+        { v: "con", t: "Con ficha", n: contar(ACTORES, function (p) { return p.f; }) },
+        { v: "sin", t: "Sin ficha", n: contar(ACTORES, function (p) { return !p.f; }) },
+        { v: "sinfoto", t: "Con ficha sin foto", n: contar(ACTORES, function (p) { return p.f && !p.p; }) }
+      ] },
+      { id: "m-actores", opciones: [
+        { v: "1", t: "Cualquier nº de películas" },
+        { v: "2", t: "2 o más películas", n: contar(ACTORES, function (p) { return p.c >= 2; }) },
+        { v: "3", t: "3 o más películas", n: contar(ACTORES, function (p) { return p.c >= 3; }) }
+      ] }
+    ],
+    filtro: function (p) {
+      var f = fa.value;
+      if (f === "con" && !p.f) return false;
+      if (f === "sin" && p.f) return false;
+      if (f === "sinfoto" && !(p.f && !p.p)) return false;
+      return p.c >= Number(ma.value);
+    }
+  });
+  prepararPersonas(DIRECTORES);
+  var fd = $("f-directores");
+  vistaPersonas({
+    id: "directores", list: DIRECTORES,
+    selects: [
+      { id: "f-directores", opciones: [
+        { v: "", t: "Todos", n: DIRECTORES.length },
+        { v: "con", t: "Con ficha", n: contar(DIRECTORES, function (p) { return p.f; }) },
+        { v: "sin", t: "Sin ficha", n: contar(DIRECTORES, function (p) { return !p.f; }) },
+        { v: "sinobras", t: "Ficha sin películas", n: contar(DIRECTORES, function (p) { return p.f && p.c === 0; }) }
+      ] }
+    ],
+    filtro: function (p) {
+      var f = fd.value;
+      if (f === "con") return !!p.f;
+      if (f === "sin") return !p.f;
+      if (f === "sinobras") return !!p.f && p.c === 0;
+      return true;
+    }
+  });
+})();
+
 render();
 $("q").focus();
 </script>
@@ -563,14 +742,136 @@ $("q").focus();
 </html>
 `;
 
-function toHtml(rows: Row[]): string {
+// ---------------------------------------------------------------------------
+// 4b) Listados de personas para las pestañas "Actores" y "Directores" (solo HTML)
+// ---------------------------------------------------------------------------
+
+/** Una persona: n = nombre, f = tiene ficha (0/1), p = tiene foto (0/1), o = índices de obras en DATA. */
+interface PersonRow {
+  n: string;
+  f: 0 | 1;
+  p: 0 | 1;
+  o: number[];
+}
+
+const normText = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+
+/** Entre grafías equivalentes (solo tildes/mayúsculas) gana la más usada y, a igualdad, la que más tildes lleva. */
+function pickSpelling(counts: Map<string, number>): string {
+  return [...counts.entries()].sort(
+    (a, b) => b[1] - a[1] || b[0].normalize("NFD").length - a[0].normalize("NFD").length || a[0].localeCompare(b[0], "es")
+  )[0][0];
+}
+
+function sortPeople(list: PersonRow[]): PersonRow[] {
+  return list.sort((a, b) => b.o.length - a.o.length || a.n.localeCompare(b.n, "es"));
+}
+
+function buildActorRows(data: CatalogData, rows: Row[]): PersonRow[] {
+  const index = new Map(rows.map((r, i) => [r.id, i]));
+  const works: { id: string; cast?: { name: string }[] }[] = [...data.movies, ...data.serials, ...data.shorts, ...data.sagas];
+  type Acc = { names: Map<string, number>; actor?: ActorLike; o: Set<number> };
+  const people = new Map<string, Acc>();
+  for (const w of works) {
+    const i = index.get(w.id);
+    if (i === undefined) continue;
+    for (const c of w.cast ?? []) {
+      const name = (c.name ?? "").trim();
+      if (!name) continue;
+      const actor = data.getActorByName(name);
+      const key = actor ? "id:" + actor.id : "n:" + normText(name);
+      let p = people.get(key);
+      if (!p) {
+        p = { names: new Map(), actor, o: new Set() };
+        people.set(key, p);
+      }
+      p.names.set(name, (p.names.get(name) ?? 0) + 1);
+      p.o.add(i);
+    }
+  }
+  const out: PersonRow[] = [...people.values()].map((p) => {
+    const ficha = p.actor !== undefined && data.hasActorProfile(p.actor);
+    return {
+      n: p.actor ? p.actor.name : pickSpelling(p.names),
+      f: ficha ? 1 : 0,
+      p: ficha && p.actor?.photo ? 1 : 0,
+      o: [...p.o].sort((a, b) => a - b),
+    };
+  });
+  return sortPeople(out);
+}
+
+/** Separa el director "en cadena" de una saga (" y ", "," o "&"), salvo que la cadena entera sea una ficha. */
+function splitSagaDirector(name: string, fichaNames: Set<string>): string[] {
+  if (fichaNames.has(normText(name))) return [name];
+  return name.split(/\s+y\s+|\s*,\s*|\s*&\s*/i).map((s) => s.trim()).filter(Boolean);
+}
+
+function buildDirectorRows(data: CatalogData, rows: Row[]): { list: PersonRow[]; splitSagas: { saga: string; director: string; names: string[] }[] } {
+  const index = new Map(rows.map((r, i) => [r.id, i]));
+  const fichaNames = new Set(data.directors.map((d) => normText(d.name)));
+  const splitSagas: { saga: string; director: string; names: string[] }[] = [];
+
+  // Obras de cada director con ficha: misma coincidencia que la web (hasDirector / includes en sagas).
+  const films = [...data.movies, ...data.serials, ...data.shorts];
+  const list: PersonRow[] = data.directors.map((d) => {
+    const o = new Set<number>();
+    for (const m of films) {
+      const i = index.get(m.id);
+      if (i !== undefined && data.hasDirector(m.director, d.name)) o.add(i);
+    }
+    for (const s of data.sagas) {
+      const i = index.get(s.id);
+      if (i !== undefined && s.director.includes(d.name)) o.add(i);
+    }
+    return { n: d.name, f: 1, p: d.photo ? 1 : 0, o: [...o].sort((a, b) => a - b) };
+  });
+
+  // Directores sin ficha: nombres de películas (directorList) y de sagas (separando solo si hace falta).
+  type Acc = { names: Map<string, number>; o: Set<number> };
+  const others = new Map<string, Acc>();
+  const add = (name: string, i: number) => {
+    const clean = name.trim();
+    if (!clean || fichaNames.has(normText(clean))) return;
+    const key = normText(clean);
+    let a = others.get(key);
+    if (!a) {
+      a = { names: new Map(), o: new Set() };
+      others.set(key, a);
+    }
+    a.names.set(clean, (a.names.get(clean) ?? 0) + 1);
+    a.o.add(i);
+  };
+  for (const m of films) {
+    const i = index.get(m.id);
+    if (i !== undefined) data.directorList(m.director).forEach((n) => add(n, i));
+  }
+  for (const s of data.sagas) {
+    const i = index.get(s.id);
+    if (i === undefined) continue;
+    const names = splitSagaDirector(s.director, fichaNames);
+    if (names.length > 1) splitSagas.push({ saga: s.id, director: s.director, names });
+    names.forEach((n) => add(n, i));
+  }
+  others.forEach((a) =>
+    list.push({ n: pickSpelling(a.names), f: 0, p: 0, o: [...a.o].sort((x, y) => x - y) })
+  );
+  return { list: sortPeople(list), splitSagas };
+}
+
+function toHtml(rows: Row[], actorRows: PersonRow[], directorRows: PersonRow[]): string {
   // Datos incrustados como JSON; "<" escapado para que nunca cierre el <script>.
-  const data = JSON.stringify(rows)
-    .replace(/</g, "\\u003c")
-    .split(String.fromCharCode(0x2028)).join(" ")
-    .split(String.fromCharCode(0x2029)).join(" ");
+  const embed = (value: unknown) =>
+    JSON.stringify(value)
+      .replace(/</g, "\\u003c")
+      .split(String.fromCharCode(0x2028)).join(" ")
+      .split(String.fromCharCode(0x2029)).join(" ");
   const stamp = new Date().toISOString().slice(0, 16).replace("T", " ");
-  return HTML_TEMPLATE.replace("__DATA__", () => data).replace("__GENERADO__", () => stamp);
+  return HTML_TEMPLATE
+    .replace("__DATA__", () => embed(rows))
+    .replace("__ACTORES__", () => embed(actorRows))
+    .replace("__DIRECTORES__", () => embed(directorRows))
+    .replace("__GENERADO__", () => stamp);
 }
 
 // ---------------------------------------------------------------------------
@@ -581,13 +882,15 @@ async function main() {
   const data = await loadCatalog();
   const rows = buildRows(data);
   const identityEntries = buildIdentityEntries(data);
+  const actorRows = buildActorRows(data, rows);
+  const { list: directorRows, splitSagas } = buildDirectorRows(data, rows);
 
   mkdirSync(OUT_DIR, { recursive: true });
   const csvPath = resolve(OUT_DIR, "catalogo.csv");
   const htmlPath = resolve(OUT_DIR, "catalogo-busqueda.html");
   const identityPath = resolve(OUT_DIR, "catalogo-identidad.json");
   writeFileSync(csvPath, toCsv(rows), "utf-8");
-  writeFileSync(htmlPath, toHtml(rows), "utf-8");
+  writeFileSync(htmlPath, toHtml(rows, actorRows, directorRows), "utf-8");
   writeIdentitySnapshot(identityPath, identityEntries);
 
   const porTipo: Record<string, number> = {};
@@ -600,6 +903,15 @@ async function main() {
   identityEntries.forEach((entry) => (identityByType[entry.tipo] = (identityByType[entry.tipo] ?? 0) + 1));
   IDENTITY_TYPES.forEach((t) => console.log(`   JSON ${t.padEnd(10)} ${identityByType[t] ?? 0}`));
   console.log(`   JSON: ${identityPath}`);
+  const conFicha = actorRows.filter((a) => a.f === 1);
+  console.log(
+    `   Actores:    ${actorRows.length} (con ficha ${conFicha.length}, con ficha sin foto ${conFicha.filter((a) => a.p === 0).length}, sin ficha ${actorRows.length - conFicha.length})`
+  );
+  const dirFicha = directorRows.filter((d) => d.f === 1);
+  console.log(
+    `   Directores: ${directorRows.length} (con ficha ${dirFicha.length}, sin ficha ${directorRows.length - dirFicha.length}, ficha sin películas ${dirFicha.filter((d) => d.o.length === 0).length})`
+  );
+  splitSagas.forEach((s) => console.log(`   saga ${s.saga}: director "${s.director}" separado en ${s.names.map((n) => `"${n}"`).join(" + ")}`));
 }
 
 main().catch((e) => {
