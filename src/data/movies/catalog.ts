@@ -3536,6 +3536,34 @@ const movies2010s: Movie[] = [
       { name: "Noslén Sánchez", role: "" }
     ],
     notes: "País: Cuba y Nicaragua (coproducción según EcuRed y Cine Las Américas; otras fuentes solo citan Cuba). Cine independiente: producción de Mar y Cielo, S.A., de Humberto Jiménez Penha, con el apoyo del ICAIC, el Fondo Noruego para el Cine Cubano (embajada de Noruega en Cuba), Bread for the World (Servicio Protestante de Desarrollo, Alemania) y JenovaPRO, según los créditos de la copia y OnCuba. Guion de Patricia Ramos; fotografía de Alan González; montaje de Kenia Velázquez (Velásquez en Cuba50); diseño de sonido de Angie Hernández; música de Juan Antonio Leyva (José Antonio en Cuba50) y Magda Rosa Galbán. Rodada en una azotea de Cayo Hueso en 18 días según OnCuba (17 según Cuba50). Es el primer largometraje de ficción de Patricia Ramos. Año: 2016 según EcuRed, Cine Las Américas y OnCuba, por su estreno en el 38.º Festival de La Habana (diciembre de 2016, sección de óperas primas, sin ganar el Coral); se estrenó en cines de Cuba en el verano de 2017, y SensaCine la fecha en 2017. Proyectada en 2017 en los festivales de Miami y San Diego. Premios de Cine Las Américas: EcuRed dice mejor película de ficción (jurado) en 2017; SensaCine habla de dos premios; el festival no lo confirma, por lo que no se incluyen. Duración: 75 min según el archivo de archive.org, Cine Las Américas y Cuba50. La copia de archive.org tiene una resolución de 626×360 (16:9)."
+  },
+  {
+    id: "por-que-lloran-mis-amigas-2018",
+    title: "¿Por qué lloran mis amigas?",
+    year: 2018,
+    director: "Magda González Grau",
+    // provisional: sin cartel de la película todavía
+    poster: "/placeholder.svg",
+    duration: "83 min",
+    genre: ["Drama"],
+    synopsis: "Cuatro mujeres que fueron amigas en sus años de estudiantes se reencuentran veinte años después. Entre recuerdos y confidencias, hacen balance de sus frustraciones, sus alegrías y lo que les queda por vivir. Es el primer largometraje de ficción de Magda González Grau.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-por-que-lloran-mis-amigas",
+    trailerUrl: "",
+    awards: [
+      { name: "39.º Festival Internacional del Nuevo Cine Latinoamericano de La Habana", year: 2017, category: "Mención especial del Premio Vitral de la Asociación Cubana del Audiovisual (premio colateral)" }
+    ],
+    cast: [
+      { name: "Luisa María Jiménez", role: "Gloria" },
+      { name: "Yasmín Gómez", role: "Yara" },
+      { name: "Edith Massola", role: "Carmen" },
+      { name: "Amarilys Núñez", role: "Irene" },
+      { name: "Patricio Wood", role: "" },
+      { name: "Paula Alí", role: "" },
+      { name: "Ariadna Álvarez", role: "" },
+      { name: "Néstor Jiménez Jr.", role: "" },
+      { name: "Roque Moreno", role: "" }
+    ],
+    notes: "País: Cuba. Producción de RTV Comercial y el ICAIC, con la colaboración de Televisión Cubana (EcuRed, Cuba50 y créditos de la copia). Guion y producción de Hannah Imbert; dirección de arte de Tomás Piard (créditos de la copia); fotografía de Roberto Otero; montaje de Celia Suárez; música original de Juan Antonio Leyva y Magda Rosa Galbán (créditos de la copia). Se inspira en el libro «Tratado de culinaria para mujeres tristes», de Héctor Abad, y en el cuadro «Amigas», de Sandra Dooley, que aparece en la película (OnCuba, 2014; los créditos de la copia citan la obra plástica de Dooley). Se presentó en 2017 en la sección no competitiva «A sala llena» del Festival de La Habana y se estrenó en cines el 28 de febrero de 2018 (EcuRed, Cuba50 y Granma); EcuRed y FilmAffinity la datan en 2017 y Cervantes Dublín en 2018. Duración: 83 min según el archivo de archive.org (82 min 34 s); 80 min según EcuRed y el Instituto Cervantes de Dublín, y 82 min según Cuba50 y Granma. La copia de archive.org tiene una resolución de 640×360 (16:9) y empieza con los créditos de la película. Los personajes proceden de EcuRed, Cuba50 y Granma; el resto del reparto no se asocia a personajes."
   }
 ];
 
