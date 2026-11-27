@@ -45,6 +45,7 @@ export { default as posterElRegreso } from './el-regreso.jpg';
 export { default as posterElTecho } from './el-techo.jpg';
 export { default as posterPolvoRojo } from './polvo-rojo.jpg';
 export { default as posterPorQueLloranMisAmigas } from './porque-lloran-mis-amigas.jpg';
+export { default as posterAmorEnCampoMinado } from './amor-en-campo-minado.jpg';
 export { default as posterEnTresYDos } from './en-tres-y-dos.jpg';
 export { default as posterNoviaDavid } from './una-novia-para-david.jpg';
 export { default as posterClandestinos } from './clandestinos.jpg';

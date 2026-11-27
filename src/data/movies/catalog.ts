@@ -13,7 +13,7 @@ import {
   // 70s
   posterMaisinicu, posterDeCiertaManera, posterUltimaCena, posterRetratoTeresa, posterNoHaySabadoSinSol, posterMaluala, posterPattyCandela, posterRancheador, posterMella, posterPeleaCubanaDemonios, posterDiasDelAgua, posterLargaDistancia, posterKangamba, poster7DiasEnLaHabana, posterElSonador, posterSobrevivientes, posterBrigadista, posterElpidioValdes,
   // 80s
-  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterElRegreso, posterElTecho, posterPolvoRojo, posterPorQueLloranMisAmigas, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
+  posterCecilia, posterAmada, posterHombreExito, posterLosPajaros, posterSePermuta, posterVampirosHabana, posterMasVampiros, posterMadrigal, posterElSigloDeLasLuces, posterElRegreso, posterElTecho, posterPolvoRojo, posterPorQueLloranMisAmigas, posterAmorEnCampoMinado, posterEnTresYDos, posterNoviaDavid, posterClandestinos, posterPlaff, posterBellaAlhambra, posterPapelesSecundarios, posterPatakin, posterGallego, posterInutilMuerteSocioManolo, posterCartasDelParque, posterUnaCasaColonial, posterLaVidaEnRosa, posterHabanera, posterCapablanca, posterHastaCiertoPunto,
   // 90s
   posterDerechoDeAsilo, posterReinaYRey, posterMambi, posterAdorablesMentiras, posterMariaAntonia, posterCaravana, posterAlicia, posterFresa, posterMadagascar, posterElefanteBicicleta, posterGuantanamera, posterAzucarAmarga, posterBambola, posterAmorVertical, posterZafiros, posterLaVidaEsSilbar, posterAmanda, posterKleinesTropicana, posterHelloHemingway, posterParaisoEstrellas, posterQuieremeYVeras, posterGuardafronteras, posterElBautizo,
   // 2000s
@@ -1305,6 +1305,26 @@ const movies1980s: Movie[] = [
       { name: "Carlos Moctezuma", role: "" }
     ],
     notes: "País: Cuba. Producción del ICAIC; producción general de Ricardo Ávila. Guion y dirección de Jesús Díaz; fotografía de Raúl Rodríguez; montaje de Justo Vega; música de José María Vitier. Presentada en la sección Nuevos Directores (fuera de competencia) del Festival de San Sebastián de 1982. Año: 1982 según San Sebastián, IMDb, WatchWhatWhere y el cartel (A/82), y estreno en Cuba en marzo de 1982; EcuRed y el Archivo Nacional del Cine checo la fechan en 1981. Duración: 107 min según el archivo de archive.org; 112 min según EcuRed y San Sebastián; 105 min según WatchWhatWhere. La copia de archive.org tiene una resolución de 1280×720 (imagen en 4:3 con bandas negras laterales). El reparto procede de EcuRed, San Sebastián, el cartel, IMDb y WatchWhatWhere; no se asocian actores a personajes."
+  },
+  {
+    id: "amor-en-campo-minado-1987",
+    title: "Amor en campo minado",
+    year: 1987,
+    director: "Pastor Vega",
+    poster: posterAmorEnCampoMinado,
+    duration: "90 min",
+    genre: ["Drama"],
+    synopsis: "Brasil, 1964. Un intelectual de izquierda ve cerca su detención durante el golpe de Estado contra el presidente João Goulart. Mientras su mundo se derrumba, un enfrentamiento con su esposa lo deja al descubierto.",
+    videoUrl: "https://archive.org/embed/pelicula-cubana-amor-en-campo-minado-la-historia-de-amor",
+    trailerUrl: "",
+    awards: [],
+    cast: [
+      { name: "Daisy Granados", role: "" },
+      { name: "Adolfo Llauradó", role: "" },
+      { name: "Omar Valdés", role: "" },
+      { name: "Lili Rentería", role: "" }
+    ],
+    notes: "País: Cuba. Dirección de Pastor Vega (EcuRed, IMDb, Rotten Tomatoes y criticsir). Producción del ICAIC según EcuRed, que es la única fuente consultada. Año: 1987 según TV Guide, IMDb, EcuRed y criticsir; la ficha de EcuRed también da 1964 como estreno, que es el año en que se ambienta la historia. Duración: 90 min según el archivo de archive.org; 100 min según EcuRed y criticsir, por lo que la copia podría estar recortada. La copia de archive.org tiene una resolución de 640×480 (4:3, con la imagen panorámica y bandas negras) y no muestra créditos de apertura. El reparto procede de TV Guide y EcuRed (que da Ana Lilia Rentería); no se asocian actores a personajes."
   },
 ];
 

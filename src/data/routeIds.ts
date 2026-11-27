@@ -56,6 +56,7 @@ export const movieIds: string[] = [
   "amada",
   "un-hombre-de-exito",
   "polvo-rojo-1982",
+  "amor-en-campo-minado-1987",
   "pajaros-escopeta",
   "se-permuta",
   "vampiros-habana",
