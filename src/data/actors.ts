@@ -1391,6 +1391,7 @@ export const actors: Actor[] = [
     birthPlace: 'Pinar del Río, Cuba',
     deathYear: 2013,
     nationality: 'Cubano',
+    photo: '/images/actors/raul-eguren.jpg',
     biography: "Raúl Eguren (Pinar del Río, 12 de agosto de 1920 — La Habana, 20 de abril de 2013) fue un actor cubano de teatro y cine. Formó parte del grupo Teatro Estudio y actuó en montajes como Madre Coraje y sus hijos (1961), de Brecht, dirigido por Vicente Revuelta, y El millonario y la maleta (1969). En el cine trabajó entre 1967 y 2006, con títulos como Los días del agua (1971), de Manuel Octavio Gómez, El hombre de Maisinicú (1973), de Manuel Pérez, la coproducción nicaragüense Alsino y el cóndor, de Miguel Littín, Cartas del parque (1988), de Tomás Gutiérrez Alea, Gallego (1988), Derecho de asilo (1993) y Guantanamera (1995), de Gutiérrez Alea y Juan Carlos Tabío. Murió en La Habana a los 92 años.",
     awards: [],
   },
